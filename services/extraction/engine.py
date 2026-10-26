@@ -151,6 +151,8 @@ def _ocr_image(raw: bytes, *, psm=3):
         return None
     try:
         with Image.open(io.BytesIO(raw)) as image:
+            if image.width * image.height > 15_000_000:
+                return None
             image.load()
             data = pytesseract.image_to_data(image.convert("RGB"),
                                                config=f"--psm {int(psm)}",
@@ -321,7 +323,9 @@ def _docx(doc, raw, *, license, put_asset, limits):
             p = Paragraph(el, document)
             style = p.style.name.lower() if p.style else ""
             _emit_text(doc, p.text, 1, heading=style.startswith(("heading", "title")),
-                       metadata={"style": style, "page_unknown": True})
+                       metadata={"style": style, "page_unknown": True,
+                                 "heading_level": int(style[-1]) if style.startswith("heading")
+                                 and style[-1].isdigit() else 1})
             # OOXML stores math as OMML. Preserve XML exactly; convert only supported expressions.
             from services.math.omml import omml_to_latex
             for math_el in el.xpath(".//m:oMath"):
@@ -394,11 +398,26 @@ def _html(doc, raw, *, license, put_asset, limits):
             if text:
                 kind = BlockType.heading if tag.name.startswith("h") else (
                     BlockType.list if tag.name == "li" else _kind(text))
-                block = _emit_text(doc, text, 1, heading=kind == BlockType.heading)
+                block = _emit_text(doc, text, 1, heading=kind == BlockType.heading,
+                                   metadata={"heading_level": int(tag.name[1])}
+                                   if kind == BlockType.heading and tag.name[1:].isdigit()
+                                   else None)
                 if block and kind == BlockType.list:
                     block.type = BlockType.list
     return doc
 
+
+def _finalize(doc: ExtractedDocument) -> ExtractedDocument:
+    """Assign hierarchical heading paths without cutting figures from paragraphs."""
+    path: list[str] = []
+    for block in doc.blocks:
+        if block.type == BlockType.heading:
+            level = block.metadata.get("heading_level")
+            if not isinstance(level, int) or level < 1:
+                level = 1 if block.text and HEADING_RE.match(block.text) else 2
+            path = path[:level - 1] + [block.text or "Untitled"]
+        block.heading_path = list(path)
+    return doc
 
 def extract_bytes(content: bytes, media_type: str, *,
                   resource_id: UUID, version_id: UUID, license: str = "unknown",
@@ -412,13 +431,15 @@ def extract_bytes(content: bytes, media_type: str, *,
     doc = _new_doc(content, resource_id, version_id)
     mime = media_type.lower().split(";", 1)[0].strip()
     if mime == "application/pdf" or content.startswith(b"%PDF-"):
-        return _pdf(doc, content, license=license, put_asset=put_asset, limits=limits,
-                    progress=progress)
+        return _finalize(_pdf(doc, content, license=license, put_asset=put_asset,
+                              limits=limits, progress=progress))
     if mime in {"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                 "application/msword"} or (content.startswith(b"PK") and mime.endswith("document")):
-        return _docx(doc, content, license=license, put_asset=put_asset, limits=limits)
+        return _finalize(_docx(doc, content, license=license,
+                                put_asset=put_asset, limits=limits))
     if mime in {"text/html", "application/xhtml+xml"}:
-        return _html(doc, content, license=license, put_asset=put_asset, limits=limits)
+        return _finalize(_html(doc, content, license=license,
+                                put_asset=put_asset, limits=limits))
     if mime.startswith("image/"):
         _asset(doc, content, 1, caption=None, license=license,
                put_asset=put_asset, limits=limits)
@@ -430,5 +451,5 @@ def extract_bytes(content: bytes, media_type: str, *,
         else:
             for text, bbox, conf in ocr:
                 _emit_text(doc, text, 1, bbox=bbox, confidence=conf, is_ocr=True)
-        return doc
+        return _finalize(doc)
     raise ExtractionError("Unsupported media type")
