@@ -8,13 +8,12 @@ from datetime import timedelta
 from uuid import UUID, uuid4
 
 from sqlalchemy import select
-from sqlalchemy.orm import Session
 
 from app.core.database import SessionLocal
 from app.core.models import BackgroundJob, sources
 from app.core.queue import queue, redis_connection
 from app.core.models import utcnow
-from services.ingestion.crawler import canonical, crawl
+from services.ingestion.crawler import crawl
 from services.ingestion.library import MAX_BYTES, publish_version, validate_file
 from services.ingestion.models import import_runs, ingestion_outbox, telegram_receipts
 
