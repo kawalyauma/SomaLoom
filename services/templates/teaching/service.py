@@ -33,6 +33,11 @@ class TeachingStudio:
         try:
             raw = json.loads(result.text)
             body = TeachingBody.model_validate(raw)
+            # Provider output may never grant approval or impersonate an author/reviewer.
+            body.review_status = "needs_review"
+            body.author_id = None
+            body.reviewer_id = None
+            body.revision = 1
         except (json.JSONDecodeError, ValueError) as error:
             raise TeachingGenerationError("AI did not return a valid teaching.v1 body") from error
         review = validate_teaching_document(spec, evidence, body)
