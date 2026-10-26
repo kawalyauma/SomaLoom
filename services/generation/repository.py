@@ -95,7 +95,10 @@ def retrieve_evidence(db: Session, tenant_id: UUID,
     passages = []
     for r in rows:
         prov = r["provenance"] or {}
-        if allowed_licenses is not None and prov.get("license") not in allowed_licenses:
+        license_id = str(prov.get("license") or "").strip()
+        if not license_id or license_id.lower() in {"unknown", "unspecified"}:
+            continue  # fail closed: rights are not established by absent metadata
+        if allowed_licenses is not None and license_id not in allowed_licenses:
             continue
         quote = (r["quote"] or "").strip()[:2500]
         if not quote:
