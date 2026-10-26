@@ -1,5 +1,6 @@
 """Feature router; register with app.include_router(router, prefix='/api/v1')."""
 import hmac
+import ipaddress
 import os
 from datetime import datetime, timezone
 from typing import Literal
@@ -60,6 +61,7 @@ async def upload(
     files: list[UploadFile] = File(...), license: str = Form(...),
     title: str | None = Form(None), source_uri: str | None = Form(None),
     source_id: UUID | None = Form(None),
+    resource_id: UUID | None = Form(None),
     user: User = Depends(require_roles("school_admin", "teacher")),
     db: Session = Depends(get_db),
 ):
@@ -76,13 +78,17 @@ async def upload(
         if not source_uri or not allowed(source_uri, set(owner["config"]["domains"]),
                                           owner["config"].get("paths", ["/"])):
             raise HTTPException(422, "Import URL outside source policy")
+    if resource_id and len(files) != 1:
+        raise HTTPException(422, "New version requires a single file")
+    if resource_id:
+        get_resource(db, tenant, resource_id)
     outcomes = []
     for file in files:
         data, mime, name, digest = await read_upload(file)
         result = publish_version(
             db, tenant, user.id, data, mime, name, digest,
             title or name, license, source_uri or f"upload://{tenant}/{digest}",
-            "web" if source_id else "upload", source_id,
+            "web" if source_id else "upload", source_id, resource_id,
         )
         outcomes.append(result)
     return {"items": outcomes}
@@ -165,6 +171,15 @@ def create_source(data: SourceCreate, user: User = Depends(require_roles("school
         if not data.domains or any(not d or "://" in d or "/" in d or ":" in d for d in data.domains):
             raise HTTPException(422, "Explicit DNS domain allowlist required")
         domains = [d.lower().rstrip(".") for d in data.domains]
+        for domain in domains:
+            try:
+                ip = ipaddress.ip_address(domain)
+            except ValueError:
+                if domain in {"localhost", "localhost.localdomain"} or domain.endswith(".local"):
+                    raise HTTPException(422, "Local or private hosts are prohibited") from None
+            else:
+                if not ip.is_global:
+                    raise HTTPException(422, "Local or private hosts are prohibited")
         if not all(p.startswith("/") and ".." not in p for p in data.paths):
             raise HTTPException(422, "Invalid allowed paths")
         if not allowed(data.source_uri, set(domains), data.paths):
