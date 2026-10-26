@@ -1,0 +1,61 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "format": "uuid",
+      "title": "Id",
+      "type": "string"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "generation_job_id": {
+      "format": "uuid",
+      "title": "Generation Job Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "evidence_ids": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "body": {
+      "additionalProperties": true,
+      "title": "Body",
+      "type": "object"
+    }
+  },
+  "required": [
+    "tenant_id",
+    "generation_job_id",
+    "title",
+    "document_type",
+    "evidence_ids",
+    "body"
+  ],
+  "title": "GeneratedDocument",
+  "type": "object"
+}

@@ -1,0 +1,13 @@
+#cloud-config
+# Ubuntu 24.04 EC2. Supply an encrypted EBS data volume separately.
+package_update: true
+packages: [docker.io, docker-compose-v2, awscli, curl, jq, certbot, unattended-upgrades]
+write_files:
+  - path: /etc/ssh/sshd_config.d/90-somaloom.conf
+    content: |
+      PasswordAuthentication no
+      PermitRootLogin no
+runcmd:
+  - systemctl enable --now docker
+  - systemctl restart ssh
+# Do not embed credentials in user data. Prefer AWS Session Manager with its IAM role.

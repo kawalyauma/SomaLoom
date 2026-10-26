@@ -1,0 +1,63 @@
+name: Foundation CI
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test-only-not-production
+          POSTGRES_DB: somaloom_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U test -d somaloom_test"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+    env:
+      APP_ENV: test
+      DATABASE_URL: postgresql+psycopg://test:test-only-not-production@localhost:5432/somaloom_test
+      TEST_DATABASE_URL: postgresql+psycopg://test:test-only-not-production@localhost:5432/somaloom_test
+      TEST_REDIS_URL: redis://localhost:6379/15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.lock && pip install --no-deps -e .
+      - run: ruff check . && ruff format --check .
+      - run: alembic upgrade head
+      - run: pytest -q
+      - run: alembic downgrade base && alembic upgrade head
+      - run: python tools/generate_contracts.py && python tools/generate_fixtures.py && python tools/export_openapi.py && git diff --exit-code contracts/
+      - run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.24.2 detect --source /repo --no-git --redact
+  web:
+    runs-on: ubuntu-24.04
+    defaults:
+      run: {working-directory: apps/web}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "22", cache: npm, cache-dependency-path: apps/web/package-lock.json}
+      - run: npm ci
+      - run: npm run typecheck && npm run build
+      - run: npm audit --omit=dev --audit-level=high
+  docker:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 tools/init_dev_env.py
+          docker compose config --quiet
+          docker compose up --build -d --wait --wait-timeout 240
+          bash tools/smoke.sh
+          docker compose exec -T api python tools/container_auth_smoke.py
+          docker compose exec -T api python tools/container_queue_smoke.py
+      - if: always()
+        run: docker compose logs --no-color --tail=100
+      - if: always()
+        run: docker compose down -v

@@ -1,0 +1,4 @@
+@import "tailwindcss";
+body {background: #f8fafc; color: #0f172a; font-family: system-ui, sans-serif;}
+input, button {font: inherit;}
+:focus-visible {outline: 3px solid #0d9488; outline-offset: 3px;}

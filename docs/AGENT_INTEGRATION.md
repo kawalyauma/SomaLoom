@@ -33,7 +33,7 @@ RQ queue `somaloom`, Redis durable AOF. Persist a job row before enqueue; featur
 
 ## Documents and evidence
 
-See `contracts/v1/schemas.py` and generated JSON Schema. Pipeline: Resource → ResourceVersion → Extraction → ContentBlock/VisualAsset/Equation → EvidenceLink → GenerationJob → GeneratedDocument → DocumentVersion/Review → Export/Publication. Retain source URI, license, checksum and provenance. Store object keys, never host filesystem paths in public payloads. Equations retain LaTeX; document bodies use structured JSON with schema_version, sections and evidence IDs. Rendering belongs to Agent 8. Central fixtures are synthetic mocks, exposed only in development and clearly labeled.
+See `contracts/v1/schemas.py` and generated JSON Schema. Pipeline: Resource → ResourceVersion → Extraction → ContentBlock/VisualAsset/Equation → EvidenceLink → GenerationJob → GeneratedDocument → DocumentVersion/Review → Export/Publication. Retain source URI, license, checksum and provenance. Store object keys, never host filesystem paths in public payloads. Equations retain LaTeX; document bodies use structured JSON with schema_version, sections and evidence IDs. Rendering belongs to Agent 8. Central fixtures for all 11 domain contracts are synthetic mocks, exposed only in development and clearly labeled.
 
 ## Git and integration
 

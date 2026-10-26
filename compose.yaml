@@ -1,0 +1,101 @@
+name: somaloom
+x-logging: &logging
+  driver: json-file
+  options: {max-size: "10m", max-file: "5"}
+x-python: &python
+  build:
+    context: .
+    dockerfile: apps/api/Dockerfile
+  restart: unless-stopped
+  logging: *logging
+  init: true
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: ["ALL"]
+  env_file: .env
+  environment:
+    DATABASE_URL: postgresql+psycopg://somaloom_app:${APP_DB_PASSWORD:?set APP_DB_PASSWORD}@db:5432/${POSTGRES_DB:-somaloom}
+    REDIS_URL: redis://:${REDIS_PASSWORD:?set REDIS_PASSWORD}@redis:6379/0
+  volumes:
+    - resources:/data/resources
+  depends_on:
+    db: {condition: service_healthy}
+    redis: {condition: service_healthy}
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-somaloom}
+      POSTGRES_USER: ${POSTGRES_USER:-somaloom_owner}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:?set APP_DB_PASSWORD}
+    volumes: ["postgres:/var/lib/postgresql/data", "./infra/postgres/init.sh:/docker-entrypoint-initdb.d/01-role.sh:ro"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?set REDIS_PASSWORD}
+    command: ["sh", "-c", 'exec redis-server --appendonly yes --requirepass "$$REDIS_PASSWORD"']
+    volumes: ["redis:/data"]
+    healthcheck:
+      test: ["CMD-SHELL", 'REDISCLI_AUTH="$$REDIS_PASSWORD" redis-cli ping | grep -q PONG']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  migrate:
+    <<: *python
+    restart: "no"
+    command: ["sh", "tools/migrate.sh"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-somaloom_owner}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-somaloom}
+  api:
+    <<: *python
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+  worker:
+    <<: *python
+    command: ["python", "-m", "app.core.worker"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "from app.core.queue import redis_connection; assert redis_connection().exists('somaloom:worker:heartbeat')"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args: {API_INTERNAL_URL: "http://api:8000"}
+    restart: unless-stopped
+    logging: *logging
+    init: true
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      api: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+volumes:
+  postgres:
+  redis:
+  resources:
