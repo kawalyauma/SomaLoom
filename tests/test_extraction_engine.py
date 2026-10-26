@@ -57,6 +57,7 @@ def test_full_mixed_passage_and_source_links():
     assert any(b.asset_id == doc.assets[0].id for b in doc.blocks)
     assert all(b.source_ref.version_id == VERSION and b.page == 1 for b in doc.blocks)
     assert semantic_sections(doc)
+    assert any(b.heading_path for b in doc.blocks if b.type == BlockType.paragraph)
     assert doc.model_validate_json(doc.model_dump_json()).version_id == VERSION
 
 
