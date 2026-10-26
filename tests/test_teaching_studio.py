@@ -46,7 +46,7 @@ def fixture(typ: TeachingType, *, subject="Primary Science"):
             id=EID, source_title="Authorized teacher sample (not official curriculum)",
             source_uri="fixture://teacher-supplied", license="CC0-1.0", page=1,
             excerpt="A filter can trap some suspended solids from water; filtration does not reliably remove all pathogens.",
-            outcome_ids=[OID], asset_id=ASSET, asset_kind="diagram",
+            outcome_ids=[OID], asset_id=ASSET, asset_kind="diagram", asset_permission_verified=True,
         )],
     )
     sections = [TeachingSection(key=key, title=key.replace("_", " ").title(),
@@ -162,3 +162,26 @@ def test_malformed_ai_result_not_published():
     with pytest.raises(TeachingGenerationError):
         asyncio.run(TeachingStudio(BrokenProvider(), "bad").generate(
             spec=spec, evidence=bundle, tenant_id=TENANT, generation_job_id=JOB))
+
+def test_ai_cannot_forge_approval_or_review_identity():
+    spec, bundle, body = fixture(TeachingType.teacher_guide)
+    body.review_status = "approved"
+    body.reviewer_id = TENANT
+    body.author_id = JOB
+    body.revision = 999
+    result = asyncio.run(TeachingStudio(FakeProvider(body), "fake-test").generate(
+        spec=spec, evidence=bundle, tenant_id=TENANT, generation_job_id=JOB))
+    assert result.document["body"]["review_status"] == "needs_review"
+    assert result.document["body"]["reviewer_id"] is None
+    assert result.document["body"]["author_id"] is None
+    assert result.document["body"]["revision"] == 1
+
+
+def test_visual_asset_requires_verified_use_permission():
+    spec, bundle, body = fixture(TeachingType.lesson_notes)
+    bundle.evidence[0].asset_permission_verified = False
+    body.sections[4].blocks.append(TeachingBlock(
+        kind="visual", asset_id=ASSET, citation_ids=[EID], outcome_ids=[OID]))
+    assert "unlicensed_or_unknown_visual" in {
+        finding.code for finding in validate_teaching_document(spec, bundle, body).findings
+    }
