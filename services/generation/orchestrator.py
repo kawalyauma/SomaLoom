@@ -12,7 +12,7 @@ from pydantic import ValidationError
 
 from services.ai.provider import AIProvider, AIRequest, ProviderError
 from services.generation.schema import (
-    DocumentKind, DraftBlock, DraftSection, EvidenceBundle, GenerationInput,
+    DraftBlock, DraftSection, EvidenceBundle, GenerationInput,
     Outcome, Passage, QualityReport, StructuredDraft,
 )
 
