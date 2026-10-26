@@ -57,9 +57,19 @@ class Passage(StrictModel):
     license: str | None = None
 
 
+class VisualReference(StrictModel):
+    id: UUID
+    outcome_id: UUID
+    kind: str
+    caption: str | None = None
+    page: int | None = Field(default=None, ge=1)
+    source_uri: str | None = None
+
+
 class EvidenceBundle(StrictModel):
     outcomes: list[Outcome] = Field(min_length=1)
     passages: list[Passage] = Field(default_factory=list)
+    visuals: list[VisualReference] = Field(default_factory=list)
 
 
 class DraftBlock(StrictModel):
@@ -100,6 +110,7 @@ class StructuredDraft(StrictModel):
     learning_outcomes: list[Outcome]
     sections: list[DraftSection]
     references: list[Passage]
+    visual_references: list[VisualReference] = Field(default_factory=list)
     quality_report: QualityReport
     review_state: str = "awaiting_review"
 
