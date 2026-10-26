@@ -60,6 +60,6 @@ CREATE TABLE IF NOT EXISTS telegram_receipts (
         REFERENCES background_jobs(id, tenant_id)
 );
 CREATE INDEX IF NOT EXISTS ix_telegram_receipts_tenant_id ON telegram_receipts(tenant_id);
--- Prevent duplicate originals even under concurrent upload requests per tenant.
-CREATE UNIQUE INDEX IF NOT EXISTS uq_resource_versions_tenant_checksum
-    ON resource_versions(tenant_id, checksum_sha256);
+-- Per-tenant concurrent checksum imports are serialized by PostgreSQL
+-- advisory transaction locks in the ingestion library; no permanent checksum
+-- uniqueness constraint, because deleted resources may be re-imported.
