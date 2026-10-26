@@ -4,9 +4,9 @@ Educational content intelligence for schools: resources → extraction → evide
 
 ## Development
 
-Requires Docker Engine with Compose v2. Run `cp .env.example .env`, set random database and Redis passwords, then `docker compose up --build -d`. Web: http://localhost:3000, API docs: http://localhost:8000/api/v1/docs. Production requires separate TLS configuration; see `docs/DEPLOYMENT.md`.
+Requires Docker Engine with Compose v2. Run `python3 tools/init_dev_env.py && docker compose up --build -d --wait`. Web: http://localhost:3000, API docs: http://localhost:8000/api/v1/docs. Production requires separate TLS configuration; see `docs/DEPLOYMENT.md`.
 
-Python: `python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'`. Run `.venv/bin/pytest` and `.venv/bin/ruff check .`. Web: `cd apps/web && npm ci && npm run dev`.
+Python: `python3 -m venv .venv && .venv/bin/pip install -r requirements.lock && .venv/bin/pip install --no-deps -e .`. Run `.venv/bin/pytest` and `.venv/bin/ruff check .`. Web: `cd apps/web && npm ci && npm run dev`.
 
 ## Agent workstreams
 
@@ -19,3 +19,5 @@ Next.js App Router + TypeScript + Tailwind; FastAPI + Pydantic + SQLAlchemy/Alem
 ## Launch gate
 
 An accessible EC2 host, DNS, TLS certificates, encrypted EBS, S3 backup bucket and IAM role are required for production verification. Do not consider production deployed until HTTPS, restore, isolation and smoke checks pass. Launch/beta dates are targets, not evidence of readiness.
+
+Provision the first administrator: `docker compose exec api python tools/provision_admin.py`. No public registration is enabled. See [architecture](docs/ARCHITECTURE.md), [deployment and recovery](docs/DEPLOYMENT.md) and [verification evidence](docs/VERIFICATION.md).

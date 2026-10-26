@@ -1,0 +1,7 @@
+[Unit]
+Description=SomaLoom encrypted off-instance backup
+After=docker.service network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/somaloom
+ExecStart=/bin/bash /opt/somaloom/tools/backup.sh
