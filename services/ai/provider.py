@@ -4,8 +4,6 @@ from __future__ import annotations
 import asyncio
 import json
 import os
-import re
-import shutil
 import signal
 import tempfile
 import urllib.error
@@ -94,7 +92,7 @@ class CodexCLIProvider:
         if proc.returncode != 0:
             raise ProviderError("codex_runner_unavailable")
         text = output.decode("utf-8", "replace")
-        required = ("--output-schema", "--sandbox", "--skip-git-repo-check")
+        required = ("--output-schema", "--sandbox", "--skip-git-repo-check", "--model")
         if not all(flag in text for flag in required):
             raise ProviderError("codex_cli_incompatible")
         self._flags = set(required)
