@@ -72,7 +72,7 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID,
     await progress("saving", 95)
     with SessionLocal() as db:
         # Recheck tenancy/status immediately before persistence.
-        job = db.get(BackgroundJob, job_id)
+        job = db.get(BackgroundJob, job_id, with_for_update=True)
         if not job or job.tenant_id != tenant_id or job.status != "running":
             raise Cancelled()
         save_draft(db, tenant_id, generation_id, draft)
