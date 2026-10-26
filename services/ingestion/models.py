@@ -1,6 +1,6 @@
 """Agent 2 feature tables; Agent 1 must apply the reviewed migration proposal."""
-from sqlalchemy import JSON, Column, ForeignKeyConstraint, Integer, String, Text, UniqueConstraint, Uuid
-from app.core.models import Base, domain, col
+from sqlalchemy import JSON, Integer, String, Text, UniqueConstraint
+from app.core.models import col, domain
 
 import_runs = domain(
     "ingestion_runs",
