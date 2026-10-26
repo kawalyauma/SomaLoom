@@ -27,11 +27,12 @@ bucket versioning and retention policy. `INGESTION_MAX_BYTES` (default 20 MiB)
 and `INGESTION_MAX_FILES` (default 20) cap uploads. HTTP upload progress is
 client-side `XMLHttpRequest.upload.onprogress` (or equivalent), not server polling.
 
-**Security release gate:** The sample validation uses signatures and archive
-expansion bounds but does not run antivirus. Connect an antivirus/quarantine
-scanner before accepting untrusted production uploads; an unscanned file is
-explicitly marked `scan_status=unscanned` in provenance/event payload. Do
-not enable production extraction on unscanned material without a review gate.
+**Security release gate:** Set `INGESTION_SCANNER_COMMAND` to an installed
+antivirus program that accepts a pathname (e.g. `clamscan --no-summary`).
+Exit code 0 is clean, 1 rejects the file, and other exits or timeouts
+fail closed. **Production ingestion rejects uploads if no scanner is configured.**
+Development without a scanner marks `scan_status=unscanned` in provenance/events.
+Agent 3 must refuse unscanned input in production.
 Expand hard quotas, storage cleanup and strict tenant-scope authorization as
 an Agent 1 deployment hardening task.
 
