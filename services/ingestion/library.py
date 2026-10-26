@@ -12,7 +12,7 @@ from pathlib import Path
 from uuid import UUID, uuid4
 
 from fastapi import HTTPException, UploadFile
-from sqlalchemy import and_, func, select
+from sqlalchemy import and_, func, select, text
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -151,6 +151,11 @@ def publish_version(
     """Persist original first; then atomically commit metadata, job and outbox event."""
     if not license.strip() or not source_uri.strip():
         raise HTTPException(422, "License and source URI required")
+    # Serialize identical content imports per tenant without prohibiting legal reimport
+    # of originals whose prior resource has been soft-deleted.
+    if db.get_bind().dialect.name == "postgresql":
+        db.execute(text("SELECT pg_advisory_xact_lock(hashtextextended(:key, 0))"),
+                   {"key": f"{tenant_id}:{sha}"})
     same = db.execute(
         select(resource_versions.c.resource_id, resource_versions.c.id)
         .select_from(resource_versions.join(resources, and_(
