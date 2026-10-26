@@ -1,16 +1,11 @@
 """Agent 2 integration tests: use Agent 1's SQLite/auth fixtures, no live tokens."""
-import io
-import json
-import socket
-from uuid import uuid4
+ from uuid import uuid4
 
 import pytest
-from fastapi.testclient import TestClient
-from sqlalchemy import select
+ from sqlalchemy import select
 
 from app.main import app
-from app.core.models import resource_versions
-from services.ingestion import models  # noqa: F401 - register feature tables before fixture create_all
+ from services.ingestion import models  # noqa: F401 - register feature tables before fixture create_all
 from services.ingestion.crawler import allowed, canonical, safe_addresses
 from services.ingestion.library import LocalObjectStore, safe_filename, validate_file
 from services.ingestion.models import ingestion_outbox, telegram_receipts
@@ -23,8 +18,12 @@ if not any(getattr(route, "path", None) == "/api/v1/resources/uploads" for route
 PDF = b"%PDF-1.4\n1 0 obj\n<< /Type /Catalog >>\nendobj\n%%EOF"
 
 def signin(client, role="school_admin", school=0):
-    from tests.conftest import sign_in
-    res = sign_in(client, f"{role}{school}@example.org")
+    res = client.post(
+        "/api/v1/auth/login",
+        headers={"Origin": "http://localhost:3000"},
+        json={"email": f"{role}{school}@example.org",
+              "password": "correct-horse-school-123"},
+    )
     assert res.status_code == 200, res.text
 
 @pytest.fixture
