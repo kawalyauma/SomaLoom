@@ -3,6 +3,8 @@ import hashlib
 import io
 import os
 import re
+import shlex
+import subprocess
 import tempfile
 import zipfile
 from datetime import datetime, timezone
@@ -104,6 +106,29 @@ async def read_upload(file: UploadFile) -> tuple[bytes, str, str, str]:
     mime = validate_file(data, file.content_type)
     return data, mime, safe_filename(file.filename, mime), digest.hexdigest()
 
+def scan_original(data: bytes) -> str:
+    """Optional ClamAV-compatible scanner command; mandatory in production."""
+    command = os.getenv("INGESTION_SCANNER_COMMAND")
+    if not command:
+        if get_settings().app_env == "production":
+            raise HTTPException(503, "File scanning unavailable")
+        return "unscanned"
+    with tempfile.NamedTemporaryFile(prefix="somaloom-scan-", delete=True) as temp:
+        temp.write(data)
+        temp.flush()
+        try:
+            result = subprocess.run(
+                [*shlex.split(command), temp.name], capture_output=True, timeout=60,
+                check=False,
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            raise HTTPException(503, "File scanning unavailable") from None
+        if result.returncode == 1:
+            raise HTTPException(422, "File rejected by antivirus")
+        if result.returncode != 0:
+            raise HTTPException(503, "File scanning unavailable")
+    return "clean"
+
 def _audit(db: Session, tenant_id: UUID, actor_id: UUID | None, action: str, target):
     db.add(AuditLog(tenant_id=tenant_id, actor_id=actor_id, action=action, target_id=str(target)))
 
@@ -152,13 +177,13 @@ def publish_version(
         resource_id, version = uuid4(), 1
     version_id, job_id, event_id = uuid4(), uuid4(), uuid4()
     key = f"originals/{resource_id}/{version_id}/{MIMES[mime].lstrip('.')}"
-    # Malicious files are never executed; antivirus must be wired before production release.
+    scan_status = scan_original(data)
     object_store().put(tenant_id, key, data)
     provenance = {
         "source_uri": source_uri, "source_type": source_type, "license": license,
         "checksum_sha256": sha, "imported_by": str(actor_id) if actor_id else None,
         "filename": name, "file_size": len(data), "created_at": datetime.now(timezone.utc).isoformat(),
-        "scan_status": "unscanned", "permissions": ["educational_reference"],
+        "scan_status": scan_status, "permissions": ["educational_reference"],
     }
     if not resource_id or not isinstance(resource_id, UUID):
         raise RuntimeError("Invalid resource id")
@@ -182,7 +207,7 @@ def publish_version(
         "resource_id": str(resource_id), "version_id": str(version_id), "source_id": str(source_id) if source_id else None,
         "source_type": source_type, "object_key": key, "mime_type": mime, "sha256": sha,
         "title": title[:500], "license": license, "original_url": source_uri,
-        "permissions": provenance["permissions"], "scan_status": "unscanned",
+        "permissions": provenance["permissions"], "scan_status": scan_status,
     }
     db.execute(ingestion_outbox.insert().values(
         id=event_id, tenant_id=tenant_id, version_id=version_id, job_id=job_id,
