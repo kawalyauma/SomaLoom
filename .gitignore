@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+!.env.production.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+node_modules/
+.next/
+coverage/
+*.db
+storage/
+backups/
+*.pem
+*.key
