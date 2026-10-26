@@ -66,7 +66,7 @@ def verify_source(db: Session, school: UUID, row: dict) -> bool:
         ).mappings().first()
     if not source or source["page"] != row["page"] or not source[field]:
         return False
-    text = re.sub(r"\\s+", " ", source[field]).strip()
+    text = re.sub(r"\s+", " ", source[field]).strip()
     return row["text"] in text
 
 def as_evidence(row: dict, score: float = 0) -> dict:
