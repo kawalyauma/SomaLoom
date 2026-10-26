@@ -2,7 +2,6 @@
 import argparse
 import json
 import os
-import stat
 import sys
 import urllib.error
 import urllib.parse
