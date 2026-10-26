@@ -71,16 +71,24 @@ def _emit_text(doc: ExtractedDocument, text: str, page: int, *,
         return None
     kind = _kind(text, heading=heading)
     latex = None
+    details = dict(metadata or {})
     needs_review = is_ocr and confidence < 0.85
     if kind == BlockType.equation:
         analysis = analyze_equation(text, is_ocr=is_ocr)
         latex = analysis.latex
         confidence = min(confidence, analysis.confidence)
         needs_review = needs_review or analysis.needs_review
+        if latex:
+            from services.math.equations import check_math_rendering
+            checked, failure = check_math_rendering(latex)
+            details["math_render_checked"] = checked
+            if not checked:
+                needs_review = True
+                details["math_render_warning"] = failure
     return add_block(doc, kind, page, text=text, latex=latex,
                      bbox=bbox, confidence=max(0.0, min(1.0, confidence)),
                      needs_review=needs_review, heading_path=heading_path,
-                     metadata=metadata)
+                     metadata=details)
 
 
 def _image_meta(raw: bytes, limit: int) -> tuple[int | None, int | None, int | None]:
@@ -322,7 +330,7 @@ def _docx(doc, raw, *, license, put_asset, limits):
     doc.processing_warnings.append("docx_page_numbers_unavailable_without_layout_engine")
     children = list(document.element.body.iterchildren())
     # A document-wide caption cannot safely be assigned to each figure.
-    for el in children:
+    for position, el in enumerate(children):
         if el.tag.endswith("}tbl"):
             table = Table(el, document)
             rows = [[cell.text for cell in row.cells] for row in table.rows]
@@ -349,6 +357,17 @@ def _docx(doc, raw, *, license, put_asset, limits):
                 part = document.part.related_parts.get(embed) if embed else None
                 if part and hasattr(part, "blob"):
                     cap = p.text if FIGURE_RE.match(p.text) else None
+                    if not cap:
+                        # Only bind immediately following caption paragraphs.
+                        for following in children[position + 1:position + 3]:
+                            if not following.tag.endswith("}p"):
+                                break
+                            candidate = Paragraph(following, document).text.strip()
+                            if FIGURE_RE.match(candidate):
+                                cap = candidate
+                                break
+                            if candidate:
+                                break
                     _asset(doc, part.blob, 1, caption=cap, license=license,
                            put_asset=put_asset, limits=limits,
                            metadata={"page_unknown": True})
@@ -396,9 +415,12 @@ def _html(doc, raw, *, license, put_asset, limits):
             annotation = tag.find("annotation", attrs={"encoding": re.compile("tex", re.I)})
             if annotation:
                 eq = analyze_equation(annotation.get_text())
+                from services.math.equations import check_math_rendering
+                checked, warning = check_math_rendering(eq.latex) if eq.latex else (False, "math_unrecognized")
                 add_block(doc, BlockType.equation, 1, latex=eq.latex,
-                          confidence=eq.confidence, needs_review=eq.needs_review,
-                          metadata={"mathml": str(tag)})
+                          confidence=eq.confidence, needs_review=eq.needs_review or not checked,
+                          metadata={"mathml": str(tag), "math_render_checked": checked,
+                                    "math_render_warning": warning})
             else:
                 add_block(doc, BlockType.equation, 1, confidence=0.15, needs_review=True,
                           metadata={"mathml": str(tag)})
