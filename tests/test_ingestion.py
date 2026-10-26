@@ -1,11 +1,11 @@
 """Agent 2 integration tests: use Agent 1's SQLite/auth fixtures, no live tokens."""
- from uuid import uuid4
+from uuid import uuid4
 
 import pytest
- from sqlalchemy import select
+from sqlalchemy import select
 
 from app.main import app
- from services.ingestion import models  # noqa: F401 - register feature tables before fixture create_all
+from services.ingestion import models  # noqa: F401 - register feature tables before fixture create_all
 from services.ingestion.crawler import allowed, canonical, safe_addresses
 from services.ingestion.library import LocalObjectStore, safe_filename, validate_file
 from services.ingestion.models import ingestion_outbox, telegram_receipts
@@ -25,6 +25,7 @@ def signin(client, role="school_admin", school=0):
               "password": "correct-horse-school-123"},
     )
     assert res.status_code == 200, res.text
+    client.headers["Origin"] = "http://localhost:3000"
 
 @pytest.fixture
 def store(monkeypatch, tmp_path):
