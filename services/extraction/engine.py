@@ -229,7 +229,7 @@ def _pdf(doc, raw, *, license, put_asset, limits):
                     events.append((bbox[1] if bbox else 0, bbox[0] if bbox else 0,
                                    "table", (bbox, cells)))
                 events.sort(key=lambda x: (x[0], x[1]))
-                captions = [(v[0], v[1][0]) for v in events
+                captions = [(v[0], v[3][0]) for v in events
                             if v[2] == "text" and FIGURE_RE.match(v[3][0])]
                 readable = 0
                 for top, left, kind, value in events:
@@ -289,7 +289,7 @@ def _docx(doc, raw, *, license, put_asset, limits):
     doc.pages_processed = 1
     doc.processing_warnings.append("docx_page_numbers_unavailable_without_layout_engine")
     children = list(document.element.body.iterchildren())
-    captions = [n.text for n in document.paragraphs if FIGURE_RE.match(n.text)]
+    # A document-wide caption cannot safely be assigned to each figure.
     for el in children:
         if el.tag.endswith("}tbl"):
             table = Table(el, document)
@@ -314,7 +314,7 @@ def _docx(doc, raw, *, license, put_asset, limits):
                 embed = blip.get("{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed")
                 part = document.part.related_parts.get(embed) if embed else None
                 if part and hasattr(part, "blob"):
-                    cap = captions[0] if len(captions) == 1 else None
+                    cap = p.text if FIGURE_RE.match(p.text) else None
                     _asset(doc, part.blob, 1, caption=cap, license=license,
                            put_asset=put_asset, limits=limits,
                            metadata={"page_unknown": True})
@@ -334,7 +334,8 @@ def _html(doc, raw, *, license, put_asset, limits):
     root = soup.body or soup
     for tag in root.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p", "li", "table",
                               "img", "math"], recursive=True):
-        if tag.find_parent(["table", "p", "li", "math"]) is not None:
+        parents = ["table", "li", "math"] if tag.name in {"img", "math"} else ["table", "p", "li", "math"]
+        if tag.find_parent(parents) is not None:
             continue
         if tag.name == "table":
             rows = [[c.get_text(" ", strip=True) for c in r.find_all(["td", "th"], recursive=False)]
@@ -351,7 +352,7 @@ def _html(doc, raw, *, license, put_asset, limits):
                     if len(image) <= limits.max_bytes:
                         _asset(doc, image, 1, caption=caption, license=license,
                                put_asset=put_asset, limits=limits)
-                except (ValueError, Exception):
+                except Exception:
                     doc.processing_warnings.append("invalid_embedded_html_image")
             else:
                 doc.processing_warnings.append("external_html_image_not_fetched")
