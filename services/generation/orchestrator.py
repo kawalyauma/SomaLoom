@@ -13,7 +13,7 @@ from pydantic import ValidationError
 from services.ai.provider import AIProvider, AIRequest, ProviderError
 from services.generation.schema import (
     DraftBlock, DraftSection, EvidenceBundle, GenerationInput,
-    Outcome, Passage, QualityReport, StructuredDraft,
+    Outcome, Passage, QualityReport, StructuredDraft, VisualReference,
 )
 
 SYSTEM_PROMPT = """You write educational drafts for human teacher review.
@@ -108,7 +108,8 @@ def _diverse_evidence(passages: list[Passage], limit: int = 12) -> list[Passage]
 
 
 def _sanitize_section(outcome: Outcome, raw: dict, permitted: dict[UUID, Passage],
-                      unknown: set[UUID], used: set[str]) -> DraftSection:
+                      permitted_visuals: set[str], unknown: set[UUID],
+                      used: set[str]) -> DraftSection:
     if not isinstance(raw, dict):
         raise ProviderError("provider_schema_invalid")
     try:
@@ -129,9 +130,7 @@ def _sanitize_section(outcome: Outcome, raw: dict, permitted: dict[UUID, Passage
             if block.type == "equation" and _simple_arithmetic_invalid(block.latex):
                 block.verification = "unverified"
             block.citations = list(dict.fromkeys(valid))
-            if block.asset_ref and block.asset_ref not in {
-                str(e.id) for e in permitted.values()
-            }:
+            if block.asset_ref and block.asset_ref not in permitted_visuals:
                 block.asset_ref = None  # Agent 3/4 visual references must be verified upstream.
                 block.verification = "unverified"
             key = _norm(block.text)
@@ -178,9 +177,16 @@ async def create_draft(
     sections: list[DraftSection] = []
     unknown_ids: set[UUID] = set()
     used_text: set[str] = set()
+    grouped_visuals: dict[UUID, list[VisualReference]] = defaultdict(list)
+    visual_sources: dict[str, VisualReference] = {}
+    for visual in evidence.visuals:
+        if visual.outcome_id in permitted_ids and str(visual.id) not in visual_sources:
+            grouped_visuals[visual.outcome_id].append(visual)
+            visual_sources[str(visual.id)] = visual
     usage_in = usage_out = 0
     for index, outcome in enumerate(evidence.outcomes):
         selections = _diverse_evidence(grouped.get(outcome.id, []))
+        visuals_for_outcome = grouped_visuals.get(outcome.id, [])[:8]
         if not selections:
             sections.append(DraftSection(
                 outcome_id=outcome.id, heading=outcome.description[:300],
@@ -198,6 +204,7 @@ async def create_draft(
                 "outcome": outcome.model_dump(mode="json"),
                 "teacher_options": request.options,
                 "source_excerpts_untrusted": [p.model_dump(mode="json") for p in selections],
+                "visuals_untrusted": [v.model_dump(mode="json") for v in visuals_for_outcome],
                 "instructions": "Build one complete coherent section. Quote minimally. "
                     "Only cite source IDs from source_excerpts_untrusted. "
                     "Mark genuinely unsupported statements unverified.",
@@ -222,6 +229,7 @@ async def create_draft(
             except (ValueError, TypeError):
                 raise ProviderError("provider_invalid_json") from None
             section = _sanitize_section(outcome, parsed, {p.id: p for p in selections},
+                                        {str(v.id) for v in visuals_for_outcome},
                                         unknown_ids, used_text)
             sections.append(section)
             usage_in += result.input_tokens
@@ -269,6 +277,9 @@ async def create_draft(
     )
     actual_refs = sorted({c for section in sections for block in section.blocks
                           for c in block.citations}, key=str)
+    actual_visuals = sorted({block.asset_ref for section in sections
+                             for block in section.blocks if block.asset_ref})
+
     return StructuredDraft(
         metadata={"subject_id": str(request.subject_id), "level_id": str(request.level_id),
                   "topic_ids": [str(x) for x in request.topic_ids],
@@ -278,5 +289,6 @@ async def create_draft(
         document_type=request.document_type, curriculum_id=request.curriculum_id,
         learning_outcomes=evidence.outcomes, sections=sections,
         references=[sources[c] for c in actual_refs],
+        visual_references=[visual_sources[v] for v in actual_visuals],
         quality_report=report, review_state="awaiting_review",
     )
