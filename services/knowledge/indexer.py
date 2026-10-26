@@ -39,14 +39,14 @@ def rights(resource) -> dict:
     return info
 
 def sources_for_version(db: Session, school: UUID, version_id: UUID):
-    row = db.execute(select(resource_versions, resources.c.title, resources.c.provenance)
+    row = db.execute(select(resource_versions, resources.c.title, resources.c.provenance.label("resource_rights"))
         .join(resources, and_(resources.c.id == resource_versions.c.resource_id,
                               resources.c.tenant_id == resource_versions.c.tenant_id))
         .where(resource_versions.c.id == version_id,
                resource_versions.c.tenant_id == school)).mappings().first()
     if not row:
         raise LookupError("Resource version not found")
-    provenance = rights(row)
+    provenance = rights({"provenance": row["resource_rights"]})
     extra = db.execute(select(extractions.c.id).where(
         extractions.c.tenant_id == school,
         extractions.c.resource_version_id == version_id)).scalars().all()
@@ -121,6 +121,14 @@ def index_version(db: Session, school: UUID, version_id: UUID, embedder=None) ->
             changed += 1
     if changed:
         invalidate_research(db, school, version_id)
+    # A newly uploaded revision supersedes all older revisions of that resource.
+    # Existing approved research anchored to older versions must be refreshed.
+    older = db.execute(select(resource_versions.c.id).where(
+        resource_versions.c.tenant_id == school,
+        resource_versions.c.resource_id == resource["resource_id"],
+        resource_versions.c.version < resource["version"])).scalars().all()
+    for superseded in older:
+        invalidate_research(db, school, superseded)
     db.flush()
     return {"resource_version_id": str(version_id), "indexed": len(seen),
             "changed": changed, "embedding_model": embedder.model if embedder else None}

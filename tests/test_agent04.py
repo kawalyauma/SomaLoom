@@ -198,3 +198,29 @@ def test_authorized_curriculum_import_creates_drafts(client, accounts):
     assert topics_result.json()["total"] == 1
     outcomes_result = client.get(f"/api/v1/topics/{topics_result.json()['items'][0]['id']}/outcomes")
     assert outcomes_result.json()["items"][0]["official"] is False
+
+def test_synthetic_retrieval_recall_at_5(db, accounts):
+    """A tiny *synthetic* labeled benchmark; real-book relevance still needs validation."""
+    import json
+    from pathlib import Path
+
+    fixture = json.loads((Path(__file__).parent / "fixtures" / "agent04_relevance.json").read_text())
+    school = accounts[0][0].id
+    known = {}
+    for example in fixture["resources"]:
+        version, _ = make_version(db, school, example["text"], page=example["page"])
+        known[example["id"]] = str(db.scalar(select(resource_versions.c.resource_id)
+                                              .where(resource_versions.c.id == version)))
+        index_version(db, school, version)
+    scored, empty_tests = [], 0
+    for case in fixture["queries"]:
+        found = search(db, school, case["query"], limit=5)
+        expected = {known[name] for name in case["relevant"]}
+        if not expected:
+            empty_tests += int(len(found) == 0)
+        else:
+            actual = {hit["resource_id"] for hit in found}
+            scored.append(len(actual & expected) / len(expected))
+    recall_at_five = sum(scored) / len(scored)
+    assert recall_at_five >= 0.75, f"Synthetic recall@5: {recall_at_five:.2f}"
+    assert empty_tests == 1, "Unrelated science queries should have no citations"

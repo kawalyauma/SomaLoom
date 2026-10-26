@@ -34,6 +34,11 @@ def query_base(school: UUID, filters: dict | None = None):
              resource_versions.c.resource_id == resources.c.id))
         .where(items.c.tenant_id == school, items.c.access_approved.is_(True),
                resources.c.provenance["access_approved"].as_boolean().is_(True)))
+    # Never return archived versions after a newer upload exists.
+    current_version = select(func.max(resource_versions.c.version)).where(
+        resource_versions.c.resource_id == items.c.resource_id,
+        resource_versions.c.tenant_id == school).correlate(items).scalar_subquery()
+    stmt = stmt.where(resource_versions.c.version == current_version)
     if f.get("resource_ids"):
         stmt = stmt.where(items.c.resource_id.in_([UUID(str(x)) for x in f["resource_ids"][:100]]))
     for key in ("grade", "subject", "curriculum_id"):
