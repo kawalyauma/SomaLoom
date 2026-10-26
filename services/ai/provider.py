@@ -76,6 +76,10 @@ class CodexCLIProvider:
     async def _verify(self) -> None:
         if not self.runner:
             raise ProviderError("codex_isolated_runner_required")
+        from app.core.config import get_settings
+        if (get_settings().app_env == "production"
+                and os.environ.get("AI_CODEX_ISOLATION_ATTESTED") != "1"):
+            raise ProviderError("codex_production_isolation_unverified")
         if not Path(self.runner).is_absolute() or not os.access(self.runner, os.X_OK):
             raise ProviderError("codex_runner_unavailable")
         if self._flags is not None:
