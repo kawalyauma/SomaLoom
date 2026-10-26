@@ -1,0 +1,3 @@
+# Install into Agent 1's API and RQ worker Python environment.
+# Required for FastAPI multipart UploadFile support:
+python-multipart>=0.0.20,<1
