@@ -157,17 +157,6 @@ def publish_version(
     if db.get_bind().dialect.name == "postgresql":
         db.execute(text("SELECT pg_advisory_xact_lock(hashtextextended(:key, 0))"),
                    {"key": f"quota:{tenant_id}"})
-    used = sum(int(p.get("file_size", 0)) for p in db.scalars(
-        select(resource_versions.c.provenance).where(resource_versions.c.tenant_id == tenant_id)
-    ))
-    if used + len(data) > MAX_TENANT_BYTES:
-        raise HTTPException(413, "School storage quota exceeded")
-    if resource_id is None:
-        count = db.scalar(select(func.count()).select_from(resources).where(
-            resources.c.tenant_id == tenant_id
-        ))
-        if count >= MAX_TENANT_RESOURCES:
-            raise HTTPException(413, "School resource count quota exceeded")
     # Serialize identical content imports per tenant without prohibiting legal reimport
     # of originals whose prior resource has been soft-deleted.
     if db.get_bind().dialect.name == "postgresql":
@@ -204,6 +193,17 @@ def publish_version(
         version = latest + 1
     else:
         resource_id, version = uuid4(), 1
+    used = sum(int(p.get("file_size", 0)) for p in db.scalars(
+        select(resource_versions.c.provenance).where(resource_versions.c.tenant_id == tenant_id)
+    ))
+    if used + len(data) > MAX_TENANT_BYTES:
+        raise HTTPException(413, "School storage quota exceeded")
+    if version == 1:
+        count = db.scalar(select(func.count()).select_from(resources).where(
+            resources.c.tenant_id == tenant_id
+        ))
+        if count >= MAX_TENANT_RESOURCES:
+            raise HTTPException(413, "School resource count quota exceeded")
     version_id, job_id, event_id = uuid4(), uuid4(), uuid4()
     key = f"originals/{resource_id}/{version_id}/{MIMES[mime].lstrip('.')}"
     scan_status = scan_original(data)
