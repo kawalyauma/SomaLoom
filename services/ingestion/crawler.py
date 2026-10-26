@@ -101,6 +101,22 @@ def download(url: str, domains: set[str], prefixes: list[str], *,
                 sock.close()
     raise ValueError("Too many redirects")
 
+def fetch_with_backoff(url, domains, paths, **kwargs):
+    """Retry only transient network failures/429/5xx; authorization errors fail closed."""
+    for attempt in range(3):
+        try:
+            return download(url, domains, paths, **kwargs)
+        except (ValueError, OSError, http.client.HTTPException, ssl.SSLError) as exc:
+            if isinstance(exc, ValueError) and not str(exc).startswith((
+                "HTTP 429", "HTTP 500", "HTTP 502", "HTTP 503", "HTTP 504",
+                "DNS lookup failed",
+            )):
+                raise
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+    raise ValueError("Unable to fetch resource")
+
 class ReadableHTML(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -148,7 +164,7 @@ def crawl(seed: str, *, domains: set[str], paths=None, max_pages=100,
         robots_url = f"{origin.scheme}://{origin.hostname}/robots.txt"
         if robots_url not in robots_cache:
             try:
-                _url, body, _type = download(robots_url, domains, ["/"], max_bytes=512 * 1024, robots=True)
+                _url, body, _type = fetch_with_backoff(robots_url, domains, ["/"], max_bytes=512 * 1024, robots=True)
                 parser = RobotFileParser()
                 parser.parse(body.decode("utf-8", errors="replace").splitlines())
                 robots_cache[robots_url] = parser
@@ -162,7 +178,7 @@ def crawl(seed: str, *, domains: set[str], paths=None, max_pages=100,
         else:
             try:
                 time.sleep(delay)
-                final_url, body, content_type = download(url, domains, prefixes)
+                final_url, body, content_type = fetch_with_backoff(url, domains, prefixes)
                 if final_url in visited:
                     continue
                 visited.add(url)
