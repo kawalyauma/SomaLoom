@@ -239,12 +239,16 @@ class FallbackProvider:
 
 
 def provider_available(name: str) -> bool:
+    from app.core.config import get_settings
+    codex_ready = bool(os.getenv("AI_CODEX_RUNNER"))
+    if get_settings().app_env == "production":
+        codex_ready = codex_ready and os.getenv("AI_CODEX_ISOLATION_ATTESTED") == "1"
     if name == "codex":
-        return bool(os.getenv("AI_CODEX_RUNNER"))
+        return codex_ready
     if name == "api":
         return bool(os.getenv("AI_API_KEY"))
     if name == "codex_with_api_fallback":
-        return bool(os.getenv("AI_CODEX_RUNNER") or os.getenv("AI_API_KEY"))
+        return codex_ready or bool(os.getenv("AI_API_KEY"))
     return False
 
 
