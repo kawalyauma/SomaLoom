@@ -113,11 +113,20 @@ def _asset(doc: ExtractedDocument, raw: bytes, page: int, *,
     kind, confidence = classify_visual(caption)
     w, h, dpi = _image_meta(raw, limits.max_image_pixels)
     meta = dict(metadata or {})
+    labels = []
+    # Only accept labels actually recognized from original pixels.
+    if w and h and w * h <= limits.max_image_pixels and w >= 200 and h >= 150:
+        observed = _ocr_image(raw)
+        if observed:
+            labels = [line for line, _, conf in observed if conf >= 0.88][:60]
     if kind == BlockType.map:
-        meta["map"] = map_metadata(caption)
+        meta["map"] = map_metadata(caption, "\n".join(labels))
+        meta["map"]["labels"] = labels
+    elif labels:
+        meta["observed_ocr_labels"] = labels
     review = caption is None or confidence < 0.9 or kind == BlockType.map
     asset = ExtractedAsset(id=asset_id, type=kind, page=page,
-                           object_key=key, caption=caption,
+                           object_key=key, caption=caption, labels=labels,
                            width=w, height=h, dpi=dpi,
                            bbox=bbox, checksum_sha256=digest, license=license,
                            confidence=confidence, needs_review=review, metadata=meta)
@@ -176,7 +185,7 @@ def _ocr_image(raw: bytes, *, psm=3):
     return sorted(result, key=lambda x: (x[1][1], x[1][0]))
 
 
-def _pdf(doc, raw, *, license, put_asset, limits):
+def _pdf(doc, raw, *, license, put_asset, limits, progress=None):
     try:
         import fitz
     except ImportError as exc:
@@ -236,7 +245,17 @@ def _pdf(doc, raw, *, license, put_asset, limits):
                     if kind == "text":
                         text, bbox, heading = value
                         readable += len(text)
-                        _emit_text(doc, text, number, bbox=bbox, heading=heading)
+                        block = _emit_text(doc, text, number, bbox=bbox, heading=heading)
+                        if block and block.type == BlockType.equation and bbox and put_asset:
+                            key = f"extractions/{doc.version_id}/equations/{block.id}.png"
+                            try:
+                                clip = fitz.Rect(bbox)
+                                crop = page.get_pixmap(matrix=fitz.Matrix(3, 3),
+                                                       clip=clip, alpha=False).tobytes("png")
+                                put_asset(key, crop)
+                                block.metadata["original_equation_object_key"] = key
+                            except Exception:
+                                doc.processing_warnings.append(f"equation_crop_failed_{number}")
                     elif kind == "table":
                         bbox, cells = value
                         add_block(doc, BlockType.table, number, table=cells,
@@ -268,6 +287,8 @@ def _pdf(doc, raw, *, license, put_asset, limits):
                                 _emit_text(doc, text, number, bbox=rect,
                                            confidence=conf, is_ocr=True)
                 doc.pages_processed += 1
+                if progress:
+                    progress(doc.pages_processed, min(len(pdf), limits.max_pages))
             except Exception:
                 doc.partial = True
                 doc.processing_warnings.append(f"page_processing_failed_{number}")
@@ -381,7 +402,8 @@ def _html(doc, raw, *, license, put_asset, limits):
 
 def extract_bytes(content: bytes, media_type: str, *,
                   resource_id: UUID, version_id: UUID, license: str = "unknown",
-                  put_asset: AssetWriter | None = None, limits: Limits = Limits()) -> ExtractedDocument:
+                  put_asset: AssetWriter | None = None, limits: Limits = Limits(),
+                  progress: Callable[[int, int], None] | None = None) -> ExtractedDocument:
     """Synchronous pure entrypoint called by RQ worker; caller persists JSON/assets."""
     if not isinstance(content, bytes) or not content:
         raise ExtractionError("Empty resource")
@@ -390,7 +412,8 @@ def extract_bytes(content: bytes, media_type: str, *,
     doc = _new_doc(content, resource_id, version_id)
     mime = media_type.lower().split(";", 1)[0].strip()
     if mime == "application/pdf" or content.startswith(b"%PDF-"):
-        return _pdf(doc, content, license=license, put_asset=put_asset, limits=limits)
+        return _pdf(doc, content, license=license, put_asset=put_asset, limits=limits,
+                    progress=progress)
     if mime in {"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                 "application/msword"} or (content.startswith(b"PK") and mime.endswith("document")):
         return _docx(doc, content, license=license, put_asset=put_asset, limits=limits)
