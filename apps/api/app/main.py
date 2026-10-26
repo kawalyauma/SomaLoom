@@ -11,6 +11,7 @@ from app.auth.router import router as auth_router
 from app.core.config import get_settings
 from app.core.queue import redis_connection
 from app.core.router import router as core_router
+from services.export.router import router as publishing_router
 from contracts.v1.schemas import ErrorResponse
 
 settings = get_settings()
@@ -122,3 +123,4 @@ async def internal_error(request, exc):
 
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(core_router, prefix="/api/v1")
+app.include_router(publishing_router, prefix="/api/v1")

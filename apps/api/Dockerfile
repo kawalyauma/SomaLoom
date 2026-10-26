@@ -7,6 +7,8 @@ RUN pip install --no-cache-dir -r requirements.lock
 COPY apps/api apps/api
 COPY contracts contracts
 COPY services services
+# Publishing formats require vector PDF and editable Office document libraries.
+RUN pip install --no-cache-dir -r services/export/requirements.txt
 COPY db db
 COPY alembic.ini ./
 COPY tools tools
