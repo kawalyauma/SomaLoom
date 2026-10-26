@@ -105,3 +105,24 @@ def test_review_approval_and_audience_export(client, db, accounts, tmp_path, mon
     text = "".join(page.extract_text() or "" for page in PdfReader(BytesIO(binary.content)).pages)
     assert "Find 2 + 2." in text
     assert "SECRET ANSWER" not in text
+
+
+def test_fabricated_evidence_cannot_be_approved(client, db, accounts):
+    schools, users = accounts
+    teacher = next(u for u in users if u.role == "teacher" and u.tenant_id == schools[0].id)
+    reviewer = next(u for u in users if u.role == "reviewer" and u.tenant_id == schools[0].id)
+    document_id, version_id, body = seed_document(db, schools[0], teacher)
+    fabricated_id = str(uuid4())
+    body["evidence_ids"] = [fabricated_id]
+    body["sections"][0]["blocks"][0]["citations"] = [fabricated_id]
+    db.execute(versions.update().where(versions.c.id == version_id).values(body=body))
+    db.commit()
+    assert sign_in(client, reviewer.email).status_code == 200
+    result = client.post(
+        f"/api/v1/documents/{document_id}/versions/{version_id}/review",
+        headers={"Origin":"http://localhost:3000"},
+        json={"decision":"approved", "comments":"Reviewed all source attributions.",
+              "citations_checked":True,"mathematics_checked":True,"licensing_checked":True},
+    )
+    assert result.status_code == 422
+    assert "Evidence" in result.text

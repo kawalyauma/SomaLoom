@@ -23,10 +23,11 @@ bootstrap. Its PR targets `agent/01-platform` until that PR is merged.
 
 ## Known limitations / release blockers
 - UX is a functional first integration slice, not a full production acceptance.
-- The visual editor supports paragraph/heading editing, persisted immutable
+- The visual editor supports text, LaTeX, table cell and caption editing, persisted immutable
   revisions and a version selector. Side-by-side revision diff, section-level
   regeneration and resolved image assets remain unfinished. Unapproved or unsaved
-  edits cannot be printed as approved.
+  edits cannot be printed as approved. Export uses the actual school name;
+  the review API verifies referenced evidence IDs against tenant-scoped source records.
 - PDF equations render vector via Matplotlib SVG; Word equations become editable
   OMML for supported LaTeX constructs. Browser uses native MathML for supported expressions;
   KaTeX/MathJax integration remains to do. For visual assets, publish fails

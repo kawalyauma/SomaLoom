@@ -20,7 +20,9 @@ from app.core.config import get_settings
 from app.core.database import get_db
 from app.core.models import (
     BackgroundJob,
+    School,
     User,
+    evidence,
     documents,
     exports,
     reviews,
@@ -71,6 +73,31 @@ def _version(db: Session, version_id: UUID, tenant_id: UUID):
     return row
 
 
+def _validate_evidence(db: Session, tenant: UUID, body: dict[str, Any]) -> None:
+    """Prevent invented/cross-school evidence IDs from reaching approved exports."""
+    source_ids = body.get("evidence_ids", [])
+    if not isinstance(source_ids, list):
+        raise HTTPException(422, "Document evidence must be a list")
+    try:
+        ids = [UUID(str(value)) for value in source_ids]
+    except (ValueError, TypeError):
+        raise HTTPException(422, "Evidence identifiers must be UUIDs") from None
+    if len(set(ids)) != len(ids):
+        raise HTTPException(422, "Duplicate evidence references")
+    if not ids:
+        return
+    actual = db.execute(
+        select(evidence.c.id, evidence.c.provenance)
+        .where(evidence.c.id.in_(ids), evidence.c.tenant_id == tenant)
+    ).mappings().all()
+    if len(actual) != len(ids):
+        raise HTTPException(422, "Evidence references are not all accessible in this school")
+    for item in actual:
+        provenance = item["provenance"]
+        if not isinstance(provenance, dict) or not provenance.get("source_uri") or not provenance.get("license"):
+            raise HTTPException(422, "Source attribution or license is missing")
+
+
 def _latest_decision(db: Session, version_id: UUID, tenant_id: UUID) -> str | None:
     return db.scalar(
         select(reviews.c.decision)
@@ -116,6 +143,7 @@ def publish(
     body = record["body"]
     if not isinstance(body, dict):
         raise HTTPException(422, "Document body is invalid")
+    _validate_evidence(db, tenant, body)
     # An explicit document version is immutable; each export is a new object key.
     doc = {
         "title": record["title"],
@@ -126,7 +154,8 @@ def publish(
     }
     try:
         renderer = export_pdf if payload.format == "pdf" else export_docx
-        content = renderer(doc, audience=payload.audience)
+        school = db.get(School, tenant)
+        content = renderer(doc, branding={"school_name": school.name if school else "SomaLoom"}, audience=payload.audience)
     except (DocumentValidationError, ValueError) as exc:
         raise HTTPException(422, str(exc)) from exc
     except ModuleNotFoundError as exc:
@@ -326,6 +355,7 @@ def review_version(
     if record is None:
         raise HTTPException(404, "Document version not found")
     if payload.decision == "approved":
+        _validate_evidence(db, tenant, record)
         if not (payload.citations_checked and payload.mathematics_checked and payload.licensing_checked):
             raise HTTPException(422, "All educator verification attestations are required")
         try:
