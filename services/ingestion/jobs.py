@@ -1,7 +1,7 @@
 """RQ tasks and durable outbox delivery. Jobs resolve tenant ownership from the DB."""
 import json
 import os
- import urllib.error
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import timedelta
