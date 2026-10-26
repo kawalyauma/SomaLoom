@@ -27,6 +27,19 @@ Do not reproduce copyrighted excerpts wholesale. Flag contradictions rather than
 Never claim to have checked mathematics or external facts without deterministic verification.
 """
 
+KIND_GUIDANCE = {
+    "lesson_notes": "Provide detailed explanations, examples, activities and concept checks.",
+    "scheme_of_work": "Organize sequential topics, learning outcomes, weeks and resources in tables.",
+    "lesson_plan": "Provide objectives, a timed learning sequence, activities and formative checks.",
+    "teacher_guide": "Include pedagogical explanations, differentiation, resources and assessment.",
+    "exam": "Create varied question blocks with precise wording and appropriate difficulty.",
+    "test": "Create focused question blocks assessing target outcomes.",
+    "quiz": "Create concise question blocks with varied difficulty.",
+    "marking_guide": "Explain answers, marks and evaluation criteria.",
+    "assignment": "Provide instructions, tasks, expected outputs and assessment criteria.",
+    "worksheet": "Provide guided practice tasks and exercises.",
+}
+
 SECTION_SCHEMA = {
     "type": "object",
     "properties": {
@@ -178,6 +191,8 @@ async def create_draft(
         else:
             prompt_data = {
                 "document_type": request.document_type.value,
+                "curriculum_id": str(request.curriculum_id),
+                "document_guidance": KIND_GUIDANCE.get(request.document_type.value, ""),
                 "level_id": str(request.level_id),
                 "subject_id": str(request.subject_id),
                 "outcome": outcome.model_dump(mode="json"),
@@ -233,6 +248,14 @@ async def create_draft(
         warnings.append("Source conflicts or ambiguities require teacher resolution")
     if unsupported:
         warnings.append("Unverified/enrichment material requires teacher verification")
+    if request.document_type.value in {"exam", "test", "quiz", "worksheet", "assignment"} and not any(
+        b.type == "question" for section in sections for b in section.blocks
+    ):
+        warnings.append("Assessment draft lacks structured question blocks")
+    if request.document_type.value == "scheme_of_work" and not any(
+        b.type == "table" for section in sections for b in section.blocks
+    ):
+        warnings.append("Scheme of work needs a structured timetable or coverage table")
     if any(b.type == "equation" and _simple_arithmetic_invalid(b.latex)
            for section in sections for b in section.blocks):
         warnings.append("Independent arithmetic check rejected one or more simple equations")
