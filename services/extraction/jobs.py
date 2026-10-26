@@ -2,11 +2,10 @@
 from __future__ import annotations
 
 import hashlib
-import json
 import logging
 from uuid import UUID, uuid4
 
-from sqlalchemy import insert, select, update
+from sqlalchemy import insert, select
 
 from services.extraction.engine import ExtractionError, extract_bytes
 from services.extraction.models import ExtractedDocument
