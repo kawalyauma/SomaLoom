@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "document_type": "marking_guide",
+  "audience": "teacher",
+  "title": "Marking guide — Synthetic Mathematics Class Test",
+  "school_name": "Example School",
+  "total_marks": 10,
+  "sections": [
+    {
+      "title": "Section A",
+      "questions": [
+        {
+          "number": 1,
+          "marks": 5,
+          "answer": {
+            "numeric_value": 42,
+            "tolerance": 0,
+            "calculation": "6*7",
+            "steps": [
+              {
+                "criterion": "Multiply correctly",
+                "marks": 2
+              },
+              {
+                "criterion": "Final answer 42",
+                "marks": 3
+              }
+            ]
+          },
+          "matching_pairs": {},
+          "source_refs": []
+        },
+        {
+          "number": 2,
+          "marks": 5,
+          "answer": {
+            "correct_option_ids": [
+              "B"
+            ],
+            "explanation": "Four is even."
+          },
+          "matching_pairs": {},
+          "source_refs": []
+        }
+      ]
+    }
+  ]
+}
