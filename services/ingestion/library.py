@@ -23,6 +23,8 @@ from services.ingestion.models import ingestion_outbox
 
 MAX_BYTES = int(os.getenv("INGESTION_MAX_BYTES", str(20 * 1024 * 1024)))
 MAX_FILES = int(os.getenv("INGESTION_MAX_FILES", "20"))
+MAX_TENANT_BYTES = int(os.getenv("INGESTION_TENANT_MAX_BYTES", str(5 * 1024 ** 3)))
+MAX_TENANT_RESOURCES = int(os.getenv("INGESTION_TENANT_MAX_RESOURCES", "50000"))
 CHUNK = 1024 * 1024
 MIMES = {
     "application/pdf": ".pdf",
@@ -151,6 +153,21 @@ def publish_version(
     """Persist original first; then atomically commit metadata, job and outbox event."""
     if not license.strip() or not source_uri.strip():
         raise HTTPException(422, "License and source URI required")
+    # Serialize tenant writes so quota checks and imports stay atomic in PostgreSQL.
+    if db.get_bind().dialect.name == "postgresql":
+        db.execute(text("SELECT pg_advisory_xact_lock(hashtextextended(:key, 0))"),
+                   {"key": f"quota:{tenant_id}"})
+    used = sum(int(p.get("file_size", 0)) for p in db.scalars(
+        select(resource_versions.c.provenance).where(resource_versions.c.tenant_id == tenant_id)
+    ))
+    if used + len(data) > MAX_TENANT_BYTES:
+        raise HTTPException(413, "School storage quota exceeded")
+    if resource_id is None:
+        count = db.scalar(select(func.count()).select_from(resources).where(
+            resources.c.tenant_id == tenant_id
+        ))
+        if count >= MAX_TENANT_RESOURCES:
+            raise HTTPException(413, "School resource count quota exceeded")
     # Serialize identical content imports per tenant without prohibiting legal reimport
     # of originals whose prior resource has been soft-deleted.
     if db.get_bind().dialect.name == "postgresql":
