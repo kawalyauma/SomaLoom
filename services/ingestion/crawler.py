@@ -1,8 +1,6 @@
 """Authorized, bounded crawler; pinned public DNS addresses prevent DNS rebinding/SSRF."""
 import http.client
 import ipaddress
-import json
-import re
 import socket
 import ssl
 import time
