@@ -13,7 +13,7 @@ from app.core.queue import queue
 from services.curriculum.models import mappings, topics
 from services.knowledge.embeddings import Embeddings
 from services.knowledge.indexer import index_version
-from services.knowledge.models import items, outbox, research_records, research_sources
+from services.knowledge.models import outbox, research_records, research_sources
 from services.knowledge.retrieval import search
 
 def potential_conflicts(evidence: list[dict]) -> list[dict]:
@@ -64,7 +64,7 @@ def build_research(db: Session, school: UUID, topic_id: UUID, requested_by: UUID
             concepts = [row["description"]]
         for concept in concepts[:20]:
             # Search independently per outcome concept; do not load entire textbooks.
-            query = f'{topic["title"]} {concept}'[:950]
+            query = concept[:950]
             found = search(db, school, query,
                 filters={"grade": topic["grade"], "subject": topic["subject"]},
                 limit=8, embedder=embedder)

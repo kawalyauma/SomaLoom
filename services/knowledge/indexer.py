@@ -115,6 +115,8 @@ def index_version(db: Session, school: UUID, version_id: UUID, embedder=None) ->
             changed += 1
     for key, old in existing.items():
         if key not in seen:
+            # Remove/expire evidence references before FK cascades discard source links.
+            invalidate_research(db, school, version_id)
             db.execute(delete(items).where(items.c.id == old["id"], items.c.tenant_id == school))
             changed += 1
     if changed:

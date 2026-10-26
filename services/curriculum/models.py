@@ -1,6 +1,6 @@
 """Feature tables; Agent 1 integrates db/proposals/agent-04-knowledge.sql."""
-from sqlalchemy import CheckConstraint, Column, ForeignKey, Index, Integer, JSON, String, Text, UniqueConstraint, Uuid
-from app.core.models import Base, col, domain
+from sqlalchemy import CheckConstraint, ForeignKeyConstraint, Index, Integer, JSON, String, Text, UniqueConstraint, Uuid
+from app.core.models import col, domain
 
 topics = domain("curriculum_topics", [
     col("level", String(80)), col("grade", String(80)),
@@ -25,7 +25,7 @@ mappings.append_constraint(CheckConstraint("review_status IN ('draft','approved'
 mappings.append_constraint(CheckConstraint("required IN (0,1)", name="mapping_required"))
 mappings.append_constraint(
     # Reviewer must belong to the same school; database foreign key prevents forged reviewer IDs.
-    __import__("sqlalchemy").ForeignKeyConstraint(
+    ForeignKeyConstraint(
         ["reviewed_by", "tenant_id"], ["users.id", "users.tenant_id"]
     )
 )

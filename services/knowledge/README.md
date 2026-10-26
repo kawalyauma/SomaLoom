@@ -14,10 +14,10 @@ Each `resources.provenance` MUST contain `{"source_uri":"...","license":"...","a
 Index work is idempotent per resource-version/source/chunk. Changed or removed chunks invalidate records using that version. Approved research is reusable until marked stale. Research bundles contain references to existing indexed sources, not hallucinated citations.
 
 ## Embeddings
-Existing foundation uses `vector(1536)`. Only `text-embedding-3-small` with explicitly requested **1536** dimensions is supported. Set `SOMALOOM_EMBEDDINGS=openai` and `OPENAI_API_KEY` on the EC2 worker to enable semantic indexing and research. Without these, keyword search works but similarity search is **not** enabled; production `/search` presently reports keyword-only even if background embeddings exist. Never load Codex CLI user credentials into the server. Query/vector model changes require a coordinated schema migration and full reindex.
+Existing foundation uses `vector(1536)`. Only `text-embedding-3-small` with explicitly requested **1536** dimensions is supported. Set `SOMALOOM_EMBEDDINGS=openai` and `OPENAI_API_KEY` on the EC2 worker to enable semantic indexing and research. Without these, keyword search works but similarity search is **not** enabled; API search enables semantic ranking when those same environment variables are present; otherwise it truthfully reports keyword-only. Never load Codex CLI user credentials into the server. Query/vector model changes require a coordinated schema migration and full reindex.
 
 ## Routes
-`GET /api/v1/curricula`, `GET /api/v1/curricula/{id}/topics`, `GET /api/v1/topics/{id}/outcomes`, `POST /api/v1/curricula/{id}/topics`, `POST /api/v1/topics/{id}/outcomes`, `POST /api/v1/topics/{topic_id}/mappings/{id}/review`.
+`POST /api/v1/curricula`, `POST /api/v1/curricula/import`, `GET /api/v1/curricula`, `GET /api/v1/curricula/{id}/topics`, `GET /api/v1/topics/{id}/outcomes`, `POST /api/v1/curricula/{id}/topics`, `POST /api/v1/topics/{id}/outcomes`, `POST /api/v1/topics/{topic_id}/mappings/{id}/review`.
 
 `POST /api/v1/search` accepts `{query, topic_id?, tenant_id?, filters?, k?}`. The optional tenant_id is checked against the session; it cannot change the tenant scope. Filters: grade, subject, curriculum_id, source_kind, resource_ids. Returns real quotes, exact resource-version/source block and page, license and URI. No results means missing evidence.
 

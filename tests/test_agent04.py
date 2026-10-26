@@ -173,3 +173,28 @@ def test_curriculum_approval_flow(client, db, accounts):
     assert answer.status_code == 200, answer.text
     result = client.get(f"/api/v1/topics/{tid}/outcomes")
     assert result.json()["items"][0]["official"] is True
+
+def test_authorized_curriculum_import_creates_drafts(client, accounts):
+    sign_in(client, "school_admin0@example.org")
+    data = {
+        "name": "Uganda sample (synthetic)", "country": "Uganda", "version": "draft-1",
+        "level": "Primary", "grade": "P5", "subject": "Science",
+        "source_uri": "https://example.org/synthetic-curriculum",
+        "source_license": "synthetic-test-data",
+        "topics": [{
+            "unit": "Human body", "title": "Digestion", "term": 1, "week": 3,
+            "outcomes": [{
+                "code": "P5.SC.D1", "description": "Explain the function of the stomach",
+                "origin": "official_candidate", "required": True,
+                "concepts": ["stomach", "digestion", "enzymes"]
+            }]
+        }]
+    }
+    resp = client.post("/api/v1/curricula/import",
+                       headers={"Origin": "http://localhost:3000"}, json=data)
+    assert resp.status_code == 201, resp.text
+    assert resp.json()["official_outcomes"] == 0
+    topics_result = client.get(f"/api/v1/curricula/{resp.json()['id']}/topics")
+    assert topics_result.json()["total"] == 1
+    outcomes_result = client.get(f"/api/v1/topics/{topics_result.json()['items'][0]['id']}/outcomes")
+    assert outcomes_result.json()["items"][0]["official"] is False

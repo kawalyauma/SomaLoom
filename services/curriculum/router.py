@@ -150,3 +150,77 @@ def review_mapping(topic_id: UUID, mapping_id: UUID, data: ReviewInput, request:
     db.commit()
     return {"id": mapping_id, "review_status": data.status,
             "official": data.status == "approved" and mapping["origin"] == "official_candidate"}
+
+class CurriculumCreate(BaseModel):
+    name: str = Field(min_length=1, max_length=200)
+    country: str = Field(default="Uganda", min_length=1, max_length=100)
+    version: str = Field(min_length=1, max_length=100)
+
+@router.post("/curricula", status_code=201)
+def create_curriculum(data: CurriculumCreate, request: Request,
+                      user: User = Depends(require_roles("school_admin")),
+                      db: Session = Depends(get_db)):
+    school = tenant(user)
+    cid = db.execute(curricula.insert().values(tenant_id=school,
+        name=data.name, country=data.country, version=data.version)
+        .returning(curricula.c.id)).scalar_one()
+    audit(db, user, "curriculum.create", cid, request)
+    db.commit()
+    return {"id": cid, "name": data.name, "country": data.country, "version": data.version}
+
+class ImportedTopic(BaseModel):
+    unit: str = Field(min_length=1, max_length=200)
+    title: str = Field(min_length=1, max_length=300)
+    term: int | None = Field(default=None, ge=1, le=4)
+    week: int | None = Field(default=None, ge=1, le=53)
+    outcomes: list[OutcomeInput] = Field(min_length=1, max_length=25)
+
+class CurriculumImport(BaseModel):
+    name: str = Field(min_length=1, max_length=200)
+    country: str = Field(default="Uganda", min_length=1, max_length=100)
+    version: str = Field(min_length=1, max_length=100)
+    level: str = Field(min_length=1, max_length=80)
+    grade: str = Field(min_length=1, max_length=80)
+    subject: str = Field(min_length=1, max_length=120)
+    source_uri: str = Field(min_length=5)
+    source_license: str = Field(min_length=1, max_length=160)
+    topics: list[ImportedTopic] = Field(min_length=1, max_length=200)
+
+@router.post("/curricula/import", status_code=201)
+def import_curriculum(data: CurriculumImport, request: Request,
+                      user: User = Depends(require_roles("school_admin")),
+                      db: Session = Depends(get_db)):
+    # Explicit admin-supplied source metadata, NOT automatic official endorsement.
+    school = tenant(user)
+    cid = db.execute(curricula.insert().values(tenant_id=school,
+        name=data.name, country=data.country, version=data.version)
+        .returning(curricula.c.id)).scalar_one()
+    count = 0
+    for index, item in enumerate(data.topics):
+        tid = db.execute(topics.insert().values(tenant_id=school, curriculum_id=cid,
+            level=data.level, grade=data.grade, subject=data.subject,
+            unit=item.unit, title=item.title, kind="topic", term=item.term,
+            week=item.week, sequence=index + 1, prerequisites=[],
+            source_uri=data.source_uri, source_license=data.source_license)
+            .returning(topics.c.id)).scalar_one()
+        for outcome in item.outcomes:
+            if outcome.origin == "official_candidate" and (
+                not outcome.source_uri or not outcome.source_license
+            ):
+                # Inherit the authorized document's explicit provenance.
+                source_uri, source_license = data.source_uri, data.source_license
+            else:
+                source_uri, source_license = outcome.source_uri, outcome.source_license
+            oid = db.execute(outcomes.insert().values(tenant_id=school, curriculum_id=cid,
+                code=outcome.code, description=outcome.description)
+                .returning(outcomes.c.id)).scalar_one()
+            db.execute(mappings.insert().values(tenant_id=school, topic_id=tid,
+                outcome_id=oid, required=int(outcome.required), origin=outcome.origin,
+                review_status="draft", source_uri=source_uri,
+                source_license=source_license, revision=1,
+                concepts=outcome.concepts))
+            count += 1
+    audit(db, user, "curriculum.import", cid, request)
+    db.commit()
+    return {"id": cid, "topics": len(data.topics), "draft_outcomes": count,
+            "official_outcomes": 0, "review_status": "draft"}

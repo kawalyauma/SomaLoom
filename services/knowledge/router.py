@@ -1,6 +1,7 @@
 """Authenticated feature router; Agent 1 registers it with prefix /api/v1."""
+import os
 from uuid import UUID
-from fastapi import APIRouter, Depends, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -9,6 +10,7 @@ from app.auth.security import current_user, require_roles
 from app.core.database import get_db
 from app.core.models import BackgroundJob, User, resource_versions
 from services.curriculum.models import topics
+from services.knowledge.embeddings import Embeddings
 from services.knowledge.models import research_records
 from services.knowledge.research import dispatch_pending, submit
 from services.knowledge.retrieval import lookup, search
@@ -45,12 +47,16 @@ def hybrid_search(data: SearchInput, user: User = Depends(current_user),
         topic = topic_or_404(db, school, data.topic_id)
         filters.update(grade=topic["grade"], subject=topic["subject"])
     try:
-        results = search(db, school, data.query, filters=filters, limit=data.k)
+        embedded = os.environ.get("SOMALOOM_EMBEDDINGS") == "openai"
+        results = search(db, school, data.query, filters=filters, limit=data.k,
+                         embedder=Embeddings() if embedded else None)
+    except RuntimeError as exc:
+        raise HTTPException(503, "Embedding provider unavailable") from exc
     except ValueError as exc:
         raise HTTPException(422, str(exc)) from exc
     return {"items": results, "total": len(results), "page": 1, "page_size": data.k,
-            "retrieval_mode": "keyword",
-            "semantic_available": False}
+            "retrieval_mode": "hybrid" if embedded else "keyword",
+            "semantic_available": embedded}
 
 @router.get("/citations/{item_id}")
 def citation(item_id: UUID, user: User = Depends(current_user),
