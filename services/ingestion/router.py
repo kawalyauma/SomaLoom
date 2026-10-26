@@ -416,7 +416,22 @@ def retry_import(run_id: UUID, user: User = Depends(require_roles("school_admin"
         raise HTTPException(404, "Import not found")
     if run["status"] not in {"failed", "cancelled"}:
         raise HTTPException(409, "Import not retryable")
-    db.execute(import_runs.update().where(import_runs.c.id == run_id).values(status="queued", error=None))
+    checkpoint = dict(run["checkpoint"])
+    prior = dict(checkpoint.get("crawl") or {})
+    if prior:
+        pending = list(prior.get("pending", []))
+        visited = set(prior.get("visited", []))
+        for item in prior.get("reports", []):
+            if item.get("status") == "error":
+                url = item.get("url")
+                if url:
+                    pending.append([url, 0])
+                    visited.discard(url)
+        prior["pending"], prior["visited"] = pending, sorted(visited)
+        checkpoint["crawl"] = prior
+    db.execute(import_runs.update().where(import_runs.c.id == run_id).values(
+        status="queued", error=None, checkpoint=checkpoint,
+    ))
     job = db.get(BackgroundJob, run["job_id"])
     job.status, job.progress, job.finished_at, job.error = "queued", 0, None, None
     audit(db, user, "ingestion.web.retried", run_id)
