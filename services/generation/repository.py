@@ -2,13 +2,14 @@
 from __future__ import annotations
 
 import hashlib
+import os
 from uuid import UUID, NAMESPACE_URL, uuid4, uuid5
 
-from sqlalchemy import insert, select
+from sqlalchemy import func, insert, select
 from sqlalchemy.orm import Session
 
 from app.core.models import (
-    BackgroundJob, documents, evidence, generation_evidence,
+    BackgroundJob, School, documents, evidence, generation_evidence,
     generations, outcomes, versions,
 )
 from services.generation.schema import (
@@ -36,6 +37,16 @@ def create_record(db: Session, tenant_id: UUID, actor_id: UUID,
         if not old or old.parameters.get("fingerprint") != fingerprint:
             raise ValueError("idempotency_conflict")
         return stable_id, old.id, False
+    # Serialize tenant submissions on PostgreSQL before enforcing cost/concurrency quota.
+    if not db.get(School, tenant_id, with_for_update=True):
+        raise ValueError("school_not_found")
+    limit = max(1, min(10, int(os.getenv("AI_MAX_ACTIVE_GENERATIONS", "3"))))
+    active = db.scalar(select(func.count()).select_from(BackgroundJob).where(
+        BackgroundJob.tenant_id == tenant_id, BackgroundJob.kind == "generation",
+        BackgroundJob.status.in_(("queued", "running")),
+    ))
+    if active >= limit:
+        raise ValueError("generation_queue_limit")
     background = BackgroundJob(id=stable_id, tenant_id=tenant_id,
                                kind="generation", status="queued", progress=0)
     db.add(background)
