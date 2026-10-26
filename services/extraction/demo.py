@@ -34,7 +34,7 @@ def passage() -> bytes:
       <tr><td>Moving bicycle</td><td>Kinetic energy</td></tr>
       <tr><td>Battery</td><td>Chemical energy</td></tr></table>
     <p>Mathematically, kinetic energy can be calculated using:</p>
-    <math><annotation encoding="application/x-tex">E = \\frac{1}{2} m v^2</annotation></math>
+    <math><annotation encoding="application/x-tex">E = \frac{{1}}{{2}} m v^2</annotation></math>
     <h2>Exercise 1</h2><p>Calculate the kinetic energy of a moving object.</p>
     </body></html>"""
     return html.encode("utf-8")
