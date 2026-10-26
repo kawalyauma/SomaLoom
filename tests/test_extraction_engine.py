@@ -158,3 +158,25 @@ def test_html_does_not_fetch_external_images():
     assert "external_html_image_not_fetched" in doc.processing_warnings
     assert not doc.assets
     assert any(b.needs_review and b.type == BlockType.figure for b in doc.blocks)
+
+
+def test_demo_equation_is_a_real_typeset_fraction():
+    from services.extraction.demo import passage
+    doc = run(passage(), "text/html")
+    eqs = [b for b in doc.blocks if b.type == BlockType.equation]
+    assert eqs and any(r"\frac{1}{2}" in (b.latex or "") for b in eqs)
+    assert all(b.metadata.get("math_render_checked") for b in eqs)
+
+
+def test_docx_adjacent_figure_caption_is_linked():
+    docx = pytest.importorskip("docx")
+    source = docx.Document()
+    source.add_paragraph("Illustration of energy.")
+    source.add_picture(io.BytesIO(tiny_png()))
+    source.add_paragraph("Figure 1: Diagram of energy transfer")
+    content = io.BytesIO()
+    source.save(content)
+    result = run(content.getvalue(),
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+    assert result.assets
+    assert result.assets[0].caption == "Figure 1: Diagram of energy transfer"
