@@ -2,18 +2,17 @@
 from __future__ import annotations
 
 import hashlib
-import json
 from uuid import UUID, NAMESPACE_URL, uuid4, uuid5
 
-from sqlalchemy import and_, func, insert, select
+from sqlalchemy import insert, select
 from sqlalchemy.orm import Session
 
 from app.core.models import (
-    BackgroundJob, blocks, documents, evidence, generation_evidence,
+    BackgroundJob, documents, evidence, generation_evidence,
     generations, outcomes, versions,
 )
 from services.generation.schema import (
-    EvidenceBundle, GenerationInput, GenerationStatus, Outcome, Passage, StructuredDraft,
+    EvidenceBundle, GenerationInput, Outcome, Passage, StructuredDraft,
 )
 
 
@@ -101,7 +100,7 @@ def retrieve_evidence(db: Session, tenant_id: UUID,
 
 def owned_record(db: Session, generation_id: UUID, tenant_id: UUID):
     return db.execute(
-        select(generations.c.id, generations.c.job_id, generations.c.parameters,
+        select(generations.c.id, generations.c.job_id, generations.c.requested_by, generations.c.parameters,
                BackgroundJob.status, BackgroundJob.progress, BackgroundJob.error)
         .join(BackgroundJob, BackgroundJob.id == generations.c.job_id)
         .where(generations.c.id == generation_id, generations.c.tenant_id == tenant_id,
