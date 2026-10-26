@@ -68,6 +68,7 @@ def main(argv=None):
     web.add_argument("--dry-run", action="store_true")
     web.add_argument("--authorized", action="store_true", help="Confirm express authorization")
     web.add_argument("--checkpoint", default=".somaloom-web-checkpoint.json")
+    web.add_argument("--reset", action="store_true", help="Ignore old checkpoint and recrawl")
     web.add_argument("--report", default="somaloom-import-report.json")
     web.add_argument("--api-url", default=os.getenv("SOMALOOM_API_URL", "http://localhost:8000"))
     web.add_argument("--token", default=os.getenv("SOMALOOM_API_TOKEN"))
@@ -80,7 +81,7 @@ def main(argv=None):
         if not args.dry_run and (not args.source_id or not args.token):
             parser.error("Live import requires SOMALOOM_SOURCE_ID and SOMALOOM_API_TOKEN")
         resume = None
-        if Path(args.checkpoint).exists():
+        if Path(args.checkpoint).exists() and not args.reset:
             resume = json.loads(Path(args.checkpoint).read_text())
             if resume.get("seed") != canonical(args.url):
                 parser.error("Checkpoint belongs to another crawl")
