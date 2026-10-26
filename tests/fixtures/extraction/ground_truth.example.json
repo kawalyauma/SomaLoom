@@ -1,0 +1,4 @@
+{
+  "cases": [],
+  "_explanation": "Provide independently verified source/prediction pairs. Empty fixtures deliberately produce null metrics. See services/extraction/evaluation.py."
+}
