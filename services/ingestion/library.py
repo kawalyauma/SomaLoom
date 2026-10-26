@@ -174,6 +174,26 @@ def publish_version(
         .limit(1)
     ).first()
     if same and resource_id is None:
+        # Preserve additional citation/licensing paths for a reused original.
+        original = db.execute(select(resources).where(
+            resources.c.id == same.resource_id, resources.c.tenant_id == tenant_id
+        )).mappings().first()
+        if original:
+            provenance = dict(original["provenance"])
+            existing = [provenance.get("source_uri")] + [
+                s["source_uri"] for s in provenance.get("alternate_sources", [])
+            ]
+            if source_uri not in existing:
+                alternatives = list(provenance.get("alternate_sources", []))
+                alternatives.append({"source_uri": source_uri, "license": license,
+                                     "source_type": source_type})
+                provenance["alternate_sources"] = alternatives[-200:]
+                db.execute(resources.update().where(
+                    resources.c.id == same.resource_id, resources.c.tenant_id == tenant_id
+                ).values(provenance=provenance))
+                _audit(db, tenant_id, actor_id, "ingestion.resource.source_linked",
+                       same.resource_id)
+                db.commit()
         return {"resource_id": same.resource_id, "version_id": same.id, "duplicate": True}
     if resource_id is None and source_type in {"web", "telegram"}:
         previous = db.execute(select(resources).where(
