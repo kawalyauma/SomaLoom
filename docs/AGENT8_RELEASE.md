@@ -19,7 +19,7 @@ bootstrap. Its PR targets `agent/01-platform` until that PR is merged.
 - **Still require interface agreement**: persisted document listing/versions,
   per-block regeneration, approval/rejection API, publisher job submission
   and secure scoped download. UI proposes `GET /documents` and `POST /exports`,
-  but must be reconciled with owners before declaring those pages live.
+  and adds a tenant-scoped synchronous export API; document listing and export are implemented here, while versioned save and durable approval management still require Agent 5 coordination.
 
 ## Known limitations / release blockers
 - UX is a functional first integration slice, not a full production acceptance.
@@ -27,11 +27,10 @@ bootstrap. Its PR targets `agent/01-platform` until that PR is merged.
   revision diff, resolved image assets and true math-browser rendering are
   outstanding and visibly labeled. Unsaved edits cannot be printed as approved.
 - PDF equations render vector via Matplotlib SVG; Word equations become editable
-  OMML for supported LaTeX constructs. Browser currently shows LaTeX source;
+  OMML for supported LaTeX constructs. Browser uses native MathML for supported expressions;
   KaTeX/MathJax integration remains to do. For visual assets, publish fails
   preflight rather than inventing imagery or using untrusted URLs.
-- DOCX/PDF Python exporters are libraries pending approved version storage,
-  tenant-authorized asset resolution and an authenticated API router.
+- DOCX/PDF exporters are attached to a tenant-scoped synchronous export router, which is registered additively with FastAPI. Rendering dependencies must be installed into the EC2 image before export can work; tenant-authorized assets and approval creation remain integration gates.
 - No native PostgreSQL, Docker, EC2 host, TLS, DNS, off-instance backup or
   restore was verified by this work. GitHub Actions intentionally not triggered.
 - Cross-browser and real school educator acceptance remain outstanding.
