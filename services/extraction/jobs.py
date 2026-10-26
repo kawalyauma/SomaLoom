@@ -159,6 +159,7 @@ def process_extraction(job_id: str) -> dict:
                 license=license,
                 put_asset=lambda k, data: put_idempotent(store, job.tenant_id, k, data),
                 progress=progress,
+                source_uri=(version["provenance"] or {}).get("source_uri"),
             )
             # A completed JSON is published immutably and can be reconstructed after crashes.
             encoded = doc.model_dump_json(indent=2).encode("utf-8")
