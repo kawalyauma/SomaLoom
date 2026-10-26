@@ -68,7 +68,7 @@ Agent 1 `AI_PROVIDER` values: `disabled` (default), `codex`,
 `api`, `codex_with_api_fallback`.
 
 - `AI_MODEL`: explicit supported model name (provider-dependent)
-- `AI_CODEX_RUNNER`: absolute executable path to a **hardened, independently
+- `AI_CODEX_ISOLATION_ATTESTED=1`: explicitly required in production only after\n  an operator has verified container and credential separation on the real host.\n- `AI_CODEX_RUNNER`: absolute executable path to a **hardened, independently
   isolated Codex runner** with exec CLI semantics. Not a simple alias to `codex`.
 - `AI_API_KEY`: dedicated server-side managed inference API key; not a login session.
 - `AI_API_ENDPOINT`: optional HTTPS OpenAI-compatible chat completions URL.
