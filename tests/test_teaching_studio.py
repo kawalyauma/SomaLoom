@@ -80,7 +80,11 @@ def test_all_four_templates_have_mapped_outcomes(typ):
 
 
 def test_math_native_equations_tables_and_diagram():
-    spec, bundle, body = fixture(TeachingType.lesson_notes, subject="Mathematics")
+    spec, bundle, body = fixture(TeachingType.lesson_notes, subject="P5 Mathematics")
+    bundle.outcomes[0].description = "Add whole numbers with counters"
+    bundle.evidence[0].excerpt = "Two counters and three counters make five counters."
+    for section in body.sections:
+        section.blocks[0].text = "Model adding groups of counters; explain the steps."
     body.sections[4].blocks.extend([
         TeachingBlock(kind="equation", latex=r"2 + 3 = 5", citation_ids=[EID], outcome_ids=[OID]),
         TeachingBlock(kind="table", rows=[["n", "n+1"], ["2", "3"]],
@@ -139,8 +143,9 @@ class FakeProvider:
         return AIResult(text=self.body.model_dump_json(), provider="fixture", model="fake-test")
 
 
-def test_real_service_adapter_returns_core_generated_document():
-    spec, bundle, body = fixture(TeachingType.teacher_guide)
+@pytest.mark.parametrize("typ", list(TeachingType))
+def test_real_service_adapter_returns_core_generated_document(typ):
+    spec, bundle, body = fixture(typ)
     result = asyncio.run(TeachingStudio(FakeProvider(body), "fake-test").generate(
         spec=spec, evidence=bundle, tenant_id=TENANT, generation_job_id=JOB))
     assert result.document["tenant_id"] == str(TENANT)
