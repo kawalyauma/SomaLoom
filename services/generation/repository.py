@@ -1,0 +1,224 @@
+"""Tenant-scoped persistence over Agent 1's established tables (no shadow schema)."""
+from __future__ import annotations
+
+import hashlib
+import os
+from uuid import UUID, NAMESPACE_URL, uuid4, uuid5
+
+from sqlalchemy import func, insert, select
+from sqlalchemy.orm import Session
+
+from app.core.models import (
+    BackgroundJob, School, blocks, documents, evidence, generation_evidence, visuals,
+    generations, outcomes, versions,
+)
+from services.generation.schema import (
+    EvidenceBundle, GenerationInput, Outcome, Passage, StructuredDraft, VisualReference,
+)
+
+
+def _fingerprint(data: GenerationInput) -> str:
+    raw = data.model_dump_json(exclude_none=True)
+    return hashlib.sha256(raw.encode()).hexdigest()
+
+
+def create_record(db: Session, tenant_id: UUID, actor_id: UUID,
+                  payload: GenerationInput, key: str | None = None) -> tuple[UUID, UUID, bool]:
+    """Request idempotency uses deterministic PK; caller handles unique collision/retry."""
+    stable_id = uuid5(NAMESPACE_URL, f"somaloom:{tenant_id}:{actor_id}:{key}") if key else uuid4()
+    fingerprint = _fingerprint(payload)
+    existing = db.get(BackgroundJob, stable_id)
+    if existing:
+        if existing.tenant_id != tenant_id or existing.kind != "generation":
+            raise ValueError("idempotency_conflict")
+        old = db.execute(select(generations.c.id, generations.c.parameters)
+                         .where(generations.c.job_id == stable_id,
+                                generations.c.tenant_id == tenant_id)).first()
+        if not old or old.parameters.get("fingerprint") != fingerprint:
+            raise ValueError("idempotency_conflict")
+        return stable_id, old.id, False
+    # Serialize tenant submissions on PostgreSQL before enforcing cost/concurrency quota.
+    if not db.get(School, tenant_id, with_for_update=True):
+        raise ValueError("school_not_found")
+    limit = max(1, min(10, int(os.getenv("AI_MAX_ACTIVE_GENERATIONS", "3"))))
+    active = db.scalar(select(func.count()).select_from(BackgroundJob).where(
+        BackgroundJob.tenant_id == tenant_id, BackgroundJob.kind == "generation",
+        BackgroundJob.status.in_(("queued", "running")),
+    ))
+    if active >= limit:
+        raise ValueError("generation_queue_limit")
+    background = BackgroundJob(id=stable_id, tenant_id=tenant_id,
+                               kind="generation", status="queued", progress=0)
+    db.add(background)
+    db.flush()
+    generated_id = uuid4()
+    db.execute(insert(generations).values(
+        id=generated_id, tenant_id=tenant_id, job_id=stable_id,
+        requested_by=actor_id, document_type=payload.document_type.value,
+        parameters={"request": payload.model_dump(mode="json"),
+                    "fingerprint": fingerprint, "stage": "queued", "attempts": 0},
+    ))
+    db.commit()
+    return stable_id, generated_id, True
+
+
+def retrieve_evidence(db: Session, tenant_id: UUID,
+                      request: GenerationInput) -> EvidenceBundle:
+    """Temporary Agent 4 bridge. topic_ids must currently be actual outcome UUIDs.
+
+    Agent 4 may replace this function with its permission-aware knowledge retriever,
+    returning the exact EvidenceBundle contract. Never fabricate learning outcomes.
+    """
+    found = db.execute(select(outcomes).where(
+        outcomes.c.tenant_id == tenant_id,
+        outcomes.c.curriculum_id == request.curriculum_id,
+        outcomes.c.id.in_(request.topic_ids),
+    )).mappings().all()
+    by_id = {r["id"]: Outcome(id=r["id"], code=r["code"],
+                             description=r["description"]) for r in found}
+    if set(request.topic_ids) != set(by_id):
+        raise ValueError("topic_outcome_mapping_missing")
+    rows = db.execute(
+        select(evidence.c.id, evidence.c.outcome_id, evidence.c.quote,
+               evidence.c.provenance)
+        .where(evidence.c.tenant_id == tenant_id,
+               evidence.c.outcome_id.in_(list(by_id)))
+        .order_by(evidence.c.id).limit(300)
+    ).mappings().all()
+    allowed_licenses = request.resource_filters.get("licenses")
+    if allowed_licenses is not None and (
+        not isinstance(allowed_licenses, list) or
+        len(allowed_licenses) > 30 or
+        not all(isinstance(v, str) for v in allowed_licenses)
+    ):
+        raise ValueError("invalid_resource_filter")
+    passages = []
+    for r in rows:
+        prov = r["provenance"] or {}
+        license_id = str(prov.get("license") or "").strip()
+        if not license_id or license_id.lower() in {"unknown", "unspecified"}:
+            continue  # fail closed: rights are not established by absent metadata
+        if allowed_licenses is not None and license_id not in allowed_licenses:
+            continue
+        quote = (r["quote"] or "").strip()[:2500]
+        if not quote:
+            continue
+        passages.append(Passage(
+            id=r["id"], outcome_id=r["outcome_id"],
+            quote=quote, source_title=prov.get("title"),
+            source_uri=prov.get("source_uri"), license=prov.get("license"),
+        ))
+    visual_refs = []
+    if passages:
+        # A visual is eligible only when it shares the licensed evidence's
+        # extraction and page; this prevents cross-school/unrelated asset links.
+        visual_rows = db.execute(
+            select(visuals.c.id, visuals.c.kind, visuals.c.caption,
+                   visuals.c.page, evidence.c.outcome_id)
+            .select_from(visuals.join(
+                blocks, (visuals.c.extraction_id == blocks.c.extraction_id)
+                & (visuals.c.page == blocks.c.page)
+                & (visuals.c.tenant_id == blocks.c.tenant_id),
+            ).join(
+                evidence, (evidence.c.content_block_id == blocks.c.id)
+                & (evidence.c.tenant_id == blocks.c.tenant_id),
+            ))
+            .where(visuals.c.tenant_id == tenant_id,
+                   evidence.c.id.in_([p.id for p in passages]))
+            .limit(300)
+        ).mappings().all()
+        known_visuals = set()
+        for image in visual_rows:
+            key = (image["id"], image["outcome_id"])
+            if key in known_visuals:
+                continue
+            known_visuals.add(key)
+            visual_refs.append(VisualReference(
+                id=image["id"], outcome_id=image["outcome_id"],
+                kind=image["kind"], caption=(image["caption"] or "")[:500],
+                page=image["page"],
+            ))
+    return EvidenceBundle(outcomes=[by_id[x] for x in request.topic_ids],
+                          passages=passages, visuals=visual_refs)
+
+
+def owned_record(db: Session, generation_id: UUID, tenant_id: UUID):
+    return db.execute(
+        select(generations.c.id, generations.c.job_id, generations.c.requested_by, generations.c.parameters,
+               BackgroundJob.status, BackgroundJob.progress, BackgroundJob.error)
+        .join(BackgroundJob, BackgroundJob.id == generations.c.job_id)
+        .where(generations.c.id == generation_id, generations.c.tenant_id == tenant_id,
+               BackgroundJob.tenant_id == tenant_id)
+    ).first()
+
+
+def draft_record(db: Session, generation_id: UUID, tenant_id: UUID):
+    return db.execute(
+        select(versions.c.body, versions.c.version, documents.c.id)
+        .join(documents, documents.c.id == versions.c.document_id)
+        .where(documents.c.generation_job_id == generation_id,
+               documents.c.tenant_id == tenant_id, versions.c.tenant_id == tenant_id)
+        .order_by(versions.c.version.desc()).limit(1)
+    ).first()
+
+
+def save_draft(db: Session, tenant_id: UUID, generation_id: UUID,
+               draft: StructuredDraft) -> UUID:
+    old = draft_record(db, generation_id, tenant_id)
+    if old:
+        return old.id
+    identifier = uuid4()
+    first = draft.learning_outcomes[0]
+    db.execute(insert(documents).values(
+        id=identifier, tenant_id=tenant_id, generation_job_id=generation_id,
+        title=f"{draft.document_type.value}: {first.description[:150]}",
+        document_type=draft.document_type.value,
+    ))
+    db.execute(insert(versions).values(
+        id=uuid4(), tenant_id=tenant_id, document_id=identifier,
+        version=1, body=draft.model_dump(mode="json"),
+    ))
+    for ref in draft.references:
+        db.execute(insert(generation_evidence).values(
+            id=uuid4(), tenant_id=tenant_id,
+            generation_job_id=generation_id, evidence_id=ref.id,
+        ))
+    return identifier
+
+
+def update_progress(db: Session, job_id: UUID, tenant_id: UUID,
+                    stage: str, progress: int) -> bool:
+    job = db.get(BackgroundJob, job_id)
+    if not job or job.tenant_id != tenant_id or job.status == "cancelled":
+        return False
+    if job.status in ("succeeded", "failed"):
+        return False
+    job.status = "running"
+    job.progress = max(job.progress, min(99, progress))
+    row = db.execute(select(generations).where(
+        generations.c.job_id == job_id, generations.c.tenant_id == tenant_id
+    )).mappings().first()
+    if row:
+        values = dict(row["parameters"] or {})
+        values["stage"] = stage
+        db.execute(generations.update().where(
+            generations.c.id == row["id"], generations.c.tenant_id == tenant_id
+        ).values(parameters=values))
+    db.commit()
+    return True
+
+
+def finish(db: Session, job_id: UUID, tenant_id: UUID, status: str,
+           error: str | None = None) -> bool:
+    from datetime import datetime, timezone
+    job = db.get(BackgroundJob, job_id)
+    if not job or job.tenant_id != tenant_id or job.status == "cancelled":
+        return False
+    if job.status == "succeeded":
+        return False
+    job.status = status
+    job.progress = 100 if status == "succeeded" else job.progress
+    job.error = error  # classified code only, never raw provider output
+    job.finished_at = datetime.now(timezone.utc)
+    db.commit()
+    return True
