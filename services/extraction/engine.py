@@ -289,11 +289,11 @@ def _pdf(doc, raw, *, license, put_asset, limits, progress=None):
                                 _emit_text(doc, text, number, bbox=rect,
                                            confidence=conf, is_ocr=True)
                 doc.pages_processed += 1
-                if progress:
-                    progress(doc.pages_processed, min(len(pdf), limits.max_pages))
             except Exception:
                 doc.partial = True
                 doc.processing_warnings.append(f"page_processing_failed_{number}")
+            if progress:
+                progress(page_no + 1, min(len(pdf), limits.max_pages))
     return doc
 
 
@@ -450,7 +450,7 @@ def extract_bytes(content: bytes, media_type: str, *,
                                 put_asset=put_asset, limits=limits), source_uri)
     if mime in {"text/html", "application/xhtml+xml"}:
         return _finalize(_html(doc, content, license=license,
-                                put_asset=put_asset, limits=limits))
+                                put_asset=put_asset, limits=limits), source_uri)
     if mime.startswith("image/"):
         _asset(doc, content, 1, caption=None, license=license,
                put_asset=put_asset, limits=limits)
