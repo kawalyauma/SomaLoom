@@ -100,7 +100,7 @@ def validate_teaching_document(
     evidence = {source.id: source for source in bundle.evidence}
     targets = set(spec.outcome_ids)
     used_coverage: set[UUID] = set()
-    available_assets = {source.asset_id for source in bundle.evidence if source.asset_id}
+    available_assets = {source.asset_id for source in bundle.evidence if source.asset_id and source.asset_permission_verified}
     used_visuals: set[str] = set()
     text_counts: Counter[str] = Counter()
     block_ids: set[UUID] = set()
