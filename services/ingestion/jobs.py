@@ -1,15 +1,13 @@
 """RQ tasks and durable outbox delivery. Jobs resolve tenant ownership from the DB."""
 import json
 import os
-import secrets
-import time
-import urllib.error
+ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import timedelta
 from uuid import UUID, uuid4
 
-from sqlalchemy import and_, select
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.core.database import SessionLocal
@@ -32,7 +30,9 @@ def transition(db, job_id, status, progress=None, error=None):
     job = db.get(BackgroundJob, job_id)
     if not job:
         raise ValueError("Missing job")
-    if job.status == "cancelled":
+    if job.status in {"cancelled", "succeeded"}:
+        return False
+    if status == "running" and job.status == "running":
         return False
     job.status = status
     if progress is not None:
@@ -245,9 +245,14 @@ def recover_queued(limit=25):
             for row in rows:
                 try:
                     enqueue(kind, row["id"])
-                    db.execute(table.update().where(table.c.id == row["id"]).values(
-                        status="scheduled" if table is import_runs else "queued"
-                    ))
+                    if table is import_runs:
+                        db.execute(table.update().where(
+                            table.c.id == row["id"], table.c.status == "queued"
+                        ).values(status="scheduled"))
+                    else:
+                        db.execute(table.update().where(
+                            table.c.id == row["id"], table.c.state == "queued"
+                        ).values(state="scheduled"))
                     db.commit()
                 except Exception:
                     db.rollback()
