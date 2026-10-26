@@ -63,6 +63,37 @@ def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().casefold()
 
 
+def _simple_arithmetic_invalid(latex: str | None) -> bool:
+    """Only validate simple integer equations of the form a + b = c."""
+    if not latex:
+        return False
+    match = re.fullmatch(r"\s*(-?\d+)\s*([+*/-])\s*(-?\d+)\s*=\s*(-?\d+)\s*", latex)
+    if not match:
+        return False
+    a, op, b, answer = match.groups()
+    x, y, z = int(a), int(b), int(answer)
+    if op == "+":
+        return x + y != z
+    if op == "-":
+        return x - y != z
+    if op == "*":
+        return x * y != z
+    return y == 0 or x != y * z
+
+
+def _diverse_evidence(passages: list[Passage], limit: int = 12) -> list[Passage]:
+    """Round-robin across independently attributed sources."""
+    by_source: dict[str, list[Passage]] = defaultdict(list)
+    for entry in passages:
+        by_source[entry.source_uri or entry.source_title or str(entry.id)].append(entry)
+    chosen: list[Passage] = []
+    while len(chosen) < limit and any(by_source.values()):
+        for bucket in by_source.values():
+            if bucket and len(chosen) < limit:
+                chosen.append(bucket.pop(0))
+    return chosen
+
+
 def _sanitize_section(outcome: Outcome, raw: dict, permitted: dict[UUID, Passage],
                       unknown: set[UUID], used: set[str]) -> DraftSection:
     if not isinstance(raw, dict):
