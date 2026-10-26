@@ -38,7 +38,7 @@ class MetadataPatch(BaseModel):
 
 class SourceCreate(BaseModel):
     kind: Literal["web", "telegram"]
-    source_uri: str = Field(min_length=1, max_length=1000)
+    source_uri: str | None = Field(None, min_length=1, max_length=1000)
     license: str = Field(min_length=1, max_length=300)
     domains: list[str] = Field(default_factory=list, max_length=20)
     paths: list[str] = Field(default_factory=lambda: ["/"], max_length=20)
@@ -59,18 +59,30 @@ class TelegramStart(BaseModel):
 async def upload(
     files: list[UploadFile] = File(...), license: str = Form(...),
     title: str | None = Form(None), source_uri: str | None = Form(None),
+    source_id: UUID | None = Form(None),
     user: User = Depends(require_roles("school_admin", "teacher")),
     db: Session = Depends(get_db),
 ):
     tenant = school_id(user)
     if not files or len(files) > MAX_FILES:
         raise HTTPException(422, "Invalid number of files")
+    if source_id:
+        owner = db.execute(select(sources).where(
+            sources.c.id == source_id, sources.c.tenant_id == tenant,
+            sources.c.kind == "web"
+        )).mappings().first()
+        if not owner or not owner["config"].get("active", False):
+            raise HTTPException(404, "Source not found")
+        if not source_uri or not allowed(source_uri, set(owner["config"]["domains"]),
+                                          owner["config"].get("paths", ["/"])):
+            raise HTTPException(422, "Import URL outside source policy")
     outcomes = []
     for file in files:
         data, mime, name, digest = await read_upload(file)
         result = publish_version(
             db, tenant, user.id, data, mime, name, digest,
-            title or name, license, source_uri or f"upload://{tenant}/{digest}", "upload",
+            title or name, license, source_uri or f"upload://{tenant}/{digest}",
+            "web" if source_id else "upload", source_id,
         )
         outcomes.append(result)
     return {"items": outcomes}
@@ -148,6 +160,8 @@ def create_source(data: SourceCreate, user: User = Depends(require_roles("school
                   db: Session = Depends(get_db)):
     tenant = school_id(user)
     if data.kind == "web":
+        if not data.source_uri:
+            raise HTTPException(422, "Web source URL required")
         if not data.domains or any(not d or "://" in d or "/" in d or ":" in d for d in data.domains):
             raise HTTPException(422, "Explicit DNS domain allowlist required")
         domains = [d.lower().rstrip(".") for d in data.domains]
@@ -299,6 +313,11 @@ async def telegram_webhook(
         return {"ok": True, "duplicate": True}
     try:
         enqueue("process_telegram", receipt_id)
+        db.execute(telegram_receipts.update().where(
+            telegram_receipts.c.id == receipt_id,
+            telegram_receipts.c.state == "queued",
+        ).values(state="scheduled"))
+        db.commit()
     except Exception:
         pass  # Recovery dispatcher will enqueue persisted receipts.
     return {"ok": True}
