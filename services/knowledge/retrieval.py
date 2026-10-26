@@ -4,7 +4,7 @@ from collections import defaultdict
 from uuid import UUID
 from sqlalchemy import and_, cast, func, or_, select
 from sqlalchemy.orm import Session
-from app.core.models import resources, resource_versions
+from app.core.models import blocks, equations, extractions, resources, resource_versions, visuals
 from app.core.vector import Vector
 from services.knowledge.embeddings import validate_vector
 from services.knowledge.models import items
@@ -47,6 +47,27 @@ def query_base(school: UUID, filters: dict | None = None):
     if f.get("source_kind"):
         stmt = stmt.where(items.c.source_kind == f["source_kind"])
     return stmt
+
+def verify_source(db: Session, school: UUID, row: dict) -> bool:
+    """Verify original page, extraction-version and exact normalized quote still exist."""
+    table, field = {
+        "block": (blocks, "text"),
+        "visual": (visuals, "caption"),
+        "equation": (equations, "latex"),
+    }.get(row["source_kind"], (None, None))
+    if table is None:
+        return False
+    source = db.execute(select(table.c.page, table.c[field], extractions.c.resource_version_id)
+        .join(extractions, and_(table.c.extraction_id == extractions.c.id,
+                                 table.c.tenant_id == extractions.c.tenant_id))
+        .where(table.c.tenant_id == school, table.c.id == row["source_id"],
+               extractions.c.tenant_id == school,
+               extractions.c.resource_version_id == row["resource_version_id"])
+        ).mappings().first()
+    if not source or source["page"] != row["page"] or not source[field]:
+        return False
+    text = re.sub(r"\\s+", " ", source[field]).strip()
+    return row["text"] in text
 
 def as_evidence(row: dict, score: float = 0) -> dict:
     # quote is an exact substring from an indexed source item, never an LLM-generated paraphrase.
@@ -103,6 +124,8 @@ def search(db: Session, school: UUID, query: str, *, filters: dict | None = None
         # Reduce verbatim duplicate citations and single-book domination.
         if row["fingerprint"] in seen_hashes or counts[str(row["resource_id"])] >= 3:
             continue
+        if not verify_source(db, school, row):
+            continue
         seen_hashes.add(row["fingerprint"])
         counts[str(row["resource_id"])] += 1
         result.append(as_evidence(row, row["score"]))
@@ -113,4 +136,4 @@ def search(db: Session, school: UUID, query: str, *, filters: dict | None = None
 def lookup(db: Session, school: UUID, item_id: UUID) -> dict | None:
     stmt = query_base(school).where(items.c.id == item_id)
     row = db.execute(stmt).mappings().first()
-    return as_evidence(dict(row)) if row else None
+    return as_evidence(dict(row)) if row and verify_source(db, school, row) else None

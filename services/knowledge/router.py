@@ -104,6 +104,8 @@ def bundle(record_id: UUID, user: User = Depends(current_user),
         research_records.c.tenant_id == school_of(user))).mappings().first()
     if not row:
         raise HTTPException(404, "Research not found")
+    if row["review_status"] == "stale":
+        raise HTTPException(409, "Research stale; regenerate to refresh source citations")
     return {"id": str(row["id"]), **row["bundle"], "review_status": row["review_status"],
             "content_version": row["content_version"]}
 

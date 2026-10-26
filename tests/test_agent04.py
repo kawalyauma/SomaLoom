@@ -130,6 +130,8 @@ def test_stale_on_source_change(db, accounts):
         resource_version_id=version, index_item_id=indexed["id"]))
     db.execute(blocks.update().where(blocks.c.id == block_id).values(
         text="Stomach churns food with digestive juices and enzymes"))
+    # Exact-source verification rejects citations before the next index job executes.
+    assert lookup(db, school, indexed["id"]) is None
     assert index_version(db, school, version)["changed"] == 1
     status = db.scalar(select(research_records.c.review_status).where(
         research_records.c.id == rid))
