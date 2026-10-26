@@ -37,7 +37,8 @@ class LocalObjectStore:
                 stream.write(content)
                 stream.flush()
                 os.fsync(stream.fileno())
-            os.replace(temp, path)
+            # Atomic publication without overwriting an immutable resource version.
+            os.link(temp, path)
         finally:
             temp.unlink(missing_ok=True)
         return key
@@ -70,6 +71,7 @@ class S3ObjectStore:
             Body=content,
             ServerSideEncryption="aws:kms",
             SSEKMSKeyId=self.kms_key_id,
+            IfNoneMatch="*",
         )
         return key
 

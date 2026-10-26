@@ -27,3 +27,8 @@ class AIProvider(Protocol):
 class DisabledProvider:
     async def generate(self, request: AIRequest) -> AIResult:
         raise RuntimeError("Runtime AI provider is not configured")
+
+
+def provider_available(name: str) -> bool:
+    # Agent 5 replaces this with availability checks for registered runtime adapters.
+    return False

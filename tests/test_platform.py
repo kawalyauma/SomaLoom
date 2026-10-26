@@ -156,6 +156,9 @@ def test_storage_tenant_paths_and_atomic_write(tmp_path):
     a, b = uuid4(), uuid4()
     store.put(a, "v1/reference.txt", b"lesson")
     assert store.get(a, "v1/reference.txt") == b"lesson"
+    with pytest.raises(FileExistsError):
+        store.put(a, "v1/reference.txt", b"overwrite")
+    assert store.get(a, "v1/reference.txt") == b"lesson"
     with pytest.raises(FileNotFoundError):
         store.get(b, "v1/reference.txt")
     for key in ("../escape", "/etc/passwd", "x/../../escape", "x\\escape"):
@@ -264,3 +267,21 @@ def test_bearer_session_and_openapi_security(client, accounts):
         client.get("/api/v1/users/me", headers={"Authorization": f"Bearer {token}"}).status_code
         == 401
     )
+
+
+def test_all_development_mock_endpoints(client, accounts, monkeypatch):
+    from app.main import settings
+
+    assert sign_in(client, "teacher0@example.org").status_code == 200
+    monkeypatch.setattr(settings, "app_env", "development")
+
+    class Available:
+        def eval(self, *args):
+            return 1
+
+    monkeypatch.setattr("app.main.redis_connection", lambda: Available())
+    for path in Path("contracts/v1/fixtures").glob("*.json"):
+        result = client.get(f"/api/v1/mocks/{path.stem}")
+        assert result.status_code == 200, result.text
+        assert result.json()["tenant_id"] == str(accounts[0][0].id)
+    assert client.get("/api/v1/mocks/unknown").status_code == 422

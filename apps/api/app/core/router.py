@@ -37,6 +37,7 @@ from contracts.v1.schemas import (
     ResourceVersion,
     VisualAsset,
 )
+from services.ai.provider import provider_available
 
 router = APIRouter()
 
@@ -71,7 +72,7 @@ def ready(response: Response, db: Session = Depends(get_db)):
 def config(user: User = Depends(current_user)):
     return Configuration(
         api_version="v1",
-        runtime_ai_configured=get_settings().ai_provider != "disabled",
+        runtime_ai_configured=provider_available(get_settings().ai_provider),
         document_types=[
             "notes",
             "exam",

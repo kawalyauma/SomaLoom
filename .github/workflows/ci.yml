@@ -4,7 +4,7 @@ permissions:
   contents: read
 jobs:
   python:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     services:
       postgres:
         image: pgvector/pgvector:pg16
@@ -33,10 +33,10 @@ jobs:
       - run: alembic upgrade head
       - run: pytest -q
       - run: alembic downgrade base && alembic upgrade head
-      - run: python tools/generate_contracts.py && python tools/export_openapi.py && git diff --exit-code contracts/
+      - run: python tools/generate_contracts.py && python tools/generate_fixtures.py && python tools/export_openapi.py && git diff --exit-code contracts/
       - run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.24.2 detect --source /repo --no-git --redact
   web:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run: {working-directory: apps/web}
     steps:
@@ -47,7 +47,7 @@ jobs:
       - run: npm run typecheck && npm run build
       - run: npm audit --omit=dev --audit-level=high
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - run: |
