@@ -1,6 +1,7 @@
 """RQ tasks and durable outbox delivery. Jobs resolve tenant ownership from the DB."""
 import json
 import os
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -165,12 +166,22 @@ def telegram_api(method: str, params: dict):
     url = "https://api.telegram.org/bot" + token + "/" + method
     data = urllib.parse.urlencode(params).encode()
     req = urllib.request.Request(url, data=data, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=20) as response:
-            reply = json.loads(response.read(1024 * 1024))
-    except urllib.error.HTTPError as exc:
-        # 429 must be retried; never expose a token-containing URL.
-        raise RuntimeError(f"Telegram API HTTP {exc.code}") from None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as response:
+                reply = json.loads(response.read(1024 * 1024))
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < 2:
+                try:
+                    wait = min(30, max(1, int(exc.headers.get("Retry-After", "2"))))
+                except (TypeError, ValueError):
+                    wait = 2
+                time.sleep(wait)
+                continue
+            raise RuntimeError(f"Telegram API HTTP {exc.code}") from None
+        except urllib.error.URLError:
+            raise RuntimeError("Telegram API connection unavailable") from None
     if not reply.get("ok"):
         raise RuntimeError("Telegram API rejected request")
     return reply["result"]
@@ -189,8 +200,13 @@ def telegram_download(file_id: str):
         def redirect_request(self, *_args):
             return None
     opener = urllib.request.build_opener(NoRedirect)
-    with opener.open(url, timeout=30) as response:
-        body = response.read(MAX_BYTES + 1)
+    try:
+        with opener.open(url, timeout=30) as response:
+            body = response.read(MAX_BYTES + 1)
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(f"Telegram download HTTP {exc.code}") from None
+    except urllib.error.URLError:
+        raise RuntimeError("Telegram download unavailable") from None
     if len(body) > MAX_BYTES:
         raise ValueError("Telegram file exceeds size cap")
     return body
