@@ -23,7 +23,7 @@ def passage() -> bytes:
     out = io.BytesIO()
     image.save(out, "PNG")
     data = base64.b64encode(out.getvalue()).decode()
-    html = f"""<!doctype html><html><body>
+    html = rf"""<!doctype html><html><body>
     <h1>Chapter 1: Introduction to Energy</h1>
     <p>Energy is the capacity to do work. A moving object has kinetic energy.</p>
     <figure><img src="data:image/png;base64,{data}"
