@@ -17,7 +17,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
-from app.core.models import AuditLog, BackgroundJob, resources, resource_versions, sources
+from app.core.models import AuditLog, BackgroundJob, resources, resource_versions
 from app.core.storage import LocalObjectStore, S3ObjectStore
 from services.ingestion.models import ingestion_outbox
 
