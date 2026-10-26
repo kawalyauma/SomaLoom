@@ -5,6 +5,7 @@ from uuid import uuid4
 import pytest
 from pydantic import ValidationError
 
+from services.assessment import models as _assessment_models  # register tables before db fixture
 from services.assessment.schemas import AssessmentSpec, QuestionDraft
 from services.assessment.validation import calculate, fingerprint, validate_question_math
 
@@ -97,6 +98,7 @@ def test_case_insensitive_duplicate_fingerprint():
 
 @pytest.fixture
 def api(client):
+    client.headers.update({"Origin": "http://localhost:3000"})
     # Isolated feature router registration, pending Agent 1 app composition change.
     from app.main import app
     from services.assessment.router import router
@@ -229,9 +231,38 @@ def test_matching_does_not_leak_pairs(api, accounts):
     assert sorted(item["matching_right"]) == ["Bark", "Meow"]
 
 
-def test_verified_diagram_question(api, accounts):
+def seed_visual(db, tenant_id):
+    from app.core.models import BackgroundJob, resources, resource_versions, extractions, visuals
+    job = BackgroundJob(tenant_id=tenant_id, kind="extraction")
+    db.add(job)
+    db.flush()
+    resource_id, version_id, extraction_id, visual_id = (uuid4() for _ in range(4))
+    provenance = {"source_uri": "synthetic://test-diagram", "license": "CC0",
+                  "checksum_sha256": "0" * 64}
+    db.execute(resources.insert().values(
+        id=resource_id, tenant_id=tenant_id, title="Synthetic plant diagram",
+        media_type="image/png", provenance=provenance))
+    db.execute(resource_versions.insert().values(
+        id=version_id, tenant_id=tenant_id, resource_id=resource_id,
+        version=1, object_key="synthetic/plant.png",
+        checksum_sha256="0" * 64, provenance=provenance))
+    db.execute(extractions.insert().values(
+        id=extraction_id, tenant_id=tenant_id,
+        resource_version_id=version_id, job_id=job.id, engine="synthetic-test"))
+    db.execute(visuals.insert().values(
+        id=visual_id, tenant_id=tenant_id, extraction_id=extraction_id,
+        object_key="synthetic/plant.png", kind="diagram", page=1,
+        caption="Synthetic reviewed plant", provenance=provenance))
+    db.commit()
+    return visual_id
+
+
+def test_verified_diagram_question(api, accounts, db):
     m = ids()
     login(api)
+    assert api.post("/api/v1/question-bank",
+                    json=question(m, "diagram_labeling")).status_code == 422
+    m["visual"] = str(seed_visual(db, accounts[0][0].id))
     r = api.post("/api/v1/question-bank", json=question(m, "diagram_labeling"))
     assert r.status_code == 201, r.text
     login(api, role="reviewer")

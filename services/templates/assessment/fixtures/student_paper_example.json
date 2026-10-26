@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "document_type": "test",
+  "audience": "student",
+  "title": "Synthetic Mathematics Class Test",
+  "school_name": "Example School",
+  "logo_asset_id": null,
+  "subject_id": "33333333-3333-4333-8333-333333333333",
+  "level_id": "22222222-2222-4222-8222-222222222222",
+  "term": "Term 2",
+  "duration_minutes": 30,
+  "total_marks": 10,
+  "instructions": [
+    "Answer all questions."
+  ],
+  "page_size": "A4",
+  "sections": [
+    {
+      "title": "Section A",
+      "total_marks": 10,
+      "questions": [
+        {
+          "number": 1,
+          "question_revision_id": "66666666-6666-4666-8666-666666666666",
+          "type": "numerical",
+          "stem": "Calculate 6 multiplied by 7. Show your working.",
+          "marks": 5,
+          "options": [],
+          "matching_left": [],
+          "matching_right": [],
+          "data_table": [],
+          "latex": "6 \\times 7",
+          "visual_asset_ids": [],
+          "response_lines": 5
+        },
+        {
+          "number": 2,
+          "question_revision_id": "77777777-7777-4777-8777-777777777777",
+          "type": "multiple_choice",
+          "stem": "Which number is even?",
+          "marks": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Three"
+            },
+            {
+              "id": "B",
+              "text": "Four"
+            }
+          ],
+          "matching_left": [],
+          "matching_right": [],
+          "data_table": [],
+          "latex": null,
+          "visual_asset_ids": [],
+          "response_lines": 5
+        }
+      ]
+    }
+  ]
+}

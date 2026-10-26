@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from app.auth.router import audit
 from app.auth.security import require_roles
 from app.core.database import get_db
-from app.core.models import User
+from app.core.models import User, evidence, visuals
 from contracts.v1.schemas import Page
 from services.assessment.documents import student_document, teacher_guide
 from services.assessment.generation import assemble_sections, select_revisions
@@ -54,6 +54,20 @@ def ensure_distinct(db, tenant_id, question: QuestionDraft, ignore=None):
         stmt = stmt.where(question_versions.c.question_id != ignore)
     if db.execute(stmt.limit(1)).first():
         raise HTTPException(409, "A matching question already exists in this school")
+    visuals_requested = set(question.visual_asset_ids)
+    if visuals_requested:
+        accessible = db.execute(select(visuals.c.id).where(
+            visuals.c.tenant_id == tenant_id,
+            visuals.c.id.in_(visuals_requested))).scalars().all()
+        if len(accessible) != len(visuals_requested):
+            raise HTTPException(422, "Referenced diagram does not belong to this school")
+    requested_evidence = {r.evidence_id for r in question.source_refs if r.evidence_id}
+    if requested_evidence:
+        accessible = db.execute(select(evidence.c.id).where(
+            evidence.c.tenant_id == tenant_id,
+            evidence.c.id.in_(requested_evidence))).scalars().all()
+        if len(accessible) != len(requested_evidence):
+            raise HTTPException(422, "Referenced evidence is not available to this school")
     problems = validate_question_math(question)
     if problems:
         raise HTTPException(422, "; ".join(problems))
