@@ -126,8 +126,13 @@ def download_resource(resource_id: UUID, version: int | None = Query(None, ge=1)
     record = db.execute(query.order_by(resource_versions.c.version.desc()).limit(1)).mappings().first()
     if not record:
         raise HTTPException(404, "Version not found")
-    return Response(content=object_store().get(tenant, record["object_key"]),
-                    media_type=resource["media_type"], headers={"Cache-Control": "private, no-store"})
+    return Response(
+        content=object_store().get(tenant, record["object_key"]),
+        media_type=record["provenance"].get("media_type", resource["media_type"]),
+        headers={"Cache-Control": "private, no-store",
+                 "Content-Disposition": "attachment; filename=resource",
+                 "Content-Security-Policy": "sandbox"},
+    )
 
 @router.patch("/resources/{resource_id}")
 def edit_metadata(resource_id: UUID, data: MetadataPatch,
