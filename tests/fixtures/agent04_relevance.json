@@ -1,0 +1,70 @@
+{
+  "notice": "Synthetic educational references authored for smoke tests; NOT real textbook content or a validated human benchmark",
+  "country": "UG",
+  "level": "Primary",
+  "grade": "P5",
+  "subject": "Science",
+  "topic": "Digestive system",
+  "queries": [
+    {
+      "query": "What does peristalsis do?",
+      "relevant": [
+        "sample02"
+      ]
+    },
+    {
+      "query": "Where are nutrients absorbed?",
+      "relevant": [
+        "sample03"
+      ]
+    },
+    {
+      "query": "Salivary amylase function",
+      "relevant": [
+        "sample01"
+      ]
+    },
+    {
+      "query": "digestive diagram stomach organs",
+      "relevant": [
+        "sample04"
+      ]
+    },
+    {
+      "query": "photosynthesis chlorophyll",
+      "relevant": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "sample01",
+      "kind": "pdf",
+      "text": "Salivary amylase begins digestion of starch in the mouth. The tongue helps swallow food.",
+      "page": 8
+    },
+    {
+      "id": "sample02",
+      "kind": "docx",
+      "text": "Peristalsis is the muscular wave that pushes food through the oesophagus toward the stomach.",
+      "page": 11
+    },
+    {
+      "id": "sample03",
+      "kind": "pdf",
+      "text": "The small intestine absorbs digested nutrients into the blood through villi.",
+      "page": 5
+    },
+    {
+      "id": "sample04",
+      "kind": "diagram",
+      "text": "Illustration: stomach, liver, pancreas and small intestine in the human digestive system.",
+      "page": 17
+    },
+    {
+      "id": "sample05",
+      "kind": "pdf",
+      "text": "The large intestine absorbs water and helps form faeces.",
+      "page": 13
+    }
+  ]
+}
