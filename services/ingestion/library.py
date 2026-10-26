@@ -252,13 +252,17 @@ def publish_version(
             "job_id": job_id, "duplicate": False}
 
 def list_resources(db, tenant_id, query=None, mime=None, page=1, page_size=20):
-    expr = select(resources).where(resources.c.tenant_id == tenant_id)
-    # provenance JSON is cross-database; do not expose deleted rows.
-    rows = db.execute(expr.order_by(resources.c.created_at.desc())).mappings().all()
-    rows = [dict(x) for x in rows if not x["provenance"].get("deleted_at")]
+    expr = select(resources).where(
+        resources.c.tenant_id == tenant_id,
+        resources.c.provenance["deleted_at"].as_string().is_(None),
+    )
     if query:
-        rows = [x for x in rows if query.casefold() in x["title"].casefold()]
+        escaped = query.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+        expr = expr.where(resources.c.title.ilike(f"%{escaped}%", escape="\\"))
     if mime:
-        rows = [x for x in rows if x["media_type"] == mime]
-    return {"items": rows[(page - 1) * page_size:page * page_size],
-            "page": page, "page_size": page_size, "total": len(rows)}
+        expr = expr.where(resources.c.media_type == mime)
+    total = db.scalar(select(func.count()).select_from(expr.subquery()))
+    rows = db.execute(expr.order_by(resources.c.created_at.desc())
+                      .offset((page - 1) * page_size).limit(page_size)).mappings().all()
+    return {"items": [dict(x) for x in rows], "page": page,
+            "page_size": page_size, "total": total}
