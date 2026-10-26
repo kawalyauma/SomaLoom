@@ -53,7 +53,11 @@ def create_generation(
         raise HTTPException(422, "Idempotency key must not be empty")
     try:
         job_id, generation_id, created = create_record(db, tenant(user), user.id, payload, key)
-    except ValueError:
+    except ValueError as error:
+        if str(error) == "generation_queue_limit":
+            raise HTTPException(429, "School generation queue limit reached") from None
+        if str(error) == "school_not_found":
+            raise HTTPException(404, "School not found") from None
         raise HTTPException(409, "Idempotency key used for a different request") from None
     except IntegrityError:
         db.rollback()
