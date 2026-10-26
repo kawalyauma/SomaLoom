@@ -279,6 +279,61 @@ def telegram_instructions(data: TelegramStart,
     return {"source_id": data.source_id, "mode": "new_messages_only",
             "status": "connected", "message": "Send documents to the authorized chat with the bot present."}
 
+@router.get("/imports/telegram/messages")
+def telegram_messages(
+    user: User = Depends(current_user), db: Session = Depends(get_db),
+    source_id: UUID | None = None,
+    page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100),
+):
+    tenant = school_id(user)
+    qry = select(telegram_receipts).where(telegram_receipts.c.tenant_id == tenant)
+    if source_id:
+        qry = qry.where(telegram_receipts.c.source_id == source_id)
+    total = db.scalar(select(func.count()).select_from(qry.subquery()))
+    rows = db.execute(qry.order_by(telegram_receipts.c.created_at.desc())
+                      .offset((page - 1) * page_size).limit(page_size)).mappings().all()
+    # Bot file_id is sensitive: never return it to browser clients.
+    items = [
+        {k: v for k, v in row.items() if k != "payload"}
+        for row in rows
+    ]
+    return {"items": items, "page": page, "page_size": page_size, "total": total}
+
+@router.post("/imports/telegram/messages/{receipt_id}/retry", status_code=202)
+def retry_telegram(
+    receipt_id: UUID, user: User = Depends(require_roles("school_admin")),
+    db: Session = Depends(get_db),
+):
+    tenant = school_id(user)
+    row = db.execute(select(telegram_receipts).where(
+        telegram_receipts.c.id == receipt_id, telegram_receipts.c.tenant_id == tenant,
+    )).mappings().first()
+    if not row:
+        raise HTTPException(404, "Telegram message not found")
+    if row["state"] != "failed":
+        raise HTTPException(409, "Telegram message is not failed")
+    payload = dict(row["payload"])
+    retries = int(payload.get("retry_count", 0))
+    if retries >= 5:
+        raise HTTPException(409, "Telegram retry budget exhausted")
+    payload["retry_count"] = retries + 1
+    db.execute(telegram_receipts.update().where(
+        telegram_receipts.c.id == receipt_id, telegram_receipts.c.tenant_id == tenant
+    ).values(state="queued", payload=payload))
+    job = db.get(BackgroundJob, row["job_id"])
+    job.status, job.progress, job.error, job.finished_at = "queued", 0, None, None
+    audit(db, user, "ingestion.telegram.retried", receipt_id)
+    db.commit()
+    try:
+        enqueue("process_telegram", receipt_id)
+        db.execute(telegram_receipts.update().where(
+            telegram_receipts.c.id == receipt_id, telegram_receipts.c.state == "queued"
+        ).values(state="scheduled"))
+        db.commit()
+    except Exception:
+        db.rollback()  # The dispatcher recovers queued work.
+    return {"id": receipt_id, "status": "queued", "retry_count": payload["retry_count"]}
+
 @router.post("/imports/telegram/webhook", include_in_schema=False)
 async def telegram_webhook(
     request: Request, x_telegram_bot_api_secret_token: str | None = Header(None),
