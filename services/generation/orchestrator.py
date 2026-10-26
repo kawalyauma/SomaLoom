@@ -200,6 +200,7 @@ async def create_draft(
         warnings.append("Source conflicts or ambiguities require teacher resolution")
     if unsupported:
         warnings.append("Unverified/enrichment material requires teacher verification")
+    warnings.append("Citation IDs are linked to sources; factual entailment and maths require teacher review")
     report = QualityReport(
         required_outcomes=len(evidence.outcomes), covered_outcomes=len(covered),
         coverage_percent=round(100 * len(covered) / len(evidence.outcomes), 1),
