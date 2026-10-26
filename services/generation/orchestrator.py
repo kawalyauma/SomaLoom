@@ -82,6 +82,8 @@ def _sanitize_section(outcome: Outcome, raw: dict, permitted: dict[UUID, Passage
             # An unsupported claim cannot inherit a model-generated 'verified' label.
             if block.verification == "source_supported" and not valid:
                 block.verification = "unverified"
+            if block.type == "equation" and _simple_arithmetic_invalid(block.latex):
+                block.verification = "unverified"
             block.citations = list(dict.fromkeys(valid))
             if block.asset_ref and block.asset_ref not in {
                 str(e.id) for e in permitted.values()
@@ -134,7 +136,7 @@ async def create_draft(
     used_text: set[str] = set()
     usage_in = usage_out = 0
     for index, outcome in enumerate(evidence.outcomes):
-        selections = grouped.get(outcome.id, [])[:12]
+        selections = _diverse_evidence(grouped.get(outcome.id, []))
         if not selections:
             sections.append(DraftSection(
                 outcome_id=outcome.id, heading=outcome.description[:300],
@@ -200,6 +202,9 @@ async def create_draft(
         warnings.append("Source conflicts or ambiguities require teacher resolution")
     if unsupported:
         warnings.append("Unverified/enrichment material requires teacher verification")
+    if any(b.type == "equation" and _simple_arithmetic_invalid(b.latex)
+           for section in sections for b in section.blocks):
+        warnings.append("Independent arithmetic check rejected one or more simple equations")
     warnings.append("Citation IDs are linked to sources; factual entailment and maths require teacher review")
     report = QualityReport(
         required_outcomes=len(evidence.outcomes), covered_outcomes=len(covered),
