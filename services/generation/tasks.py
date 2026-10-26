@@ -4,7 +4,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from uuid import UUID
 
 from sqlalchemy import select
@@ -16,7 +16,7 @@ from app.core.queue import queue
 from services.ai.provider import ProviderError, configured_provider
 from services.generation.orchestrator import create_draft
 from services.generation.repository import (
-    draft_record, finish, retrieve_evidence, save_draft, update_progress,
+    finish, retrieve_evidence, save_draft, update_progress,
 )
 from services.generation.schema import GenerationInput
 
