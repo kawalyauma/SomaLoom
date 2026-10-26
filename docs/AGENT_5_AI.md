@@ -140,3 +140,19 @@ Codex smoke test, actual isolated runner policy, deployment/EC2 checks, and full
 end-to-end verification remain outstanding. GitHub-hosted CI is intentionally not
 used because the project account has a billing restriction. Never represent mocked
 test outputs as a real Codex generation.
+
+## Visuals and source rights
+
+Agent 4 may return `visuals` in an `EvidenceBundle` using `{id,outcome_id,kind,caption,page,source_uri}`.
+The interim bridge selects only visual assets that share the tenant, extraction and
+page of a licensed cited evidence block. The model may reference a visual by an
+existing `asset_ref`, but unknown asset IDs are removed; Agent 8 must load the
+asset by ID under the same tenant. Mathematical equations are stored as LaTeX,
+and a limited independent integer arithmetic validator flags obvious false
+equalities. Complex algebra, diagrams and scientific correctness remain human
+review requirements.
+
+Passages without declared licensing metadata or with an `unknown` license
+are excluded; operators must verify actual redistribution and processing rights.
+The generator does not treat a claimed metadata label as legally sufficient
+permission without Agent 2's ingestion policy.
