@@ -106,7 +106,7 @@ def retry_generation(
     db: Session = Depends(get_db),
 ):
     record = owned_record(db, generation_id, tenant(user))
-    if not record:
+    if not record or (user.role == "teacher" and record.requested_by != user.id):
         raise HTTPException(404, "Generation not found")
     job = db.get(BackgroundJob, record.job_id, with_for_update=True)
     if job.status != "failed":
@@ -117,16 +117,19 @@ def retry_generation(
         raise HTTPException(409, "Retry limit reached")
     # RQ job IDs from prior failures can linger; remove finished job before redelivery.
     from app.core.queue import redis_connection
+    from rq.exceptions import NoSuchJobError
+    from rq.job import Job
     try:
-        from rq.job import Job
         previous = Job.fetch("generation-" + str(job.id), connection=redis_connection())
         if previous.is_started or previous.is_queued:
             raise HTTPException(409, "Worker still owns generation")
         previous.delete()
+    except NoSuchJobError:
+        pass
     except HTTPException:
         raise
     except Exception:
-        pass
+        raise HTTPException(503, "Generation queue unavailable") from None
     job.status, job.progress, job.error, job.finished_at = "queued", 0, None, None
     params.update(stage="queued", attempts=attempts + 1)
     db.execute(generations.update().where(
