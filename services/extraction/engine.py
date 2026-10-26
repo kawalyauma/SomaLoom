@@ -304,6 +304,15 @@ def _docx(doc, raw, *, license, put_asset, limits):
         from docx.text.paragraph import Paragraph
     except ImportError as exc:
         raise ExtractionError("python-docx is required for DOCX extraction") from exc
+    # Reject compressed OOXML bombs before python-docx expands its archive.
+    from zipfile import BadZipFile, ZipFile
+    try:
+        with ZipFile(io.BytesIO(raw)) as archive:
+            infos = archive.infolist()
+            if len(infos) > 25000 or sum(x.file_size for x in infos) > 180 * 1024 * 1024:
+                raise ExtractionError("DOCX decompression budget exceeded")
+    except BadZipFile as exc:
+        raise ExtractionError("Invalid DOCX archive") from exc
     try:
         document = Document(io.BytesIO(raw))
     except Exception as exc:
@@ -407,7 +416,7 @@ def _html(doc, raw, *, license, put_asset, limits):
     return doc
 
 
-def _finalize(doc: ExtractedDocument) -> ExtractedDocument:
+def _finalize(doc: ExtractedDocument, source_uri: str | None = None) -> ExtractedDocument:
     """Assign hierarchical heading paths without cutting figures from paragraphs."""
     path: list[str] = []
     for block in doc.blocks:
@@ -417,12 +426,14 @@ def _finalize(doc: ExtractedDocument) -> ExtractedDocument:
                 level = 1 if block.text and HEADING_RE.match(block.text) else 2
             path = path[:level - 1] + [block.text or "Untitled"]
         block.heading_path = list(path)
+        block.source_ref.source_uri = source_uri
     return doc
 
 def extract_bytes(content: bytes, media_type: str, *,
                   resource_id: UUID, version_id: UUID, license: str = "unknown",
                   put_asset: AssetWriter | None = None, limits: Limits = Limits(),
-                  progress: Callable[[int, int], None] | None = None) -> ExtractedDocument:
+                  progress: Callable[[int, int], None] | None = None,
+                  source_uri: str | None = None) -> ExtractedDocument:
     """Synchronous pure entrypoint called by RQ worker; caller persists JSON/assets."""
     if not isinstance(content, bytes) or not content:
         raise ExtractionError("Empty resource")
@@ -432,11 +443,11 @@ def extract_bytes(content: bytes, media_type: str, *,
     mime = media_type.lower().split(";", 1)[0].strip()
     if mime == "application/pdf" or content.startswith(b"%PDF-"):
         return _finalize(_pdf(doc, content, license=license, put_asset=put_asset,
-                              limits=limits, progress=progress))
+                              limits=limits, progress=progress), source_uri)
     if mime in {"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                 "application/msword"} or (content.startswith(b"PK") and mime.endswith("document")):
         return _finalize(_docx(doc, content, license=license,
-                                put_asset=put_asset, limits=limits))
+                                put_asset=put_asset, limits=limits), source_uri)
     if mime in {"text/html", "application/xhtml+xml"}:
         return _finalize(_html(doc, content, license=license,
                                 put_asset=put_asset, limits=limits))
@@ -451,5 +462,5 @@ def extract_bytes(content: bytes, media_type: str, *,
         else:
             for text, bbox, conf in ocr:
                 _emit_text(doc, text, 1, bbox=bbox, confidence=conf, is_ocr=True)
-        return _finalize(doc)
+        return _finalize(doc, source_uri)
     raise ExtractionError("Unsupported media type")
