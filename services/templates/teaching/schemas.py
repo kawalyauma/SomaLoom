@@ -132,6 +132,7 @@ class EvidenceItem(StrictModel):
     page: int | None = Field(default=None, ge=1)
     asset_id: UUID | None = None
     asset_kind: str | None = None
+    asset_permission_verified: bool = False
 
 
 class EvidenceBundle(StrictModel):
