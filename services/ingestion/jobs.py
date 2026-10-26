@@ -104,6 +104,9 @@ def deliver_outbox(event_id: str):
             raise
     return "delivered"
 
+class ImportCancelled(Exception):
+    pass
+
 def process_web(run_id: str):
     run_id = UUID(run_id)
     with SessionLocal() as db:
@@ -125,6 +128,10 @@ def process_web(run_id: str):
         try:
             count = 0
             def save(state):
+                current_status = db.scalar(select(BackgroundJob.status).where(
+                    BackgroundJob.id == job_id, BackgroundJob.tenant_id == tenant))
+                if current_status == "cancelled":
+                    raise ImportCancelled()
                 db.execute(import_runs.update().where(
                     import_runs.c.id == run_id, import_runs.c.tenant_id == tenant
                 ).values(checkpoint={**opts, "crawl": state}, report=state["reports"]))
@@ -151,6 +158,13 @@ def process_web(run_id: str):
             db.execute(import_runs.update().where(import_runs.c.id == run_id).values(status="succeeded"))
             transition(db, job_id, "succeeded", 100)
             return f"imported={count}"
+        except ImportCancelled:
+            db.rollback()
+            db.execute(import_runs.update().where(import_runs.c.id == run_id).values(
+                status="cancelled"
+            ))
+            db.commit()
+            return "cancelled"
         except Exception:
             db.rollback()
             db.execute(import_runs.update().where(
@@ -251,10 +265,15 @@ def process_telegram(receipt_id: str):
 def recover_queued(limit=25):
     """Re-submit persisted unstarted imports after a failed queue submission."""
     with SessionLocal() as db:
-        runs = db.execute(select(import_runs).where(import_runs.c.status == "queued")
-                          .limit(limit)).mappings().all()
+        stale = utcnow() - timedelta(minutes=10)
+        runs = db.execute(select(import_runs).where(
+            (import_runs.c.status == "queued") |
+            ((import_runs.c.status == "scheduled") & (import_runs.c.updated_at < stale))
+        ).limit(limit)).mappings().all()
         receipts = db.execute(select(telegram_receipts).where(
-            telegram_receipts.c.state == "queued").limit(limit)).mappings().all()
+            (telegram_receipts.c.state == "queued") |
+            ((telegram_receipts.c.state == "scheduled") & (telegram_receipts.c.updated_at < stale))
+        ).limit(limit)).mappings().all()
         for table, kind, rows in ((import_runs, "process_web", runs),
                                   (telegram_receipts, "process_telegram", receipts)):
             for row in rows:
@@ -262,11 +281,11 @@ def recover_queued(limit=25):
                     enqueue(kind, row["id"])
                     if table is import_runs:
                         db.execute(table.update().where(
-                            table.c.id == row["id"], table.c.status == "queued"
+                            table.c.id == row["id"], table.c.status == row["status"]
                         ).values(status="scheduled"))
                     else:
                         db.execute(table.update().where(
-                            table.c.id == row["id"], table.c.state == "queued"
+                            table.c.id == row["id"], table.c.state == row["state"]
                         ).values(state="scheduled"))
                     db.commit()
                 except Exception:
