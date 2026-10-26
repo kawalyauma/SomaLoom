@@ -24,7 +24,10 @@ Set `INGESTION_S3_BUCKET` and `INGESTION_S3_KMS_KEY` in production; this feature
 rejects local object storage in production. The local filesystem store is only
 for development. Configure an EC2 IAM role for the bucket/KMS key, encryption,
 bucket versioning and retention policy. `INGESTION_MAX_BYTES` (default 20 MiB)
-and `INGESTION_MAX_FILES` (default 20) cap uploads. HTTP upload progress is
+and `INGESTION_MAX_FILES` (default 20) cap uploads.
+`INGESTION_TENANT_MAX_BYTES` defaults to 5 GiB and
+`INGESTION_TENANT_MAX_RESOURCES` defaults to 50,000, counted per school including
+retained deleted originals. HTTP upload progress is
 client-side `XMLHttpRequest.upload.onprogress` (or equivalent), not server polling.
 
 **Security release gate:** Set `INGESTION_SCANNER_COMMAND` to an installed
