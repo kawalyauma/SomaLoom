@@ -4,7 +4,6 @@ from __future__ import annotations
 from uuid import UUID
 
 from fastapi import APIRouter, Depends, Header, HTTPException, Response
-from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -82,7 +81,7 @@ def cancel_generation(
     db: Session = Depends(get_db),
 ):
     record = owned_record(db, generation_id, tenant(user))
-    if not record:
+    if not record or (user.role == "teacher" and record.requested_by != user.id):
         raise HTTPException(404, "Generation not found")
     job = db.get(BackgroundJob, record.job_id, with_for_update=True)
     if job.status in ("succeeded", "failed"):
