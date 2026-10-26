@@ -9,11 +9,11 @@ from sqlalchemy import func, insert, select
 from sqlalchemy.orm import Session
 
 from app.core.models import (
-    BackgroundJob, School, documents, evidence, generation_evidence,
+    BackgroundJob, School, blocks, documents, evidence, generation_evidence, visuals,
     generations, outcomes, versions,
 )
 from services.generation.schema import (
-    EvidenceBundle, GenerationInput, Outcome, Passage, StructuredDraft,
+    EvidenceBundle, GenerationInput, Outcome, Passage, StructuredDraft, VisualReference,
 )
 
 
@@ -108,8 +108,38 @@ def retrieve_evidence(db: Session, tenant_id: UUID,
             quote=quote, source_title=prov.get("title"),
             source_uri=prov.get("source_uri"), license=prov.get("license"),
         ))
+    visual_refs = []
+    if passages:
+        # A visual is eligible only when it shares the licensed evidence's
+        # extraction and page; this prevents cross-school/unrelated asset links.
+        visual_rows = db.execute(
+            select(visuals.c.id, visuals.c.kind, visuals.c.caption,
+                   visuals.c.page, evidence.c.outcome_id)
+            .select_from(visuals.join(
+                blocks, (visuals.c.extraction_id == blocks.c.extraction_id)
+                & (visuals.c.page == blocks.c.page)
+                & (visuals.c.tenant_id == blocks.c.tenant_id),
+            ).join(
+                evidence, (evidence.c.content_block_id == blocks.c.id)
+                & (evidence.c.tenant_id == blocks.c.tenant_id),
+            ))
+            .where(visuals.c.tenant_id == tenant_id,
+                   evidence.c.id.in_([p.id for p in passages]))
+            .limit(300)
+        ).mappings().all()
+        known_visuals = set()
+        for image in visual_rows:
+            key = (image["id"], image["outcome_id"])
+            if key in known_visuals:
+                continue
+            known_visuals.add(key)
+            visual_refs.append(VisualReference(
+                id=image["id"], outcome_id=image["outcome_id"],
+                kind=image["kind"], caption=(image["caption"] or "")[:500],
+                page=image["page"],
+            ))
     return EvidenceBundle(outcomes=[by_id[x] for x in request.topic_ids],
-                          passages=passages)
+                          passages=passages, visuals=visual_refs)
 
 
 def owned_record(db: Session, generation_id: UUID, tenant_id: UUID):
