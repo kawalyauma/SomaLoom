@@ -1,9 +1,9 @@
 # Agent 8 Publishing
 
 Exporters consume the shared v1 `GeneratedDocument` and its structured
-`body.sections[].blocks[]`. They are libraries, **not** unauthenticated HTTP
-endpoints. The owning FastAPI route must look up approved document versions by
-authenticated school and apply role authorization before calling them.
+`body.sections[].blocks[]`. The libraries are never directly exposed as unauthenticated HTTP endpoints.
+The authenticated FastAPI router looks up approved document versions by school,
+checks staff roles and serves immutable exports from tenant-scoped object keys.
 
 Install optional render requirements: `pip install -r services/export/requirements.txt`.
 Call `export_pdf(document, branding, audience)` or `export_docx(...)`.
@@ -13,6 +13,7 @@ unsupported LaTeX must fail preflight; the source image service must resolve
 tenant-scoped, licensed assets and inspect map labels before adding image
 rendering. Student exports exclude answer and teacher blocks.
 
-Integration requested: Agent 1 registers an authenticated service router after
-document-version persistence and approval contracts exist. Agent 5/7 supply
-durable document/version/review routes. No claim of live export deployment.
+The export router is registered additively from app.main on this branch.
+Its document-version and review routes use Agent 1's existing tables.
+Agent 5 must persist an initial version; Agent 7 supplies separate marking
+content. No claim of live EC2 deployment or completed visual-asset publishing.

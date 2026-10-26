@@ -19,7 +19,7 @@ class DocumentValidationError(ValueError):
     """An unsafe, incomplete or structurally invalid publication."""
 
 
-def validate_document(document: dict[str, Any], *, audience: str = "student") -> dict[str, Any]:
+def validate_document(document: dict[str, Any], *, audience: str = "student", strict_visuals: bool = True) -> dict[str, Any]:
     """Validate and copy a v1 GeneratedDocument without silently fixing evidence."""
     if audience not in {"student", "teacher"}:
         raise DocumentValidationError("Audience must be student or teacher")
@@ -49,7 +49,10 @@ def validate_document(document: dict[str, Any], *, audience: str = "student") ->
             seen.add(block_id)
             if not isinstance(block.get("citations", []), list):
                 raise DocumentValidationError("Citations must be a list")
-            if evidence and not set(block.get("citations", [])).issubset(evidence):
+            citations = block.get("citations", [])
+            if any(not isinstance(link, str) for link in citations):
+                raise DocumentValidationError("Citation identifiers must be strings")
+            if citations and (not evidence or not set(citations).issubset(evidence)):
                 raise DocumentValidationError("A block cites evidence absent from the document")
             if block["type"] == "table":
                 rows = block.get("rows")
@@ -64,14 +67,15 @@ def validate_document(document: dict[str, Any], *, audience: str = "student") ->
                 if not isinstance(block.get("latex"), str) or not block["latex"].strip():
                     raise DocumentValidationError("Equation has no editable LaTeX")
             if block["type"] in {"figure", "diagram", "map", "chart", "image", "visual_needed"}:
-                if block["type"] == "visual_needed" or not block.get("asset_ref"):
-                    raise DocumentValidationError("Missing visual asset: editorial review required")
-                if not block.get("license") or not block.get("caption"):
-                    raise DocumentValidationError("Illustration needs a license and caption")
-                # Asset resolution is server-owned; never resolve arbitrary URLs here.
-                raise DocumentValidationError(
-                    "Visual asset must be resolved from tenant-authorized object storage"
-                )
+                if strict_visuals:
+                    if block["type"] == "visual_needed" or not block.get("asset_ref"):
+                        raise DocumentValidationError("Missing visual asset: editorial review required")
+                    if not block.get("license") or not block.get("caption"):
+                        raise DocumentValidationError("Illustration needs a license and caption")
+                    # Asset resolution is server-owned; never resolve arbitrary URLs here.
+                    raise DocumentValidationError(
+                        "Visual asset must be resolved from tenant-authorized object storage"
+                    )
     if audience == "student":
         for section in body["sections"]:
             permitted = []

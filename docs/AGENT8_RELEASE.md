@@ -19,13 +19,14 @@ bootstrap. Its PR targets `agent/01-platform` until that PR is merged.
 - **Still require interface agreement**: persisted document listing/versions,
   per-block regeneration, approval/rejection API, publisher job submission
   and secure scoped download. UI proposes `GET /documents` and `POST /exports`,
-  and adds a tenant-scoped synchronous export API; document listing and export are implemented here, while versioned save and durable approval management still require Agent 5 coordination.
+  and adds a tenant-scoped synchronous export API; document listing and export are implemented here, while versioned save and document versioning, review attestations and secure export are available in the Agent 8 router. Agent 5 must coordinate persistence of initial generated drafts and section regeneration.
 
 ## Known limitations / release blockers
 - UX is a functional first integration slice, not a full production acceptance.
-- The visual editor edits paragraph and heading text locally. Versioned save,
-  revision diff, resolved image assets and true math-browser rendering are
-  outstanding and visibly labeled. Unsaved edits cannot be printed as approved.
+- The visual editor supports paragraph/heading editing, persisted immutable
+  revisions and a version selector. Side-by-side revision diff, section-level
+  regeneration and resolved image assets remain unfinished. Unapproved or unsaved
+  edits cannot be printed as approved.
 - PDF equations render vector via Matplotlib SVG; Word equations become editable
   OMML for supported LaTeX constructs. Browser uses native MathML for supported expressions;
   KaTeX/MathJax integration remains to do. For visual assets, publish fails
@@ -45,7 +46,7 @@ npm run build
 cd ../..
 pip install -r services/export/requirements.txt
 pip install pytest pypdf
-pytest -q tests/test_agent8_publishing.py
+pytest -q tests/test_agent8_publishing.py tests/test_agent8_export_api.py tests/test_agent8_workflow.py
 ```
 
 ## Manual end-to-end matrix (mark pass only with real API evidence)

@@ -7,7 +7,7 @@ export type Curriculum = { id: string; name: string; country?: string; title?: s
 export type Topic = { id: string; name: string; title?: string; code?: string };
 export type Job = { id: string; status: string; progress: number; error?: string | null };
 export type Block = { id: string; type: string; text?: string; latex?: string; citations?: string[]; rows?: string[][]; asset_ref?: string; caption?: string; answer?: string; audience?: string };
-export type Draft = { id: string; title: string; document_type: string; body: { sections: Array<{ id?: string; title?: string; blocks: Block[] }> }; review_state?: string; evidence_ids?: string[] };
+export type Draft = { id: string; title: string; document_type: string; body: { sections: Array<{ id?: string; title?: string; blocks: Block[] }> } & Record<string, unknown>; review_state?: string; evidence_ids?: string[] };
 export type Generate = { document_type: string; curriculum_id: string; level_id: string; subject_id: string; topic_ids: string[]; options: Record<string, unknown>; resource_filters: Record<string, unknown> };
 export const routes = [
  {id: "dashboard", label: "Overview", group: "Workspace", symbol: "▦"},
@@ -62,5 +62,5 @@ export function normalizeDraft(value: unknown): Draft {
    if (!Array.isArray(section.blocks)) throw new Error("Document section has no blocks");
    return {id: section.id || "section-" + i, title: section.title || "Section " + (i + 1), blocks: section.blocks.map((b,j) => ({...b, id: b.id || "block-" + i + "-" + j}))};
  });
- return {id:item.id,title:item.title || "Untitled draft",document_type:item.document_type || "lesson_notes",body:{sections},review_state:item.review_state,evidence_ids:item.evidence_ids};
+ return {id:item.id,title:item.title || "Untitled draft",document_type:item.document_type || "lesson_notes",body:{...item.body,sections},review_state:item.review_state,evidence_ids:item.evidence_ids};
 }

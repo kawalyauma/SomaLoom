@@ -5,11 +5,12 @@ authentication, migrations or schema ownership is changed by Agent 8.
 """
 from __future__ import annotations
 
-from typing import Literal
+from typing import Any, Literal
+import json
 from uuid import UUID, uuid4
 
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import and_, func, insert, select
 from sqlalchemy.orm import Session
 
@@ -28,7 +29,8 @@ from app.core.models import (
 )
 from app.core.storage import LocalObjectStore
 from services.export.publishing import export_docx, export_pdf
-from services.rendering.document import DocumentValidationError
+from services.rendering.document import DocumentValidationError, validate_document
+from services.rendering.omml import latex_to_omml
 
 router = APIRouter(tags=["publishing"])
 
@@ -91,7 +93,7 @@ def list_documents(
     scope = documents.c.tenant_id == tenant
     total = db.scalar(select(func.count()).select_from(documents).where(scope)) or 0
     rows = db.execute(
-        select(documents.c.id, documents.c.title, documents.c.document_type)
+        select(documents.c.id, documents.c.title, documents.c.document_type, documents.c.generation_job_id)
         .where(scope).order_by(documents.c.created_at.desc())
         .offset((page - 1) * page_size).limit(page_size)
     ).mappings().all()
@@ -191,3 +193,158 @@ def download(
     response.headers["Cache-Control"] = "no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response
+
+
+class DocumentVersionEdit(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    expected_version: int = Field(ge=1)
+    body: dict[str, Any]
+
+
+class ReviewDecision(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    decision: Literal["approved", "rejected"]
+    comments: str = Field(min_length=8, max_length=4000)
+    # Reviewers explicitly attest that these checks were performed.
+    citations_checked: bool = False
+    mathematics_checked: bool = False
+    licensing_checked: bool = False
+
+
+def _document(db: Session, document_id: UUID, tenant: UUID):
+    row = db.execute(
+        select(documents.c.id, documents.c.title, documents.c.document_type)
+        .where(documents.c.id == document_id, documents.c.tenant_id == tenant)
+    ).mappings().first()
+    if not row:
+        raise HTTPException(404, "Document not found")
+    return row
+
+
+@router.get("/documents/{document_id}/versions")
+def list_versions(
+    document_id: UUID,
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    tenant = _school_user(user)
+    _document(db, document_id, tenant)
+    rows = db.execute(
+        select(versions.c.id, versions.c.version, versions.c.created_at)
+        .where(versions.c.document_id == document_id, versions.c.tenant_id == tenant)
+        .order_by(versions.c.version.desc()).limit(100)
+    ).mappings().all()
+    return {"items": [dict(r) for r in rows], "page": 1, "page_size": 100, "total": len(rows)}
+
+
+@router.get("/documents/{document_id}/versions/{version_id}")
+def get_version(
+    document_id: UUID,
+    version_id: UUID,
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    tenant = _school_user(user)
+    document = _document(db, document_id, tenant)
+    row = db.execute(
+        select(versions.c.id, versions.c.version, versions.c.body)
+        .where(versions.c.id == version_id,
+               versions.c.document_id == document_id,
+               versions.c.tenant_id == tenant)
+    ).mappings().first()
+    if not row:
+        raise HTTPException(404, "Document version not found")
+    return {
+        "id": str(row["id"]), "document_id": str(document_id),
+        "version": row["version"], "title": document["title"],
+        "document_type": document["document_type"],
+        "body": row["body"],
+        "evidence_ids": row["body"].get("evidence_ids", []),
+        "review_state": _latest_decision(db, version_id, tenant) or "draft",
+    }
+
+
+@router.post("/documents/{document_id}/versions", status_code=201)
+def save_version(
+    document_id: UUID,
+    payload: DocumentVersionEdit,
+    request: Request,
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    tenant = _school_user(user)
+    if user.role not in {"school_admin", "teacher"}:
+        raise HTTPException(403, "Only teachers and school administrators can edit")
+    document = _document(db, document_id, tenant)
+    # Bound the size of mutable JSON to prevent pathological render work.
+    if len(json.dumps(payload.body)) > 2_000_000:
+        raise HTTPException(413, "Document revision too large")
+    try:
+        validate_document({
+            "title": document["title"],
+            "body": payload.body,
+            "evidence_ids": payload.body.get("evidence_ids", []),
+        }, audience="teacher", strict_visuals=False)
+    except DocumentValidationError as exc:
+        raise HTTPException(422, str(exc)) from exc
+    current = db.execute(
+        select(versions.c.id, versions.c.version)
+        .where(versions.c.document_id == document_id, versions.c.tenant_id == tenant)
+        .order_by(versions.c.version.desc()).limit(1).with_for_update()
+    ).mappings().first()
+    if not current or current["version"] != payload.expected_version:
+        raise HTTPException(409, "Revision conflict; reload the newest version")
+    next_id = uuid4()
+    db.execute(insert(versions).values(
+        id=next_id, tenant_id=tenant, document_id=document_id,
+        version=current["version"] + 1, body=payload.body
+    ))
+    audit(db, user, "document.version.create", next_id, request)
+    db.commit()
+    return {"id": str(next_id), "document_id": str(document_id),
+            "version": current["version"] + 1, "review_state": "draft"}
+
+
+@router.post("/documents/{document_id}/versions/{version_id}/review", status_code=201)
+def review_version(
+    document_id: UUID,
+    version_id: UUID,
+    payload: ReviewDecision,
+    request: Request,
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    tenant = _school_user(user)
+    if user.role not in {"school_admin", "reviewer"}:
+        raise HTTPException(403, "Reviewer permission required")
+    document = _document(db, document_id, tenant)
+    record = db.execute(
+        select(versions.c.body)
+        .where(versions.c.id == version_id, versions.c.document_id == document_id,
+               versions.c.tenant_id == tenant)
+    ).scalar_one_or_none()
+    if record is None:
+        raise HTTPException(404, "Document version not found")
+    if payload.decision == "approved":
+        if not (payload.citations_checked and payload.mathematics_checked and payload.licensing_checked):
+            raise HTTPException(422, "All educator verification attestations are required")
+        try:
+            data = validate_document({
+                "title": document["title"], "body": record,
+                "evidence_ids": record.get("evidence_ids", []),
+            }, audience="teacher")
+            for section in data["body"]["sections"]:
+                for block in section["blocks"]:
+                    if block["type"] == "equation":
+                        latex_to_omml(block["latex"])
+        except (DocumentValidationError, ValueError) as exc:
+            raise HTTPException(422, "Document failed publication preflight: " + str(exc)) from exc
+    decision_id = uuid4()
+    db.execute(insert(reviews).values(
+        id=decision_id, tenant_id=tenant, document_version_id=version_id,
+        reviewer_id=user.id, decision=payload.decision, comments=payload.comments
+    ))
+    audit(db, user, "document.review." + payload.decision, decision_id, request)
+    db.commit()
+    return {"id": str(decision_id), "document_version_id": str(version_id),
+            "decision": payload.decision}
