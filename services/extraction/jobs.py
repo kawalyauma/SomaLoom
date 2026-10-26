@@ -95,11 +95,12 @@ def create_extraction(db, tenant_id: UUID, version_id: UUID):
 def dispatch(job_id: UUID):
     """Enqueue after persisted job creation; safe to repeat under RQ job-id dedup."""
     from app.core.queue import queue
+    from rq import Retry
 
     return queue().enqueue(
         "services.extraction.jobs.process_extraction", str(job_id),
         job_id=f"extraction:{job_id}", job_timeout=900,
-        result_ttl=3600, failure_ttl=86400,
+        result_ttl=3600, failure_ttl=86400, retry=Retry(max=2),
     )
 
 
@@ -148,11 +149,16 @@ def process_extraction(job_id: str) -> dict:
             if hashlib.sha256(raw).hexdigest() != version["checksum_sha256"]:
                 raise ExtractionError("Source checksum mismatch")
             license = (version["provenance"] or {}).get("license") or "unknown"
+            def progress(done: int, total: int):
+                job.progress = min(95, 5 + int(90 * done / max(1, total)))
+                db.commit()
+
             doc = extract_bytes(
                 raw, version["media_type"],
                 resource_id=version["resource_id"], version_id=version_id,
                 license=license,
                 put_asset=lambda k, data: put_idempotent(store, job.tenant_id, k, data),
+                progress=progress,
             )
             # A completed JSON is published immutably and can be reconstructed after crashes.
             encoded = doc.model_dump_json(indent=2).encode("utf-8")
