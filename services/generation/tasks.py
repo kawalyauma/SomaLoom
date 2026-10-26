@@ -32,7 +32,7 @@ def enqueue_generation(job_id: UUID) -> bool:
     try:
         queue().enqueue(
             "services.generation.tasks.run_generation",
-            str(job_id), job_id="generation-" + str(job_id), job_timeout=700,
+            str(job_id), job_id="generation-" + str(job_id), job_timeout=4000,
             result_ttl=86400, failure_ttl=86400,
         )
         return True
