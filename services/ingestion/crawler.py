@@ -168,8 +168,15 @@ def crawl(seed: str, *, domains: set[str], paths=None, max_pages=100,
                 parser = RobotFileParser()
                 parser.parse(body.decode("utf-8", errors="replace").splitlines())
                 robots_cache[robots_url] = parser
-            except ValueError:
-                # Deny if robots policy is unavailable: no speculative permission.
+            except ValueError as exc:
+                if str(exc) == "HTTP 404":
+                    # RFC robots behavior: a missing robots.txt imposes no rules.
+                    parser = RobotFileParser()
+                    parser.parse([])
+                    robots_cache[robots_url] = parser
+                else:
+                    robots_cache[robots_url] = None  # 403, 429, 5xx, invalid response
+            except (OSError, http.client.HTTPException, ssl.SSLError):
                 robots_cache[robots_url] = None
         policy = robots_cache[robots_url]
         if not policy or not policy.can_fetch(USER_AGENT, url):
