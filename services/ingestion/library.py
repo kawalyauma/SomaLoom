@@ -164,6 +164,13 @@ def publish_version(
     ).first()
     if same and resource_id is None:
         return {"resource_id": same.resource_id, "version_id": same.id, "duplicate": True}
+    if resource_id is None and source_type in {"web", "telegram"}:
+        previous = db.execute(select(resources).where(
+            resources.c.tenant_id == tenant_id,
+            resources.c.provenance["source_uri"].as_string() == source_uri,
+        ).order_by(resources.c.created_at.desc())).mappings().first()
+        if previous and not previous["provenance"].get("deleted_at"):
+            resource_id = previous["id"]
     if resource_id:
         get_resource(db, tenant_id, resource_id)
         latest = db.scalar(select(func.max(resource_versions.c.version)).where(
