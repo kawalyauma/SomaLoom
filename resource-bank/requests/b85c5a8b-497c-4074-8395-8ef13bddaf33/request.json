@@ -1,0 +1,105 @@
+{
+  "id": "b85c5a8b-497c-4074-8395-8ef13bddaf33",
+  "request": {
+    "curriculum_id": "ee798d01-0b16-5cb9-bacb-b00f141e9d28",
+    "document_type": "lesson_notes",
+    "level_id": "9a2aa202-8c97-5c3d-bd12-054e670e3c14",
+    "options": {
+      "academic_year": "2026",
+      "calendar": {
+        "ends_on": "2026-11-09",
+        "starts_on": "2026-10-27"
+      },
+      "depth": "comprehensive",
+      "duration_minutes": 40,
+      "period_minutes": 40,
+      "periods_per_week": 5,
+      "planning_scope": {
+        "basis": "Uploaded schemes, not official curriculum endorsement",
+        "class": "P5",
+        "lesson": 4,
+        "lessons": [
+          {
+            "activities": [
+              "Define terms.",
+              "Identify types of government.",
+              "State government roles.",
+              "Write relevant vocabulary correctly."
+            ],
+            "inferred": true,
+            "lesson": 4,
+            "objectives": [
+              "Define government.",
+              "List types of government.",
+              "State roles of government."
+            ],
+            "subtopic": "Types of government: meaning and functions of government; types; local government structure from LC I to LC V, responsible ministry and duties of local councils",
+            "topic": "Uganda as an independent nation"
+          }
+        ],
+        "subject": "Social Studies",
+        "term": 3,
+        "week": 2
+      },
+      "question_count": 10,
+      "term": "Term 3",
+      "total_marks": 20,
+      "weeks": 2
+    },
+    "resource_filters": {},
+    "subject_id": "1136439c-cc59-551c-8826-7fba6280e60e",
+    "topic_ids": [
+      "01a6aef4-afbc-5ff5-ad5a-35517ee85015"
+    ]
+  },
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/b4b499bf59122a8a467752652f5ec0d3f6de903996a433118902c2d3d92ddaf6.pdf",
+      "sha256": "b4b499bf59122a8a467752652f5ec0d3f6de903996a433118902c2d3d92ddaf6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/5f3e987dd5f2186370a3f4a198b73d51bc5db2b9/P.5%20TERM%20I%2C%20II%2C%20III%20SCHEMES%20SST.pdf",
+      "title": "P.5 TERM I_ II_ III SCHEMES SST",
+      "version_id": "30fc711d-83ab-422a-bfa8-0d039890fde0"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/17fdf2cf9cd8d1db7716db3e54448ad052878747b7fb3f386b9cd82aa24806df.pdf",
+      "sha256": "17fdf2cf9cd8d1db7716db3e54448ad052878747b7fb3f386b9cd82aa24806df",
+      "source_uri": "https://github.com/Fresh-Teacher/Akamuli-Ka-Lillie/blob/57d2e742905af9a8fa7f560250118451a866bcd5/LOVE%20AT%20LAST%20SIGHT%20BOOK.pdf",
+      "title": "LOVE AT LAST SIGHT BOOK",
+      "version_id": "45d25857-4604-4142-a6fe-ef934fad3403"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3.pdf",
+      "sha256": "c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/99c2fbc87849f7fb42a47c495e55bbbd80156919/P.4%20SST%20SCHEME%20OF%20WORK%20TERM%20III.pdf",
+      "title": "P.4 SST SCHEME OF WORK TERM III",
+      "version_id": "79198e5b-d1cd-48cf-98cc-70663c918f31"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/26c9dc43a25f134dc9e482b9f7b9d680e4b81b28c8605ae19b10186f2bbd81e4.docx",
+      "sha256": "26c9dc43a25f134dc9e482b9f7b9d680e4b81b28c8605ae19b10186f2bbd81e4",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/9db28be866a1f4ae32c03de79bd0a4b6e8ac3fa1/BABY%20Scheme%20for%20Baby%20class%20all%20learning%20areas%20all%20terms%20%202023.docx",
+      "title": "BABY Scheme for Baby class all learning areas all terms  2023",
+      "version_id": "7aff65e4-271a-4cd9-8597-df45d0df235a"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/84189669ea0b4b03d8cb3602d512a1d55d7a1118d869ea16711f615491a19d58.pdf",
+      "sha256": "84189669ea0b4b03d8cb3602d512a1d55d7a1118d869ea16711f615491a19d58",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9834",
+      "title": "P.5 SST SCHEME  TERM III _1_.pdf",
+      "version_id": "baa40c82-7dff-4e64-b2cd-91aee00af9c5"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea.docx",
+      "sha256": "44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/6534d5ce7f91f72e0211911262acdd3680932646/P.5%20SST%20SCHEME%20OF%20WORK%20TERM%203%202024.docx",
+      "title": "P.5 SST SCHEME OF WORK TERM 3 2024",
+      "version_id": "d245f4e7-c222-4866-892d-3480a2854feb"
+    }
+  ]
+}
