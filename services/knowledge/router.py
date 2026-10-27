@@ -17,6 +17,7 @@ from services.knowledge.embeddings import Embeddings
 from services.knowledge.models import research_records
 from services.knowledge.research import dispatch_pending, submit
 from services.knowledge.retrieval import lookup, search
+from services.knowledge.diagnostics import resource_coverage
 
 router = APIRouter(tags=["knowledge"])
 
@@ -182,6 +183,7 @@ def coverage(topic_id: UUID, user: User = Depends(current_user), db: Session = D
         "status": row["review_status"],
         "record_id": str(row["id"]),
         "coverage": row["bundle"]["coverage"],
+        "search_audit": row["bundle"].get("search_audit", []),
         "gaps": row["bundle"]["gaps"],
         "conflicts": row["bundle"]["conflicts"],
         "confidence": row["bundle"]["confidence"],
@@ -261,3 +263,17 @@ def dispatch(user: User = Depends(require_roles("school_admin")), db: Session = 
         db.rollback()
         raise HTTPException(503, "Queue unavailable; persisted jobs will be retried") from exc
     return {"dispatched": count}
+
+
+@router.get("/knowledge/resource-coverage")
+def searchable_resource_coverage(
+    page: int = 1,
+    page_size: int = 25,
+    user: User = Depends(require_roles("school_admin")),
+    db: Session = Depends(get_db),
+):
+    """Admin-only factual, paginated inventory; no raw source contents returned."""
+    try:
+        return resource_coverage(db, school_of(user), page=page, page_size=page_size)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from exc
