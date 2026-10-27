@@ -35,6 +35,7 @@ def query_base(school: UUID, filters: dict | None = None):
     # Join to the current resource and version: orphaned/stale/mis-scoped records are invisible.
     stmt = (
         select(items, resources.c.title.label("source_title"))
+        .select_from(items)
         .join(
             resource_versions,
             and_(
