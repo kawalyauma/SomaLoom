@@ -8,7 +8,7 @@ SOCKET = "/tmp/clamd.sock"
 
 def command(value: str) -> str:
     with socket.socket(socket.AF_UNIX, socket.SOCK_STREAM) as client:
-        client.settimeout(60)
+        client.settimeout(180)
         client.connect(SOCKET)
         client.sendall(b"z" + value.encode("utf-8", "surrogateescape") + b"\0")
         chunks = bytearray()
