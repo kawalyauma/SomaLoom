@@ -22,6 +22,7 @@ async def generate_family(db, request, bundle, provider, model, tenant_id, gener
             EvidenceBundle,
             EvidenceItem,
             TeachingSpec,
+            VisualAssetEvidence,
         )
         from services.templates.teaching.service import TeachingStudio
 
@@ -83,6 +84,20 @@ async def generate_family(db, request, bundle, provider, model, tenant_id, gener
                     outcome_ids=[p.outcome_id],
                 )
                 for p in bundle.passages
+            ],
+            visuals=[
+                VisualAssetEvidence(
+                    asset_id=v.id,
+                    outcome_id=v.outcome_id,
+                    kind=v.kind,
+                    caption=v.caption,
+                    page=v.page,
+                    source_uri=v.source_uri,
+                    license=v.license,
+                    permission_verified=True,
+                )
+                for v in bundle.visuals
+                if v.source_uri and v.license
             ],
         )
         result = await TeachingStudio(provider, model).generate(
