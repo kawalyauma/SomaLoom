@@ -233,7 +233,7 @@ def retrieve_evidence(
                 id=eid,
                 outcome_id=oid,
                 quote=ev["quote"],
-                source_title=topic["title"],
+                source_title=ev.get("source_title") or topic["title"],
                 source_uri=ev["source_uri"],
                 license=ev["license"],
             )
