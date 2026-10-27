@@ -1,6 +1,4 @@
 """High-recall regression checks on synthetic, explicitly non-official content."""
-from uuid import uuid4
-
 from sqlalchemy import select, update
 
 from conftest import sign_in
@@ -90,7 +88,7 @@ def test_admin_coverage_reports_real_index_counts_and_scope(client, db, accounts
 def test_denied_and_other_school_sources_never_return(db, accounts):
     school, other = accounts[0][0].id, accounts[0][1].id
     permitted, _ = make_version(db, school, "East Africa savanna vegetation", approved=True)
-    denied, _ = make_version(db, school, "East Africa savanna vegetation", approved=False)
+    make_version(db, school, "East Africa savanna vegetation", approved=False)
     foreign, _ = make_version(db, other, "East Africa savanna vegetation", approved=True)
     for version, owner in ((permitted, school), (foreign, other)):
         index_version(db, owner, version)
