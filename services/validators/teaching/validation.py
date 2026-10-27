@@ -126,6 +126,8 @@ def validate_teaching_document(
         source.asset_id
         for source in bundle.evidence
         if source.asset_id and source.asset_permission_verified
+    } | {
+        visual.asset_id for visual in bundle.visuals if visual.permission_verified
     }
     used_visuals: set[str] = set()
     text_counts: Counter[str] = Counter()
@@ -159,6 +161,10 @@ def validate_teaching_document(
                         source.asset_kind
                         for source in bundle.evidence
                         if source.asset_id == block.asset_id and source.asset_kind
+                    )
+                    used_visuals.update(
+                        visual.kind for visual in bundle.visuals
+                        if visual.asset_id == block.asset_id and visual.permission_verified
                     )
             if block.kind == BlockKind.visual_needed:
                 add(
