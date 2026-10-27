@@ -239,7 +239,9 @@ class DownloadEngine:
             async for chunk in self.client.iter_download(location,request_size=524288,dc_id=photo.dc_id):
                 yield chunk
         else:
-            async for chunk in self.client.iter_download(message.media,request_size=524288):
+            # Use the resolved document object: MessageMediaWebPage wrappers
+            # are not valid InputFileLocations in Telethon 1.45.
+            async for chunk in self.client.iter_download(message.document,request_size=524288):
                 yield chunk
 
     async def download(self, item):
