@@ -131,3 +131,25 @@ def recall_at_k(actual: list[str], relevant: set[str], k: int) -> float:
     if not relevant:
         return 1.0 if not actual[:k] else 0.0
     return len(set(actual[:k]) & relevant) / len(relevant)
+
+
+def bound_generation_passages(passages, outcomes, *, max_total=80, max_per_outcome=6):
+    """Reserve at least one source excerpt per outcome before spending prompt budget.
+
+    Whole-book retrieval remains in the persisted research/audit; model calls
+    receive a manageable, multi-outcome slice. No citation IDs are synthesized.
+    """
+    max_total = max(1, min(160, int(max_total)))
+    max_per_outcome = max(1, min(16, int(max_per_outcome)))
+    buckets = defaultdict(list)
+    for passage in passages:
+        buckets[passage.outcome_id].append(passage)
+    order = [outcome.id for outcome in outcomes]
+    selected = []
+    for depth in range(max_per_outcome):
+        for oid in order:
+            if len(selected) >= max_total:
+                return selected
+            if len(buckets[oid]) > depth:
+                selected.append(buckets[oid][depth])
+    return selected
