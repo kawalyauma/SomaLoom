@@ -63,3 +63,9 @@ Prepare a draft integration PR with all source work traceable to #9, #13, #12, #
 Sanitized commands/results: [verification evidence](verification/2026-10-26/). Native source-to-six-family tests deliberately use a synthetic provider. Real Codex/API and Telegram acceptance remain BLOCKED. Public hostname/TLS and educator acceptance remain BLOCKED. This is an integrated, privately staged review candidate, not a production-ready release.
 
 The final Chromium run exercised review attestations and asynchronous PDF/DOCX publication through the actual browser forms, including RQ polling and authenticated downloads. It passed again on 2026-10-27. The default local suite passed 108 tests with two explicitly skipped native-service checks; the separate disposable native runner executes those checks.
+
+## Review and release references
+
+- [Master integration PR #17](https://github.com/kawalyauma/SomaLoom/pull/17) (draft; main unchanged).
+- [Verified integration snapshot 8f3704d9](https://github.com/kawalyauma/SomaLoom/commit/8f3704d9edfddf3ca0e4c1c78e16d6f4b3a8fc8f). The published tree matches tested local integration snapshot 8756cf5834d64ae12974ea7ef6351e58b5a5984e; original PR heads are preserved as ancestry.
+- Detailed local integration commits are retained on `integration/somaloom-release-local-20261027`; no work was discarded or force pushed.

@@ -41,3 +41,9 @@ The original tools/deploy.sh enforces a dedicated mounted data volume, productio
 The daily backup and per-minute monitoring timers are installed and active. Actual backup `20261026T212247Z-a9af3e7e` restored into a disposable PostgreSQL environment: 39 tables, two QA users, five original SHA-256 checks and four PDF/DOCX structure checks passed. A live browser completed login/upload/edit/review/download at desktop/tablet/mobile widths. Real RQ research found five permitted fixture sources. These results do not imply successful real AI generation.
 
 Temporary owned-site HTTP access was restricted to the administration host and removed after the CLI test. The security group was verified empty again. No public beta URL exists. QA credentials remain in a mode-600 file outside Git and are not part of the release archive. The source repository, export logs and backups contain no real student data or private textbooks.
+
+## Review and release references
+
+- [Master integration PR #17](https://github.com/kawalyauma/SomaLoom/pull/17) (draft; main unchanged).
+- [Verified integration snapshot 8f3704d9](https://github.com/kawalyauma/SomaLoom/commit/8f3704d9edfddf3ca0e4c1c78e16d6f4b3a8fc8f). The published tree matches tested local integration snapshot 8756cf5834d64ae12974ea7ef6351e58b5a5984e; original PR heads are preserved as ancestry.
+- Detailed local integration commits are retained on `integration/somaloom-release-local-20261027`; no work was discarded or force pushed.
