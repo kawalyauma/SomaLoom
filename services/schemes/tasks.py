@@ -96,6 +96,8 @@ def discover(limit=8, school_id=None):
                 eid,xjob,_=create_extraction(db,row['tenant_id'],row['resource_version_id'])
                 extraction_job=db.get(BackgroundJob,xjob)
                 if extraction_job.status=='failed':
+                    parent=db.get(BackgroundJob,row['job_id'])
+                    parent.status='failed';parent.error='scheme_extraction_failed';parent.finished_at=utcnow()
                     db.execute(imports.update().where(imports.c.id==row['id']).values(stage='extraction_failed'));db.commit();continue
                 task_name='scheme-parse-'+str(row['job_id']) if extraction_job.status=='succeeded' else 'scheme-extraction-'+str(xjob)
                 target='services.schemes.tasks.run_import' if extraction_job.status=='succeeded' else 'services.extraction.jobs.process_extraction'
