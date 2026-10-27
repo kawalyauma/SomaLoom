@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 
 from .schemas import EvidenceBundle, TeachingSpec, TeachingType
+from .note_style import note_style_spec
 
 REQUIRED_SECTIONS: dict[TeachingType, tuple[str, ...]] = {
     TeachingType.lesson_notes: (
@@ -58,6 +59,8 @@ REQUIRED_SECTIONS: dict[TeachingType, tuple[str, ...]] = {
 def build_prompt(spec: TeachingSpec, bundle: EvidenceBundle) -> tuple[str, str]:
     """Agent 5 provider consumes this; evidence is treated as untrusted quotations."""
     sections = REQUIRED_SECTIONS[spec.type]
+    canonical_subject = spec.planning_scope.get("source_subject_name")
+    style = note_style_spec(canonical_subject, spec.depth.value) if spec.type == TeachingType.lesson_notes else None
     system = (
         "You prepare professional, age-appropriate educational documents, NOT invented curriculum. "
         "Return ONLY a valid JSON object matching TeachingBody schema_version teaching.v1. "
@@ -76,6 +79,16 @@ def build_prompt(spec: TeachingSpec, bundle: EvidenceBundle) -> tuple[str, str]:
         "conclusion and exact summed requested minutes. A scheme must supply scheme_weeks "
         "with realistic, non-overallocated periods."
     )
+    if style:
+        system += (
+            " For SST and Science lesson notes, write original short-sentence reference notes, "
+            "NOT a lesson-plan narrative. Explain each subtopic using concise definitions, "
+            "subheadings, separate bulleted facts, relevant examples, useful tables and verified visuals. "
+            "The explanation section must be substantially more informative than the introductory "
+            "and administrative sections. One list item per line, not a continuous essay. "
+            "Cover every evidence-supported scheme objective; do not guess missing facts or reproduce "
+            "publisher prose. Keep original copyright protected wording and graphics out of the draft."
+        )
     payload = {
         "task": spec.type.value,
         "required_section_keys": sections,
@@ -103,6 +116,7 @@ def build_prompt(spec: TeachingSpec, bundle: EvidenceBundle) -> tuple[str, str]:
             "scheme_weeks": "list of SchemeWeek for scheme only, otherwise []",
             "lesson_stages": "list of LessonStage for lesson plan only, otherwise []",
         },
+        "reference_notes_style": style,
         "pedagogical_note": (
             "For Uganda, prefer familiar and verifiable local contexts without invented policies. "
             "Teacher guides must add teaching moves and expected answers, not mirror learner notes. "
