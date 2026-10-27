@@ -1,0 +1,760 @@
+{
+  "schema_version": "teaching.v1",
+  "title": "P5 Social Studies — Term 3, Week 2, Lesson 4: Types and Functions of Government in Uganda",
+  "review_status": "needs_review",
+  "revision": 1,
+  "sections": [
+    {
+      "key": "introduction",
+      "title": "Introduction: Government in Uganda",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e801",
+          "kind": "paragraph",
+          "text": "Class: Primary Five (P5). Subject: Social Studies (SST). Academic year: 2026. Term 3, Week 2, Lesson 4. Main topic: Uganda as an independent nation. Lesson focus: meaning of government, types of government, the work of government, and the local government structure from LC I to LC V.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "868ec44c-49d3-5437-8185-7ca788919d07"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e802",
+          "kind": "paragraph",
+          "text": "The uploaded P5 schemes expect learners to define government, name types of government, explain government duties, distinguish central and local government, and recognize local council levels. These are planning targets derived from uploaded schemes; they are not presented as independently verified national curriculum standards.",
+          "citation_ids": [
+            "868ec44c-49d3-5437-8185-7ca788919d07",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e803",
+          "kind": "paragraph",
+          "text": "Think about a class with no rules, prefects, class teacher or person to help solve disagreements. What problems might arise? A community also needs agreed rules, services and people responsible for public decisions. This comparison introduces the meaning of government; pupils should explain the differences between school leadership and elected public authorities.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "learning_outcomes",
+      "title": "Learning outcomes",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e804",
+          "kind": "list",
+          "text": "By the end of the learning activities, learners should be able to: (1) define government in simple words; (2) name forms or types of government; (3) state at least four roles of government; (4) distinguish central government from local government; (5) identify the local council levels LC I to LC V in the simplified structure in the uploaded scheme; and (6) use the key vocabulary accurately.",
+          "citation_ids": [
+            "868ec44c-49d3-5437-8185-7ca788919d07",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e805",
+          "kind": "paragraph",
+          "text": "The three core uploaded-scheme objectives are: Define government; list types of government; and state roles of government. The additional comparisons and local council descriptions support the same scheme subtopic and should be checked against the school’s actual teaching timetable.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "prior_knowledge",
+      "title": "Prior knowledge and introductory questions",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e806",
+          "kind": "list",
+          "text": "Ask: Who helps settle a disagreement in your class? Who helps organize activities in your village, parish or town? What public services have you seen, such as roads, health facilities, schools or rubbish collection? Can you name a leader or public office without discussing political parties?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e807",
+          "kind": "activity",
+          "text": "Think–pair–share (about 5 minutes): each learner names one rule that helps people live peacefully and one community service. Pairs explain why a community needs people to coordinate services. Teacher links their ideas to the concept of government.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "vocabulary",
+      "title": "Key vocabulary and meanings",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e808",
+          "kind": "table",
+          "text": "Vocabulary for accurate spelling and discussion.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true,
+          "rows": [
+            [
+              "Word",
+              "P5-friendly meaning"
+            ],
+            [
+              "Government",
+              "The people and institutions with the responsibility and authority to manage public affairs under the law."
+            ],
+            [
+              "Citizen",
+              "A person who legally belongs to a country and has rights and responsibilities."
+            ],
+            [
+              "Democracy",
+              "A system in which people participate in choosing leaders and public decisions, directly or through representatives."
+            ],
+            [
+              "Monarchy",
+              "A form of government with a king or queen as head of state, commonly according to hereditary succession."
+            ],
+            [
+              "Republic",
+              "A state whose head of state is not a hereditary monarch."
+            ],
+            [
+              "Central government",
+              "National-level institutions responsible for matters affecting the whole country."
+            ],
+            [
+              "Local government",
+              "Legally established authorities that manage specified public matters in local areas."
+            ],
+            [
+              "Local council (LC)",
+              "A local-level council or leadership body in Uganda's decentralized governance arrangements."
+            ],
+            [
+              "Decentralization",
+              "Giving certain responsibilities and decision-making powers to local authorities."
+            ],
+            [
+              "Ministry",
+              "A government department led politically by a minister and responsible for a particular area of work."
+            ]
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e809",
+          "kind": "activity",
+          "text": "Pronunciation and spelling drill: write government, democratic, monarchy, council, district and decentralization on the board. Pupils pronounce each word, use it in a short sentence and correct one another politely.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "explanation",
+      "title": "Detailed notes: Meaning, types, roles and structure of government",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80a",
+          "kind": "heading",
+          "text": "A. Meaning of government",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80b",
+          "kind": "paragraph",
+          "text": "A government is the system of people and institutions that makes and carries out public decisions and enforces laws for a country or a defined area. Governments organize services, settle public problems and use public money according to the law. In Uganda, different institutions work at national and local levels. Do not confuse government (institutions and public authority) with the state (the country and its permanent legal institutions).",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80c",
+          "kind": "heading",
+          "text": "B. Forms of government and levels of government",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80d",
+          "kind": "paragraph",
+          "text": "Forms of government describe HOW a country is ruled. Examples discussed in primary Social Studies include democracy, monarchy and military rule. In a democracy, people participate in choosing public leaders. In a monarchy, a king or queen serves as head of state. Military rule occurs when armed-force leaders exercise governing authority. These are general learning definitions; countries may combine features and each example needs teacher verification before use as a current-country comparison.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80e",
+          "kind": "paragraph",
+          "text": "Levels of government describe WHERE responsibilities are carried out. The main levels in this lesson are central (national) government and local government. These are not competing forms of government: a country can have a democratic national government and decentralized local authorities at the same time.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e80f",
+          "kind": "heading",
+          "text": "C. Roles and duties of government",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e810",
+          "kind": "list",
+          "text": "Important duties to discuss include: making and applying laws; protecting people and maintaining peace and public safety; coordinating public education and health services; constructing or maintaining important roads and other infrastructure; protecting the environment; collecting authorized taxes and using public funds for public needs; promoting national development; and helping people during emergencies. Different duties are assigned to different public bodies and levels under the law.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e811",
+          "kind": "paragraph",
+          "text": "Example: when a local road is damaged, community members may report the problem to their elected leaders. Responsible local or national authorities assess the road and plan repairs within their lawful responsibilities and available budgets. The responsible body depends on road classification and prevailing law, so avoid teaching that every road belongs to the same authority.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e812",
+          "kind": "heading",
+          "text": "D. Central government and local government",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e813",
+          "kind": "table",
+          "text": "Comparison between national and local government.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true,
+          "rows": [
+            [
+              "Central (national) government",
+              "Local government"
+            ],
+            [
+              "Works on responsibilities of national concern",
+              "Works on responsibilities assigned to a local area"
+            ],
+            [
+              "National institutions develop countrywide laws, policies and plans",
+              "Local councils and administrative offices implement local duties under the law"
+            ],
+            [
+              "Examples of national responsibilities: national security and nationwide policy",
+              "Examples of local responsibilities: certain local services, community planning and local by-laws within legal powers"
+            ],
+            [
+              "Serves the country as a whole",
+              "Serves defined districts and other local government areas"
+            ]
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e814",
+          "kind": "heading",
+          "text": "E. Simplified local council structure: LC I to LC V",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e815",
+          "kind": "paragraph",
+          "text": "The uploaded teaching schemes name levels from LC I (village) up to LC V (district). A commonly taught simplified sequence is LC I — village; LC II — parish; LC III — sub-county, town council or another legally established equivalent; LC IV — county or other intermediate arrangement where applicable; and LC V — district. These names and their current administrative roles are not uniform across every urban or rural area; teachers should check the relevant updated Ugandan legal and administrative structure.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e816",
+          "kind": "visual_needed",
+          "text": "Simplified black-and-white hierarchy for classroom drawing (not an official organizational chart): LC V (district) above LC IV (county/intermediate, where applicable), above LC III (sub-county/town council), above LC II (parish), above LC I (village). Mark this as a teaching simplification and note that urban arrangements differ. Do not reproduce an unverified official seal or claim all intermediate levels are identical nationwide.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true,
+          "visual_instruction": "Create a clean, printable five-step vertical hierarchy labeled LC V District, LC IV County/Intermediate (where applicable), LC III Sub-county/Town Council, LC II Parish, LC I Village, with a caution footnote 'Simplified rural teaching structure; current arrangements vary by locality and law'. No official emblem."
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e817",
+          "kind": "heading",
+          "text": "F. Ministry and local council responsibilities",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "868ec44c-49d3-5437-8185-7ca788919d07"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e818",
+          "kind": "paragraph",
+          "text": "Uganda's Ministry of Local Government is the national ministry associated with policy guidance, oversight and coordination of local government. Local councils and local authorities perform different duties according to their level and legal powers. Pupils may discuss community priorities, raising local concerns, local development planning, monitoring services and lawful community participation. Teachers should verify the ministry’s current name and the precise duties of each LC level against authoritative current government sources before approval.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e819",
+          "kind": "heading",
+          "text": "G. Decentralization",
+          "citation_ids": [
+            "868ec44c-49d3-5437-8185-7ca788919d07"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81a",
+          "kind": "paragraph",
+          "text": "Decentralization means transferring certain public responsibilities or powers from central authorities to institutions nearer the people. Possible benefits include local participation and attention to community needs. Possible challenges include limited funding, uneven local capacity and the need for proper accountability. These are conceptual explanations for teacher review; the scheme identifies decentralization as associated content but does not supply detailed definitions or examples.",
+          "citation_ids": [
+            "868ec44c-49d3-5437-8185-7ca788919d07"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "examples",
+      "title": "Worked examples and comparisons",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81b",
+          "kind": "question",
+          "text": "Example 1: A learner says, 'Government means only the President.' Is the statement complete? Explain.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81c",
+          "kind": "paragraph",
+          "text": "Suggested answer for teacher review: No. The national executive is one part of government, but public governance also involves other constitutionally established institutions and legally assigned local authorities. For P5, emphasize that government is more than one person.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81d",
+          "kind": "question",
+          "text": "Example 2: Pupils are told that the government plans a nationwide policy while local leaders collect community suggestions for local improvements. Which activity is national in scope, and which is local?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81e",
+          "kind": "paragraph",
+          "text": "Suggested answer: The nationwide policy is a national-level matter; collecting community suggestions is a local-level participation activity. Exact authority for any resulting project depends on the relevant law and service.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e81f",
+          "kind": "question",
+          "text": "Example 3: Arrange these simplified local-government labels from the lowest to highest: LC V, LC I, LC III, LC II, LC IV.",
+          "citation_ids": [
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e820",
+          "kind": "paragraph",
+          "text": "Expected classroom sequence: LC I → LC II → LC III → LC IV → LC V. Note that this simplified sequence does not by itself establish the legal powers of every unit.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "activities",
+      "title": "Teacher guidance and learner activities (40 minutes)",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e821",
+          "kind": "table",
+          "text": "Suggested 40-minute facilitation outline. This is a teacher-created allocation, not a timetable instruction from the uploaded schemes.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true,
+          "rows": [
+            [
+              "Minutes",
+              "Teacher action",
+              "Learner action",
+              "Check for understanding"
+            ],
+            [
+              "0–5",
+              "Link school rules to community leadership",
+              "Share familiar leadership and service examples",
+              "Learners explain why agreed rules are useful"
+            ],
+            [
+              "5–13",
+              "Introduce and contrast forms and levels of government",
+              "Read, repeat and define new vocabulary",
+              "Learners distinguish democracy from central/local levels"
+            ],
+            [
+              "13–23",
+              "Explain central and local responsibilities",
+              "Sort examples into central or local responsibilities",
+              "Learners justify choices; teacher corrects overgeneralizations"
+            ],
+            [
+              "23–33",
+              "Draw simplified LC I–LC V chart",
+              "Copy, label and discuss community structures",
+              "Learners identify village and district levels"
+            ],
+            [
+              "33–40",
+              "Use quick quiz and recap",
+              "Answer orally and write three key points",
+              "Teacher checks core objectives and vocabulary"
+            ]
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e822",
+          "kind": "activity",
+          "text": "Group task: provide word cards labeled government, democracy, monarchy, central, local, district and village. Groups sort them into (a) form of government, (b) level of government, and (c) administrative area. Discuss why each category differs.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e823",
+          "kind": "activity",
+          "text": "Paired role-play: one pupil is a community member reporting a sanitation problem, and another is an elected local representative. Demonstrate respectful communication and referral of a concern without claiming an unverified council power.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e824",
+          "kind": "activity",
+          "text": "Creative task: create a five-box LC chart from the scheme. Under it write: 'Our local administrative arrangements must be checked with current district or municipal information.'",
+          "citation_ids": [
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "misconceptions",
+      "title": "Common misconceptions and corrections",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e825",
+          "kind": "list",
+          "text": "Misconception: Government is only one leader. Correction: Public governance includes institutions and different officeholders. Misconception: Democracy and local government mean the same thing. Correction: Democracy is a form or principle of governance; local government refers to responsibilities below the national level. Misconception: Every LC level has exactly the same duties. Correction: Duties differ and depend on current law. Misconception: Each public service is always paid for by one level. Correction: Funding and responsibility may be shared or assigned by law.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e826",
+          "kind": "paragraph",
+          "text": "Teacher caution: The uploaded timetable item is an inferred scheme lesson, not proof that every detail is an officially prescribed P5 outcome. Legal arrangements may change; use authoritative up-to-date government materials before teaching ministry names, offices, powers or electoral provisions as current facts.",
+          "citation_ids": [
+            "868ec44c-49d3-5437-8185-7ca788919d07",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "summary",
+      "title": "Lesson summary",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e827",
+          "kind": "list",
+          "text": "Government refers to institutions and people carrying out lawful public responsibilities. Forms of government include democracy and monarchy as general concepts. Central government handles countrywide matters; local government handles legally assigned matters in local areas. Government roles include laws, public safety, services and development. The uploaded P5 SST scheme introduces the LC I–LC V hierarchy from village up to district. Responsible citizenship includes peaceful participation, respect for law and care for public services.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e828",
+          "kind": "paragraph",
+          "text": "Remember the three core scheme targets: DEFINE government; LIST types of government; STATE roles of government. The LC-level discussion extends the lesson's stated subtopic. Keep specific administrative details under teacher review.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "14d5d96d-9325-58d3-baab-ecd894143d5c"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "revision",
+      "title": "Revision questions and teacher checkpoints",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e829",
+          "kind": "list",
+          "text": "1. What is government? 2. Give two reasons why a community needs government. 3. Name two forms of government. 4. What is democracy? 5. Distinguish between central and local government. 6. State four roles of government. 7. What does LC stand for in our lesson? 8. Which council level does the uploaded scheme place at the village? 9. Which level does it place at the district? 10. Arrange LC I–LC V from the lowest to highest. 11. Give two examples of community matters that people can report to local leaders. 12. Explain the meaning of decentralization in your own words.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82a",
+          "kind": "paragraph",
+          "text": "Suggested oral checkpoints: (a) Ask each pupil for a one-sentence definition of government; (b) give a real-life example of a public service; (c) state whether 'democracy' is a form of government and whether 'local' is a level; (d) read and spell the key words clearly. Accept age-appropriate equivalent wording and refer unclear legal details for teacher verification.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82b",
+          "kind": "reflection",
+          "text": "Teacher reflection after teaching: Which outcomes were achieved? Which vocabulary words were difficult? Can pupils distinguish the roles of central and local institutions? Did the administrative chart require correction for our specific district or municipality? Which facts need authoritative source checking before the notes are approved?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    },
+    {
+      "key": "references",
+      "title": "Sources, provenance and teacher verification",
+      "blocks": [
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82c",
+          "kind": "list",
+          "text": "Uploaded source used for lesson scope: 'P.5 SST SCHEME TERM III' from a Telegram-submitted scheme (source: https://t.me/P7_teachers_in_uganda/9834). Evidence IDs 14d5d96d-9325-58d3-baab-ecd894143d5c and 868ec44c-49d3-5437-8185-7ca788919d07. It lists the meaning, functions and types of government, central/local government, LC I–LC V and local council duties. No page numbers were supplied.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "868ec44c-49d3-5437-8185-7ca788919d07"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82d",
+          "kind": "list",
+          "text": "Additional planning reference: 'P.5 SST SCHEME OF WORK TERM 3 2024', Fresh-Teacher GitHub, https://github.com/Fresh-Teacher/p5-past-papers/blob/6534d5ce7f91f72e0211911262acdd3680932646/P.5%20SST%20SCHEME%20OF%20WORK%20TERM%203%202024.docx (evidence ID 3dff36e3-5f81-5f2a-8ecf-955fdaa62398). This supports the planned vocabulary and duties focus but not every factual explanation.",
+          "citation_ids": [
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82e",
+          "kind": "list",
+          "text": "Additional planning reference: 'P.5 TERM I, II, III SCHEMES SST', Fresh-Teacher GitHub, https://github.com/Fresh-Teacher/p5-past-papers/blob/5f3e987dd5f2186370a3f4a198b73d51bc5db2b9/P.5%20TERM%20I%2C%20II%2C%20III%20SCHEMES%20SST.pdf (evidence ID a156feea-6eaf-53f8-81b5-3357b800f749). It specifies the local-government hierarchy, council functions and comparisons with central government.",
+          "citation_ids": [
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ]
+        },
+        {
+          "id": "b85c5a8b-497c-4074-8395-00174876e82f",
+          "kind": "paragraph",
+          "text": "Editorial verification required: All three source licenses in the supplied packet are recorded as 'unknown'. Source references are included for internal review, not as a claim that copyright permissions have been granted. The packet supplies scheme outlines rather than detailed government textbook explanations. Every explanatory factual section marked 'requires_review' must be checked by a teacher against authoritative current Ugandan civic/legislative sources before school publication. No invented textbook pages, source excerpts, map assets or official curriculum claims are included.",
+          "citation_ids": [
+            "14d5d96d-9325-58d3-baab-ecd894143d5c",
+            "3dff36e3-5f81-5f2a-8ecf-955fdaa62398",
+            "a156feea-6eaf-53f8-81b5-3357b800f749"
+          ],
+          "outcome_ids": [
+            "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+          ],
+          "requires_review": true
+        }
+      ],
+      "outcome_ids": [
+        "c9bcc0ec-8823-56c1-b8d3-75b1bef4180c"
+      ]
+    }
+  ],
+  "scheme_weeks": [],
+  "lesson_stages": []
+}
