@@ -143,11 +143,23 @@ class EvidenceItem(StrictModel):
     asset_permission_verified: bool = False
 
 
+class VisualAssetEvidence(StrictModel):
+    asset_id: UUID
+    outcome_id: UUID
+    kind: str
+    caption: str | None = None
+    page: int | None = Field(default=None, ge=1)
+    source_uri: str = Field(min_length=1)
+    license: str = Field(min_length=1)
+    permission_verified: bool = False
+
+
 class EvidenceBundle(StrictModel):
     curriculum_id: UUID
     curriculum_version: str
     outcomes: list[CurriculumTarget] = Field(min_length=1)
     evidence: list[EvidenceItem] = Field(min_length=1)
+    visuals: list[VisualAssetEvidence] = Field(default_factory=list)
     required_visual_kinds: list[str] = Field(default_factory=list)
 
 
