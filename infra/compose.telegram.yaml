@@ -30,6 +30,7 @@ services:
       REDIS_URL: redis://:${REDIS_PASSWORD:?set REDIS_PASSWORD}@redis:6379/0
       SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
       INGESTION_SCANNER_COMMAND: python /usr/local/bin/clamdscan-compat.py
+      INGESTION_SCAN_TIMEOUT_SECONDS: "180"
     command: [/usr/local/bin/start-clamd-and-importer, python, -m, services.ingestion.telegram_archive]
     security_opt: ["no-new-privileges:true"]
     cap_drop: [ALL]
