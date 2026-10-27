@@ -1,0 +1,51 @@
+@import "tailwindcss";
+:root { color-scheme: light; }
+body { margin:0; background:#f5f7fb; color:#142237; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+button,input,select,textarea { font:inherit; }
+button { cursor:pointer; } button:disabled {cursor:not-allowed;opacity:.48;}
+:focus-visible {outline:3px solid #0d9488;outline-offset:3px;}
+.soma-app {min-height:100vh;display:flex;}
+.soma-sidebar {width:265px;flex-shrink:0;background:#0c2230;color:#d1e4e6;min-height:100vh;padding:28px 18px;display:flex;flex-direction:column;gap:14px;position:sticky;top:0;max-height:100vh;overflow-y:auto;}
+.soma-logo {display:flex;align-items:center;gap:12px;padding:0 11px 19px;border-bottom:1px solid #29404b;color:white;font-size:21px;font-weight:800;letter-spacing:-.04em;}
+.soma-logo span:first-child {background:#1fb89c;color:#083c36;border-radius:14px;padding:10px;}
+.soma-nav-heading {font-size:10px;color:#829eaa;text-transform:uppercase;letter-spacing:.16em;font-weight:800;margin:21px 12px 8px;}
+.soma-nav-link {display:flex;align-items:center;gap:11px;padding:11px 13px;text-decoration:none;color:#c8d7dc;border-radius:10px;font-size:13px;font-weight:550;transition:background .2s;}
+.soma-nav-link:hover {background:#203a45;color:white;}
+.soma-nav-link[aria-current="page"] {color:#fff;background:#236d66;font-weight:750;}
+.soma-symbol {font-size:19px;width:24px;text-align:center;line-height:1.1;}
+.soma-main {min-width:0;flex:1;}
+.soma-topbar {position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid #e5eaf0;padding:16px 34px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.soma-content {max-width:1370px;margin:auto;padding:33px 34px 70px;}
+.soma-eyebrow {font-size:11px;letter-spacing:.13em;color:#086d5c;text-transform:uppercase;font-weight:850;}
+.soma-title {font-weight:800;letter-spacing:-.045em;font-size:clamp(25px,3vw,36px);color:#12263b;line-height:1.15;}
+.soma-muted {color:#59697b;font-size:14px;line-height:1.65;}
+.soma-card {background:#fff;border:1px solid #e4e9ef;border-radius:18px;padding:23px;box-shadow:0 7px 22px rgba(18,46,68,.025);}
+.soma-card:hover {border-color:#cfdfe0;}
+.soma-card-heading {font-size:16px;font-weight:780;color:#15283d;}
+.soma-button {border:0;border-radius:10px;background:#117b6c;color:white;font-size:13px;font-weight:750;padding:11px 17px;display:inline-flex;align-items:center;gap:9px;justify-content:center;text-decoration:none;}
+.soma-button:hover {background:#0c5e54;}
+.soma-button.secondary {background:#edf5f3;color:#136b5e;}
+.soma-button.ghost {background:white;color:#30465a;border:1px solid #dce5ea;}
+.soma-input {width:100%;border:1px solid #dce4ec;border-radius:10px;background:white;padding:11px 12px;font-size:13px;color:#193147;outline:0;}
+.soma-input:focus {border-color:#129a83;box-shadow:0 0 0 3px #d8f6ef;}
+.soma-label {display:grid;gap:7px;font-size:12px;font-weight:750;color:#405568;}
+.soma-status {padding:11px 14px;border-radius:11px;font-size:13px;line-height:1.5;background:#eff5fa;color:#315269;border:1px solid #dce8f1;}
+.soma-status.error {background:#fff1f1;color:#9b2732;border-color:#ffd7d7;}
+.soma-tag {display:inline-flex;background:#e9f7f2;border:1px solid #c9e9dc;padding:4px 9px;border-radius:20px;font-size:11px;font-weight:700;color:#147560;}
+.soma-grid-2 {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;}
+.soma-grid-3 {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;}
+.soma-grid-4 {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;}
+.soma-tile {display:block;text-decoration:none;color:inherit;transition:transform .15s;}
+.soma-tile:hover {transform:translateY(-2px);}
+.soma-divider {border:0;border-top:1px solid #e9edf0;margin:21px 0;}
+.soma-top-mobile {display:none;}
+.soma-table {width:100%;border-collapse:collapse;text-align:left;font-size:13px;}
+.soma-table th {font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#5c6b7b;font-weight:800;background:#f7f9fb;}
+.soma-table td,.soma-table th {padding:13px;border-bottom:1px solid #ebeff2;}
+.soma-preview {background:white;max-width:790px;min-height:650px;margin:0 auto;border:1px solid #e3e6ea;box-shadow:0 12px 40px #17324a15;padding:55px;line-height:1.7;}
+.soma-block {padding:11px;border:1px solid transparent;border-radius:8px;}
+.soma-block:focus-within {border-color:#7edacb;background:#f8fdfa;}
+.soma-block textarea {border:0;background:transparent;width:100%;resize:vertical;outline:none;line-height:1.65;}
+@media(max-width:1050px){.soma-sidebar{width:220px}.soma-grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.soma-grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.soma-app{display:block}.soma-sidebar{width:100%;min-height:0;max-height:none;position:static;padding:12px}.soma-logo{border:0;padding:4px 5px 9px}.soma-nav{display:flex;gap:4px;overflow-x:auto}.soma-nav-heading{display:none}.soma-nav-link{white-space:nowrap;padding:9px 11px}.soma-topbar{padding:15px}.soma-content{padding:22px 15px 60px}.soma-grid-2,.soma-grid-3,.soma-grid-4{grid-template-columns:1fr}.soma-top-mobile{display:block}.soma-preview{padding:25px 18px;min-height:450px}}
+@media print {.soma-sidebar,.soma-topbar,.soma-no-print,.soma-content>header {display:none!important}.soma-main,.soma-content {padding:0;margin:0;max-width:none}.soma-preview {border:0;box-shadow:none;max-width:none;padding:0}.soma-block {break-inside:avoid}.soma-app {display:block}@page{size:A4;margin:18mm}}

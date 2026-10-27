@@ -1,0 +1,17 @@
+{
+  "job_id": "3c160f87-3f48-4771-8079-dec4fbf05b59",
+  "status": "succeeded",
+  "coverage": [
+    {
+      "outcome_id": "b5be54a5-403e-4d4a-b8cb-8e3726d1becb",
+      "code": "QA-WATER",
+      "required": true,
+      "official": false,
+      "concept": "filtration",
+      "status": "strong",
+      "source_count": 5
+    }
+  ],
+  "retrieval": "keyword",
+  "curriculum": "synthetic teacher authored enrichment"
+}

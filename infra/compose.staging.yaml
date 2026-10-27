@@ -1,0 +1,16 @@
+# Private staging only: ingress is denied by the EC2 security group; use SSM.
+services:
+  nginx:
+    volumes:
+      - ./infra/nginx/staging.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./tests/fixtures/owned_site:/usr/share/nginx/owned-qa:ro
+  api:
+    environment:
+      INGESTION_SCANNER_COMMAND: clamscan --no-summary --database=/var/lib/clamav
+    volumes:
+      - /var/lib/clamav:/var/lib/clamav:ro
+  worker:
+    environment:
+      INGESTION_SCANNER_COMMAND: clamscan --no-summary --database=/var/lib/clamav
+    volumes:
+      - /var/lib/clamav:/var/lib/clamav:ro

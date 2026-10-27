@@ -1,0 +1,10 @@
+ Container somaloom-api-1  Paused
+ Container somaloom-dispatcher-1  Unpaused
+ Container somaloom-worker-1  Unpaused
+ Container somaloom-api-1  Unpaused
+Backup uploaded: somaloom/20261026T212247Z-a9af3e7e (restore verification still required)
+database.sql: OK
+resources.tar.gz: OK
+PASS: restored 5 referenced originals match SHA-256
+PASS: restored 4 published PDF/DOCX files retain valid structures
+PASS: off-instance restore into disposable PostgreSQL: tables=39 users=2 resource_versions=5; live deployment unchanged
