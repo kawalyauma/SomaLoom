@@ -1,0 +1,53 @@
+{
+  "type": "diagram_labeling",
+  "curriculum_id": "11111111-1111-4111-8111-111111111111",
+  "level_id": "22222222-2222-4222-8222-222222222222",
+  "subject_id": "33333333-3333-4333-8333-333333333333",
+  "topic_ids": [
+    "44444444-4444-4444-8444-444444444444"
+  ],
+  "outcome_ids": [],
+  "difficulty": "medium",
+  "cognitive_target": "identify plant structures",
+  "stem": "Using the reviewed plant diagram, label the root, stem and leaf.",
+  "marks": 5,
+  "estimated_minutes": 8,
+  "options": [],
+  "multiple_select": false,
+  "answer": {
+    "correct_option_ids": [],
+    "acceptable_answers": [
+      "root",
+      "stem",
+      "leaf"
+    ],
+    "numeric_value": null,
+    "tolerance": 0,
+    "calculation": null,
+    "steps": [],
+    "rubric": [
+      {
+        "criterion": "Root",
+        "marks": 2
+      },
+      {
+        "criterion": "Stem",
+        "marks": 2
+      },
+      {
+        "criterion": "Leaf",
+        "marks": 1
+      }
+    ],
+    "explanation": "Labels follow the verified diagram."
+  },
+  "visual_asset_ids": [
+    "55555555-5555-4555-8555-555555555555"
+  ],
+  "visual_verified": true,
+  "latex": null,
+  "source_refs": [],
+  "provenance": "original",
+  "matching_pairs": {},
+  "data_table": []
+}

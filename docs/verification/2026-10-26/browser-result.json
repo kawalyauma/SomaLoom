@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "uploadItems": [
+    {
+      "resource_id": "88944784-c9b5-446a-9f40-88aaec177146",
+      "version_id": "e968f185-12d1-49ba-b5b1-10b06e22e5fa",
+      "duplicate": true
+    },
+    {
+      "resource_id": "1f0ba912-98cf-4952-9af3-01c5b4e8e773",
+      "version_id": "64ce87c7-bc73-474b-9645-d94ad1f69665",
+      "duplicate": true
+    },
+    {
+      "resource_id": "7bf4d4e2-339f-4b33-ba06-35a2c020980e",
+      "version_id": "79527d73-2161-4c50-88a5-b75c254a2115",
+      "duplicate": true
+    }
+  ],
+  "documentId": "7566cd04-8853-472d-a36b-8976b6063622",
+  "versionId": "a9cb826f-59a7-4f8d-9f6d-a3f48156752b",
+  "realProvider": "blocked-unconfigured",
+  "viewportWidths": [
+    1440,
+    390,
+    768
+  ],
+  "severeAccessibilityFindings": 0
+}

@@ -1,0 +1,37 @@
+# Use: docker compose -f compose.yaml -f infra/compose.production.yaml ...
+services:
+  db:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/postgres:/var/lib/postgresql/data
+  redis:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/redis:/data
+  api:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+  worker:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+  dispatcher:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+  migrate:
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+  nginx:
+    image: nginxinc/nginx-unprivileged:stable-alpine
+    restart: unless-stopped
+    ports: ["80:8080", "443:8443"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ${TLS_ROOT:?TLS certificate directory required}:/etc/nginx/tls:ro
+    depends_on:
+      api: {condition: service_healthy}
+      web: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://127.0.0.1:8080/healthz"]
+      interval: 15s
+      timeout: 5s
+      retries: 5

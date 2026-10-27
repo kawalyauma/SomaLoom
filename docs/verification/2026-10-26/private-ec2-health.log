@@ -1,0 +1,13 @@
+api healthy
+db healthy
+dispatcher healthy
+nginx healthy
+redis healthy
+web healthy
+worker healthy
+{"status":"ready","database":true,"redis":true,"worker":true}Oct 27 02:20:03 ip-172-31-29-201 systemd[1]: Starting somaloom-monitor.service - SomaLoom service and encrypted data disk monitoring...
+Oct 27 02:20:03 ip-172-31-29-201 python3[298377]: {"unhealthy_services": 0, "data_disk_used_percent": 0.1}
+Oct 27 02:20:03 ip-172-31-29-201 systemd[1]: somaloom-monitor.service: Deactivated successfully.
+Oct 27 02:20:03 ip-172-31-29-201 systemd[1]: Finished somaloom-monitor.service - SomaLoom service and encrypted data disk monitoring.
+active
+active

@@ -1,0 +1,21 @@
+name: Verify staging
+on:
+  workflow_dispatch:
+    inputs:
+      staging_url:
+        description: Existing HTTPS staging origin (does not deploy)
+        required: true
+permissions: {contents: read}
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify existing staging
+        env:
+          STAGING_URL: ${{ inputs.staging_url }}
+        run: |
+          [[ "$STAGING_URL" == https://* ]]
+          bash tools/smoke.sh "$STAGING_URL"
+# Actual deployment is deliberately gated on provisioning EC2/IAM/TLS, see docs/DEPLOYMENT.md.

@@ -1,0 +1,7 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Exact synthetic visual object key in Agent 4 test fixture; no credential"
+regexTarget = "secret"
+regexes = ['''^synthetic/diagram$''']

@@ -1,0 +1,8 @@
+# Install alongside the platform's root pyproject (Agent 1 owns root dependencies).
+PyMuPDF>=1.25,<2
+python-docx>=1.2,<2
+beautifulsoup4>=4.12,<5
+Pillow>=13,<14
+pytesseract>=0.3.13,<1
+matplotlib>=3.9,<4
+# Host OS: tesseract-ocr (and required language packs), not a pip package.

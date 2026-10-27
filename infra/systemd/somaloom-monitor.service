@@ -1,0 +1,8 @@
+[Unit]
+Description=SomaLoom service and encrypted data disk monitoring
+After=docker.service network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/somaloom
+EnvironmentFile=/etc/somaloom/monitor.env
+ExecStart=/usr/bin/python3 /opt/somaloom/tools/monitor_host.py

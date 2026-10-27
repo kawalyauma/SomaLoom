@@ -1,0 +1,2 @@
+PASS: real owned CC0 website CLI imported two pages with provenance; extraction/index verification is separate.
+Removed the temporary /32 fixture HTTP rule; private staging ingress restored.
