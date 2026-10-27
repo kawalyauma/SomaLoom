@@ -97,6 +97,7 @@ class DownloadEngine:
     def status(self, tenant):
         tenant = str(UUID(tenant))
         with self.db() as db:
+            db.execute('BEGIN')
             sources = [dict(s) for s in db.execute('SELECT * FROM sources WHERE tenant_id=? ORDER BY updated DESC',(tenant,))]
             for src in sources:
                 counts = db.execute('''SELECT count(*) discovered,
@@ -109,7 +110,6 @@ class DownloadEngine:
                   FROM files WHERE tenant_id=? AND source_id=?''',(time.time(),tenant,src['id'])).fetchone()
                 src.update({k:int(counts[k] or 0) for k in counts.keys()})
                 src['status'] = 'paused' if not src['active'] else 'rate_limited' if self.paused_until>time.time() else 'watching' if src['backfill_done'] and src['downloaded']+src['unavailable']==src['discovered'] else 'downloading' if src['downloading'] else 'scanning_history'
-        with self.db() as db:
             summary=dict(db.execute("""SELECT count(*) discovered,
                 sum(CASE WHEN state='downloaded' THEN 1 ELSE 0 END) downloaded,
                 sum(CASE WHEN state='downloaded' AND coalesce(library_status,'')!='quarantined' THEN 1 ELSE 0 END) available,
