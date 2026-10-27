@@ -27,7 +27,6 @@ def cycle():
         account_sources=[r for r in db.execute(select(sources).where(sources.c.kind=='telegram')).mappings().all() if r['config'].get('transport')=='account']
     owned={(str(s['tenant_id']),str(s['id'])):s for s in account_sources}
     result=account_request('/files/ready',{})
-    acknowledgements=[]
     for item in result.get('items',[])[:10]:
         identity=(item['tenant_id'],item['source_id'])
         source=owned.get(identity)
@@ -35,7 +34,7 @@ def cycle():
         ack={'id':item['id'],'tenant_id':item['tenant_id'],'source_id':item['source_id'],'status':'archived_only'}
         # Every type/size is archived. Only supported, bounded, scanned files enter extraction.
         if item['size']>MAX_BYTES:
-            acknowledgements.append(ack);continue
+            account_request('/files/ack',{'items':[ack]});continue
         try:
             data=archive_content(item['tenant_id'],'telegram-account/'+item['id'])
             mime=validate_file(data)
@@ -48,14 +47,13 @@ def cycle():
                 if not latest or not latest['config'].get('active',True):continue
                 result=publish_version(db,UUID(item['tenant_id']),None,data,mime,name,checksum,name,source['license'],source['source_uri'].rstrip('/')+'/'+str(item['message_id']),'telegram',UUID(item['source_id']),external_object_key='telegram-account/'+item['id'])
                 ack.update(status='imported',resource_id=str(result['resource_id']))
-            acknowledgements.append(ack)
+            account_request('/files/ack',{'items':[ack]})
         except HTTPException as error:
             if error.status_code in (413,422):
                 if 'antivirus' in str(error.detail).lower():ack['status']='quarantined'
-                acknowledgements.append(ack)
+                account_request('/files/ack',{'items':[ack]})
         except Exception as error:
             logging.warning('telegram_archive_index_retry type=%s',type(error).__name__)
-    if acknowledgements:account_request('/files/ack',{'items':acknowledgements})
 
 
 def fresh_teacher_loop():
