@@ -92,3 +92,6 @@ uses `infra/clamav/clamdscan-compat.py` over a private Unix socket. This avoids 
 virus signatures afresh for every file. Rebuild the API image and recreate the importer
 when changing its launcher or client. The scanner keeps the original 20 MiB ingestion
 limit and fails closed when the daemon is unavailable.
+The Telegram scanner uses a 180-second client/process timeout for large PDFs;
+archive library acknowledgements are persisted after each file rather than after
+the entire batch. A transient scanner failure leaves the original archived and pending.
