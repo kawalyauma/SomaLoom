@@ -125,7 +125,7 @@ def scan_original(data: bytes) -> str:
             result = subprocess.run(
                 [*shlex.split(command), temp.name],
                 capture_output=True,
-                timeout=60,
+                timeout=max(10, min(600, int(os.getenv("INGESTION_SCAN_TIMEOUT_SECONDS", "60")))),
                 check=False,
             )
         except (OSError, subprocess.TimeoutExpired):
