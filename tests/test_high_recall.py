@@ -95,3 +95,35 @@ def test_denied_and_other_school_sources_never_return(db, accounts):
     assert [x["resource_version_id"] for x in search(
         db, school, "savanna", max_per_resource=8
     )] == [str(permitted)]
+
+
+def test_synthetic_p7_sst_multiphase_recall_beats_one_phrase(db, accounts):
+    """Synthetic relevance labels; NOT real textbook or independent Recall@50."""
+    school = accounts[0][0].id
+    first, _ = make_version(
+        db, school,
+        "Vegetation is plant cover in a region; natural forest covers mountains."
+    )
+    second, _ = make_version(
+        db, school,
+        "Savanna grasslands provide habitat across East African plains."
+    )
+    for version in (first, second):
+        index_version(db, school, version)
+    baseline = search(db, school, "vegetation", limit=20)
+    baseline_ids = [x["resource_id"] for x in baseline]
+    labels = set()
+    for version in (first, second):
+        labels.add(str(db.scalar(
+            select(items.c.resource_id).where(items.c.resource_version_id == version)
+        )))
+    expanded = []
+    for phrase in query_variants("vegetation", "East Africa", limit=8):
+        expanded += search(db, school, phrase, limit=20, max_per_resource=8)
+    selected = select_evidence(expanded, limit=40, max_per_resource=8)
+    recovered = [x["resource_id"] for x in selected]
+    before = recall_at_k(baseline_ids, labels, 50)
+    after = recall_at_k(recovered, labels, 50)
+    assert after >= before
+    assert after == 1.0
+    assert before < after
