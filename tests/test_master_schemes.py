@@ -76,3 +76,9 @@ def test_multiple_source_rows_in_one_period_are_all_preserved(db, accounts):
     assert body['lessons'][0]['objectives']==['Identify Fractions','Compare fractions']
     assert body['conflict_count']==0
     assert len(body['lessons'][0]['sources'])==2
+
+def test_subject_abbreviations_share_one_master():
+    from services.schemes.schema import subject_name
+    assert subject_name('S.S.T')=='Social Studies'
+    assert subject_name('M.T.C.')=='Mathematics'
+    assert subject_name('SCI.')=='Integrated Science'

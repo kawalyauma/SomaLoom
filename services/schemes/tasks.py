@@ -60,7 +60,7 @@ def verify_section(section, title, doc, source):
         if not re.search(r'\b(?:'+grade[0]+r'|'+label+r')[.\s-]*(?:'+grade[1]+'|'+word+r')\b', identity,re.I):
             raise ValueError('scheme_class_not_supported_by_identity')
     aliases={'Mathematics':['mathematics','maths','mtc','math'],'Integrated Science':['science','sci'],'Social Studies':['social studies','sst']}.get(subject,[subject.casefold()])
-    if not any(re.search(r'\b'+re.escape(a)+r'\b',identity) for a in aliases):raise ValueError('scheme_subject_not_supported_by_identity')
+    if not any(re.search(r'\b'+re.escape(a)+r'\b',identity.replace('.', '')) for a in aliases):raise ValueError('scheme_subject_not_supported_by_identity')
     lessons=[];rejected=0
     for entry in section.lessons:
         block=by_id.get(entry.source.block_id)

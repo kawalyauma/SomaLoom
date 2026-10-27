@@ -17,7 +17,8 @@ def grade_name(value):
     return {'baby class':'Baby','middle class':'Middle','top class':'Top'}.get(value.casefold(),value)
 
 def subject_name(value):
-    return SUBJECTS.get(value.strip().casefold(), value.strip())
+    key = re.sub(r'\s+', ' ', value.replace('.', '').strip()).casefold()
+    return SUBJECTS.get(key, value.strip())
 
 def normalized(value):
     return re.sub(r'\s+', ' ', value).strip().casefold()
