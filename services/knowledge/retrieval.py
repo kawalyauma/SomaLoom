@@ -143,14 +143,17 @@ def search(
     filters: dict | None = None,
     limit: int = 10,
     embedder=None,
+    max_per_resource: int = 3,
 ) -> list[dict]:
     if not query.strip() or len(query) > 1000:
         raise ValueError("Search query must be 1..1000 characters")
     if not (1 <= limit <= 50):
         raise ValueError("Limit must be 1..50")
+    if not (1 <= max_per_resource <= 30):
+        raise ValueError("max_per_resource must be 1..30")
     base = query_base(school, filters)
     engine = db.bind.dialect.name
-    candidate_cap = min(200, max(30, limit * 5))
+    candidate_cap = min(500, max(50, limit * 8))
     lexical = []
     if engine == "postgresql":
         words = [
@@ -215,7 +218,7 @@ def search(
     seen_hashes, counts = set(), defaultdict(int)
     for row in ranked:
         # Reduce verbatim duplicate citations and single-book domination.
-        if row["fingerprint"] in seen_hashes or counts[str(row["resource_id"])] >= 3:
+        if row["fingerprint"] in seen_hashes or counts[str(row["resource_id"])] >= max_per_resource:
             continue
         if not verify_source(db, school, row):
             continue
