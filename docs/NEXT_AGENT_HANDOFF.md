@@ -75,3 +75,20 @@ and DOCX files in bounded batches, scans them, deduplicates by blob URI/content,
 submits them to the normal tenant-scoped library/extraction pipeline. Legacy `.doc`
 files are skipped because the current library scanner/extractor does not safely
 support that binary format. See `services/ingestion/fresh_teacher.py`.
+
+## Class and subject generation selection
+
+The `/generate` form now selects class, subject and topic. `GET /api/v1/generations/options`
+returns school-scoped choices without curriculum IDs. `POST /api/v1/generations/for-class`
+resolves the newest matching curriculum with approved outcomes and validates the
+selected topic again before queuing. Existing UUID-based API submissions remain supported.
+Primary class names and Mathematics aliases are normalized for selection; internal
+UUIDs retain the stored grade/subject identities. The form defaults to P5 Mathematics.
+Empty curriculum/topic data is reported clearly; no placeholder curriculum is created.
+At deployment the NotesUG tenant had no curriculum records, so topics still need importing.
+
+The Telegram importer now starts a persistent ClamAV daemon in its container and
+uses `infra/clamav/clamdscan-compat.py` over a private Unix socket. This avoids loading
+virus signatures afresh for every file. Rebuild the API image and recreate the importer
+when changing its launcher or client. The scanner keeps the original 20 MiB ingestion
+limit and fails closed when the daemon is unavailable.
