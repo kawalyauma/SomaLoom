@@ -146,7 +146,10 @@ function renderBlock(block:Block,editable:boolean,onChange?:(text:string,field?:
  const text=block.text||"";
  if(editable)return <textarea aria-label={"Edit "+block.type} rows={Math.max(2,Math.min(12,Math.ceil(text.length/95)))} value={text} onChange={e=>onChange?.(e.target.value)} />;
  if(block.type==="heading")return <h3 className="text-xl font-extrabold">{text}</h3>;
- if(block.type==="list")return <ul className="list-inside list-disc"><li>{text}</li></ul>;
+ if(block.type==="list"){
+  const points=text.split(/\r?\n/).map(line=>line.trim().replace(/^(?:[-*•]\s*|\d+[.)]\s*)/,"")).filter(Boolean);
+  return <ul className="list-inside list-disc space-y-1">{points.map((point,i)=><li key={i}>{point}</li>)}</ul>;
+ }
  return <p className="whitespace-pre-wrap">{text}</p>;
 }
 type VersionRow = {id:string;version:number;created_at:string};
