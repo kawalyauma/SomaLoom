@@ -20,6 +20,7 @@ from app.core.models import (
 from sqlalchemy import func, insert, select
 from sqlalchemy.orm import Session
 
+from services.knowledge.high_recall import bound_generation_passages
 from services.generation.schema import (
     EvidenceBundle,
     GenerationInput,
@@ -240,10 +241,19 @@ def retrieve_evidence(
     if not outcomes_found:
         raise ValueError("topic_outcome_mapping_missing")
     db.commit()
+    targets = list(outcomes_found.values())
+    selected_passages = bound_generation_passages(
+        list(passages.values()), targets, max_total=80, max_per_outcome=6,
+    )
+    selected_outcomes = {p.outcome_id for p in selected_passages}
+    selected_visuals = [
+        visual for visual in visual_references.values()
+        if visual.outcome_id in selected_outcomes
+    ][:24]
     return EvidenceBundle(
-        outcomes=list(outcomes_found.values()),
-        passages=list(passages.values()),
-        visuals=list(visual_references.values()),
+        outcomes=targets,
+        passages=selected_passages,
+        visuals=selected_visuals,
     )
 
 
