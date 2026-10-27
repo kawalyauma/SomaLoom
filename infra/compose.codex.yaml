@@ -1,0 +1,70 @@
+services:
+  api:
+    environment:
+      AI_PROVIDER: codex
+      AI_MODEL: gpt-6.1-sol
+      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
+      AI_CODEX_ISOLATION_ATTESTED: "1"
+    volumes:
+      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
+      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+    networks: [default, codex-control]
+  worker:
+    environment:
+      AI_PROVIDER: codex
+      AI_MODEL: gpt-6.1-sol
+      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
+      AI_CODEX_ISOLATION_ATTESTED: "1"
+    volumes:
+      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
+      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+    networks: [default, codex-control]
+  codex-inference:
+    build:
+      context: .
+      dockerfile: infra/codex/Dockerfile
+    image: somaloom-codex-inference:0.164.0
+    restart: unless-stopped
+    init: true
+    user: "10002:10002"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    cpus: 1.5
+    mem_limit: 1536m
+    pids_limit: 128
+    environment:
+      HTTP_PROXY: http://codex-egress:3128
+      HTTPS_PROXY: http://codex-egress:3128
+      NO_PROXY: localhost,127.0.0.1
+    volumes:
+      - /etc/somaloom/codex-auth:/home/runner/.codex
+      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+    tmpfs:
+      - /tmp:size=268435456,mode=1777
+    networks: [codex-control, codex-outbound]
+    healthcheck:
+      test: [CMD, python3, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/healthz')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "3"}
+  codex-egress:
+    image: ubuntu/squid:latest
+    restart: unless-stopped
+    volumes:
+      - ./infra/codex/squid.conf:/etc/squid/squid.conf:ro
+    networks: [codex-outbound, codex-internet]
+    mem_limit: 256m
+    pids_limit: 64
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "2"}
+networks:
+  codex-control:
+    internal: true
+  codex-outbound:
+    internal: true
+  codex-internet: {}

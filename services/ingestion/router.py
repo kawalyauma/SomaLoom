@@ -38,6 +38,7 @@ from services.ingestion.library import (
     read_upload,
 )
 from services.ingestion.models import import_runs, telegram_receipts
+from services.ingestion.telegram_links import TelegramLinkError, resolve_link, account_request, archive_url
 
 router = APIRouter(tags=["resource ingestion"])
 
@@ -62,7 +63,7 @@ class MetadataPatch(BaseModel):
 class SourceCreate(BaseModel):
     kind: Literal["web", "telegram"]
     source_uri: str | None = Field(None, min_length=1, max_length=1000)
-    license: str = Field(min_length=1, max_length=300)
+    license: str = Field(default="unknown", min_length=1, max_length=300)
     domains: list[str] = Field(default_factory=list, max_length=20)
     paths: list[str] = Field(default_factory=lambda: ["/"], max_length=20)
     chat_id: str | None = Field(None, max_length=80)
@@ -151,6 +152,21 @@ def resources_list(
     return list_resources(db, school_id(user), q, mime, page, page_size)
 
 
+@router.get("/resources/statistics")
+def resource_statistics(user: User = Depends(current_user), db: Session = Depends(get_db)):
+    tenant=school_id(user)
+    visible=resources.c.provenance["deleted_at"].as_string().is_(None)
+    library_count=db.scalar(select(func.count()).select_from(resources).where(resources.c.tenant_id==tenant,visible)) or 0
+    library_formats=[{"mime":mime,"count":count} for mime,count in db.execute(select(resources.c.media_type,func.count()).where(resources.c.tenant_id==tenant,visible).group_by(resources.c.media_type))]
+    try:
+        archive=account_request("/status",{"tenant_id":str(tenant)})
+        warning=None
+    except TelegramLinkError:
+        archive=None
+        warning="Download statistics are temporarily unavailable. They will refresh automatically."
+    return {"library":{"available":library_count,"formats":library_formats},"archive":archive,"warning":warning,"updated_at":datetime.now(timezone.utc).isoformat()}
+
+
 @router.get("/resources/{resource_id}")
 def resource_detail(
     resource_id: UUID, user: User = Depends(current_user), db: Session = Depends(get_db)
@@ -192,6 +208,10 @@ def download_resource(
     )
     if not record:
         raise HTTPException(404, "Version not found")
+    if record["object_key"].startswith("telegram-account/"):
+        from fastapi.responses import RedirectResponse
+        location=archive_url(tenant, record["object_key"].removeprefix("telegram-account/"))
+        return RedirectResponse(location["url"],status_code=303,headers={"Cache-Control":"private, no-store"})
     return Response(
         content=object_store().get(tenant, record["object_key"]),
         media_type=record["provenance"].get("media_type", resource["media_type"]),
@@ -277,9 +297,23 @@ def create_source(
             raise HTTPException(422, "Source URL outside authorized scope")
         config = {"active": True, "domains": domains, "paths": data.paths}
         url = canonical(data.source_uri)
+    elif data.source_uri:
+        try:
+            resolved = resolve_link(data.source_uri)
+        except TelegramLinkError as error:
+            raise HTTPException(422, str(error)) from None
+        existing = db.execute(
+            select(sources).where(sources.c.kind == "telegram", sources.c.tenant_id == tenant)
+        ).mappings().all()
+        for row in existing:
+            if row["config"].get("active", True) and row["config"].get("chat_id") == resolved["chat_id"]:
+                return {"id": row["id"], "kind": "telegram", "source_uri": row["source_uri"], "config": row["config"]}
+        config = {"active": True, "chat_id": resolved["chat_id"], "transport": "account", "title": resolved.get("title"), "username": resolved.get("username"), "auto_download": True, "history_years": 10, "batch_size": 10}
+        url = resolved["link"]
     else:
+        # Retain existing bot integrations; the user-facing account flow accepts links only.
         if not data.chat_id or not data.chat_id.lstrip("-").isdigit():
-            raise HTTPException(422, "Numeric Telegram chat ID required")
+            raise HTTPException(422, "Paste a Telegram group or channel link starting with https://t.me/.")
         if not os.getenv("SOMALOOM_TELEGRAM_BOT_TOKEN"):
             raise HTTPException(503, "Telegram integration not configured")
         existing = db.execute(select(sources).where(sources.c.kind == "telegram")).mappings().all()
@@ -415,6 +449,36 @@ def start_web(
     return {"id": run_id, "job_id": job_id, "status": "queued"}
 
 
+@router.get("/imports/telegram/status")
+def telegram_download_status(user: User = Depends(current_user), db: Session = Depends(get_db)):
+    tenant=school_id(user)
+    owned=set(str(x) for x in db.scalars(select(sources.c.id).where(sources.c.tenant_id==tenant,sources.c.kind=="telegram")))
+    try:
+        result=account_request("/status",{"tenant_id":str(tenant)})
+    except TelegramLinkError as error:
+        raise HTTPException(503,str(error)) from None
+    result["sources"]=[s for s in result.get("sources",[]) if s["id"] in owned]
+    return result
+
+
+@router.get("/imports/telegram/files")
+def telegram_archive_files(source_id: UUID, page: int = Query(1,ge=1), user: User = Depends(current_user), db: Session = Depends(get_db)):
+    tenant=school_id(user)
+    owned=db.scalar(select(sources.c.id).where(sources.c.id==source_id,sources.c.tenant_id==tenant,sources.c.kind=="telegram"))
+    if not owned:raise HTTPException(404,"Source not found")
+    try:return account_request("/files",{"tenant_id":str(tenant),"source_id":str(source_id),"page":page})
+    except TelegramLinkError as error:raise HTTPException(503,str(error)) from None
+
+
+@router.get("/imports/telegram/files/{file_id}/download")
+def telegram_archive_download(file_id: UUID, user: User = Depends(current_user)):
+    from fastapi.responses import RedirectResponse
+    tenant=school_id(user)
+    try:result=archive_url(tenant,file_id)
+    except TelegramLinkError:raise HTTPException(404,"Downloaded file not found") from None
+    return RedirectResponse(result["url"],status_code=303,headers={"Cache-Control":"private, no-store"})
+
+
 @router.post("/imports/telegram")
 def telegram_instructions(
     data: TelegramStart,
@@ -435,6 +499,12 @@ def telegram_instructions(
     )
     if not source or not source["config"].get("active", False):
         raise HTTPException(404, "Source unavailable")
+    if source["config"].get("transport") == "account":
+        try:
+            resolve_link(source["source_uri"])
+        except TelegramLinkError as error:
+            raise HTTPException(422, str(error)) from None
+        return {"source_id": data.source_id, "mode": "account_link", "status": "Automatic downloads enabled: past 10 years, 10 resources per batch."}
     return {
         "source_id": data.source_id,
         "mode": "new_messages_only",

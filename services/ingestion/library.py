@@ -174,6 +174,7 @@ def publish_version(
     source_type: str,
     source_id: UUID | None = None,
     resource_id: UUID | None = None,
+    external_object_key: str | None = None,
 ):
     """Persist original first; then atomically commit metadata, job and outbox event."""
     if not license.strip() or not source_uri.strip():
@@ -289,7 +290,13 @@ def publish_version(
     version_id, job_id, event_id = uuid4(), uuid4(), uuid4()
     key = f"originals/{resource_id}/{version_id}/{MIMES[mime].lstrip('.')}"
     scan_status = scan_original(data)
-    object_store().put(tenant_id, key, data)
+    if external_object_key is not None:
+        if not external_object_key.startswith("telegram-account/"):
+            raise ValueError("Invalid archived object key")
+        UUID(external_object_key.removeprefix("telegram-account/"))
+        key = external_object_key
+    else:
+        object_store().put(tenant_id, key, data)
     provenance = {
         "source_uri": source_uri,
         "source_type": source_type,

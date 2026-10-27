@@ -1,0 +1,56 @@
+services:
+  api:
+    environment:
+      SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
+    volumes:
+      - ./services/ingestion/router.py:/app/services/ingestion/router.py:ro
+      - ./services/ingestion/telegram_links.py:/app/services/ingestion/telegram_links.py:ro
+      - ./services/ingestion/library.py:/app/services/ingestion/library.py:ro
+      - ./apps/api/app/core/storage.py:/app/apps/api/app/core/storage.py:ro
+      - /etc/somaloom/telegram-account-token:/run/secrets/telegram-account-token:ro
+      - /etc/somaloom/telegram-account-ca.pem:/run/secrets/telegram-account-ca.pem:ro
+  worker:
+    environment:
+      SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
+    volumes:
+      - ./services/ingestion/telegram_links.py:/app/services/ingestion/telegram_links.py:ro
+      - ./services/ingestion/library.py:/app/services/ingestion/library.py:ro
+      - ./apps/api/app/core/storage.py:/app/apps/api/app/core/storage.py:ro
+      - /etc/somaloom/telegram-account-token:/run/secrets/telegram-account-token:ro
+      - /etc/somaloom/telegram-account-ca.pem:/run/secrets/telegram-account-ca.pem:ro
+  telegram-importer:
+    image: somaloom-api
+    restart: unless-stopped
+    init: true
+    user: "10001:10001"
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://somaloom_app:${APP_DB_PASSWORD:?set APP_DB_PASSWORD}@db:5432/${POSTGRES_DB:-somaloom}
+      REDIS_URL: redis://:${REDIS_PASSWORD:?set REDIS_PASSWORD}@redis:6379/0
+      SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
+      INGESTION_SCANNER_COMMAND: clamscan --no-summary --database=/var/lib/clamav
+    command: [python, -m, services.ingestion.telegram_archive]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: [ALL]
+    mem_limit: 2048m
+    pids_limit: 64
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+      - ./services/ingestion/telegram_archive.py:/app/services/ingestion/telegram_archive.py:ro
+      - ./services/ingestion/telegram_links.py:/app/services/ingestion/telegram_links.py:ro
+      - ./services/ingestion/library.py:/app/services/ingestion/library.py:ro
+      - ./apps/api/app/core/storage.py:/app/apps/api/app/core/storage.py:ro
+      - /etc/somaloom/telegram-account-token:/run/secrets/telegram-account-token:ro
+      - /etc/somaloom/telegram-account-ca.pem:/run/secrets/telegram-account-ca.pem:ro
+      - /var/lib/clamav:/var/lib/clamav:ro
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "from app.core.queue import redis_connection; assert redis_connection().exists('somaloom:telegram_importer:heartbeat')"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "3"}

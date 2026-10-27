@@ -17,6 +17,7 @@ export const routes = [
  {id: "review", label: "Reviews & approvals", group: "Workspace", symbol: "✓"},
  {id: "publish", label: "Publishing center", group: "Workspace", symbol: "↗"},
  {id: "library", label: "Reference library", group: "Sources", symbol: "▣"},
+ {id: "statistics", label: "Resource statistics", group: "Sources", symbol: "▥"},
  {id: "upload", label: "Upload resources", group: "Sources", symbol: "↑"},
  {id: "telegram", label: "Telegram sources", group: "Sources", symbol: "➤"},
  {id: "imports", label: "Website imports", group: "Sources", symbol: "⌁"},

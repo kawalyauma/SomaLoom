@@ -1,0 +1,5 @@
+services:
+  nginx:
+    volumes:
+      - ./infra/nginx/public.conf:/etc/nginx/conf.d/default.conf:ro
+      - /var/lib/somaloom-acme:/var/www/certbot:ro

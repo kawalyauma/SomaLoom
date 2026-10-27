@@ -1,0 +1,16 @@
+[Unit]
+Description=SomaLoom private Telegram link resolver
+After=network-online.target
+Wants=network-online.target
+[Service]
+Type=simple
+User=codexagent
+Group=codexagent
+WorkingDirectory=/home/codexagent
+Environment=HOME=/home/codexagent
+ExecStart=/home/codexagent/workspace/.somaloom-venv/bin/python /home/codexagent/.config/somaloom-telegram/account_broker.py
+Restart=on-failure
+RestartSec=5
+UMask=0077
+[Install]
+WantedBy=multi-user.target

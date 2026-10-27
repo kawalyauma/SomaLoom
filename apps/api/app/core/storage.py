@@ -44,6 +44,9 @@ class LocalObjectStore:
         return key
 
     def get(self, tenant_id: UUID, key: str) -> bytes:
+        if key.startswith("telegram-account/"):
+            from services.ingestion.telegram_links import archive_content
+            return archive_content(tenant_id, key)
         return self.path(tenant_id, key).read_bytes()
 
 
@@ -76,6 +79,9 @@ class S3ObjectStore:
         return key
 
     def get(self, tenant_id: UUID, key: str) -> bytes:
+        if key.startswith("telegram-account/"):
+            from services.ingestion.telegram_links import archive_content
+            return archive_content(tenant_id, key)
         return self.client.get_object(Bucket=self.bucket, Key=self.key(tenant_id, key))[
             "Body"
         ].read()
