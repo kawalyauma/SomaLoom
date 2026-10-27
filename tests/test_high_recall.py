@@ -5,7 +5,9 @@ from sqlalchemy import select, update
 
 from conftest import sign_in
 from services.knowledge.diagnostics import resource_coverage
-from services.knowledge.high_recall import query_variants, recall_at_k, select_evidence
+from services.knowledge.high_recall import (
+    bound_generation_passages, query_variants, recall_at_k, select_evidence
+)
 from services.knowledge.indexer import index_version
 from services.knowledge.models import items
 from services.knowledge.retrieval import search
@@ -169,3 +171,15 @@ def test_teaching_ai_receives_verified_maps_without_approving_unverified_ones():
     assert visual["asset_id"] == str(aid)
     assert visual["permission_verified"] is True
     assert visual["source_uri"] == "fixture://p7-sst"
+
+
+def test_generation_budget_keeps_all_outcomes_represented():
+    from types import SimpleNamespace
+    outcomes = [SimpleNamespace(id=str(i)) for i in range(5)]
+    sources = [SimpleNamespace(outcome_id=str(i), quote=f"paragraph {i}-{j}")
+               for i in range(5) for j in range(8)]
+    selected = bound_generation_passages(sources, outcomes, max_total=10, max_per_outcome=6)
+    assert len(selected) == 10
+    assert {s.outcome_id for s in selected} == {str(i) for i in range(5)}
+    assert selected[0].quote == "paragraph 0-0"
+    assert selected[5].quote == "paragraph 0-1"
