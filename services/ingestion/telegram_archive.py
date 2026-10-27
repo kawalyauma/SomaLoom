@@ -58,6 +58,15 @@ def cycle():
     if acknowledgements:account_request('/files/ack',{'items':acknowledgements})
 
 
+def fresh_teacher_loop():
+    import logging
+    from services.ingestion.fresh_teacher import cycle
+    while True:
+        try:cycle()
+        except Exception as error:logging.warning('fresh_teacher_cycle_retry type=%s',type(error).__name__)
+        time.sleep(30)
+
+
 def synchronization_loop():
     while True:
         try:
@@ -71,6 +80,7 @@ def synchronization_loop():
 def main():
     logging.basicConfig(level=logging.INFO)
     threading.Thread(target=synchronization_loop,daemon=True).start()
+    threading.Thread(target=fresh_teacher_loop,daemon=True).start()
     while True:
         try:
             redis_connection().set('somaloom:telegram_importer:heartbeat','active',ex=180)

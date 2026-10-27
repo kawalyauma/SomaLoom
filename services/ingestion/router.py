@@ -61,12 +61,17 @@ class MetadataPatch(BaseModel):
 
 
 class SourceCreate(BaseModel):
-    kind: Literal["web", "telegram"]
+    kind: Literal["web", "telegram", "fresh_teacher"]
     source_uri: str | None = Field(None, min_length=1, max_length=1000)
     license: str = Field(default="unknown", min_length=1, max_length=300)
     domains: list[str] = Field(default_factory=list, max_length=20)
     paths: list[str] = Field(default_factory=lambda: ["/"], max_length=20)
     chat_id: str | None = Field(None, max_length=80)
+    download_mode: Literal["licensed_downloads", "all_downloads"] = "licensed_downloads"
+
+
+class FreshTeacherMode(BaseModel):
+    download_mode: Literal["licensed_downloads", "all_downloads"]
 
 
 class WebStart(BaseModel):
@@ -165,6 +170,28 @@ def resource_statistics(user: User = Depends(current_user), db: Session = Depend
         archive=None
         warning="Download statistics are temporarily unavailable. They will refresh automatically."
     return {"library":{"available":library_count,"formats":library_formats},"archive":archive,"warning":warning,"updated_at":datetime.now(timezone.utc).isoformat()}
+
+
+@router.get("/fresh-teacher/status")
+def fresh_teacher_status(user: User = Depends(current_user), db: Session = Depends(get_db)):
+    tenant=school_id(user)
+    rows=db.execute(select(sources).where(sources.c.tenant_id==tenant,sources.c.kind=="fresh_teacher").order_by(sources.c.created_at.desc())).mappings().all()
+    results=[]
+    for row in rows:
+        imported=db.scalar(select(func.count()).select_from(resources).where(resources.c.tenant_id==tenant,resources.c.import_source_id==row["id"],resources.c.provenance["deleted_at"].as_string().is_(None))) or 0
+        latest=db.execute(select(resources.c.created_at).where(resources.c.tenant_id==tenant,resources.c.import_source_id==row["id"]).order_by(resources.c.created_at.desc()).limit(1)).scalar()
+        results.append({"id":str(row["id"]),"repo_url":row["source_uri"],"repo":row["config"].get("title"),"active":row["config"].get("active",True),"mode":row["config"].get("download_mode","licensed_downloads"),"status":row["config"].get("status","queued"),"last_checked":row["config"].get("last_checked"),"license":row["config"].get("detected_license"),"error":row["config"].get("error"),"imported":int(imported),"latest_resource_at":latest.isoformat() if latest else None})
+    return {"sources":results,"file_types":[".pdf",".docx"],"updated_at":datetime.now(timezone.utc).isoformat()}
+
+
+@router.patch("/fresh-teacher/sources/{source_id}")
+def fresh_teacher_source_mode(source_id: UUID, data: FreshTeacherMode, user: User = Depends(require_roles("school_admin")), db: Session = Depends(get_db)):
+    tenant=school_id(user)
+    row=db.execute(select(sources).where(sources.c.id==source_id,sources.c.tenant_id==tenant,sources.c.kind=="fresh_teacher")).mappings().first()
+    if not row:raise HTTPException(404,"Repository not found")
+    config=dict(row["config"]);config["download_mode"]=data.download_mode;config["last_scan_epoch"]=0;config["status"]="queued";config["error"]=None
+    db.execute(sources.update().where(sources.c.id==source_id,sources.c.tenant_id==tenant).values(config=config));audit(db,user,"ingestion.fresh_teacher.mode_changed",source_id);db.commit()
+    return {"id":str(source_id),"download_mode":data.download_mode}
 
 
 @router.get("/resources/{resource_id}")
@@ -297,6 +324,18 @@ def create_source(
             raise HTTPException(422, "Source URL outside authorized scope")
         config = {"active": True, "domains": domains, "paths": data.paths}
         url = canonical(data.source_uri)
+    elif data.kind == "fresh_teacher":
+        import re
+        match=re.fullmatch(r"https://github\.com/Fresh-Teacher/([A-Za-z0-9_.-]{1,100})/?",(data.source_uri or ""),re.IGNORECASE)
+        if not match or match.group(1) in {".",".."}:
+            raise HTTPException(422,"Use a Fresh-Teacher GitHub repository link, such as https://github.com/Fresh-Teacher/repository")
+        repo=match.group(1)
+        url=f"https://github.com/Fresh-Teacher/{repo}"
+        existing=db.execute(select(sources).where(sources.c.tenant_id==tenant,sources.c.kind=="fresh_teacher",sources.c.source_uri==url)).mappings().first()
+        if existing:
+            return {"id":existing["id"],"kind":"fresh_teacher","source_uri":url,"config":existing["config"]}
+        config={"active":True,"auto_import":True,"download_mode":data.download_mode,"title":repo,"status":"watching"}
+        license_name="unknown"
     elif data.source_uri:
         try:
             resolved = resolve_link(data.source_uri)
@@ -331,7 +370,7 @@ def create_source(
             tenant_id=tenant,
             kind=data.kind,
             source_uri=url,
-            license=data.license,
+            license=license_name if data.kind == "fresh_teacher" else data.license,
             config=config,
         )
     )

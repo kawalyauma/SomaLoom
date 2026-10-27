@@ -20,6 +20,7 @@ export const routes = [
  {id: "statistics", label: "Resource statistics", group: "Sources", symbol: "▥"},
  {id: "upload", label: "Upload resources", group: "Sources", symbol: "↑"},
  {id: "telegram", label: "Telegram sources", group: "Sources", symbol: "➤"},
+ {id: "fresh-teacher", label: "Fresh Teacher imports", group: "Sources", symbol: "◉"},
  {id: "imports", label: "Website imports", group: "Sources", symbol: "⌁"},
  {id: "processing", label: "Processing jobs", group: "Sources", symbol: "◷"},
  {id: "curriculum", label: "Curriculum browser", group: "Intelligence", symbol: "◈"},

@@ -67,3 +67,11 @@ Do not overwrite separate uncommitted work in the mobile server's workspace repo
 - Live authenticated statistics endpoint, counter reconciliation and original-file
   SHA256 checks. Archive/history backfill is a continuing background job, not a
   completed historical import.
+
+Fresh-Teacher GitHub repository imports are also live in this branch under `/fresh-teacher`.
+Admins connect explicit `https://github.com/Fresh-Teacher/<repo>` links. The importer
+checks license metadata and the repository's default branch hourly; it fetches PDF
+and DOCX files in bounded batches, scans them, deduplicates by blob URI/content, and
+submits them to the normal tenant-scoped library/extraction pipeline. Legacy `.doc`
+files are skipped because the current library scanner/extractor does not safely
+support that binary format. See `services/ingestion/fresh_teacher.py`.

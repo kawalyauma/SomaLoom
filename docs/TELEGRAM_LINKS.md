@@ -49,3 +49,16 @@ Runtime: `infra/telegram/download_engine.py` alongside `account_broker.py` under
 `somaloom-telegram-account` systemd service owns the persistent Telegram session.
 Deploy all Compose overlays including `infra/compose.telegram.yaml`; restart the
 API, worker and telegram-importer after changing their mounted Python modules.
+
+## Fresh-Teacher GitHub imports
+
+School admins can connect repository links under Sources → Fresh Teacher imports.
+The importer uses the repository's default branch, checks its declared license and
+imports supported PDF and DOCX resources into the tenant's existing library and
+extraction queue. It scans every hour and imports up to ten changed files at a
+time. Blob links and SHA-256 checksums avoid repeated imports. Licensed mode skips
+repositories with no declared license; all-downloads mode records unlicensed
+material as unknown, which remains ineligible for AI evidence selection under the
+existing rights checks. The repository links are tenant-scoped and only the fixed
+Fresh-Teacher GitHub organization is accepted. Legacy binary DOC files are omitted
+because the current library scanner/extractor cannot safely process them.
