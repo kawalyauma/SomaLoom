@@ -17,6 +17,7 @@ from sqlalchemy import select
 from services.ai.provider import ProviderError, configured_provider
 from services.generation.orchestrator import create_draft
 from services.generation.repository import (
+    activity_event,
     finish,
     retrieve_evidence,
     save_draft,
@@ -71,6 +72,7 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID, data: Gen
             if not update_progress(db, job_id, tenant_id, stage, amount):
                 raise Cancelled()
 
+    await progress("researching", 10)
     with SessionLocal() as db:
         actor_id = db.scalar(
             select(generations.c.requested_by).where(
@@ -78,7 +80,7 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID, data: Gen
             )
         )
         bundle = retrieve_evidence(db, tenant_id, data, actor_id)
-    await progress("researching", 10)
+    await progress("drafting", 35)
     settings = get_settings()
     if not settings.ai_provider or settings.ai_provider == "disabled":
         raise ProviderError("provider_unconfigured")
@@ -130,8 +132,7 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID, data: Gen
             .where(generations.c.id == generation_id, generations.c.tenant_id == tenant_id)
             .values(
                 parameters={
-                    **values,
-                    "stage": "awaiting_review",
+                    **activity_event(values, "awaiting_review", 100, "succeeded"),
                     "usage": {
                         "input_tokens": draft.metadata["input_tokens"] if draft else None,
                         "output_tokens": draft.metadata["output_tokens"] if draft else None,

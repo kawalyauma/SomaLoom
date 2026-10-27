@@ -33,6 +33,16 @@ def _fingerprint(data: GenerationInput) -> str:
     return hashlib.sha256(raw.encode()).hexdigest()
 
 
+def activity_event(parameters, stage, progress, status):
+    from app.core.models import utcnow
+    values = dict(parameters or {})
+    events = list(values.get("activity", []))
+    if not events or (events[-1]["stage"], events[-1]["status"]) != (stage, status):
+        events.append({"stage": stage, "status": status, "progress": progress, "at": utcnow().isoformat()})
+    values.update(stage=stage, activity=events[-100:])
+    return values
+
+
 def create_record(
     db: Session, tenant_id: UUID, actor_id: UUID, payload: GenerationInput, key: str | None = None
 ) -> tuple[UUID, UUID, bool]:
@@ -79,12 +89,11 @@ def create_record(
             job_id=stable_id,
             requested_by=actor_id,
             document_type=payload.document_type.value,
-            parameters={
+            parameters=activity_event({
                 "request": payload.model_dump(mode="json"),
                 "fingerprint": fingerprint,
-                "stage": "queued",
                 "attempts": 0,
-            },
+            }, "queued", 0, "queued"),
         )
     )
     db.commit()
@@ -298,8 +307,7 @@ def update_progress(db: Session, job_id: UUID, tenant_id: UUID, stage: str, prog
         .first()
     )
     if row:
-        values = dict(row["parameters"] or {})
-        values["stage"] = stage
+        values = activity_event(row["parameters"], stage, job.progress, "running")
         db.execute(
             generations.update()
             .where(generations.c.id == row["id"], generations.c.tenant_id == tenant_id)
@@ -323,6 +331,9 @@ def finish(
     job.progress = 100 if status == "succeeded" else job.progress
     job.error = error  # classified code only, never raw provider output
     job.finished_at = datetime.now(timezone.utc)
+    row = db.execute(select(generations).where(generations.c.job_id == job_id, generations.c.tenant_id == tenant_id)).mappings().first()
+    if row:
+        db.execute(generations.update().where(generations.c.id == row["id"], generations.c.tenant_id == tenant_id).values(parameters=activity_event(row["parameters"], status, job.progress, status)))
     db.commit()
     return True
 

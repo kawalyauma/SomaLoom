@@ -13,6 +13,7 @@ export const routes = [
  {id: "dashboard", label: "Overview", group: "Workspace", symbol: "▦"},
  {id: "master-schemes", label: "Master schemes", group: "Workspace", symbol: "▦"},
  {id: "generate", label: "Generation studio", group: "Workspace", symbol: "✦"},
+ {id: "work", label: "My work", group: "Workspace", symbol: "◷"},
  {id: "documents", label: "My documents", group: "Workspace", symbol: "▤"},
  {id: "editor", label: "Document editor", group: "Workspace", symbol: "✎"},
  {id: "review", label: "Reviews & approvals", group: "Workspace", symbol: "✓"},

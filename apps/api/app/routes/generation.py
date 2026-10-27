@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from uuid import NAMESPACE_URL, UUID, uuid5
 
-from fastapi import APIRouter, Depends, Header, HTTPException, Response
+from fastapi import APIRouter, Depends, Header, HTTPException, Response, Query
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import exists, select
 from sqlalchemy.exc import IntegrityError
@@ -14,7 +14,7 @@ from sqlalchemy.orm import Session
 from app.auth.security import current_user, require_roles
 from app.core.config import get_settings
 from app.core.database import get_db
-from app.core.models import BackgroundJob, User, generations
+from app.core.models import BackgroundJob, User, generations, documents
 from services.ai.provider import provider_available
 from services.generation.repository import (
     create_record,
@@ -187,6 +187,58 @@ def generate_for_class(payload: ClassGenerationInput, response: Response,
     return create_generation(resolved, response, key, user, db)
 
 
+def work_query(school):
+    return select(generations, BackgroundJob.status, BackgroundJob.progress, BackgroundJob.error,
+        BackgroundJob.updated_at.label("last_updated_at"), BackgroundJob.finished_at,
+        documents.c.id.label("document_id"), documents.c.title.label("document_title")).join(
+        BackgroundJob, (BackgroundJob.id == generations.c.job_id) & (BackgroundJob.tenant_id == school)).outerjoin(
+        documents, (documents.c.generation_job_id == generations.c.id) & (documents.c.tenant_id == school)).where(generations.c.tenant_id == school)
+
+
+def work_item(row, user):
+    scope = row["parameters"].get("request", {}).get("options", {}).get("planning_scope", {})
+    label = [scope.get("class"), normalize_subject(scope["subject"]) if scope.get("subject") else None]
+    label += [f"{name.title()} {scope[name]}" for name in ("term", "week", "lesson") if scope.get(name) is not None]
+    label.append(row["document_type"].replace("_", " ").capitalize())
+    status = row["status"]
+    stage = status if status in ("failed", "cancelled", "succeeded") else row["parameters"].get("stage", status)
+    events = row["parameters"].get("activity", [])
+    if not events:
+        events = [{"stage":"queued", "status":"queued", "progress":0, "at":row["created_at"].isoformat()}]
+        if status != "queued":
+            events.append({"stage":stage, "status":status, "progress":row["progress"], "at":(row["finished_at"] or row["last_updated_at"]).isoformat()})
+    if status in ("failed", "cancelled", "succeeded") and events[-1]["status"] != status:
+        events = [*events, {"stage":stage, "status":status, "progress":row["progress"], "at":(row["finished_at"] or row["last_updated_at"]).isoformat()}]
+    return {"id":str(row["id"]), "job_id":str(row["job_id"]), "title":" · ".join(filter(None,label)),
+        "document_type":row["document_type"], "status":status, "stage":stage, "progress":row["progress"], "error":row["error"],
+        "created_at":row["created_at"], "updated_at":row["last_updated_at"], "finished_at":row["finished_at"],
+        "document_id":str(row["document_id"]) if row["document_id"] else None, "document_title":row["document_title"],
+        "scope":{k:v for k,v in scope.items() if k in ("class","subject","term","week","lesson")},
+        "topics":[{"topic":l.get("topic", ""), "subtopic":l.get("subtopic", "")} for l in scope.get("lessons",[])],
+        "activity":events, "attempts":int(row["parameters"].get("attempts",0)),
+        "can_manage":user.role == "school_admin" or (user.role == "teacher" and row["requested_by"] == user.id)}
+
+
+@router.get("")
+def list_generation_work(page:int=Query(1,ge=1),page_size:int=Query(20,ge=1,le=50),
+    status:str|None=Query(None,pattern="^(queued|running|succeeded|failed|cancelled)$"),
+    user:User=Depends(current_user), db:Session=Depends(get_db)):
+    from sqlalchemy import func
+    query=work_query(tenant(user))
+    if user.role == "teacher":query=query.where(generations.c.requested_by == user.id)
+    if status:query=query.where(BackgroundJob.status == status)
+    total=db.scalar(select(func.count()).select_from(query.subquery()))
+    rows=db.execute(query.order_by(generations.c.created_at.desc(),generations.c.id.desc()).offset((page-1)*page_size).limit(page_size)).mappings().all()
+    return {"items":[work_item(r,user) for r in rows],"total":total,"page":page,"page_size":page_size}
+
+
+@router.get("/{generation_id}/activity")
+def generation_activity(generation_id:UUID,user:User=Depends(current_user),db:Session=Depends(get_db)):
+    row=db.execute(work_query(tenant(user)).where(generations.c.id == generation_id)).mappings().first()
+    if not row:raise HTTPException(404,"Generation not found")
+    return work_item(row,user)
+
+
 @router.get("/{generation_id}", response_model=GenerationStatus)
 def get_generation(
     generation_id: UUID,
@@ -213,8 +265,8 @@ def cancel_generation(
 
         job.status = "cancelled"
         job.finished_at = datetime.now(timezone.utc)
-        params = dict(record.parameters)
-        params["stage"] = "cancelled"
+        from services.generation.repository import activity_event
+        params = activity_event(record.parameters, "cancelled", job.progress, "cancelled")
         db.execute(
             generations.update()
             .where(generations.c.id == generation_id, generations.c.tenant_id == tenant(user))
@@ -258,7 +310,9 @@ def retry_generation(
     except Exception:
         raise HTTPException(503, "Generation queue unavailable") from None
     job.status, job.progress, job.error, job.finished_at = "queued", 0, None, None
-    params.update(stage="queued", attempts=attempts + 1)
+    from services.generation.repository import activity_event
+    params = activity_event(params, "queued", 0, "queued")
+    params["attempts"] = attempts + 1
     db.execute(
         generations.update()
         .where(generations.c.id == generation_id, generations.c.tenant_id == tenant(user))
