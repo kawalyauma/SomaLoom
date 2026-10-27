@@ -18,6 +18,8 @@ Benchmark integrity: Code audit and new synthetic tests only. **Real P7 SST accu
 | Audit | No per-concept query record | Query variants, scope, counts, source diversity, budget and gaps |
 | Searchability | Upload/archive confused with searchable | Admin-only current-version scan/index/rights/embedding/failure inventory |
 | Visuals in teaching generation | Indexed but not forwarded | Verified permission-approved maps/diagrams carried to teaching AI and saved metadata |
+| Source titles | Curriculum topic name used as citation title | Original resource title retained when available |
+| Generation prompt evidence | Potentially unbounded per topic | Bounded to 80 selected excerpts total, six per outcome, preserving first pass across outcomes |
 
 These are **configuration/code deltas, not measured accuracy improvements**.
 
