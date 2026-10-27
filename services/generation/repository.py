@@ -68,13 +68,16 @@ def create_record(
     active = db.scalar(
         select(func.count())
         .select_from(BackgroundJob)
+        .join(generations,(generations.c.job_id==BackgroundJob.id)&(generations.c.tenant_id==tenant_id))
         .where(
+            func.coalesce(generations.c.parameters["execution_mode"].as_string(),"ai")!="github",
             BackgroundJob.tenant_id == tenant_id,
             BackgroundJob.kind == "generation",
             BackgroundJob.status.in_(("queued", "running")),
         )
     )
-    if active >= limit:
+    execution_mode=payload.options.get("execution_mode",os.getenv("RESOURCE_GENERATION_MODE","ai"))
+    if execution_mode != "github" and active >= limit:
         raise ValueError("generation_queue_limit")
     background = BackgroundJob(
         id=stable_id, tenant_id=tenant_id, kind="generation", status="queued", progress=0
@@ -92,6 +95,7 @@ def create_record(
             parameters=activity_event({
                 "request": payload.model_dump(mode="json"),
                 "fingerprint": fingerprint,
+                "execution_mode": execution_mode,
                 "attempts": 0,
             }, "queued", 0, "queued"),
         )
@@ -333,7 +337,7 @@ def finish(
     job.finished_at = datetime.now(timezone.utc)
     row = db.execute(select(generations).where(generations.c.job_id == job_id, generations.c.tenant_id == tenant_id)).mappings().first()
     if row:
-        db.execute(generations.update().where(generations.c.id == row["id"], generations.c.tenant_id == tenant_id).values(parameters=activity_event(row["parameters"], status, job.progress, status)))
+        db.execute(generations.update().where(generations.c.id == row["id"], generations.c.tenant_id == tenant_id).values(parameters={**activity_event(row["parameters"], status, job.progress, status), "last_failure":{"code":error,"at":job.finished_at.isoformat()} if error else row["parameters"].get("last_failure")}))
     db.commit()
     return True
 

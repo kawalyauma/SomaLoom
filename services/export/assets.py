@@ -12,6 +12,16 @@ from services.rendering.document import DocumentValidationError
 
 def resolver(db, tenant):
     def resolve(block):
+        if str(block.get("asset_ref", "")).startswith("image-request:"):
+            from services.images.models import requests
+            parts=block["asset_ref"].split(":")
+            try:identifier=UUID(parts[1])
+            except ValueError:raise DocumentValidationError("Invalid imported image reference") from None
+            row=db.execute(select(requests).where(requests.c.id==identifier,requests.c.tenant_id==tenant,requests.c.status=="imported")).mappings().first()
+            if not row:raise DocumentValidationError("Imported image is unavailable in this school")
+            asset=row["metadata"].get("assets",{}).get(parts[2]) if len(parts)==3 else row["metadata"]
+            if not asset:raise DocumentValidationError("Imported image version is unavailable")
+            return {"bytes":configured_store().get(tenant,asset["object_key"]),"caption":block.get("caption") or row["title"],"attribution":asset.get("credit") or "Educator-supplied illustration"}
         try:
             identifier = UUID(str(block["asset_ref"]))
         except (ValueError, KeyError):

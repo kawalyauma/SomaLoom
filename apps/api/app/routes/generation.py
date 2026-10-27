@@ -60,7 +60,10 @@ def create_generation(
     user: User = Depends(require_roles("school_admin", "teacher")),
     db: Session = Depends(get_db),
 ):
-    if not provider_available(get_settings().ai_provider):
+    import os
+    mode=payload.options.get("execution_mode",os.getenv("RESOURCE_GENERATION_MODE","ai"))
+    if mode not in ("ai","github"):raise HTTPException(422,"Choose AI generation or GitHub resource bank")
+    if mode != "github" and not provider_available(get_settings().ai_provider):
         raise HTTPException(503, "AI generation provider not configured")
     if key is not None and not key.strip():
         raise HTTPException(422, "Idempotency key must not be empty")
@@ -216,6 +219,10 @@ def work_item(row, user):
         "scope":{k:v for k,v in scope.items() if k in ("class","subject","term","week","lesson")},
         "topics":[{"topic":l.get("topic", ""), "subtopic":l.get("subtopic", "")} for l in scope.get("lessons",[])],
         "activity":events, "attempts":int(row["parameters"].get("attempts",0)),
+        "execution_mode":row["parameters"].get("execution_mode", "ai"),
+        "handoff":row["parameters"].get("handoff", {}),
+        "last_failure":row["parameters"].get("last_failure"),
+        "checkpoint":{"sources_saved":bool(row["parameters"].get("checkpoint",{}).get("evidence_bundle")), "completed_ai_steps":len(row["parameters"].get("checkpoint",{}).get("ai_calls",{}))},
         "can_manage":user.role == "school_admin" or (user.role == "teacher" and row["requested_by"] == user.id)}
 
 
@@ -276,6 +283,23 @@ def cancel_generation(
     return _status(db, generation_id, user)
 
 
+@router.post("/{generation_id}/handoff",response_model=GenerationStatus,status_code=202)
+def handoff_generation(generation_id:UUID,user:User=Depends(require_roles("school_admin","teacher")),db:Session=Depends(get_db)):
+    record=owned_record(db,generation_id,tenant(user))
+    if not record or (user.role=="teacher" and record.requested_by!=user.id):raise HTTPException(404,"Generation not found")
+    job=db.get(BackgroundJob,record.job_id,with_for_update=True)
+    if job.status in ("running","succeeded"):raise HTTPException(409,"Wait for the active request to finish before changing its delivery")
+    from services.generation.repository import activity_event
+    params=dict(record.parameters)
+    if job.error:params['last_failure']={'code':job.error,'at':(job.finished_at or job.updated_at).isoformat()}
+    params['execution_mode']='github'
+    stage='awaiting_external' if params.get('handoff',{}).get('issue_url') else 'preparing_github'
+    params=activity_event(params,stage,job.progress,'queued')
+    job.status='queued';job.error=None;job.finished_at=None
+    db.execute(generations.update().where(generations.c.id==generation_id,generations.c.tenant_id==tenant(user)).values(parameters=params));db.commit()
+    return _status(db,generation_id,user)
+
+
 @router.post("/{generation_id}/retry", response_model=GenerationStatus, status_code=202)
 def retry_generation(
     generation_id: UUID,
@@ -290,6 +314,13 @@ def retry_generation(
         raise HTTPException(409, "Only failed generations can be retried")
     params = dict(record.parameters)
     attempts = int(params.get("attempts", 0))
+    if params.get("execution_mode")=="github":
+        from services.generation.repository import activity_event
+        job.status='queued';job.error=None;job.finished_at=None
+        stage='awaiting_external' if params.get('handoff',{}).get('issue_url') else 'preparing_github'
+        params=activity_event(params,stage,job.progress,'queued')
+        db.execute(generations.update().where(generations.c.id==generation_id,generations.c.tenant_id==tenant(user)).values(parameters=params));db.commit()
+        return _status(db,generation_id,user)
     if attempts >= 2:
         raise HTTPException(409, "Retry limit reached")
     # RQ job IDs from prior failures can linger; remove finished job before redelivery.
@@ -309,9 +340,9 @@ def retry_generation(
         raise
     except Exception:
         raise HTTPException(503, "Generation queue unavailable") from None
-    job.status, job.progress, job.error, job.finished_at = "queued", 0, None, None
+    job.status, job.error, job.finished_at = "queued", None, None
     from services.generation.repository import activity_event
-    params = activity_event(params, "queued", 0, "queued")
+    params = activity_event(params, "retry_queued", job.progress, "queued")
     params["attempts"] = attempts + 1
     db.execute(
         generations.update()

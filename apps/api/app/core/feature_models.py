@@ -18,3 +18,5 @@ Index(
     extractions.c.engine,
     unique=True,
 )
+
+from services.images import models as image_models  # noqa: F401

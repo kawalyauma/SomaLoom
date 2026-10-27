@@ -1,4 +1,5 @@
 """Bounded, tool-free Codex inference. No application credentials or host access."""
+from error_codes import classify
 import hmac
 import json
 import os
@@ -92,8 +93,7 @@ class Handler(BaseHTTPRequestHandler):
                                         stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
                 stdout, stderr = proc.communicate(prompt.encode(), timeout=110)
                 if proc.returncode:
-                    reason = stderr.decode("utf8", "replace").lower()
-                    error = "provider_auth_expired" if any(x in reason for x in ["unauthorized", "token expired", "login"]) else "provider_execution_failed"
+                    error = classify(stderr.decode("utf8", "replace"), stdout.decode("utf8", "replace"))
                     print(json.dumps({"event": "inference_failed", "code": proc.returncode, "reason": error}), flush=True)
                     return self.reply(502, {"error": error})
                 if not answer_path.is_file() or answer_path.stat().st_size > 512000 or len(stdout) > 512000:

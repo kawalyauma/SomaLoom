@@ -1,0 +1,8 @@
+[Unit]
+Description=Prepare and synchronize resource-bank work
+[Timer]
+OnBootSec=45
+OnUnitInactiveSec=30
+Persistent=true
+[Install]
+WantedBy=timers.target

@@ -185,6 +185,8 @@ class CodexCLIProvider:
                     raise ProviderError("provider_timeout", retryable=True) from None
                 if proc.returncode:
                     reason = stderr.decode("utf-8", "replace").lower()
+                    for code in ("provider_usage_limit","provider_rate_limited","provider_invalid_schema","provider_context_limit","provider_model_unavailable","provider_auth_expired"):
+                        if code in reason:raise ProviderError(code,retryable=code=="provider_rate_limited")
                     if "unauthorized" in reason or "login" in reason or "token expired" in reason:
                         raise ProviderError("provider_auth_expired")
                     raise ProviderError(

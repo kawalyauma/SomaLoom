@@ -1,0 +1,7 @@
+[Unit]
+Description=SomaLoom GitHub resource-bank exchange
+After=docker.service network-online.target
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /opt/somaloom/infra/resource-bank/bridge.sh
+TimeoutStartSec=900

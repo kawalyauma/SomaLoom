@@ -81,3 +81,21 @@ def test_retry_cancel_and_request_ownership(client,accounts,db,monkeypatch):
     assert client.post('/api/v1/generations/'+str(gid)+'/cancel',headers={'Origin':'http://localhost:3000'}).status_code==200
     item=client.get('/api/v1/generations/'+str(gid)+'/activity').json()
     assert item['activity'][-1]['status']=='cancelled' and item['finished_at']
+
+
+def test_retry_keeps_completed_progress_and_checkpoints(client,accounts,db,monkeypatch):
+    import fakeredis
+    schools,users=accounts;owner=next(u for u in users if u.email=='teacher0@example.org')
+    gid,jid=work(db,schools[0],owner)
+    job=db.get(BackgroundJob,jid);job.progress=55
+    params=db.scalar(select(generations.c.parameters).where(generations.c.id==gid));params={**params,'checkpoint':{'evidence_bundle':{'saved':'source snapshot'},'ai_calls':{'complete-step':{'text':'completed draft'}}}}
+    db.execute(generations.update().where(generations.c.id==gid).values(parameters=params));db.commit()
+    finish(db,jid,schools[0].id,'failed','provider_usage_limit')
+    redis=fakeredis.FakeRedis();monkeypatch.setattr('app.core.queue.redis_connection',lambda:redis);monkeypatch.setattr('app.routes.generation.enqueue_generation',lambda _:True)
+    sign_in(client,owner.email)
+    result=client.post('/api/v1/generations/'+str(gid)+'/retry',headers={'Origin':'http://localhost:3000'})
+    assert result.status_code==202,result.text
+    item=client.get('/api/v1/generations/'+str(gid)+'/activity').json()
+    assert item['progress']==55 and item['checkpoint']=={'sources_saved':True,'completed_ai_steps':1}
+    assert item['last_failure']['code']=='provider_usage_limit'
+    assert db.scalar(select(generations.c.parameters).where(generations.c.id==gid))['checkpoint']==params['checkpoint']

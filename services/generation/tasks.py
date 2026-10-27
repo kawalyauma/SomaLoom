@@ -35,6 +35,9 @@ class Cancelled(Exception):
 def enqueue_generation(job_id: UUID) -> bool:
     """Safe to repeat: RQ job ID deduplicates dispatch attempts."""
     try:
+        with SessionLocal() as db:
+            values=db.scalar(select(generations.c.parameters).where(generations.c.job_id==job_id)) or {}
+            if values.get("execution_mode")=="github":return True  # Durable bridge prepares these without inference.
         from rq import Queue
         from app.core.queue import redis_connection
         Queue("generations", connection=redis_connection()).enqueue(
@@ -79,14 +82,19 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID, data: Gen
                 generations.c.id == generation_id, generations.c.tenant_id == tenant_id
             )
         )
-        bundle = retrieve_evidence(db, tenant_id, data, actor_id)
+        from services.generation.checkpoints import saved_bundle, save_bundle
+        bundle = saved_bundle(db, tenant_id, generation_id)
+        if bundle is None:
+            bundle = retrieve_evidence(db, tenant_id, data, actor_id)
+            save_bundle(db, tenant_id, generation_id, bundle)
     await progress("drafting", 35)
     settings = get_settings()
     if not settings.ai_provider or settings.ai_provider == "disabled":
         raise ProviderError("provider_unconfigured")
     from services.generation.families import generate_family
 
-    provider = configured_provider(settings.ai_provider)
+    from services.generation.checkpoints import CheckpointProvider
+    provider = CheckpointProvider(configured_provider(settings.ai_provider), tenant_id, generation_id)
     model = os.environ.get("AI_MODEL", "gpt-5")
     title = body = draft = None
     if data.document_type.value in {
@@ -173,6 +181,8 @@ def run_generation(job_id: str):
             return
         tenant_id = job.tenant_id
         generation_id = row["id"]
+        if row["parameters"].get("execution_mode")=="github":
+            return  # The resource-bank bridge owns this request; no paid inference.
         try:
             from app.core.models import User
 
@@ -197,7 +207,7 @@ def run_generation(job_id: str):
             finish(db, identifier, tenant_id, "failed", error.code)
         log.warning("generation_provider_failed job_id=%s code=%s", identifier, error.code)
     except ValueError as error:
-        known = {"topic_outcome_mapping_missing", "invalid_resource_filter"}
+        known = {"topic_outcome_mapping_missing", "invalid_resource_filter", "saved_source_unavailable"}
         code = str(error) if str(error) in known else "generation_validation_failed"
         with SessionLocal() as db:
             finish(db, identifier, tenant_id, "failed", code)
