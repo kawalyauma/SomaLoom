@@ -9,6 +9,7 @@ from services.export import models as publishing  # noqa: F401
 from services.extraction import persistence as extraction  # noqa: F401
 from services.ingestion import models as ingestion  # noqa: F401
 from services.knowledge import models as knowledge  # noqa: F401
+from services.schemes import models as schemes  # noqa: F401
 
 Index(
     "uq_extractions_tenant_version_engine",

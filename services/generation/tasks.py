@@ -34,7 +34,9 @@ class Cancelled(Exception):
 def enqueue_generation(job_id: UUID) -> bool:
     """Safe to repeat: RQ job ID deduplicates dispatch attempts."""
     try:
-        queue().enqueue(
+        from rq import Queue
+        from app.core.queue import redis_connection
+        Queue("generations", connection=redis_connection()).enqueue(
             "services.generation.tasks.run_generation",
             str(job_id),
             job_id="generation-" + str(job_id),

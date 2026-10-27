@@ -90,6 +90,7 @@ class TelegramStart(BaseModel):
 @router.post("/resources/uploads", status_code=201)
 async def upload(
     files: list[UploadFile] = File(...),
+    resource_kind: Literal["reference", "scheme"] = Form("reference"),
     license: str = Form(...),
     title: str | None = Form(None),
     source_uri: str | None = Form(None),
@@ -141,6 +142,11 @@ async def upload(
             source_id,
             resource_id,
         )
+        if resource_kind == "scheme":
+            for table, identifier in ((resources, result["resource_id"]), (resource_versions, result["version_id"])):
+                previous = db.scalar(select(table.c.provenance).where(table.c.id == identifier, table.c.tenant_id == tenant))
+                db.execute(table.update().where(table.c.id == identifier, table.c.tenant_id == tenant).values(provenance={**(previous or {}), "resource_kind": "scheme"}))
+            db.commit()
         outcomes.append(result)
     return {"items": outcomes}
 

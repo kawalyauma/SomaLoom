@@ -87,15 +87,13 @@ PRIMARY_SUBJECTS = ["Mathematics", "English", "Integrated Science", "Social Stud
 
 
 def normalize_class(value: str) -> str:
-    match = re.fullmatch(r"(?:P(?:RIMARY)?)[.\s-]*([1-7])", value.strip(), re.IGNORECASE)
-    return "P" + match.group(1) if match else value.strip()
+    from services.schemes.schema import grade_name
+    return grade_name(value)
 
 
 def normalize_subject(value: str) -> str:
-    value = value.strip()
-    if value.casefold() in {"math", "maths", "mathematics", "mtc"}:
-        return "Mathematics"
-    return next((name for name in PRIMARY_SUBJECTS if name.casefold() == value.casefold()), value)
+    from services.schemes.schema import subject_name
+    return subject_name(value)
 
 
 def generation_choices(db, school):
@@ -120,6 +118,7 @@ def generation_choices(db, school):
 @router.get("/options")
 def generation_options(user: User = Depends(current_user), db: Session = Depends(get_db)):
     choices = generation_choices(db, tenant(user))
+    from services.schemes.service import schedule_options
     grades = [f"P{i}" for i in range(1, 8)]
     grades += sorted({grade for grade, _ in choices} - set(grades))
     result = []
@@ -127,7 +126,7 @@ def generation_options(user: User = Depends(current_user), db: Session = Depends
         subjects = list(PRIMARY_SUBJECTS) if re.fullmatch(r"P[1-7]", grade) else []
         subjects += sorted({subject for g, subject in choices if g == grade} - set(subjects))
         result.append({"value": grade, "label": f"Primary {grade[1:]} ({grade})" if re.fullmatch(r"P[1-7]", grade) else grade,
-            "subjects": [{"value": subject, "topics": [{"id": str(t["id"]), "title": t["title"]} for t in choices.get((grade, subject), {}).get("topics", [])]} for subject in subjects]})
+            "subjects": [{"value": subject, "terms": schedule_options(db, tenant(user), grade, subject), "topics": [{"id": str(t["id"]), "title": t["title"]} for t in choices.get((grade, subject), {}).get("topics", [])]} for subject in subjects]})
     return {"classes": result}
 
 
@@ -136,7 +135,10 @@ class ClassGenerationInput(BaseModel):
     document_type: DocumentKind
     grade: str = Field(min_length=1, max_length=80)
     subject: str = Field(min_length=1, max_length=120)
-    topic_ids: list[UUID] = Field(min_length=1, max_length=30)
+    topic_ids: list[UUID] = Field(default_factory=list, max_length=30)
+    term: int | None = Field(default=None, ge=1, le=3)
+    week: int | None = Field(default=None, ge=1, le=53)
+    lesson: int | None = Field(default=None, ge=1, le=50)
     options: dict = Field(default_factory=dict)
     resource_filters: dict = Field(default_factory=dict)
 
@@ -145,18 +147,43 @@ class ClassGenerationInput(BaseModel):
 def generate_for_class(payload: ClassGenerationInput, response: Response,
     key: str | None = Header(None, alias="X-Idempotency-Key", max_length=128),
     user: User = Depends(require_roles("school_admin", "teacher")), db: Session = Depends(get_db)):
-    entry = generation_choices(db, tenant(user)).get((normalize_class(payload.grade), normalize_subject(payload.subject)))
-    if not entry:
-        raise HTTPException(422, "No approved topics are available for this class and subject yet.")
-    selected = [t for t in entry["topics"] if t["id"] in payload.topic_ids]
-    if {t["id"] for t in selected} != set(payload.topic_ids):
-        raise HTTPException(422, "The selected topic is no longer available. Refresh and select a topic again.")
-    first = selected[0]
-    resolved = GenerationInput(document_type=payload.document_type,
-        curriculum_id=entry["curriculum_id"],
-        level_id=uuid5(NAMESPACE_URL, f"somaloom-level:{entry['curriculum_id']}:{first['grade']}"),
-        subject_id=uuid5(NAMESPACE_URL, f"somaloom-subject:{entry['curriculum_id']}:{first['subject']}"),
-        topic_ids=payload.topic_ids, options=payload.options, resource_filters=payload.resource_filters)
+    options = dict(payload.options)
+    if payload.term is not None:
+        if payload.week is None:
+            raise HTTPException(422, "Select a teaching week.")
+        from services.schemes.service import selection
+        master, entries = selection(db, tenant(user), payload.grade, payload.subject, payload.term, payload.week, payload.lesson)
+        if not master or not entries:
+            raise HTTPException(422, "No uploaded scheme covers that term, week and lesson yet.")
+        ids = list(dict.fromkeys(UUID(l["topic_id"]) for l in entries))
+        if len(ids) > 30:
+            raise HTTPException(422, "This week has too many targets for one resource. Select a lesson.")
+        if payload.topic_ids and set(payload.topic_ids) != set(ids):
+            raise HTTPException(422, "The selected topics do not match the scheme schedule.")
+        options["term"] = f"Term {payload.term}"
+        options["planning_scope"] = {"class":master["grade"],"subject":master["subject"],"term":payload.term,
+            "week":payload.week,"lesson":payload.lesson,"basis":"Uploaded schemes, not official curriculum endorsement",
+            "lessons":[{k:l[k] for k in ("lesson","topic","subtopic","objectives","activities","inferred")} for l in entries]}
+        import json
+        if len(json.dumps(options)) + len(json.dumps(payload.resource_filters)) > 12000:
+            raise HTTPException(422, "This selection is too large for one resource. Select a lesson.")
+        resolved = GenerationInput(document_type=payload.document_type,curriculum_id=master["curriculum_id"],
+            level_id=uuid5(NAMESPACE_URL,f"somaloom-level:{master['curriculum_id']}:{master['grade']}"),
+            subject_id=uuid5(NAMESPACE_URL,f"somaloom-subject:{master['curriculum_id']}:{master['subject']}"),
+            topic_ids=ids,options=options,resource_filters=payload.resource_filters)
+    else:
+        entry = generation_choices(db, tenant(user)).get((normalize_class(payload.grade), normalize_subject(payload.subject)))
+        if not entry:
+            raise HTTPException(422, "No approved topics are available for this class and subject yet.")
+        selected = [t for t in entry["topics"] if t["id"] in payload.topic_ids]
+        if not selected or {t["id"] for t in selected} != set(payload.topic_ids):
+            raise HTTPException(422, "The selected topic is no longer available. Refresh and select a topic again.")
+        first = selected[0]
+        resolved = GenerationInput(document_type=payload.document_type,
+            curriculum_id=entry["curriculum_id"],
+            level_id=uuid5(NAMESPACE_URL, f"somaloom-level:{entry['curriculum_id']}:{first['grade']}"),
+            subject_id=uuid5(NAMESPACE_URL, f"somaloom-subject:{entry['curriculum_id']}:{first['subject']}"),
+            topic_ids=payload.topic_ids, options=options, resource_filters=payload.resource_filters)
     return create_generation(resolved, response, key, user, db)
 
 

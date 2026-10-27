@@ -157,6 +157,10 @@ def retrieve_evidence(
             outcomes_found[row["id"]] = Outcome(
                 id=row["id"], code=row["code"], description=row["description"]
             )
+        from services.schemes.service import source_passages
+        for passage in source_passages(db, tenant_id, topic["id"], [r["id"] for r in rows]):
+            if license_filter is None or passage["license"] in license_filter:
+                passages[passage["id"]] = Passage(**passage)
         research = build_research(db, tenant_id, topic["id"], actor.id)
         for ev in research["evidence_links"]:
             # v1 citations require a real text block; visual/equation items stay in research.

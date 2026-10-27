@@ -15,6 +15,7 @@ from app.routes.generation import router as generation_router
 from contracts.v1.schemas import ErrorResponse
 from services.assessment.router import router as assessment_router
 from services.curriculum.router import router as curriculum_router
+from services.schemes.router import router as scheme_router
 from services.export.router import router as publishing_router
 from services.extraction.assets import router as assets_router
 from services.extraction.router import router as extraction_router
@@ -137,5 +138,6 @@ app.include_router(ingestion_router, prefix="/api/v1")
 app.include_router(extraction_router, prefix="/api/v1")
 app.include_router(assets_router, prefix="/api/v1")
 app.include_router(curriculum_router, prefix="/api/v1")
+app.include_router(scheme_router, prefix="/api/v1")
 app.include_router(knowledge_router, prefix="/api/v1")
 app.include_router(assessment_router, prefix="/api/v1")

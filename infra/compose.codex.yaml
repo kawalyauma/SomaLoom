@@ -19,6 +19,40 @@ services:
       - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
       - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
     networks: [default, codex-control]
+  planning-worker:
+    image: somaloom-api
+    restart: unless-stopped
+    init: true
+    user: "10001:10001"
+    env_file: .env
+    command: [python, -m, services.schemes.worker]
+    mem_limit: 1536m
+    pids_limit: 128
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: [ALL]
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "from app.core.queue import redis_connection; assert redis_connection().exists('somaloom:planning:heartbeat')"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    environment:
+      DATABASE_URL: postgresql+psycopg://somaloom_app:${APP_DB_PASSWORD:?set APP_DB_PASSWORD}@db:5432/${POSTGRES_DB:-somaloom}
+      REDIS_URL: redis://:${REDIS_PASSWORD:?set REDIS_PASSWORD}@redis:6379/0
+      SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
+      AI_PROVIDER: codex
+      AI_MODEL: gpt-6.1-sol
+      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
+      AI_CODEX_ISOLATION_ATTESTED: "1"
+    volumes:
+      - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
+      - /etc/somaloom/telegram-account-token:/run/secrets/telegram-account-token:ro
+      - /etc/somaloom/telegram-account-ca.pem:/run/secrets/telegram-account-ca.pem:ro
+      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
+      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+    networks: [default, codex-control]
   codex-inference:
     build:
       context: .

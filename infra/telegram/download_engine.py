@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import sqlite3
+import sys
 import threading
 import time
 from datetime import datetime, timezone
@@ -97,6 +98,7 @@ class DownloadEngine:
     def status(self, tenant):
         tenant = str(UUID(tenant))
         with self.db() as db:
+            db.execute('BEGIN')
             sources = [dict(s) for s in db.execute('SELECT * FROM sources WHERE tenant_id=? ORDER BY updated DESC',(tenant,))]
             for src in sources:
                 counts = db.execute('''SELECT count(*) discovered,
@@ -109,7 +111,6 @@ class DownloadEngine:
                   FROM files WHERE tenant_id=? AND source_id=?''',(time.time(),tenant,src['id'])).fetchone()
                 src.update({k:int(counts[k] or 0) for k in counts.keys()})
                 src['status'] = 'paused' if not src['active'] else 'rate_limited' if self.paused_until>time.time() else 'watching' if src['backfill_done'] and src['downloaded']+src['unavailable']==src['discovered'] else 'downloading' if src['downloading'] else 'scanning_history'
-        with self.db() as db:
             summary=dict(db.execute("""SELECT count(*) discovered,
                 sum(CASE WHEN state='downloaded' THEN 1 ELSE 0 END) downloaded,
                 sum(CASE WHEN state='downloaded' AND coalesce(library_status,'')!='quarantined' THEN 1 ELSE 0 END) available,
@@ -140,7 +141,8 @@ class DownloadEngine:
         page=max(1,int(page))
         with self.db() as db:
             total=db.execute('SELECT count(*) FROM files'+where,args).fetchone()[0]
-            rows=db.execute('SELECT * FROM files'+where+' ORDER BY posted_at DESC,message_id DESC LIMIT 10 OFFSET ?',[*args,(page-1)*10]).fetchall()
+            priority = "CASE WHEN lower(filename) LIKE '%scheme%' AND lower(filename) NOT LIKE '%marking%' AND lower(filename) NOT LIKE '%loan%' AND lower(filename) NOT LIKE '%sponsor%' THEN 0 ELSE 1 END," if ready else ''
+            rows=db.execute('SELECT * FROM files'+where+' ORDER BY '+priority+'posted_at DESC,message_id DESC LIMIT 10 OFFSET ?',[*args,(page-1)*10]).fetchall()
         return {'items':[dict(r) for r in rows],'page':page,'page_size':10,'total':total}
 
     def acknowledge(self, items):
@@ -248,6 +250,7 @@ class DownloadEngine:
         from telethon.errors import FloodWaitError
         upload_id=None
         key=item['object_key']
+        stage='archive_lookup'
         try:
             # A forwarded Telegram file is stored once per school; retain every source message.
             with self.db() as db:known=db.execute("SELECT size,checksum FROM files WHERE object_key=? AND state='downloaded' LIMIT 1",(key,)).fetchone()
@@ -255,9 +258,12 @@ class DownloadEngine:
                 size,checksum=known['size'],known['checksum']
             else:
                 head=None
-                try:head=await asyncio.to_thread(self.s3.head_object,Bucket=BUCKET,Key=key)
+                try:
+                    stage='s3_head_object'
+                    head=await asyncio.to_thread(self.s3.head_object,Bucket=BUCKET,Key=key)
                 except Exception:pass
                 if head:
+                    stage='s3_read_existing_object'
                     obj=await asyncio.to_thread(self.s3.get_object,Bucket=BUCKET,Key=key)
                     sha=hashlib.sha256();size=0
                     while True:
@@ -266,29 +272,38 @@ class DownloadEngine:
                         size+=len(chunk);sha.update(chunk)
                     obj['Body'].close();checksum=sha.hexdigest()
                 else:
+                    stage='telegram_get_message'
                     entity=await self.entity(item['link'])
                     message=await self.client.get_messages(entity,ids=item['message_id'])
                     if not message or not (message.document or message.photo):
                         with self.db() as db:db.execute("UPDATE files SET state='unavailable',error='Telegram no longer provides this file',updated=? WHERE id=?",(time.time(),item['id']))
                         return
+                    stage='s3_create_multipart'
                     started=await asyncio.to_thread(self.s3.create_multipart_upload,Bucket=BUCKET,Key=key,ServerSideEncryption='AES256',ContentType='application/octet-stream')
                     upload_id=started['UploadId'];parts=[];buffer=bytearray();sha=hashlib.sha256();size=0
+                    stage='telegram_stream_media'
                     async for chunk in self.media_chunks(message):
+                        stage='source_active_check'
                         with self.db() as db:active=db.execute('SELECT active FROM sources WHERE id=?',(item['source_id'],)).fetchone()[0]
                         if not active:raise RuntimeError('source_paused')
                         sha.update(chunk);size+=len(chunk);buffer.extend(chunk)
                         if len(buffer)>=PART_SIZE:
+                            stage='s3_upload_part'
                             part=await asyncio.to_thread(self.s3.upload_part,Bucket=BUCKET,Key=key,UploadId=upload_id,PartNumber=len(parts)+1,Body=bytes(buffer))
                             parts.append({'PartNumber':len(parts)+1,'ETag':part['ETag']});buffer.clear()
                     if item['declared_size'] and size!=item['declared_size']:raise ValueError('incomplete_transfer')
                     if buffer or not parts:
+                        stage='s3_upload_final_part'
                         part=await asyncio.to_thread(self.s3.upload_part,Bucket=BUCKET,Key=key,UploadId=upload_id,PartNumber=len(parts)+1,Body=bytes(buffer))
                         parts.append({'PartNumber':len(parts)+1,'ETag':part['ETag']})
                     checksum=sha.hexdigest()
+                    stage='s3_complete_multipart'
                     await asyncio.to_thread(self.s3.complete_multipart_upload,Bucket=BUCKET,Key=key,UploadId=upload_id,MultipartUpload={'Parts':parts})
                     upload_id=None
+            stage='mark_downloaded'
             with self.db() as db:db.execute("UPDATE files SET state='downloaded',size=?,checksum=?,error=NULL,retry_at=0,updated=? WHERE id=?",(size,checksum,time.time(),item['id']))
         except Exception as e:
+            print(f'telegram_transfer_error stage={stage} type={type(e).__name__} detail={str(e)[:200]}',file=sys.stderr,flush=True)
             if isinstance(e,FloodWaitError):self.paused_until=max(self.paused_until,time.time()+int(e.seconds)+2)
             retry=max(self.paused_until,time.time()+min(3600,15*(2**min(item['attempts'],8))))
             with self.db() as db:db.execute("UPDATE files SET state='pending',error=?,retry_at=?,updated=? WHERE id=?",('Transfer interrupted; automatic retry scheduled ('+type(e).__name__+')',retry,time.time(),item['id']))

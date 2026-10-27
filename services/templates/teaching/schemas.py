@@ -94,6 +94,7 @@ class TeachingSpec(StrictModel):
     lesson_date: date | None = None
     duration_minutes: int | None = Field(default=None, ge=1, le=480)
     teacher_name: str | None = None
+    planning_scope: dict = Field(default_factory=dict)
     branding: Branding | None = None
 
     @model_validator(mode="after")
