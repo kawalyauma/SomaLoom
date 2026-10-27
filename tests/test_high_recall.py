@@ -127,3 +127,45 @@ def test_synthetic_p7_sst_multiphase_recall_beats_one_phrase(db, accounts):
     assert after >= before
     assert after == 1.0
     assert before < after
+
+
+def test_teaching_ai_receives_verified_maps_without_approving_unverified_ones():
+    """Schema and prompt contract; actual renderer storage URLs require separate QA."""
+    import json
+    from uuid import uuid4
+
+    from services.templates.teaching.schemas import (
+        CurriculumTarget, EvidenceBundle, EvidenceItem, TeachingSpec, VisualAssetEvidence
+    )
+    from services.templates.teaching.templates import build_prompt
+
+    cid, lid, sid, tid, oid, eid, aid = [uuid4() for _ in range(7)]
+    spec = TeachingSpec(
+        type="lesson_notes", curriculum_id=cid, curriculum_version="synthetic-v1",
+        level_id=lid, subject_id=sid, topic_ids=[tid], outcome_ids=[oid],
+        depth="comprehensive",
+    )
+    bundle = EvidenceBundle(
+        curriculum_id=cid, curriculum_version="synthetic-v1",
+        outcomes=[CurriculumTarget(
+            id=oid, curriculum_id=cid, level_id=lid, subject_id=sid,
+            topic_id=tid, code="P7-SST-QA", description="Explain vegetation types"
+        )],
+        evidence=[EvidenceItem(
+            id=eid, source_title="Synthetic CC0 source",
+            source_uri="fixture://p7-sst", license="CC0-1.0",
+            excerpt="The grasslands support diverse plants.", outcome_ids=[oid]
+        )],
+        visuals=[VisualAssetEvidence(
+            asset_id=aid, outcome_id=oid, kind="map",
+            caption="Synthetic map of vegetation", page=2,
+            source_uri="fixture://p7-sst", license="CC0-1.0",
+            permission_verified=True,
+        )],
+    )
+    _, prompt = build_prompt(spec, bundle)
+    parsed = json.loads(prompt)
+    visual = parsed["curriculum_evidence"]["visuals"][0]
+    assert visual["asset_id"] == str(aid)
+    assert visual["permission_verified"] is True
+    assert visual["source_uri"] == "fixture://p7-sst"
