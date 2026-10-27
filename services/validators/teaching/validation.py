@@ -20,6 +20,7 @@ from services.templates.teaching.schemas import (
     ValidationFinding,
 )
 from services.templates.teaching.templates import REQUIRED_SECTIONS
+from services.templates.teaching.note_style import note_style_spec
 
 
 def validate_teaching_inputs(spec: TeachingSpec, bundle: EvidenceBundle) -> None:
@@ -288,6 +289,44 @@ def validate_teaching_document(
         add("coverage_gap", "error", f"Mandatory requested outcome not evidence-mapped: {outcome}")
     if body.review_status == "approved" and not body.reviewer_id:
         add("approval_missing_reviewer", "error", "Approval needs reviewer identity")
+    # Reference-notes quality is not the same as verbose lesson planning.
+    # The genre gate ensures there is meaningful, printable factual content.
+    if spec.type == TeachingType.lesson_notes and note_style_spec(
+        spec.planning_scope.get("source_subject_name"), spec.depth.value
+    ):
+        explanation = sections_by_key.get("explanation")
+        if explanation:
+            notes_bullets = []
+            for block in explanation.blocks:
+                if block.kind == BlockKind.list:
+                    notes_bullets.extend(
+                        point.strip(" \t•-*") for point in block.text.splitlines() if point.strip(" \t•-*")
+                    )
+                    for point in block.text.splitlines():
+                        if len(point.split()) > 32:
+                            add(
+                                "reference_notes_long_fact", "warning",
+                                "Use one short factual statement per bullet (usually under 32 words).",
+                                block.id,
+                            )
+                elif block.kind == BlockKind.paragraph and len(block.text.split()) > 65:
+                    add(
+                        "reference_notes_dense_paragraph", "warning",
+                        "Replace long explanation paragraphs with short definitions and separate facts.",
+                        block.id,
+                    )
+            minimum = {"concise": 3, "standard": 5, "comprehensive": 8}[spec.depth.value]
+            if len(notes_bullets) < minimum:
+                add(
+                    "reference_notes_insufficient_facts", "error",
+                    f"Explanation needs at least {minimum} separately listed, evidence-grounded facts; "
+                    "expand from permitted sources instead of filling with narrative.",
+                )
+        if len({item.source_uri for item in bundle.evidence}) < 2:
+            add(
+                "limited_source_diversity", "warning",
+                "Only one independent source supplied. Check topic coverage before publication.",
+            )
     if spec.type == TeachingType.lesson_notes and spec.depth != "concise":
         words = sum(
             len(block.text.split()) for section in body.sections for block in section.blocks
