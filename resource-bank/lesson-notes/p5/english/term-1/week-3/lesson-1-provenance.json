@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 3,
+  "lesson": 1,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+  "source_quote": "The past\nsimple tense",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-1.md": {
+      "sha256": "b82d4161bcc658ce4060119ad3f22d3693bebb6803a41abcfd1978f3ac8ff7c8",
+      "bytes": 4274
+    },
+    "lesson-1.pdf": {
+      "sha256": "e402d832f0ec6e5a2f5cd0191176f0489fc2fd0dfb6b04ba878d9f68fc67772e",
+      "bytes": 6175
+    },
+    "lesson-1-teacher-key.md": {
+      "sha256": "2a7d2f71b4ca360cbf4c368d22b8e99ea9a7dddf66ab00ed09cd0b7a1d26abab",
+      "bytes": 1006
+    },
+    "lesson-1-teacher-key.pdf": {
+      "sha256": "55e383d801872e49692a57f26ba1a67c0b74647acdd3aa77fb9eca2940eeea9b",
+      "bytes": 2708
+    }
+  }
+}
