@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/514a9452026d29023cf9ed7e80b796def4844361acda565e51fdbbe15fce98b0.pdf",
+      "sha256": "514a9452026d29023cf9ed7e80b796def4844361acda565e51fdbbe15fce98b0",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/176b7044e8e16e7eff854afd757a00d0e149ca5d/P.5%20scie%20scheme%20of%20work%20term%201.pdf",
+      "title": "P.5 scie scheme of work term 1",
+      "version_id": "ed6730a9-2bb2-4733-80fd-d1e6c6db9583"
+    }
+  ]
+}

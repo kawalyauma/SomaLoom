@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/e03d3da37049f20e2397409983e3ba76e0b3dfc85137f126518f535910e06294.pdf",
+      "sha256": "e03d3da37049f20e2397409983e3ba76e0b3dfc85137f126518f535910e06294",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/e576ff8c07d8372b55f08491b191ae452560422d/P.5%20Sci%20scheme%20for%20term%20lll.pdf",
+      "title": "P.5 Sci scheme for term lll",
+      "version_id": "1b4a9b80-f5af-4bc0-9e89-7565def9752d"
+    }
+  ]
+}

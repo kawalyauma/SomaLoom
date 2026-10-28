@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/b822d7b0f8ae73d73fc99617da6fbc8870d8b90d8fd5ea3453ff8f7ee0892759.docx",
+      "sha256": "b822d7b0f8ae73d73fc99617da6fbc8870d8b90d8fd5ea3453ff8f7ee0892759",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1f71c5185ed0cf209acb054b02d06ae0f2927419/P.5%20Science%20scheme%20termIII%202019.docx",
+      "title": "P.5 Science scheme termIII 2019",
+      "version_id": "c893750d-b962-4fca-8e91-aff1e089dc13"
+    }
+  ]
+}

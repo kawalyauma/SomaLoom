@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6.pdf",
+      "sha256": "8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf",
+      "title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "version_id": "c2f481ed-af75-429a-be86-830e782620a5"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/3d8bf5be0d2dd52126ad1759603e24ba65f57b8b81d91af3994c195db535bb87.docx",
+      "sha256": "3d8bf5be0d2dd52126ad1759603e24ba65f57b8b81d91af3994c195db535bb87",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/4f995e11432e32a9a51bff97d7ec508df5ac8f9d/P.5%20scie%20scheme%20trem%203.docx",
+      "title": "P.5 scie scheme trem 3",
+      "version_id": "d1afb616-35b8-415f-9658-327de77bb09c"
+    }
+  ]
+}

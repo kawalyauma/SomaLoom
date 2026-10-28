@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/11370db002dd7f927b4bd9b7a0a50b6aba1da2b17dc1bb7840224fd49478c246.pdf",
+      "sha256": "11370db002dd7f927b4bd9b7a0a50b6aba1da2b17dc1bb7840224fd49478c246",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/c0d8a795afdcba4410a521e1e119bf5eb9f0d286/P5%20ENGLISH%20SCHEME%20OF%20WORK%20TERM%20ONE%201.pdf",
+      "title": "P5 ENGLISH SCHEME OF WORK TERM ONE 1",
+      "version_id": "dfd541eb-6859-4f3a-ab43-8a0305c5d122"
+    }
+  ]
+}
