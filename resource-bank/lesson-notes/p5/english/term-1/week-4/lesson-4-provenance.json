@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 4,
+  "lesson": 4,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+  "source_quote": "The use of\nsome relative\npronouns",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-4.md": {
+      "sha256": "b6bb4dabef4ada9d1d1472f2ce9311172fa940ebfae36aa1dfe2cb3f47ba3675",
+      "bytes": 4554
+    },
+    "lesson-4.pdf": {
+      "sha256": "40476f6efb0dcff76d62704a462ddbabae00ce2e0c7a1739c343228ab6fdf766",
+      "bytes": 6104
+    },
+    "lesson-4-teacher-key.md": {
+      "sha256": "6e1fc7b26dad6c6d9b0463ca2155d7e2c7fdcb4fc6b4f5e68a86a76739b338a3",
+      "bytes": 1044
+    },
+    "lesson-4-teacher-key.pdf": {
+      "sha256": "1c0692511eedebc66de2192df77ac323869569d7aba01d0fa6ca7945f1cf0ec4",
+      "bytes": 2604
+    }
+  }
+}

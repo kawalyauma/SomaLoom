@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 4,
+  "lesson": 2,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+  "source_quote": "The use of a,\nan and the",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-2.md": {
+      "sha256": "63b6dcccd75e5b232c464ab8e582c27ea5633d64ce1c399f5291abb6d58d9cbf",
+      "bytes": 3970
+    },
+    "lesson-2.pdf": {
+      "sha256": "016b8f8995e60a40ec544ad149405f9e81606194c900fd39d58ba2dd8da9488c",
+      "bytes": 5774
+    },
+    "lesson-2-teacher-key.md": {
+      "sha256": "e69c3c93b5ac3655dff446f7ccf1c9b83a1d7dcb2442030fc006e082af629238",
+      "bytes": 876
+    },
+    "lesson-2-teacher-key.pdf": {
+      "sha256": "df234d94284ccded8c4072f9944807dc541ced5275353b8bcd5addefe9b369c9",
+      "bytes": 2505
+    }
+  }
+}
