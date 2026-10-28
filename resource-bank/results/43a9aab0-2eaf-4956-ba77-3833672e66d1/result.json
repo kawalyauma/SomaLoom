@@ -1,0 +1,266 @@
+{
+  "schema_version": "teaching.v1",
+  "title": "P5 Social Studies — Term Three, Week One, Lesson One: Arms of Government",
+  "review_status": "needs_review",
+  "revision": 1,
+  "sections": [
+    {
+      "key": "introduction",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Government is the group of people and institutions that make public decisions and provide services for a country. In Uganda there are national and local governments.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "learning_outcomes",
+      "title": "Learning Outcomes",
+      "blocks": [
+        {
+          "kind": "list",
+          "text": "By the end of this lesson, the learner should be able to:\n• Define government.\n• Name the three arms of government.\n• Explain the main work of each arm.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "prior_knowledge",
+      "title": "What Learners Already Know",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Learners know that villages have leaders and that schools have rules. Ask who helps to lead the village and who makes rules at school.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "vocabulary",
+      "title": "Key Words",
+      "blocks": [
+        {
+          "kind": "list",
+          "text": "Government — people and institutions managing public affairs.\nLegislature — the arm that makes laws.\nExecutive — the arm that implements laws.\nJudiciary — the arm that interprets laws and settles disputes.\nParliament — the national law-making institution.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "explanation",
+      "title": "The Three Arms of Government",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "In Uganda the government is organised into three principal arms. They perform different duties under the law.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "table",
+          "text": "Three arms of government",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ],
+          "rows": [
+            [
+              "Arm",
+              "Main duty",
+              "Example"
+            ],
+            [
+              "Legislature",
+              "Makes laws",
+              "Parliament"
+            ],
+            [
+              "Executive",
+              "Implements laws",
+              "President, Cabinet, ministries"
+            ],
+            [
+              "Judiciary",
+              "Interprets laws and settles disputes",
+              "Courts of law"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Legislature: Parliament makes and changes laws, debates important issues, and checks government plans and spending.\nExecutive: The President, Cabinet and ministries implement laws, deliver programmes and manage government departments.\nJudiciary: Courts interpret and apply the law, resolve disputes and give decisions on cases.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "examples",
+      "title": "Examples",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "If Parliament passes a law, the Legislature is performing its law-making role. If a ministry implements a public programme, the Executive is working. If a court settles a legal dispute, the Judiciary is working.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "activities",
+      "title": "Class Activities",
+      "blocks": [
+        {
+          "kind": "activity",
+          "text": "Divide the class into three groups. Give each group one arm of government to explain using its name, members and main duty.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Match each action to its arm: making laws; carrying out a government programme; settling a court case.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "misconceptions",
+      "title": "Common Mistakes",
+      "blocks": [
+        {
+          "kind": "list",
+          "text": "Parliament does not decide court cases: courts exercise judicial power.\nThe Executive does not replace Parliament when making ordinary laws.\nLocal government is a level of government; it is not one of the three arms.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "summary",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "list",
+          "text": "Government manages public affairs.\nThe Legislature makes laws.\nThe Executive implements laws and programmes.\nThe Judiciary interprets laws and settles disputes.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "revision",
+      "title": "Revision Questions",
+      "blocks": [
+        {
+          "kind": "question",
+          "text": "1. Define government.\n2. Name the three arms of government.\n3. Which arm makes laws?\n4. Which arm is responsible for carrying out laws?\n5. Which arm settles cases in court?\n6. Give one example of work done by each arm.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "references",
+      "title": "References and Evidence",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Prepared as original teaching notes using the P5 SST scheme evidence. Source licences are recorded as unknown in the request metadata; evidence quotation IDs are attached to the relevant blocks for review.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        }
+      ]
+    }
+  ],
+  "scheme_weeks": [],
+  "lesson_stages": []
+}
