@@ -66,6 +66,7 @@ class VisualReference(StrictModel):
     caption: str | None = None
     page: int | None = Field(default=None, ge=1)
     source_uri: str | None = None
+    license: str | None = None
 
 
 class EvidenceBundle(StrictModel):

@@ -74,6 +74,18 @@ class TeachingStudio:
                     }
                     for item in evidence.evidence
                 ],
+                "visual_index": [
+                    {
+                        "asset_id": str(visual.asset_id),
+                        "outcome_id": str(visual.outcome_id),
+                        "kind": visual.kind,
+                        "caption": visual.caption,
+                        "page": visual.page,
+                        "source_uri": visual.source_uri,
+                        "license": visual.license,
+                    }
+                    for visual in evidence.visuals if visual.permission_verified
+                ],
             },
         )
         return TeachingResult(document=document.model_dump(mode="json"), validation=review)

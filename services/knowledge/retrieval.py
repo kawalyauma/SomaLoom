@@ -34,7 +34,8 @@ def query_base(school: UUID, filters: dict | None = None):
         raise ValueError("Unsupported search filters")
     # Join to the current resource and version: orphaned/stale/mis-scoped records are invisible.
     stmt = (
-        select(items)
+        select(items, resources.c.title.label("source_title"))
+        .select_from(items)
         .join(
             resource_versions,
             and_(
@@ -127,6 +128,7 @@ def as_evidence(row: dict, score: float = 0) -> dict:
         "equation_id": str(row["equation_id"]) if row["equation_id"] else None,
         "page": row["page"],
         "source_uri": row["source_uri"],
+        "source_title": row["source_title"],
         "license": row["license"],
         "quote": text[:700],
         "fingerprint": row["fingerprint"],
@@ -143,14 +145,17 @@ def search(
     filters: dict | None = None,
     limit: int = 10,
     embedder=None,
+    max_per_resource: int = 3,
 ) -> list[dict]:
     if not query.strip() or len(query) > 1000:
         raise ValueError("Search query must be 1..1000 characters")
     if not (1 <= limit <= 50):
         raise ValueError("Limit must be 1..50")
+    if not (1 <= max_per_resource <= 30):
+        raise ValueError("max_per_resource must be 1..30")
     base = query_base(school, filters)
     engine = db.bind.dialect.name
-    candidate_cap = min(200, max(30, limit * 5))
+    candidate_cap = min(500, max(50, limit * 8))
     lexical = []
     if engine == "postgresql":
         words = [
@@ -215,11 +220,13 @@ def search(
     seen_hashes, counts = set(), defaultdict(int)
     for row in ranked:
         # Reduce verbatim duplicate citations and single-book domination.
-        if row["fingerprint"] in seen_hashes or counts[str(row["resource_id"])] >= 3:
+        # Equal excerpts from independent books still represent distinct sources.
+        source_fingerprint = (row["fingerprint"], str(row["resource_id"]))
+        if source_fingerprint in seen_hashes or counts[str(row["resource_id"])] >= max_per_resource:
             continue
         if not verify_source(db, school, row):
             continue
-        seen_hashes.add(row["fingerprint"])
+        seen_hashes.add(source_fingerprint)
         counts[str(row["resource_id"])] += 1
         result.append(as_evidence(row, row["score"]))
         if len(result) >= limit:

@@ -18,6 +18,7 @@ from services.knowledge.embeddings import Embeddings
 from services.knowledge.indexer import index_version
 from services.knowledge.models import outbox, research_records, research_sources
 from services.knowledge.retrieval import search
+from services.knowledge.high_recall import query_variants, select_evidence
 
 
 def potential_conflicts(evidence: list[dict]) -> list[dict]:
@@ -100,25 +101,75 @@ def build_research(
     if not approved:
         raise ValueError("No approved outcomes mapped to this topic")
     coverage, links, used_items, versions = [], [], {}, set()
+    search_audit = []
+    # Bound CPU, DB queries and semantic API cost for large curricula. Skipped
+    # concepts are reported as gaps, never silently treated as researched.
+    search_budget = max(12, min(200, int(os.getenv("SOMALOOM_RESEARCH_MAX_QUERIES", "120"))))
+    queries_used = 0
     revision = max(r["revision"] for r in approved)
     for row in approved:
         concepts = [v.strip() for v in (row["concepts"] or []) if isinstance(v, str) and v.strip()]
         if not concepts:
             concepts = [row["description"]]
         for concept in concepts[:20]:
+            if queries_used + 2 > search_budget:
+                coverage.append({
+                    "outcome_id": str(row["outcome_id"]),
+                    "code": row["code"],
+                    "required": bool(row["required"]),
+                    "official": row["origin"] == "official_candidate",
+                    "concept": concept, "status": "deferred_budget", "source_count": 0,
+                })
+                search_audit.append({
+                    "outcome_id": str(row["outcome_id"]), "concept": concept,
+                    "queries": [], "candidate_hits": 0, "selected_hits": 0,
+                    "selected_resources": 0, "metadata_broadened": False,
+                    "reason": "query_budget_exhausted",
+                })
+                continue
             # Search independently per outcome concept; do not load entire textbooks.
-            query = concept[:950]
-            found = search(
-                db,
-                school,
-                query,
-                filters={"grade": topic["grade"], "subject": topic["subject"]},
-                limit=8,
-                embedder=embedder,
-            )
-            if not found:
-                # Fallback broadens an overly restrictive library classification but not tenant/rights.
-                found = search(db, school, concept[:950], limit=8, embedder=embedder)
+            queries = query_variants(concept, topic["title"], limit=5)
+            candidates = []
+            executed = []
+            strict = {"grade": topic["grade"], "subject": topic["subject"]}
+            # Search narrow AND broad for each query, even when narrow has
+            # results: metadata can be absent, wrong or inconsistent.
+            # Both paths preserve tenant, provenance, version and rights filters.
+            for query in queries[:3]:
+                if queries_used + 2 > search_budget:
+                    break
+                for filters, scope in ((strict, "targeted"), (None, "broadened")):
+                    queries_used += 1
+                    hits = search(
+                        db, school, query, filters=filters, limit=24,
+                        embedder=embedder, max_per_resource=8,
+                    )
+                    candidates.extend(hits)
+                    executed.append({"query": query, "scope": scope, "hits": len(hits)})
+            if len({hit["resource_id"] for hit in candidates}) < 2:
+                # Bounded second pass for sparse results and alternate wording.
+                for query in queries[3:]:
+                    if queries_used >= search_budget:
+                        break
+                    queries_used += 1
+                    hits = search(
+                        db, school, query, limit=24,
+                        embedder=embedder, max_per_resource=8,
+                    )
+                    candidates.extend(hits)
+                    executed.append({"query": query, "scope": "broadened", "hits": len(hits)})
+            found = select_evidence(candidates, limit=40, max_per_resource=8)
+            search_audit.append({
+                "outcome_id": str(row["outcome_id"]),
+                "concept": concept,
+                "queries": executed,
+                "candidate_hits": len(candidates),
+                "selected_hits": len(found),
+                "selected_resources": len({ev["resource_id"] for ev in found}),
+                "metadata_broadened": True,
+                "query_budget_used": queries_used,
+                "query_budget": search_budget,
+            })
             for ev in found:
                 ev = {**ev, "outcome_id": str(row["outcome_id"]), "concept": concept}
                 links.append(ev)
@@ -158,6 +209,9 @@ def build_research(
         "subject": topic["subject"],
         "outline": [c["concept"] for c in coverage],
         "coverage": coverage,
+        "search_audit": search_audit,
+        "search_query_budget": search_budget,
+        "search_queries_used": queries_used,
         "gaps": [c for c in coverage if c["status"] != "strong"],
         "conflicts": contradictions,
         "confidence": confidence,

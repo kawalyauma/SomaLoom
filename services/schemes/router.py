@@ -28,8 +28,10 @@ def list_schemes(user:User=Depends(current_user),db:Session=Depends(get_db)):
         .join(BackgroundJob,(BackgroundJob.id==imports.c.job_id)&(BackgroundJob.tenant_id==tenant))
         .where(imports.c.tenant_id==tenant).order_by(imports.c.created_at.desc()).limit(100)).mappings().all()
     sources=[{'id':str(r['id']),'title':r['title'],'stage':r['stage'],'status':r['status'],'progress':r['progress'],'error':r['error'],
+        'resume_at':r['payload'].get('resume_at'),
         'warnings':r['payload'].get('warnings',[]),'lesson_count':sum(len(s['lessons']) for s in r['payload'].get('schemes',[]))} for r in rows]
-    return {'masters':result,'sources':sources}
+    from services.schemes.budget import status
+    return {'masters':result,'sources':sources,'ai_budget':status()}
 
 @router.post('/rebuild',status_code=202)
 def schedule_imports(user:User=Depends(require_roles('school_admin','teacher')),db:Session=Depends(get_db)):
@@ -47,7 +49,7 @@ def retry_import(import_id:UUID,user:User=Depends(require_roles('school_admin','
     data=dict(row['payload']);attempts=int(data.get('retry_count',0))
     if attempts>=2:raise HTTPException(409,'Retry limit reached; check the source PDF')
     data['retry_count']=attempts+1
-    job.status='queued';job.error=None;job.progress=0;job.finished_at=None
+    job.status='queued';job.error=None;job.finished_at=None
     for xjob in db.scalars(select(BackgroundJob).join(extractions,(extractions.c.job_id==BackgroundJob.id)&(extractions.c.tenant_id==tenant)).where(extractions.c.tenant_id==tenant,extractions.c.resource_version_id==row['resource_version_id'],BackgroundJob.status=='failed')):
         xjob.status='queued';xjob.error=None;xjob.finished_at=None
     db.execute(imports.update().where(imports.c.id==import_id,imports.c.tenant_id==tenant).values(stage='waiting_extraction',payload=data));db.commit()

@@ -22,8 +22,10 @@ async def generate_family(db, request, bundle, provider, model, tenant_id, gener
             EvidenceBundle,
             EvidenceItem,
             TeachingSpec,
+            VisualAssetEvidence,
         )
         from services.templates.teaching.service import TeachingStudio
+        from services.curriculum.models import topics
 
         curriculum = (
             db.execute(
@@ -47,6 +49,29 @@ async def generate_family(db, request, bundle, provider, model, tenant_id, gener
         )
         target_map = {r["outcome_id"]: r for r in target_rows}
         spec_data = {k: v for k, v in opts.items() if k in TeachingSpec.model_fields}
+        # Subject identity comes from real tenant-scoped curriculum topics, not
+        # a user-supplied prompt or guessed UUID. This enables Science/SST styles.
+        if kind == "lesson_notes":
+            subject_names = {
+                name.strip()
+                for name in db.execute(
+                    select(topics.c.subject).where(
+                        topics.c.tenant_id == tenant_id,
+                        topics.c.id.in_(request.topic_ids),
+                        topics.c.curriculum_id == request.curriculum_id,
+                    )
+                ).scalars()
+                if isinstance(name, str) and name.strip()
+            }
+            if len(subject_names) != 1:
+                raise ValueError("topic_subject_mismatch")
+            planning_scope = spec_data.get("planning_scope") or {}
+            if not isinstance(planning_scope, dict):
+                raise ValueError("invalid_planning_scope")
+            spec_data["planning_scope"] = {
+                **planning_scope,
+                "source_subject_name": next(iter(subject_names)),
+            }
         spec_data.update(
             type=kind,
             curriculum_id=request.curriculum_id,
@@ -83,6 +108,20 @@ async def generate_family(db, request, bundle, provider, model, tenant_id, gener
                     outcome_ids=[p.outcome_id],
                 )
                 for p in bundle.passages
+            ],
+            visuals=[
+                VisualAssetEvidence(
+                    asset_id=v.id,
+                    outcome_id=v.outcome_id,
+                    kind=v.kind,
+                    caption=v.caption,
+                    page=v.page,
+                    source_uri=v.source_uri,
+                    license=v.license,
+                    permission_verified=True,
+                )
+                for v in bundle.visuals
+                if v.source_uri and v.license
             ],
         )
         result = await TeachingStudio(provider, model).generate(

@@ -12,6 +12,10 @@ Deploy all normal compose overlays, including `infra/compose.codex.yaml`, which 
 
 New tables: `scheme_imports`, `master_schemes`. Parser entry point: `services.schemes.tasks`. Merge, invalidation and citation lookup: `services.schemes.service`. Tenant-scoped API: `services.schemes.router`.
 
+Scheme parsing uses AI, with `SCHEME_AI_DAILY_CALL_LIMIT=8` by default across all schools on this server. Each new chunk call (including failed provider attempts) counts against the UTC-day ceiling; cached chunks cost no additional calls. The counter is atomic in persistent Redis. At the ceiling, imports remain queued at `waiting_ai_budget` with their completed chunks and progress intact, and resume after midnight UTC. Set the limit to 0 to pause new scheme inference. This is a call ceiling, not a guarantee about subscription token usage; it does not govern other Codex clients or direct AI resource jobs. The master schemes page displays daily usage and waiting time. Existing successful imports are never automatically reparsed. Errors now preserve safe provider failure codes; failed imports still require an explicit retry.
+
+October 28 integration includes `fix/knowledge-coverage-recall` at `9985bcf` and `feat/pupil-notes-sst-science` at `6aba539`, while retaining the deployed resource-bank, image workspace and generation checkpoints. Retrieval query expansion is deterministic and generation evidence remains bounded. No mass reindex, scheme replay or bulk AI retry is part of this rollout.
+
 Coverage depends on the source PDFs actually present. Upload missing class/subject/term schemes to extend the master automatically. There is no generated fallback schedule for missing source material.
 
 Validation: production Next.js build; API build; tests `test_generation_selection.py` and `test_master_schemes.py` cover tenant isolation, schedule selection, replacement invalidation and exact source identity/quotes.

@@ -14,17 +14,20 @@ from app.core.models import (
     generation_evidence,
     generations,
     outcomes,
+    visuals,
     versions,
 )
 from sqlalchemy import func, insert, select
 from sqlalchemy.orm import Session
 
+from services.knowledge.high_recall import bound_generation_passages
 from services.generation.schema import (
     EvidenceBundle,
     GenerationInput,
     Outcome,
     Passage,
     StructuredDraft,
+    VisualReference,
 )
 
 
@@ -142,7 +145,7 @@ def retrieve_evidence(
         )
         if request.level_id != level or request.subject_id != subject:
             raise ValueError("topic_class_or_subject_mismatch")
-    outcomes_found, passages = {}, {}
+    outcomes_found, passages, visual_references = {}, {}, {}
     license_filter = request.resource_filters.get("licenses")
     if license_filter is not None and (
         not isinstance(license_filter, list) or not all(isinstance(x, str) for x in license_filter)
@@ -176,7 +179,33 @@ def retrieve_evidence(
                 passages[passage["id"]] = Passage(**passage)
         research = build_research(db, tenant_id, topic["id"], actor.id)
         for ev in research["evidence_links"]:
-            # v1 citations require a real text block; visual/equation items stay in research.
+            # Only current, tenant-scoped, permission-approved and exactly
+            # verifiable visual captions may be forwarded to the model.
+            if ev.get("visual_asset_id") and ev.get("source_kind") == "visual":
+                if license_filter is not None and ev["license"] not in license_filter:
+                    continue
+                if not lookup(db, tenant_id, UUID(ev["id"])):
+                    continue
+                asset = db.execute(
+                    select(visuals).where(
+                        visuals.c.id == UUID(ev["visual_asset_id"]),
+                        visuals.c.tenant_id == tenant_id,
+                    )
+                ).mappings().first()
+                if not asset or (asset["provenance"] or {}).get("needs_review"):
+                    continue
+                asset_id, outcome_id = asset["id"], UUID(ev["outcome_id"])
+                visual_references[(asset_id, outcome_id)] = VisualReference(
+                    id=asset_id,
+                    outcome_id=outcome_id,
+                    kind=asset["kind"],
+                    caption=asset["caption"],
+                    page=asset["page"],
+                    source_uri=ev["source_uri"],
+                    license=ev["license"],
+                )
+                continue
+            # Text citations require a real content block.
             if not ev.get("content_block_id") or not lookup(db, tenant_id, UUID(ev["id"])):
                 continue
             if license_filter is not None and ev["license"] not in license_filter:
@@ -209,14 +238,27 @@ def retrieve_evidence(
                 id=eid,
                 outcome_id=oid,
                 quote=ev["quote"],
-                source_title=topic["title"],
+                source_title=ev.get("source_title") or topic["title"],
                 source_uri=ev["source_uri"],
                 license=ev["license"],
             )
     if not outcomes_found:
         raise ValueError("topic_outcome_mapping_missing")
     db.commit()
-    return EvidenceBundle(outcomes=list(outcomes_found.values()), passages=list(passages.values()))
+    targets = list(outcomes_found.values())
+    selected_passages = bound_generation_passages(
+        list(passages.values()), targets, max_total=80, max_per_outcome=6,
+    )
+    selected_outcomes = {p.outcome_id for p in selected_passages}
+    selected_visuals = [
+        visual for visual in visual_references.values()
+        if visual.outcome_id in selected_outcomes
+    ][:24]
+    return EvidenceBundle(
+        outcomes=targets,
+        passages=selected_passages,
+        visuals=selected_visuals,
+    )
 
 
 def owned_record(db: Session, generation_id: UUID, tenant_id: UUID):
