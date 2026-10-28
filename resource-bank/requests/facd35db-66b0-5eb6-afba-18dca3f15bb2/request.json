@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/bcd25b02dc2bfef53453d5e85537ef8ff98ba6516c2150b7c174d7fea14ec632.pdf",
+      "sha256": "bcd25b02dc2bfef53453d5e85537ef8ff98ba6516c2150b7c174d7fea14ec632",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/03345144449bf4d177754adcf2e0a8bd27a76da9/P.5%20MATHEMATICS%20SCHEME%20%20TERM%201.pdf",
+      "title": "P.5 MATHEMATICS SCHEME  TERM 1",
+      "version_id": "e81899f5-fcaf-4773-b39f-b794cdeda99f"
+    }
+  ]
+}

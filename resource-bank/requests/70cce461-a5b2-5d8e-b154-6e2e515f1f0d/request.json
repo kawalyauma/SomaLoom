@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/45d04b8e5a9c418e5d7298b705371cdc472704b86058e11efdf56b30290b97f7.pdf",
+      "sha256": "45d04b8e5a9c418e5d7298b705371cdc472704b86058e11efdf56b30290b97f7",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/cb0ba4b8377c65660f5296d279d038c085fe9bf1/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%202.pdf",
+      "title": "P.5 MATHS SCHEME OF WORK TERM 2",
+      "version_id": "8cce974c-31de-428e-9681-c8df1d3f9935"
+    }
+  ]
+}
