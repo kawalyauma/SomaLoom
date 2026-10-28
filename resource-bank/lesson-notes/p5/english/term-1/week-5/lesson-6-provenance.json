@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 5,
+  "lesson": 6,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "741c6226-c918-5220-828b-9610a138b50e",
+  "source_quote": "Question tags",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-6.md": {
+      "sha256": "9a02fa7c0b53a79eb65c27ff1d3a2bf0a6d65c5663c05362575f143522bf3d71",
+      "bytes": 4409
+    },
+    "lesson-6.pdf": {
+      "sha256": "49bd0d32d4e47bc9a03806dfd156353ec5fec9e4274cc6732d31e8fa1f545f22",
+      "bytes": 6016
+    },
+    "lesson-6-teacher-key.md": {
+      "sha256": "a523be9a032719feb2b11151b4786242838ea72a550559781267d2682209498b",
+      "bytes": 1101
+    },
+    "lesson-6-teacher-key.pdf": {
+      "sha256": "ef8bb5f79be7ef49e0cce64725e46b87377552d18e2d0c1ce146619d03381f53",
+      "bytes": 2582
+    }
+  }
+}

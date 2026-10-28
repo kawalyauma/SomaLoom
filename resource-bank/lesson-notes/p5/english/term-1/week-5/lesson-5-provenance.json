@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 5,
+  "lesson": 5,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "741c6226-c918-5220-828b-9610a138b50e",
+  "source_quote": "More exercise\nabout adverbs",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-5.md": {
+      "sha256": "c38f66ce7a4a5c10c9bb05f0c32f395b94b74532fda08eecee55637133efb8dd",
+      "bytes": 4078
+    },
+    "lesson-5.pdf": {
+      "sha256": "30ec8e5a41ad8c944b27d6d6af753b84b3397893d2675f56c0f141761bb925f3",
+      "bytes": 6023
+    },
+    "lesson-5-teacher-key.md": {
+      "sha256": "3d2bc38e38f3b153877e34d2d762f3d10f490efa7e1a8dc272e936831c261e50",
+      "bytes": 972
+    },
+    "lesson-5-teacher-key.pdf": {
+      "sha256": "f4938fda471f2f47796f124230b159f802809c4f313fed06e2da2a4493bfacca",
+      "bytes": 2676
+    }
+  }
+}

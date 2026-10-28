@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 5,
+  "lesson": 8,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "741c6226-c918-5220-828b-9610a138b50e",
+  "source_quote": "The present\nsimple tense",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-8.md": {
+      "sha256": "16c440af48b98f6232d6e4d3bca62053378225e3c67f075169908ffb7688f39f",
+      "bytes": 4207
+    },
+    "lesson-8.pdf": {
+      "sha256": "3c94590877b34c764af9d75607fc85a315b2602fe700e9a2539dd4a751b710e0",
+      "bytes": 5925
+    },
+    "lesson-8-teacher-key.md": {
+      "sha256": "066e9d3f3121f8929902e80a1824ddfdece2d53b303f8cb25f1badb29c61181b",
+      "bytes": 925
+    },
+    "lesson-8-teacher-key.pdf": {
+      "sha256": "092668409cc789fd92fc90cb3c284c59ac3b5cd92db822cbd1a26eeeaab6cbff",
+      "bytes": 2540
+    }
+  }
+}
