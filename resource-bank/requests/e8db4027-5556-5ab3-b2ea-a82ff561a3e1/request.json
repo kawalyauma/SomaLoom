@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/7f161784ce1b0cd93983991f1e7d8db2e9f2f9e6ea65707eb8057b1470658a75.docx",
+      "sha256": "7f161784ce1b0cd93983991f1e7d8db2e9f2f9e6ea65707eb8057b1470658a75",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/f5c572e3ec721a270bbfc47c2778361a4e61e710/P.5%20SCI%20SCHEME%20TERM%20III..docx",
+      "title": "P.5 SCI SCHEME TERM III.",
+      "version_id": "621159a6-8fc5-410f-9ce1-67b406c3d1a3"
+    }
+  ]
+}
