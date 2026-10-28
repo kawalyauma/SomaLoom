@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/7c82004248ef34ddc482774910898b63649e21070b46906f300c06173cfb99a8.pdf",
+      "sha256": "7c82004248ef34ddc482774910898b63649e21070b46906f300c06173cfb99a8",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/a0e09a611ed4dddbef2540a7a29a3e7c83b314d0/BABY%20SCHEMES%20all%20terms.pdf",
+      "title": "BABY SCHEMES all terms",
+      "version_id": "58355762-ce51-4a81-bd65-2b091c87b2af"
+    }
+  ]
+}

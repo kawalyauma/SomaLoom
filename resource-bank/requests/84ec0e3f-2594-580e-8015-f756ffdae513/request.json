@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/edcb79f181f659937d07b37af0743cab255551993b9a20d23c9e8ecfcfcfee1c.docx",
+      "sha256": "edcb79f181f659937d07b37af0743cab255551993b9a20d23c9e8ecfcfcfee1c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/5cc92c6121872296fb9ae4e57d6c317de48dbf92/p.5%20compo%20and%20compre%20scheme%20term%20II.docx",
+      "title": "p.5 compo and compre scheme term II",
+      "version_id": "6552b4d1-6725-4fde-bfd4-8729e4c5cc85"
+    }
+  ]
+}

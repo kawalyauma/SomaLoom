@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/dd1098f07bd4ed972577da6c61a0a788b13971f1c0c82ce156b50f91c545f02c.docx",
+      "sha256": "dd1098f07bd4ed972577da6c61a0a788b13971f1c0c82ce156b50f91c545f02c",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/63b237eaed665d77903209d4e5a7b069996b8c2c/BABY%20SOCIAL%20DEV%27T%20%20SCHEME%20OF%20WORK.docx",
+      "title": "BABY SOCIAL DEV_T  SCHEME OF WORK",
+      "version_id": "f667fa0a-d11f-4ebf-880f-ae9b02c69733"
+    }
+  ]
+}

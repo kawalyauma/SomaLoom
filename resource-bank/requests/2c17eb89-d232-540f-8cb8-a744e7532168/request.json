@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/cd5df656c50d6f32f8f3fc248415dacd8c8a0f483192dae419ffcbb815cf52a9.docx",
+      "sha256": "cd5df656c50d6f32f8f3fc248415dacd8c8a0f483192dae419ffcbb815cf52a9",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/b57452e972d4df0f15039e90cde536a1a8401bb9/BABY%20CLASS%20ALL%20SUBJECTS%20SCHEME%20OF%20WORK%20ALL%20TERMS%202025.docx",
+      "title": "BABY CLASS ALL SUBJECTS SCHEME OF WORK ALL TERMS 2025",
+      "version_id": "de92aa2e-7d00-4797-9f21-a3aa8cf51670"
+    }
+  ]
+}

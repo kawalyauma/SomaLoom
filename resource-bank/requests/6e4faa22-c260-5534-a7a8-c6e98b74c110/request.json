@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/e33278b470b0f9dbbd06f3aafa43167a4dfafcf3c2da2ef2e3c6fb5ad0e47791.docx",
+      "sha256": "e33278b470b0f9dbbd06f3aafa43167a4dfafcf3c2da2ef2e3c6fb5ad0e47791",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/e5a04a8f2644604cf5bff6c48d395dea53a38b17/Susan%20P4%20MATHS%20LESSON%20NOTES%20%2C%20SCHEMES%20TERM%20I%2C%20II%2C%20III%202015.1docx.docx",
+      "title": "Susan P4 MATHS LESSON NOTES _ SCHEMES TERM I_ II_ III 2015.1docx",
+      "version_id": "62d2e214-19ad-4270-951a-5c165f9e2ca1"
+    }
+  ]
+}

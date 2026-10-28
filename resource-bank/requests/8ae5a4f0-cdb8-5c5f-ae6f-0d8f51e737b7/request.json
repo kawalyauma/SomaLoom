@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0ac30d8b5530daec65e90a6f1e963feb282b9dffceb5e70bab10dc69c228c175.docx",
+      "sha256": "0ac30d8b5530daec65e90a6f1e963feb282b9dffceb5e70bab10dc69c228c175",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/82196c3406b7224b479012f8389694a4fcd93419/R.E%20scheme%20P.5.docx",
+      "title": "R.E scheme P.5",
+      "version_id": "0ddc920c-6d2a-4ab8-8739-0f7de458c39c"
+    }
+  ]
+}

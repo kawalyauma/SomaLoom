@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/a3fd43a0073c113fd99360da9ed2ea05a124932f8bd384212a39185f6c971dcd.pdf",
+      "sha256": "a3fd43a0073c113fd99360da9ed2ea05a124932f8bd384212a39185f6c971dcd",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/73f852ccfda3827183de5dcd362911da5a504696/PRIMARY%20FIVE%20SCHEME%20OF%20WORK%20SCIENCE%20TERM%20ONE.pdf",
+      "title": "PRIMARY FIVE SCHEME OF WORK SCIENCE TERM ONE",
+      "version_id": "12c57aea-5e1a-4e46-a53b-ecb5d8ab0e1c"
+    }
+  ]
+}

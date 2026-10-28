@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8a4bdabdb385707a229b27f8789049b23f329c5832a10b24ababfd9e4a47a6c6.pdf",
+      "sha256": "8a4bdabdb385707a229b27f8789049b23f329c5832a10b24ababfd9e4a47a6c6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/cf2cea65b78b7e9b112ae069941c82cfbfa5c8fe/P6%20SST%20Schemes%20of%20work.pdf",
+      "title": "P6 SST Schemes of work",
+      "version_id": "222afee8-d643-4837-872b-45a3a0674402"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0c9c2c2ac45422f07d893f41d38a06d59f12600caf5897bbe5f763cd86812f33.pdf",
+      "sha256": "0c9c2c2ac45422f07d893f41d38a06d59f12600caf5897bbe5f763cd86812f33",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/c450bf5427b4306caaff9bfa58ac3f648aa06814/PRIMARY%202%20MATHEMATICS%20SCHEME%20OF%20WORK%20FOR%20TERM%20II.pdf",
+      "title": "PRIMARY 2 MATHEMATICS SCHEME OF WORK FOR TERM II",
+      "version_id": "64ea2450-a910-46ea-938d-9c57c418202d"
+    }
+  ]
+}

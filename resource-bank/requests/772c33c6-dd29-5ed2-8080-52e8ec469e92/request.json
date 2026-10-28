@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/21a8c8edb44892885a9ca5ae8d6130ab7a2b9861fb2539fcf8fc40b9c9a3cd09.pdf",
+      "sha256": "21a8c8edb44892885a9ca5ae8d6130ab7a2b9861fb2539fcf8fc40b9c9a3cd09",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/2aeff64bb39b8a2720beb5d944a19cfd7aa18ce0/THIRD%20TERM%20P.5%20SCIENCE%20SCHEME%20OF%20WORK.pdf",
+      "title": "THIRD TERM P.5 SCIENCE SCHEME OF WORK",
+      "version_id": "4214ff31-49a8-46e8-a93f-800fcd0d3769"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/427286ca7eb049fcabb7c1351e7dfb7bb5895a1d737008557cb90751aaad933a.docx",
+      "sha256": "427286ca7eb049fcabb7c1351e7dfb7bb5895a1d737008557cb90751aaad933a",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/e9dc6d064791760e6482b1478f4a82cc9ce30cbf/BABY-NEWS%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-NEWS SCHEME TERM I",
+      "version_id": "c4fe198d-06b1-4e89-a3e6-11256f6ab749"
+    }
+  ]
+}

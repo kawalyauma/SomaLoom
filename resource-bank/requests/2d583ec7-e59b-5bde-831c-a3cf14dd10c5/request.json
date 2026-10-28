@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/61cabb2058e64da6731cbcd0484cf9ddf7743957d31070522a7fa991bce3a228.pdf",
+      "sha256": "61cabb2058e64da6731cbcd0484cf9ddf7743957d31070522a7fa991bce3a228",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/45e08d02a3fce38be7a5ba0596d223bfb2b5b86b/Aptitude%20scheme%20Top%20class%20I-III.pdf",
+      "title": "Aptitude scheme Top class I-III",
+      "version_id": "42fd4047-dc35-4366-8927-77ff45467802"
+    }
+  ]
+}

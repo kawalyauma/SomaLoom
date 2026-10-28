@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/ac110be06ec4c23d19bd11b695f4ebf53bff334634c179240bb3f13dc13b66f0.docx",
+      "sha256": "ac110be06ec4c23d19bd11b695f4ebf53bff334634c179240bb3f13dc13b66f0",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/ee06d7f4e6e7a499e5cd5867802022773295c64b/BABY-MATHS%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-MATHS SCHEME TERM I",
+      "version_id": "f946182b-4099-4e0b-9677-e9c39d489add"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a.pdf",
+      "sha256": "0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf",
+      "title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "version_id": "5cfbda70-c2bc-4b55-bf00-fb0ec86a7a3b"
+    }
+  ]
+}
