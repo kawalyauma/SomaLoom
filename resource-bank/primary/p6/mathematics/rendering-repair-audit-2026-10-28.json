@@ -8,17 +8,17 @@
   "repair": "Re-rendered from original Markdown with HTML escaping BEFORE adding genuine ReportLab <super>/<sub> markup; superscript digit and sign semantics preserved; compiled corrected individual PDFs.",
   "output": {
     "individual_pdf_count": 116,
-    "learner_compilation_pages": 63,
+    "learner_compilation_pages": 116,
     "key_compilation_pages": 58,
     "zip_files": 274,
-    "zip_bytes": 9666388,
+    "zip_bytes": 9704317,
     "all_pdf_forbidden_markup_matches": 0
   },
   "checks": {
     "zip_integrity": "passed",
     "pdf_text_extraction": "passed for all 118 repaired PDFs",
     "selected_arithmetic_checks": "7/7 passed",
-    "rendered_page_inspection": "scientific notation lesson and Venn diagram lesson 6 visually inspected",
+    "rendered_page_inspection": "scientific notation lesson after final writing-space reflow; Venn diagram lesson 6",
     "complete_independent_answer_check": false,
     "all_pages_visual_inspected": false,
     "all_diagrams_validated": false
@@ -34,8 +34,9 @@
   "blockers": [
     "Cloud GitHub connector supports UTF-8 file creation but not direct bulk transfer from current local workspace; full repaired PDF/MD archive only in ChatGPT download.",
     "Original Term 1 scheme conflict about early weeks unresolved.",
-    "Current compact learner PDFs have inadequate practice working space pending layout revision.",
+    "Practice spacing improved in final local PDFs; full page-by-page clipping and writing-space review remains pending.",
     "Full calculation-by-calculation and diagram review outstanding."
   ],
-  "checkpoint": "Finish Term 1 layout and mathematical QA first; then inspect Term 2 Week 1 Lesson 1 fractions. Do not duplicate existing 58 Term 1 lessons. CRE/IRE separate."
+  "checkpoint": "Finish Term 1 layout and mathematical QA first; then inspect Term 2 Week 1 Lesson 1 fractions. Do not duplicate existing 58 Term 1 lessons. CRE/IRE separate.",
+  "final_revision": "Restored learner writing space using exercise spacing, preserving 116-page compilation; final ZIP regenerated with 274 entries and no forbidden markup."
 }
