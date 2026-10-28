@@ -1,6 +1,5 @@
 {
-  "error": "teaching_quality_validation_failed",
   "id": "43a9aab0-2eaf-4956-ba77-3833672e66d1",
-  "result_sha": "9eb6cf191cb934f5e5ca38bd709f766293aa7e70a3b3354194a7fb865330b40b",
-  "state": "needs_revision"
+  "result_sha": "8e7fdde908a8112eacd4a13487c436e79186eb38842b59e345e70702b28f3265",
+  "state": "complete"
 }
