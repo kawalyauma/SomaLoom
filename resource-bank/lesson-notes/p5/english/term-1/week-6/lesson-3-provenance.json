@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 6,
+  "lesson": 3,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+  "source_quote": "The use of\n\u2026.prefer\u2026..to\n\u2026./\u2026like\n\u2026.more than",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-3.md": {
+      "sha256": "625c26fad81eb4cd06aa26d56b78d9ce9c4e74429538c87e78d6be80b178ed65",
+      "bytes": 4520
+    },
+    "lesson-3.pdf": {
+      "sha256": "7837b8a26ae1f1beb93ff8adf9936ad3247587c7cc410d247ddbc585decdd959",
+      "bytes": 5961
+    },
+    "lesson-3-teacher-key.md": {
+      "sha256": "d4e41e03f3a21915fc5e76cc9e8829a223a03a7f3e474a36858e40df94221fcc",
+      "bytes": 1064
+    },
+    "lesson-3-teacher-key.pdf": {
+      "sha256": "b82206404ed2900ba8e192a07a03ee73c9f2706ee901a738bcb0ca1442e8889f",
+      "bytes": 2554
+    }
+  }
+}

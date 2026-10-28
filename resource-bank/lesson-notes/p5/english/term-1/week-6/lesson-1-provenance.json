@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 6,
+  "lesson": 1,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "741c6226-c918-5220-828b-9610a138b50e",
+  "source_quote": "The present\nsimple passive",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-1.md": {
+      "sha256": "55ae8baeb447c83b69e94a0776e8ab0aa6671b6af93b3d802deb3a23fded9232",
+      "bytes": 4466
+    },
+    "lesson-1.pdf": {
+      "sha256": "b70d802a383a4e3a768afc7d49328c0ec2d7d7a35d9d4c22714d99b12689cd76",
+      "bytes": 6063
+    },
+    "lesson-1-teacher-key.md": {
+      "sha256": "bad4dd9e2b907e723783163d15db6140f16aa4d8932a56d595f8e6c6a77b4f50",
+      "bytes": 1111
+    },
+    "lesson-1-teacher-key.pdf": {
+      "sha256": "fd186ddce746fbe6a108a2d40b179e4c04f143b7800363e7ec72f0a03c9bac3a",
+      "bytes": 2624
+    }
+  }
+}

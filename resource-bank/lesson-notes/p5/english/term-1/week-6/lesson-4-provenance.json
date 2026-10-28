@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 6,
+  "lesson": 4,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+  "source_quote": "The use\n\u2026\u2026while\n/\u2026.when..",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-4.md": {
+      "sha256": "f901018f712f4ad211a918f502170db29b515596cfb5a72de6cd89c56f521d98",
+      "bytes": 4799
+    },
+    "lesson-4.pdf": {
+      "sha256": "08927dcc1255654a2d6fa9276339632b607441b83ef7b5f6afc233a08c478df0",
+      "bytes": 6181
+    },
+    "lesson-4-teacher-key.md": {
+      "sha256": "8ee7a0ad9a5d26a1d3ee0e833fd10e590e9af81a01f34e73b208b15480b587dc",
+      "bytes": 1204
+    },
+    "lesson-4-teacher-key.pdf": {
+      "sha256": "48d1dd3acfff04c88157d6dc6263e58b841802f733e944477505f7d186504893",
+      "bytes": 2612
+    }
+  }
+}
