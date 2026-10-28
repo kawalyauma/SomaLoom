@@ -1,0 +1,27 @@
+{
+  "lesson": {
+    "class": "P5",
+    "subject": "English Grammar",
+    "term": 1,
+    "week": 2,
+    "lesson": 1,
+    "topic": "Irregular Verbs"
+  },
+  "generation_conversation": "https://chatgpt.com/c/6ae1ccff-f400-83e8-8778-be0859420e9a",
+  "schedule": "resource-bank/results/118c620a-b696-500d-b44e-dc0ee868bdc3/result.json",
+  "issue": 123,
+  "files": {
+    "lesson-1.pdf": "889a69bb5fd90e8aba8d0026c52ab7899fcc649cd7f551a1926e550b936b8f28",
+    "lesson-1.md": "71ea7629ddac009b1b12ad0d467abc7b5166a43cc741933240870b5533bd71cf",
+    "lesson-1-teacher-key.pdf": "e9b2c3d5b47600383a22502f3b99d2403076d823748a0aba9cc2af178bd4b494",
+    "lesson-1-teacher-key.md": "b7c1a1d1db56a4de1bab7fe95c0458854728971ffe4f87cfb7896e8a30c0ce95"
+  },
+  "inspection": {
+    "learner_pdf_pages": 6,
+    "teacher_key_pdf_pages": 2,
+    "practice_questions": 26,
+    "learner_workflow_metadata_found": false,
+    "academic_approval": "not_claimed"
+  },
+  "original_provenance_artifact": "ChatGPT preview reported could not load; this audit record is independently assembled from the downloaded files and known request metadata."
+}
