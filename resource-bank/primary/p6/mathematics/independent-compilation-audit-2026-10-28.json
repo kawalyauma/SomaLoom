@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-28T20:21:29.480836+00:00",
+  "status": "draft_needs_full_review",
+  "generation": "regular ChatGPT browser conversation",
+  "chat": "https://chatgpt.com/c/6ae2475f-e510-83e9-87b6-be503be22c2a",
+  "independent_checks": {
+    "learner_pages": 116,
+    "teacher_key_pages": 58,
+    "literal_super_sub_html_markup_matches": 0,
+    "learner_first_five_sets_explanations_and_key_spot_checked": true,
+    "complete_answer_diagram_coverage_review": false
+  },
+  "text_companions": "pdftotext extraction for inspection, NOT original Markdown. Superscript positioning may not survive plain text. PDF is authoritative for notation.",
+  "sources_and_license": "See existing resource-bank/primary/p6/mathematics/rendering-repair-audit-2026-10-28.json and original request evidence; no new licence or curriculum endorsement asserted.",
+  "publication": "These two real downloaded compilation PDFs are being preserved as drafts; individual original Markdown publication remains outstanding. No app import or teacher approval claimed.",
+  "superseded_originals": "Preserved locally, not included in this commit. Ghostscript experimental optimized copies were NOT selected because extracted text differed.",
+  "files": [
+    {
+      "tag": "learner",
+      "local": "/home/umar/codex/artifacts/p6/mathematics/Term-1-Learner-Compilation-Repaired-DRAFT.pdf",
+      "path": "resource-bank/lesson-notes/p6/mathematics/term-1/learner-compilation.repaired-draft.pdf",
+      "bytes": 2558869,
+      "base64_length": 3411828,
+      "git_blob_sha": "960f06182433ca2196894259c9b5c6802a2168c5",
+      "sha256": "f7869d86124479292c0ae6549217ee6f205d41ccfc6c7e524eadb7a7f4d6a208"
+    },
+    {
+      "tag": "key",
+      "local": "/home/umar/codex/artifacts/p6/mathematics/Term-1-Teacher-Key-Repaired-DRAFT.pdf",
+      "path": "resource-bank/lesson-notes/p6/mathematics/term-1/teacher-key-compilation.repaired-draft.pdf",
+      "bytes": 2510004,
+      "base64_length": 3346672,
+      "git_blob_sha": "0a3421b35e3c404269bb9f9335c831a834a25547",
+      "sha256": "42f774114533138917471c16c941b01ff37121b48f5792c959280655bacbd503"
+    },
+    {
+      "tag": "learnertext",
+      "local": "/home/umar/codex/artifacts/p6/mathematics/Term-1-Learner-Compilation-Repaired-DRAFT.txt",
+      "path": "resource-bank/lesson-notes/p6/mathematics/term-1/learner-compilation.extracted.txt",
+      "bytes": 53038,
+      "base64_length": 70720,
+      "git_blob_sha": "1cff78e6f0f462e2b3dc61685d5d920d9c859252",
+      "sha256": "4524ffcb274043cf1667d4ed07cc071bca362297696838fc26407ab438619c93"
+    },
+    {
+      "tag": "keytext",
+      "local": "/home/umar/codex/artifacts/p6/mathematics/Term-1-Teacher-Key-Repaired-DRAFT.txt",
+      "path": "resource-bank/lesson-notes/p6/mathematics/term-1/teacher-key-compilation.extracted.txt",
+      "bytes": 33684,
+      "base64_length": 44912,
+      "git_blob_sha": "255d87d38f36779170e741a482b4e190a95029bb",
+      "sha256": "7497dc6cd08add2bc81c38ca2e939ad1d29bbd280afa825fb6dedc871d315431"
+    }
+  ]
+}
