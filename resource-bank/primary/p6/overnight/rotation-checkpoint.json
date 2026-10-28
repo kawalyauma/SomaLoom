@@ -1,0 +1,18 @@
+{
+  "last_batch": "p6-science-2026-10-29-01",
+  "last_subject": "science",
+  "next_subject": "sst",
+  "subjects": [
+    "mathematics",
+    "science",
+    "sst",
+    "cre",
+    "ire"
+  ],
+  "next_subject_rationale": "Mathematics Term2 manual active; Science supplements committed this run; SST source/term validation and publication next. Do not duplicate existing chat-only artifacts.",
+  "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-01-checkpoint.md",
+  "status": "incomplete",
+  "completed_batches": 1,
+  "no_parallel_workers": true,
+  "updated": "2026-10-29"
+}
