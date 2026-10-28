@@ -49,7 +49,6 @@ def export_pending(limit=5):
 def ingest_receipt(receipt):
     from services.generation.families import generate_family
     from services.schemes.github import ingest_scheme
-    if ingest_scheme(receipt):return
     gid=UUID(receipt['id'])
     if receipt.get('repository')!=REPO:raise ValueError('receipt_repository_mismatch')
     number=int(receipt['issue_number'])
@@ -57,7 +56,9 @@ def ingest_receipt(receipt):
     if receipt.get('issue_url')!=expected:raise ValueError('receipt_issue_url_invalid')
     with SessionLocal() as db:
         row=db.execute(select(generations).where(generations.c.id==gid)).mappings().first()
-        if not row:return
+        if not row:
+            ingest_scheme(receipt)
+            return
         school=row['tenant_id'];job=db.get(BackgroundJob,row['job_id'],with_for_update=True)
         values=dict(row['parameters']);handoff=dict(values.get('handoff',{}))
         if values.get('execution_mode')!='github' or handoff.get('packet_sha')!=receipt.get('packet_sha'):raise ValueError('receipt_packet_mismatch')
