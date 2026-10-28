@@ -28,10 +28,10 @@ def list_schemes(user:User=Depends(current_user),db:Session=Depends(get_db)):
         .join(BackgroundJob,(BackgroundJob.id==imports.c.job_id)&(BackgroundJob.tenant_id==tenant))
         .where(imports.c.tenant_id==tenant).order_by(imports.c.created_at.desc()).limit(100)).mappings().all()
     sources=[{'id':str(r['id']),'title':r['title'],'stage':r['stage'],'status':r['status'],'progress':r['progress'],'error':r['error'],
-        'resume_at':r['payload'].get('resume_at'),
+        'handoff':r['payload'].get('handoff',{}),'resume_at':None,
         'warnings':r['payload'].get('warnings',[]),'lesson_count':sum(len(s['lessons']) for s in r['payload'].get('schemes',[]))} for r in rows]
     from services.schemes.budget import status
-    return {'masters':result,'sources':sources,'ai_budget':status()}
+    return {'masters':result,'sources':sources,'execution_mode':'github','ai_budget':None}
 
 @router.post('/rebuild',status_code=202)
 def schedule_imports(user:User=Depends(require_roles('school_admin','teacher')),db:Session=Depends(get_db)):

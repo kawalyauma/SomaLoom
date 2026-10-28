@@ -311,12 +311,5 @@ def provider_available(name: str) -> bool:
 
 
 def configured_provider(name: str) -> AIProvider:
-    if name == "codex":
-        return CodexCLIProvider()
-    if name == "api":
-        return OpenAIAPIProvider()
-    if name == "codex_with_api_fallback":
-        if not os.getenv("AI_CODEX_RUNNER"):
-            return OpenAIAPIProvider()
-        return FallbackProvider(CodexCLIProvider(), OpenAIAPIProvider())
+    """Hosted creation is completed by external agents through GitHub issues."""
     return DisabledProvider()

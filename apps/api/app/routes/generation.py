@@ -60,11 +60,7 @@ def create_generation(
     user: User = Depends(require_roles("school_admin", "teacher")),
     db: Session = Depends(get_db),
 ):
-    import os
-    mode=payload.options.get("execution_mode",os.getenv("RESOURCE_GENERATION_MODE","ai"))
-    if mode not in ("ai","github"):raise HTTPException(422,"Choose AI generation or GitHub resource bank")
-    if mode != "github" and not provider_available(get_settings().ai_provider):
-        raise HTTPException(503, "AI generation provider not configured")
+    payload = payload.model_copy(update={"options": {**payload.options, "execution_mode": "github"}})
     if key is not None and not key.strip():
         raise HTTPException(422, "Idempotency key must not be empty")
     try:
@@ -314,6 +310,7 @@ def retry_generation(
         raise HTTPException(409, "Only failed generations can be retried")
     params = dict(record.parameters)
     attempts = int(params.get("attempts", 0))
+    params["execution_mode"]="github"
     if params.get("execution_mode")=="github":
         from services.generation.repository import activity_event
         job.status='queued';job.error=None;job.finished_at=None

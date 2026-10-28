@@ -15,11 +15,27 @@ from services.resource_bank.tasks import root, REPO, prepare_request, ReplayProv
 
 
 def export_pending(limit=5):
+    from services.schemes.models import imports
+    from services.schemes.tasks import run_import
+    with SessionLocal() as db:
+        pending=db.execute(select(imports.c.job_id,imports.c.payload,imports.c.stage)
+            .join(BackgroundJob,BackgroundJob.id==imports.c.job_id)
+            .where(BackgroundJob.status.in_(['queued','failed']))).all()
+    count=0
+    for jid,payload,stage in pending:
+        if payload.get('handoff') or stage in ('extraction_failed','waiting_extraction','superseded'):continue
+        try:run_import(str(jid))
+        except Exception as exc:logging.warning('scheme_packet_failed type=%s',type(exc).__name__)
+        count+=1
+        if count>=limit:break
     with SessionLocal() as db:
         rows=db.execute(select(generations.c.id,generations.c.parameters,BackgroundJob.status).join(BackgroundJob,BackgroundJob.id==generations.c.job_id)).all()
     count=0
     for gid,params,status in rows:
-        if params.get('execution_mode')!='github':continue
+        if params.get('execution_mode')!='github':
+            params={**params,'execution_mode':'github'}
+            with SessionLocal() as db:
+                db.execute(generations.update().where(generations.c.id==gid).values(parameters=params));db.commit()
         path=root()/'status'/(str(gid)+'.json')
         if status=='cancelled':
             path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(encoded({'id':str(gid),'state':'cancelled'}));continue
@@ -32,6 +48,8 @@ def export_pending(limit=5):
 
 def ingest_receipt(receipt):
     from services.generation.families import generate_family
+    from services.schemes.github import ingest_scheme
+    if ingest_scheme(receipt):return
     gid=UUID(receipt['id'])
     if receipt.get('repository')!=REPO:raise ValueError('receipt_repository_mismatch')
     number=int(receipt['issue_number'])

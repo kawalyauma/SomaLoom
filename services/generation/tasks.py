@@ -33,25 +33,8 @@ class Cancelled(Exception):
 
 
 def enqueue_generation(job_id: UUID) -> bool:
-    """Safe to repeat: RQ job ID deduplicates dispatch attempts."""
-    try:
-        with SessionLocal() as db:
-            values=db.scalar(select(generations.c.parameters).where(generations.c.job_id==job_id)) or {}
-            if values.get("execution_mode")=="github":return True  # Durable bridge prepares these without inference.
-        from rq import Queue
-        from app.core.queue import redis_connection
-        Queue("generations", connection=redis_connection()).enqueue(
-            "services.generation.tasks.run_generation",
-            str(job_id),
-            job_id="generation-" + str(job_id),
-            job_timeout=4000,
-            result_ttl=86400,
-            failure_ttl=86400,
-        )
-        return True
-    except Exception:
-        log.warning("generation_dispatch_unavailable job_id=%s", job_id)
-        return False
+    """The durable GitHub bridge owns every creation request."""
+    return True
 
 
 def dispatch_queued(limit: int = 100) -> int:
@@ -152,67 +135,9 @@ async def _execute(job_id: UUID, tenant_id: UUID, generation_id: UUID, data: Gen
 
 
 def run_generation(job_id: str):
-    try:
-        identifier = UUID(job_id)
-    except (ValueError, TypeError):
-        return
+    """Redirect legacy queue entries into the GitHub bridge without inference."""
     with SessionLocal() as db:
-        job = db.get(BackgroundJob, identifier, with_for_update=True)
-        if (
-            not job
-            or job.kind != "generation"
-            or job.status in ("cancelled", "failed", "succeeded")
-        ):
-            return
-        # Running jobs are not restarted by a duplicate dispatcher.
-        if job.status != "queued":
-            return
-        row = (
-            db.execute(
-                select(generations).where(
-                    generations.c.job_id == identifier, generations.c.tenant_id == job.tenant_id
-                )
-            )
-            .mappings()
-            .first()
-        )
-        if row is None:
-            finish(db, identifier, job.tenant_id, "failed", "generation_record_missing")
-            return
-        tenant_id = job.tenant_id
-        generation_id = row["id"]
-        if row["parameters"].get("execution_mode")=="github":
-            return  # The resource-bank bridge owns this request; no paid inference.
-        try:
-            from app.core.models import User
-
-            requester = db.get(User, row["requested_by"])
-            if not requester or not requester.active or requester.tenant_id != tenant_id:
-                raise ValueError("requester_access_revoked")
-            data = GenerationInput.model_validate(row["parameters"]["request"])
-            job.status, job.progress = "running", 1
-            db.commit()
-        except Exception:
-            finish(db, identifier, tenant_id, "failed", "invalid_generation_request")
-            return
-    try:
-        with SessionLocal() as db:
-            if not update_progress(db, identifier, tenant_id, "starting", 1):
-                return
-        asyncio.run(_execute(identifier, tenant_id, generation_id, data))
-    except Cancelled:
-        log.info("generation_cancelled job_id=%s", identifier)
-    except ProviderError as error:
-        with SessionLocal() as db:
-            finish(db, identifier, tenant_id, "failed", error.code)
-        log.warning("generation_provider_failed job_id=%s code=%s", identifier, error.code)
-    except ValueError as error:
-        known = {"topic_outcome_mapping_missing", "invalid_resource_filter", "saved_source_unavailable"}
-        code = str(error) if str(error) in known else "generation_validation_failed"
-        with SessionLocal() as db:
-            finish(db, identifier, tenant_id, "failed", code)
-        log.warning("generation_validation_failed job_id=%s code=%s", identifier, code)
-    except Exception:
-        with SessionLocal() as db:
-            finish(db, identifier, tenant_id, "failed", "generation_internal_error")
-        log.exception("generation_internal_failure job_id=%s", identifier)
+        row=db.execute(select(generations).where(generations.c.job_id==UUID(job_id))).mappings().first()
+        if not row:return
+        values=dict(row['parameters']);values['execution_mode']='github'
+        db.execute(generations.update().where(generations.c.id==row['id']).values(parameters=values));db.commit()

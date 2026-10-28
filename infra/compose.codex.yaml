@@ -1,23 +1,17 @@
 services:
   api:
     environment:
-      AI_PROVIDER: codex
+      AI_PROVIDER: disabled
       AI_MODEL: gpt-6.1-sol
-      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
-      AI_CODEX_ISOLATION_ATTESTED: "1"
-    volumes:
-      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
-      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+      RESOURCE_GENERATION_MODE: github
+      SCHEME_AI_DAILY_CALL_LIMIT: "0"
     networks: [default, codex-control]
   worker:
     environment:
-      AI_PROVIDER: codex
+      AI_PROVIDER: disabled
       AI_MODEL: gpt-6.1-sol
-      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
-      AI_CODEX_ISOLATION_ATTESTED: "1"
-    volumes:
-      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
-      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
+      RESOURCE_GENERATION_MODE: github
+      SCHEME_AI_DAILY_CALL_LIMIT: "0"
     networks: [default, codex-control]
   planning-worker:
     image: somaloom-api
@@ -42,18 +36,17 @@ services:
       DATABASE_URL: postgresql+psycopg://somaloom_app:${APP_DB_PASSWORD:?set APP_DB_PASSWORD}@db:5432/${POSTGRES_DB:-somaloom}
       REDIS_URL: redis://:${REDIS_PASSWORD:?set REDIS_PASSWORD}@redis:6379/0
       SOMALOOM_TELEGRAM_ACCOUNT_URL: https://172.31.23.34:3012
-      AI_PROVIDER: codex
+      AI_PROVIDER: disabled
       AI_MODEL: gpt-6.1-sol
-      AI_CODEX_RUNNER: /app/infra/codex/runner-client.py
-      AI_CODEX_ISOLATION_ATTESTED: "1"
+      RESOURCE_GENERATION_MODE: github
+      SCHEME_AI_DAILY_CALL_LIMIT: "0"
     volumes:
       - ${DATA_ROOT:?encrypted EBS mount required}/resources:/data/resources
       - /etc/somaloom/telegram-account-token:/run/secrets/telegram-account-token:ro
       - /etc/somaloom/telegram-account-ca.pem:/run/secrets/telegram-account-ca.pem:ro
-      - ./infra/codex/runner-client.py:/app/infra/codex/runner-client.py:ro
-      - /etc/somaloom/codex-runner-token:/run/secrets/codex-runner-token:ro
     networks: [default, codex-control]
   codex-inference:
+    profiles: [manual-inference]
     build:
       context: .
       dockerfile: infra/codex/Dockerfile
@@ -86,6 +79,7 @@ services:
       driver: json-file
       options: {max-size: "5m", max-file: "3"}
   codex-egress:
+    profiles: [manual-inference]
     image: ubuntu/squid:latest
     restart: unless-stopped
     volumes:

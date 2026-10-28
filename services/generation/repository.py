@@ -67,21 +67,7 @@ def create_record(
     # Serialize tenant submissions on PostgreSQL before enforcing cost/concurrency quota.
     if not db.get(School, tenant_id, with_for_update=True):
         raise ValueError("school_not_found")
-    limit = max(1, min(10, int(os.getenv("AI_MAX_ACTIVE_GENERATIONS", "3"))))
-    active = db.scalar(
-        select(func.count())
-        .select_from(BackgroundJob)
-        .join(generations,(generations.c.job_id==BackgroundJob.id)&(generations.c.tenant_id==tenant_id))
-        .where(
-            func.coalesce(generations.c.parameters["execution_mode"].as_string(),"ai")!="github",
-            BackgroundJob.tenant_id == tenant_id,
-            BackgroundJob.kind == "generation",
-            BackgroundJob.status.in_(("queued", "running")),
-        )
-    )
-    execution_mode=payload.options.get("execution_mode",os.getenv("RESOURCE_GENERATION_MODE","ai"))
-    if execution_mode != "github" and active >= limit:
-        raise ValueError("generation_queue_limit")
+    execution_mode="github"
     background = BackgroundJob(
         id=stable_id, tenant_id=tenant_id, kind="generation", status="queued", progress=0
     )

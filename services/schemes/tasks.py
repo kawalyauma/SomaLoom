@@ -165,6 +165,10 @@ def run_import(job_id):
             job.status='failed';job.error='scheme_extraction_incomplete';db.execute(imports.update().where(imports.c.id==row['id']).values(stage='extraction_failed'));db.commit();return
         payload=dict(row['payload']);payload['source']=source['rights']
         payload.pop('resume_at',None)
+        from services.schemes.github import external_provider
+        provider=external_provider(db,row,job,source,doc,payload)
+        if provider is None:return
+        payload['parts']={}
         job.status='running';job.progress=max(job.progress,5);db.execute(imports.update().where(imports.c.id==row['id']).values(stage='parsing'));db.commit()
         def progress(parts,done,total):
             payload['parts']=parts
@@ -172,7 +176,8 @@ def run_import(job_id):
             db.execute(imports.update().where(imports.c.id==row['id']).values(payload=dict(payload)))
             db.commit()
         try:
-            result=asyncio.run(parse_chunks(doc,source['title'],payload,progress,charge=reserve_call))
+            result=asyncio.run(parse_chunks(doc,source['title'],payload,progress,provider=provider))
+            result['handoff']=payload.get('handoff',{})
             has_lessons=any(s['lessons'] for s in result['schemes'])
             stage='ready' if has_lessons else 'needs_classification' if result['warnings'] else 'not_a_scheme'
             db.execute(imports.update().where(imports.c.id==row['id']).values(payload=result,stage=stage));db.commit()
