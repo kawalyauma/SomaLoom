@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-28",
+  "scope": "P6 Science Term 1",
+  "ncdc_source": "https://www.ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+  "scheme_source": "resource-bank/requests/ad3d3bd5-fc28-5d1f-accc-e91bf22b47cf",
+  "official_topic_periods": [
+    {
+      "topic": "Classification of Animals",
+      "periods": 20,
+      "units_generated": 5,
+      "prior_units": 3
+    },
+    {
+      "topic": "Sound Energy",
+      "periods": 20,
+      "units_generated": 3
+    },
+    {
+      "topic": "Circulatory System",
+      "periods": 10,
+      "units_generated": 2
+    },
+    {
+      "topic": "Alcohol Smoking and Drugs in Society",
+      "periods": 10,
+      "units_generated": 1
+    }
+  ],
+  "new_topic_units": 11,
+  "preserved_prior_learner_key_sets": 5,
+  "confirmed_term1_prior_sets": 3,
+  "editorial_status": "Topic-level draft complete; source schedule not verified; term not approved complete",
+  "week_allocation": "unverified",
+  "blocked_by": [
+    "Original 2024 scheme week/lesson rows missing in extraction",
+    "Visual page-by-page transcription needed for exact period coverage",
+    "Independent teacher and science fact review pending"
+  ],
+  "github_content": "resource-bank/primary/p6/science/term-1-combined-editable-learner-and-teacher-content.md",
+  "binary_pdf_committed": false,
+  "individual_topic_markdown_committed": false,
+  "app_imported": false,
+  "reviewed": false,
+  "next_checkpoint": "Verify original 2024 scheme Term 1 table rows and compare against all 60 NCDC periods; publish individual files and correct gaps without overwriting existing lessons"
+}
