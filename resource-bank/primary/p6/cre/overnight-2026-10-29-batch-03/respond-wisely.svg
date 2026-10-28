@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="120" viewBox="0 0 800 120">
+<rect width="800" height="120" fill="#ffffff"/>
+<rect x="8" y="25" width="144" height="70" rx="12" fill="#e9f3fb" stroke="#315f7c" stroke-width="2"/>
+<text x="80" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#19394e" text-anchor="middle">Pause</text>
+<path d="M153 60 h12 m-6 -6 l6 6 -6 6" stroke="#315f7c" stroke-width="2" fill="none"/>
+<rect x="167" y="25" width="144" height="70" rx="12" fill="#e9f3fb" stroke="#315f7c" stroke-width="2"/>
+<text x="239" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#19394e" text-anchor="middle">Protect</text>
+<path d="M312 60 h12 m-6 -6 l6 6 -6 6" stroke="#315f7c" stroke-width="2" fill="none"/>
+<rect x="326" y="25" width="144" height="70" rx="12" fill="#e9f3fb" stroke="#315f7c" stroke-width="2"/>
+<text x="398" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#19394e" text-anchor="middle">Seek help</text>
+<path d="M471 60 h12 m-6 -6 l6 6 -6 6" stroke="#315f7c" stroke-width="2" fill="none"/>
+<rect x="485" y="25" width="144" height="70" rx="12" fill="#e9f3fb" stroke="#315f7c" stroke-width="2"/>
+<text x="557" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#19394e" text-anchor="middle">Support</text>
+<path d="M630 60 h12 m-6 -6 l6 6 -6 6" stroke="#315f7c" stroke-width="2" fill="none"/>
+<rect x="644" y="25" width="144" height="70" rx="12" fill="#e9f3fb" stroke="#315f7c" stroke-width="2"/>
+<text x="716" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#19394e" text-anchor="middle">Follow up</text>
+</svg>
