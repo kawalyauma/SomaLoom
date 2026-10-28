@@ -1,7 +1,7 @@
 {
-  "last_batch": "p6-science-2026-10-29-01",
-  "last_subject": "science",
-  "next_subject": "sst",
+  "last_batch": "p6-sst-2026-10-29-02",
+  "last_subject": "sst",
+  "next_subject": "cre",
   "subjects": [
     "mathematics",
     "science",
@@ -9,10 +9,11 @@
     "cre",
     "ire"
   ],
-  "next_subject_rationale": "Mathematics Term2 manual active; Science supplements committed this run; SST source/term validation and publication next. Do not duplicate existing chat-only artifacts.",
+  "next_subject_rationale": "SST two new local-time/universe source-topic supplements now committed as Markdown/SVG; school scheme term/period ambiguity remains. CRE next, distinct from IRE; inspect existing CRE source and checkpoint before production.",
   "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-01-checkpoint.md",
   "status": "incomplete",
-  "completed_batches": 1,
+  "completed_batches": 2,
   "no_parallel_workers": true,
-  "updated": "2026-10-29"
+  "updated": "2026-10-29",
+  "sst_checkpoint": "resource-bank/primary/p6/sst/overnight-2026-10-29-batch-02/checkpoint.md"
 }
