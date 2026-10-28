@@ -78,6 +78,8 @@ def verify_section(section, title, doc, source):
 def discover(limit=8, school_id=None):
     """Poll existing and newly uploaded scheme resources, independent of bulk extraction."""
     with SessionLocal() as db:
+        from services.schemes.recovery import recover_extractions
+        recover_extractions(db, school_id)
         # Enumerate schools through actual resources, never a client-supplied scope.
         schools=[school_id] if school_id is not None else db.scalars(select(resources.c.tenant_id).distinct()).all()
         created=0
@@ -93,6 +95,8 @@ def discover(limit=8, school_id=None):
                 db.commit();created+=1
         rows=db.execute(select(imports,BackgroundJob.status).join(BackgroundJob,(BackgroundJob.id==imports.c.job_id)&(BackgroundJob.tenant_id==imports.c.tenant_id)).where(BackgroundJob.status=='queued')).mappings().all()
         for row in rows:
+            if row['payload'].get('handoff',{}).get('packet_sha'):continue  # The bridge owns external work.
+            if row['payload'].get('handoff_retry_at','')>utcnow().isoformat():continue
             if row['payload'].get('resume_at') and row['payload']['resume_at'] > utcnow().isoformat():continue
             try:
                 eid,xjob,_=create_extraction(db,row['tenant_id'],row['resource_version_id'])
@@ -161,7 +165,8 @@ def run_import(job_id):
             job.status='cancelled';db.execute(imports.update().where(imports.c.id==row['id']).values(stage='superseded'));db.commit();return
         eid=db.scalar(select(extractions.c.id).where(extractions.c.tenant_id==job.tenant_id,extractions.c.resource_version_id==row['resource_version_id'],extractions.c.engine=='multimodal-v1'))
         doc=load_document(db,job.tenant_id,eid) if eid else None
-        if not doc or doc.partial:
+        from services.schemes.recovery import text_ready
+        if not text_ready(doc):
             job.status='failed';job.error='scheme_extraction_incomplete';db.execute(imports.update().where(imports.c.id==row['id']).values(stage='extraction_failed'));db.commit();return
         payload=dict(row['payload']);payload['source']=source['rights']
         payload.pop('resume_at',None)

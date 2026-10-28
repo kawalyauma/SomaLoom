@@ -475,7 +475,9 @@ def _docx(doc, raw, *, license, put_asset, limits):
             from services.math.omml import omml_to_latex
 
             for math_el in el.xpath(".//m:oMath"):
-                original = math_el.xml
+                from lxml import etree
+
+                original = etree.tostring(math_el, encoding="unicode")
                 parsed = omml_to_latex(math_el)
                 add_block(
                     doc,

@@ -21,3 +21,5 @@ October 28 integration includes `fix/knowledge-coverage-recall` at `9985bcf` and
 Coverage depends on the source PDFs actually present. Upload missing class/subject/term schemes to extend the master automatically. There is no generated fallback schedule for missing source material.
 
 Validation: production Next.js build; API build; tests `test_generation_selection.py` and `test_master_schemes.py` cover tenant isolation, schedule selection, replacement invalidation and exact source identity/quotes.
+
+Recovery: complete text from every page remains eligible when only visual asset limits caused partial extraction. OCR failures, unreadable text and missing pages remain blocked. A failed source extraction receives at most two automatic retries with increasing waits; completed text, progress and saved work are reused. Legacy packet jobs are ordered fairly, processed in batches of ten, and failures receive exponential backoff up to one hour so one bad file cannot starve other requests. DOCX Office Math XML is serialized through lxml instead of relying on a nonportable `.xml` property.

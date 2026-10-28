@@ -14,18 +14,26 @@ from services.generation.schema import GenerationInput
 from services.resource_bank.tasks import root, REPO, prepare_request, ReplayProvider, digest, encoded
 
 
-def export_pending(limit=5):
+def export_pending(limit=10):
     from services.schemes.models import imports
     from services.schemes.tasks import run_import
     with SessionLocal() as db:
         pending=db.execute(select(imports.c.job_id,imports.c.payload,imports.c.stage)
             .join(BackgroundJob,BackgroundJob.id==imports.c.job_id)
-            .where(BackgroundJob.status.in_(['queued','failed']))).all()
+            .where(BackgroundJob.status.in_(['queued','failed'])).order_by(imports.c.updated_at)).all()
     count=0
     for jid,payload,stage in pending:
-        if payload.get('handoff') or stage in ('extraction_failed','waiting_extraction','superseded'):continue
+        if payload.get('handoff') or payload.get('handoff_retry_at','')>utcnow().isoformat() or stage in ('extraction_failed','waiting_extraction','superseded'):continue
         try:run_import(str(jid))
-        except Exception as exc:logging.warning('scheme_packet_failed type=%s',type(exc).__name__)
+        except Exception as exc:
+            from datetime import timedelta
+            with SessionLocal() as db:
+                row=db.execute(select(imports).where(imports.c.job_id==jid)).mappings().first()
+                values=dict(row['payload']);attempt=int(values.get('handoff_attempts',0))+1
+                values.update(handoff_attempts=attempt,handoff_error=type(exc).__name__,
+                    handoff_retry_at=(utcnow()+timedelta(seconds=min(3600,30*2**min(attempt,7)))).isoformat())
+                db.execute(imports.update().where(imports.c.id==row['id']).values(payload=values,updated_at=utcnow()));db.commit()
+            logging.warning('scheme_packet_failed type=%s',type(exc).__name__)
         count+=1
         if count>=limit:break
     with SessionLocal() as db:
