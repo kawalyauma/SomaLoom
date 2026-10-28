@@ -14,7 +14,7 @@ An adult housefly is a dipteran insect. Its thorax bears **one pair of functiona
 8. **An adult housefly has one pair of functional wings; the hind wings are modified into halteres.**
 
 ## Diagram validation
-The original side-view diagram labels eye and antenna on head, legs/wing/haltere on thorax, spiracles on abdomen. Count six legs in the drawing. Do not claim every housefly feature is to scale.
+The original top-view diagram labels eye and antenna on head, legs/wing/haltere on thorax, spiracles on abdomen. Count six legs in the drawing. Do not claim every housefly feature is to scale.
 
 ## Review
 Editorial and teacher review pending.
