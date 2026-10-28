@@ -1,0 +1,177 @@
+{
+  "$defs": {
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "block_id": {
+          "format": "uuid",
+          "title": "Block Id",
+          "type": "string"
+        },
+        "quote": {
+          "maxLength": 1200,
+          "minLength": 5,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "block_id",
+        "quote"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "Lesson": {
+      "additionalProperties": false,
+      "properties": {
+        "activities": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 10,
+          "title": "Activities",
+          "type": "array"
+        },
+        "assessment": {
+          "maxLength": 1500,
+          "title": "Assessment",
+          "type": "string"
+        },
+        "inferred": {
+          "title": "Inferred",
+          "type": "boolean"
+        },
+        "lesson": {
+          "maximum": 50,
+          "minimum": 1,
+          "title": "Lesson",
+          "type": "integer"
+        },
+        "materials": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 10,
+          "title": "Materials",
+          "type": "array"
+        },
+        "objectives": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "title": "Objectives",
+          "type": "array"
+        },
+        "source": {
+          "$ref": "#/$defs/Citation"
+        },
+        "subtopic": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Subtopic",
+          "type": "string"
+        },
+        "term": {
+          "maximum": 3,
+          "minimum": 1,
+          "title": "Term",
+          "type": "integer"
+        },
+        "topic": {
+          "maxLength": 250,
+          "minLength": 1,
+          "title": "Topic",
+          "type": "string"
+        },
+        "week": {
+          "maximum": 53,
+          "minimum": 1,
+          "title": "Week",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "term",
+        "week",
+        "lesson",
+        "topic",
+        "subtopic",
+        "objectives",
+        "activities",
+        "materials",
+        "assessment",
+        "inferred",
+        "source"
+      ],
+      "title": "Lesson",
+      "type": "object"
+    },
+    "Scheme": {
+      "additionalProperties": false,
+      "properties": {
+        "grade": {
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Grade",
+          "type": "string"
+        },
+        "identity_quote": {
+          "maxLength": 1000,
+          "minLength": 2,
+          "title": "Identity Quote",
+          "type": "string"
+        },
+        "lessons": {
+          "items": {
+            "$ref": "#/$defs/Lesson"
+          },
+          "maxItems": 500,
+          "title": "Lessons",
+          "type": "array"
+        },
+        "subject": {
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Subject",
+          "type": "string"
+        }
+      },
+      "required": [
+        "grade",
+        "subject",
+        "identity_quote",
+        "lessons"
+      ],
+      "title": "Scheme",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schemes": {
+      "items": {
+        "$ref": "#/$defs/Scheme"
+      },
+      "maxItems": 30,
+      "title": "Schemes",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schemes",
+    "warnings"
+  ],
+  "title": "Parsed",
+  "type": "object"
+}
