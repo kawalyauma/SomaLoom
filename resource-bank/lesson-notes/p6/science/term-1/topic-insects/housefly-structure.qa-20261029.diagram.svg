@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="Schematic adult housefly with head, thorax, abdomen, compound eyes, antennae, one pair of wings, six legs, halteres and spiracles">
+<rect width="900" height="430" fill="white"/>
+<g stroke="#263a47" stroke-width="4" fill="none">
+<ellipse cx="205" cy="220" rx="62" ry="55" fill="#f2f6f8"/><ellipse cx="354" cy="220" rx="85" ry="62" fill="#e9f0f5"/><ellipse cx="535" cy="220" rx="105" ry="65" fill="#f2f6f8"/>
+<ellipse cx="341" cy="107" rx="44" ry="106" transform="rotate(-33 341 107)" fill="#e2f3fa" fill-opacity=".8"/>
+<ellipse cx="341" cy="333" rx="44" ry="106" transform="rotate(33 341 333)" fill="#e2f3fa" fill-opacity=".8"/>
+<path d="M318 190 L265 113 L239 78 M350 185 L353 104 L371 72 M386 190 L447 121 L482 104 M318 250 L265 326 L239 356 M350 255 L353 340 L371 369 M386 250 L447 318 L482 335" stroke-width="5"/>
+<circle cx="168" cy="200" r="20" fill="#c4dce8"/><circle cx="168" cy="239" r="20" fill="#c4dce8"/>
+<path d="M158 175 L132 149 M180 172 L177 145 M149 225 L112 222"/>
+<circle cx="423" cy="188" r="11" fill="#cadbe4"/><circle cx="423" cy="251" r="11" fill="#cadbe4"/>
+<circle cx="492" cy="179" r="5" fill="#fff"/><circle cx="536" cy="175" r="5" fill="#fff"/><circle cx="572" cy="181" r="5" fill="#fff"/>
+<circle cx="492" cy="261" r="5" fill="#fff"/><circle cx="536" cy="265" r="5" fill="#fff"/><circle cx="572" cy="259" r="5" fill="#fff"/>
+</g>
+<g font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#1e3442" stroke="none">
+<text x="75" y="42">HEAD</text><text x="305" y="42">THORAX</text><text x="520" y="42">ABDOMEN</text>
+<text x="10" y="112">Antennae</text><text x="10" y="292">Compound eyes</text><text x="10" y="374">Mouthparts</text>
+<text x="620" y="125">One pair of wings</text><text x="630" y="206">Halteres</text><text x="632" y="279">Spiracles</text><text x="630" y="364">Three pairs of legs</text>
+</g>
+<g stroke="#526f82" stroke-width="2" fill="none"><path d="M92 117 L135 150"/><path d="M159 283 L168 258"/><path d="M113 368 L118 227"/><path d="M622 128 L405 82"/><path d="M629 200 L423 188"/><path d="M632 272 L570 259"/><path d="M627 356 L470 334"/></g>
+</svg>
