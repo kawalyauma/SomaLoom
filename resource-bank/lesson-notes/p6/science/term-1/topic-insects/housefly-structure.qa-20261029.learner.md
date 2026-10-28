@@ -12,7 +12,7 @@ The **abdomen** contains many internal organs. Tiny openings called **spiracles*
 ### Study the labelled drawing
 The drawing shows the main external parts of an adult housefly. It is a simplified side-view teaching diagram, not a photograph.
 
-[Diagram: housefly — compound eye, antenna, proboscis, head, thorax, abdomen, one pair of wings, haltere, three pairs of legs and spiracles.]
+![Labelled housefly anatomy](housefly-structure.qa-20261029.diagram.svg)
 
 ## Compare insects with spiders
 An adult insect has **six legs** and three body regions. A spider is an arachnid: it has **eight legs** and two main body regions. Wings are not present on all insects, but an adult housefly has one pair.
