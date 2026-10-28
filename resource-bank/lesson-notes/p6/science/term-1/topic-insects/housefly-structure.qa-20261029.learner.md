@@ -10,7 +10,7 @@ The **thorax** carries three pairs of jointed legs (six legs in all), one pair o
 The **abdomen** contains many internal organs. Tiny openings called **spiracles** lead to breathing tubes. The fly breathes through this tube system, not through lungs like a mammal.
 
 ### Study the labelled drawing
-The drawing shows the main external parts of an adult housefly. It is a simplified side-view teaching diagram, not a photograph.
+The drawing shows the main external parts of an adult housefly. It is a simplified top-view teaching diagram, not a photograph.
 
 ![Labelled housefly anatomy](housefly-structure.qa-20261029.diagram.svg)
 
