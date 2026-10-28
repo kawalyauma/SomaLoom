@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/cc68e270e265fee8b0597ecf93b3a51400ada9bbb49c53d656cbf00156a0acb5.pdf",
+      "sha256": "cc68e270e265fee8b0597ecf93b3a51400ada9bbb49c53d656cbf00156a0acb5",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/bdbfe7e0b42bb402bda46fccb95d1edd9b7016a3/P.5%20COMPOSITION%20AND%20COMPREHENSION%20SCHEME%20TERM%20III.pdf",
+      "title": "P.5 COMPOSITION AND COMPREHENSION SCHEME TERM III",
+      "version_id": "5cb4a828-eef6-49dc-a9cf-5faec69e0928"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/a68bce7573d293150bf0739e08f52b23c704df4d14a1154a158d32c45bb6f5c9.docx",
+      "sha256": "a68bce7573d293150bf0739e08f52b23c704df4d14a1154a158d32c45bb6f5c9",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/8ca871e52f578c1aea87554b786bfb027075348b/P.5%20COMPOSITION%20SCHEME%20OF%20WORK%20TERM%20TWO%202024.docx",
+      "title": "P.5 COMPOSITION SCHEME OF WORK TERM TWO 2024",
+      "version_id": "c51671b5-c6fe-41e5-9821-98e887b669ad"
+    }
+  ]
+}

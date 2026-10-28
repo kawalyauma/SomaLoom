@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/05477b451aebedbabbed23427479358c7105882ed654bff4e94d10ddc126ce80.pdf",
+      "sha256": "05477b451aebedbabbed23427479358c7105882ed654bff4e94d10ddc126ce80",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/f4a25ef8ea9f031ba85331953b1a81f7dab3cecd/P.5%20SCI%20SCHEME%20T2%202024.pdf",
+      "title": "P.5 SCI SCHEME T2 2024",
+      "version_id": "3f2e14cf-92cd-46eb-9493-a0eb232e5309"
+    }
+  ]
+}

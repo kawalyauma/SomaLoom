@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/6d8d23e4b82b7b13c97114dd458f9dbc0016abc2324dfa1a7906ac29871aa54f.pdf",
+      "sha256": "6d8d23e4b82b7b13c97114dd458f9dbc0016abc2324dfa1a7906ac29871aa54f",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/d276f307b23c2dec9af8efda4918b597bfb2355b/P.5%20SCI%20SCHEME%20TERM%20II%20BY%20MR%20NALEBO%20MOSES.pdf",
+      "title": "P.5 SCI SCHEME TERM II BY MR NALEBO MOSES",
+      "version_id": "529f52a6-3100-4478-84f9-18d31910446c"
+    }
+  ]
+}
