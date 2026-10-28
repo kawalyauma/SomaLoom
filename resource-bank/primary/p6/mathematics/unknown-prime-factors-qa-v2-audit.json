@@ -1,0 +1,63 @@
+{
+  "revision": "QA-v2",
+  "date": "2026-10-28",
+  "superseded_commit": "c03148ecfdb1f71a9098fb6c028c25ab44bda16f",
+  "lesson": "Term 1 Week 6 Lesson 8 Finding unknown prime factors",
+  "defect": "Q1 HCF=3 LCM=24 a=6 falsely yielded x=12, gcd(6,12)=6 lcm(6,12)=12",
+  "fix": "Q1 HCF=3 LCM=30 a=6 yields x=15",
+  "independent_checks": [
+    {
+      "case": "worked example",
+      "numbers": [
+        12,
+        30
+      ],
+      "gcd": 6,
+      "lcm": 60
+    },
+    {
+      "case": "Q1",
+      "numbers": [
+        6,
+        15
+      ],
+      "gcd": 3,
+      "lcm": 30
+    },
+    {
+      "case": "Q2",
+      "numbers": [
+        15,
+        20
+      ],
+      "gcd": 5,
+      "lcm": 60
+    },
+    {
+      "case": "Q8",
+      "numbers": [
+        8,
+        20
+      ],
+      "gcd": 4,
+      "lcm": 40
+    }
+  ],
+  "verification": "math.gcd and math.lcm independently computed all four, identity confirmed; manual visual inspection of updated learner and key first pages; revised compilations preserve page count and exact extracted text of every unaffected page",
+  "pdfs": {
+    "individual_learner_pages": 2,
+    "individual_key_pages": 1,
+    "learner_compilation_pages": 116,
+    "key_compilation_pages": 58,
+    "markup_scan": "zero forbidden super/sub/HTML escapes across 4 revised PDFs"
+  },
+  "publication": {
+    "markdown_learner": "committed",
+    "markdown_key": "committed",
+    "pdfs": "local download ZIP only",
+    "compilation_draft_pdfs": "already committed before this revision and superseded",
+    "imported": false,
+    "reviewed": false
+  },
+  "remaining": "Other 57 lessons and diagrams not comprehensively independently validated; revised PDFs pending repository publication; source scheme week conflict remains."
+}
