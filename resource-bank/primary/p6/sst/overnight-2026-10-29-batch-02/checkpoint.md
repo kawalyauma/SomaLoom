@@ -1,0 +1,11 @@
+# P6 SST — overnight batch 02 (29 October 2026)
+
+**Subject:** SST only. **Status:** two new source-backed topic units generated; all-term coverage incomplete.
+
+Read issues #130, #132, #133, #134, #136, #137 and rotation checkpoint (prior next_subject=sst). Read SST request 4582e76d-3c4d-5488-b1ce-21491a1738dd request/evidence/schema and the NCDC P6 Set One curriculum. Prior SST batch in a separate browser chat had five provisional units (EAC history, East Africa location, EAC membership, latitude, longitude); no files from that chat were accessible or present on main. Did not duplicate them.
+
+**New work:** evidence page 6 Local time and time zones (12 learner questions) and evidence page 7 The Universe and Earth's rotation (14 questions), original age-appropriate learner Markdown, separate checked teacher-key Markdown, three editable original SVG diagrams, individual A4 PDFs and 6-page learner/4-page key compilations. All four Markdown files and all three SVGs are COMMITTED under this batch directory. Exact local Git blob hashes matched committed blobs. Six PDFs passed A4 and forbidden-markup scans. All 26 learner questions and 26 teacher answers found in corresponding PDF texts. Solar-time calculations checked; factual statements checked against NCDC/NASA/time-zone sources. Inspected rendered diagram and lesson pages; corrected a real U+2212 minus-glyph loss in PDF rendering and verified printed subtraction sign. Original school scheme licence unknown.
+
+**Important limitations:** original school PDF could not be visually retrieved; extracted WK/PD/term columns ambiguous. No term/week/period assigned; these are source-topic supplements, NOT validated term coverage. Existing five provisional SST units not recovered. PDFs and compilations are real ChatGPT downloads, NOT GitHub binaries. App import NO. Teacher review NO. No whole-term or full-coverage claim.
+
+**Next subject in rotation:** CRE (keep separate from IRE). Inspect latest CRE source/lesson checkpoint, official NCDC P6 CRE targets and already generated units before creating any; no P5 substitutions. **Next SST turn:** reconcile original PDF term/period columns and prior EAC provisional units before advancing to formation/services. Do not overwrite Science or Mathematics work. Do not create a result.json without verifying its exact request schema.
