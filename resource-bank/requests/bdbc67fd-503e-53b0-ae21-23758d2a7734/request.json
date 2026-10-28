@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/2f2fae308e26d37e1881599064d691c9054c15946f9aa619877ea5b036df749a.pdf",
+      "sha256": "2f2fae308e26d37e1881599064d691c9054c15946f9aa619877ea5b036df749a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/b5ae43e1cb350ded4aed4b55bdb73f59c9869fc0/P.5%20SCHEME%20SCIENCE%20TERM%201.pdf",
+      "title": "P.5 SCHEME SCIENCE TERM 1",
+      "version_id": "287edf5b-7300-45b5-ae0a-3346ccea52bb"
+    }
+  ]
+}

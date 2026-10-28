@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/218df826538f1db1952a474e3d1a971472df675685e60761b014a6092b2e8b2e.pdf",
+      "sha256": "218df826538f1db1952a474e3d1a971472df675685e60761b014a6092b2e8b2e",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/ea02b40b3041a79d9c7231ec4e6b19b218608dbf/P.5%20R.E%20SCHEME%20TERM%20II.pdf",
+      "title": "P.5 R.E SCHEME TERM II",
+      "version_id": "e14153fb-b334-476f-8dd1-59396ca0c462"
+    }
+  ]
+}

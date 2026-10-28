@@ -1,0 +1,102 @@
+{
+  "id": "43a9aab0-2eaf-4956-ba77-3833672e66d1",
+  "request": {
+    "curriculum_id": "ee798d01-0b16-5cb9-bacb-b00f141e9d28",
+    "document_type": "lesson_notes",
+    "level_id": "9a2aa202-8c97-5c3d-bd12-054e670e3c14",
+    "options": {
+      "academic_year": "2026",
+      "calendar": {
+        "ends_on": "2026-11-10",
+        "starts_on": "2026-10-28"
+      },
+      "depth": "comprehensive",
+      "duration_minutes": 40,
+      "execution_mode": "github",
+      "period_minutes": 40,
+      "periods_per_week": 5,
+      "planning_scope": {
+        "basis": "Uploaded schemes, not official curriculum endorsement",
+        "class": "P5",
+        "lesson": 1,
+        "lessons": [
+          {
+            "activities": [
+              "Write answers and answer oral questions."
+            ],
+            "inferred": true,
+            "lesson": 1,
+            "objectives": [
+              "Define government.",
+              "Identify the organs of government."
+            ],
+            "subtopic": "Arms of the government",
+            "topic": "The government"
+          }
+        ],
+        "subject": "Social Studies",
+        "term": 3,
+        "week": 1
+      },
+      "question_count": 10,
+      "term": "Term 3",
+      "total_marks": 20,
+      "weeks": 2
+    },
+    "resource_filters": {},
+    "subject_id": "1136439c-cc59-551c-8826-7fba6280e60e",
+    "topic_ids": [
+      "77fcbf16-8d77-54c2-a1d9-c372e8dce2df"
+    ]
+  },
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/b4b499bf59122a8a467752652f5ec0d3f6de903996a433118902c2d3d92ddaf6.pdf",
+      "sha256": "b4b499bf59122a8a467752652f5ec0d3f6de903996a433118902c2d3d92ddaf6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/5f3e987dd5f2186370a3f4a198b73d51bc5db2b9/P.5%20TERM%20I%2C%20II%2C%20III%20SCHEMES%20SST.pdf",
+      "title": "P.5 TERM I_ II_ III SCHEMES SST",
+      "version_id": "30fc711d-83ab-422a-bfa8-0d039890fde0"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/077a38e9d5c36de393c375dd9a7420a9d2702725c37602a96ae547fc17e75085.pdf",
+      "sha256": "077a38e9d5c36de393c375dd9a7420a9d2702725c37602a96ae547fc17e75085",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/b42861232d9e7ffa94fc92d51e6530b0722ecd8c/EXCEL%20P.5%20SST%20NOTES%20TERM%20III%20%40%20PROF.MOSES%20VIP.pdf",
+      "title": "EXCEL P.5 SST NOTES TERM III _ PROF.MOSES VIP",
+      "version_id": "7644e72d-7569-47e8-989c-47f11dd90082"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3.pdf",
+      "sha256": "c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/99c2fbc87849f7fb42a47c495e55bbbd80156919/P.4%20SST%20SCHEME%20OF%20WORK%20TERM%20III.pdf",
+      "title": "P.4 SST SCHEME OF WORK TERM III",
+      "version_id": "79198e5b-d1cd-48cf-98cc-70663c918f31"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/207fed8020f96e9ce0f88c82b72c17afbd42fb047ab23221e70774c908b00a79.pdf",
+      "sha256": "207fed8020f96e9ce0f88c82b72c17afbd42fb047ab23221e70774c908b00a79",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/088537d289b479fc81a53ce2e01d08ba0d37b4ef/THE%20DREAM%20SST%20P.5%20SCHEMES%20OF%20WORK.pdf",
+      "title": "THE DREAM SST P.5 SCHEMES OF WORK",
+      "version_id": "b1b9aefd-deef-4100-be87-fc61a6a6ceeb"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/84189669ea0b4b03d8cb3602d512a1d55d7a1118d869ea16711f615491a19d58.pdf",
+      "sha256": "84189669ea0b4b03d8cb3602d512a1d55d7a1118d869ea16711f615491a19d58",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9834",
+      "title": "P.5 SST SCHEME  TERM III _1_.pdf",
+      "version_id": "baa40c82-7dff-4e64-b2cd-91aee00af9c5"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea.docx",
+      "sha256": "44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/6534d5ce7f91f72e0211911262acdd3680932646/P.5%20SST%20SCHEME%20OF%20WORK%20TERM%203%202024.docx",
+      "title": "P.5 SST SCHEME OF WORK TERM 3 2024",
+      "version_id": "d245f4e7-c222-4866-892d-3480a2854feb"
+    }
+  ]
+}
