@@ -1,0 +1,38 @@
+{
+  "issue": 123,
+  "class": "P5",
+  "subject": "English Grammar",
+  "term": 1,
+  "week": 2,
+  "lesson": 3,
+  "scheme_request_id": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "source_block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+  "source_quote": "The present\nperfect\npassive",
+  "source_license": "unknown",
+  "review_status": "needs_review",
+  "quality_checks": {
+    "learner_document_excludes_technical_provenance": true,
+    "answer_key_separate": true,
+    "exercise_count": 26,
+    "a4_pdf_created": true
+  },
+  "files": {
+    "lesson-3.md": {
+      "sha256": "04cd6954738ac051b713a7738bea71abab0a7e8da8890ca3a27390c0f83c9c46",
+      "bytes": 7939
+    },
+    "lesson-3.pdf": {
+      "sha256": "c4a2aeb5ff8fea8b271a1830886a947a98a8dcdb29af83a0f866b2f0e86a6e37",
+      "bytes": 9180
+    },
+    "lesson-3-teacher-key.md": {
+      "sha256": "447617474b63b1ab329cab73ffb4b9dd26a1dbedc8cbf1ec8446959d406c5619",
+      "bytes": 1361
+    },
+    "lesson-3-teacher-key.pdf": {
+      "sha256": "457bc022b89467dd9927e8b4b7da3fa2d385d30604c8943e33970f5c3b5e0f84",
+      "bytes": 3423
+    }
+  },
+  "generation_review_status": "needs_review"
+}

@@ -1,0 +1,38 @@
+{
+  "issue": 123,
+  "class": "P5",
+  "subject": "English Grammar",
+  "term": 1,
+  "week": 2,
+  "lesson": 4,
+  "scheme_request_id": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "source_block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+  "source_quote": "The use of IF1",
+  "source_license": "unknown",
+  "review_status": "needs_review",
+  "quality_checks": {
+    "learner_document_excludes_technical_provenance": true,
+    "answer_key_separate": true,
+    "exercise_count": 26,
+    "a4_pdf_created": true
+  },
+  "files": {
+    "lesson-4.md": {
+      "sha256": "f8423ba5f62ebbf948d66554991c65f6550bb84480f76e34eff5d241048aab04",
+      "bytes": 7418
+    },
+    "lesson-4.pdf": {
+      "sha256": "10b5726016c00e9a57eef639a5f836750f045a376211bba8dac031da3c15a2ac",
+      "bytes": 9283
+    },
+    "lesson-4-teacher-key.md": {
+      "sha256": "cc74f46496f830afc8762c09450126d753563526be656a5360fe95891fc51d0b",
+      "bytes": 1657
+    },
+    "lesson-4-teacher-key.pdf": {
+      "sha256": "528fbf594fcb6016c45cc49f648ab7e561b2a9fd9ca2e18c1ce0972ae945c154",
+      "bytes": 3609
+    }
+  },
+  "generation_review_status": "needs_review"
+}
