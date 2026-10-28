@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/90cc5f23c7ef16457c0fa11a3a0ff53bc3f480b5599ca3e53059b13ba11db79b.docx",
+      "sha256": "90cc5f23c7ef16457c0fa11a3a0ff53bc3f480b5599ca3e53059b13ba11db79b",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/fa46d559dfd850bf1bb05bcf09804a14f2a66732/BABY-READING%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-READING SCHEME TERM I",
+      "version_id": "13f22a5b-6a3c-4f9e-b33b-34ce08c0e576"
+    }
+  ]
+}

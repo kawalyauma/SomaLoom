@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/26c9dc43a25f134dc9e482b9f7b9d680e4b81b28c8605ae19b10186f2bbd81e4.docx",
+      "sha256": "26c9dc43a25f134dc9e482b9f7b9d680e4b81b28c8605ae19b10186f2bbd81e4",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/9db28be866a1f4ae32c03de79bd0a4b6e8ac3fa1/BABY%20Scheme%20for%20Baby%20class%20all%20learning%20areas%20all%20terms%20%202023.docx",
+      "title": "BABY Scheme for Baby class all learning areas all terms  2023",
+      "version_id": "7aff65e4-271a-4cd9-8597-df45d0df235a"
+    }
+  ]
+}

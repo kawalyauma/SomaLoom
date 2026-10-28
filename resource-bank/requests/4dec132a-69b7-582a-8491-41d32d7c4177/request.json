@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/ff29a72e00ecb06e07bdf446f2f7f208b95987f8fc478bf9b0ae5d9da44af82c.pdf",
+      "sha256": "ff29a72e00ecb06e07bdf446f2f7f208b95987f8fc478bf9b0ae5d9da44af82c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/cc3e8fa04cebe4e9de7d3a8b3e4167328403b180/P.5%20SCIENCE%20SCHEME%20FOR%20TERM%203.pdf",
+      "title": "P.5 SCIENCE SCHEME FOR TERM 3",
+      "version_id": "591b50a5-1b40-47fe-b74e-d771e1976ea5"
+    }
+  ]
+}

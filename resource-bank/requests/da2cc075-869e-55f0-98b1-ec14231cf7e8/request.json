@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/bf210d15ec4fb70afa399421ecfbce33c307d932f68700bf6e15f093769a1435.docx",
+      "sha256": "bf210d15ec4fb70afa399421ecfbce33c307d932f68700bf6e15f093769a1435",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/8e3896495648543436fff553fd54d9c38d898970/BABY-ENGLISH%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-ENGLISH SCHEME TERM I",
+      "version_id": "01c0b8d9-08d7-4e13-bec1-353f85cddbfa"
+    }
+  ]
+}
