@@ -1,0 +1,94 @@
+{
+  "batch_id": "p6-science-2026-10-29-01",
+  "date": "2026-10-29",
+  "class": "P6",
+  "subject": "Science",
+  "term": 1,
+  "source": {
+    "school_scheme_path": "resource-bank/reference-text/p6-science-2024/term-1-pages-001-057.txt",
+    "original_pdf": "resource-bank/sources/cf231aaa9cfaca3090ffae3ff585791af127eb42c1e2c943021756e75833d74e.pdf",
+    "original_pages": [
+      10,
+      11,
+      17,
+      18,
+      19
+    ],
+    "curriculum": "NCDC P6 Set One Term I: Classification of Animals and Sound Energy",
+    "licence": "unknown, no reproduction of scheme prose",
+    "week_period_allocation": "not asserted; source row alignment unverified"
+  },
+  "units": [
+    {
+      "topic": "Housefly structure",
+      "target": "adult insect head/thorax/abdomen; wings, halteres, legs, spiracles; housefly hygiene",
+      "source_pages": [
+        10,
+        11
+      ],
+      "learner_md": "resource-bank/lesson-notes/p6/science/term-1/topic-insects/housefly-structure.qa-20261029.learner.md",
+      "learner_git_blob": "8b636c14051fe78d4259484b536dd030d68d73ce",
+      "key_md": "resource-bank/lesson-notes/p6/science/term-1/topic-insects/housefly-structure.qa-20261029.teacher-key.md",
+      "key_git_blob": "ada557383e5a0b4d830c067115a92b5b68e1f3de",
+      "diagram": "resource-bank/lesson-notes/p6/science/term-1/topic-insects/housefly-structure.qa-20261029.diagram.svg",
+      "learner_pdf": {
+        "pages": 2,
+        "sha256": "4bc074dc33e8d504b51236379430394d1b9bcff2367dab8432d41a69bdc76e75"
+      },
+      "key_pdf": {
+        "pages": 1,
+        "sha256": "4f5ab92bb7be23c38ef39c0c6ae58b0d930906508b438e9e1a43a5be12dce425"
+      },
+      "practice_questions": 8
+    },
+    {
+      "topic": "Safe pitch/loudness investigations",
+      "target": "ruler overhang length and pitch; vibration amplitude and loudness; safe controlled comparisons",
+      "source_pages": [
+        17,
+        18,
+        19
+      ],
+      "learner_md": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.learner.md",
+      "learner_git_blob": "c1d851f14626d1d99f41b5066afa76609749a064",
+      "key_md": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.teacher-key.md",
+      "key_git_blob": "bb0cb44c8f9dfdc6946f8a1bfc2b9f9cc0cfcc6c",
+      "diagram": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.diagram.svg",
+      "learner_pdf": {
+        "pages": 2,
+        "sha256": "53ccdc888e933e96b00728aa79af3c1dd03f570fbe57e2fa25674bffee2841c6"
+      },
+      "key_pdf": {
+        "pages": 1,
+        "sha256": "dc4b3cb063d4deca4de54298c9b9d74fdbaac76435088167b6bd5414f1db27e8"
+      },
+      "practice_questions": 8
+    }
+  ],
+  "checks": {
+    "git_md_vs_download_md": "all four Git blob SHA1 hashes match exact local Markdown",
+    "pdf_format": "four A4 PDFs, 2+1 and 2+1 pages",
+    "pdf_markup": "zero raw super/sub or escaped HTML entities in all four",
+    "question_text": "all numbered prompts/steps from exact local Markdown present in PDF text in order",
+    "learner_answer_leak": "no teacher key or answer sections found in learner PDFs",
+    "visual_inspection": "first page of each learner PDF and second page practice layouts inspected; diagrams inspected in PDF",
+    "full_scientific_review": false,
+    "human_teacher_review": false
+  },
+  "prior_artifacts": {
+    "canonical_11_topic_learner_md_blob": "7b141eebed3bd8a3729701a01d9a9ba2e85844de",
+    "canonical_11_topic_key_md_blob": "6ae9ac089cb2ec2b49470389fbb135928f30039d",
+    "pdf_preview_question_order_mismatch": "unresolved; old PDF drafts must not be paired as verified equivalent to canonical GitHub Markdown",
+    "term1_completion": "partial"
+  },
+  "publication": {
+    "full_learner_markdown": true,
+    "full_teacher_key_markdown": true,
+    "original_svg": true,
+    "pdfs_in_chat_download": true,
+    "pdfs_committed": false,
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "next": "Regenerate 11-topic canonical Science Term 1 learner/key PDFs from exact committed Markdown and compare all questions/answers, then complete missing classification/sound/circulation/drug targets. Rotation next: SST source acquisition/term alignment, unless another subject active."
+}
