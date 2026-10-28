@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 7,
+  "lesson": 1,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+  "source_quote": "Affirmative,\nnegative and\ninterrogative\nsentences",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-1.md": {
+      "sha256": "d95f6bffe8fcd5a583d39ad84e339c4190747f1e2cc810e6b4d7e18d83d114b3",
+      "bytes": 4411
+    },
+    "lesson-1.pdf": {
+      "sha256": "4a3491d33dde2bb1a5e98abdf536f906fdcc30fef16a40fa0fa22f3bcb4ea283",
+      "bytes": 5956
+    },
+    "lesson-1-teacher-key.md": {
+      "sha256": "57746f932ee7de1f534d1f7ff777f0c1e7025e5baeb17e86beacf68cf4ccec11",
+      "bytes": 1023
+    },
+    "lesson-1-teacher-key.pdf": {
+      "sha256": "a6a37fa1b1a6aee3b2ce6ed16860e6c2b90f577381cec2e733fde7c1e4a03351",
+      "bytes": 2569
+    }
+  }
+}
