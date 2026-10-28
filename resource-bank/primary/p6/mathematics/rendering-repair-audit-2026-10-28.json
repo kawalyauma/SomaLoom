@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-28",
+  "subject": "P6 Mathematics",
+  "term": 1,
+  "batch": "first immediate rendering repair",
+  "source_material": "58 pre-existing Term 1 Markdown lessons and separate teacher keys in original ChatGPT workspace (not GitHub)",
+  "root_cause": "ReportLab source inserted <super> and <sub> tags into already escaped text and then escaped < and > a second time, causing literal markup in printed output",
+  "repair": "Re-rendered from original Markdown with HTML escaping BEFORE adding genuine ReportLab <super>/<sub> markup; superscript digit and sign semantics preserved; compiled corrected individual PDFs.",
+  "output": {
+    "individual_pdf_count": 116,
+    "learner_compilation_pages": 63,
+    "key_compilation_pages": 58,
+    "zip_files": 274,
+    "zip_bytes": 9666388,
+    "all_pdf_forbidden_markup_matches": 0
+  },
+  "checks": {
+    "zip_integrity": "passed",
+    "pdf_text_extraction": "passed for all 118 repaired PDFs",
+    "selected_arithmetic_checks": "7/7 passed",
+    "rendered_page_inspection": "scientific notation lesson and Venn diagram lesson 6 visually inspected",
+    "complete_independent_answer_check": false,
+    "all_pages_visual_inspected": false,
+    "all_diagrams_validated": false
+  },
+  "superseded_originals": "retained inside local ZIP under superseded-originals/; not yet GitHub-published",
+  "publication": {
+    "pdfs_committed": false,
+    "markdown_committed": false,
+    "metadata_committed": true,
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "blockers": [
+    "Cloud GitHub connector supports UTF-8 file creation but not direct bulk transfer from current local workspace; full repaired PDF/MD archive only in ChatGPT download.",
+    "Original Term 1 scheme conflict about early weeks unresolved.",
+    "Current compact learner PDFs have inadequate practice working space pending layout revision.",
+    "Full calculation-by-calculation and diagram review outstanding."
+  ],
+  "checkpoint": "Finish Term 1 layout and mathematical QA first; then inspect Term 2 Week 1 Lesson 1 fractions. Do not duplicate existing 58 Term 1 lessons. CRE/IRE separate."
+}
