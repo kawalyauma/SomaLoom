@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/ac91b50058a0f561668c27aa24ef3eca5fb21c4efb64e985a7524d316f75eb96.pdf",
+      "sha256": "ac91b50058a0f561668c27aa24ef3eca5fb21c4efb64e985a7524d316f75eb96",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/2f878784a624a2dec537be0bafe8f8e070e781f8/P.5%20English%20Language%20schemes%20of%20work%20all%20terms.pdf",
+      "title": "P.5 English Language schemes of work all terms",
+      "version_id": "6d888fca-a246-4879-b9cf-1b4dd929b3cf"
+    }
+  ]
+}

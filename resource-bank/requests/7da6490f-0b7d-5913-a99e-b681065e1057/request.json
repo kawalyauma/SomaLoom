@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/416d80c29eade89dda4b33e6d9c57b0839aa8140f1ad84792eae364d54f4df1c.pdf",
+      "sha256": "416d80c29eade89dda4b33e6d9c57b0839aa8140f1ad84792eae364d54f4df1c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1e693f6cccf634ab14d02ae72ea61e73a95719af/P.5%20INTEGRATED%20SCIENCE%20SCHEME%20TERM%20II.pdf",
+      "title": "P.5 INTEGRATED SCIENCE SCHEME TERM II",
+      "version_id": "6b6ff7f7-d2ff-4d7d-be25-39a641dfe678"
+    }
+  ]
+}

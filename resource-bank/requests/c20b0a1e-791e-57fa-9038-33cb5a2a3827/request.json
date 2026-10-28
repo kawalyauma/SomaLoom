@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/d3443196c30d7af00cd166e9d6a76b16ab2377f0964a740bce8ca40836349bc4.docx",
+      "sha256": "d3443196c30d7af00cd166e9d6a76b16ab2377f0964a740bce8ca40836349bc4",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/710de1c77a0d1f2867903d94653ee63db3f20375/P.5%20R.E%20SCHEME%20TERM%201%202025.docx",
+      "title": "P.5 R.E SCHEME TERM 1 2025",
+      "version_id": "8616d4ba-6d6b-4c58-bc7e-8c30947f4875"
+    }
+  ]
+}

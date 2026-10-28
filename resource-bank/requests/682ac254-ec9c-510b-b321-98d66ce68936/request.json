@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/20c0905da1a22cf01bc91cd117d7be333ba03c9938d40aa0375feb117c705ca3.docx",
+      "sha256": "20c0905da1a22cf01bc91cd117d7be333ba03c9938d40aa0375feb117c705ca3",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/57a07e97e77714a831f9e25fbb452fecfa16b51f/P.5%20MATH%20SCHEME%20TERM%201%202018.docx",
+      "title": "P.5 MATH SCHEME TERM 1 2018",
+      "version_id": "eb0abe25-ca6f-4717-a318-7310f5d7e13c"
+    }
+  ]
+}
