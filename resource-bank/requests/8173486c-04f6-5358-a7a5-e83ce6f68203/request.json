@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8481e9c7fccc87267f6a4a4e17f859a90118d174866eb321bbb6d6dce3c82987.pdf",
+      "sha256": "8481e9c7fccc87267f6a4a4e17f859a90118d174866eb321bbb6d6dce3c82987",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/3749108336287ee1dfcd3e9b0c6ebd8d7e4412b6/P.4%20SOCIAL%20STUDIES%20SCHEME%20OF%20WORK%20FOR%20TERM%201.pdf",
+      "title": "P.4 SOCIAL STUDIES SCHEME OF WORK FOR TERM 1",
+      "version_id": "3f6c4fdb-588b-4cc9-b389-14ca5ddb5b5b"
+    }
+  ]
+}

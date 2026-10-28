@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8a6bc09a0c3c11c60b05e8618a7b0ae498eb2b4fe8ad2f848020af1f02564f51.pdf",
+      "sha256": "8a6bc09a0c3c11c60b05e8618a7b0ae498eb2b4fe8ad2f848020af1f02564f51",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/860d9f9a044c251314aca0d3b2751d911ccc036d/P.4%20Scheme%20of%20work%20Eng.pdf",
+      "title": "P.4 Scheme of work Eng",
+      "version_id": "94f52038-ff26-474d-b288-72fc05391985"
+    }
+  ]
+}

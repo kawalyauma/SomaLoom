@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3.pdf",
+      "sha256": "c65d3ef4bf5f80bd1ce690527b4cb1caa35ed16339d01cbc05b2e01b35429dc3",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/99c2fbc87849f7fb42a47c495e55bbbd80156919/P.4%20SST%20SCHEME%20OF%20WORK%20TERM%20III.pdf",
+      "title": "P.4 SST SCHEME OF WORK TERM III",
+      "version_id": "79198e5b-d1cd-48cf-98cc-70663c918f31"
+    }
+  ]
+}

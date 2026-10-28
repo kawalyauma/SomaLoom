@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/3ce75ba4b552c67dcb2d26375c1380fadcd4bc85279718aa0b42ebb6e64030c5.pdf",
+      "sha256": "3ce75ba4b552c67dcb2d26375c1380fadcd4bc85279718aa0b42ebb6e64030c5",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/4b04e76021f6fe934b793924cfbbd11fe110a70f/P%2C5%2CSST%20SCHEME.pdf",
+      "title": "P_5_SST SCHEME",
+      "version_id": "698196c6-6ed5-477d-a58c-e5839399f686"
+    }
+  ]
+}

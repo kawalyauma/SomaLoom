@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/9f1ba6d0bd172e8a2d22a0482a621dafc14315f93dd802b6c31d1c11f8486fd1.docx",
+      "sha256": "9f1ba6d0bd172e8a2d22a0482a621dafc14315f93dd802b6c31d1c11f8486fd1",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/be38446e481e14b3b0fe005d7888f2cd720043ed/P.4%20SCIENCE%20SCHEME%20FOR%202024.docx",
+      "title": "P.4 SCIENCE SCHEME FOR 2024",
+      "version_id": "720f50cc-d301-45d1-8058-758855278788"
+    }
+  ]
+}
