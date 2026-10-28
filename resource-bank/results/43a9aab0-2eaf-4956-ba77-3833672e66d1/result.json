@@ -81,11 +81,54 @@
       "title": "The Three Arms of Government",
       "blocks": [
         {
-          "kind": "paragraph",
-          "text": "In Uganda the government is organised into three principal arms. They perform different duties under the law.",
+          "kind": "heading",
+          "text": "Meaning of government",
           "citation_ids": [
             "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
-            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Government is the group of people and institutions responsible for managing public affairs in a country.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Government helps maintain peace and order.\nGovernment provides services such as schools, health care and roads.\nGovernment protects the rights and safety of people.\nGovernment plans and oversees the use of public resources.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "The three arms of government",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "An arm of government is a major part of government with a special responsibility.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
             "71415bb0-adb1-5ad1-9030-1e7728f4f666"
           ],
           "outcome_ids": [
@@ -94,10 +137,9 @@
         },
         {
           "kind": "table",
-          "text": "Three arms of government",
+          "text": "The three arms and their main duties",
           "citation_ids": [
             "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
-            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
             "71415bb0-adb1-5ad1-9030-1e7728f4f666"
           ],
           "outcome_ids": [
@@ -107,17 +149,17 @@
             [
               "Arm",
               "Main duty",
-              "Example"
+              "Ugandan example"
             ],
             [
               "Legislature",
-              "Makes laws",
-              "Parliament"
+              "Makes laws and oversees government work",
+              "Parliament of Uganda"
             ],
             [
               "Executive",
-              "Implements laws",
-              "President, Cabinet, ministries"
+              "Implements laws and public policies",
+              "President, Cabinet and ministries"
             ],
             [
               "Judiciary",
@@ -127,11 +169,109 @@
           ]
         },
         {
-          "kind": "list",
-          "text": "Legislature: Parliament makes and changes laws, debates important issues, and checks government plans and spending.\nExecutive: The President, Cabinet and ministries implement laws, deliver programmes and manage government departments.\nJudiciary: Courts interpret and apply the law, resolve disputes and give decisions on cases.",
+          "kind": "heading",
+          "text": "1. The Legislature",
           "citation_ids": [
             "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
-            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "The Legislature is the law-making arm of government.\nUganda's national legislature is Parliament.\nMembers of Parliament discuss proposed laws.\nParliament makes and amends laws.\nParliament examines government spending and work.\nParliament represents the concerns of citizens.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2. The Executive",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "The Executive is responsible for carrying out laws and public policies.\nThe President is part of the national Executive.\nThe Cabinet helps direct government policy.\nMinistries help manage public services.\nThe Executive organises the implementation of approved government programmes.\nThe Executive directs government departments in their work.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3. The Judiciary",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "The Judiciary interprets and applies laws in court cases.\nThe courts settle disputes according to the law.\nJudges and magistrates make decisions on cases brought before them.\nThe Judiciary helps protect the rights of people through lawful decisions.\nCourts consider evidence and hear the parties in a case.\nThe Judiciary should decide cases independently and fairly.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Why the arms have different duties",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Different arms carry out different responsibilities.\nThis helps prevent too much power being held in one part of government.\nEach arm has duties set out by law.\nThe arms work within Uganda's Constitution and laws.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Examples from everyday life",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
+            "71415bb0-adb1-5ad1-9030-1e7728f4f666"
+          ],
+          "outcome_ids": [
+            "86e431d8-320d-5514-a8f9-bc02f0ac6ade"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "When Parliament makes a law, the Legislature is at work.\nWhen a ministry puts a public health programme into action, the Executive is at work.\nWhen a court settles a disagreement, the Judiciary is at work.\nLocal government is a level of government, not a fourth arm of national government.",
+          "citation_ids": [
+            "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
             "71415bb0-adb1-5ad1-9030-1e7728f4f666"
           ],
           "outcome_ids": [
@@ -230,10 +370,9 @@
       "blocks": [
         {
           "kind": "question",
-          "text": "1. Define government.\n2. Name the three arms of government.\n3. Which arm makes laws?\n4. Which arm is responsible for carrying out laws?\n5. Which arm settles cases in court?\n6. Give one example of work done by each arm.",
+          "text": "1. What is government?\n2. Name the three arms of government.\n3. Which arm makes laws?\n4. Give two duties of Parliament.\n5. Which arm implements government programmes?\n6. Name two parts of the national Executive.\n7. Which arm settles cases brought before courts?\n8. State two duties of the Judiciary.\n9. Why is it helpful for government to have different arms?\n10. Identify the arm at work: (a) Parliament debates a proposed law, (b) a ministry opens a health centre, (c) a court settles a land dispute.",
           "citation_ids": [
             "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
-            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
             "71415bb0-adb1-5ad1-9030-1e7728f4f666"
           ],
           "outcome_ids": [
@@ -248,10 +387,9 @@
       "blocks": [
         {
           "kind": "paragraph",
-          "text": "Prepared as original teaching notes using the P5 SST scheme evidence. Source licences are recorded as unknown in the request metadata; evidence quotation IDs are attached to the relevant blocks for review.",
+          "text": "Evidence reviewed for topic and learning outcomes: THE DREAM SST P.5 SCHEMES OF WORK; EXCEL P.5 SST NOTES TERM III; P.5 SST SCHEME TERM III. Their original source records and licences remain in the request evidence bundle; source licences were not verified.",
           "citation_ids": [
             "2252c057-a0a5-5a3f-a5e9-fae965e7d55b",
-            "cd5d9627-8c00-5de9-9db9-63aeca8630b2",
             "71415bb0-adb1-5ad1-9030-1e7728f4f666"
           ],
           "outcome_ids": [
