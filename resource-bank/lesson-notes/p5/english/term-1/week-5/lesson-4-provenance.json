@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 5,
+  "lesson": 4,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "741c6226-c918-5220-828b-9610a138b50e",
+  "source_quote": "Comparisons\nof adverbs",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-4.md": {
+      "sha256": "b5b9476b35515ee7e36684c25d587f3cdac4c7cbc0927858550214b9a0280f55",
+      "bytes": 4247
+    },
+    "lesson-4.pdf": {
+      "sha256": "d6464bc71a0cf3f1c687eddaef37356e4308907b0cc35007951bea4b8bafa2c6",
+      "bytes": 5951
+    },
+    "lesson-4-teacher-key.md": {
+      "sha256": "f59f5e10ade94f340fcf8b20c1f4e32c55280b3dfc88fe86ab2884521619f431",
+      "bytes": 901
+    },
+    "lesson-4-teacher-key.pdf": {
+      "sha256": "ee4b29ba60bdfe928fb48929d9afa54fc48f738cc40d9eb7f0b23138ba25b766",
+      "bytes": 2472
+    }
+  }
+}

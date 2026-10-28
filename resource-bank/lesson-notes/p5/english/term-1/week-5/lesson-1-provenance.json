@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 5,
+  "lesson": 1,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+  "source_quote": "Formation of\nadverbs",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-1.md": {
+      "sha256": "9f6e0f3ecde1bd8e645b662358a99ec9c9a98e7d6bebe8238cec014fc6360c11",
+      "bytes": 3970
+    },
+    "lesson-1.pdf": {
+      "sha256": "8323b755191027a7cf9d01a39eecf7fadae34fa1e4b71a16e7cbb790e8dccde6",
+      "bytes": 5923
+    },
+    "lesson-1-teacher-key.md": {
+      "sha256": "d058be0245f0baf29c984843c6f63f45bdd2460cf1c7042967a79df21bcaf680",
+      "bytes": 920
+    },
+    "lesson-1-teacher-key.pdf": {
+      "sha256": "4be94dc6ed35f3b9c1a307b0a5a49e08fefb31284fab83e16e8ac74089a61f11",
+      "bytes": 2629
+    }
+  }
+}
