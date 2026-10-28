@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/5b6bf8e81d7f83bd85fe253811dd26e5b3d58a5cb4b1091993984848c7982f72.docx",
+      "sha256": "5b6bf8e81d7f83bd85fe253811dd26e5b3d58a5cb4b1091993984848c7982f72",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/db33f14858f11ce14bf6425425950408705bf1ac/BABY-WRITING%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-WRITING SCHEME TERM I",
+      "version_id": "fc5eeff3-f931-4a8f-837d-857bacfa2470"
+    }
+  ]
+}

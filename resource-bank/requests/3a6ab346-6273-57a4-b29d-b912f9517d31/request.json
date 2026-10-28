@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/609deac7cff440e4808b05af0c7ae8f46b313451cb2947dccb99e9a6fd9335e0.pdf",
+      "sha256": "609deac7cff440e4808b05af0c7ae8f46b313451cb2947dccb99e9a6fd9335e0",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/84e25b75ea45f62d55d27ceef950cc92097d9887/Baby%20class%20term%20iii%20English%20scheme%20of%20work.pdf",
+      "title": "Baby class term iii English scheme of work",
+      "version_id": "98bdfc3c-ac7f-4303-92cb-42e1a44a50be"
+    }
+  ]
+}

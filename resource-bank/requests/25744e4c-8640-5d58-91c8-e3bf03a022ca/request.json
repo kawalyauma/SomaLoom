@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0ef35d4fa1ea91823abe5ecbe3fa7c83f30ce889a0ab2dab8a307893264bdf4b.pdf",
+      "sha256": "0ef35d4fa1ea91823abe5ecbe3fa7c83f30ce889a0ab2dab8a307893264bdf4b",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/a77f509e650fad9fdf8d3073f0bb181fe10c194f/Baby%20Writing%20Scheme%20Term%202.pdf",
+      "title": "Baby Writing Scheme Term 2",
+      "version_id": "b84ebaf7-0135-424c-b57f-0798f0c0ac64"
+    }
+  ]
+}

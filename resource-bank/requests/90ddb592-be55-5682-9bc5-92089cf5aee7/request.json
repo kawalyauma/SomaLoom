@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/c4ae234e26df14393caa0c2139b71aaa22a9c23c72ae7d59f4388d4ec9be5a70.pdf",
+      "sha256": "c4ae234e26df14393caa0c2139b71aaa22a9c23c72ae7d59f4388d4ec9be5a70",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/0471eb6eec4c53bda685df4feab8174d55a4371b/Baby%20class%20Reading%20term%20iii%20scheme%20of%20work.pdf",
+      "title": "Baby class Reading term iii scheme of work",
+      "version_id": "8c11eaf7-d593-40b2-860d-18e67b2b6b87"
+    }
+  ]
+}

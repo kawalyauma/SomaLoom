@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/1db8b1cb74cd4d4db76089e5d465ec4c8d31176547ab5e86516a91f048e3a723.docx",
+      "sha256": "1db8b1cb74cd4d4db76089e5d465ec4c8d31176547ab5e86516a91f048e3a723",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/e515f1caa263657e2af1565699b1903dd6d6e62e/BABY-GK2%20SCHEME%20TERM%20I.docx",
+      "title": "BABY-GK2 SCHEME TERM I",
+      "version_id": "ad1bc58f-4efb-4b17-9c94-91aa37330f06"
+    }
+  ]
+}
