@@ -1,0 +1,614 @@
+{
+  "schema_version": "primary-coverage.v1",
+  "as_of": "2026-10-28",
+  "scope": "P1–P7, applicable learning areas, terms 1–3",
+  "programme_issue": 124,
+  "coverage_complete": false,
+  "inventory_status": "partial audit of known paths only",
+  "notes": [
+    "P5 English Week 2 and beyond includes committed lessons; avoid overwriting.",
+    "P5 SST #74 Term 3 Week 1 Lesson 1 structured result exists on main, but learner PDFs generated in ChatGPT remain pending publication.",
+    "P5 SST Term 1 Week 1 lessons 1–3 generated locally and downloadable; binaries and Markdown not committed.",
+    "Four P5 all-terms request result.json paths absent when checked.",
+    "Licensing for four third-party source requests is unknown.",
+    "No SomaLoom ingestion or teacher-review confirmation."
+  ],
+  "source_links": {
+    "sst": "https://github.com/kawalyauma/SomaLoom/blob/main/resource-bank/requests/34bacf55-9e8c-568e-a09a-faa3aac5dad0/request.json",
+    "english": "https://github.com/kawalyauma/SomaLoom/blob/main/resource-bank/requests/b7618f2b-42c5-57f1-8bf1-235b1eb376c2/request.json",
+    "mathematics": "https://github.com/kawalyauma/SomaLoom/blob/main/resource-bank/requests/d6c0590f-565d-5aec-8bde-7c949a059091/request.json",
+    "science": "https://github.com/kawalyauma/SomaLoom/blob/main/resource-bank/requests/cdc32cb7-071c-5828-8e2f-b8a0249664a8/request.json"
+  },
+  "entries": [
+    {
+      "class": "P1",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P1",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P1",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P2",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P2",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P2",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P3",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P3",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P3",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P4",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P4",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P4",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "sst",
+      "term": 1,
+      "source_request": "34bacf55-9e8c-568e-a09a-faa3aac5dad0",
+      "scheme_status": "week-1 lessons 1–3 verified in evidence; remainder unresolved",
+      "existing_files": [
+        "resource-bank/lesson-notes/p5/sst/term-1/week-1/lesson-1.md (local generated; not committed)",
+        "resource-bank/lesson-notes/p5/sst/term-1/week-1/lesson-2.md (local generated; not committed)",
+        "resource-bank/lesson-notes/p5/sst/term-1/week-1/lesson-3.md (local generated; not committed)"
+      ],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": true,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "english",
+      "term": 1,
+      "source_request": "b7618f2b-42c5-57f1-8bf1-235b1eb376c2",
+      "scheme_status": "approved separate English Grammar scheme at results/118c620a-b696-500d-b44e-dc0ee868bdc3/result.json; existing files require exhaustive inventory",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "mathematics",
+      "term": 1,
+      "source_request": "d6c0590f-565d-5aec-8bde-7c949a059091",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "science",
+      "term": 1,
+      "source_request": "cdc32cb7-071c-5828-8e2f-b8a0249664a8",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "sst",
+      "term": 2,
+      "source_request": "34bacf55-9e8c-568e-a09a-faa3aac5dad0",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "english",
+      "term": 2,
+      "source_request": "b7618f2b-42c5-57f1-8bf1-235b1eb376c2",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "mathematics",
+      "term": 2,
+      "source_request": "d6c0590f-565d-5aec-8bde-7c949a059091",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "science",
+      "term": 2,
+      "source_request": "cdc32cb7-071c-5828-8e2f-b8a0249664a8",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "sst",
+      "term": 3,
+      "source_request": "34bacf55-9e8c-568e-a09a-faa3aac5dad0",
+      "scheme_status": "not fully validated",
+      "existing_files": [
+        "resource-bank/results/43a9aab0-2eaf-4956-ba77-3833672e66d1/result.json"
+      ],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": true,
+        "committed": true,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "english",
+      "term": 3,
+      "source_request": "b7618f2b-42c5-57f1-8bf1-235b1eb376c2",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "mathematics",
+      "term": 3,
+      "source_request": "d6c0590f-565d-5aec-8bde-7c949a059091",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P5",
+      "learning_area": "science",
+      "term": 3,
+      "source_request": "cdc32cb7-071c-5828-8e2f-b8a0249664a8",
+      "scheme_status": "not fully validated",
+      "existing_files": [],
+      "missing_references": [
+        "Full verified term master; source usage licence currently unknown"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P6",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P6",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P6",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P7",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 1,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P7",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 2,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "class": "P7",
+      "learning_area": "unresolved until class-appropriate curriculum and sources are inspected",
+      "term": 3,
+      "source_links": [],
+      "existing_files": [],
+      "missing_references": [
+        "Class subject identification",
+        "Verified scheme allocation",
+        "Permitted educational references"
+      ],
+      "states": {
+        "generated": false,
+        "committed": false,
+        "validated": false,
+        "imported": false,
+        "teacher_reviewed": false
+      }
+    }
+  ],
+  "next_batch": [
+    {
+      "class": "P5",
+      "area": "sst",
+      "term": 1,
+      "week": 1,
+      "lesson": 4,
+      "title": "Scale"
+    },
+    {
+      "class": "P5",
+      "area": "sst",
+      "term": 1,
+      "week": 1,
+      "lesson": 5,
+      "title": "Compass"
+    },
+    {
+      "class": "P5",
+      "area": "sst",
+      "term": 1,
+      "week": 2,
+      "lesson": 1,
+      "title": "Finding direction"
+    }
+  ]
+}
