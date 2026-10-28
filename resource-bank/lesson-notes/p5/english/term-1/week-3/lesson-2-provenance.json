@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 3,
+  "lesson": 2,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+  "source_quote": "The past\nsimple passive",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-2.md": {
+      "sha256": "07b0ccfc14b03eb9589eeabeadacd0fdd3dd8ecb64e23939957548356d6a7566",
+      "bytes": 4370
+    },
+    "lesson-2.pdf": {
+      "sha256": "299874a3b63009b0434603af6999be7ca70e05b3b256446eb81180f653cdb041",
+      "bytes": 5991
+    },
+    "lesson-2-teacher-key.md": {
+      "sha256": "3900c315d62b76c3ab90bc31986e2fb907d1f5af11c9536acf2b77154682fad3",
+      "bytes": 1104
+    },
+    "lesson-2-teacher-key.pdf": {
+      "sha256": "b4b2cc084daa52b669572950ed0782ee9417e97cc00443ca2464a9a6cd3562cf",
+      "bytes": 2627
+    }
+  }
+}

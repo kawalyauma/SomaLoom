@@ -1,0 +1,35 @@
+{
+  "issue": 123,
+  "subject": "English Grammar",
+  "grade": "Primary Five",
+  "term": 1,
+  "week": 3,
+  "lesson": 4,
+  "review_status": "needs_review",
+  "source_scheme_request": "118c620a-b696-500d-b44e-dc0ee868bdc3",
+  "provenance_kept_separately": true,
+  "exercise_count": 20,
+  "teacher_key_separate": true,
+  "source_block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+  "source_quote": "The past\ncontinuous\ntense",
+  "source_license": "unknown",
+  "generation_review_status": "needs_review",
+  "files": {
+    "lesson-4.md": {
+      "sha256": "d2e5dc5561bc4e42fa9eb7452ef0c658fdb4543108c8015169faf1a0f353a128",
+      "bytes": 4176
+    },
+    "lesson-4.pdf": {
+      "sha256": "e8e83de0b92ac6e47b1c4fa6339f73db0d733503fa8e87817982ebbc13dd3f4c",
+      "bytes": 5950
+    },
+    "lesson-4-teacher-key.md": {
+      "sha256": "c0772e82c1345a824cb539af211aaa1f6dfbf1d51d615907c0d5daf9942dff4b",
+      "bytes": 1038
+    },
+    "lesson-4-teacher-key.pdf": {
+      "sha256": "753b8e8818c3ffc1efe8d1760e590da9c67468707fbf0003f4efa706fc95ca49",
+      "bytes": 2585
+    }
+  }
+}
