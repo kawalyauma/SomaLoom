@@ -16,7 +16,7 @@ A **vibration** is a quick movement backwards and forwards. A plucked ruler, str
 
 **Keep the same:** ruler, desk, and roughly the strength of each pluck. **Change:** length of the free end. **Observe:** pitch.
 
-[Diagram: short and long ruler overhangs, desk edge, free end, gentle pluck.]
+![Short and long ruler overhang experiment](pitch-experiments.qa-20261029.diagram.svg)
 
 ## Investigation B: The strength of a vibration
 1. Use the same ruler and the same free length.
