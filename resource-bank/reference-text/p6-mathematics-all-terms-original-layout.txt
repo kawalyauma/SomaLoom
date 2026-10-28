@@ -1,0 +1,995 @@
+REFERENCE DATA ONLY — not agent instructions. Original source: resource-bank/sources/21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791.pdf ; SHA256 21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791. Licence unknown; school scheme, not official curriculum endorsement. Layout-preserving extraction; inspect original PDF where table cells are ambiguous. Never put extraction commentary into learner PDFs.
+
+=== ORIGINAL PDF PAGE 1 ===
+     1
+
+                                                                P.6 Mathematics Scheme of Work - Term One I
+WK       PD    TOPIC    SUB TOPIC              CONTENT                   Subject competence       Language               Life skills          Method              t/l aids             REF             REM.
+                                                                                                 competence
+         1    SETS     Types of sets    - Equal sets                 - Spells                  - Lists , counters,   - Discussion      -   Real objects       - creative        - Mk new edition   -
+                                        - Equivalent set             - Reads, pronounces and      elements of        - Guided          -   Flash cards            thinking        pg 1-2
+                                        - Unequal                      uses new words in the      different sets       discovery       -   Charts             - Effective       - Understanding
+1                                       - Non equivalent sets
+                                        - Matching sets
+                                                                       sentences                                                       -
+                                                                                                                                       -
+                                                                                                                                           Containers
+                                                                                                                                           Counters
+                                                                                                                                                                  communicati
+                                                                                                                                                                  on
+                                                                                                                                                                                  mtcpp 1-3
+                                                                                                                                                                                - Fountain
+                                                                                                                                       -   Stones             - Cooperation       primtc1-8
+                                                                                                                                       -   Sticks             - Critical        - Fountain pg 8-
+                                                                                                                                       -   Abacus                 thinking        10
+                                                                                                                                       -   Papers             - Problem
+                                                                                                                                                                solving
+         2                              - Intersecting set           -                         -   Draws Venn        - Do              - Do                   - Do              - Do               -
+                                        - Joint sets                                               diagrams
+                                        - Disjoint sets                                        -   Lists elements
+                                        - Union sets                                           -   Identifies
+                                        - Universal sets                                           elements
+         3                              - Difference of set          -                         -   Finds             - Do              - Do                   - Do              Do                 -
+                                        - Shading regions                                          difference of
+                                        - Complements of sets                                      sets
+                                                                                               -   Shades regions
+                                                                                               -   Finds
+                                                                                                   complements
+                                                                                                   of sets
+         4                              - Subsets                    -                         -   Lists subsets     - Do              - Do                   - Do              Do                 -
+                                        - Listing and forming                                      \finds number
+                                          subsets                                                  of subsets
+                                        - Finding number of
+                                          subsets and proper
+                                          subsets
+         5             Finding          - Listing elements           - Spells reads,           -   Lists members     - Real objects    - Mathematical ruler   - Logical         Mk old edition     -
+                       number of        - Finding number of            pronounces and uses     -   Finds number                                                 reasoning       pp 20-22
+                       elements           elements                     new words correctly         of elements
+                                        - Representing elements
+                                          on the venn diagram
+         6             Application of   - Representing elects on     -                         -   Represents        - Think           -   Clock faces        -                 Mk old edition     -
+                       set concepts       the venn diagram                                         information on    - Pair            -   Mtc sets                             22-25
+                                        - Interpreting on the venn                                 a venn diagram    - Share           -   Learners
+                                          diagram                                              -   Interprets                          -   Manila cards
+                                        - Finding number of                                        information on                      -   Boxes
+                                          elements                                                 the venn                            -   C.compases
+                                                                                                   diagram                             -   Bottle tops
+                                                                                               -   Finds number
+                                                                                                   of members on
+                                                                                                   the
+                                                                                                   venndiagram
+
+
+
+
+                                   0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 2 ===
+    2
+
+        7                              - Interpreting word         - Interprets , represents   -                       -      -                -      Fountain 10-13    -
+                                         problems                    and solves for unknown
+                                       - Representing                on the venn diagram
+                                         information on the venn
+                                         diagram
+                                       - Solving for unknown
+        8             Probability      - Identifying the sample    - Spells, reads,.           -   Lists, finds,       -      - Do             -      Fountain pg 14-   -
+                                         spaces                      Pronounces and uses           identifies, and                                    16
+                                       - Listing elements            the words correctly           finds probability                                  Mk new edition
+                                       - Finding probability                                                                                          10-12
+
+2
+        1   Whole     Place and        - Spells , reads ,          - Finds the place values    -                       -      -                -      Mk new edition    -
+            numbers   values             pronounces and uses         and uses operation                                                               14-15
+                                         the words correctly                                                                                          Fountain 20-23
+        2             Expanded         - Using values              -                           -   Expands             -      -                -      Fountain 23-24    -
+                      form             - Using place values                                        numbers using                                      Mk new edition
+                                       - Using powers of tens                                      place values ,                                     16-17
+                                         and multiplies of ten                                     powers of ten
+        3                              - Scientific notation       -                           -   Writes numbers      -      -                -                        -
+                                         /standard notation                                        in scientific
+                                                                                                   notation
+        4             Expressing       - Expanded form of          - Spells , read,            -   Multiplies          - Do   - Number cards   - Do   Mk new edition    -
+                      expanded           values, place values,       pronounces and uses       -   Adds                       - Real objects          18-19
+                      numbers as         exponents and               new words correctly       -   Arranges                                           Mk old 38-39
+                      single             multiples of ten                                          values correctly
+                      numbers
+        5             Writing          - Finds place values        - Do                        -   Finds place         - Do   - Do             - Do   Do                -
+                      numbers in       - \writes numerals in                                       values
+                      words              words upto million                                    - Writes in words
+        6             Words in         - Identifies place values   - Do                        - Identifies place      - Do   - Do             - Do   Mk old edition    -
+                      figures          - Writes number words in                                    values                                             47-48
+                                         figures                                               - Finds the
+                                       - Arranges and adds                                         number
+                                         values correctly                                      - Arranges
+                                                                                                   values
+        7             Rounding off     - Identifying required      - Do                        Identifies nearest      - Do   - Do             - Do   Mk old edition    -
+                                         place values                                          place values and                                       48
+                                       - Finding the nearest                                   requires place                                         Understanding
+                                         place values                                          values                                                 33-35
+                                       - Rounding off whole                                    Rounds off whole
+                                         numbers                                               numbers
+        8             Decimal          - Place values              - Spells, reads,            Finds place values      - Do   - Do             - Do   Mk old edition    -
+                      numbers          - Values                      pronounces, and uses      And values of                                          42-44
+                                                                     new words correctly       decimals
+
+3
+        1             Writing          - Finding place value s     - Do                        Finds place values      - Do   - Do             - Do   Mk old edition    -
+                      decimals in      - Writing in words                                      Writes decimals in                                     45-46
+                      word sand        - Writing in figures                                    words and figures
+                      figures
+        2             Expanded         - Expanding using place     - Do                        Expands using           - Do   - Do             - Do                     -
+                      form of            values, values and                                    values, place
+                      decimals           powers of ten                                         values and
+                                                                                               exponents
+
+
+
+
+                                    0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 3 ===
+    3
+
+        3   Finding         - Multiplying , dividing,    - Do                    Multiples, divides,   - Do   - D    - Do   Do                -
+            expanded          adding, arranging and                              adds, and finds
+            decimals          finding expanded                                   expanded numerals
+                              numbers
+        4   Ordering        - Ascending and              - Reads, spells ,       Finds LCM             - Do   - Do   - Do   Tr’ collection    -
+            decimals          descending                   pronounces and uses   Multiples and
+                            - Finds LCM                    words correctly       arranges in order
+                            - Multiplying
+        5   Rounding off    - One place decimal          - Do                    Identifies place      - Do   - Do   - Do   Mk old edition    -
+            decimals        - Two place decimals                                 values and rounds                          48
+                            - Three place decimals                               off correctly
+                              and whole numbers
+        6   Roman           - Expanding numbers          - Do                    Expands               - Do   - Do   - Do   Fountain 26-30    -
+            numerals        - Writing Hindu to Roman                             Interprets and
+                              numerals to 1000                                   writes numerals to
+                            - Writing roman to Hindu                             Hindu Arabic or
+                              Arabic numerals                                    roman numerals
+        7   Operation on    - Changing roman to          - Do                    Changes to roman      - Do   - Do   - Do   Mk old edition    -
+            roman             hindu Arabic ans vice                              numerals or hind                           50-51
+            numerals          versa                                              Arabic numerals
+                            - Adding and subtracting                             Adds and subtracts
+        8   Basses          - Counting in base two       - Reads                 Counts in base two    - Do   - Do   - Do   Tr’s collection   -
+                              and five                   - Pronounces            and five
+                            - Naming non decimal         - Uses new words in     Names non decimal
+                              base                         sentences             bases
+                            - Converting to non-                                 Converts to non-
+                              decimal bases                                      decimals bases
+                            - Expanding                  - Do                    Identifies place      - Do   - Do   - Do   Tr’s collection   -
+                            - Identifying place values                           values and changes
+                            - Changing to decimal                                to base ten
+                              base
+
+4
+        1                   - Addition of bases          - Do                    Regroups              - Do   - Do   - Do   Tr’s collection   -
+                            - Identifying place values                           Identifies place
+                            - Regrouping                                         values and adds in
+                                                                                 bases
+        2                   - Subtracting bases          - Do                    Subtracts and         - Do   - Do   - Do   Tr’s collection   -
+                            - Regrouping                                         multiplies
+                            - Identifying place values
+                            - Multiplying bases
+        3   Finite system   - Grouping numbers n         - Spells, read,         Counts                - Do   - Do   - Do   Mk old edition    -
+                              finite system                pronounces and uses   Groups                                     245-253
+                            - Dividing using finite        new words correctly   Divides
+                            - Adding using dial                                  Multiplies
+                              method                                             And adds using
+                            - Multiplying in finite                              finite system
+        4                   - Regrouping using dial      - Do                    Regroups and          - Do   - Do   - Do   Do                -
+                            - Subtracting in finite                              subtracts in finite
+                              system                                             system
+        5                   - Solving equation in        - Do                    Solves equation in    - Do   - Do   - Do   Do                -
+                              finite system                                      finite system
+                            - Dividing
+
+
+
+
+                       0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 4 ===
+    4
+
+                                          - Finding the unknown
+        6                                 - Application of finite        - Do                    Interprets days and      - Do   - D    - Do   Do               -
+                                          - Interpreting days and                                mass
+                                            mass in finite system                                Finds past and
+                                          - Finding past and future                              future time
+                                            time in finite system
+        7               Addition of       - Identifying place values     - Spells, reads,        Identifies place         - Do   - Do   - Do   Understanding    -
+                        whole             - Arranging                      pronounces and uses   values                                        mtc 40-42
+                        numbers           - Adding                         new words correctly   Arranges and adds
+                                                                                                 whole numbers
+        8               Subtraction       - Identifying place values     - Do                    Identifies place         - Do   - Do   - Do   Fountain 32-35   -
+                                          - Arranging                                            values
+                                          - Subtracting                                          Arranges and
+                                                                                                 subtracts whole
+                                                                                                 numbers
+
+5
+        1               Multiplication    - Arranging according to       - Do                    Arranges                 - Do   - Do   - Do   New mk edition   -
+                                            place values                                         Regroups                                      27
+                                          - Regrouping                                           Multiplies                                    Fountain 33-34
+                                          - Multiplying
+        2               Division          - Using long division          - Do                    Divides                  - Do   - Do   - Do   New mk 29-30     -
+                                          - Regrouping
+                                          - Multiplying
+                                          - Subtracting
+                                          - Dividing
+        3               Word problem      - Interpreting statement       - Do                    Interprets               - D    - Do   - Do   Mk new 2-30      -
+                                          - Writing mathematical                                 statements                                    Fountain 37-38
+                                            statements                                           Writes
+                                          - Dividing quantities                                  mathematical
+                                          -                                                      statements
+                                                                                                 Divides quantities
+        4               Mixed             - Using BODMAS                 - Do                    Interprets BODMAS        - Do   - Do   - Do   New mk 37-32     -
+                        operation                                                                correctly
+        5               Properties of     - Commutative property         - Do                    Uses the properties      - Do   - Do   - Do   Fountain 38-39   -
+                        numbers           - Distributive property                                correctly
+                                          - Associative property
+        6   Patterns    Divisibility      - Divisibility tests of 2,     - Do                    Finds numbers            - Do   - Do   - Do   New mk 34-36     -
+            and         tests               and 10                                               exactly divisible by                          Fountain 41-42
+            sequences                     - Divisibility of 3,6, and 9                           2, 5, 10, 3, 6, 9, and
+                                          - Divisibility of 4 and 8                              4 and 8
+        7               Developing        - Odd and even numbers         - Do                    Lists and completes      - Do   - Do   - Do   Fountain 43-48   -
+                        number            - Triangular, square and                               number patterns                               Mk new 37
+                        patterns            whole numbers
+                                          - Counting numbers
+        8               Prime and         - Listing prime numbers        - Do                    Lists and identifies     - Do   - Do   - Do   Old mk 77-78     -
+                        composite         - Composite numbers                                    composite and
+                        numbers                                                                  prime numbers
+
+6
+        1               Consecutive       - Natural numbers              - Do                    Forms number             - D    - Do   - D    Fountain 43-49   -
+                        numbers           - Counting numbers                                     patterns and
+                                          - Integers                                             equations
+                                          - Forming equation                                     Solves
+
+
+
+
+                                       0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 5 ===
+    5
+
+                              - Solving equation
+        2                     - Even numbers               - Do   Finds consecutive      - Do   - Do   - Do   D                 -
+                              - Odd numbers                       even and odd
+                              - Forming and solving               numbers
+                                equations
+                              - Finding consecutive
+                                numbers
+        3   Factors           - Listing factors            - Do   Lists factors          - Do   - Do   - Do   Mk old 82-83      -
+                              - Common factors                    Identifies common
+                              - HCF, GCF                          factors
+                                                                  Finds GCF
+        4   Prime             - Using multiplication       - Do   Uses factor tree or    - Do   - Do   - Do   Mk old 86         -
+            factorization     - Subscripts                        ladder to prime
+                              - Powers                            factorize
+                              - Factor tree                       Writes prime factors
+                              - Ladder                            accordingly
+        5   Finding prime     - Multiplying                - Do   Interprets factors     - Do   - Do   - Do   Old mk 86         -
+            factorized        - Interpreting powers and           and subscripts
+            numbers             subscripts                        correctly
+                              - Finding prime factorized          Finds numbers
+                                numbers                           correctly
+        6   Multiples of      - Listing multiples c        - Do   Lists /finds LCM       - Do   - Do   - Do   Old mk 86-87      -
+            numbers           - Common multiples                  Prime factorizing
+                              - LCM                               numbers
+                              - Prime factorizing
+        7   LCM and GCF       - Prime factorizing          - Do   Finds LCm and          - Do   - Do   - D    Do                -
+                              - Listing prime factors             GCF using a venn
+                              - Showing prime factor s            diagram
+                                on the venn diagram
+                              - Finding LCM and GCF
+        8   Prime factors     - Finding the missing        - Do   Finds unknown          - D    - Do   - Do   Mk old 88-89      -
+            on the venn         prime factors                     factors
+            diagram           - Finding the HCF and               Finds GCF and
+                                the LCM                           LCM
+
+7
+        1   Application of    - Relationship between       - Do   Multiplies             - D    - Do   - Do   Mk old 85         -
+            GCF and LCM         GCF and LCM                       Finds unknown
+                              - Multiplying numbers               numbers
+                                                                  Applies LCM and
+                                                                  GCF
+        2   Application of    - Prime factorizing          - Do   Prime factorize        - Do   - Do   - Do   Do                -
+            LCM               - Multiplying intervals             Multiplies
+                              - Finding common                    Finds LCM
+                                numbers                           Applies LCM
+        3   Powers of         - Finding number of          - Do   Interprets powers      - Do   - Do   - Do   Tr’s collection
+            whole               powers                            Expresses number
+            numbers           - Expressing number of              of as powers
+                                powers
+                              - Operation of powers
+        4   Square of         - Squares of                 - Do   Finds squares          - Do   - Do   - Do   Mk old 39-40
+            numbers           - Whole numbers
+                              - Fractions
+
+
+
+
+                           0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 6 ===
+    6
+
+                             - Mixed numbers
+                             - Decimals
+        5   Square roots     - Prime factorizing       - Do   Prime factoises        - Do   - Do   - Do    New mk 39
+                             - Writing prime factors          Writes prime factors                         Tr’s collection
+                             - Finding square roots           In multiplication
+                                                              form
+                                                              Finds square roots
+        6   Square roots     - Finding prime factors   - Do   Do                     - Do   - Do   - Do    Tr’s collection
+            of fraction      - Changing decimal to
+                               common fraction
+                             - Mixed to common
+                               fraction
+                             - Finds square roots
+        7   Application of   - Forming equations       - Do   Forms equation         - Do   - D    - Do    Tr’s collection
+            square roots     - Prime factorizing              Prime factorise
+                             - Finding square roots           Uses square roots
+        8   Cube and         - Finding cubes           - Do   Finds cubes and        - Do   - Do   - Dod   Fountain 49
+            cube roots       - Forming equations              cube roots
+                             - Finding cube roots
+
+8
+        1   Sequences        - Identifying types of    - Do   Identifies types of    - Do   - Do   - Do    Do
+                               number                         numbers
+                             - Finding number                 Finds pattern
+                               patterns                       numbers
+                             - Completing sequence            Completes the
+                                                              sequences
+        2   Puzzle and       - Forms puzzles           - Do   Forms magic            - Do   - Do   - Do    Understanding
+            magic square     - Finding magic sum              square                                       mtc 74
+                             - Completing magic               Completes magic
+                               squares                        square
+
+
+
+
+                         0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 7 ===
+    7
+
+                                                                                         Term II
+1
+        1   Fraction   Addition         - With same                 - Do   Adds fractions with   - Do   - Do   - Do   Fountain 56-57
+                                          denominators                     same and different                         Understanding
+                                        - Different denominators           denominators                               mtc 85
+                                        - Mixed numbers
+        2              Subtraction      - With same and different   - Do   Subtracts fractions   - Do   - Do   - Do   Fountain 58-60
+                                          denominators                     correctly
+                                        - Mixed numbers
+        3              Addition and     - Finding LCD               - Do   Finds LCD             - Do   - Do   - Do   Fountain 59
+                       subtraction      - Adding and subtracting           Adds and subtracts
+                                          fraction                         fractions
+        4              BODMAS           - Interpreting operation    - Do   Uses BODMAS to        - Do   - Do   - Do   Do
+                                          correctly                        work out fractions
+                                        - Working out using
+                                          MODMAS
+        5              Multiplication   - Whole numbers by          - Do   Multiplies fraction   - Do   - Do   - Do   Fountain 60-61
+                                          fraction and vice versa          correctly
+                                        - Fraction by fraction
+        6              Division         - Using LCM                 - Do   Finds reciprocals     - D    - Do   - Do   New mk 46-47
+                                        - Using reciprocal                 and divides
+                                        - Dividing fraction                fractions
+        7                               - Fraction by whole         - Do   Divides fractions     - Do   - Do   - Do   New mk 49-50
+                                          numbers and vice versa           using LCM and
+                                        - Fraction by fraction             reciprocal
+                                        - Mixed by mixed fraction
+        8              Mixed            - Applying BODMAS           - Do   Uses BODMAS and       - Do   - Do   - Do   Fountain 62-64
+                       operations       - Simplifying fractions            simplifies fraction
+                                                                           correctly
+
+2
+        1              Decimals         - Adding decimals           - Do   Adds and subtracts    Do     - Do   - Do   Old mk 14
+                                        - Adding and subtracting           decimals correctly
+                                          decimals
+        2                               - BODMAS on decimals        -      Do                           -      -
+                                        - Adding and subtracting
+        3              Multiplication   - Decimal by whole          - Do   Multiplies writes     Do     - Do   - Do   O;dmk 116-118
+                                          numbers and vice versa           decimals correctly
+                                        - Decimal by decimal
+        4              Division         - Changing to common        - Do   Changes               Do     - Do   - Do   Fountain 72
+                                          fraction                         Simplifies
+                                        - Finding reciprocal               Decimals
+                                        - Dividing decimals
+                                        - Simplifying
+        5              Operation on     - Changing to common        - Do   Workouts decimals     Do     - Do   - Do   New mk 61-65
+                       decimals           fraction                         with mixed
+                                        - Introducing brackets             operations
+                                        - Adding or subtracting
+                                        - Simplifying decimals
+
+
+
+
+                                     0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 8 ===
+    8
+
+        6                 Word problem     - Interpreting word          - Do   Interprets and         Do   - Do   - Do    Fountain 73-74
+                                             problems                          works out word
+                                           - Multiplying and dividing          problems
+                                             decimals
+        7   Ratios and    Ratios           - Forming ratios             - Do   Forms ratios           Do   - Do   - Do    Ne mk 66-67
+            proportions                    - Expressing ratios as              correctly
+                                             fractions
+                                           - Fractions as ratios
+        8                                  - Quantities as ratios       - Do   Writes ratios          Do   - Do   - Do    Fountain 77-78
+                                           - Ratios as fraction and            correctly
+                                             vice versa
+
+3
+        1                 Sharing in       - Finding total parts        - Do   Finds shares of        Do   - Do   - Dod   Fountain 80-81
+                          ratios           - Finding shares                    different parts
+        2                 Finding shared   - Finding total share        - Do   Fins the quantity      Do   - Do   - Do    Old mk 133-135
+                          quantity         - Finding equivalent of             shared
+                                             shares
+                                           - Finding the shared
+                                             quantity
+        3                 Increasing and   - Finding fraction of        - Do   Increases and          Do   - Do   - Do    Old mk 12-130
+                          decreasing         increase and decrease             decrease quantities
+                          quantities       - Finding quantity of               correctly
+                                             decrease and increase
+        4                 Ratio of         - Expressing quantities      - Do   Writes quantities as   Do   - Do   - Do    Fountain 79-80
+                          increase and       as fraction                       ratios in simplest
+                          decrease         - Simplifying fractions             form
+                                           - Writing ratios in
+                                             simplest form
+        5                 Application of   - Applying ratios in         - Do   Shares quantities      Do   - Do   - Do    Fountain 82-83
+                          ratios             solving daily life                using the given
+                                             situations                        ratios
+        6                 Proportions      - Direct proportion          - Do   Applies direction      Do   - Do   - Do    Fountain 82-83
+                                           - Constant proportion               proportion and
+                                                                               constant proportion
+        7                                  - Indirect and inverse       - Do   Interprets and         Do   - Do   - Do    Old mk 71
+                                             proportion                        applies indirect
+                                                                               proportion
+        8                 Percentages      - Meaning of %ages           - Do   Changes %ages to       Do   - Do   - Do    Understanding
+                                           - %age as fraction                  fractions and vice                         mtc 113
+                                           - Fractions as %ages                versa
+
+4
+        1                 Decimal as       - Decimals as %ages          - Do   Converts decimals      Do   - Do   - Do    Do
+                          %ages            - %ages as decimals                 to %ages
+                                           - Ratios as fractions               Converts ratios as
+                                                                               fraction
+        2                 Parts of         - Finding parts              - Do   Finds, forms and       Do   - Do   - Do    Understanding
+                          %ages            - Forming equations                 solves equations                           mtc 115-116
+                                           - Solving equations
+        3                 Quantities as    - Finding quantities as      - Do   Finds equivalent to    Do   - Do   - Do    Old mk 145
+                          %ages              %age                              %age
+                                           - Finding %ages as                  Converts units
+                                             quantities involving
+
+
+
+
+                                        0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 9 ===
+    9
+
+                                           conversion
+        4              Quantities as     - Changing to other units      - Do   Changes units and     Do   - Do   - Do   New mk 75-77
+                       %age of others    - Finding the %age                    finds %ages
+                                           equivalent
+        5              Sharing in        - Changing %ages to            - Do   Changes %age to       Do   - Do   - Do   Old mk 150
+                       %ages               fraction                            fraction
+                                         - Multiplying %age by                 Shares quantities
+                                           quantity
+        6              Algebra on        - Forming equation             - Do   Forms and solves      Do   - Do   - Do   old mk 152-153
+                       %age              - Changing %age to                    equations
+                                           fraction
+                                         - Finding the number
+                                           shared
+        7              %age increase     - Increasing                   - Do   Increase              Do   - Do   - Do   Fountain 85
+                       and decrease      - Decreasing and finding              S and decreases
+                                           discount                            quantity correctly
+                                         - Using %ages
+                                         - Finding quantity of
+                                           decrease and increase
+        8              Finding %age      - Finding quantity of          - Do   Finds %age            Do   - Do   - Do   Fountain 86-87
+                       decrease and        increase and decrease               increase and
+                       increase          - Finding %age increase               decrease
+                                           and decrease
+
+5
+        1              %age profit       - Finding profit               - Do   Finds profit , loss   Do   - Do   - Do   Do
+                       and loss          - Finding loss                        and their %ages
+                                         - Calculating %age profit
+                                           and loss
+        2              Simple interest   - Identifying principal rate   - Do   Identifies and        Do   - Do   - Do   Fountain 88
+                                           and time                            calculates simple                        New mk 83
+                                         - Finding simple interest             interest
+                                         - Finding amount
+        3   Data       Collecting and    - Collecting and               - Do   Collects , records,   Do   - Do   - Do   New mk 85-86
+            handling   organization        recording data                      tabulate and draws                       Fountain 92
+                       data              - Grouping data                       a bar graph
+                                         - Tabulating data
+                                         - Drawing a bar graph
+        4              Line graphs       - Drawing line graphs          - Do   Interprets , draws,   Do   - Do   - Do   Fountain 102
+                                         - Interpreting line graphs            and finds scale                          Old mk 167-168
+                                         - Finding scale
+        5              Mode, median,     - Finding the mode,            - Do   Finds mode,           Do   - Do   - Do   Do
+                       mean, range         median, range and                   median, range and
+                                           mean                                mean
+        6              Grouped data      - Drawing frequency            - Do   Draws interprets      Do   - Do   - Do   Tr’s collection
+                                           table                               frequency tables                         Old mk 172-173
+                                         - Interpreting grouped
+                                           data
+                                         - Finding mean, mode,
+                                           median using grouped
+                                           data
+
+
+
+
+                                     0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 10 ===
+    10
+
+     7   Application of   - Forms equations           - Do   Forms and solves      Do   - Do   - Dod   Do
+         mean             - Collects like terms              equations using
+                          - Finds unknown using              mean
+                            mean
+     8                    - Inverse problem on        - Do   Finds total using     Do   - Do   - Do    Do
+                            average                          average
+                          - Finding totals
+
+6
+     1   Pie charts       - Drawing pie charts        - Do   Draws                 Do   - Do   - Do    New mk 94-97
+                          - Interpreting and                 Interprets and
+                            completing sectors               completes pie chars
+                                                             correctly
+     2                    - Drawing pie charts        - Do   Draws , finds         Do   - Do   - Do    Fountain 93-97
+                          - Interpreting pie charts          unknown sector on
+                            with %ages                       a pie chart
+                          - Finding unknown
+                            sectors
+     3                    - Finding unknown           - Do   Identifies            Do   - Do   - Do    Tr’s collection
+                            values on the pie chart          equivalence and
+                          - Form an equation using           completes the pie
+                            theequivalent values             chart
+     4   Drawing pie      - Changing fractions to     - Do   Draws pie chart       Do   - Do   - Do    New mk 99
+         chart              degrees                          using degrees
+                          - Changing %ages to
+                            degrees
+                          - Drawing accurate pie
+                            chart
+     5   More about pie   - Finding total quantity    - Do   Do                    Do   - Do   - Do    Old mk 184-188
+         charts           - Changing quantities to
+                            degrees
+                          - Drawing accurate pie
+                            chart
+     6   Coordinate       - Naming axes               - Do   Names , plots and     Do   - Do   - Do    Tr’s collection
+         graph            - Plotting and reading             interprets
+                            plotted points                   coordinate graph
+     7   Coordinate       - Plotting                  - Do   Plots, names,         Do   - Do   - Do    Do
+         graph            - Joining                          shapes, and finds
+                          - Naming shape                     area and perimeter
+                          - Finding area
+                          - And perimeter
+     8   Money            - Identifying different     - Do   Identifying           Do   - Do   - Do    Doldmk 217-218
+                            currencies                       currencies
+                          - Finding number of                Finds number of
+                            notes                            bank notes
+                          - Finding the amount
+                            equivalent to the
+                            denomination
+
+7
+     1   Local and        - Converting local          - Do   Converts local        Do   - Do   - Do    Fountain 117
+         foreign            currency to foreign              currency to foreign                       Understanding
+         currencies         currency                         currency and vice                         mtc 180-181
+                          - Drawing and use of               versa
+                            forex rate table
+
+
+
+
+                       0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 11 ===
+    11
+
+     2   Time   Conversion of   - 12 hr clock to 24 hr      - Do   Convers time in 24    Do   - Do   - Do   Tr’s collection
+                time              clock                            hr clock and 12 hr
+                                - 24 hr clock to 12 hr             clock
+                                  clock
+     3          Finding         - Converting to 24 hr       - Do   Converts to 24 hr     Do   - Do   - Do   Olmk 224-225
+                duration          clock                            clock
+                                - Finding duration in hrs          Finds duration in
+                                  and minutes                      hrs and minutes
+     4          Distance        - Finding distance with     - Do   Finds distance in     Do   - Do   - Do   New mk 112
+                                  hours, minutes and               conjunction with
+                                  km/hr on duration                minutes and hours
+     5          Time            - Finding time in hrs       - Do   Finds time using      Do   - Do   - Do   Understanding
+                                  using speed and                  speed and time                           mtc 121-128
+                                  distance
+     6          Speed           - Finding speed using       - Do   Finds speed using     Do   - Do   - Do   New mk 114-
+                                  time in hours and                time in minutes and                      116
+                                  minute s                         hours
+                                - Fidning speed in km/hrs
+     7                          - Expressing km to m        - Do   Converts km/hr to     Do   - Do   - Do   Old mk 237-238
+                                - Hours to seconds                 m/sec
+                                - Finding speed in m/sec           Finds speed in
+                                                                   m/sec
+     8                          - Converting m to km        - Do   Converts m to km,     Do   - Do   - Do   Do
+                                - Changes sec to hours             sec to hrs and
+                                - Converting m/sec to              m/sec to km/hr
+                                  km/hr
+
+8
+     1          Average speed   - Finding total distance    - Do   Finds distance,       Do   - Do   - Do   Old mk 235
+                                  covered                          time, and average                        Understanding
+                                - Finding total time               speed                                    190-191
+                                - Finding average speed
+     2          Travel graph    - Drawing travel graph      - Do   Draws and finds       Do   - Do   - Do   New mk 115-
+                                - Finding scales                   scale                                    120
+                                - Completing travel graph          Finding average
+                                - Showing movement on              speed
+                                  the travel graph
+                                - Finding average speed
+
+
+
+
+                           0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 12 ===
+    12
+
+                                                                               Term III
+1
+     1   Lengths,   Conversion of   - Km to m                    - Do   Converts metric         Do   - Do   - Do   Old mk 313-315
+         mass and   metric units    - M to cm                           unites correctly
+         capacity                   - Cm to mm
+                                    - Km to cm
+                                    - Dm to cm
+     2                              - M to km                    - Do   Do                      Do   - Do   - Do   Do
+                                    - Cm to m
+                                    - Mm to cm
+                                    - Cm to km
+                                    - Cm to dm
+     3              Perimeter       - Finding missing sides      - Do   Identifies shapes       Do   - Do   - Do   Old mk 320
+                                    - Identifying shapes                and finds perimeter
+                                    - Calculating perimeter
+     4              Area            - Identifies shapes          - Do   Finds area and          Do   - Do   - Do   New mk 125
+                                    - Finding area of a                 perimeter of a
+                                      square                            square
+                                    - Finding sides of a
+                                      square using area
+                                    - Using area of a square
+                                      to find perimeter
+     5                              - Finding area of a          - Do   Finds area of a         Do   - Do   - Do   New mk 122-
+                                      rectangle                         rectangle side                             123
+                                    - Finding length and
+                                      width using area
+                                    - Using perimeter to find
+                                      area
+     6              Area and        - Identifying equal signs    - Do   Forms and finds         Do   - Do   - Do   New mk 123-
+                    perimeter       - Finding unknown                   unknown length                             125
+                                    - Finding length and                Finds perimeter and                        Old mk 334
+                                      width                             area
+                                    - Calculating perimeter
+                                      and area of a rectangle
+                                      and square
+     7              Difference of   - Finding are of inner and   - Do   Finds area of inner     Do   - Do   - Do   Old mk 336-337
+                    area              outer shapes                      and outer shapes
+                                    - Finding shaded or                 Finds shaded and
+                                      unshaded regions                  unshaded regions
+     8              Triangles       - Finding area of a          - Do   Finds area, base or     Do   - Do   - Do   Understanding
+                                      triangle                          height                                     mtc 267-263
+                                    - Finding base or height                                                       Fountain 135-
+                                      of a triangle                                                                136
+
+2
+     1              Comparing       - Identifying base and       - Do   Identifies base and     Do   - Do   - Do   Olfmk 342
+                    area              height of triangles               heights of triangles,
+                                    - Finding base or height            Finds base or
+                                      using area                        height
+     2              Combined        - Finding area of            - Do   Finds area of           Do   - Do   - Do   Understanding
+                    figures           separate figures                  combined figures                           mtc 258
+                                    - Calculating area of               correctly                                  Old mk 343
+
+
+
+
+                                0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 13 ===
+    13
+
+                                     combined figures
+     3            Trapezium        - Types of trapezia         - Do   Names types of        Do   - Do   - Do   New mk 128
+                                   - Properties                       trapezia                                 Old mk 344-346
+                                   - Finding sides of a               Finds area and
+                                     trapezium                        types of trapezia
+                                   - Finding sides of a
+                                     trapezium using area
+     4            Parallelogram    - Finding area              - Do   Finds area and        Do   - Do   - Do   New mk 129
+                                   - Finding base and height          sides of a                               Old mk 347
+                                     using area                       parallelogram
+     5            Rhombus and      - Stating properties        - Do   States properties     Do   - Do   - Do   New mk 130
+                  kite             - Finding area of a kite           and calculates area
+                                   - Calculating
+     6   Circle   Circumference    - Finding radius and        - Do   Names parts of a      Do   - Do   - Do   New mk 133
+                                     diameter                         circle and finds
+                                   - Identifying pie                  circumference
+                                   - Calculating
+                                     circumference
+     7            Perimeter and    - Identifying radius and    - Do   Identifies radius     Do   - Do   - Do   Do
+                  circumference      diameter                         and diameter
+                  of sectors       - Finding circumference            Finds
+                                   - Calculating perimeter            circumference and
+                                                                      perimeter of sector
+                                                                      s
+     8            Area             - Identifying radius        - Do    Identifies radius    Do   - Do   - Do   Dl
+                                   - Finding area using 22/7          and finds area of
+                                     or 3.14                          circles and some
+                                   - Finding area of some             sectors
+                                     sectors
+
+3
+     1            TOTAL            - Identifying prisms        - Do   Identifies s prisms   Do   - Do   - Do   Old mk 348-351
+                  surface area     - Calculating TSA                  and finds the total
+                                                                      surface area
+     2            Sides of a       - Forming equations         - Do   Uses TSA to find      Do   - Do   - Do   New mk 137
+                  cube and           using TSA                        sides and volume of
+                  cuboid           - Applying TSA to find             cubes and cuboid
+                                     sides and volume
+     3            Cylinder         - Naming parts              - Do   Names, identifies     Do   - Do   - Do   Old mk 356-360
+                                   - Identifying radius               and finds volume
+                                   - Finding volume using
+                                     base area and height
+     4            Capacity         - Finding volume            - Do   Finds volume and      Do   - Do   - Do   Fountain 139-
+                                   - Finding capacity using           capacity                                 141
+                                     volume
+     5            Application of   - Changing capacity to      - Do   Changes capacity      Do   - Do   - Do   Old mk 359-360
+                  volume and         volume                           to volume
+                  capacity         - Suing volume to finds            Uses volume to find
+                                     sides                            sides
+                                   - Calculating capacity             Calculates capacity
+     6            Capacity         - Litres to ml              - Do   Changes litres to     Do   - Do   - Do   Old mk 360-364
+                                   - L to cm3                         milliliters
+                                   - Ml to l                          Litres to cm3 and
+
+
+
+
+                               0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 14 ===
+    14
+
+                                      - Cm3 to l                         vice versa
+     7   Geometry   Shapes and        - Types of lines            - Do   Draws, measures        Do   - Do   - Do   Fountain 152-
+                    lines             - Drawing and measuring            lines                                     153
+                                        lines segments                   Constructs lines
+                                      - Drawing parallel lines
+                                      - Constructing
+                                        perpendicular lines
+     8              Angles            - Drawing and forming       - Do   Draws, forms and       Do   - Do   - Do   Fountain 147-
+                                        angels                           measures angels                           151new mk
+                                      - Measuring angles using                                                     147-149
+                                        different scales
+
+4
+     1              Bisection of      - Bisecting lines at a      - Do   Bisects and draw       Do   - Do   - Do   Fountain 147-
+                    angles              point                            lines                                     151
+                                      - Dropping bisectors
+                                      - Bisecting given angles
+     2              Constructing      - Drawing lines             - Do   Draws, constructs      Do   - Do   - Do   New mk 147-
+                    angles            - Constructing ARCs                angles                                    149
+                                      - Showing angles                                                             Old mk 288-291
+                                      - Constructing angles
+     3              Constructing      - Types of triangles        - Do   Draws, sketch lines    Do   - Do   - Do   Understanding
+                    polygons          - Drawing sketch                   and triangles                             mtc 237
+                                      - Drawing lines
+                                      - Measuring lengths
+                                      - Constructing triangles
+                                        with SSS
+     4              Constructing      - Drawing sketch            - Do   Draws, measures        Do   - Do   - Do   Understanding
+                    triangles         - Drawing and measuring            lines and angles                          mtc 230-231
+                                        sides
+                                      - Constructing angles
+                                      - Constructing a triangle
+                                        with SAS,SSA and ASS
+     5                                - Drawing sketch            - Do   Measures and           Do   - Do   - Do   Do
+                                      - Measuring one side               constructs triangles
+                                      - Constructing two angels
+                                      - Constructing a triangle
+                                        with AAS
+     6              Constructing      - Square, rectangle         - Do   Constructs a           Do   - Do   - Do   Tr’s collection
+                    quadrilaterals    - State properties                 square, rectangle
+                                      - Find the diagonals               and state the
+                                                                         properties
+     7                                - Hexagon, octagon and      - Do   Constructs,            D      Do   - Do   Fountain 155-
+                                        pentagon                         hexagon, pentagon,                        156
+                                      - Finding centre angel             and octagon                               New mk 165
+                                      - Finding perimeter                correctly
+     8              Properties of     - Equilateral triangles     - Do   States properties of   Do     Do   - Do   Tr’s collection
+                    polygons          - Isosceles triangles              polygons
+                                      - Scalene triangles
+                                      - Right angled triangles
+                                      - Square, parallelogram
+                                      - Trapezium and kite
+
+
+
+
+                                   0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 15 ===
+    15
+
+5
+     1   Pythagoras       - Proving Pythagoras          - Do   Applies Pythagoras       Do   Do   - Do   Fountain 157
+         theorem            theorem                            theorem correctly                         Old mk 299-300
+                          - Finding hypotonus
+                            height and base using
+                            Pythagoras theorem
+     2   Application of   - Finding equal sides of      - D    Finds sides of an        Do   Do   - Do   Tr’s collection
+         Pythagoras         isosceles triangle                 isosceles
+         theorem          - Substituting                       Finds its base ,
+                          - Finding the base ,                 height and
+                            height and hypotonus               hypotonus
+                          - Calculating area and
+                            perimeter
+     3   Types of         - Right angels                - Do   Identifies and finds     Do   D    - Do   Fountain 146
+         angles           - Acute , reflex and                 complements and
+                            centre                             supplements of
+                          - Supplementary and                  angles
+                            complementary angles
+     4   Supplementary    - Unknown                     - Do   Finds supplements        Do   Do   - Do   New mk 144
+         angels             supplementary angles               of angles
+                          - Forming equations
+                          - Angels in the triangle
+                          - Finding supplements
+     5   Angels on        - Drawing parallel lines in   - Do   Draws parallel lines,    Do   Do   - Do   Old mk 267-273
+         parallel lines     sketch form                        Identifies co-interior
+                          - Drawing transversal line           angels and co
+                          - Co-interior angels                 exterior angels
+                          - Co-exterior angels
+     6                    - Alternate interior angles   - Do   Identifies the angle     Do   Do   - Do   Tr’s collection
+                          - Alternate exterior                 properties on
+                            angles                             parallel lines
+                          - Corresponding angles
+                          - Vertically opposite
+                            angles
+     7   Angle            - Equilateral triangle        - Do   Applies the angle        Do   Do   - Do   Tr’s collection
+         properties       - Isosceles triangle                 properties on
+                          - The sum of two interior            triangles
+                            angles is equal to its
+                            opposite exterior angels
+     8   Number of        - Finding exterior angels     - Do   Finds exterior and       Do   Do   - Do   Tr’s collection
+         sides              and interior angels                interior angels
+                          - Finding number of sides            Names and finds
+                            of regular polygons                number of sides
+                          - Naming polygons
+
+6
+     1   Interior angle   - Finding interior angle      - Do   Find the number of       Do   Do   - Do   Tr’s collection
+         sum                sum                                sides and interior
+                          - Finding a number of                angle sum
+                            sides
+                          - Calculating interior
+                            angel sum
+                          - Naming polygons
+
+
+
+
+                      0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 16 ===
+    16
+
+     2   Integers   Number line       - Additive inverse            - Do   Draw, names and         Do   Do   - Do   Old mk 197-198
+                                      - Naming arrows                      finds additive
+                                      - Drawing arrow                      inverse
+                                      - Drawing a number line
+                                      - Finding inverse
+     3              Ordering          - Comparing integers          - Do   Compares and            Do   Do   - Do   New mk 168-
+                    integers          - Ascending order                    arranges integers                        167
+                                      - Descending order
+     4              Addition          - Positive to a positive      - Do   Adds integers with      Do   Do   - Do   Tr’ collection
+                                      - Positive to a negative             or without a number
+                                      - Negative to a negative             line
+                                      - Negative to a positive
+                                      - Using a number line
+     5              Subtraction       - Positive from a positive    - Do   Subtracts integers      Do   Do   - Do   Tr’s collection
+                                      - Positive from a negative           with or without
+                                      - Negative from a                    number line
+                                        negative
+                                      - Negative from a
+                                        positive
+                                      - Using a number line
+     6              Multiplication    - Finding groups              - Do   Multiplies integers     Do   Do   - Do   Old mk 205
+                                      - Showing groups on a                correctly
+                                        number line
+                                      - Multiplying integers with
+                                        or without a number line
+     7              Solution sets     - Drawing a number line       - Do   Finds the solution      Do   Do   - Do   Old mk 207-210
+                                      - Interpreting set of                set
+                                        integers
+                                      - Showing set of integers
+                                        on a number line
+                                      - Finding solution sets
+     8              Inequalities      - Solving inequalities        - Do   Solves and finds        Do   Do   - Do   Do
+                                      - Showing on a number                solution sets
+                                        line                               correctly
+                                      - Finding the solution set
+
+7
+     1   Algebra    Algebraic         - Writing phrase              - Do   Uses different          Do   Do   - Do   Fountain 187
+                    expression        - Adding , subtracting ,             operations to write                      Old mk 374-375
+                                        multiplying , dividing             algebraic
+                                        and use f brackets                 expression
+     2              Substitution      - Expanding algebraic         - Do   Expands, substitute     Do   D    - Do   New mk 180-
+                                        expression                         and finds values                         183
+                                      - Substituting
+                                      - Finding values
+     3              Like terms        - Collecting like terms       - Do   Collects and            Do   Do   - Do   Do
+                                      - Simplifying like terms             simplifies like terms
+                                      - Applying perimeter
+                                      - Finding perimeter
+     4              Removing          - Multiplying                 - Do   Removes brackets        Do   Do   - Do   Fountain 188-
+                    brackets          - Substituting                       Substitutes and                          189
+                                      - Simplifying                        simplifies
+                                      - Finding values of
+
+
+
+
+                                   0754895241/0783298434 © SCHEMES
+
+=== ORIGINAL PDF PAGE 17 ===
+    17
+
+                            unknown
+     5   Forming          - By adding                   - Do   Forms different       Do   Do   - Do   Ldmk 380-381
+         equation         - Subtracting and                    equations \solving
+                            multiplying                        equations
+     6   Solving          - Forming equations           - Do   Forms, collects,      Do   Do   - Do   New mk 184-
+         equation by      - Collection like terms              simplifies and                         185
+         dividing         - Simplifying like terms             solves equation
+                          - Finding unknown
+                          - Solving equation
+     7   Fractional       - Collecting like terms       - Do   Collects like terms   Do   Do   - Do   New mk 186
+         equation         - Finding LCD                        And solves
+                          - Solving equation                   equations
+                          - Finding unknown
+     8   Application of   - Using area of a square,     - Do   Applies area and      Do   Do   - Do   New mk 188-
+         algebra            rectangle, and triangle            perimeter using                        189
+                          - Using perimeter of a               algebra
+                            square, rectangle and
+                            triangle
+
+8
+     1   Equations with   - Removing brackets           - Do   Removes, collects     Do   Do   - Do   New mk 199
+         brackets         - Collecting like terms              and solves equation                    Old mk 395-396
+                          - Solving
+                          - Finding unknown
+     2   Application of   - Identifying properties of   - Do   Forms, solves, and    Do   Do   - Do   Tr’ collection
+         algebra            polygon                            finds area of
+                          - Forming equation                   different polygons
+                          - Solving equation
+                          - Finding sides area and
+                            perimeter of polygon
+
+
+
+
+                       0754895241/0783298434 © SCHEMES
