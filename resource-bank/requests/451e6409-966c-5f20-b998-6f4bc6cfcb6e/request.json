@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0dc31da06c97ee0c8e940d5ac89e7a65314896c70bcc6abe410b393cfcd3e517.pdf",
+      "sha256": "0dc31da06c97ee0c8e940d5ac89e7a65314896c70bcc6abe410b393cfcd3e517",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/fc911157453c8ae49a8e1b89dac366b0474cea66/P.4%20R.E%20T3%20SCHEME%40%20PROF.MOSES%20VIP.pdf",
+      "title": "P.4 R.E T3 SCHEME_ PROF.MOSES VIP",
+      "version_id": "ef730c39-cdd1-4919-a256-ede1ab77a9bd"
+    }
+  ]
+}

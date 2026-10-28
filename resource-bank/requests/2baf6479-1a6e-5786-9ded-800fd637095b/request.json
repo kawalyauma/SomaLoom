@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/cbc526675767a2afa8e3485f417e611f01a26ff2ce1c78846357d8fb9c43ec97.pdf",
+      "sha256": "cbc526675767a2afa8e3485f417e611f01a26ff2ce1c78846357d8fb9c43ec97",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/737a976d996de77fdc3109a9da50154d612e1bc4/P.5%20%20SCIENCE%20SCHEME%20OF%20WORK%20NEW%20EDITION%20TERM%201.pdf",
+      "title": "P.5  SCIENCE SCHEME OF WORK NEW EDITION TERM 1",
+      "version_id": "25a961d1-de26-4cdc-a21a-9021eaa2932d"
+    }
+  ]
+}

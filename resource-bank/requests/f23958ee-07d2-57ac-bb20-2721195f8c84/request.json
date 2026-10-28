@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/5a2fb68aee046b7e396e9022d57d3d2d8dd4f60c9ea785318789f48c6611bf7a.docx",
+      "sha256": "5a2fb68aee046b7e396e9022d57d3d2d8dd4f60c9ea785318789f48c6611bf7a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/f2d0efd2217d07f448d791062300fb642b3a0ea5/P.5%20CRE%20SCHEME%20OF%20WORK%20TERM%20III%2C%202024.docx",
+      "title": "P.5 CRE SCHEME OF WORK TERM III_ 2024",
+      "version_id": "982c3bea-64d4-4271-971e-194c54386515"
+    }
+  ]
+}
