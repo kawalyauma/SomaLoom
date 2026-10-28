@@ -1,0 +1,592 @@
+{
+  "schemes": [
+    {
+      "grade": "Primary Five",
+      "subject": "English Grammar",
+      "identity_quote": "GRAMMAR SCHEME OF WORK FOR PRIMARY FIVE TERM ONE 2024",
+      "lessons": [
+        {
+          "term": 1,
+          "week": 2,
+          "lesson": 1,
+          "topic": "Tenses",
+          "subtopic": "Irregular verbs",
+          "objectives": [
+            "Identify irregular verbs and distinguish past tense from past participle forms."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Identify irregular verbs and construct oral sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "Irregular verbs"
+          }
+        },
+        {
+          "term": 1,
+          "week": 2,
+          "lesson": 2,
+          "topic": "Tenses",
+          "subtopic": "The present perfect tense",
+          "objectives": [
+            "Explain the tense, identify helping verbs and construct present-perfect sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Construct affirmative, negative and interrogative sentences orally and in writing."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "The present\nperfect tense"
+          }
+        },
+        {
+          "term": 1,
+          "week": 2,
+          "lesson": 3,
+          "topic": "Tenses",
+          "subtopic": "The present perfect passive",
+          "objectives": [
+            "Identify helping verbs and form present-perfect passive sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Answer oral and written questions and change sentences into the passive."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "The present\nperfect\npassive"
+          }
+        },
+        {
+          "term": 1,
+          "week": 2,
+          "lesson": 4,
+          "topic": "Conditional sentences",
+          "subtopic": "The use of IF1",
+          "objectives": [
+            "Distinguish IF and main clauses and construct first-conditional sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Answer oral and written questions about IF1 clauses."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "The use of IF1"
+          }
+        },
+        {
+          "term": 1,
+          "week": 3,
+          "lesson": 1,
+          "topic": "Tenses",
+          "subtopic": "The past simple tense",
+          "objectives": [
+            "Explain the use of the past simple and form affirmative, negative and interrogative sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Discuss and construct past-simple sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "The past\nsimple tense"
+          }
+        },
+        {
+          "term": 1,
+          "week": 3,
+          "lesson": 2,
+          "topic": "Tenses",
+          "subtopic": "The past simple passive",
+          "objectives": [
+            "Identify past-simple passive helping verbs and construct passive sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Answer oral and written questions on the past-simple passive."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "c21df254-232f-50dd-9866-da1516bcf144",
+            "quote": "The past\nsimple passive"
+          }
+        },
+        {
+          "term": 1,
+          "week": 3,
+          "lesson": 3,
+          "topic": "Modal verbs",
+          "subtopic": "The use of since, for and from",
+          "objectives": [
+            "Explain uses of since, for and from and construct sentences with them."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Discuss examples and answer oral and written questions."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The use of\nsince, for and\nfrom"
+          }
+        },
+        {
+          "term": 1,
+          "week": 3,
+          "lesson": 4,
+          "topic": "Tenses",
+          "subtopic": "The past continuous tense",
+          "objectives": [
+            "Explain the past continuous and construct sentences with was/were and -ing verbs."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Answer oral and written questions about the tense."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The past\ncontinuous\ntense"
+          }
+        },
+        {
+          "term": 1,
+          "week": 4,
+          "lesson": 1,
+          "topic": "Modal verbs",
+          "subtopic": "Using must and mustn't",
+          "objectives": [
+            "Describe how must and mustn't are used and construct sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Discuss modal verbs and answer oral and written questions."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "Using\n…must/……….\nmustn’t"
+          }
+        },
+        {
+          "term": 1,
+          "week": 4,
+          "lesson": 2,
+          "topic": "Articles",
+          "subtopic": "The use of a, an and the",
+          "objectives": [
+            "Identify the uses of a, an and the."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Discuss the articles and their uses."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The use of a,\nan and the"
+          }
+        },
+        {
+          "term": 1,
+          "week": 4,
+          "lesson": 3,
+          "topic": "Articles",
+          "subtopic": "The use of a, an and the",
+          "objectives": [
+            "Choose suitable articles to complete sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Complete sentences using appropriate articles."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The use of a,\nan and the"
+          }
+        },
+        {
+          "term": 1,
+          "week": 4,
+          "lesson": 4,
+          "topic": "Relative pronouns",
+          "subtopic": "The use of some relative pronouns",
+          "objectives": [
+            "Explain relative pronouns and construct sentences with who, whom, whose, which and that."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Construct sentences with relative pronouns and respond to questions."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The use of\nsome relative\npronouns"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 1,
+          "topic": "Adverbs",
+          "subtopic": "Formation of adverbs",
+          "objectives": [
+            "Define adverbs, identify examples and form adverbs from adjectives."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Identify adverbs and practice their formation."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "Formation of\nadverbs"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 2,
+          "topic": "Adverbs",
+          "subtopic": "The position of adverbs in a sentence",
+          "objectives": [
+            "Explain adverb placement and position adverbs correctly in sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Reorder sentences to position adverbs correctly."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "The position\nof adverbs in a\nsentence"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 3,
+          "topic": "Adverbs",
+          "subtopic": "Classes of adverbs",
+          "objectives": [
+            "Identify classes of adverbs and give examples for each class."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Classify examples into manner, time, duration, frequency and place."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "f1c775e5-80d2-50fa-8126-7fa6b3e82a75",
+            "quote": "Classes of\nadverbs"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 4,
+          "topic": "Adverbs",
+          "subtopic": "Comparisons of adverbs",
+          "objectives": [
+            "Identify degrees of comparison and form comparative and superlative adverbs."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Complete sentences using appropriate degrees of adverbs."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "Comparisons\nof adverbs"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 5,
+          "topic": "Adverbs",
+          "subtopic": "More exercise about adverbs",
+          "objectives": [
+            "Form adverbs correctly from given words."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Work through written adverb-formation exercises."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "More exercise\nabout adverbs"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 6,
+          "topic": "Question tags",
+          "subtopic": "Question tags",
+          "objectives": [
+            "Define question tags, distinguish positive and negative statements and complete tags."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Construct question tags for affirmative and negative statements."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "Question tags"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 7,
+          "topic": "Question tags",
+          "subtopic": "Special forms of question tags",
+          "objectives": [
+            "Complete statements with suitable special question tags."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Practice tags formed with am, used to, shall, will, need and needn't."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "Special forms\nof question\ntags"
+          }
+        },
+        {
+          "term": 1,
+          "week": 5,
+          "lesson": 8,
+          "topic": "Tenses",
+          "subtopic": "The present simple tense",
+          "objectives": [
+            "Explain the present simple and form affirmative, negative and interrogative sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Construct present-simple sentences and respond to questions."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "The present\nsimple tense"
+          }
+        },
+        {
+          "term": 1,
+          "week": 6,
+          "lesson": 1,
+          "topic": "Tenses",
+          "subtopic": "The present simple passive",
+          "objectives": [
+            "Identify helping verbs and write present-simple passive sentences."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Construct and discuss passive sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "The present\nsimple passive"
+          }
+        },
+        {
+          "term": 1,
+          "week": 6,
+          "lesson": 2,
+          "topic": "Structural patterns",
+          "subtopic": "The use of so that and in order",
+          "objectives": [
+            "Construct sentences with so that and in order."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Discuss the structural patterns and form sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "741c6226-c918-5220-828b-9610a138b50e",
+            "quote": "The use of\n…so\nthat…/…..in\norder…."
+          }
+        },
+        {
+          "term": 1,
+          "week": 6,
+          "lesson": 3,
+          "topic": "Structural patterns",
+          "subtopic": "The use of prefer...to and like...more than",
+          "objectives": [
+            "Construct correct sentences expressing preferences with the given patterns."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Form oral and written sentences using the preference patterns."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+            "quote": "The use of\n….prefer…..to\n…./…like\n….more than"
+          }
+        },
+        {
+          "term": 1,
+          "week": 6,
+          "lesson": 4,
+          "topic": "Structural patterns",
+          "subtopic": "The use of while and when",
+          "objectives": [
+            "Distinguish while and when and construct sentences with both."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Compare uses and compose example sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+            "quote": "The use\n……while\n/….when.."
+          }
+        },
+        {
+          "term": 1,
+          "week": 7,
+          "lesson": 1,
+          "topic": "Revision work",
+          "subtopic": "Affirmative, negative and interrogative sentences",
+          "objectives": [
+            "Construct statements and questions in all three forms."
+          ],
+          "activities": [
+            "Whole-class discussion and question-and-answer.",
+            "Revise by composing affirmative, negative and interrogative sentences."
+          ],
+          "materials": [
+            "Printed notes"
+          ],
+          "assessment": "Oral and written questions or exercises on the stated subtopic.",
+          "inferred": true,
+          "source": {
+            "block_id": "dda0d2e9-bed3-5a63-837c-093d5cded666",
+            "quote": "Affirmative,\nnegative and\ninterrogative\nsentences"
+          }
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The committed table labels its teaching slots PD (period), not explicit lesson numbers; lesson allocations are therefore inferred, including the two periods devoted to articles in week 4.",
+    "The evidence repeats an explicit week 5 label after the adverbs comparison entry on page 3; both groups are retained in week 5 in source order, with inferred lessons 1–8, rather than silently relabeling the latter group.",
+    "The supplied evidence starts at week 2; no week 1 content is present, so no week 1 lessons are invented.",
+    "The original source PDF could not be read through the available GitHub text connector; this extraction is grounded in committed evidence.json rather than independent PDF inspection."
+  ]
+}
