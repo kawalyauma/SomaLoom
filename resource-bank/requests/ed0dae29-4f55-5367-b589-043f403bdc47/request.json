@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/edac9dd99d0bf7fbda3ac650c41d1fe68dd5aa77bb679a6096765dd868bc5492.pdf",
+      "sha256": "edac9dd99d0bf7fbda3ac650c41d1fe68dd5aa77bb679a6096765dd868bc5492",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/d3822ded824cda913491dd32065ad68e073bcd72/P.5%20SST%20SCHEME%20TERM%203.pdf",
+      "title": "P.5 SST SCHEME TERM 3",
+      "version_id": "21cf2f75-8572-492d-b5f3-ec5ad0032870"
+    }
+  ]
+}

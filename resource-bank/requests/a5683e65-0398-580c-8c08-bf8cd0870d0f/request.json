@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/22803a47370df4842057b9d87bc6824a074ae1ac1ed8f4f4450da9a894b61b6c.pdf",
+      "sha256": "22803a47370df4842057b9d87bc6824a074ae1ac1ed8f4f4450da9a894b61b6c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/eb8887cde2c6468ae8dd4cfb84a15546b841d4d9/P.5%20RELIGIOUS%20EDUCATION%20SCHEME%20OF%20WORK%20P5%20TERM%20III.pdf",
+      "title": "P.5 RELIGIOUS EDUCATION SCHEME OF WORK P5 TERM III",
+      "version_id": "6ecad9d4-fa5c-4f70-a615-ec85dcef03a5"
+    }
+  ]
+}
