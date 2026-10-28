@@ -90,5 +90,19 @@
     "app_imported": false,
     "teacher_reviewed": false
   },
-  "next": "Regenerate 11-topic canonical Science Term 1 learner/key PDFs from exact committed Markdown and compare all questions/answers, then complete missing classification/sound/circulation/drug targets. Rotation next: SST source acquisition/term alignment, unless another subject active."
+  "next": "Regenerate 11-topic canonical Science Term 1 learner/key PDFs from exact committed Markdown and compare all questions/answers, then complete missing classification/sound/circulation/drug targets. Rotation next: SST source acquisition/term alignment, unless another subject active.",
+  "compilations": {
+    "learner": {
+      "file": "P6_Science_Term1_Overnight01_learner_compilation.pdf",
+      "pages": 4,
+      "sha256": "4558bb5fc84cb19e60f6b05e50d0ff5e6d5a9088d4d35b3e350e073fecdc6721"
+    },
+    "teacher_key": {
+      "file": "P6_Science_Term1_Overnight01_teacher-key_compilation.pdf",
+      "pages": 2,
+      "sha256": "628944a36c92a7460ee61a0551cb12a8f736c56dfe5c2e29658ad39365a431a7"
+    },
+    "publication": "downloadable in chat ZIP only; not committed to GitHub",
+    "scope": "two supplements only, NOT full Term 1"
+  }
 }
