@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/538fe20d4e520add0f7127aa20ffdf8dddb5964eb0cc5c66e9ff5aba11e4b165.pdf",
+      "sha256": "538fe20d4e520add0f7127aa20ffdf8dddb5964eb0cc5c66e9ff5aba11e4b165",
+      "source_uri": "https://github.com/Fresh-Teacher/baby-class-past-papers/blob/4b5a3d3344067b8f9dea2f1a8d7382f6982aed74/Baby%20Eng%20Language%20Devt%202%20Scheme%20Term%202-1.pdf",
+      "title": "Baby Eng Language Devt 2 Scheme Term 2-1",
+      "version_id": "81c600a9-a011-4dc7-9dd3-8cd0eb4d10b4"
+    }
+  ]
+}

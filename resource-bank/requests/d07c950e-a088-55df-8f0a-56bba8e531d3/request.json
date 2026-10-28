@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d.pdf",
+      "sha256": "574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/052b5257b26b98edd65df28ffd4b62ab8e0432e1/P.5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME%20CREATIVE.pdf",
+      "title": "P.5 TERM I_ II_ III MATH SCHEME CREATIVE",
+      "version_id": "ffdc8759-a5c2-4eed-893b-4999a81b7a53"
+    }
+  ]
+}

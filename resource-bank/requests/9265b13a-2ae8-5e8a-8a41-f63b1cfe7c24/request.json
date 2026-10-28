@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/75071bd50a09ffbe8c08ab04c1e327f3e6cf0374d43b13d416a75e1ab4e34106.docx",
+      "sha256": "75071bd50a09ffbe8c08ab04c1e327f3e6cf0374d43b13d416a75e1ab4e34106",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/0b63491d74dbc64bcd2b20b2ef76b69773130935/P.5%20sci%20SCHEME.docx",
+      "title": "P.5 sci SCHEME",
+      "version_id": "596301e9-3335-45b3-96dd-c0d20e1e0d7f"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "scheme",
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea.docx",
+      "sha256": "44c78d8737cdbc93f57bc9ca81e224413aaacd8e8a258cabf3883329a68749ea",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/6534d5ce7f91f72e0211911262acdd3680932646/P.5%20SST%20SCHEME%20OF%20WORK%20TERM%203%202024.docx",
+      "title": "P.5 SST SCHEME OF WORK TERM 3 2024",
+      "version_id": "d245f4e7-c222-4866-892d-3480a2854feb"
+    }
+  ]
+}
