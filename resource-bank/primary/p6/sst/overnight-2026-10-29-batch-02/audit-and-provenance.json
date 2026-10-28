@@ -1,0 +1,97 @@
+{
+  "batch_id": "p6-sst-2026-10-29-02",
+  "date": "2026-10-29",
+  "subject": "P6 Social Studies",
+  "status": "partial_topic_batch",
+  "terms_1_2_3_complete": false,
+  "source": {
+    "school_scheme": "resource-bank/sources/8a4bdabdb385707a229b27f8789049b23f329c5832a10b24ababfd9e4a47a6c6.pdf",
+    "request": "resource-bank/requests/4582e76d-3c4d-5488-b1ce-21491a1738dd",
+    "evidence": "evidence.json",
+    "pages": [
+      6,
+      7
+    ],
+    "license": "unknown",
+    "original_pdf_visual_inspection": "unavailable",
+    "term_week_period_allocation": "unverified: WK/PD/term table cells blank or ambiguously extracted; topic-based paths used"
+  },
+  "official_curriculum": "https://ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom-1.pdf",
+  "fact_sources": [
+    "https://www.timeanddate.com/time/time-zones-decided.html",
+    "https://www.timeanddate.com/time/zone/uganda",
+    "https://science.nasa.gov/solar-system/planets/",
+    "https://science.nasa.gov/earth/facts/",
+    "https://science.nasa.gov/solar-system/solar-system-facts/"
+  ],
+  "new_units": [
+    {
+      "slug": "local-time-and-time-zones",
+      "evidence_page": 6,
+      "learner_pages": 3,
+      "key_pages": 2,
+      "questions": 12,
+      "answers_checked": 12,
+      "md_blob": "3a1170a88a53a2d5717f3bc0e000c9a2aab5370b",
+      "key_blob": "df321200892ea470d1494b0866ebfd0e2faf93c7"
+    },
+    {
+      "slug": "universe-earth-rotation",
+      "evidence_page": 7,
+      "learner_pages": 3,
+      "key_pages": 2,
+      "questions": 14,
+      "answers_checked": 14,
+      "md_blob": "0073a884984f4a08d69fb534c6b4caebc8ecff34",
+      "key_blob": "ac6f5a912a2727cb9bdf373557af262311012e3e"
+    }
+  ],
+  "diagrams": [
+    {
+      "name": "longitude-strip.svg",
+      "blob": "73bf0331bff4e4b2937cf8e813f4dd81861f7a18"
+    },
+    {
+      "name": "planet-order.svg",
+      "blob": "619ef545d176abe50bf1dcc5311044f211ee0509"
+    },
+    {
+      "name": "earth-day-night.svg",
+      "blob": "df1e0d153d75668037e614a694fd006b40fc6267"
+    }
+  ],
+  "qa": {
+    "all_six_pdfs_a4": true,
+    "all_six_pdfs_forbidden_markup_matches": 0,
+    "learner_compilation_pages": 6,
+    "key_compilation_pages": 4,
+    "questions_found_in_learner_pdfs": 26,
+    "answers_found_in_key_pdfs": 26,
+    "learner_answer_or_provenance_leak": false,
+    "longitude_numeric_checks": 4,
+    "planet_order_and_rotation_fact_checked": true,
+    "visual_inspection": "Rendered first pages of both learner PDFs, local-time key first page, and ten-page compilation contact sheets inspected; three diagrams checked for labels, solar-time direction and day/night orientation. Not an exhaustive teacher review.",
+    "defect_fixed": "U+2212 minus glyph disappeared in PDF despite correct Markdown; final PDF renders ASCII hyphen-minus and pdftotext confirms subtraction sign."
+  },
+  "publication": {
+    "learner_markdown": "committed to main",
+    "teacher_key_markdown": "committed to main",
+    "svg_diagrams": "committed to main",
+    "pdf_individual": "downloadable ChatGPT only; not committed",
+    "pdf_compilations": "downloadable ChatGPT only; not committed",
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "prior_sst_units": {
+    "count": 5,
+    "topics": [
+      "historical EAC co-operation",
+      "location of East Africa",
+      "EAC founder/current membership",
+      "latitude",
+      "longitude"
+    ],
+    "access": "other browser chat temporary artifacts unavailable; not committed or recreated"
+  },
+  "next": "CRE source verification and new nonduplicative CRE batch; SST next return resolve scheme term labels and assess EAC formation/services vs prior provisional lessons."
+}
