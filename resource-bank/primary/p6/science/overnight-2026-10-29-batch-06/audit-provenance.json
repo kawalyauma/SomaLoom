@@ -1,0 +1,83 @@
+{
+  "batch_id": "p6-science-2026-10-29-06",
+  "date": "2026-10-29",
+  "subject": "P6 Science",
+  "scope": "Versioned correction of ruler diagram control-variable inconsistency, with re-rendered pitch lesson and two-supplement compilations",
+  "sources": {
+    "school_scheme": "resource-bank/reference-text/p6-science-2024/term-1-pages-001-057.txt",
+    "page": 18,
+    "original_pdf": "resource-bank/sources/cf231aaa9cfaca3090ffae3ff585791af127eb42c1e2c943021756e75833d74e.pdf",
+    "license": "unknown",
+    "learner_source_blob": "c1d851f14626d1d99f41b5066afa76609749a064",
+    "key_source_blob": "bb0cb44c8f9dfdc6946f8a1bfc2b9f9cc0cfcc6c"
+  },
+  "defect": {
+    "original_svg": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.diagram.svg",
+    "original_blob": "9a4498dcd689a0c08ba5af24fef41d2988a53972",
+    "ruler_a_length": 285,
+    "ruler_b_length": 335,
+    "problem": "Two drawings used different overall ruler lengths although lesson requires the same ruler"
+  },
+  "revision": {
+    "svg": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.v2.diagram.svg",
+    "svg_blob": "026777f326e65b6128e024ed32b7eefd2d171223",
+    "learner_md": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.v2.learner.md",
+    "learner_blob": "553b339be8abb6a50f1f91c891b3049059f69b4a",
+    "teacher_key_md": "resource-bank/lesson-notes/p6/science/term-1/topic-sound/pitch-experiments.qa-20261029.v2.teacher-key.md",
+    "key_blob": "bb0cb44c8f9dfdc6946f8a1bfc2b9f9cc0cfcc6c",
+    "ruler_a_length": 285,
+    "ruler_b_length": 285,
+    "free_overhang_a": 40,
+    "free_overhang_b": 115,
+    "source_original_preserved": true
+  },
+  "pdfs": [
+    {
+      "name": "pitch-experiments.qa-20261029.v2.learner.pdf",
+      "pages": 2,
+      "sha256": "252559de37aecae4edd449714060d738b5aae2ca3549253158749ee02ec90115"
+    },
+    {
+      "name": "pitch-experiments.qa-20261029.v2.teacher-key.pdf",
+      "pages": 1,
+      "sha256": "40639af3257b9a754d67dd04a9092820e060a42c325748ce083dfc83c47be077"
+    },
+    {
+      "name": "P6_Science_Term1_Supplements_learner_compilation_QA_v2.pdf",
+      "pages": 4,
+      "sha256": "f06e987f948f55132fea6ead97cd74e4c4d7b35927727d468ad7188dac5822ac"
+    },
+    {
+      "name": "P6_Science_Term1_Supplements_teacher_key_compilation_QA_v2.pdf",
+      "pages": 2,
+      "sha256": "87ba1a25c99670e5c9f46050bf62698d26ece42cfce6fc45d931f040ebea315b"
+    }
+  ],
+  "checks": {
+    "local_git_blob_matches_github": "3/3",
+    "svg_xml": "passed",
+    "equal_ruler_lengths": true,
+    "questions_in_pdf": "8/8",
+    "key_items_in_pdf": "8/8",
+    "pdfs_A4_and_extractable": "6/6 including 2 unchanged housefly PDFs",
+    "forbidden_markup": "0/6 PDFs",
+    "housefly_pages_text_preserved": true,
+    "compilation_pitch_text_matches_individual": true,
+    "visual_inspection": "full-resolution pitch learner pages 1-2 and teacher key page 1; four-page learner compilation contact sheet; no visible clipping",
+    "full_science_review": false
+  },
+  "publication": {
+    "learner_markdown": "committed",
+    "teacher_key_markdown": "committed",
+    "svg": "committed",
+    "pdfs": "downloadable ZIP only; NOT GitHub committed",
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "unresolved": [
+    "Old 11-topic Science Term1 PDF-preview questions mismatch canonical committed learner/key Markdown; not repaired here.",
+    "Full Science Term1 target-level curriculum coverage, teacher review, and app import incomplete."
+  ],
+  "next_science": "Rebuild canonical 11-topic learner/key PDF compilations from exact GitHub Markdown and verify every question/order; do not reuse mismatched previews",
+  "next_subject": "sst"
+}
