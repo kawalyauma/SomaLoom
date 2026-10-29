@@ -29,7 +29,7 @@ def test_student_pdf_clean_staff_audit_separate_and_chapters():
     source={'title':'P6 Mathematics Term 3','review_state':'draft','evidence_ids':['ev-1'],
       'body':{'sections':[
         {'title':'Week 1','chapter':True,'blocks':[]},
-        {'title':'Notes','blocks':[{'id':'a','type':'paragraph','text':'Learner explanation','citations':['ev-1']},
+        {'title':'Notes','blocks':[{'id':'a','type':'paragraph','text':'Learner explanation','citations':['ev-1']},{'id':'process','type':'paragraph','text':'The lesson allocation follows the supplied planning request.'},
           {'id':'worked','type':'paragraph','text':'Worked example: 2 + 3 = 5'},
           {'id':'q','type':'question','text':'Calculate 4 + 6.'},
           {'id':'ans','type':'answer','text':'SECRET ANSWER'}]},
@@ -40,6 +40,7 @@ def test_student_pdf_clean_staff_audit_separate_and_chapters():
     text='\n'.join(p.extract_text() for p in pdf.pages)
     assert 'Contents' in text and 'DRAFT' in text and 'Week 2' in text
     assert 'Worked example' in text
+    assert 'supplied planning request' not in text
     assert 'SECRET ANSWER' not in text and 'Evidence IDs' not in text and 'AUDIT SOURCE' not in text
     assert len(pdf.pages)>=3 and pdf.outline
     teacher=validate_document(source,audience='teacher',strict_visuals=False)
@@ -128,3 +129,13 @@ def test_full_term_week_and_lesson_books_use_source_slots_and_detect_missing(cli
     value=deepcopy(master);value['lessons'].append({**value['lessons'][-1],'week':3,'topic_id':str(uuid4()),'outcome_id':str(uuid4())})
     db.execute(masters.update().where(masters.c.id==mid).values(body=value));db.commit()
     with pytest.raises(ScopeNotReady,match='Week 3'):assemble(db,school.id,'P5','math',3)
+
+
+
+def test_single_week_pdf_does_not_waste_a_blank_cover_page():
+    from pypdf import PdfReader
+    doc={'title':'P6 Maths Week 1','review_state':'draft','body':{'sections':[
+        {'title':'Week 1','chapter':True,'blocks':[]},
+        {'title':'Notes','blocks':[{'id':'one','type':'paragraph','text':'Visible lesson text on the first page.'}]}]}}
+    reader=PdfReader(BytesIO(export_pdf(doc,require_approval=False)))
+    assert len(reader.pages)==1 and 'Visible lesson text' in reader.pages[0].extract_text()

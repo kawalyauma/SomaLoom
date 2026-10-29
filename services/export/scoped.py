@@ -59,7 +59,7 @@ def select_body(body, outcome_ids, *, whole_document):
     result = deepcopy(body)
     sections = []
     administrative = {'introduction','outcomes','learning_outcomes','prior_knowledge','vocabulary',
-                       'summary','references','review','teacher_review'}
+                       'summary','references','review','teacher_review','misconceptions'}
     for section in result.get('sections', []):
         blocks = []
         for block in section.get('blocks', []):
@@ -72,7 +72,8 @@ def select_body(body, outcome_ids, *, whole_document):
                 continue
             blocks.append(block)
         if blocks:
-            sections.append({**section, 'blocks':blocks})
+            titles={'learning_outcomes':'Learning outcomes','explanation':'Lesson notes','examples':'Worked examples','activities':'Activities','summary':'Summary','revision':'Practice and revision','prior_knowledge':'Before you begin','vocabulary':'Key words','misconceptions':'Common mistakes'}
+            sections.append({**section, 'title':titles.get(section.get('key'),section.get('title','')), 'blocks':blocks})
     if not any(b.get('type') in {'paragraph','question','activity','equation','table'} for s in sections for b in s['blocks']):
         raise ScopeNotReady('This lesson has no separately mapped content yet. Download the full week or finish its lesson mapping.')
     result['sections'] = sections

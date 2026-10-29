@@ -55,7 +55,8 @@ def learner_body(body):
                 answer_part = bool(re.match(r"^(answers?\b|answer key\b|marking guide\b)", text.strip(), re.I))
             if (answer_part or block.get("type") in {"answer", "marking_guide", "reference"}
                 or block.get("audience") == "teacher"
-                or re.match(r"^(?:Evidence IDs?:|Source (?:IDs?|URI):|Final teacher review\b)", text.strip(), re.I)):
+                or re.match(r"^(?:Evidence IDs?:|Source (?:IDs?|URI):|Final teacher review\b|Teacher-review requirements\b|Teacher reflection\b|The lesson allocation follows\b|Evidence boundaries\b|Editorial and licensing gap\b)", text.strip(), re.I)):
+
                 continue
             for field in ("answer", "marking_scheme", "rubric"):
                 block.pop(field, None)

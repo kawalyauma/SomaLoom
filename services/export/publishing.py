@@ -261,10 +261,13 @@ def export_pdf(
         toc = TableOfContents()
         toc.levelStyles = [normal]
         story.extend([toc, PageBreak()])
+    chapter_number = 0
     for section in data["body"]["sections"]:
-        if section.get("chapter") and story:
+        if section.get("chapter") and chapter_number:
             if not isinstance(story[-1], PageBreak):
                 story.append(PageBreak())
+        if section.get("chapter"):
+            chapter_number += 1
         if section.get("title"):
             paragraph = Paragraph(escape(str(section["title"])), heading)
             paragraph._is_chapter = bool(section.get("chapter"))
