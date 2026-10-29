@@ -396,6 +396,8 @@ def save_family(db, tenant_id, generation_id, kind, title, body):
             id=uuid4(), tenant_id=tenant_id, document_id=identifier, version=1, body=body
         )
     )
+    from services.images.queue import enqueue_document_images
+    enqueue_document_images(db, tenant_id, identifier)
     for eid in body["evidence_ids"]:
         db.execute(
             generation_evidence.insert().values(

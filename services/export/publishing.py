@@ -27,7 +27,7 @@ def _branding(branding: dict[str, str] | None) -> dict[str, str]:
     brand = branding or {}
     return {
         "school_name": str(brand.get("school_name") or "SomaLoom School"),
-        "footer": str(brand.get("footer") or "Prepared with SomaLoom"),
+        "footer": str(brand.get("footer") or brand.get("school_name") or "SomaLoom"),
     }
 
 
@@ -101,14 +101,14 @@ def export_docx(
             elif kind in {"figure", "diagram", "map", "chart", "image"}:
                 asset = block["_resolved_asset"]
                 out.add_picture(BytesIO(asset["bytes"]), width=Cm(15.5))
-                out.add_paragraph(asset["caption"] + " — " + asset["attribution"], style="Caption")
+                out.add_paragraph(asset["caption"] + ((" — " + asset["attribution"]) if audience == "teacher" else ""), style="Caption")
             elif kind == "reference":
                 out.add_paragraph(str(block.get("text", "")), style="Quote")
             elif kind in {"paragraph", "question", "activity", "answer", "marking_guide"}:
                 out.add_paragraph(str(block.get("text", "")))
             else:
                 raise DocumentValidationError("Unrenderable block: " + kind)
-            if block.get("citations"):
+            if audience == "teacher" and block.get("citations"):
                 out.add_paragraph("Evidence IDs: " + ", ".join(block["citations"]), style="Caption")
     stream = BytesIO()
     out.save(stream)
@@ -187,6 +187,7 @@ def export_pdf(
     from reportlab.lib.units import mm
     from reportlab.pdfbase import pdfmetrics
     from reportlab.pdfbase.ttfonts import TTFont
+    from reportlab.platypus.tableofcontents import TableOfContents
     from reportlab.platypus import (
         LongTable,
         PageBreak,
@@ -253,9 +254,21 @@ def export_pdf(
             Spacer(1, 6 * mm),
         ]
     )
+    chapters = sum(bool(s.get("chapter")) for s in data["body"]["sections"])
+    toc = None
+    if chapters > 1:
+        story.extend([Paragraph("Contents", heading), Spacer(1, 4 * mm)])
+        toc = TableOfContents()
+        toc.levelStyles = [normal]
+        story.extend([toc, PageBreak()])
     for section in data["body"]["sections"]:
+        if section.get("chapter") and story:
+            if not isinstance(story[-1], PageBreak):
+                story.append(PageBreak())
         if section.get("title"):
-            story.append(Paragraph(escape(str(section["title"])), heading))
+            paragraph = Paragraph(escape(str(section["title"])), heading)
+            paragraph._is_chapter = bool(section.get("chapter"))
+            story.append(paragraph)
         for block in section["blocks"]:
             kind = block["type"]
             txt = escape(str(block.get("text", ""))).replace("\n", "<br/>")
@@ -315,27 +328,46 @@ def export_pdf(
                 story.extend(
                     [
                         image,
-                        Paragraph(escape(asset["caption"] + " — " + asset["attribution"]), tiny),
+                        Paragraph(escape(asset["caption"] + ((" — " + asset["attribution"]) if audience == "teacher" else "")), tiny),
                     ]
                 )
             elif kind == "reference":
                 story.append(Paragraph(txt, tiny))
             elif kind in {"paragraph", "question", "activity", "answer", "marking_guide"}:
                 story.append(Paragraph(txt, normal))
+                if kind in {"question", "activity"} and audience == "student":
+                    story.append(Spacer(1, 6 * mm))
             else:
                 raise DocumentValidationError("Unrenderable block: " + kind)
-            if block.get("citations"):
+            if audience == "teacher" and block.get("citations"):
                 story.append(
                     Paragraph("Evidence IDs: " + escape(", ".join(block["citations"])), tiny)
                 )
 
+    is_draft = data.get("review_state") not in {"approved", "published"}
+
     def footer(canvas, pdf):
+        if is_draft:
+            canvas.saveState()
+            canvas.setFillColor(colors.HexColor("#80612c"))
+            canvas.setFont(font, 8)
+            canvas.drawRightString(A4[0] - 22 * mm, A4[1] - 14 * mm, "DRAFT · For review")
+            canvas.restoreState()
         canvas.setFont(font, 8)
         canvas.setFillColor(colors.HexColor("#546c75"))
         canvas.drawString(22 * mm, 15 * mm, brand["footer"])
         canvas.drawRightString(A4[0] - 22 * mm, 15 * mm, "Page " + str(pdf.page))
 
-    doc = SimpleDocTemplate(
+    class BookTemplate(SimpleDocTemplate):
+        def afterFlowable(self, flowable):
+            if isinstance(flowable, Paragraph) and getattr(flowable, "_is_chapter", False):
+                text = flowable.getPlainText()
+                key = "chapter-"+str(self.page)
+                self.canv.bookmarkPage(key)
+                self.canv.addOutlineEntry(text, key, level=0)
+                self.notify('TOCEntry', (0, text, self.page, key))
+
+    doc = BookTemplate(
         out,
         pagesize=A4,
         leftMargin=22 * mm,
@@ -345,5 +377,5 @@ def export_pdf(
         title=data["title"],
         author=brand["school_name"],
     )
-    doc.build(story, onFirstPage=footer, onLaterPages=footer)
+    doc.multiBuild(story, onFirstPage=footer, onLaterPages=footer)
     return out.getvalue()

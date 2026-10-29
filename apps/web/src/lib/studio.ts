@@ -18,7 +18,7 @@ export const routes = [
  {id: "documents", label: "My documents", group: "Workspace", symbol: "▤"},
  {id: "editor", label: "Document editor", group: "Workspace", symbol: "✎"},
  {id: "review", label: "Reviews & approvals", group: "Workspace", symbol: "✓"},
- {id: "publish", label: "Publishing center", group: "Workspace", symbol: "↗"},
+ {id: "publish", label: "PDF downloads", group: "Workspace", symbol: "↗"},
  {id: "library", label: "Reference library", group: "Sources", symbol: "▣"},
  {id: "statistics", label: "Resource statistics", group: "Sources", symbol: "▥"},
  {id: "upload", label: "Upload resources", group: "Sources", symbol: "↑"},

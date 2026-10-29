@@ -2,6 +2,7 @@
 from copy import deepcopy
 from io import BytesIO
 from uuid import UUID,uuid4
+from typing import Literal
 import hashlib
 from fastapi import APIRouter,Depends,HTTPException,UploadFile,File,Form,Response,Query
 from pydantic import BaseModel,Field,ConfigDict
@@ -38,8 +39,10 @@ class PromptInput(BaseModel):
     generation_id:UUID|None=None
 
 @router.get('')
-def list_images(user:User=Depends(current_user),db:Session=Depends(get_db)):
-    rows=db.execute(select(requests).where(requests.c.tenant_id==school(user)).order_by(requests.c.created_at.desc()).limit(100)).mappings().all()
+def list_images(status:str|None=Query(None,pattern="^(prompt_ready|generating|waiting|failed|imported)$"),user:User=Depends(current_user),db:Session=Depends(get_db)):
+    query=select(requests).where(requests.c.tenant_id==school(user))
+    if status:query=query.where(requests.c.status==status)
+    rows=db.execute(query.order_by(requests.c.created_at.asc() if status else requests.c.created_at.desc()).limit(100)).mappings().all()
     return {'items':[view(r) for r in rows]}
 
 @router.post('',status_code=201)
@@ -71,7 +74,7 @@ async def import_image(identifier:UUID,file:UploadFile=File(...),credit:str=Form
     if len(raw)>10*1024*1024:raise HTTPException(413,'The imported image exceeds the print size limit')
     sha=hashlib.sha256(raw).hexdigest();key=f'image-requests/{identifier}/{uuid4()}.png';configured_store().put(school(user),key,raw)
     assets=dict(row['metadata'].get('assets',{}));assets[sha]={'object_key':key,'credit':credit}
-    metadata={**row['metadata'],'assets':assets,'object_key':key,'sha256':sha,'width':width,'height':height,'credit':credit,'teacher_supplied':True}
+    metadata={**row['metadata'],'assets':assets,'object_key':key,'sha256':sha,'width':width,'height':height,'credit':credit,'teacher_supplied':row['metadata'].get('transport')!='server_chrome_chatgpt'}
     db.execute(requests.update().where(requests.c.id==identifier,requests.c.tenant_id==school(user)).values(status='imported',metadata=metadata));db.commit()
     return view(owned(db,user,identifier))
 
@@ -85,6 +88,7 @@ def content(identifier:UUID,sha:str|None=Query(None,pattern='^[a-f0-9]{64}$'),us
 
 class AttachInput(BaseModel):
     document_id:UUID
+    block_id:str|None=Field(default=None,max_length=200)
 
 @router.post('/{identifier}/attach')
 def attach(identifier:UUID,data:AttachInput,user:User=Depends(require_roles('teacher','school_admin')),db:Session=Depends(get_db)):
@@ -95,8 +99,60 @@ def attach(identifier:UUID,data:AttachInput,user:User=Depends(require_roles('tea
     version=db.execute(select(versions).where(versions.c.document_id==data.document_id,versions.c.tenant_id==school(user)).order_by(versions.c.version.desc()).limit(1)).mappings().first()
     if not version:raise HTTPException(409,'Document has no saved content')
     body=deepcopy(version['body']);ref='image-request:'+str(identifier)+':'+row['metadata']['sha256']
-    if not any(b.get('asset_ref')==ref for s in body.get('sections',[]) for b in s.get('blocks',[])):
-        body.setdefault('sections',[]).append({'title':row['title'],'blocks':[{'id':str(uuid4()),'type':'figure','asset_ref':ref,'caption':row['title'],'citations':[],'teacher_supplied':True}]})
+    target=data.block_id or row['metadata'].get('block_id')
+    figure={'id':str(uuid4()),'type':'figure','asset_ref':ref,'caption':row['title'],'citations':[],
+            'teacher_supplied':False,'generation_source':row['metadata'].get('generation_source','Imported image'),
+            'outcome_ids':row['metadata'].get('outcome_ids',[])}
+    changed=False
+    if target:
+        if row['metadata'].get('document_id') not in (None,str(data.document_id)):
+            raise HTTPException(409,'This image request belongs to a different document')
+        matched=False
+        for section in body.get('sections',[]):
+            for i,block in enumerate(section.get('blocks',[])):
+                if block.get('id')!=target:continue
+                matched=True
+                if block.get('asset_ref')==ref:break
+                if block.get('type')!='visual_needed':
+                    raise HTTPException(409,'This placeholder has changed; inspect the latest revision before attaching')
+                section['blocks'][i]={**figure,'id':target,'outcome_ids':block.get('outcome_ids',figure['outcome_ids']),
+                                       'citations':block.get('citations',[])}
+                changed=True
+        if not matched:raise HTTPException(409,'Image placeholder no longer exists in the latest revision')
+    elif not any(b.get('asset_ref')==ref for s in body.get('sections',[]) for b in s.get('blocks',[])):
+        body.setdefault('sections',[]).append({'title':row['title'],'blocks':[figure]});changed=True
+    if changed:
         body['review_state']='awaiting_review'
-        db.execute(versions.insert().values(id=uuid4(),tenant_id=school(user),document_id=data.document_id,version=version['version']+1,body=body));db.commit()
+        db.execute(versions.insert().values(id=uuid4(),tenant_id=school(user),document_id=data.document_id,version=version['version']+1,body=body))
+        db.execute(requests.update().where(requests.c.id==identifier,requests.c.tenant_id==school(user)).values(
+            metadata={**row['metadata'],'attached_document_id':str(data.document_id),'attached_version':version['version']+1}))
+        db.commit()
     return {'document_id':data.document_id,'image_id':identifier}
+
+
+@router.post('/from-document/{document_id}',status_code=201)
+def queue_document_images(document_id:UUID,user:User=Depends(require_roles('teacher','school_admin')),db:Session=Depends(get_db)):
+    document=db.scalar(select(documents.c.id).where(documents.c.id==document_id,documents.c.tenant_id==school(user)))
+    if not document:raise HTTPException(404,'Document not found')
+    from services.images.queue import enqueue_document_images
+    identifiers=enqueue_document_images(db,school(user),document_id,user.id)
+    db.commit()
+    return {'items':[view(owned(db,user,identifier)) for identifier in identifiers]}
+
+
+class ImageProgress(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    status:Literal['generating','waiting','prompt_ready','failed']
+    chat_url:str|None=Field(default=None,max_length=250,pattern=r'^https://chatgpt\.com/c/[a-zA-Z0-9-]+$')
+    error:str|None=Field(default=None,max_length=500)
+    next_retry_at:str|None=Field(default=None,max_length=80)
+
+
+@router.post('/{identifier}/progress')
+def image_progress(identifier:UUID,data:ImageProgress,user:User=Depends(require_roles('teacher','school_admin')),db:Session=Depends(get_db)):
+    row=owned(db,user,identifier,True)
+    if row['status']=='imported':raise HTTPException(409,'This image is already imported')
+    metadata={**row['metadata'],**data.model_dump(exclude={'status'},exclude_none=True)}
+    db.execute(requests.update().where(requests.c.id==identifier,requests.c.tenant_id==school(user)).values(status=data.status,metadata=metadata))
+    db.commit()
+    return view(owned(db,user,identifier))

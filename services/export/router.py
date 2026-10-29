@@ -550,3 +550,52 @@ def review_version(
         "document_version_id": str(version_id),
         "decision": payload.decision,
     }
+
+
+class ScopedPDFRequest(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    grade: str = Field(min_length=1, max_length=80)
+    subject: str = Field(min_length=1, max_length=120)
+    term: int = Field(ge=1, le=3)
+    week: int | None = Field(default=None, ge=1, le=53)
+    lesson: int | None = Field(default=None, ge=1, le=50)
+    audience: Literal['student', 'teacher'] = 'student'
+    edition: Literal['draft', 'approved'] = 'draft'
+
+
+@router.get('/exports/catalog')
+def pdf_catalog(user: User = Depends(current_user), db: Session = Depends(get_db)):
+    from services.export.scoped import catalog
+    return {'items':catalog(db, _school_user(user))}
+
+
+@router.post('/exports/scoped-pdf')
+def scoped_pdf(payload: ScopedPDFRequest, request: Request,
+               user: User = Depends(current_user), db: Session = Depends(get_db)):
+    from services.export.scoped import assemble, ScopeNotReady
+    import re
+    tenant = _school_user(user)
+    if payload.lesson is not None and payload.week is None:
+        raise HTTPException(422, 'Choose a week before choosing a lesson.')
+    if payload.edition == 'draft' and user.role not in {'teacher','school_admin','reviewer'}:
+        raise HTTPException(403, 'Draft downloads are for school staff only.')
+    try:
+        document = assemble(db, tenant, payload.grade, payload.subject, payload.term,
+                            payload.week, payload.lesson, approved=payload.edition=='approved')
+        _validate_evidence(db, tenant, document['body'])
+        school = db.get(School, tenant)
+        content = export_pdf(document, branding={'school_name':school.name if school else 'SomaLoom'},
+            audience=payload.audience, require_approval=payload.edition=='approved',
+            asset_resolver=resolver(db, tenant))
+    except ScopeNotReady as exc:
+        raise HTTPException(409, str(exc)) from exc
+    except (DocumentValidationError, ValueError) as exc:
+        raise HTTPException(422, str(exc)) from exc
+    if len(content) > 30*1024*1024:
+        raise HTTPException(413, 'PDF is too large. Download a week at a time.')
+    audit(db, user, 'export.scoped.'+payload.edition, document['source_versions'][0]['version_id'], request)
+    db.commit()
+    filename=re.sub(r'[^A-Za-z0-9_-]+','-',document['title']).strip('-')+'-'+payload.edition+'.pdf'
+    return Response(content, media_type='application/pdf', headers={
+        'Content-Disposition':f'attachment; filename="{filename}"', 'Cache-Control':'no-store',
+        'X-Content-Type-Options':'nosniff','X-SomaLoom-Edition':payload.edition})

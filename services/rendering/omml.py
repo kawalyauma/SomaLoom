@@ -35,6 +35,8 @@ SYMBOLS = {
     "sum": "∑",
     "int": "∫",
     "rightarrow": "→",
+    "Rightarrow": "⇒",
+    "approx": "≈",
 }
 
 
@@ -44,9 +46,14 @@ def _element(name: str, parent: ET.Element | None = None) -> ET.Element:
     return ET.SubElement(parent, f"{{{NS}}}{name}")
 
 
-def _run(text: str) -> ET.Element:
+def _run(text: str, normal: bool = False) -> ET.Element:
     node = _element("r")
+    if normal:
+        props = _element("rPr", node)
+        _element("nor", props).set(f"{{{NS}}}val", "1")
     t = _element("t", node)
+    if text != text.strip():
+        t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
     t.text = text
     return node
 
@@ -82,10 +89,27 @@ class _Parser:
             if self.i < len(self.src):
                 char = self.src[self.i]
                 self.i += 1
+                if char in {",", ";", ":", " ", "!"}:
+                    return [
+                        _run({",": "\u2009", ";": "\u2005", ":": "\u2005", " ": " ", "!": ""}[char])
+                    ]
                 return [_run(char)]
             raise ValueError("Dangling LaTeX backslash")
         word = command.group()
         self.i += len(word)
+        if word in {"text", "mathrm"}:
+            if self._peek() != "{":
+                raise ValueError("Math text requires a braced group")
+            end = self.src.find("}", self.i + 1)
+            if end < 0:
+                raise ValueError("Unclosed math text")
+            literal = self.src[self.i + 1 : end]
+            if "\\" in literal or "{" in literal:
+                raise ValueError("Nested commands in math text are unsupported")
+            self.i = end + 1
+            return [_run(literal, normal=True)]
+        if word in {"quad", "qquad"}:
+            return [_run("\u2003" * (2 if word == "qquad" else 1))]
         if word == "frac":
             numerator, denominator = self._group(), self._group()
             f = _element("f")

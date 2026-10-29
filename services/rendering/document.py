@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from typing import Any
+import re
 
 ALLOWED_BLOCKS = {
     "heading",
@@ -34,6 +35,38 @@ class DocumentValidationError(ValueError):
     """An unsafe, incomplete or structurally invalid publication."""
 
 
+def learner_body(body):
+    """Keep audit material in saved revisions while omitting it from pupil publications."""
+    body = deepcopy(body)
+    sections = []
+    for section in body.get("sections", []):
+        title = str(section.get("title", ""))
+        key = str(section.get("key", "")).casefold()
+        if (section.get("audience") == "teacher" or key in {"references", "sources", "evidence", "review", "teacher_review", "teacher_key", "answer_key", "marking_guide", "editorial"}
+            or re.match(r"^(references?\b|sources?\b|evidence\b|teacher review\b|audit\b|answer key\b|marking guide\b)", title, re.I)):
+            continue
+        clean = deepcopy(section)
+        clean["title"] = re.sub(r"\s*(?:,?\s*and|&)\s+Answers\s*$", "", title, flags=re.I)
+        blocks = []
+        answer_part = False
+        for block in clean.get("blocks", []):
+            text = str(block.get("text", ""))
+            if block.get("type") == "heading":
+                answer_part = bool(re.match(r"^(answers?\b|answer key\b|marking guide\b)", text.strip(), re.I))
+            if (answer_part or block.get("type") in {"answer", "marking_guide", "reference"}
+                or block.get("audience") == "teacher"
+                or re.match(r"^(?:Evidence IDs?:|Source (?:IDs?|URI):|Final teacher review\b)", text.strip(), re.I)):
+                continue
+            for field in ("answer", "marking_scheme", "rubric"):
+                block.pop(field, None)
+            blocks.append(block)
+        clean["blocks"] = blocks
+        if blocks or clean.get("chapter"):
+            sections.append(clean)
+    body["sections"] = sections
+    return body
+
+
 def validate_document(
     document: dict[str, Any],
     *,
@@ -54,6 +87,9 @@ def validate_document(
         raise DocumentValidationError("Document body.sections is required")
     if not body["sections"]:
         raise DocumentValidationError("Document must contain at least one section")
+    if audience == "student":
+        if all(isinstance(s, dict) and isinstance(s.get("blocks"), list) for s in body["sections"]):
+            result["body"] = body = learner_body(body)
     evidence = set(result.get("evidence_ids") or [])
     if any(not isinstance(eid, str) for eid in evidence):
         raise DocumentValidationError("Evidence identifiers must be strings")
@@ -75,6 +111,8 @@ def validate_document(
                 raise DocumentValidationError("Citation identifiers must be strings")
             if citations and (not evidence or not set(citations).issubset(evidence)):
                 raise DocumentValidationError("A block cites evidence absent from the document")
+            if re.search(r"</?(?:super|sub)>|&(?:amp;)?(?:lt|gt);", str(block.get("text", ""))):
+                raise DocumentValidationError("Text contains unrendered math/HTML markup; repair it before PDF export")
             if block["type"] == "table":
                 rows = block.get("rows")
                 if (
@@ -118,6 +156,8 @@ def validate_document(
                 block.pop("answer", None)
                 block.pop("marking_scheme", None)
                 block.pop("rubric", None)
+                block.pop("citations", None)
+                block.pop("citation_ids", None)
                 permitted.append(block)
             section["blocks"] = permitted
     return result
