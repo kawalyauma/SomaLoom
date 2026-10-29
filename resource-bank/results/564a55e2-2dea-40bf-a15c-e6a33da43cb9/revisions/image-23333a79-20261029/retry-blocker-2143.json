@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-29T21:45:06.911195+00:00",
+  "image_request_id": "23333a79-5c23-4c03-b869-74d6112e9647",
+  "issue": 138,
+  "chat_url": "https://chatgpt.com/c/6ae3b5b6-6ed8-83e9-a5d3-453509de723d",
+  "controlled_retry_count_this_batch": 1,
+  "persisted_response": "Something went wrong while generating your image. Sorry about that.",
+  "no_new_png_returned": true,
+  "previous_png_rejected": true,
+  "imported": false,
+  "attached": false,
+  "next_retry_at": "2026-10-29T22:14:55.431Z",
+  "teacher_reviewed": false,
+  "published": false,
+  "next_action": "Recover same chat after backoff; do not duplicate request or reuse rejected image"
+}

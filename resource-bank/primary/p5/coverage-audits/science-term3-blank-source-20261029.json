@@ -1,0 +1,79 @@
+{
+  "observed_source_bytes": 914,
+  "sha256": "351d3f88ff3b98980ce15d05339eefce1ea24ec8e0cc39556901ed3ff6599777",
+  "pages": 1,
+  "text_by_page": [
+    " \n"
+  ],
+  "image_counts": [
+    0
+  ],
+  "upstream_raw_url_http_status": 404,
+  "observed_at": "2026-10-29T21:44:56.521359+00:00",
+  "resource_id": "ada7eb10-2783-4b9e-a011-3f6cb4d18d59",
+  "resource_version_id": "2fcd5902-986c-4800-aec0-343e01f281d1",
+  "import_id": "ce89b6fe-0453-5d10-a196-8de1783a7bd0",
+  "diagnosis": "Source PDF is one blank page; no usable text, images or scheme rows. Do not retry OCR or invent allocations.",
+  "replacement_candidates": [
+    {
+      "resource_id": "ac761db3-9550-4bce-ae0d-a50834734900",
+      "resource_version_id": "591b50a5-1b40-47fe-b74e-d771e1976ea5",
+      "title": "P.5 SCIENCE SCHEME FOR TERM 3",
+      "sha256": "ff29a72e00ecb06e07bdf446f2f7f208b95987f8fc478bf9b0ae5d9da44af82c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/cc3e8fa04cebe4e9de7d3a8b3e4167328403b180/P.5%20SCIENCE%20SCHEME%20FOR%20TERM%203.pdf",
+      "declared_bytes": 329970,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    },
+    {
+      "resource_id": "b88fea1c-6944-4b0d-bfbc-e45025cab8d4",
+      "resource_version_id": "4e97d91f-47c5-4d68-8c5d-69febf790dd0",
+      "title": "P.5 SCIENCE SCHEME OF WORK TERM 3",
+      "sha256": "fd7d0f727c829cf067c2e403701eab00a3b240e09638dcc6c3cac13c63fd954b",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/22d09e397bdf508751d5727cf98809f1d9f1e795/P.5%20SCIENCE%20SCHEME%20OF%20WORK%20TERM%203.docx",
+      "declared_bytes": 52334,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    },
+    {
+      "resource_id": "4d138b90-f129-438c-b2f7-34baf50dfa44",
+      "resource_version_id": "621159a6-8fc5-410f-9ce1-67b406c3d1a3",
+      "title": "P.5 SCI SCHEME TERM III.",
+      "sha256": "7f161784ce1b0cd93983991f1e7d8db2e9f2f9e6ea65707eb8057b1470658a75",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/f5c572e3ec721a270bbfc47c2778361a4e61e710/P.5%20SCI%20SCHEME%20TERM%20III..docx",
+      "declared_bytes": 111710,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    },
+    {
+      "resource_id": "9d2ff6ba-90f1-4b8c-ba68-023f3924999b",
+      "resource_version_id": "c893750d-b962-4fca-8e91-aff1e089dc13",
+      "title": "P.5 Science scheme termIII 2019",
+      "sha256": "b822d7b0f8ae73d73fc99617da6fbc8870d8b90d8fd5ea3453ff8f7ee0892759",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1f71c5185ed0cf209acb054b02d06ae0f2927419/P.5%20Science%20scheme%20termIII%202019.docx",
+      "declared_bytes": 80031,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    },
+    {
+      "resource_id": "c0957c41-6888-49c3-9646-ea831583c55a",
+      "resource_version_id": "4214ff31-49a8-46e8-a93f-800fcd0d3769",
+      "title": "THIRD TERM P.5 SCIENCE SCHEME OF WORK",
+      "sha256": "21a8c8edb44892885a9ca5ae8d6130ab7a2b9861fb2539fcf8fc40b9c9a3cd09",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/2aeff64bb39b8a2720beb5d944a19cfd7aa18ce0/THIRD%20TERM%20P.5%20SCIENCE%20SCHEME%20OF%20WORK.pdf",
+      "declared_bytes": 353465,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    },
+    {
+      "resource_id": "72510042-2c6f-4e51-a4c1-e316e15e3704",
+      "resource_version_id": "d3b00db7-3357-4c9b-ba95-e5afd28e9386",
+      "title": "p.5 science scheme term 3....new",
+      "sha256": "e15c6ae606c135a790cf5e84b3cf03e9d3e91a6f3f64865ccf40b9a02514bb2f",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1532eb125052ce055bcf1304195190499c2507d6/p.5%20science%20scheme%20term%203....new.docx",
+      "declared_bytes": 40234,
+      "candidate_content_verified": false,
+      "next_action": "Inspect existing authorized resource and reconcile source rows before accepting replacement"
+    }
+  ]
+}
