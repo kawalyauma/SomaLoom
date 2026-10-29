@@ -1,0 +1,33 @@
+{
+  "issue": 138,
+  "image_request_id": "23333a79-5c23-4c03-b869-74d6112e9647",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "block_id": "391c98e9-42ea-4691-9c56-25aa61944745",
+  "outcome_ids": [
+    "48c8d756-a080-562b-97cc-01817b1601e3"
+  ],
+  "chat_url": "https://chatgpt.com/c/6ae3b5b6-6ed8-83e9-a5d3-453509de723d",
+  "original_image_sha256": "bfc71fe8b251f88126196532a1b1d0bacd0394ce3fc7340b8ec49ca982346ae6",
+  "validation": "Rejected: side-length ticks used instead of parallel-arrow marks; proportions differ from source coordinates",
+  "correction_response": "Something went wrong while generating your image. Sorry about that.",
+  "imported": false,
+  "attached": false,
+  "teacher_reviewed": false,
+  "published": false,
+  "next_retry_at": "2026-10-29T21:42:07.534Z",
+  "next_action": "Recover same saved ChatGPT chat after recurring-error backoff; retain source mapping and obtain verified PNG before importing. Do not regenerate notes.",
+  "source_audit": {
+    "api_cap": 100,
+    "list_may_be_truncated": true,
+    "p5_p6_title_matched_source_count_in_page": 56,
+    "p5_p6_master_count": 6,
+    "awaiting_external_in_current_page": 47,
+    "ready_in_current_page": 7,
+    "classification_pending_in_current_page": 1,
+    "failed_in_current_page": 1,
+    "failed_source_title": "P.5 SCI SCHEME TERM III",
+    "failed_source_error": "scheme_extraction_incomplete",
+    "preserved_known_target_records": 529,
+    "complete_coverage_verified": false
+  }
+}
