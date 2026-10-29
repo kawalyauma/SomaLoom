@@ -62,8 +62,17 @@ def select_body(body, outcome_ids, *, whole_document):
                        'summary','references','review','teacher_review','misconceptions'}
     for section in result.get('sections', []):
         blocks = []
+        owner = None
         for block in section.get('blocks', []):
             linked = set(map(str, block.get('outcome_ids', [])))
+            if block.get('type') == 'heading' and len(linked) == 1:
+                owner = linked
+            if owner is not None:
+                # A source-mapped lesson heading owns its following examples and notes.
+                # Shared prerequisites may cite other outcomes without changing that boundary.
+                if owner <= outcome_ids and (not linked or linked.intersection(outcome_ids)):
+                    blocks.append(block)
+                continue
             if not linked.intersection(outcome_ids):
                 continue
             if not linked <= outcome_ids:

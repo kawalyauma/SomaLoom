@@ -141,3 +141,16 @@ def test_single_week_pdf_does_not_waste_a_blank_cover_page():
         {'title':'Notes','blocks':[{'id':'one','type':'paragraph','text':'Visible lesson text on the first page.'}]}]}}
     reader=PdfReader(BytesIO(export_pdf(doc,require_approval=False)))
     assert len(reader.pages)==1 and 'Visible lesson text' in reader.pages[0].extract_text()
+
+
+
+def test_explicit_lesson_boundaries_keep_shared_examples_with_the_right_lesson():
+    body={'sections':[{'key':'explanation','title':'Detailed lessons','blocks':[
+        {'id':'h1','type':'heading','text':'Lesson 1','outcome_ids':['one']},
+        {'id':'p1','type':'paragraph','text':'FIRST_LESSON_SHARED_BACKGROUND','outcome_ids':['one','two']},
+        {'id':'h2','type':'heading','text':'Lesson 2','outcome_ids':['two']},
+        {'id':'p2','type':'paragraph','text':'SECOND_LESSON_EXAMPLE','outcome_ids':['one','two']}]}]}
+    first=str(select_body(body,{'one'},whole_document=False))
+    second=str(select_body(body,{'two'},whole_document=False))
+    assert 'FIRST_LESSON_SHARED_BACKGROUND' in first and 'SECOND_LESSON_EXAMPLE' not in first
+    assert 'SECOND_LESSON_EXAMPLE' in second and 'FIRST_LESSON_SHARED_BACKGROUND' not in second
