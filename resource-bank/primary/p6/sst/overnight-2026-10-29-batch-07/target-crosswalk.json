@@ -1,0 +1,64 @@
+{
+  "subject": "P6 SST",
+  "batch": "07",
+  "source": {
+    "school_scheme": "resource-bank/sources/8a4bdabdb385707a229b27f8789049b23f329c5832a10b24ababfd9e4a47a6c6.pdf",
+    "request": "resource-bank/requests/4582e76d-3c4d-5488-b1ce-21491a1738dd/",
+    "evidence_pages": [
+      8,
+      9
+    ],
+    "evidence_block_ids": [
+      "d9ca460d-35d8-5707-81a1-3955064bffa3",
+      "338bd168-b7ab-59bd-9098-1a980e58df31"
+    ],
+    "ncdc": "https://ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+    "ncdc_pdf_pages": [
+      319,
+      320,
+      321
+    ],
+    "ncdc_topic": "Term I, East African Community, 50 periods for entire topic; no verified school-week allocation",
+    "facts": [
+      "https://www.eac.int/abouteacat25/eachistoryat25",
+      "https://www.eac.int/index.php",
+      "https://www.eac.int/integration-pillars",
+      "https://www.eac.int/common-market"
+    ],
+    "school_scheme_license": "unknown",
+    "ncdc_license": "NCDC © 2010 all rights reserved; lesson prose/diagrams original",
+    "original_school_pdf_visual_review": "unavailable; scheme evidence text used",
+    "term": "NCDC Term I; original school scheme term/week cells unverified",
+    "week": null,
+    "period": null
+  },
+  "units": [
+    {
+      "slug": "first-eac-shared-services",
+      "school_scheme_page": 8,
+      "curriculum_targets": [
+        "Outline and explain shared EAC services 1967–1977",
+        "Distinguish historical services from modern EAC"
+      ],
+      "status": "generated_and_markdown_committed",
+      "teacher_reviewed": false
+    },
+    {
+      "slug": "eac-objectives-and-benefits",
+      "school_scheme_page": 9,
+      "curriculum_targets": [
+        "Discuss objectives and benefits of EAC since 1967",
+        "Explain objectives of revived EAC without claiming goals fully achieved"
+      ],
+      "status": "generated_and_markdown_committed",
+      "teacher_reviewed": false
+    }
+  ],
+  "other_subject_units_unchanged": true,
+  "existing_sst_units_preserved": [
+    "local-time-and-time-zones",
+    "universe-earth-rotation"
+  ],
+  "prior_five_provisional_local_only": "not accessible; not regenerated",
+  "all_term_coverage_complete": false
+}
