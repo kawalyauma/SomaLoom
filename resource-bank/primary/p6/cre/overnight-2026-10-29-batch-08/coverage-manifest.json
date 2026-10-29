@@ -1,0 +1,454 @@
+{
+  "schema": "somaloom-p6-cre-target-crosswalk-v1",
+  "date": "2026-10-29",
+  "class": "P6",
+  "subject": "Christian Religious Education",
+  "strand": "CRE only (IRE separate)",
+  "source": {
+    "name": "NCDC Uganda Primary Six Curriculum Set One, CRE Part I (2010)",
+    "url": "https://www.ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+    "pdf_outline_pages": [
+      206,
+      207
+    ],
+    "licence": "NCDC copyright all rights reserved; targets paraphrased, original prose and SVGs; no reproduction of source tables"
+  },
+  "school_scheme": "P6 CRE school scheme with verified week/individual period allocations not acquired. Topic-level period totals are official NCDC; no individual allocations invented.",
+  "topic_count": 10,
+  "subtopic_count": 37,
+  "topics": [
+    {
+      "term": 1,
+      "topic": "God Created Me",
+      "topic_periods": 7,
+      "subtopics": [
+        {
+          "subtopic": "Understanding and appreciating myself as a unique person",
+          "status": "reported_generated_in_other_chat_unrecovered",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "How to relate with others with consideration and respect",
+          "status": "reported_generated_in_other_chat_unrecovered",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Definition and value of work",
+          "status": "reported_generated_in_other_chat_unrecovered",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 1,
+      "topic": "Evil and Suffering",
+      "topic_periods": 11,
+      "subtopics": [
+        {
+          "subtopic": "Suffering",
+          "status": "reported_generated_in_other_chat_unrecovered",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Jesus’ example of sharing in the suffering with others",
+          "status": "reported_generated_in_other_chat_unrecovered",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "How to share in the suffering of others",
+          "status": "generated_and_markdown_committed",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/sharing-in-the-suffering-of-others.overnight03.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/sharing-in-the-suffering-of-others.overnight03.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Our response to suffering",
+          "status": "generated_and_markdown_committed",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/our-response-to-suffering.overnight03.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/our-response-to-suffering.overnight03.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 1,
+      "topic": "God Calls His People",
+      "topic_periods": 10,
+      "subtopics": [
+        {
+          "subtopic": "Restoration of broken relationships",
+          "status": "generated_and_markdown_committed",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/restoring-broken-relationships.overnight03.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/restoring-broken-relationships.overnight03.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Bible characters who received messages from God",
+          "status": "generated_markdown_svg_committed_pdf_local_pending_review",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/bible-messengers-and-responses.overnight08.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/bible-messengers-and-responses.overnight08.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false,
+          "batch": "overnight-2026-10-29-batch-08"
+        },
+        {
+          "subtopic": "The promise of salvation",
+          "status": "generated_markdown_svg_committed_pdf_local_pending_review",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/promise-of-salvation-mary-and-john.overnight08.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/promise-of-salvation-mary-and-john.overnight08.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false,
+          "batch": "overnight-2026-10-29-batch-08"
+        },
+        {
+          "subtopic": "God’s message for his people today",
+          "status": "generated_markdown_svg_committed_pdf_local_pending_review",
+          "learner_md": "resource-bank/lesson-notes/p6/cre/term-1/responding-to-gods-message-today.overnight08.learner.md",
+          "key_md": "resource-bank/lesson-notes/p6/cre/term-1/responding-to-gods-message-today.overnight08.teacher-key.md",
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false,
+          "batch": "overnight-2026-10-29-batch-08"
+        }
+      ]
+    },
+    {
+      "term": 2,
+      "topic": "Christ is the Answer",
+      "topic_periods": 6,
+      "subtopics": [
+        {
+          "subtopic": "Christ’s concern",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Prayers",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Forgiveness",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 2,
+      "topic": "Christ’s Gift for the Journey",
+      "topic_periods": 5,
+      "subtopics": [
+        {
+          "subtopic": "Sacraments",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Jesus as a way to God",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Holy Spirit",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 2,
+      "topic": "How to Behave on the Way",
+      "topic_periods": 10,
+      "subtopics": [
+        {
+          "subtopic": "Community life",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Taking care of God’s creation",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Selfishness and its results",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Unselfishness and its benefits",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 3,
+      "topic": "People on the Way",
+      "topic_periods": 10,
+      "subtopics": [
+        {
+          "subtopic": "The people we meet",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "International diversity",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "The needs and desires of people we meet",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Our response in different needs",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 3,
+      "topic": "Friends on the Way",
+      "topic_periods": 8,
+      "subtopics": [
+        {
+          "subtopic": "Friendship",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Qualities of a good friend",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Qualities people look for in marriage partners",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 3,
+      "topic": "Christian Involvement in the World",
+      "topic_periods": 11,
+      "subtopics": [
+        {
+          "subtopic": "Our talents",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "The role of Christians in development",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "The role of science and technology in development",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Christians and the law",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Demonstrating good citizenship",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Participating in the electoral process",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    },
+    {
+      "term": 3,
+      "topic": "Happiness on the Way to Arrival",
+      "topic_periods": 11,
+      "subtopics": [
+        {
+          "subtopic": "Developing relationship with God",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Life and death",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        },
+        {
+          "subtopic": "Suffering: causes and how to endure",
+          "status": "not_generated",
+          "learner_md": null,
+          "key_md": null,
+          "pdf_committed": false,
+          "imported": false,
+          "teacher_reviewed": false
+        }
+      ]
+    }
+  ],
+  "this_batch": {
+    "new_subtopics": 3,
+    "learner_md_committed": 3,
+    "key_md_committed": 3,
+    "original_svg_committed": 3,
+    "individual_pdfs_downloadable": 6,
+    "compilation_pdfs_downloadable": 2,
+    "pdf_binaries_committed": 0,
+    "teacher_reviewed": 0,
+    "imported": 0
+  },
+  "next_cre": "Term I > God Calls His People > Bible characters who received messages from God",
+  "next_rotation": "ire",
+  "term_complete": false,
+  "all_terms_complete": false,
+  "revision": "batch08-new-immutable-snapshot",
+  "parent_manifest": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-03/coverage-manifest.json",
+  "new_subtopics_committed": 3,
+  "pdf_binary_publication": "pending; GitHub UTF-8 connector cannot read local binary files",
+  "next_cre_target": "Term II / Christ is the Answer / Christ’s concern (topic 6 periods, no per-subtopic week allocation)",
+  "not_recovered": "Earlier five reported CRE first-batch files exist only in other chat and were not assumed accessible",
+  "status_counts": {
+    "reported_generated_in_other_chat_unrecovered": 5,
+    "generated_and_markdown_committed": 3,
+    "generated_markdown_svg_committed_pdf_local_pending_review": 3,
+    "not_generated": 26
+  }
+}
