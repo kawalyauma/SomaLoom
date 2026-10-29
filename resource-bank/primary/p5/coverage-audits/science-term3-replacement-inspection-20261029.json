@@ -1,0 +1,60 @@
+{
+  "related_issue": 129,
+  "replacements_inspected": [
+    {
+      "resource_id": "ac761db3-9550-4bce-ae0d-a50834734900",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/cc3e8fa04cebe4e9de7d3a8b3e4167328403b180/P.5%20SCIENCE%20SCHEME%20FOR%20TERM%203.pdf",
+      "sha256": "ff29a72e00ecb06e07bdf446f2f7f208b95987f8fc478bf9b0ae5d9da44af82c",
+      "pages": 14,
+      "page_text_lengths": [
+        292,
+        1612,
+        1839,
+        1363,
+        1685,
+        1361,
+        1636,
+        1109,
+        1499,
+        1444,
+        1403,
+        1325,
+        1674,
+        2215
+      ],
+      "page_image_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "resource_id": "b88fea1c-6944-4b0d-bfbc-e45025cab8d4",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/22d09e397bdf508751d5727cf98809f1d9f1e795/P.5%20SCIENCE%20SCHEME%20OF%20WORK%20TERM%203.docx",
+      "sha256": "fd7d0f727c829cf067c2e403701eab00a3b240e09638dcc6c3cac13c63fd954b",
+      "paragraph_count": 3,
+      "table_count": 1,
+      "row_counts": [
+        57
+      ]
+    }
+  ],
+  "source_hashes_verified": true,
+  "literal_docx_data_rows_indexed_privately": 56,
+  "all_source_rows_crosswalked": false,
+  "new_lesson_or_week_allocations_accepted": false,
+  "existing_coverage_targets_preserved": 529,
+  "full_curriculum_coverage_verified": false,
+  "next_action": "Crosswalk literal rows to existing master/source records before accepting alternative timetable; do not retry blank PDF extraction"
+}

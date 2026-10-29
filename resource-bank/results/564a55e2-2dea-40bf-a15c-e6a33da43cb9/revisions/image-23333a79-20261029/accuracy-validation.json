@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-29T22:21:47.418957+00:00",
+  "source_block_id": "391c98e9-42ea-4691-9c56-25aa61944745",
+  "method": "Read actual ChatGPT artifact pixels against unchanged original source geometry, plus visual label/marker inspection",
+  "source_coordinates": {
+    "A": [
+      0,
+      0
+    ],
+    "B": [
+      8,
+      0
+    ],
+    "C": [
+      11,
+      4
+    ],
+    "D": [
+      3,
+      4
+    ],
+    "E": [
+      3,
+      0
+    ]
+  },
+  "pixel_transform": {
+    "x_origin": 305,
+    "y_origin": 1450,
+    "pixels_per_unit": 215
+  },
+  "verified_vertices": {
+    "A": [
+      305,
+      1450
+    ],
+    "B": [
+      2025,
+      1450
+    ],
+    "C": [
+      2670,
+      590
+    ],
+    "D": [
+      950,
+      590
+    ],
+    "E": [
+      950,
+      1450
+    ]
+  },
+  "all_four_edges_present": true,
+  "perpendicular_dashed_height_black_fraction": 0.5534246575342465,
+  "visual_checks": {
+    "labels_ABCD_E_b_h_correct": true,
+    "both_pairs_parallel_arrows": true,
+    "right_angle_at_E": true,
+    "no_numeric_labels": true,
+    "no_clipping": true
+  },
+  "authorship": "Existing regular ChatGPT Chat authored PNG using Python Pillow; Codex inspected only",
+  "accuracy_check": "passed",
+  "educator_approval_pending": true
+}

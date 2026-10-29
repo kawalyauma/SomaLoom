@@ -1,0 +1,13 @@
+{
+  "issue": 138,
+  "status": "imported_and_attached_draft",
+  "image_request_id": "23333a79-5c23-4c03-b869-74d6112e9647",
+  "chat_url": "https://chatgpt.com/c/6ae3b5b6-6ed8-83e9-a5d3-453509de723d",
+  "authorship": "Existing regular ChatGPT browser Chat produced corrected PNG using Python Pillow; Codex only validated and transported. Earlier inaccurate image-generator raster was rejected.",
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "week3_remaining_visual_placeholders": 3,
+  "full_week_export": "Still blocked until remaining visuals are resolved; no success claimed",
+  "individual_lesson_export": "Existing combined lesson blocks still require minimal ChatGPT source-preserving split; no new notes authored"
+}
