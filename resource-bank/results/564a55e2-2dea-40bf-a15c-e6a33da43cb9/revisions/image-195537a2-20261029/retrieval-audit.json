@@ -1,0 +1,33 @@
+{
+  "issue": 138,
+  "image_request_id": "195537a2-bc47-4183-8dc5-905201df49fc",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "block_id": "ac0a4787-2ef2-4225-b66a-2f22b98cfe4d",
+  "chat_url": "https://chatgpt.com/c/6ae3d28f-03b0-83ea-8b9b-9646be87d18c",
+  "first_raster_sha256": "fdcc8ae9dd1d9b927ef96577e03296bff52f810f6ba2bb88676c9ad05d19e020",
+  "first_raster_validation": "Rejected: oblique cube projection instead of requested isometric, nonuniform net-square sizes and cramped right margin",
+  "same_chat_correction_submitted": true,
+  "send_timeout_recovered_without_duplicate": true,
+  "chatgpt_advertised_artifact": {
+    "filename": "p6_isometric_cube_six_square_net_300dpi.png",
+    "reported_dimensions": [
+      3600,
+      1900
+    ],
+    "reported_tool": "Python Pillow",
+    "actual_bytes_retrieved_and_verified": false
+  },
+  "retrieval_error": "Timeout20000ms waiting for browser download after clicking Download file; no saved PNG artifact",
+  "next_retry_at": "2026-10-29T23:31:56.783Z",
+  "imported": false,
+  "attached": false,
+  "teacher_reviewed": false,
+  "published": false,
+  "next_action": "Recover exact existing attachment in same chat, preferably ask to embed an inline preview of that PNG without redrawing if Download file cannot be retrieved. Do not resubmit generation or reuse rejected raster.",
+  "week3_cleanup_packet_prepared": {
+    "staff_answer_candidates": 47,
+    "multi_outcome_block_conflicts": 3,
+    "no_substantive_content_rewritten": true
+  },
+  "full_p5_p6_coverage_verified": false
+}
