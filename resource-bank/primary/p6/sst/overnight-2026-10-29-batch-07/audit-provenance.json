@@ -1,0 +1,69 @@
+{
+  "batch_id": "p6-sst-2026-10-29-07",
+  "date": "2026-10-29",
+  "subject": "SST",
+  "source": {
+    "school_scheme": "resource-bank/sources/8a4bdabdb385707a229b27f8789049b23f329c5832a10b24ababfd9e4a47a6c6.pdf",
+    "request": "resource-bank/requests/4582e76d-3c4d-5488-b1ce-21491a1738dd/",
+    "evidence_pages": [
+      8,
+      9
+    ],
+    "evidence_block_ids": [
+      "d9ca460d-35d8-5707-81a1-3955064bffa3",
+      "338bd168-b7ab-59bd-9098-1a980e58df31"
+    ],
+    "ncdc": "https://ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+    "ncdc_pdf_pages": [
+      319,
+      320,
+      321
+    ],
+    "ncdc_topic": "Term I, East African Community, 50 periods for entire topic; no verified school-week allocation",
+    "facts": [
+      "https://www.eac.int/abouteacat25/eachistoryat25",
+      "https://www.eac.int/index.php",
+      "https://www.eac.int/integration-pillars",
+      "https://www.eac.int/common-market"
+    ],
+    "school_scheme_license": "unknown",
+    "ncdc_license": "NCDC © 2010 all rights reserved; lesson prose/diagrams original",
+    "original_school_pdf_visual_review": "unavailable; scheme evidence text used",
+    "term": "NCDC Term I; original school scheme term/week cells unverified",
+    "week": null,
+    "period": null
+  },
+  "crosswalk_file": "target-crosswalk.json",
+  "qa": {
+    "units": 2,
+    "individual_learner_pdfs": 2,
+    "individual_teacher_key_pdfs": 2,
+    "learner_compilation_pages": 6,
+    "key_compilation_pages": 2,
+    "question_answer_pairs": 24,
+    "questions_and_answers": "12/12 each, numbering and correspondence checked",
+    "a4_text_extractability_bounds": "passed all six PDFs",
+    "raw_super_sub_html_matches": 0,
+    "rendered_visual_review": "all six learner compilation pages inspected as contact sheet; first key page full-resolution; fixed writing-lines-after-content-list layout defect; no full teacher review",
+    "markdown_blob_match": "4/4 GitHub blobs match local Markdown",
+    "svg_blob_match": "2/2 GitHub blobs match local SVG",
+    "historical_accuracy": "1967–77 first EAC distinct from 1999 treaty and 2000 revived EAC; four pillars not all achieved"
+  },
+  "publication": {
+    "full_learner_markdown": "2 committed on main",
+    "full_teacher_key_markdown": "2 committed on main",
+    "original_svg": "2 committed on main",
+    "pdf_individual": "4 generated and downloadable, not GitHub committed",
+    "pdf_compilations": "2 generated and downloadable, not GitHub committed",
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "status": "partial; Term I/II/III incomplete",
+  "unresolved": [
+    "Original school PDF table/term/week/period columns not visually accessible",
+    "Five earlier provisional SST lessons remain inaccessible/uncommitted",
+    "Remaining SST target crosswalk incomplete",
+    "PDF binary publication via current GitHub UTF-8 tool not performed",
+    "Human teacher review pending"
+  ]
+}
