@@ -26,7 +26,7 @@ Name: __________________________  Date: __________________
 **Situation C — A difficult day:** A pupil fails a test. The pupil can pray, ask for guidance, review mistakes and study again. Trust does not mean refusing to make an effort.
 
 ### A decision path
-**Notice a problem** → **Choose a peaceful action** → **Ask for help if needed** → **Protect people and property**.
+**Notice a problem**; then **choose a peaceful action**; **ask for help if needed**; **protect people and property**.
 
 ### Practice
 1. What is humility?
