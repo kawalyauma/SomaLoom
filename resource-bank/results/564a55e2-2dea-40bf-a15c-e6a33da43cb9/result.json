@@ -1,0 +1,1560 @@
+{
+  "schema_version": "teaching.v1",
+  "title": "Primary Six Mathematics — Term 3, Week 3: Trapezium, Parallelogram, Rhombus, Kite and Cube (Lessons 1–6) — Draft",
+  "review_status": "needs_review",
+  "revision": 1,
+  "sections": [
+    {
+      "key": "introduction",
+      "title": "Introduction — Six Mathematics Lessons",
+      "outcome_ids": [
+        "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+        "48c8d756-a080-562b-97cc-01817b1601e3",
+        "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+        "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+        "573cc02d-1f66-553e-bb53-8997b8cc996f",
+        "55953a80-ba0a-516f-949e-7335744faf4e"
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Class: Primary Six (P6). Subject: Mathematics. Term: Three. Week: Three. Topic in uploaded scheme: Length, mass and capacity. This document contains six lessons on plane shapes and cubes. Draft — teacher review required.",
+          "citation_ids": [
+            "6865c156-f40b-5d00-b85e-83d558fb6b91",
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef",
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52",
+            "3f3f0273-8b4c-5f42-9871-a411172be467",
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": []
+        },
+        {
+          "kind": "table",
+          "text": "Selected week and lesson sequence.",
+          "rows": [
+            [
+              "Lesson",
+              "Subtopic"
+            ],
+            [
+              "1",
+              "Trapezium: missing side and perimeter"
+            ],
+            [
+              "2",
+              "Area of a parallelogram"
+            ],
+            [
+              "3",
+              "Area and perimeter of a rhombus"
+            ],
+            [
+              "4",
+              "Area of a kite"
+            ],
+            [
+              "5",
+              "Volume and total surface area of a cube"
+            ],
+            [
+              "6",
+              "Finding a cube's side from volume or total surface area"
+            ]
+          ],
+          "citation_ids": [
+            "a36b7337-98ec-518d-b9d0-9aa9fa7c6e23",
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef",
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52",
+            "3f3f0273-8b4c-5f42-9871-a411172be467",
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be",
+            "04fa43d9-839f-57d1-b0d9-f0902d9bd690"
+          ],
+          "outcome_ids": []
+        },
+        {
+          "kind": "paragraph",
+          "text": "Review notice: The uploaded schemes are planning references, not verified official curriculum endorsements. Some lesson allocations were inferred by the source application. Examples, exercise numbers and most explanations below are original instructional material. The supplied evidence does not establish those particular examples. They require teacher review. No licensed diagram assets or verified page locations were supplied. All diagrams are requests for new original illustrations, not reproduced reference images.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "learning_outcomes",
+      "title": "Learning Outcomes",
+      "outcome_ids": [
+        "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+        "48c8d756-a080-562b-97cc-01817b1601e3",
+        "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+        "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+        "573cc02d-1f66-553e-bb53-8997b8cc996f",
+        "55953a80-ba0a-516f-949e-7335744faf4e"
+      ],
+      "blocks": [
+        {
+          "kind": "list",
+          "text": "Lesson 1: Calculate a missing side and the perimeter of a trapezium.",
+          "citation_ids": [
+            "6865c156-f40b-5d00-b85e-83d558fb6b91"
+          ],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 2: Read and draw a parallelogram.",
+          "citation_ids": [
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 3: Find the area and perimeter of a rhombus.",
+          "citation_ids": [
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 4: Draw a kite and show its lines of symmetry.; Find its area and perimeter.",
+          "citation_ids": [
+            "3f3f0273-8b4c-5f42-9871-a411172be467"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 5: Find the volume and total surface area of a cube.",
+          "citation_ids": [
+            "0c6aac90-ab9a-59ba-af53-169a42756d1e"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 6: Find a cube's side given its volume or total surface area.",
+          "citation_ids": [
+            "a1aefc9c-2ec8-5b65-b352-58dbc5ccebb0"
+          ],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "prior_knowledge",
+      "title": "What You Already Know",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Before these lessons, revise measuring lengths in centimetres and metres, adding and subtracting lengths, multiplying whole numbers, and finding the perimeter and area of familiar shapes.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Warm-up: (a) Find the perimeter of a rectangle measuring 8 cm by 5 cm. (b) Find its area. (c) Calculate 7 × 7 and 7 × 7 × 7. (d) Explain the difference between a line segment and an area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Warm-up answers for checking: (a) 26 cm; (b) 40 cm²; (c) 49 and 343; (d) a line segment has length, while area measures the surface enclosed by a shape.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "vocabulary",
+      "title": "Important Mathematical Words",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Use these definitions throughout Lessons 1–6.",
+          "rows": [
+            [
+              "Word",
+              "Meaning"
+            ],
+            [
+              "Perimeter",
+              "The total distance around a flat shape."
+            ],
+            [
+              "Area",
+              "The amount of surface inside a flat shape, measured in square units."
+            ],
+            [
+              "Parallel lines",
+              "Straight lines in the same plane that stay the same distance apart and never meet."
+            ],
+            [
+              "Trapezium",
+              "A quadrilateral with exactly one pair of parallel opposite sides, using the convention adopted in these notes."
+            ],
+            [
+              "Parallelogram",
+              "A quadrilateral with both pairs of opposite sides parallel."
+            ],
+            [
+              "Rhombus",
+              "A quadrilateral with four equal sides."
+            ],
+            [
+              "Kite",
+              "A quadrilateral with two distinct pairs of equal adjacent sides, using the conventional non-rhombus kite here."
+            ],
+            [
+              "Diagonal",
+              "A line segment joining two non-adjacent vertices."
+            ],
+            [
+              "Base",
+              "The side chosen as the reference for measuring perpendicular height."
+            ],
+            [
+              "Perpendicular height",
+              "The shortest distance between the relevant parallel lines, measured at 90°."
+            ],
+            [
+              "Line of symmetry",
+              "A line that divides a figure into two matching mirror-image halves."
+            ],
+            [
+              "Cube",
+              "A solid with six equal square faces."
+            ],
+            [
+              "Volume",
+              "The amount of three-dimensional space occupied by a solid."
+            ],
+            [
+              "Total surface area",
+              "The sum of the areas of all the outer faces of a solid."
+            ],
+            [
+              "Cube root",
+              "A number which, multiplied by itself three times, gives the stated number."
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f",
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Vocabulary review: Definitions of trapezium and kite can differ between textbooks. These notes use exactly one pair of parallel sides for a trapezium and two distinct pairs of adjacent equal sides for a kite. Check local textbook conventions before teaching. A general kite under this convention normally has one line of symmetry, while a rhombus has two.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "explanation",
+      "title": "Detailed Lesson Notes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1 — TRAPEZIUM: MISSING SIDE AND PERIMETER",
+          "citation_ids": [
+            "6865c156-f40b-5d00-b85e-83d558fb6b91"
+          ],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A trapezium is a four-sided shape with one pair of opposite sides parallel, under our chosen definition. The remaining two sides need not be equal. The parallel sides may be called the bases.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original labelled trapezium ABCD.",
+          "visual_instruction": "Draw trapezium ABCD in the plane with A=(0,0), B=(10,0), C=(7,4), D=(2,4). Join A-B-C-D-A. AB and DC are the parallel sides. Put no side-length labels on this conceptual drawing. Mark the parallel sides with matching arrows. This is an original construction, not an image from the scheme.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Perimeter is the sum of all four sides. To find a missing side, subtract the total of the three known sides from the perimeter. All lengths must be expressed in the same unit. If neither the perimeter nor sufficient additional measurements are given, a missing side cannot always be determined.",
+          "citation_ids": [
+            "502afe93-b6f3-5b73-9b58-2bdfe47fc3e8"
+          ],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a trapezium:",
+          "latex": "P=a+b+c+d",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Missing fourth side when three sides and the perimeter are known:",
+          "latex": "d=P-(a+b+c)",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2 — AREA OF A PARALLELOGRAM",
+          "citation_ids": [
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A parallelogram is a four-sided shape with two pairs of parallel opposite sides. Its opposite sides are equal in length. Its opposite angles are also equal. A parallelogram can be slanted or rectangular.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "To draw a parallelogram: 1. Draw a straight base AB. 2. Mark another point D above it and to one side. 3. Draw a line through D parallel to AB. 4. Draw a line through B parallel to AD. 5. Name the intersection of these lines C. 6. Join the four vertices in order A-B-C-D.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original parallelogram showing its base and perpendicular height.",
+          "visual_instruction": "Construct parallelogram ABCD with A=(0,0), B=(8,0), C=(11,4), D=(3,4). Draw a dashed perpendicular from D to E=(3,0). Mark the right angle at E. Label AB as base b and DE as perpendicular height h. Do not confuse sloping side AD with the height. Show both pairs of opposite sides with matching parallel marks.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The area of a parallelogram is found by multiplying its base by the perpendicular height. Its height is not necessarily its sloping side. A right triangle can be moved from one end of a parallelogram to the other to make a rectangle of equal area. Therefore the rectangle and parallelogram have the same base-times-height area.",
+          "citation_ids": [
+            "cc70bc02-cd7d-5405-9872-f13c7535e6f0"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a parallelogram:",
+          "latex": "A=b\\times h",
+          "citation_ids": [
+            "cc70bc02-cd7d-5405-9872-f13c7535e6f0"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "If the base and perpendicular height are measured in centimetres, the area is expressed in square centimetres (cm²). The additional area calculation is included because the allocated subtopic is area, while the exact recorded learning outcome concentrates on reading and drawing the shape.",
+          "citation_ids": [
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3 — AREA AND PERIMETER OF A RHOMBUS",
+          "citation_ids": [
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A rhombus is a quadrilateral with four equal sides. Its opposite sides are parallel. Its diagonals bisect each other at right angles. The diagonals also bisect its opposite angles. A square is a special rhombus.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "A rhombus with two labelled diagonals.",
+          "visual_instruction": "Draw rhombus ABCD using A=(0,3), B=(4,0), C=(8,3), D=(4,6). Draw diagonals AC and BD. Mark their intersection O with a right-angle symbol. Mark all four sides equal. Indicate AC=d1 and BD=d2 without attaching numerical values.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The perimeter of a rhombus is four times the length of one side. Its area is half the product of its diagonals. The area can also be calculated by multiplying a chosen side by its corresponding perpendicular height.",
+          "citation_ids": [
+            "6f88b595-4db7-57d8-a2b5-f316d12edf2d"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a rhombus:",
+          "latex": "P=4s",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a rhombus using diagonals:",
+          "latex": "A=\\frac{1}{2}d_1d_2",
+          "citation_ids": [
+            "6f88b595-4db7-57d8-a2b5-f316d12edf2d"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a rhombus using a side as base and its perpendicular height:",
+          "latex": "A=b\\times h",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Remember: The diagonals are not generally equal. When using the diagonal formula, use the full lengths of both diagonals.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4 — AREA AND PERIMETER OF A KITE",
+          "citation_ids": [
+            "3f3f0273-8b4c-5f42-9871-a411172be467"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A kite is a quadrilateral with two distinct pairs of equal adjacent sides. Adjacent sides meet at a vertex. A general kite of this kind has one line of symmetry. That line passes through the two vertices where the equal sides meet. Its two diagonals cross at right angles. The symmetry diagonal bisects the other diagonal.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original kite with diagonal and symmetry labels.",
+          "visual_instruction": "Draw kite ABCD with A=(0,5), B=(3,2), C=(0,-1), D=(-3,2), then adjust A to (0,7) so that AB=AD and CB=CD but AB differs from CB. Draw the vertical diagonal AC and horizontal diagonal BD. Show AC as the only line of symmetry using a dashed line, mark the perpendicular intersection, and label full diagonals d1 and d2. Label pairs AB=AD and BC=CD, without inventing measurements.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The area of a kite equals half the product of its diagonals. Its perimeter equals the sum of its four sides. If one pair of equal sides measures a and the other pair measures b, its perimeter is twice the sum of a and b.",
+          "citation_ids": [
+            "5cd7c848-2c13-558c-8725-5e974cd8e8d0"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a kite:",
+          "latex": "A=\\frac{1}{2}d_1d_2",
+          "citation_ids": [
+            "5cd7c848-2c13-558c-8725-5e974cd8e8d0"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a kite:",
+          "latex": "P=2(a+b)",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The word kite in geometry refers to a precise shape. A flying kite made of cloth or paper may not have exactly the same shape. Use the properties of the drawn mathematical kite, not the appearance of an everyday object.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5 — VOLUME AND TOTAL SURFACE AREA OF A CUBE",
+          "citation_ids": [
+            "0c6aac90-ab9a-59ba-af53-169a42756d1e",
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A cube is a three-dimensional solid. It has six equal square faces, twelve equal edges and eight vertices. Every edge has the same length. A cuboid also has six faces, but its three dimensions need not be equal.",
+          "citation_ids": [
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "A cube and its six-square net.",
+          "visual_instruction": "Draw an original clear isometric cube, label one edge s, and show three visible square faces. Beside it draw an original cube net containing six equal squares: four squares in a straight row, one square joined above the second, and one joined below the second. Label each square face as area s². Do not depict a licensed textbook figure.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Volume measures space inside a solid. To find the volume of a cube, multiply its side by itself three times. The answer is expressed in cubic units, such as cm³ or m³.",
+          "citation_ids": [
+            "f5f3ce3d-466f-569a-a087-6bf90dd3ae50"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Volume of a cube:",
+          "latex": "V=s\\times s\\times s=s^3",
+          "citation_ids": [
+            "f5f3ce3d-466f-569a-a087-6bf90dd3ae50"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Total surface area is the combined area of all six faces. Each square face has area s × s. Multiply the area of one face by six. The answer is expressed in square units, such as cm² or m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Total surface area of a cube:",
+          "latex": "\\mathrm{TSA}=6\\times s\\times s=6s^2",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Comparing volume and total surface area.",
+          "rows": [
+            [
+              "Feature",
+              "Volume",
+              "Total surface area"
+            ],
+            [
+              "Meaning",
+              "Space occupied by the solid",
+              "Area of all its outer faces"
+            ],
+            [
+              "Cube formula",
+              "s³",
+              "6s²"
+            ],
+            [
+              "Unit when s is in cm",
+              "cm³",
+              "cm²"
+            ],
+            [
+              "Example for s=2 cm",
+              "8 cm³",
+              "24 cm²"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6 — FINDING THE SIDE OF A CUBE",
+          "citation_ids": [
+            "a1aefc9c-2ec8-5b65-b352-58dbc5ccebb0",
+            "04fa43d9-839f-57d1-b0d9-f0902d9bd690"
+          ],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Sometimes the volume or total surface area of a cube is given, but the side length is unknown. We work backwards to find the side.",
+          "citation_ids": [
+            "a1aefc9c-2ec8-5b65-b352-58dbc5ccebb0"
+          ],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "When volume is known, find the number which multiplies by itself three times to give that volume. This is the cube root. When total surface area is known, divide it by six to find the area of one face. Then find the square root to obtain the side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding the side when volume is given:",
+          "latex": "s=\\sqrt[3]{V}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding the side when total surface area is given:",
+          "latex": "s=\\sqrt{\\frac{\\mathrm{TSA}}{6}}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A side length is always positive for a real cube. A volume in cm³ or a surface area in cm² gives a side length in cm. Always check by substituting the side into the original formula.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "examples",
+      "title": "Worked Examples — Lessons 1–6",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1: Worked Examples",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A trapezium has sides measuring 12 cm, 8 cm, 7 cm and 9 cm. Find its perimeter. Solution: P = 12 + 8 + 7 + 9 = 36 cm. Answer: 36 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A trapezium has a perimeter of 42 cm. Three sides measure 14 cm, 9 cm and 11 cm. Find the fourth side. Solution: Known sides = 14 + 9 + 11 = 34 cm. Missing side = 42 − 34 = 8 cm. Check: 14 + 9 + 11 + 8 = 42 cm. Answer: 8 cm. Assume the given measurements belong to a geometrically possible trapezium.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: An isosceles trapezium has parallel sides of 15 cm and 9 cm. Its two non-parallel sides are equal, and its perimeter is 38 cm. Find each equal side. Solution: Sum of parallel sides = 24 cm. Sum of equal sides = 38 − 24 = 14 cm. Each equal side = 14 ÷ 2 = 7 cm. Check: 15 + 9 + 7 + 7 = 38 cm. Answer: 7 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2: Worked Examples",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: Draw parallelogram ABCD. Use a base AB of 6 cm and an adjacent side AD of 4 cm making an angle of 60° with AB. Make AB parallel to DC and AD parallel to BC. Label all vertices. Explain which opposite sides are parallel. This is a proposed construction and should be checked against the actual drawing.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A parallelogram has a base of 14 cm and a perpendicular height of 6 cm. Find its area. Solution: A = b × h = 14 × 6 = 84 cm². Answer: 84 cm².",
+          "citation_ids": [
+            "cc70bc02-cd7d-5405-9872-f13c7535e6f0"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A parallelogram has an area of 72 cm² and a base of 12 cm. Find its perpendicular height. Solution: h = A ÷ b = 72 ÷ 12 = 6 cm. Answer: 6 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3: Worked Examples",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A rhombus has a side length of 9 cm. Find its perimeter. Solution: P = 4 × 9 = 36 cm. Answer: 36 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: The diagonals of a rhombus measure 16 cm and 12 cm. Find its area. Solution: A = ½ × 16 × 12 = 96 cm². Answer: 96 cm². The half-diagonals are 8 cm and 6 cm, so its side is 10 cm by the right-triangle relationship. Its perimeter is therefore 40 cm.",
+          "citation_ids": [
+            "6f88b595-4db7-57d8-a2b5-f316d12edf2d"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A rhombus has an area of 120 cm². One diagonal is 15 cm. Find the other diagonal. Solution: 120 = ½ × 15 × d₂. Therefore 240 = 15 × d₂. So d₂ = 240 ÷ 15 = 16 cm. Check: ½ × 15 × 16 = 120 cm². Answer: 16 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4: Worked Examples",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A kite has diagonals measuring 14 cm and 8 cm. Find its area. Solution: A = ½ × 14 × 8 = 56 cm². Answer: 56 cm².",
+          "citation_ids": [
+            "5cd7c848-2c13-558c-8725-5e974cd8e8d0"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A kite has two sides of 7 cm and another two sides of 11 cm. Find its perimeter. Solution: P = 7 + 7 + 11 + 11 = 36 cm. Alternatively P = 2(7 + 11) = 36 cm. Answer: 36 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: The area of a kite is 90 cm². One diagonal measures 15 cm. Find the other diagonal. Solution: 90 = ½ × 15 × d₂. Therefore 180 = 15 × d₂. d₂ = 12 cm. Check: ½ × 15 × 12 = 90 cm². Answer: 12 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5: Worked Examples",
+          "citation_ids": [
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A cube has a side length of 10 cm. Find its volume and total surface area. Solution: V = 10 × 10 × 10 = 1,000 cm³. TSA = 6 × 10 × 10 = 600 cm². Answers: Volume = 1,000 cm³; total surface area = 600 cm².",
+          "citation_ids": [
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A cube has edges of 5 m. Find its volume and total surface area. Solution: V = 5³ = 125 m³. TSA = 6 × 5² = 150 m². Answers: 125 m³ and 150 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A solid cube measures 20 cm along each edge. Calculate its volume and total surface area. Solution: V = 20³ = 8,000 cm³. TSA = 6 × 20² = 2,400 cm². Answers: 8,000 cm³ and 2,400 cm². For a completely closed cube, all six faces are included in TSA.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6: Worked Examples",
+          "citation_ids": [
+            "04fa43d9-839f-57d1-b0d9-f0902d9bd690"
+          ],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A cube has a volume of 216 cm³. Find its side. Solution: s³ = 216. Since 6 × 6 × 6 = 216, s = 6 cm. Check: 6³ = 216 cm³. Answer: 6 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: The total surface area of a cube is 384 cm². Find its side length. Solution: 6s² = 384. Divide by 6: s² = 64. Take the positive square root: s = 8 cm. Check: 6 × 8² = 384 cm². Answer: 8 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A cube has a volume of 729 m³. Calculate its edge length and total surface area. Solution: 9 × 9 × 9 = 729, so s = 9 m. TSA = 6 × 9² = 6 × 81 = 486 m². Answers: Side = 9 m; total surface area = 486 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "activities",
+      "title": "Pupil Activities and Exercises",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1 — Trapezium Exercise",
+          "citation_ids": [
+            "6865c156-f40b-5d00-b85e-83d558fb6b91"
+          ],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: Draw a trapezium. Mark its parallel sides. Measure each side with a ruler. Add the four measurements to calculate its perimeter. Compare answers with a partner. Use measurements from your own drawing, not an invented diagram.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 1: (1) Find the perimeter of a trapezium whose sides measure 8 cm, 10 cm, 7 cm and 9 cm. (2) A trapezium has a perimeter of 50 cm. Three sides are 16 cm, 13 cm and 12 cm. Find the fourth side. (3) The parallel sides of an isosceles trapezium measure 14 cm and 8 cm. Its equal non-parallel sides each measure 5 cm. Find the perimeter. (4) An isosceles trapezium has perimeter 46 cm and parallel sides 12 cm and 16 cm. Find each of its equal non-parallel sides. (5) Explain why a missing side cannot usually be calculated from the other three side lengths alone.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 1 answers for teacher checking: (1) 34 cm; (2) 9 cm; (3) 32 cm; (4) 9 cm each; (5) the total perimeter or additional geometric information is needed. Check the geometric feasibility of any drawing used to illustrate the numerical exercises.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2 — Parallelogram Exercise",
+          "citation_ids": [
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef"
+          ],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: On squared paper, plot A(1,1), B(7,1), C(9,5) and D(3,5). Join A-B-C-D-A. Name the figure. Identify the two pairs of parallel sides. Draw and label a perpendicular from D to AB. Count the square units along its base and height.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 2: (1) Draw a parallelogram and label it PQRS. (2) State two properties of its opposite sides. (3) A parallelogram has a base of 11 cm and perpendicular height of 7 cm. Find the area. (4) A parallelogram covers 96 cm² and has a base of 16 cm. Find its height. (5) A parallelogram has a sloping side of 10 cm, a base of 12 cm and a perpendicular height to that base of 8 cm. Find its area. (6) Explain why a sloping side cannot always replace perpendicular height.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 2 answers for teacher checking: Activity: parallelogram; AB parallel to DC; AD parallel to BC; base 6 units and height 4 units. Questions: (1) valid labelled parallelogram; (2) opposite sides parallel and equal; (3) 77 cm²; (4) 6 cm; (5) 96 cm²; (6) sloping length is not necessarily perpendicular to the base.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3 — Rhombus Exercise",
+          "citation_ids": [
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52"
+          ],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: Draw a rhombus. Mark its equal sides and draw its diagonals. Use a ruler and set square to investigate how the diagonals meet. Explain the difference between its perimeter and its area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 3: (1) Find the perimeter of a rhombus with side 13 cm. (2) Find the area of a rhombus whose diagonals are 18 cm and 10 cm. (3) A rhombus has a perimeter of 60 cm. Find one side. (4) Its diagonals measure 24 cm and 7 cm. Find its area. (5) The area is 144 cm² and one diagonal is 18 cm. Find the other diagonal. (6) A rhombus has a base of 10 cm and corresponding perpendicular height of 8 cm. Find its area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 3 answers for teacher checking: (1) 52 cm; (2) 90 cm²; (3) 15 cm; (4) 84 cm²; (5) 16 cm; (6) 80 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4 — Kite Exercise",
+          "citation_ids": [
+            "3f3f0273-8b4c-5f42-9871-a411172be467"
+          ],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: Draw a conventional kite on squared paper. Draw its diagonals. Mark its line of symmetry. Fold a paper drawing along the symmetry line and observe whether its two halves match. Use paper folding only; no sharp cutting tools are needed.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 4: (1) Draw a kite and show its line of symmetry. (2) A kite has diagonals of 20 cm and 9 cm. Find its area. (3) Two of its sides measure 6 cm each, and the other two measure 10 cm each. Find its perimeter. (4) The area of a kite is 72 cm². One diagonal is 12 cm. Find the other. (5) A kite has diagonals of 18 cm and 14 cm. Find its area. (6) Explain why the area cannot generally be calculated from only its perimeter.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 4 answers for teacher checking: (1) correctly drawn kite with its symmetry diagonal; (2) 90 cm²; (3) 32 cm; (4) 12 cm; (5) 126 cm²; (6) perimeter alone does not determine the lengths of the diagonals or the area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5 — Cube Volume and Surface Area Exercise",
+          "citation_ids": [
+            "0c6aac90-ab9a-59ba-af53-169a42756d1e"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: Examine a clean, closed cube-shaped box or a teacher's cube model. Count its faces, edges and vertices. Sketch a net of six equal squares. Imagine the net folded into a cube. Explain why the total surface area consists of six square faces.",
+          "citation_ids": [
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be"
+          ],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 5: (1) State the number of faces, edges and vertices of a cube. (2) Find the volume of a cube of side 4 cm. (3) Find the total surface area of a cube of side 7 cm. (4) A cube has a side of 12 cm. Calculate both volume and total surface area. (5) A cube has an edge of 3 m. Find its volume in m³ and total surface area in m². (6) Explain why cm² is not the correct unit for volume.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 5 answers for teacher checking: (1) 6 faces, 12 edges and 8 vertices; (2) 64 cm³; (3) 294 cm²; (4) 1,728 cm³ and 864 cm²; (5) 27 m³ and 54 m²; (6) volume has three dimensions and is measured in cubic units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6 — Finding a Cube's Side Exercise",
+          "citation_ids": [
+            "a1aefc9c-2ec8-5b65-b352-58dbc5ccebb0"
+          ],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity: Make a table of cubes for the whole numbers from 1 to 10. Use the table to identify side lengths from volumes. Then select a side length, calculate its total surface area, and exchange the result with a partner who must work backwards to recover the side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Exercise 6: (1) Find the side of a cube of volume 125 cm³. (2) The total surface area of a cube is 150 cm². Find its side. (3) A cube has volume 512 m³. Find its side. (4) The total surface area is 600 cm². Find its side. (5) A cube has volume 1,000 cm³. Find its side and total surface area. (6) A cube has total surface area 294 cm². Find its side and volume.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 6 answers for teacher checking: (1) 5 cm; (2) 5 cm; (3) 8 m; (4) 10 cm; (5) 10 cm and 600 cm²; (6) 7 cm and 343 cm³.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Editable teacher reflection — Lessons 1–6: Record which learners identified shapes correctly, which learners confused height with sloping sides, and which learners need further practice in perimeter, square units, cubic units, square roots and cube roots. Teacher observations: ________. Support required: ________. Follow-up date: ________.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "misconceptions",
+      "title": "Common Mistakes and Their Corrections",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Read each common error and the correct idea.",
+          "rows": [
+            [
+              "Lesson",
+              "Common mistake",
+              "Correct idea"
+            ],
+            [
+              "1",
+              "Adding only the parallel sides of a trapezium.",
+              "Perimeter includes all four sides."
+            ],
+            [
+              "1",
+              "Finding the missing side by adding the other three.",
+              "When perimeter is known, subtract the sum of known sides."
+            ],
+            [
+              "2",
+              "Using the sloping side as the height.",
+              "Use the perpendicular height to the chosen base."
+            ],
+            [
+              "2",
+              "Using square centimetres to describe a length.",
+              "Length uses cm; area uses cm²."
+            ],
+            [
+              "3",
+              "Using the diagonal lengths to calculate rhombus perimeter.",
+              "Perimeter is four times a side; diagonals determine area."
+            ],
+            [
+              "3",
+              "Forgetting the half in the diagonal area formula.",
+              "Multiply the diagonals and divide by two."
+            ],
+            [
+              "4",
+              "Assuming every kite has two symmetry lines.",
+              "A non-rhombus kite normally has one symmetry line."
+            ],
+            [
+              "4",
+              "Using half of one diagonal without knowing it is a half.",
+              "The area formula uses both full diagonal lengths."
+            ],
+            [
+              "5",
+              "Writing volume in cm².",
+              "Volume uses cm³; surface area uses cm²."
+            ],
+            [
+              "5",
+              "Multiplying the edge by six to find total surface area.",
+              "Multiply six by the area of one square face."
+            ],
+            [
+              "6",
+              "Dividing volume by three to find a side.",
+              "Find the cube root of the volume."
+            ],
+            [
+              "6",
+              "Dividing TSA by six and treating the result as the side.",
+              "TSA divided by six gives the area of one face; take its positive square root."
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f",
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "summary",
+      "title": "Summary — Important Rules and Formulae",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Quick reference for the six lessons.",
+          "rows": [
+            [
+              "Shape or solid",
+              "Important formula",
+              "Units"
+            ],
+            [
+              "Trapezium perimeter",
+              "P = a + b + c + d",
+              "cm or m"
+            ],
+            [
+              "Missing trapezium side",
+              "d = P − (a + b + c)",
+              "cm or m"
+            ],
+            [
+              "Parallelogram area",
+              "A = base × perpendicular height",
+              "cm² or m²"
+            ],
+            [
+              "Rhombus perimeter",
+              "P = 4 × side",
+              "cm or m"
+            ],
+            [
+              "Rhombus area",
+              "A = ½ × d₁ × d₂",
+              "cm² or m²"
+            ],
+            [
+              "Kite area",
+              "A = ½ × d₁ × d₂",
+              "cm² or m²"
+            ],
+            [
+              "Kite perimeter",
+              "P = 2(a + b)",
+              "cm or m"
+            ],
+            [
+              "Cube volume",
+              "V = side³",
+              "cm³ or m³"
+            ],
+            [
+              "Cube total surface area",
+              "TSA = 6 × side²",
+              "cm² or m²"
+            ],
+            [
+              "Cube side from volume",
+              "Side = cube root of volume",
+              "cm or m"
+            ],
+            [
+              "Cube side from TSA",
+              "Side = square root of (TSA ÷ 6)",
+              "cm or m"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f",
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Remember these three rules: Perimeter is measured in ordinary length units. Area is measured in square units. Volume is measured in cubic units. Always label answers correctly.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "revision",
+      "title": "End-of-Week Revision and Assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Section A — Shape Recognition",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "1. Define perimeter. 2. Draw a trapezium and mark the parallel sides. 3. Draw and label a parallelogram ABCD. 4. State two properties of a rhombus. 5. Draw a kite and show its symmetry line. 6. Explain the difference between the area of a flat shape and the volume of a solid.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section B — Calculations",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82",
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f",
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "7. A trapezium has sides 13 cm, 9 cm, 10 cm and 8 cm. Find its perimeter. 8. The perimeter of a trapezium is 58 cm. Three sides are 20 cm, 13 cm and 11 cm. Find the fourth side. 9. A parallelogram has a base of 15 cm and perpendicular height of 8 cm. Find its area. 10. A parallelogram has area 132 cm² and base 11 cm. Find its height. 11. A rhombus has a side of 12 cm. Find its perimeter. 12. The diagonals of a rhombus are 14 cm and 18 cm. Find its area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+            "48c8d756-a080-562b-97cc-01817b1601e3",
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "13. A kite has diagonals measuring 16 cm and 9 cm. Find its area. 14. A kite has two sides measuring 9 cm each and another two measuring 12 cm each. Find its perimeter. 15. A cube has side 6 cm. Find its volume. 16. Find the total surface area of the cube in Question 15. 17. A cube has volume 343 cm³. Find its side. 18. A cube has total surface area 486 cm². Find its side. 19. Find the volume of the cube in Question 18. 20. Explain how you can check whether your answer for a cube's side is correct.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d",
+            "573cc02d-1f66-553e-bb53-8997b8cc996f",
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Revision Answer Key — Teacher Review Copy",
+          "citation_ids": [],
+          "outcome_ids": []
+        },
+        {
+          "kind": "paragraph",
+          "text": "Answers 1–6: 1. Total distance around a shape. 2. Correct trapezium with exactly one marked pair of parallel opposite sides. 3. Correct labelled parallelogram with two pairs of parallel opposite sides. 4. Any two: four equal sides, opposite sides parallel, diagonals perpendicular, opposite angles equal. 5. Correct non-rhombus kite with its symmetry diagonal. 6. Area measures two-dimensional surface; volume measures three-dimensional space.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Answers 7–12: 7. 40 cm. 8. 14 cm. 9. 120 cm². 10. 12 cm. 11. 48 cm. 12. 126 cm².",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Answers 13–20: 13. 72 cm². 14. 42 cm. 15. 216 cm³. 16. 216 cm². 17. 7 cm. 18. 9 cm. 19. 729 cm³. 20. Substitute the side into V=s³ or TSA=6s² and confirm that the given value is obtained.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Teacher assessment record (editable): Learners assessed: ________. Learners meeting Lesson 1 outcome: ________. Lesson 2: ________. Lesson 3: ________. Lesson 4: ________. Lesson 5: ________. Lesson 6: ________. Common errors: ________. Corrective instruction: ________. Teacher comments: ________. Review date: ________.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Publishing instruction for teacher review: Separate the answer-key paragraphs from the pupil-facing revision paper before distribution. All six lessons remain drafts until the mathematical content, proposed diagrams and inferred lesson allocations have been reviewed.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "references",
+      "title": "References, Evidence and Review Requirements",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Primary planning reference: P.6 MATHEMATICS SCHEME TERM 3.pdf. Source: https://t.me/P7_teachers_in_uganda/9833. Supplied evidence supports the selected trapezium, parallelogram/rhombus, kite and cube topics and related learning targets. Exact source pages were not provided. Source licence is unknown; no figures have been reproduced.",
+          "citation_ids": [
+            "6865c156-f40b-5d00-b85e-83d558fb6b91",
+            "d583b055-8ac0-5c74-ad65-fcdfcd1d31ef",
+            "6ce88e2e-7434-5592-89d3-ea88b64c4c52",
+            "3f3f0273-8b4c-5f42-9871-a411172be467",
+            "0c6aac90-ab9a-59ba-af53-169a42756d1e",
+            "a1aefc9c-2ec8-5b65-b352-58dbc5ccebb0",
+            "c5acfcc6-bd8e-5b06-8417-9a5aea64f2be",
+            "04fa43d9-839f-57d1-b0d9-f0902d9bd690"
+          ],
+          "outcome_ids": []
+        },
+        {
+          "kind": "paragraph",
+          "text": "Supporting formula reference: THE PEARL BASIC _ APPLIED MATHEMATICAL FORMULA 2024 1.pdf. Source: https://t.me/primaryteachersofuganda/6954. The supplied excerpts mention base-times-height for parallelograms and half the product of diagonals for rhombuses and kites. Portions of the extracted mathematical notation are visibly garbled, so the original diagrams and formula layout need independent checking. Source licence is unknown; page references are unavailable.",
+          "citation_ids": [
+            "cc70bc02-cd7d-5405-9872-f13c7535e6f0",
+            "6f88b595-4db7-57d8-a2b5-f316d12edf2d",
+            "5cd7c848-2c13-558c-8725-5e974cd8e8d0"
+          ],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Supplementary planning reference: P.6 MTC SCHEME OF WORK TERM 1- 3.pdf. Source: https://t.me/TeacherInUganda/46812. The retrieved excerpts include work on perimeter, area, total surface area and finding sides of cubes or cuboids. However, the displayed week structure is not identical to the selected application's six-lesson Week 3 allocation. It is supporting context, not proof of the exact selected sequence.",
+          "citation_ids": [
+            "dcaee5f8-7669-58c6-9437-400f2c63f7ce",
+            "05d03d5b-6d74-55ae-969f-f7d8972dce15",
+            "65c3d268-cfaa-5474-b9cb-b702ab66b661"
+          ],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Additional reference on perimeter difficulties: REPORT ON WORK OF CANDIDATES2024 DIDIX.pdf. Source: https://t.me/primaryteachersofuganda/29971. Its supplied excerpt describes difficulty calculating missing lengths before finding perimeter. It does not establish the invented dimensions used in the exercises in this document.",
+          "citation_ids": [
+            "502afe93-b6f3-5b73-9b58-2bdfe47fc3e8"
+          ],
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Scope limitation: Retrieved P5 mathematics schemes, P7 mathematics schemes and an unrelated constitutional document do not establish P6 Term 3 Week 3 objectives. They have not been treated as direct authority for the selected six-lesson allocation. Their presence in the wider evidence packet does not justify curriculum endorsement.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Teacher review required: (1) Confirm the six-lesson sequence against the full original P6 scheme, especially lessons marked inferred. (2) Verify the local definition of a trapezium and kite. (3) Check all calculations, exercise answers and drawable geometric configurations. (4) Create or inspect original diagrams, including perpendicular heights, rhombus and kite diagonals, cube and cube net. (5) Separate answers from learner copies. (6) Confirm that any displayed references or illustrations comply with their unknown source licences. (7) Record actual teacher, lesson dates and any local adaptation. Approval: pending. Reviewer: ________. Date: ________. Corrections: ________.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    }
+  ],
+  "scheme_weeks": [],
+  "lesson_stages": []
+}

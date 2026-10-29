@@ -1,0 +1,11 @@
+{
+  "id": "564a55e2-2dea-40bf-a15c-e6a33da43cb9",
+  "url": "https://chatgpt.com/c/6ae38a89-16a0-83e8-afce-ede68dbe288b",
+  "started_at": "2026-10-29T18:04:07.773Z",
+  "prompt_chars": 53164,
+  "mode": "Chat",
+  "transport": "operator-assisted browser handoff",
+  "agent": "ChatGPT Chat",
+  "review_status": "needs_review",
+  "result_sha256": "eb9ded1cfc218dde016d41f86de024f9bc6675aa9a3f1fcc2c21d3bf2a4a0290"
+}
