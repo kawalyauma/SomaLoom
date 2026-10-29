@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" role="img" aria-label="The same length ruler used twice: A has a short free overhang and B has a longer free overhang">
+<rect width="900" height="400" fill="white"/>
+<g font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#1c3344"><text x="85" y="45">A: Short free end</text><text x="490" y="45">B: Long free end</text></g>
+<g stroke="#415766" stroke-width="3"><rect x="75" y="205" width="265" height="65" fill="#edf2f5"/><rect x="485" y="205" width="180" height="65" fill="#edf2f5"/></g>
+<g fill="#7399b5" stroke="#214a67" stroke-width="4"><path d="M95 198 L380 198 L380 206 L95 206 Z"/><path d="M495 198 L780 198 L780 206 L495 206 Z"/></g>
+<g stroke="#bd6c35" stroke-width="3" fill="none"><path d="M345 155 Q365 175 375 190"/><path d="M725 152 Q754 169 772 191"/></g>
+<g font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#1c3344">
+<text x="79" y="305">Desk</text><text x="490" y="305">Desk</text><text x="300" y="120">Free end</text><text x="705" y="120">Free end</text><text x="85" y="352">Usually higher pitch</text><text x="490" y="352">Usually lower pitch</text><text x="260" y="387">Same ruler length in A and B; only the free length changes.</text>
+</g>
+<g stroke="#677f8e" stroke-width="2" stroke-dasharray="6 6"><path d="M340 135 L340 284"/><path d="M665 135 L665 284"/></g>
+</svg>
