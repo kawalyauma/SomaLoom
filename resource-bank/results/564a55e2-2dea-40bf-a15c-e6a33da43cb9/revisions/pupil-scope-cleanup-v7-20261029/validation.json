@@ -1,0 +1,19 @@
+{
+  "base_version": 6,
+  "updated_blocks": 19,
+  "section_updates": 1,
+  "split_original_blocks": 3,
+  "split_part_counts": {
+    "1e566790-c520-479c-af1f-7555c089a1a3": 5,
+    "37639b88-1086-4e88-a389-74436d431c06": 3,
+    "61f247c4-fdef-4012-965f-6298b9e3f0da": 3
+  },
+  "all_original_question_text_preserved": true,
+  "all_original_question_order_preserved": true,
+  "split_outcomes_subsets_of_original": true,
+  "all_five_figures_unchanged": true,
+  "worked_examples_unchanged": true,
+  "citations_preserved": true,
+  "teacher_reviewed": false,
+  "published": false
+}

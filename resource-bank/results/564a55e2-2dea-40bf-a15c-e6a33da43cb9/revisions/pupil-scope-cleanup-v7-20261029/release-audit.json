@@ -1,0 +1,351 @@
+{
+  "original_request_id": "564a55e2-2dea-40bf-a15c-e6a33da43cb9",
+  "issue": 138,
+  "chat_url": "https://chatgpt.com/c/6ae38a89-16a0-83e8-afce-ede68dbe288b",
+  "authorship": "Original regular browser ChatGPT authored all textual changes and exact question partitions; Codex validated/applied only",
+  "before_version": 6,
+  "after_version": 7,
+  "repair_response_sha256": "2b7bfacf5dc22c942d1da090ec7dccc2f9620f0ffa634f10de3d39a317790809",
+  "base_body_sha256": "fdf242dfcefe0793f78a9c66afdd9d8f34a1805cf5ecafa4ce56e8f267457efb",
+  "api_receipt": {
+    "id": "da17b29d-c12c-4a58-abf4-d26be61b89fa",
+    "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+    "version": 7,
+    "review_state": "draft"
+  },
+  "validation": {
+    "base_version": 6,
+    "updated_blocks": 19,
+    "section_updates": 1,
+    "split_original_blocks": 3,
+    "split_part_counts": {
+      "1e566790-c520-479c-af1f-7555c089a1a3": 5,
+      "37639b88-1086-4e88-a389-74436d431c06": 3,
+      "61f247c4-fdef-4012-965f-6298b9e3f0da": 3
+    },
+    "all_original_question_text_preserved": true,
+    "all_original_question_order_preserved": true,
+    "split_outcomes_subsets_of_original": true,
+    "all_five_figures_unchanged": true,
+    "worked_examples_unchanged": true,
+    "citations_preserved": true,
+    "teacher_reviewed": false,
+    "published": false
+  },
+  "http_checks": {
+    "checked_at": "2026-10-29T23:52:19.991Z",
+    "results": [
+      {
+        "name": "week3-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 1059108,
+        "sha256": "9be7a4874dc01d2ca592c07f08f49e188433780e4e4eb383c4fc139393d1caee",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-teacher-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "teacher",
+          "week": 3,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 1068383,
+        "sha256": "a87fa35df201a459dad01f453537cc90328e88c0bf5ad03b8f7cd29d9c9da1ac",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson1-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 1,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 72633,
+        "sha256": "0f5713e62707e2232be28ca2601d906337fdf63d30cab32a695a6e4565a8c21c",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson2-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 2,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 85300,
+        "sha256": "e7b7b00bff4e0bd25c5891cb676bf25f6ee520a0acb7d68b4b3020c7c779764d",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson3-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 3,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 864962,
+        "sha256": "72b95bb5f3dabb2c9963750b76be0fad7a28790519e70d28594e9feb2c30d3ea",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson4-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 4,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 93741,
+        "sha256": "33407a3ee379112c458ae80c721a49e97bc8bee19bc92942007b7367c3972ad5",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson5-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 5,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 108768,
+        "sha256": "16b5ffca776fbab2e43c36bc32ea1b066d070ef1129d64f4da9d5e6b09b218a6",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-lesson6-student-draft-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "lesson": 6,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 50064,
+        "sha256": "eafbe0af1a16bcba7863502b1c64c4c91bbb9b93ab5229f10625115e7f02b686",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week3-approved-denial-v7",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 3,
+          "edition": "approved"
+        },
+        "status": 409,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 177,
+        "sha256": "01a9e43bdb4c399a6cda74d07f801261e2f38206acf02a0424f9b26830d91f54",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 3 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"1e8cfff5-5ce5-4782-a457-2ef24ed3a418\"}"
+      }
+    ]
+  },
+  "file_inspection": {
+    "files": [
+      {
+        "file": "week3-lesson1-student-draft-v7.pdf",
+        "student": true,
+        "pages": 3,
+        "image_occurrences": 1,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 3
+      },
+      {
+        "file": "week3-lesson2-student-draft-v7.pdf",
+        "student": true,
+        "pages": 3,
+        "image_occurrences": 1,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 2
+      },
+      {
+        "file": "week3-lesson3-student-draft-v7.pdf",
+        "student": true,
+        "pages": 3,
+        "image_occurrences": 1,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 3
+      },
+      {
+        "file": "week3-lesson4-student-draft-v7.pdf",
+        "student": true,
+        "pages": 3,
+        "image_occurrences": 1,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 3
+      },
+      {
+        "file": "week3-lesson5-student-draft-v7.pdf",
+        "student": true,
+        "pages": 3,
+        "image_occurrences": 1,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 3
+      },
+      {
+        "file": "week3-lesson6-student-draft-v7.pdf",
+        "student": true,
+        "pages": 2,
+        "image_occurrences": 0,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 3,
+        "solution_markers": 3
+      },
+      {
+        "file": "week3-student-draft-v7.pdf",
+        "student": true,
+        "pages": 17,
+        "image_occurrences": 5,
+        "off_page_text_spans": 0,
+        "uuid_count": 0,
+        "url_count": 0,
+        "assessment_key_or_staff_process_matches": [],
+        "worked_example_markers": 18,
+        "solution_markers": 17
+      },
+      {
+        "file": "week3-teacher-draft-v7.pdf",
+        "student": false,
+        "pages": 20,
+        "image_occurrences": 5,
+        "off_page_text_spans": 0,
+        "uuid_count": 65,
+        "url_count": 8,
+        "assessment_key_or_staff_process_matches": [
+          "uploaded schemes are planning",
+          "answers for teacher checking",
+          "answers for teacher checking",
+          "answers for teacher checking",
+          "answers for teacher checking",
+          "answers for teacher checking",
+          "answers for teacher checking",
+          "Editable teacher reflection",
+          "Teacher observations:",
+          "Revision Answer Key",
+          "Teacher Review Copy",
+          "Teacher assessment record",
+          "Publishing instruction",
+          "Teacher review required"
+        ],
+        "worked_example_markers": 18,
+        "solution_markers": 17
+      }
+    ],
+    "student_staff_key_scan": "PASSED across weekly and6lesson PDFs",
+    "teacher_key_retention": "PASSED",
+    "all_five_figures_preserved_in_weekly": true,
+    "worked_example_solutions_present": true,
+    "all_expected_draft_downloads_http200": true,
+    "educator_approval_pending": true,
+    "full_curriculum_alignment_verified": false,
+    "known_alignment_limitation": "Existing parallelogram area revision questions versus read/draw outcome require educator/source review; no new mappings invented",
+    "sampled_visual_pages": [
+      1,
+      8,
+      17
+    ],
+    "pagination_polish_pending": "Final student page is sparse"
+  },
+  "source_alignment_review_required": true,
+  "source_alignment_limitation": "Original lesson2 area questions and read/draw outcome are mismatched; original mappings retained transparently without fabricating new outcomes/citations",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}

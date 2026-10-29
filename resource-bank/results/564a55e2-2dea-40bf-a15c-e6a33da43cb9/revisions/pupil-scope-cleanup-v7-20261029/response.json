@@ -1,0 +1,196 @@
+{
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "base_version": 6,
+  "title": "Primary Six Mathematics — Term 3, Week 3: Trapezium, Parallelogram, Rhombus, Kite and Cube (Lessons 1–6)",
+  "section_updates": [
+    {
+      "section_key": "references",
+      "audience": "teacher"
+    }
+  ],
+  "block_updates": [
+    {
+      "block_id": "a6026bf0-9668-4cb3-b644-27b127efe26f",
+      "text": "Class: Primary Six (P6). Subject: Mathematics. Term: Three. Week: Three. Topic: Length, mass and capacity. This week contains six lessons on plane shapes and cubes."
+    },
+    {
+      "block_id": "5ed6af91-b775-4d03-b96f-0181feaeec30",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "e02e1b4d-3596-44aa-adc7-e5b8a1a71582",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "dd472803-6865-4dcd-aeeb-551f2b25e0c3",
+      "text": "A trapezium has exactly one pair of parallel sides in these notes. A kite has two distinct pairs of equal adjacent sides. A general kite of this kind has one line of symmetry, while a rhombus has two lines of symmetry."
+    },
+    {
+      "block_id": "49b74a11-14cf-4e5d-ac39-740bfcd8f257",
+      "text": "Activity: Draw a trapezium. Mark its parallel sides. Measure each side with a ruler. Add the four measurements to calculate its perimeter. Compare answers with a partner. Use measurements from your own drawing."
+    },
+    {
+      "block_id": "650c589d-7f1b-48e2-b706-ff71284a5a10",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "1bd7cd41-6852-4244-bdc8-57a98bcb417a",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "2ab59671-ec65-478b-8725-7bbb34fedc0f",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "7982ee67-6e95-4ff5-aa3d-a133f4a89d6b",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "769d6f8b-b1e1-4254-a0e7-d1a700d8ecc1",
+      "text": "Activity: Examine a clean, closed cube-shaped box or a cube model. Count its faces, edges and vertices. Sketch a net of six equal squares. Imagine the net folded into a cube. Explain why the total surface area consists of six square faces."
+    },
+    {
+      "block_id": "1df03311-5099-43b2-ba16-93fd1cb7bb03",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "8a6dd269-4391-47fe-8374-a3636d3f56f9",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "a135fd6a-4dd5-4c09-9f38-b368b7dd485b",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "7a160174-843d-476f-9ca4-2aae42174b58",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "c9718091-fe71-4e8d-beb8-bb77ab335fe3",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "1e54d5c2-384c-4161-8171-89ba1f31694d",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "4ae50d66-a0f2-4b04-9cf8-e002ac4f85c6",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "48df0dd5-b147-464e-bbac-166238d003ce",
+      "audience": "teacher",
+      "text": null
+    },
+    {
+      "block_id": "fc0585ec-6d65-4681-b499-13720c3d8d94",
+      "audience": "teacher",
+      "text": null
+    }
+  ],
+  "block_splits": [
+    {
+      "block_id": "1e566790-c520-479c-af1f-7555c089a1a3",
+      "parts": [
+        {
+          "text": "1. Define perimeter. 2. Draw a trapezium and mark the parallel sides.",
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "text": "3. Draw and label a parallelogram ABCD.",
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "text": "4. State two properties of a rhombus.",
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        },
+        {
+          "text": "5. Draw a kite and show its symmetry line.",
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "text": "6. Explain the difference between the area of a flat shape and the volume of a solid.",
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "37639b88-1086-4e88-a389-74436d431c06",
+      "parts": [
+        {
+          "text": "7. A trapezium has sides 13 cm, 9 cm, 10 cm and 8 cm. Find its perimeter. 8. The perimeter of a trapezium is 58 cm. Three sides are 20 cm, 13 cm and 11 cm. Find the fourth side.",
+          "outcome_ids": [
+            "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c"
+          ]
+        },
+        {
+          "text": "9. A parallelogram has a base of 15 cm and perpendicular height of 8 cm. Find its area. 10. A parallelogram has area 132 cm² and base 11 cm. Find its height.",
+          "outcome_ids": [
+            "48c8d756-a080-562b-97cc-01817b1601e3"
+          ]
+        },
+        {
+          "text": "11. A rhombus has a side of 12 cm. Find its perimeter. 12. The diagonals of a rhombus are 14 cm and 18 cm. Find its area.",
+          "outcome_ids": [
+            "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "61f247c4-fdef-4012-965f-6298b9e3f0da",
+      "parts": [
+        {
+          "text": "13. A kite has diagonals measuring 16 cm and 9 cm. Find its area. 14. A kite has two sides measuring 9 cm each and another two measuring 12 cm each. Find its perimeter.",
+          "outcome_ids": [
+            "c8bef417-3ca4-5f94-8ee1-66fcf916f58d"
+          ]
+        },
+        {
+          "text": "15. A cube has side 6 cm. Find its volume. 16. Find the total surface area of the cube in Question 15.",
+          "outcome_ids": [
+            "573cc02d-1f66-553e-bb53-8997b8cc996f"
+          ]
+        },
+        {
+          "text": "17. A cube has volume 343 cm³. Find its side. 18. A cube has total surface area 486 cm². Find its side. 19. Find the volume of the cube in Question 18. 20. Explain how you can check whether your answer for a cube's side is correct.",
+          "outcome_ids": [
+            "55953a80-ba0a-516f-949e-7335744faf4e"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All six existing lessons, numbered exercises, worked example solutions, explanations, and five immutable illustrations are preserved. No asset references, evidence metadata, citation IDs or review status are changed.",
+    "The references section, assessment answer keys, teacher reflections and publishing instructions are teacher-only. Worked example solutions remain pupil-facing.",
+    "The three revision question blocks are partitioned in original question order, without adding, duplicating or deleting questions. Each resulting part has exactly one existing outcome ID.",
+    "The original introductory wording is cleaned for pupil display. The document remains a draft requiring human teacher review; no publication or approval is requested.",
+    "The original revision questions 9–10 concern parallelogram area, while the recorded Lesson 2 outcome specifically says 'Read and draw a parallelogram.' They retain the original Lesson 2 outcome mapping because this patch cannot change the permitted outcomes or add a separate area outcome. Teacher review of this mismatch remains necessary.",
+    "The revision answers are preserved in teacher-only blocks. The existing summary table and worked examples remain pupil-facing.",
+    "No generated image or new lesson content has been introduced."
+  ]
+}
