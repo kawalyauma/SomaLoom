@@ -1,0 +1,11 @@
+{
+  "issue": 138,
+  "chat_url": "https://chatgpt.com/c/6ae3c7ac-b8b0-83ea-bb72-9c3a2623cd6a",
+  "authorship": "Actual original regular ChatGPT image-generator PNG. Codex inspected and imported only.",
+  "accuracy": "Conceptual raster illustration checked within explicit2% geometry tolerance; not an exact coordinate plot",
+  "original_sha256": "b316431e6c19643e2fe23ffdb0a52b1cb290eba562be4a574ac9e4b9f0cbce00",
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "week3_remaining_images": 2
+}

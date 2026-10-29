@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-29T22:55:31.526684+00:00",
+  "source_block_id": "eb09630e-602c-42fd-989c-8b9ab2692abc",
+  "method": "Inspect actual generated PNG geometry, labels, diagonal intersection and equality marks. Raster illustration tolerance2%, not an exact coordinate plot.",
+  "observed_vertex_pixels_approx": {
+    "A": [
+      173,
+      527
+    ],
+    "B": [
+      746,
+      953
+    ],
+    "C": [
+      1316,
+      527
+    ],
+    "D": [
+      746,
+      102
+    ],
+    "O": [
+      746,
+      527
+    ]
+  },
+  "source_diagonal_ratio": 1.3333333333333333,
+  "observed_diagonal_ratio": 1.3431257344300822,
+  "relative_diagonal_ratio_error": 0.007344300822561767,
+  "relative_side_length_spread": 0.004215393994691538,
+  "tolerance": 0.02,
+  "visual_checks": {
+    "labels_ABCD_O_correct": true,
+    "both_diagonals_present": true,
+    "right_angle_at_O": true,
+    "all_four_sides_have_equal_ticks": true,
+    "d1_AC_and_d2_BD_correct": true,
+    "no_numeric_dimensions": true,
+    "unclipped_readable": true
+  },
+  "authorship": "Original image generated in existing regular ChatGPT browser Chat, not Codex drawn or substituted",
+  "accuracy_check": "passed_for_conceptual_raster_illustration",
+  "exact_coordinate_plot": false,
+  "educator_approval_pending": true
+}

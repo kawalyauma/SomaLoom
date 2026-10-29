@@ -1,0 +1,19 @@
+{
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "image_id": "8c5576c6-0d85-4644-aee1-15ab4372be46",
+  "old_version": 3,
+  "new_version": 4,
+  "block_id": "eb09630e-602c-42fd-989c-8b9ab2692abc",
+  "outcome_ids": [
+    "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+  ],
+  "citations_preserved": true,
+  "other_blocks_unchanged": true,
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "chat_url": "https://chatgpt.com/c/6ae3c7ac-b8b0-83ea-bb72-9c3a2623cd6a",
+  "original_sha256": "b316431e6c19643e2fe23ffdb0a52b1cb290eba562be4a574ac9e4b9f0cbce00",
+  "asset_ref": "image-request:8c5576c6-0d85-4644-aee1-15ab4372be46:f8888980cd663474d117d645119df1851bc45c924c25c5162c5dd9f3aefe6493",
+  "checked_at": "2026-10-29T22:55:33.428Z"
+}
