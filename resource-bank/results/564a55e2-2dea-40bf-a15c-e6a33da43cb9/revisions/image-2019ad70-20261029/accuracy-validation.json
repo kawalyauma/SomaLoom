@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-29T21:00:23.439952+00:00",
+  "method": "Read actual ChatGPT PNG pixels against existing source coordinate construction; visual label and marker inspection",
+  "source_block_id": "6479a484-cc89-4b33-a7aa-d7ce897c058e",
+  "source_coordinates": {
+    "A": [
+      0,
+      0
+    ],
+    "B": [
+      10,
+      0
+    ],
+    "C": [
+      7,
+      4
+    ],
+    "D": [
+      2,
+      4
+    ]
+  },
+  "scale_px_per_unit": 190,
+  "vertex_checks": [
+    {
+      "vertex": "A",
+      "expected_pixel": [
+        250,
+        1060
+      ],
+      "dark_center_pixels": 81
+    },
+    {
+      "vertex": "B",
+      "expected_pixel": [
+        2150,
+        1060
+      ],
+      "dark_center_pixels": 81
+    },
+    {
+      "vertex": "C",
+      "expected_pixel": [
+        1580,
+        300
+      ],
+      "dark_center_pixels": 81
+    },
+    {
+      "vertex": "D",
+      "expected_pixel": [
+        630,
+        300
+      ],
+      "dark_center_pixels": 81
+    }
+  ],
+  "all_four_edges_present": true,
+  "visual_checks": {
+    "labels_ABCD_correct": true,
+    "matching_parallel_markers": true,
+    "no_numeric_labels": true,
+    "no_clipping": true
+  },
+  "accuracy_check": "passed",
+  "educator_approval_pending": true,
+  "authorship": "ChatGPT regular browser Chat authored Pillow diagram; Codex inspected only"
+}

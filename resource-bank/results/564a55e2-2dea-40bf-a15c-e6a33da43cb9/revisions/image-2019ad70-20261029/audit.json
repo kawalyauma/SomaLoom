@@ -1,0 +1,20 @@
+{
+  "issue": 138,
+  "chat_url": "https://chatgpt.com/c/6ae39f59-a1f4-83e9-9f06-f2d88621a9ae",
+  "authorship": "Existing server Chrome regular ChatGPT Chat produced the PNG using its Pillow tool. Codex did not author or redraw it. Prior image-generator rasters were rejected.",
+  "original_sha256": "9862e6c9ba16dd0848118585f9ede34733d1740fe7515e5202d2a100ff786caf",
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "individual_lesson_export": {
+    "http_status": 409,
+    "blocker": "This draft combines several lessons in one block. Split those lessons before downloading individually.",
+    "next_action": "Ask original content ChatGPT chat for minimal outcome-preserving block splits, pupil/staff cleanup; no fresh notes generation."
+  },
+  "weekly_export": {
+    "http_status": 422,
+    "blocker": "Missing visual asset: editorial review required",
+    "remaining_visual_needed": 4,
+    "next_action": "Resolve remaining exact image placeholders before weekly export"
+  }
+}
