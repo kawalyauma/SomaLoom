@@ -1,0 +1,129 @@
+{
+  "batch": "p6-cre-2026-10-29-batch-08",
+  "date": "2026-10-29",
+  "subject": "P6 Christian Religious Education (CRE only; IRE separate)",
+  "source": {
+    "authority": "Uganda National Curriculum Development Centre (NCDC), Primary Six Curriculum Set One (2010), Part I CRE",
+    "url": "https://www.ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+    "outline_pdf_page": 206,
+    "target_pdf_pages": [
+      217,
+      218,
+      219,
+      220
+    ],
+    "licence": "NCDC © 2010 all rights reserved; curriculum used to verify targets only; original lesson text and diagrams; Bible references paraphrased without reproducing translation text"
+  },
+  "coverage": {
+    "topic": "Term I / God Calls His People",
+    "topic_periods": 10,
+    "new_subtopics": [
+      "Bible characters who received messages from God",
+      "The promise of salvation",
+      "God’s message for his people today"
+    ],
+    "verified_individual_week_or_period_allocations": false,
+    "school_scheme_acquired": false,
+    "full_37_subtopic_crosswalk_github": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-08/coverage-manifest.json"
+  },
+  "deliverables": {
+    "new_learner_md": 3,
+    "new_teacher_key_md": 3,
+    "original_svg": 3,
+    "individual_learner_pdf": 3,
+    "individual_teacher_key_pdf": 3,
+    "learner_compilation_pages": 9,
+    "teacher_key_compilation_pages": 3,
+    "pdf_binaries_committed_to_github": false,
+    "markdown_committed_to_github": true,
+    "svg_committed_to_github": true,
+    "application_imported": false,
+    "teacher_reviewed": false
+  },
+  "checks": {
+    "bible-messengers-and-responses": {
+      "learner_questions_md": 10,
+      "key_questions_md": 10,
+      "key_answers_md": 10,
+      "pdf_questions_matched": 10,
+      "pdf_key_answers_matched": 10,
+      "learner_pages": 3,
+      "teacher_key_pages": 1
+    },
+    "promise-of-salvation-mary-and-john": {
+      "learner_questions_md": 10,
+      "key_questions_md": 10,
+      "key_answers_md": 10,
+      "pdf_questions_matched": 10,
+      "pdf_key_answers_matched": 10,
+      "learner_pages": 3,
+      "teacher_key_pages": 1
+    },
+    "responding-to-gods-message-today": {
+      "learner_questions_md": 10,
+      "key_questions_md": 10,
+      "key_answers_md": 10,
+      "pdf_questions_matched": 10,
+      "pdf_key_answers_matched": 10,
+      "learner_pages": 3,
+      "teacher_key_pages": 1
+    },
+    "all_pdfs": {
+      "count": 8,
+      "all_a4": true,
+      "forbidden_markup_matches": 0,
+      "text_bounds_issues": 0,
+      "total_learner_compilation_pages": 9,
+      "total_key_compilation_pages": 3
+    },
+    "visual_review": {
+      "learner_contact_sheet_pages": 9,
+      "teacher_contact_sheet_pages": 3,
+      "full_resolution_learner_pages_checked": [
+        2
+      ],
+      "all_pages_full_resolution_reviewed": false,
+      "orphan_heading_fix_applied": true,
+      "teacher_key_orphan_page_fix_applied": true
+    },
+    "scripture_premises": {
+      "Genesis 12:1-9": "Abram called to travel; Abram name later Abraham",
+      "Exodus 3:1-13": "Moses and burning bush, task to go to Pharaoh",
+      "Exodus 6:8-9": "Israelites do not listen due to broken spirit and harsh slavery",
+      "Jeremiah 1:4-9": "young Jeremiah called, reassured",
+      "Luke 1:26-38": "Gabriel announces Jesus to Mary",
+      "Luke 3:3-16": "John preaches repentance, fair dealing, points to greater one"
+    },
+    "human_review": false,
+    "app_import": false,
+    "issue_count": 0
+  },
+  "file_sha256": {
+    "P6_CRE_Term1_Batch08_learner_compilation.pdf": "bec3a2bd7fe36de558453320b3953f12b84d8f87f5b8b8894f4eaf234afad0db",
+    "P6_CRE_Term1_Batch08_teacher-key_compilation.pdf": "4888aec179094c4d786095b75170071d8809477d66baa738eb43a3642d41b494",
+    "bible-messengers-and-responses.learner.md": "af71b2bcea5b26eb68ec4d1fb2a7fbe8a8f97c4b86d0488f774526b03da6de76",
+    "bible-messengers-and-responses.learner.pdf": "c6d6f247521297383e1452440d8cd9a86d86fabb289834ec78f5d1c3a848981a",
+    "bible-messengers-and-responses.teacher-key.md": "a5493a691f6bfa65fa83b24fc92f4886ca38a9d5247fc0bcc0f0291d85ca3381",
+    "bible-messengers-and-responses.teacher-key.pdf": "76659b061471c673fbba5f20931d936ac6ce0f8f960e5637eeb16b67c80f2edb",
+    "message-pathway.svg": "4a1ea782e4f3b455bd145177ed34d56f25dcfbc3749368f786ffd49f532b3f75",
+    "promise-of-salvation-mary-and-john.learner.md": "4d78863cf7c345af80519f3934286c444aa42d66b97ea8640fb78da4f4f8744a",
+    "promise-of-salvation-mary-and-john.learner.pdf": "c155444d44dd1ec78bd0294c8d88505bbc96140c8c504291ecebe0bc8ac53fae",
+    "promise-of-salvation-mary-and-john.teacher-key.md": "30421b5b4c557ce70a8dee5d3d10f0bda2de76e1a5508833194c363ca41f7541",
+    "promise-of-salvation-mary-and-john.teacher-key.pdf": "59bcf11731964d67cd6e198918061950a706a454dfe91ee8ca53dd05d8975760",
+    "responding-to-gods-message-today.learner.md": "66c54875c27bd710fc105b735e8b2f26720aa66de3c84f5deec4822d3f3e8505",
+    "responding-to-gods-message-today.learner.pdf": "775aca6f6cee8937b10268273f02ed17de89cbedb934b5ae1baaa9d75de5266e",
+    "responding-to-gods-message-today.teacher-key.md": "d71d2d32a97435762a7af65a857c98aa2116f47a819e03b45380eb3d5ef973b9",
+    "responding-to-gods-message-today.teacher-key.pdf": "983c2f93257edec1ba115a8cbc4737ece418b95ed9cc269c2aceaf72aca4a511",
+    "salvation-messages.svg": "d2f4e890a6247886216ae44abc43f7229008f961b3534c603b4c4cc70b7946ec",
+    "wise-response.svg": "03711811069ec99e2c445f0d1d282fa362c17472498fe1aed0c354597b7e37f6"
+  },
+  "blockers": [
+    "Earlier five CRE subtopic files reported generated in another chat but not available in this batch; not counted as committed.",
+    "No verified P6 CRE school scheme with week/individual period allocation; NCDC gives topic total only.",
+    "PDF binaries generated and downloadable locally, but not committed via the connected UTF-8 GitHub file interface.",
+    "No app request schema verified for CRE; no result.json invented.",
+    "Teacher/denominational review and all-page full-resolution review pending."
+  ],
+  "next_cre_target": "Term II / Christ is the Answer / Christ’s concern; verify NCDC topic 6-period total, no invented subtopic allocation",
+  "next_rotation_subject": "ire"
+}
