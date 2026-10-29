@@ -1,7 +1,7 @@
 {
-  "last_batch": "p6-mathematics-2026-10-29-05",
-  "last_subject": "mathematics",
-  "next_subject": "science",
+  "last_batch": "p6-science-2026-10-29-06",
+  "last_subject": "science",
+  "next_subject": "sst",
   "subjects": [
     "mathematics",
     "science",
@@ -9,10 +9,10 @@
     "cre",
     "ire"
   ],
-  "next_subject_rationale": "Maths Week 1 T2 recovery: all 8 existing learner/key Markdown pairs now committed, 18 existing local PDFs inspected and 88 exact arithmetic/context/worked checks passed; no new Term2 rows generated. Next Science must inspect latest Science checkpoint, particularly old 11-topic compilation parity and PDF binary publication. Do not duplicate Maths Week 1.",
-  "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-01-checkpoint.md",
+  "next_subject_rationale": "Science source diagram QA-v2: corrected same-ruler geometry and regenerated pitch learner/key PDFs and two-supplement compilations. Canonical 11-topic Science PDF/Markdown parity still unresolved; next SST inspect source term boundaries and recover durable files without duplicating provisional local-only lessons.",
+  "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-06/checkpoint.md",
   "status": "incomplete",
-  "completed_batches": 5,
+  "completed_batches": 6,
   "no_parallel_workers": true,
   "updated": "2026-10-29",
   "sst_checkpoint": "resource-bank/primary/p6/sst/overnight-2026-10-29-batch-02/checkpoint.md",
