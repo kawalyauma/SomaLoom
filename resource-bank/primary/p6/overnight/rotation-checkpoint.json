@@ -1,7 +1,7 @@
 {
-  "last_batch": "p6-sst-2026-10-29-07",
-  "last_subject": "sst",
-  "next_subject": "cre",
+  "last_batch": "p6-cre-2026-10-29-08",
+  "last_subject": "cre",
+  "next_subject": "ire",
   "subjects": [
     "mathematics",
     "science",
@@ -9,13 +9,13 @@
     "cre",
     "ire"
   ],
-  "next_subject_rationale": "SST batch07 committed two source-backed topic units (historical EAC shared services 1967–77; EAC objectives/benefits), four full Markdown files and two SVGs; 6 local PDFs passed bounded QA. Next CRE resume after existing batch03 without duplication; prior local-only five CRE packs still inaccessible.",
+  "next_subject_rationale": "CRE batch08 committed three new NCDC Term I subtopics, six full learner/key Markdown files, three original SVG diagrams, and complete 37-subtopic manifest; eight local A4 PDFs passed bounded QA. Next IRE read batch04 checkpoint. Eight-run overnight window finished; no further scheduled batch under this task.",
   "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-06/checkpoint.md",
-  "status": "incomplete",
-  "completed_batches": 7,
+  "status": "incomplete; overnight eight-batch window finished",
+  "completed_batches": 8,
   "no_parallel_workers": true,
   "updated": "2026-10-29",
   "sst_checkpoint": "resource-bank/primary/p6/sst/overnight-2026-10-29-batch-07/checkpoint.md",
-  "cre_checkpoint": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-03/checkpoint.md",
+  "cre_checkpoint": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-08/checkpoint.md",
   "ire_checkpoint": "resource-bank/primary/p6/ire/overnight-2026-10-29-batch-04/checkpoint.md"
 }
