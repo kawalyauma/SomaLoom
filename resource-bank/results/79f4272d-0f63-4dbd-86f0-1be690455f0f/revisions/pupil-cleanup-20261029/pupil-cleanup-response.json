@@ -1,0 +1,79 @@
+{
+  "patches": [
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Primary Six Mathematics — Term 3, Week 1: Length, Mass and Capacity — Lessons 1–6"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/0/blocks/0/text",
+      "value": "PRIMARY SIX MATHEMATICS\nTERM 3 — WEEK 1\nTOPIC: LENGTH, MASS AND CAPACITY\n\nThis week we shall study six lessons:\n1. Identifying metric units.\n2. Converting metric units.\n3. Converting square units.\n4. Calculating perimeter and finding missing sides.\n5. Finding area from a given perimeter.\n6. Finding unknown rectangle dimensions, area and perimeter."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/0/blocks/2/audience",
+      "value": "teacher"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/2/blocks/0/text",
+      "value": "Before beginning, revise multiplication, division, decimal numbers and common measuring units. Practise reading lengths from a ruler or tape measure and identifying metres, centimetres, kilograms and litres."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/2/blocks/2/text",
+      "value": "Before converting square units, revise multiplication by 10, 100, 1,000 and 10,000. Remember that square units measure area, while ordinary length units measure distance."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/4/blocks/14/text",
+      "value": "A square measuring 1 metre on each side has an area of 1 m². Each metre contains 100 centimetres. Therefore, the whole square contains 100 rows of 100 one-centimetre squares, giving 10,000 cm²."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/4/blocks/21/text",
+      "value": "The rectangle ABCD has two sides measuring 12 cm and two sides measuring 5 cm. Its perimeter is 12 + 5 + 12 + 5 = 34 cm. The square EFGH has four equal sides of 6 cm. Its perimeter is 6 + 6 + 6 + 6 = 24 cm."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/5/blocks/35/text",
+      "value": "A rectangle has length (2x + 3) cm, width x cm and perimeter 42 cm. Using P = 2(l + w), we obtain 42 = 2(3x + 3), so 6x = 36 and x = 6. The actual length is 15 cm and the width is 6 cm. Its area is 15 × 6 = 90 cm². Its perimeter is 2(15 + 6) = 42 cm."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/6/blocks/2/text",
+      "value": "Activity 3: Work with a partner. Use a ruler or measuring tape to measure three classroom objects. Record each measurement using a suitable unit. Compare your results and explain which unit is most convenient. Handle measuring equipment carefully. Choose objects that are safe and easy to reach."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/9/blocks/14/text",
+      "value": "Write each question number clearly. Show your calculations. Use the correct conversion factors and formulae. Include units in measurement answers. Check your work by calculating backwards where possible."
+    },
+    {
+      "op": "replace",
+      "path": "/sections/10/audience",
+      "value": "teacher"
+    }
+  ],
+  "diagrams": [
+    {
+      "section_index": 4,
+      "block_index": 14,
+      "caption": "Understanding square units: 1 m² = 10,000 cm²",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 540\" width=\"900\" height=\"540\" role=\"img\" aria-label=\"A square of side 1 metre equals 100 centimetres on each side, containing 100 rows of 100 square centimetres. A separate 10 by 10 sample grid explains the subdivision.\"><rect width=\"900\" height=\"540\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" fill=\"#17212b\"><text x=\"450\" y=\"37\" font-size=\"25\" font-weight=\"bold\" text-anchor=\"middle\">CONVERTING SQUARE METRES TO SQUARE CENTIMETRES</text><text x=\"231\" y=\"75\" font-size=\"19\" text-anchor=\"middle\">One square metre</text><rect x=\"100\" y=\"125\" width=\"260\" height=\"260\" fill=\"#f5f8fb\" stroke=\"#202a33\" stroke-width=\"3\"/><path d=\"M100 145 H120 V125\" stroke=\"#202a33\" stroke-width=\"2\" fill=\"none\"/><text x=\"230\" y=\"113\" font-size=\"19\" text-anchor=\"middle\">1 m = 100 cm</text><text x=\"85\" y=\"260\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(-90 85 260)\">1 m = 100 cm</text><text x=\"230\" y=\"244\" font-size=\"24\" font-weight=\"bold\" text-anchor=\"middle\">1 m²</text><text x=\"230\" y=\"276\" font-size=\"17\" text-anchor=\"middle\">100 cm × 100 cm</text><text x=\"230\" y=\"413\" font-size=\"17\" text-anchor=\"middle\">100 rows × 100 columns</text><path d=\"M396 260 H478\" stroke=\"#263645\" stroke-width=\"3\"/><path d=\"M463 251 L478 260 L463 269\" fill=\"none\" stroke=\"#263645\" stroke-width=\"3\"/><text x=\"645\" y=\"75\" font-size=\"19\" text-anchor=\"middle\">Sample grid: 10 × 10</text><rect x=\"525\" y=\"125\" width=\"240\" height=\"240\" fill=\"white\" stroke=\"#263645\" stroke-width=\"2\"/><path d=\"M549 125 V365 M573 125 V365 M597 125 V365 M621 125 V365 M645 125 V365 M669 125 V365 M693 125 V365 M717 125 V365 M741 125 V365 M525 149 H765 M525 173 H765 M525 197 H765 M525 221 H765 M525 245 H765 M525 269 H765 M525 293 H765 M525 317 H765 M525 341 H765\" stroke=\"#9caebb\" stroke-width=\"1\" fill=\"none\"/><text x=\"645\" y=\"393\" font-size=\"17\" text-anchor=\"middle\">100 sample cells</text><text x=\"645\" y=\"420\" font-size=\"15\" text-anchor=\"middle\">Not the full 1 m² grid</text><path d=\"M85 447 H815\" stroke=\"#b1bac2\" stroke-width=\"1\"/><text x=\"450\" y=\"483\" font-size=\"25\" font-weight=\"bold\" text-anchor=\"middle\">1 m² = 100 × 100 cm² = 10,000 cm²</text><text x=\"450\" y=\"512\" font-size=\"16\" text-anchor=\"middle\">The complete square has 10,000 one-centimetre squares.</text></g></svg>"
+    },
+    {
+      "section_index": 4,
+      "block_index": 21,
+      "caption": "Perimeter of a rectangle and a square",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 510\" width=\"900\" height=\"510\" role=\"img\" aria-label=\"Rectangle ABCD with opposite sides of 12 centimetres and 5 centimetres, perimeter 34 centimetres; square EFGH with each side 6 centimetres, perimeter 24 centimetres.\"><rect width=\"900\" height=\"510\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" fill=\"#1d2935\"><text x=\"450\" y=\"36\" font-size=\"25\" font-weight=\"bold\" text-anchor=\"middle\">PERIMETER: DISTANCE AROUND A SHAPE</text><text x=\"240\" y=\"83\" text-anchor=\"middle\" font-size=\"21\" font-weight=\"bold\">RECTANGLE ABCD</text><rect x=\"93\" y=\"157\" width=\"310\" height=\"145\" fill=\"#f7fafc\" stroke=\"#263443\" stroke-width=\"3\"/><text x=\"78\" y=\"150\" font-size=\"22\">A</text><text x=\"408\" y=\"150\" font-size=\"22\">B</text><text x=\"408\" y=\"327\" font-size=\"22\">C</text><text x=\"77\" y=\"327\" font-size=\"22\">D</text><text x=\"248\" y=\"140\" font-size=\"19\" text-anchor=\"middle\">12 cm</text><text x=\"248\" y=\"327\" font-size=\"19\" text-anchor=\"middle\">12 cm</text><text x=\"68\" y=\"234\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(-90 68 234)\">5 cm</text><text x=\"436\" y=\"234\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(90 436 234)\">5 cm</text><path d=\"M205 117 H286 M275 110 L286 117 L275 124 M449 190 V255 M442 245 L449 255 L456 245 M291 344 H209 M220 337 L209 344 L220 351 M49 263 V200 M42 210 L49 200 L56 210\" stroke=\"#405569\" stroke-width=\"2\" fill=\"none\"/><text x=\"248\" y=\"380\" font-size=\"18\" text-anchor=\"middle\">P = 12 + 5 + 12 + 5</text><text x=\"248\" y=\"409\" font-size=\"23\" font-weight=\"bold\" text-anchor=\"middle\">P = 34 cm</text><text x=\"669\" y=\"83\" text-anchor=\"middle\" font-size=\"21\" font-weight=\"bold\">SQUARE EFGH</text><rect x=\"576\" y=\"157\" width=\"185\" height=\"185\" fill=\"#f7fafc\" stroke=\"#263443\" stroke-width=\"3\"/><text x=\"559\" y=\"150\" font-size=\"22\">E</text><text x=\"767\" y=\"150\" font-size=\"22\">F</text><text x=\"768\" y=\"363\" font-size=\"22\">G</text><text x=\"559\" y=\"363\" font-size=\"22\">H</text><text x=\"668\" y=\"140\" font-size=\"19\" text-anchor=\"middle\">6 cm</text><text x=\"668\" y=\"366\" font-size=\"19\" text-anchor=\"middle\">6 cm</text><text x=\"552\" y=\"252\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(-90 552 252)\">6 cm</text><text x=\"791\" y=\"252\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(90 791 252)\">6 cm</text><path d=\"M629 117 H707 M697 110 L707 117 L697 124 M799 200 V280 M792 270 L799 280 L806 270 M710 384 H632 M642 377 L632 384 L642 391 M531 280 V202 M524 212 L531 202 L538 212\" stroke=\"#405569\" stroke-width=\"2\" fill=\"none\"/><text x=\"668\" y=\"409\" font-size=\"18\" text-anchor=\"middle\">P = 4 × 6</text><text x=\"668\" y=\"440\" font-size=\"23\" font-weight=\"bold\" text-anchor=\"middle\">P = 24 cm</text><text x=\"450\" y=\"485\" font-size=\"16\" text-anchor=\"middle\">Diagram not to scale. Arrows show movement around each shape.</text></g></svg>"
+    },
+    {
+      "section_index": 5,
+      "block_index": 35,
+      "caption": "Finding unknown rectangle dimensions from a given perimeter",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 940 570\" width=\"940\" height=\"570\" role=\"img\" aria-label=\"Algebraic rectangle ABCD with length 2x plus 3 centimetres, width x centimetres and perimeter 42 centimetres, followed by the same rectangle with actual dimensions 15 centimetres and 6 centimetres.\"><rect width=\"940\" height=\"570\" fill=\"white\"/><g font-family=\"Arial, sans-serif\" fill=\"#1c2833\"><text x=\"470\" y=\"38\" text-anchor=\"middle\" font-size=\"25\" font-weight=\"bold\">FINDING UNKNOWN RECTANGLE DIMENSIONS</text><text x=\"230\" y=\"82\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\">Before solving</text><rect x=\"90\" y=\"151\" width=\"285\" height=\"145\" fill=\"#f7fafc\" stroke=\"#263441\" stroke-width=\"3\"/><text x=\"74\" y=\"147\" font-size=\"22\">A</text><text x=\"380\" y=\"147\" font-size=\"22\">B</text><text x=\"380\" y=\"320\" font-size=\"22\">C</text><text x=\"74\" y=\"320\" font-size=\"22\">D</text><text x=\"233\" y=\"135\" text-anchor=\"middle\" font-size=\"19\">(2x + 3) cm</text><text x=\"233\" y=\"321\" text-anchor=\"middle\" font-size=\"19\">(2x + 3) cm</text><text x=\"65\" y=\"227\" text-anchor=\"middle\" font-size=\"19\" transform=\"rotate(-90 65 227)\">x cm</text><text x=\"400\" y=\"227\" text-anchor=\"middle\" font-size=\"19\" transform=\"rotate(90 400 227)\">x cm</text><text x=\"232\" y=\"365\" font-size=\"20\" font-weight=\"bold\" text-anchor=\"middle\">Perimeter = 42 cm</text><path d=\"M439 229 H506 M492 219 L506 229 L492 239\" stroke=\"#263441\" stroke-width=\"3\" fill=\"none\"/><text x=\"470\" y=\"200\" font-size=\"17\" text-anchor=\"middle\">Solve x = 6</text><text x=\"705\" y=\"82\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\">After solving</text><rect x=\"566\" y=\"151\" width=\"285\" height=\"145\" fill=\"#f7fafc\" stroke=\"#263441\" stroke-width=\"3\"/><text x=\"550\" y=\"147\" font-size=\"22\">A</text><text x=\"857\" y=\"147\" font-size=\"22\">B</text><text x=\"857\" y=\"320\" font-size=\"22\">C</text><text x=\"550\" y=\"320\" font-size=\"22\">D</text><text x=\"709\" y=\"135\" font-size=\"19\" text-anchor=\"middle\">15 cm</text><text x=\"709\" y=\"321\" font-size=\"19\" text-anchor=\"middle\">15 cm</text><text x=\"541\" y=\"227\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(-90 541 227)\">6 cm</text><text x=\"875\" y=\"227\" font-size=\"19\" text-anchor=\"middle\" transform=\"rotate(90 875 227)\">6 cm</text><text x=\"709\" y=\"365\" font-size=\"20\" font-weight=\"bold\" text-anchor=\"middle\">Perimeter = 42 cm</text><path d=\"M100 399 H840\" stroke=\"#aeb8c0\" stroke-width=\"1\"/><text x=\"470\" y=\"432\" font-size=\"20\" text-anchor=\"middle\">42 = 2[(2x + 3) + x] = 6x + 6</text><text x=\"470\" y=\"463\" font-size=\"20\" text-anchor=\"middle\">6x = 36, so x = 6</text><text x=\"470\" y=\"494\" font-size=\"20\" text-anchor=\"middle\">Length = 2(6) + 3 = 15 cm; width = 6 cm</text><text x=\"470\" y=\"528\" font-size=\"22\" font-weight=\"bold\" text-anchor=\"middle\">Area = 15 × 6 = 90 cm²</text><text x=\"470\" y=\"552\" font-size=\"15\" text-anchor=\"middle\">Diagram not to scale. Both rectangles represent the same dimensions.</text></g></svg>"
+    }
+  ]
+}

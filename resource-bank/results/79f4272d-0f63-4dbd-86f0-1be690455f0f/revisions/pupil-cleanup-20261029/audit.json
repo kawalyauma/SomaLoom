@@ -1,0 +1,107 @@
+{
+  "original_issue": 139,
+  "document_id": "bb8f6f0c-ade8-4ee5-a068-5145ef7be86c",
+  "import_receipt": {
+    "id": "2fc0ba61-291f-45f9-809d-90cb9ded7684",
+    "document_id": "bb8f6f0c-ade8-4ee5-a068-5145ef7be86c",
+    "version": 2,
+    "review_state": "draft"
+  },
+  "chat_url": "https://chatgpt.com/c/6ae389d8-3910-83e9-a7f6-4fb556d105d5",
+  "authorship": "Existing regular ChatGPT Chat; Codex applied patches and rendered original ChatGPT SVGs only",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true,
+  "known_limitations": [
+    "Diagram 2 label/arrow spacing needs polish",
+    "Only sampled PDF pages visually inspected",
+    "Full P5/P6 source coverage not verified"
+  ],
+  "artifacts": {
+    "pupil-cleanup-response.json": "1ecf93e949590adbaa4a40e1bdde9431de242fcc70e8a6ed9172deee3bdc11e2",
+    "original-diagram-1.svg": "ec98b55214f4c9ca2274f66803385be0f9197e1a93365814b43de3cfddd14d3b",
+    "original-diagram-2.svg": "3d9d845d0a5ee003943022ecc2d39b4d0a5a500efd6ad0acc95c3d5cbbd30956",
+    "original-diagram-3.svg": "3a182d960cdb349818dd04bbb775dda48a024768157d4fce5e8c26dcf5759a0c"
+  },
+  "pdf_checks": {
+    "checked_at": "2026-10-29T20:35:01.948Z",
+    "results": [
+      {
+        "name": "week1-student-draft",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 1,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 389995,
+        "sha256": "05053945dee3d6ecdf3a3b2b1291c9759c8a87ef9cebf6a9c0c521c0e8a43f37",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week1-lesson1-student-draft",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 1,
+          "lesson": 1,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 51803,
+        "sha256": "932d36268fd5a1ff2d1b4bbb2b0f1d958d8252b4d67d339587a14d4dadc24ec2",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week1-approved-denial",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 1,
+          "edition": "approved"
+        },
+        "status": 409,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 177,
+        "sha256": "d3f9ca0e5129f29d7ae2d5b25c9542cb2e791c3d5fb3c48dd5fcc30456ecba33",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 1 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"b39a0143-2776-455e-8a23-cf7ca6d79597\"}"
+      },
+      {
+        "name": "term3-incomplete-denial",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "edition": "draft"
+        },
+        "status": 409,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 351,
+        "sha256": "440b33da0a5e5cd14e33dd2a3e527300e07bddc646ddc2adf5fe27ba0ebb55e2",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Notes are still missing for Week 4 lesson 1, Week 4 lesson 2, Week 4 lesson 3, Week 4 lesson 4, Week 4 lesson 5, Week 4 lesson 6, Week 5 lesson 1, Week 5 lesson 2, Week 5 lesson 3, Week 5 lesson 4, Week 5 lesson 5, Week 5 lesson 6 and 6 more.\",\"details\":null},\"request_id\":\"affd4beb-03c5-4778-82a6-4b0e047730ea\"}"
+      }
+    ]
+  }
+}
