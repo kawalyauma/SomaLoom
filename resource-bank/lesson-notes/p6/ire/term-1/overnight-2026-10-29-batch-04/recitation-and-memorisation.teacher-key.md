@@ -12,7 +12,7 @@ Use an accurate printed Qur'an (Chapter 105) and a qualified reciter/teacher for
 5. To avoid changing or guessing the words of the Qur'an and to learn correct recitation.
 6. Reading the Qur'an aloud carefully.
 7. Ask the teacher for help, listen again and practise until corrected.
-8. Listen → repeat → recite from memory → check (checking may also happen after each attempt).
+8. Listen, then repeat, then recite from memory, then check (checking may also happen after each attempt).
 9. Performance assessment: five verses in correct order with pronunciation checked against the Qur'an by a competent teacher. Record individual feedback; no written-only answer.
 10. Examples: humility, trust in Allah, avoiding harm or arrogance, respect for sacred places.
 
