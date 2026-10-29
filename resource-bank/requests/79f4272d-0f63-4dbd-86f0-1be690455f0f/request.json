@@ -1,0 +1,237 @@
+{
+  "id": "79f4272d-0f63-4dbd-86f0-1be690455f0f",
+  "request": {
+    "curriculum_id": "f0817f37-80f1-59be-9429-a50ad2c8b3f7",
+    "document_type": "lesson_notes",
+    "level_id": "e0e5ba0f-0c83-5dc3-83bf-9959ef5c33a5",
+    "options": {
+      "audience": "learner",
+      "depth": "comprehensive",
+      "execution_mode": "github",
+      "planning_scope": {
+        "basis": "Uploaded schemes, not official curriculum endorsement",
+        "class": "P6",
+        "lesson": null,
+        "lessons": [
+          {
+            "activities": [
+              "Draw a table of metric units."
+            ],
+            "inferred": true,
+            "lesson": 1,
+            "objectives": [
+              "Identify different metric units."
+            ],
+            "subtopic": "Conversion of metric units: identifying units",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Solve conversion problems."
+            ],
+            "inferred": true,
+            "lesson": 2,
+            "objectives": [
+              "Convert between metric units."
+            ],
+            "subtopic": "Conversion from one metric unit to another",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Solve square-unit conversion problems."
+            ],
+            "inferred": true,
+            "lesson": 3,
+            "objectives": [
+              "Convert between square units."
+            ],
+            "subtopic": "Conversion of square units",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer oral questions."
+            ],
+            "inferred": true,
+            "lesson": 4,
+            "objectives": [
+              "Calculate the perimeter of rectangles and squares.",
+              "Find a missing side."
+            ],
+            "subtopic": "Finding area when given the perimeter: perimeter and missing sides",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Attempt the evaluation exercise."
+            ],
+            "inferred": true,
+            "lesson": 5,
+            "objectives": [
+              "Calculate area when given the perimeter."
+            ],
+            "subtopic": "Calculating area from a given perimeter",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Attempt teacher-provided problems."
+            ],
+            "inferred": true,
+            "lesson": 6,
+            "objectives": [
+              "Find unknown values and actual rectangle dimensions."
+            ],
+            "subtopic": "Finding the sides, area and perimeter: unknown sides",
+            "topic": "Length, mass and capacity"
+          }
+        ],
+        "subject": "Mathematics",
+        "term": 3,
+        "week": 1
+      },
+      "term": "Term 3"
+    },
+    "resource_filters": {},
+    "subject_id": "7cd99986-7d53-5eb0-8ed5-30d2ece6bee1",
+    "topic_ids": [
+      "59d39831-3b72-506e-be4f-93aa04daf6c9",
+      "c94a6b88-9e4c-5e83-bbaa-1003898446aa",
+      "adfa24d4-6323-5e28-ae0c-9af88725def8",
+      "4d3875bb-b9db-53a3-a5ab-9f89d8fca51b",
+      "b7d1fd18-3d3a-5470-8eb6-59729e2c6e4f",
+      "498726a0-9762-526e-a343-0bcada626f58"
+    ]
+  },
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1.pdf",
+      "sha256": "439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833",
+      "title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "version_id": "29ba9d08-1d2f-475b-abaa-be2808d440b7"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/84ca271313e5e97f806f73057508b189b8e00f9e9ff134c3d4263ef07c694e87.docx",
+      "sha256": "84ca271313e5e97f806f73057508b189b8e00f9e9ff134c3d4263ef07c694e87",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/6a58f16cc2c737d4bd563a300aadf0eb02c6ee69/P.5%20NOTES.docx",
+      "title": "P.5 NOTES",
+      "version_id": "3f6fc15e-2dde-4cc2-9ec1-5aae582b2f03"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f.docx",
+      "sha256": "4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx",
+      "title": "P.5 MATH",
+      "version_id": "41261fa4-87aa-4a69-9497-3dd3a41521f0"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/cc68e270e265fee8b0597ecf93b3a51400ada9bbb49c53d656cbf00156a0acb5.pdf",
+      "sha256": "cc68e270e265fee8b0597ecf93b3a51400ada9bbb49c53d656cbf00156a0acb5",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/bdbfe7e0b42bb402bda46fccb95d1edd9b7016a3/P.5%20COMPOSITION%20AND%20COMPREHENSION%20SCHEME%20TERM%20III.pdf",
+      "title": "P.5 COMPOSITION AND COMPREHENSION SCHEME TERM III",
+      "version_id": "5cb4a828-eef6-49dc-a9cf-5faec69e0928"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a.pdf",
+      "sha256": "0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf",
+      "title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "version_id": "5cfbda70-c2bc-4b55-bf00-fb0ec86a7a3b"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0917205db30ea6fd7d080cd999b36e6f9181de0e4fdf88d37c946976ff9c96af.pdf",
+      "sha256": "0917205db30ea6fd7d080cd999b36e6f9181de0e4fdf88d37c946976ff9c96af",
+      "source_uri": "https://t.me/TeacherInUganda/62991",
+      "title": "CURRENT ELECTRICITY-ssekwe _1_ - Copy.pdf",
+      "version_id": "72337b5e-4c7c-44ee-b566-7855fd72654a"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/d3ad726c41c945411bb2d2b2505c5f8fb27351ab909f99f5d10096d6dd56d9e1.pdf",
+      "sha256": "d3ad726c41c945411bb2d2b2505c5f8fb27351ab909f99f5d10096d6dd56d9e1",
+      "source_uri": "https://t.me/primaryteachersofuganda/29971",
+      "title": "REPORT ON WORK OF CANDIDATES2024 DIDIX.pdf",
+      "version_id": "95a0810c-0108-4b64-b753-93dfb4fcfc82"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/6d40e683cbce5427807a6d2b1ade7b0a2a9a2ab5a3ff8c27c8c32582c6950c83.pdf",
+      "sha256": "6d40e683cbce5427807a6d2b1ade7b0a2a9a2ab5a3ff8c27c8c32582c6950c83",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/8f9dad0cc4c1df4c56bbe8e727f30594b89dfa55/PRIMARY%20FOUR%20%20MATHS.pdf",
+      "title": "PRIMARY FOUR  MATHS",
+      "version_id": "a39afc0f-392b-4326-aacf-14ea2ac43304"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791.pdf",
+      "sha256": "21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791",
+      "source_uri": "https://t.me/TeacherInUganda/46812",
+      "title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "version_id": "a47c146e-4cd0-4a95-8b2e-e0107d57c6c9"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/3a9d7c34d75dfded485816de5fe52ed105aae8565eb0d098de2df9e928ea5006.pdf",
+      "sha256": "3a9d7c34d75dfded485816de5fe52ed105aae8565eb0d098de2df9e928ea5006",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a8fa721950efc8ccc6c3ea6b77334fa295806519/P.%205%20Math%20Notes%20TERM%20I%2C%20II%2C%20III.pdf",
+      "title": "P. 5 Math Notes TERM I_ II_ III",
+      "version_id": "be132dbc-cd22-4f9c-ac9a-fcdcf12e28c3"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/d956500f7d088e129a6d73884f2bd7efce774aef6097ba1de3f880596e7d5628.pdf",
+      "sha256": "d956500f7d088e129a6d73884f2bd7efce774aef6097ba1de3f880596e7d5628",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/302e047503c2efc3097f7c57c0f12f2d4fed6e7b/P.5%20Week%20%202.pdf",
+      "title": "P.5 Week  2",
+      "version_id": "be96bc65-2479-4031-8c5d-f7176c3a6c47"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6.pdf",
+      "sha256": "8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf",
+      "title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "version_id": "c2f481ed-af75-429a-be86-830e782620a5"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6.pdf",
+      "sha256": "0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6",
+      "source_uri": "https://t.me/TeacherInUganda/63018",
+      "title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "version_id": "d25acd2a-08c8-4ba7-ba07-c43a5cd04424"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/bcd25b02dc2bfef53453d5e85537ef8ff98ba6516c2150b7c174d7fea14ec632.pdf",
+      "sha256": "bcd25b02dc2bfef53453d5e85537ef8ff98ba6516c2150b7c174d7fea14ec632",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/03345144449bf4d177754adcf2e0a8bd27a76da9/P.5%20MATHEMATICS%20SCHEME%20%20TERM%201.pdf",
+      "title": "P.5 MATHEMATICS SCHEME  TERM 1",
+      "version_id": "e81899f5-fcaf-4773-b39f-b794cdeda99f"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/7f2d86b7a16100f57d013ffeedbf6bdc2271bea758fb005f58ccb66e832060c9.pdf",
+      "sha256": "7f2d86b7a16100f57d013ffeedbf6bdc2271bea758fb005f58ccb66e832060c9",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/191539bff131c6d1f065f0d62ba8fd770e613c15/P.5%20TERM%203%20MATHEMATICS%20WORK%20BOOK.pdf",
+      "title": "P.5 TERM 3 MATHEMATICS WORK BOOK",
+      "version_id": "eda40d46-dd6b-4c46-a947-c75cde5bb280"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d.pdf",
+      "sha256": "574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/052b5257b26b98edd65df28ffd4b62ab8e0432e1/P.5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME%20CREATIVE.pdf",
+      "title": "P.5 TERM I_ II_ III MATH SCHEME CREATIVE",
+      "version_id": "ffdc8759-a5c2-4eed-893b-4999a81b7a53"
+    }
+  ]
+}

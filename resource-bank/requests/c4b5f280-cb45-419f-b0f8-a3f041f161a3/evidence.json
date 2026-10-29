@@ -1,0 +1,325 @@
+{
+  "outcomes": [
+    {
+      "code": "P6-T3W2L2-5b6fdc",
+      "description": "Find the length and width of rectangles.",
+      "id": "c1077b07-ad80-5268-bd95-d13eb9794243"
+    },
+    {
+      "code": "P6-T3W2L3-3a357c",
+      "description": "Calculate the area of shaded rectangles.",
+      "id": "a9411c35-0734-55c2-9147-2ae976cf9a96"
+    },
+    {
+      "code": "P6-T3W2L1-81d612",
+      "description": "Calculate the area and perimeter of a rectangle.",
+      "id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+    },
+    {
+      "code": "P6-T3W2L4-8d1e88",
+      "description": "Find the base of a triangle.",
+      "id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+    },
+    {
+      "code": "P6-T3W2L5-0022ac",
+      "description": "Find the height of a triangle.",
+      "id": "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+    },
+    {
+      "code": "P6-T3W2L6-a86827",
+      "description": "Find the area of a trapezium.",
+      "id": "7428b1b5-b699-5be6-801b-0ed10e266244"
+    }
+  ],
+  "passages": [
+    {
+      "id": "ef9d3d4b-4d3b-5264-8bef-d597276996d1",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "Area of\nshaded\nparts of\nrectangles",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "af1d0f40-e4de-532f-8718-4bd2ea02891f",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "2. Calculates the area of the shaded rectangles.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "5bcadea7-42ab-523f-88ca-5bd846f52177",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "2.\nCalculates\nthe area of\nthe\nrectangle.\n3. Finds its\nperimeter.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "568f8efc-4a08-5151-92d7-da9e5276caaf",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "unknowns\nby\ncomparing\nareas of\ntriangles.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "69d7f0b0-f4f9-59e4-be6d-c7e980455b05",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "2. Finds the\nheight of\nthe triangle.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "2b0fef34-ed51-5d5b-8093-2018a593df96",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "1. Finds the\narea of a\ntrapezium.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "1b31c9ba-e465-50c4-8a6c-01f57a35dc02",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "riting | Mk ncdc 161 Macm 262 Fountain 186 | - | | | | | Area of a circle Finding area of a circle Word problem involving area of a circle | Draws circles Measures objects Finds area of a circle | - Interprets statements - Reads word problems | Guided discovery Explanation | - Problem solving - Critical thinking | Wall charts | - Drawing - Cutting - Shading - Tracing | Fountain 190 Mk ncdc 134 | - | | | | | Find are of a circle given circumference Finding parts of a circle given tis area | Forms equation for unknown Finds missing parts | - Reads word statements - Interprets word problems | Discussion Questions and answer | - Do | Do | - Do | Fountain 190 | - | | | | Area of parts of a circle",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "1f2c4965-0dd5-52bb-bda0-46c1c7ef5640",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "area of a triangle Examples 1.The base of a triangle is 4cm and the height is 9cm. Find its area 9cm 4cm A = 1 x b x h 2 A = 1 x 4cm x9cm 2 A = 2cm x 9cm A = 18 cm 2 | Guided discovery Discussion Group work Think pair share | Dividing the figure Calculating area. | Critical thinking Effective Communication Problem solving | Chart | A new MK Primary Pupils Bk.5 Pages 163-165 | | 5 | | | | | | Finding area of combined figures Examples Find the area of the figure below. 4cm 3cm 6cm 5cm 9 cm Divide the figure to form defined shape | | | | | | | 5 | Measurements | Length, mass and capacity | Area | The learner; 1.Calculates area of the figure 2. Calculates area of the shaded part. | The learner; ",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "8fc6b3bb-4ceb-5ea9-ad28-65ff17f50695",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "Term III | | | | | | | | | | | | 1 | 1 | Lengths, mass and capacity | Conversion of metric units | - Km to m - M to cm - Cm to mm - Km to cm - Dm to cm | - Do | Converts metric unites correctly | Do | - Do | - Do | Old mk 313-315 | | | 2 | | | - M to km - Cm to m - Mm to cm - Cm to km - Cm to dm | - Do | Do | Do | - Do | - Do | Do | | | 3 | | Perimeter | - Finding missing sides - Identifying shapes - Calculating perimeter | - Do | Identifies shapes and finds perimeter | Do | - Do | - Do | Old mk 320 | | | 4 | | Area | - Identifies shapes - Finding area of a square - Finding sides of a square using area - Using area of a square to find perimeter | - Do | Finds area and perimeter of a square |",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "26d2df6d-c574-5c9c-86f2-6254287e27d7",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "ke twenty five, written as 25 means 2 groups of 10 and 5 units Suppose instead we had say 6 fingers. 1. How, in your opinion would we do our counting? | 2. If we had eight fi ngers, how would we count? NOTE 1 The digits of a number in any base are less than the base itself 2 The digits 10 and 11 are represented by t and e respectively in number bases 3 For digits above 11 are represented by alphabetic letters of your choice 4 The names of some number systems is as given below NUMBER NAME BASE SYSTEM VALUE Base three trinary base 3 Base four quaternary 4 base Base five quinary 5 base Base six seximal 6 base Base seven septimal 7 base Base eight octal base 8 Base nine nonary base 9 Base ten de",
+      "source_title": "S1-S4 MTH LEARNER_S RESEARCH BOOK _ LBL_.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63911"
+    },
+    {
+      "id": "f3e90650-77fb-5032-bb20-a25cbe479444",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "inting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Spade | For carrying soil | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Slasher | For slashing | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | sickle | For cutting grass | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Prunner | For prunning | Keeping tools in a dry place. By painting the tools. By oiling garde",
+      "source_title": "P.3-LITERACY-I-LESSON-NOTES-2016.docx",
+      "source_uri": "https://t.me/primaryteachersofuganda/6364"
+    },
+    {
+      "id": "2ada510d-cbde-59a8-b891-1bbc02479bd9",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "nvolving area. | The learner; 1. Constructs sentences using area. 2. Reads and interprets word problem s involving area. | Finding area of a rectangle 1.A rectangle has twoopposite side equal. 2.The longer side is the Length(L) and theshorter side is the width (W) Examples 1.find the area of a rectangle whose length is cm and width 4cm 7cm 4cm A = L xW A =7cm x 4cm A =28 cm2 | Guided discovery Discussion Group work Think pair share | Calculating area | Critical Thinking Effective communication Problem solving | Chalkboard illustration | A new MK primary MTC pupils Bk.5 pgs 159-162 | | 3 | | | | | | Finding area of triangles Note: Show hoe you come to the formula For finding area of a triangl",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "f8eb943a-a4ad-55c7-855f-2ac821777fb3",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "| | | | combined figures | | | | | | | | | 3 | | Trapezium | - Types of trapezia - Properties - Finding sides of a trapezium - Finding sides of a trapezium using area | - Do | Names types of trapezia Finds area and types of trapezia | Do | - Do | - Do | New mk 128 Old mk 344-346 | | | 4 | | Parallelogram | - Finding area - Finding base and height using area | - Do | Finds area and sides of a parallelogram | Do | - Do | - Do | New mk 129 Old mk 347 | | | 5 | | Rhombus and kite | - Stating properties - Finding area of a kite - Calculating | - Do | States properties and calculates area | Do | - Do | - Do | New mk 130 | | | 6 | Circle | Circumference | - Finding radius and diameter - Identifying",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "9e1ed19d-fb42-527e-8c63-b363705e3ddb",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "Term III | | | | | | | | | | | | 1 | 1 | Lengths, mass and capacity | Conversion of metric units | - Km to m - M to cm - Cm to mm - Km to cm - Dm to cm | - Do | Converts metric unites correctly | Do | - Do | - Do | Old mk 313-315 | | | 2 | | | - M to km - Cm to m - Mm to cm - Cm to km - Cm to dm | - Do | Do | Do | - Do | - Do | Do | | | 3 | | Perimeter | - Finding missing sides - Identifying shapes - Calculating perimeter | - Do | Identifies shapes and finds perimeter | Do | - Do | - Do | Old mk 320 | | | 4 | | Area | - Identifies shapes - Finding area of a square - Finding sides of a square using area - Using area of a square to find perimeter | - Do | Finds area and perimeter of a square |",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "d2be6893-9812-5f1c-aed5-c09d32ec273a",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "nvolving area. | The learner; 1. Constructs sentences using area. 2. Reads and interprets word problem s involving area. | Finding area of a rectangle 1.A rectangle has twoopposite side equal. 2.The longer side is the Length(L) and theshorter side is the width (W) Examples 1.find the area of a rectangle whose length is cm and width 4cm 7cm 4cm A = L xW A =7cm x 4cm A =28 cm2 | Guided discovery Discussion Group work Think pair share | Calculating area | Critical Thinking Effective communication Problem solving | Chalkboard illustration | A new MK primary MTC pupils Bk.5 pgs 159-162 | | 3 | | | | | | Finding area of triangles Note: Show hoe you come to the formula For finding area of a triangl",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "8d6b310c-49b0-5f25-912b-5fd53d955160",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "inting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Spade | For carrying soil | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Slasher | For slashing | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | sickle | For cutting grass | Keeping tools in a dry place. By painting the tools. By oiling garden tools By greasing the tools. By cleaning tools before storing them. | Prunner | For prunning | Keeping tools in a dry place. By painting the tools. By oiling garde",
+      "source_title": "P.3-LITERACY-I-LESSON-NOTES-2016.docx",
+      "source_uri": "https://t.me/primaryteachersofuganda/6364"
+    },
+    {
+      "id": "bc0ec0dc-f85f-5a7e-b49c-453863ac4ef5",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "35. Write any one step the government of Uganda has taken to fight corruption in public offices. ✓ By empowering the IGG to investigate corruption ✓ By setting up the COSASE to monitor government funds ✓ By regular auditing of finances of public offices ✓ By arresting corrupt officers ✓ By setting up declaration of assets of public officials ✓ By capturing property of corrupt officials ✓ By asking public offices to display their budgets to public ✓ By putting toll free number to report corrupt officers ✓ By rewarding whistle blowers of corruption ✓ By establishing the Inspectorate of Government (IGG office). ✓ By setting up the Anti-Corruption Court ✓ By introducing strict laws against Corru",
+      "source_title": "uneb_ple_2025_all_papers_with_answers_sst_science_english_and_mathematics.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/67329"
+    },
+    {
+      "id": "2d3dc642-8241-505d-895e-f376f55a9b59",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "| | | | combined figures | | | | | | | | | 3 | | Trapezium | - Types of trapezia - Properties - Finding sides of a trapezium - Finding sides of a trapezium using area | - Do | Names types of trapezia Finds area and types of trapezia | Do | - Do | - Do | New mk 128 Old mk 344-346 | | | 4 | | Parallelogram | - Finding area - Finding base and height using area | - Do | Finds area and sides of a parallelogram | Do | - Do | - Do | New mk 129 Old mk 347 | | | 5 | | Rhombus and kite | - Stating properties - Finding area of a kite - Calculating | - Do | States properties and calculates area | Do | - Do | - Do | New mk 130 | | | 6 | Circle | Circumference | - Finding radius and diameter - Identifying",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "38bc7c76-7a7a-5899-bce2-ad38efa3e164",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "nvolving area. | The learner; 1. Constructs sentences using area. 2. Reads and interprets word problem s involving area. | Finding area of a rectangle 1.A rectangle has twoopposite side equal. 2.The longer side is the Length(L) and theshorter side is the width (W) Examples 1.find the area of a rectangle whose length is cm and width 4cm 7cm 4cm A = L xW A =7cm x 4cm A =28 cm2 | Guided discovery Discussion Group work Think pair share | Calculating area | Critical Thinking Effective communication Problem solving | Chalkboard illustration | A new MK primary MTC pupils Bk.5 pgs 159-162 | | 3 | | | | | | Finding area of triangles Note: Show hoe you come to the formula For finding area of a triangl",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "330c7d52-fb82-520d-8425-a579f0785724",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "| | | | | | | | | | | | | | 6 | Measurements | Length | Area | The learner; Identifies the shape given Applies and uses the formulae of finding area correctly Uses correct units of area Draws the shape well | The learner; Reads, spells, pronounces and writes words like area, covered, square, rectangle and units correctly | Areas of a square and rectangle Area is the speace covered by an object It is measured in squared units W L Area of = L x L W L Area of = L x W Examples Find the area of the figure below 3cm 13cm 12cm | Guided discovery Explanation Question and answer Group discussion | Identifying the shapes Applying the formulae for area on each shape Calculating the area | Neatness Love",
+      "source_title": "P.5 MATHS SCHEME OF WORK TERM III",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/bb7d98a15a294014ca08e478559561b3f5f30f17/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%20III.pdf"
+    },
+    {
+      "id": "032feb65-d0bd-5168-9df6-e246ff66b268",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "| | | | | 2. Finds the missing side. 3. Calculate the area when given the perimeter. | area. | a rectangle is 45dm and the width is 5dm.Find the perimeter of the same rectangle. | storming guided discussio n think and pair | and respecting others. | exercise. | | mtcs bk 6 page 333 | | | 6 $ 1 | M E A S U R E M E N T | LENGT H, MASS AND CAPACI TY | Finding the sides, area and perimeter | The learner 1. Finds the value of the unknowns. 2. Calculates the area of the rectangle. 3. Finds its perimeter. | The learner explains the meaning of words such as length, width, perimeter and area. | Example 1. ABCD is a rectangle. Use it to answer the questions that follow 1)Find the value of x 2) Find th",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "bf7ab23b-ef4b-5e31-8fb2-721529dcf065",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Octagon 8 Nonagon 9 Decagon 10 Hendagon/Nuodecagon 11 Duodecagon 12 Aid to memory ❖ A polygon is a simple closed figure joined by line segments at its end points (vertices). The prefix “POLY” means many. “GONS” means corners. BASES BASES BASE NAME Base one (1) Unary base Base two (2) Binary base Base three (3) Trinary base/ternary base Base four (4) Quaternary base Base five (5) Quinary base Base six (6) Senary base/Seximal base Base seven (7) Septenary base/Septimal base Base eight (8",
+      "source_title": "THE PEARL BASIC _ APPLIED MATHEMATICAL FORMULA 2024 1.pdf",
+      "source_uri": "https://t.me/primaryteachersofuganda/6954"
+    },
+    {
+      "id": "718b0254-5af6-5413-a1d4-49dbbc06675c",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "r is divisible by 2 if its last digi is even e.g. 136, 1760. (ii) A number is divisible by 3 if the sum of its digits is divisible by3, e.g. 4713 since 4 + 7 + 1 + 3 = 15 which is divisible by 3. (iii) A number is divisible by 4 if the number formed by the last two digits is divisible by 4 e.g. 144; 128. (iv) A number is divisible by 5 if its last digit is 5 or 0. (v) A number is divisible by 6 if it is divisible by 2 and 3. (vi) A number is divisible by 8 if the number formed by the last 3 digits is divisible by 8. e.g. 29848; 1048. (vii) A number is divisible by 9 if the sum of its digits is divisible by 9 e.g. 447129 since 4+4+7+1+2+9 = 27 which is divisible by 9.",
+      "source_title": "S1-S4 MTH LEARNER_S RESEARCH BOOK _ LBL_.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63911"
+    },
+    {
+      "id": "aee2cc93-2d35-57c9-92fe-a3d0b4d4c23f",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "| | | LENGT | Area of a | The learner | The learner | 8cm Example | | Appreciati | Answering | | | | 2 | 6 $ 1 | | H, MASS AND CAPACI TY | trapezium | 1. Finds the area of a trapezium. 2. Calculates the missing side of the trapezium. 3.Finds the perimeter of the trapezium | pronounces the word trapezium and also identifies the two parallel sides. | 1.Use the trapezium below to answer the questions that follow a) Calculate the area of the figure above. b) Find its perimeter. | Class discussio n Problems olving Guided discovery | on of oneself and others, Problem solving and assertiven ess | the oral questions. Attemptin g the given evaluation exercise | Chalkb oard illustra tion | Mk mtcs bk ",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "9b8bb42c-086b-5d58-a332-b0973922e6c0",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "| | | Length | - Names units for length - Explains the smallests and biggest units for length - Names the instruments used to measure length - Modern & tranditional instruments | scientific units for measuring lenth corretly | Millimetre (mm) Centimetre (cm) Decimeter (dc) Metre (m) Decametre (dm) Hectometer (hm) Kilometre (km) Basic unit for measuring length is metre. (M) Instruments for measuring length i) Modern instruments ii) traditional instruments - Stides , sticks , strings, foot steps - Arm , span, handspan Foot ruler Metre ruler Tape measure etc | Measuring length using standard measures and correct instruments Using correct units of measuring different situations | Tape measure St",
+      "source_title": "P5-PRIMARY-FIVE-SCIENCE-SCHEME-OF-WORK_TEACHER.pdf",
+      "source_uri": "https://t.me/primaryteachersofuganda/6311"
+    },
+    {
+      "id": "22cda1b3-ccc8-561a-b0fa-99734d5aa798",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "5 | 1 | | | | 2. Find the area of the shaded region 7cm 4c 6cm 12cm Area of area of A = L x W A = ½xbxh 12cm x7cm ½x6cm x4 =84cm2 1x3x4 =12cm2 Area of shaded part =84cm2 -12cm2 72cm2 | recognizes given figures correctly -finds area of shaded regions in given rectangles | names given regions correctly | | | | | | 2 | | Length mass capacit y | Total surfac e area | Find the total surface area 3cm 4cm 6cm 2(LxW) + 2(L x H) + 2 (W xH) 2(6x3) + 2(6x4)+2(4x3) (2x18)+(2x24)+(2x12) 36cm +48cm +24cm 108cm2 | -finds the total surface area of the cuboid writes the given units correctly | -reads and interprets the words problems involving surface area on a cuboid | recitati on recogn ition critical thin",
+      "source_title": "p.5 mtc term 3",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a2267806ddbff801e0ddc2773f7c11fa21d6deef/p.5%20mtc%20term%203.pdf"
+    },
+    {
+      "id": "335c5143-b0a0-5d76-8228-bee8efde3b31",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "| THEME : MEASUREMENT TOPIC 1 : MONEY  Exchanging money  Rates of buying and selling  Finding unit price  Finding total price  Shopping bills and balance (change)  Interpretation of tables.  Finding profits  Finding selling prices  Finding loss TOPIC 2: LENGTH, MASS AND CAPACITY  Conversation of length millimeters to centimeters.  Conversation of length centimeters to millimeters  Finding the perimeter of a rectangle.  Finding the perimeter of a square.  Finding the perimeter of a triangle  Finding the area of a rectangle.  Finding area of a square.  Finding area of a triangle THEME: NEMERACY INTERGERS  Definition And description of integers  Arranging integers in ascendin",
+      "source_title": "P.5 TERM 3 MATHEMATICS WORK BOOK",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/191539bff131c6d1f065f0d62ba8fd770e613c15/P.5%20TERM%203%20MATHEMATICS%20WORK%20BOOK.pdf"
+    },
+    {
+      "id": "a4e4c20d-9443-5eac-b59b-abb92e753037",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "9 | 2 2 2 | O P E R A T I O N O N N U M B E R S | Bas es | Bas e five | WRITING BASE FIVE NUMBERS IN WORDS iii) Converting base five numbers to words. iv) Reading digit in a base five. EXPANDING IN BASE FIVE iii) The place values of each digit in base five number. iv) Expanding in base five CHANGING BASE FIVE TO BASE TEN iii) Application of expanding in base five by multiplication and addition. iv) Adding the expanded expression to find base ten. | Proble m solving | Learners should be able to: iii) Convert base five numbers to words. iv) Reading each digit in a base five number separately so as to easily write in words. Learners should be able to: iii) State the place value of each digit in",
+      "source_title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf"
+    },
+    {
+      "id": "bdc4e88d-65c7-5b16-adfe-72b4bc7992c5",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "The passive form of the future simple tense is got from the order below ; will be + a past participle verb Examples 1. I shall eat food. (active) 2. Food will be eaten by me. (passive) 3. Cars will carry people (active) 4. People will be carried by cars. (passive) 5. The doctor will warn me against smoking cigarettes. (active) 6. I shall be warned against smoking cigarettes by the doctor. (passive Activity Change these sentences into passive 1. They will take the ball 2. He will beat us 3. We shall carry it 4. I shall answer many questions 5. I will learn science 6. They will guide us 7. They will sweep the class 8. Okot will play football tomorrow Change the following into active 1. Meat is",
+      "source_title": "P.5 English language Lesson notes",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/aef6fb04cc6e6bb40b3c63ccabfc8331da6abad0/P.5%20English%20language%20Lesson%20notes.pdf"
+    },
+    {
+      "id": "e5f10178-5327-5b3d-95dc-2d33b0de4a40",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "| | | Areas | Finding area of triangles Finding missing parts given area of a triangle Word statement involving a triangle | Draws figures Interpret word statements Finds area | - Describes the term area - Interprets word problem | Effective communication Problem solving | - Cutouts - Chalkboard illustration | Drawing Tracing | - | Mk ncdcn 160 | - | | | | | Comparing area of a triangle Finding missing part of triangle by comparing its area | Draws interprets triangles Forms equations Solves word problem | - Interprets statements - Read given statements | Guided discovery Discussion | - Problem solving - Critical thinking | Cut out Chalkboard illustration | - Drawing - Reading | | - | | | | ",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "1a0afda5-b993-5607-8b4f-f3cbbb62111a",
+      "license": "unknown",
+      "outcome_id": "c1077b07-ad80-5268-bd95-d13eb9794243",
+      "quote": "| | | | | | | Area = ½ x b x h = ½ x 10cm x 7cm =5cm x 7cm =35cm2 13cm 5m 24cm A = ½ x b x h ½ x 24cm x 5cm 12cm x 5cm 60cm2. The base of a triangle is 10cm audits heaight is 8cm. Find its area. | | | | | | 4 | 1 | Measurements | Length | Area | The learner; Draws the jointed figure correctly Divides the jointed figures into parts correctly Finds the area of parts and total correctly | The learner; Reads the names of the figures correctly Recognizes the shapes and writes the names correctly | Area of combined shape Examples 8cm 6cm A h B 12cm | Explanation Guided discovery Question and answer | Identifying the parts of the jointed figure Cutting the jointed figure into parts Finding the area",
+      "source_title": "P.5 MATHS SCHEME OF WORK TERM III",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/bb7d98a15a294014ca08e478559561b3f5f30f17/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%20III.pdf"
+    },
+    {
+      "id": "9deb178b-a772-5502-b664-f4015953c76c",
+      "license": "unknown",
+      "outcome_id": "a9411c35-0734-55c2-9147-2ae976cf9a96",
+      "quote": "he words correctly with right pronunciation | Length. Basic standard unit for measuring length is the metre. iruments Used to Measure Length a foot ruler a tape measure a meter ruler, etc Identifying equivalence of units of Length | Class discussion Experimentation Demonstration | Problem solving Making right choices. Care | Discussing length. Answering oral and written questions | A Chart showing Equivalence f units of length | Basic Primary Science for Uganda bk 4 | | 6 | 2 | MATTER AND ENERGY | MEASURES | Area | The learner to: Defines the term area. States units used to measure area of objects. Measures area using squares. Works out areas of different figures. | The learner Reads the wor",
+      "source_title": "P.5. TERM I_ II_ III SCHEME SCI",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/395ade886e71affcc24f5964cf8e3a3e8a0e7bec/P.5.%20TERM%20I%2C%20II%2C%20III%20SCHEME%20SCI.docx"
+    },
+    {
+      "id": "7e2a03d6-1fa0-5a2d-96c8-95a9eb220556",
+      "license": "unknown",
+      "outcome_id": "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+      "quote": "P = 24cm w (5cm Length L + W + L + W = Perimeter L + L + W + W = p 2L + 5cm + 5cm = 24cm 2L + 10cm – 10cm = 24cm – 10cm 2L = 14cm 2 2 L = 7cm The length = 7cm Area = Length x Width = 7cm x 5cm = 35cm2 Activity 1. The perimeter of a rectangle is 40cm and the width of the rectangle is 8cm. a) Find the length of the rectangle. b) Find the area of the rectangle. 2. The perimeter of a rectangle is 36cm, its length is 10cm. a) Find its width. b) Find its area. 3. The perimeter of a rectangular garden is 80cm, its width is 18cm. a) Find its length. b) Find its area. Finding sides, area & perimeter Example ABCD is a rectangle. A (2x – 5)cm B (x – 1)cm",
+      "source_title": "P.6 MATH NOTES 2024",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/aa84ed5248f112818a91f4af5caf20e0f6a1a990/P.6%20MATH%20NOTES%202024.pdf"
+    },
+    {
+      "id": "928af30b-38c1-546c-b98e-2bba5670b93c",
+      "license": "unknown",
+      "outcome_id": "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+      "quote": "9 | 2 2 2 | O P E R A T I O N O N N U M B E R S | Bas es | Bas e five | WRITING BASE FIVE NUMBERS IN WORDS iii) Converting base five numbers to words. iv) Reading digit in a base five. EXPANDING IN BASE FIVE iii) The place values of each digit in base five number. iv) Expanding in base five CHANGING BASE FIVE TO BASE TEN iii) Application of expanding in base five by multiplication and addition. iv) Adding the expanded expression to find base ten. | Proble m solving | Learners should be able to: iii) Convert base five numbers to words. iv) Reading each digit in a base five number separately so as to easily write in words. Learners should be able to: iii) State the place value of each digit in",
+      "source_title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf"
+    },
+    {
+      "id": "f9d427c7-3ae6-5625-b11d-d748f9183360",
+      "license": "unknown",
+      "outcome_id": "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+      "quote": "1. I shall eat food. (active) 2. Food will be eaten by me. (passive) 3. Cars will carry people (active) 4. People will be carried by cars. (passive) 5. The doctor will warn me against smoking cigarettes. (active) 6. I shall be warned against smoking cigarettes by the doctor. (passive Activity Change these sentences into passive 1. They will take the ball 2. He will beat us 3. We shall carry it 4. I shall answer many questions 5. I will learn science 6. They will guide us 7. They will sweep the class 8. Okot will play football tomorrow Change the following into active 1. Meat is eaten by lions 2. The song is sung by children 3. A novel is being read by Annet 4. Music is being listened to by m",
+      "source_title": "P.5-English-lesson-notes-term-I-III-2019",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/29f0c1827eaa0278a87457b910182765c82f7b96/P.5-English-lesson-notes-term-I-III-2019.pdf"
+    },
+    {
+      "id": "44b85037-6c87-5089-bca9-657fa18e91f6",
+      "license": "unknown",
+      "outcome_id": "7428b1b5-b699-5be6-801b-0ed10e266244",
+      "quote": "| | | | | | | | | | | | | | 6 | Measurements | Length | Area | The learner; Identifies the shape given Applies and uses the formulae of finding area correctly Uses correct units of area Draws the shape well | The learner; Reads, spells, pronounces and writes words like area, covered, square, rectangle and units correctly | Areas of a square and rectangle Area is the speace covered by an object It is measured in squared units W L Area of = L x L W L Area of = L x W Examples Find the area of the figure below 3cm 13cm 12cm | Guided discovery Explanation Question and answer Group discussion | Identifying the shapes Applying the formulae for area on each shape Calculating the area | Neatness Love",
+      "source_title": "P.5 MATHS SCHEME OF WORK TERM III",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/bb7d98a15a294014ca08e478559561b3f5f30f17/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%20III.pdf"
+    }
+  ],
+  "visuals": []
+}

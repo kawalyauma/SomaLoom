@@ -1,0 +1,417 @@
+{
+  "$defs": {
+    "BlockKind": {
+      "enum": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "equation",
+        "visual",
+        "visual_needed",
+        "activity",
+        "question",
+        "reflection"
+      ],
+      "title": "BlockKind",
+      "type": "string"
+    },
+    "LessonStage": {
+      "additionalProperties": false,
+      "properties": {
+        "assessment": {
+          "minLength": 1,
+          "title": "Assessment",
+          "type": "string"
+        },
+        "differentiation": {
+          "minLength": 1,
+          "title": "Differentiation",
+          "type": "string"
+        },
+        "key": {
+          "enum": [
+            "introduction",
+            "development",
+            "assessment",
+            "conclusion"
+          ],
+          "title": "Key",
+          "type": "string"
+        },
+        "learner_actions": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Learner Actions",
+          "type": "array"
+        },
+        "minutes": {
+          "minimum": 1,
+          "title": "Minutes",
+          "type": "integer"
+        },
+        "teacher_actions": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Teacher Actions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "key",
+        "minutes",
+        "teacher_actions",
+        "learner_actions",
+        "assessment",
+        "differentiation"
+      ],
+      "title": "LessonStage",
+      "type": "object"
+    },
+    "SchemeWeek": {
+      "additionalProperties": false,
+      "properties": {
+        "activities": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Activities",
+          "type": "array"
+        },
+        "assessment": {
+          "minLength": 1,
+          "title": "Assessment",
+          "type": "string"
+        },
+        "citation_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Citation Ids",
+          "type": "array"
+        },
+        "methods": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Methods",
+          "type": "array"
+        },
+        "outcome_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Outcome Ids",
+          "type": "array"
+        },
+        "periods": {
+          "minimum": 1,
+          "title": "Periods",
+          "type": "integer"
+        },
+        "remarks": {
+          "default": "",
+          "title": "Remarks",
+          "type": "string"
+        },
+        "resources": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Resources",
+          "type": "array"
+        },
+        "subtopics": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Subtopics",
+          "type": "array"
+        },
+        "topic_id": {
+          "format": "uuid",
+          "title": "Topic Id",
+          "type": "string"
+        },
+        "week": {
+          "minimum": 1,
+          "title": "Week",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "week",
+        "topic_id",
+        "subtopics",
+        "outcome_ids",
+        "periods",
+        "methods",
+        "activities",
+        "resources",
+        "assessment",
+        "citation_ids"
+      ],
+      "title": "SchemeWeek",
+      "type": "object"
+    },
+    "TeachingBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asset Id"
+        },
+        "caption": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Caption"
+        },
+        "citation_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Citation Ids",
+          "type": "array"
+        },
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/BlockKind"
+        },
+        "latex": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Latex"
+        },
+        "mathml": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mathml"
+        },
+        "outcome_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Outcome Ids",
+          "type": "array"
+        },
+        "requires_review": {
+          "default": false,
+          "title": "Requires Review",
+          "type": "boolean"
+        },
+        "rows": {
+          "anyOf": [
+            {
+              "items": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rows"
+        },
+        "text": {
+          "default": "",
+          "title": "Text",
+          "type": "string"
+        },
+        "visual_instruction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Visual Instruction"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "TeachingBlock",
+      "type": "object"
+    },
+    "TeachingSection": {
+      "additionalProperties": false,
+      "properties": {
+        "blocks": {
+          "items": {
+            "$ref": "#/$defs/TeachingBlock"
+          },
+          "title": "Blocks",
+          "type": "array"
+        },
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "key": {
+          "minLength": 1,
+          "title": "Key",
+          "type": "string"
+        },
+        "outcome_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Outcome Ids",
+          "type": "array"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "title"
+      ],
+      "title": "TeachingSection",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "author_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Author Id"
+    },
+    "lesson_stages": {
+      "items": {
+        "$ref": "#/$defs/LessonStage"
+      },
+      "title": "Lesson Stages",
+      "type": "array"
+    },
+    "review_status": {
+      "default": "needs_review",
+      "enum": [
+        "needs_review",
+        "approved"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    },
+    "reviewer_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer Id"
+    },
+    "revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Revision",
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "teaching.v1",
+      "default": "teaching.v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scheme_weeks": {
+      "items": {
+        "$ref": "#/$defs/SchemeWeek"
+      },
+      "title": "Scheme Weeks",
+      "type": "array"
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/TeachingSection"
+      },
+      "minItems": 1,
+      "title": "Sections",
+      "type": "array"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sections",
+    "title"
+  ],
+  "title": "TeachingBody",
+  "type": "object"
+}

@@ -1,0 +1,325 @@
+{
+  "outcomes": [
+    {
+      "code": "P6-T3W1L1-90a967",
+      "description": "Identify different metric units.",
+      "id": "cf182d37-9089-5ffd-a585-9f54648d8887"
+    },
+    {
+      "code": "P6-T3W1L2-5ec4dc",
+      "description": "Convert between metric units.",
+      "id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+    },
+    {
+      "code": "P6-T3W1L3-def118",
+      "description": "Convert between square units.",
+      "id": "ce3f0554-6fcc-5e51-8052-25460408f767"
+    },
+    {
+      "code": "P6-T3W1L4-637a0f",
+      "description": "Calculate the perimeter of rectangles and squares.; Find a missing side.",
+      "id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+    },
+    {
+      "code": "P6-T3W1L5-d80d3c",
+      "description": "Calculate area when given the perimeter.",
+      "id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+    },
+    {
+      "code": "P6-T3W1L6-e51638",
+      "description": "Find unknown values and actual rectangle dimensions.",
+      "id": "ddb482da-fa31-5584-ba47-3491063c409e"
+    }
+  ],
+  "passages": [
+    {
+      "id": "ebe51b77-97d7-5d83-819e-87057311ee91",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "Conversion\nof metric\nunits",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "31a61fa1-c140-5fdb-a661-f4dd7081de2a",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "2. Changes\nfrom one\nunit to\nanother.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "1884f9b0-faeb-59f0-a173-50255adacb86",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "3. Changes\nfrom square\nunit to\nanother.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "Finding\narea when\ngiven the\nperimeter",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "63c3c3a3-cc22-51da-bb43-7810db96017a",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "3. Calculate\nthe area\nwhen given\nthe\nperimeter.",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "82289fb6-a5a8-52c9-a586-03cdf5d2b14f",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "Finding the\nsides, area\nand\nperimeter",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "a3324e9d-d07d-51e6-9115-2b3376793f16",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "| | | | Changing km to m and vice versa | | - Millimeters - In sentences | | | | | | | | | | | Adding metric units Subtracting metric units | Adds figures Regrouping figures Subtracts figures | - Reads the given metric unit s - Describes the given metric units | Question and answer Demonstration | - Problem solving - Critical thinking | Wall face Metre rule | - Adding - Measuring - Subtracting | - Macm 260-261 | - | | | | | Multiplication of metric units Division of metric units | Multiplies metric units Divides metric units Regroups metric units | - Reads the metric units - Describes the given units | Guided discovery Discussion | - Decision making - Critical thinking | Chalkboard illustrat",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "e10f3e75-cdbb-5ad7-ab96-ab96f7c3de3c",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "𝐈= 𝟑𝟑𝟑. 𝟑𝐀 POTENTIAL DIFFERENCE (p.d): This is the work done in joules when one coulomb of charge moves from one point to another in a circuit. If two points in a conductor are of different electric potentials, then a charge can move from one point to another and work is said to be done. Potential difference is sometimes referred to as voltage. The instrument used to measure potential difference is a voltmeter. The SI unit of potential difference is the Volt (V). Definition: A volt is the potential difference between two points in a circuit when one joule of work is done to move one coulomb of charge from one point to another. ELECTROMOTIVE FORCE (emf): This is the work done in joules when o",
+      "source_title": "CURRENT ELECTRICITY-ssekwe _1_ - Copy.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/62991"
+    },
+    {
+      "id": "1790d32c-4241-58d3-a8df-aa6f9d30e197",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "89 | | 6 | 2 | NUMERACY | NUMBER PATTERNS AND SEQUENCES | SQUARE ROOTS OF NUMBERS | Problem- solving | The learner: 1. States what a square root is. 2. Finds the square roots of given square numbers. 3. Solves word problems involving square roots. 4. Works out the side of a square using the square root knowledge. | Meaning of a square root. | SQUARE ROOTS OF NUMBERS A square root is a number that is multiplied by itself to get a square number. 3 x 3 = 9 Square Square root Example Find the square root of 25 25 = (5 x 5) = 5 The square root of 25 is 5 | Class discussion | Uing the types of numbers to form and solve patterns | Chalkboard illustration | A NEW MK PRIMARY MTC BK 5 PAGE 89 |",
+      "source_title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf"
+    },
+    {
+      "id": "17eb4381-f323-5b7f-a174-6dca89f45d63",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "Term III | | | | | | | | | | | | 1 | 1 | Lengths, mass and capacity | Conversion of metric units | - Km to m - M to cm - Cm to mm - Km to cm - Dm to cm | - Do | Converts metric unites correctly | Do | - Do | - Do | Old mk 313-315 | | | 2 | | | - M to km - Cm to m - Mm to cm - Cm to km - Cm to dm | - Do | Do | Do | - Do | - Do | Do | | | 3 | | Perimeter | - Finding missing sides - Identifying shapes - Calculating perimeter | - Do | Identifies shapes and finds perimeter | Do | - Do | - Do | Old mk 320 | | | 4 | | Area | - Identifies shapes - Finding area of a square - Finding sides of a square using area - Using area of a square to find perimeter | - Do | Finds area and perimeter of a square |",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "baace550-e70b-5a0d-aaca-784420615a86",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "Term III | | | | | | | | | | | | 1 | 1 | Lengths, mass and capacity | Conversion of metric units | - Km to m - M to cm - Cm to mm - Km to cm - Dm to cm | - Do | Converts metric unites correctly | Do | - Do | - Do | Old mk 313-315 | | | 2 | | | - M to km - Cm to m - Mm to cm - Cm to km - Cm to dm | - Do | Do | Do | - Do | - Do | Do | | | 3 | | Perimeter | - Finding missing sides - Identifying shapes - Calculating perimeter | - Do | Identifies shapes and finds perimeter | Do | - Do | - Do | Old mk 320 | | | 4 | | Area | - Identifies shapes - Finding area of a square - Finding sides of a square using area - Using area of a square to find perimeter | - Do | Finds area and perimeter of a square |",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "34169428-fac4-5842-8cca-a31def3c07c1",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "Term III | | | | | | | | | | | | 1 | 1 | Lengths, mass and capacity | Conversion of metric units | - Km to m - M to cm - Cm to mm - Km to cm - Dm to cm | - Do | Converts metric unites correctly | Do | - Do | - Do | Old mk 313-315 | | | 2 | | | - M to km - Cm to m - Mm to cm - Cm to km - Cm to dm | - Do | Do | Do | - Do | - Do | Do | | | 3 | | Perimeter | - Finding missing sides - Identifying shapes - Calculating perimeter | - Do | Identifies shapes and finds perimeter | Do | - Do | - Do | Old mk 320 | | | 4 | | Area | - Identifies shapes - Finding area of a square - Finding sides of a square using area - Using area of a square to find perimeter | - Do | Finds area and perimeter of a square |",
+      "source_title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/46812"
+    },
+    {
+      "id": "3d06ba14-1654-5a46-8ebf-5109303c9323",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "8 | 6, 7 & 8 | MEASURES | CAPACITY | COMPARING METRIC UNITS | Critical thinking and problem solving. | The leaner: 1. States the meaning of the given metric names. 2. Names the basic units for weight, length and capacity. 3. Recites the standard ordering of given measures. 4. Compares units with standard units. | The leaner: 1. Read s the involved vocabularie s in the lesson correctly in correct intonation and pronunciati on. 2. Spells the vocabularie s correctly. | COMPARING METRIC UNITS Meaning of metric names  Place value b) Meaning Kilo 1000m Hecto 100m Deca 10m Deci 1/ m 10 Centi 1/ m 100 milli 1/ m 1000 Basic measure units for:  Weight – Gram  Length – Metre  Capacity – Litres Orde",
+      "source_title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf"
+    },
+    {
+      "id": "abe5be7d-6d9c-5ad3-871c-4d9afcd20d59",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "Roman numerals got by adding to 5 6 = 5 + I 7 = 5 + 2 8 = 5 + 3 6 = VI 7 = VII 8 = VIII The Roman numerals got by subtracting from 5 or from 50. 4 = 1 subtracted from 5 4 = IV 40 = 10 subtracted from 50 40 = XL The roman numerals got by subtracting from 10 and 100 e.g. 9 = 1 subtracted from 10. 9 = IX 90 = 10 subtracted from 100 = XC LESSON :22 Changing from Hindu – Arabic numerals to Roman numerals Examples: Emphasize (a) 19 = 10 + 9 (b) 44 = 40 + 4 expansion of X + IX XL + IV Roman numerals = XIX = XLIV Activity: Mk Primary Mathematics (New Edition book 5 page 30-32 Changing roman numerals into Hindu Arabic numerals. Example 1 Example 2 XIV = X + IV Change XXXIX to Hindu Arabic = 10 + 4 XX",
+      "source_title": "PRIMARY FOUR  MATHS",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/8f9dad0cc4c1df4c56bbe8e727f30594b89dfa55/PRIMARY%20FOUR%20%20MATHS.pdf"
+    },
+    {
+      "id": "4fac7461-16ce-522c-834c-04dd751bd652",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "89 | | 6 | 2 | NUMERACY | NUMBER PATTERNS AND SEQUENCES | SQUARE ROOTS OF NUMBERS | Problem- solving | The learner: 1. States what a square root is. 2. Finds the square roots of given square numbers. 3. Solves word problems involving square roots. 4. Works out the side of a square using the square root knowledge. | Meaning of a square root. | SQUARE ROOTS OF NUMBERS A square root is a number that is multiplied by itself to get a square number. 3 x 3 = 9 Square Square root Example Find the square root of 25 25 = (5 x 5) = 5 The square root of 25 is 5 | Class discussion | Uing the types of numbers to form and solve patterns | Chalkboard illustration | A NEW MK PRIMARY MTC BK 5 PAGE 89 |",
+      "source_title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf"
+    },
+    {
+      "id": "72ecc3e3-a923-5e01-ae87-2bb876315abd",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "| | | Finding radius or diameter of a circle given area | Finding radius of a circle given area Finding diameter of a circle given area | Interprets word statements Forms unknown Solves for unknown parts | - Interprets word problems - Interprets given statements | Guided discovery Question and answer | - Do | Do | - Do | Mk 391 | - | | | | Finding circumference given area of a circle | Calculating the circumference of circle given area | Finds the radius Interprets word problem Calculates the circumference | - Reads the word problem - Interprets word problem | Guided discovery Explanation Discussion | - Critical thinking - Problem solving | Wall charts Chalkboard illustration | - Reading - D",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "65ee619f-cf2f-58a0-ae27-31d0e1c9fe23",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "area of a triangle Examples 1.The base of a triangle is 4cm and the height is 9cm. Find its area 9cm 4cm A = 1 x b x h 2 A = 1 x 4cm x9cm 2 A = 2cm x 9cm A = 18 cm 2 | Guided discovery Discussion Group work Think pair share | Dividing the figure Calculating area. | Critical thinking Effective Communication Problem solving | Chart | A new MK Primary Pupils Bk.5 Pages 163-165 | | 5 | | | | | | Finding area of combined figures Examples Find the area of the figure below. 4cm 3cm 6cm 5cm 9 cm Divide the figure to form defined shape | | | | | | | 5 | Measurements | Length, mass and capacity | Area | The learner; 1.Calculates area of the figure 2. Calculates area of the shaded part. | The learner; ",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "34daba9f-360f-5e09-a508-9c05de161207",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "nvolving area. | The learner; 1. Constructs sentences using area. 2. Reads and interprets word problem s involving area. | Finding area of a rectangle 1.A rectangle has twoopposite side equal. 2.The longer side is the Length(L) and theshorter side is the width (W) Examples 1.find the area of a rectangle whose length is cm and width 4cm 7cm 4cm A = L xW A =7cm x 4cm A =28 cm2 | Guided discovery Discussion Group work Think pair share | Calculating area | Critical Thinking Effective communication Problem solving | Chalkboard illustration | A new MK primary MTC pupils Bk.5 pgs 159-162 | | 3 | | | | | | Finding area of triangles Note: Show hoe you come to the formula For finding area of a triangl",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "deecf30c-4511-554e-afe8-eb29adaec04b",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "8 | 6, 7 & 8 | MEASURES | CAPACITY | COMPARING METRIC UNITS | Critical thinking and problem solving. | The leaner: 1. States the meaning of the given metric names. 2. Names the basic units for weight, length and capacity. 3. Recites the standard ordering of given measures. 4. Compares units with standard units. | The leaner: 1. Read s the involved vocabularie s in the lesson correctly in correct intonation and pronunciati on. 2. Spells the vocabularie s correctly. | COMPARING METRIC UNITS Meaning of metric names  Place value b) Meaning Kilo 1000m Hecto 100m Deca 10m Deci 1/ m 10 Centi 1/ m 100 milli 1/ m 1000 Basic measure units for:  Weight – Gram  Length – Metre  Capacity – Litres Orde",
+      "source_title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf"
+    },
+    {
+      "id": "83328044-d0ad-5442-9e28-bbb8c475c3d5",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "W K | P D | UNIT TOPIC | SUBTOPIC | COMPETENCES | | CONTENT | METHOD | LIFE SKILLS | ACTIVITIE S | L/T AIDS | REF | R E M | | | | | SUBJECT | LANGUAGE | | | | | | | | 1 | 1 & 2 & 3 | M E LENGT A H, S MASS U AND R CAPACI E TY M E N T | Conversion of metric units | The learner: 1.Identifies the different metric units 2. Changes from one unit to another. 3. Changes from square unit to another. The learner | The learner: E reads and 1 uses the 5 words such c as metric, 2 conversion, 8 units 3 2 4 4 E | xample . Change dm to entimeters. . Convert .5m to millimeters. . Express 5Km to metres. .Convert m² to cm² xample | Brainstor ming Guided discovery Problems olving Guided | Appreciati on of onese",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "efaff761-c250-523a-abd0-d12a311dc983",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "6 | 2 | NUMERACY | NUMBER PATTERNS AND SEQUENCES | SQUARE ROOTS OF NUMBERS | Problem- solving | The learner: 1. States what a square root is. 2. Finds the square roots of given square numbers. 3. Solves word problems involving square roots. 4. Works out the side of a square using the square root knowledge. | Meaning of a square root. | SQUARE ROOTS OF NUMBERS A square root is a number that is multiplied by itself to get a square number. 3 x 3 = 9 Square Square root Example Find the square root of 25 25 = (5 x 5) = 5 The square root of 25 is 5 | Class discussion | Uing the types of numbers to form and solve patterns | Chalkboard illustration | A NEW MK PRIMARY MTC BK 5 PAGE 89 |",
+      "source_title": "P.5 TERM I_ II_ III MATH SCHEME CREATIVE",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/052b5257b26b98edd65df28ffd4b62ab8e0432e1/P.5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME%20CREATIVE.pdf"
+    },
+    {
+      "id": "d12000a3-6939-566c-aca5-099ba47ff15f",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "nvolving area. | The learner; 1. Constructs sentences using area. 2. Reads and interprets word problem s involving area. | Finding area of a rectangle 1.A rectangle has twoopposite side equal. 2.The longer side is the Length(L) and theshorter side is the width (W) Examples 1.find the area of a rectangle whose length is cm and width 4cm 7cm 4cm A = L xW A =7cm x 4cm A =28 cm2 | Guided discovery Discussion Group work Think pair share | Calculating area | Critical Thinking Effective communication Problem solving | Chalkboard illustration | A new MK primary MTC pupils Bk.5 pgs 159-162 | | 3 | | | | | | Finding area of triangles Note: Show hoe you come to the formula For finding area of a triangl",
+      "source_title": "P.5 MATH",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx"
+    },
+    {
+      "id": "62cc2769-3d76-59fb-ad3a-a1640e0b38d7",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "Roman numerals got by adding to 5 6 = 5 + I 7 = 5 + 2 8 = 5 + 3 6 = VI 7 = VII 8 = VIII The Roman numerals got by subtracting from 5 or from 50. 4 = 1 subtracted from 5 4 = IV 40 = 10 subtracted from 50 40 = XL The roman numerals got by subtracting from 10 and 100 e.g. 9 = 1 subtracted from 10. 9 = IX 90 = 10 subtracted from 100 = XC LESSON :22 Changing from Hindu – Arabic numerals to Roman numerals Examples: Emphasize (a) 19 = 10 + 9 (b) 44 = 40 + 4 expansion of X + IX XL + IV Roman numerals = XIX = XLIV Activity: Mk Primary Mathematics (New Edition book 5 page 30-32 Changing roman numerals into Hindu Arabic numerals. Example 1 Example 2 XIV = X + IV Change XXXIX to Hindu Arabic = 10 + 4 XX",
+      "source_title": "PRIMARY FOUR  MATHS",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/8f9dad0cc4c1df4c56bbe8e727f30594b89dfa55/PRIMARY%20FOUR%20%20MATHS.pdf"
+    },
+    {
+      "id": "596651c0-a810-5a7a-9187-6eda96adf851",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "| | | Finding radius or diameter of a circle given area | Finding radius of a circle given area Finding diameter of a circle given area | Interprets word statements Forms unknown Solves for unknown parts | - Interprets word problems - Interprets given statements | Guided discovery Question and answer | - Do | Do | - Do | Mk 391 | - | | | | Finding circumference given area of a circle | Calculating the circumference of circle given area | Finds the radius Interprets word problem Calculates the circumference | - Reads the word problem - Interprets word problem | Guided discovery Explanation Discussion | - Critical thinking - Problem solving | Wall charts Chalkboard illustration | - Reading - D",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "6fc280a0-f1c0-54eb-8736-8fdf10197816",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "8 | 6, 7 & 8 | MEASURES | CAPACITY | COMPARING METRIC UNITS | Critical thinking and problem solving. | The leaner: 1. States the meaning of the given metric names. 2. Names the basic units for weight, length and capacity. 3. Recites the standard ordering of given measures. 4. Compares units with standard units. | The leaner: 1. Read s the involved vocabularie s in the lesson correctly in correct intonation and pronunciati on. 2. Spells the vocabularie s correctly. | COMPARING METRIC UNITS Meaning of metric names  Place value b) Meaning Kilo 1000m Hecto 100m Deca 10m Deci 1/ m 10 Centi 1/ m 100 milli 1/ m 1000 Basic measure units for:  Weight – Gram  Length – Metre  Capacity – Litres Orde",
+      "source_title": "P.5 TERM I_ II_ III MATH SCHEME CREATIVE",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/052b5257b26b98edd65df28ffd4b62ab8e0432e1/P.5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME%20CREATIVE.pdf"
+    },
+    {
+      "id": "7a878967-19df-5101-a517-eaac02e656ea",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "P.5 SCIENCE REVISION WORK ACTIVITY ONE: 2020 1. Write down any one factor that can promote the spread of diseases on a poultry farm. 2. Mention any one cause of poultry diseases. 3. Identify any one disease which attacks both poultry and rabbits. 4. Give one measure that can be used to control and prevent diseases on a poultry farm. 5. Andrew’s poultry shows the following signs and symptoms high temperature, coughing and difficulty in breathing. Which disease are the poultry suffering from? 6. How can fowl typhoid be transmitted from poultry to human beings? 7. Name any one bacterial poultry disease. 8. a)What are parasites? b)Identify any one example of endo parasites. c)Give two ways how a",
+      "source_title": "P.5 Week  2",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/302e047503c2efc3097f7c57c0f12f2d4fed6e7b/P.5%20Week%20%202.pdf"
+    },
+    {
+      "id": "e0e9a717-66a5-505e-85c4-fd8928be0748",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "| | | | | | F F 36 30 22 21 32 31 51 | | | | | | | 6 | Number patterns and sequences | Using a venn diagram to find LCM and GCF | The learner; Studies the venn diagram effectively Identifies where GCF lies and LCM Multiplies the prime factors to get LCM and GCF | The learner; | Using a venn diagram to find LCM and GCF Example Find the value of x and y, GCF and LCM F F x y 23 21 32 22 33 31 | Brain storming Guided discovery | Studying the venn diagram Identifying | A chart showing prime factors on a venn diagram | Use a new MK pupils book 6 page 89 | | | 7 | Number patterns and sequences | Square numbers and square roots | The learner; Defines square numbers, square roots Prime factorizes to ",
+      "source_title": "P.5 MATHEMATICS SCHEME  TERM 1",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/03345144449bf4d177754adcf2e0a8bd27a76da9/P.5%20MATHEMATICS%20SCHEME%20%20TERM%201.pdf"
+    },
+    {
+      "id": "b56795ee-4879-5ec9-a44c-636d9a985b09",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "| | | | | 2. Finds the missing side. 3. Calculate the area when given the perimeter. | area. | a rectangle is 45dm and the width is 5dm.Find the perimeter of the same rectangle. | storming guided discussio n think and pair | and respecting others. | exercise. | | mtcs bk 6 page 333 | | | 6 $ 1 | M E A S U R E M E N T | LENGT H, MASS AND CAPACI TY | Finding the sides, area and perimeter | The learner 1. Finds the value of the unknowns. 2. Calculates the area of the rectangle. 3. Finds its perimeter. | The learner explains the meaning of words such as length, width, perimeter and area. | Example 1. ABCD is a rectangle. Use it to answer the questions that follow 1)Find the value of x 2) Find th",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "beb33028-b85f-5339-813f-e9e902da500f",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "| | | Finding radius or diameter of a circle given area | Finding radius of a circle given area Finding diameter of a circle given area | Interprets word statements Forms unknown Solves for unknown parts | - Interprets word problems - Interprets given statements | Guided discovery Question and answer | - Do | Do | - Do | Mk 391 | - | | | | Finding circumference given area of a circle | Calculating the circumference of circle given area | Finds the radius Interprets word problem Calculates the circumference | - Reads the word problem - Interprets word problem | Guided discovery Explanation Discussion | - Critical thinking - Problem solving | Wall charts Chalkboard illustration | - Reading - D",
+      "source_title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "source_uri": "https://t.me/TeacherInUganda/63018"
+    },
+    {
+      "id": "efab45e1-62e4-548e-8b98-dbdf5351d766",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "| THEME : MEASUREMENT TOPIC 1 : MONEY  Exchanging money  Rates of buying and selling  Finding unit price  Finding total price  Shopping bills and balance (change)  Interpretation of tables.  Finding profits  Finding selling prices  Finding loss TOPIC 2: LENGTH, MASS AND CAPACITY  Conversation of length millimeters to centimeters.  Conversation of length centimeters to millimeters  Finding the perimeter of a rectangle.  Finding the perimeter of a square.  Finding the perimeter of a triangle  Finding the area of a rectangle.  Finding area of a square.  Finding area of a triangle THEME: NEMERACY INTERGERS  Definition And description of integers  Arranging integers in ascendin",
+      "source_title": "P.5 TERM 3 MATHEMATICS WORK BOOK",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/191539bff131c6d1f065f0d62ba8fd770e613c15/P.5%20TERM%203%20MATHEMATICS%20WORK%20BOOK.pdf"
+    },
+    {
+      "id": "c437ff63-ba43-5759-a090-a5b7801fb1e3",
+      "license": "unknown",
+      "outcome_id": "cf182d37-9089-5ffd-a585-9f54648d8887",
+      "quote": "W K | P D | UNIT TOPIC | SUBTOPIC | COMPETENCES | | CONTENT | METHOD | LIFE SKILLS | ACTIVITIE S | L/T AIDS | REF | R E M | | | | | SUBJECT | LANGUAGE | | | | | | | | 1 | 1 & 2 & 3 | M E LENGT A H, S MASS U AND R CAPACI E TY M E N T | Conversion of metric units | The learner: 1.Identifies the different metric units 2. Changes from one unit to another. 3. Changes from square unit to another. The learner | The learner: E reads and 1 uses the 5 words such c as metric, 2 conversion, 8 units 3 2 4 4 E | xample . Change dm to entimeters. . Convert .5m to millimeters. . Express 5Km to metres. .Convert m² to cm² xample | Brainstor ming Guided discovery Problems olving Guided | Appreciati on of onese",
+      "source_title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833"
+    },
+    {
+      "id": "cb573493-a491-597b-96b1-f09622e618e1",
+      "license": "unknown",
+      "outcome_id": "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+      "quote": "the meaning of ; a)solute b)solvent c) solution 4. State any one example of a solution. 5. Why does salt disappear when put in water? Lesson 4 Separating mixtures Read and spell Physical sorting This is a method where the hands are used to pick big particles from small particles e.g. picking stones from rice. Winnowing Separating cereals from husks. 3. By using a magnet This method is used when one substance is a magnetic material. 4. Decantation/Decanting The method of separating solid from a liquid. The method allows the mixture to settle for same time such that solid particles settle at the bottom. Step one Water mixed with impurities. Step two Impurities left to settle at the bottom of t",
+      "source_title": "P.5 NOTES",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/6a58f16cc2c737d4bd563a300aadf0eb02c6ee69/P.5%20NOTES.docx"
+    },
+    {
+      "id": "110ae596-93ef-52c4-b831-556dc2422e9b",
+      "license": "unknown",
+      "outcome_id": "ce3f0554-6fcc-5e51-8052-25460408f767",
+      "quote": "SQUARE ROOTS OF NUMBERS 1. A square root is a number that is multiplied by itself to get a square number. Eg. 3 x 3 = 9 Square Square root. 2. The symbol for square root is  3. We can get the square root of a number by prime factorisation. Example I ExampleII Find the square root of 25 Find the square root of 100. 5 25 2 100 5 5 2 50 1 5 25 5 5 1 25 = (5 x 5) 100 = (2 x 2) x (5 x 5) = 5 = 2 x 5 The square root of 25 is 5 = 10 The square root of 100 is 10 EXERCISE B 11",
+      "source_title": "P. 5 Math Notes TERM I_ II_ III",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a8fa721950efc8ccc6c3ea6b77334fa295806519/P.%205%20Math%20Notes%20TERM%20I%2C%20II%2C%20III.pdf"
+    },
+    {
+      "id": "f48e2440-fbb3-5a03-8a6a-b4f118bf761c",
+      "license": "unknown",
+      "outcome_id": "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+      "quote": "QN | WHAT WAS REQUIRED | CANDIDATES’ WEAKNESSES | ADVICE TO TEACHERS | 14. | To find perimeter of the figure. | Three quarters of the candidates (75%) had difficulty in finding the perimeter of the drawn figure. This is because most of the candidates failed to calculate the missing length in the diagram hence, obtaining the perimeter as 30cm. | Remind learners that  perimeter is the total distance around a given figure. It is got by adding each of the measures / sides of the figure. Engage learners in  measuring sides of given type of shapes on the school compound and find the perimeter. For compound shapes  such as the one given, guide learners to first of all determine the length of the",
+      "source_title": "REPORT ON WORK OF CANDIDATES2024 DIDIX.pdf",
+      "source_uri": "https://t.me/primaryteachersofuganda/29971"
+    },
+    {
+      "id": "437958d4-eda2-5ea9-81c4-fbc1a6a357a5",
+      "license": "unknown",
+      "outcome_id": "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+      "quote": "5 | 1 | Banking | Composition | Listening Speaking Reading Writing | Using: Neither ..........nor .................. Examples My father will not deposit the money. My mother will not deposit the money Neither my father nor mother will deposit the money Kenneth didn’t withdraw the money. Katumba didn’t withdrawal the money Neither Kenneth not Katumba withdrew the money | Reads given sentences Forms sentences using given structures Joins given sentences using the given structure | Question and answer Guided discussion Illustration | Reading given sentences Forming sentences using given structure Joining given sentences using the given structure | Fluency, communication, appreciation and awaren",
+      "source_title": "P.5 COMPOSITION AND COMPREHENSION SCHEME TERM III",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/bdbfe7e0b42bb402bda46fccb95d1edd9b7016a3/P.5%20COMPOSITION%20AND%20COMPREHENSION%20SCHEME%20TERM%20III.pdf"
+    },
+    {
+      "id": "50c9ef95-b17e-54f6-9539-e06eb365ec30",
+      "license": "unknown",
+      "outcome_id": "ddb482da-fa31-5584-ba47-3491063c409e",
+      "quote": "| 2 | ALGEBRA | ALGEBRA | APPLICATION OF ALGEBR AT AREA, PERIMETER AND VOLUME | Critical thinking and problem solving | The learner: 1. Defines perimeter is. 2. State the formulae of finding perimeter of different figures. 3. Derives an equation in order to solve the value of the required side of any shape. 4. Solves for the unknown side of a figure by substituting correctly. | Meaning of perimeter. Formula used to find perimeter. | PERIMETER: i) Explanation of perimeter. ii) Formulae for finding perimeters of different figures. Example The perimeter of a square is 36cm. Find its side in cm. P=36 s + s + s + s = 36 4s = 36 s = 9cm 4 4 one side is 9cm |  Excursion  Discussion | i)Forming al",
+      "source_title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf"
+    }
+  ],
+  "visuals": []
+}

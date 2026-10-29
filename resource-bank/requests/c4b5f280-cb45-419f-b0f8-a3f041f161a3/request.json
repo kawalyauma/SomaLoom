@@ -1,0 +1,252 @@
+{
+  "id": "c4b5f280-cb45-419f-b0f8-a3f041f161a3",
+  "request": {
+    "curriculum_id": "f0817f37-80f1-59be-9429-a50ad2c8b3f7",
+    "document_type": "lesson_notes",
+    "level_id": "e0e5ba0f-0c83-5dc3-83bf-9959ef5c33a5",
+    "options": {
+      "audience": "learner",
+      "depth": "comprehensive",
+      "execution_mode": "github",
+      "planning_scope": {
+        "basis": "Uploaded schemes, not official curriculum endorsement",
+        "class": "P6",
+        "lesson": null,
+        "lessons": [
+          {
+            "activities": [
+              "Attempt teacher-provided problems."
+            ],
+            "inferred": true,
+            "lesson": 1,
+            "objectives": [
+              "Calculate the area and perimeter of a rectangle."
+            ],
+            "subtopic": "Finding the sides, area and perimeter: rectangle area and perimeter",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer oral questions about the figure."
+            ],
+            "inferred": true,
+            "lesson": 2,
+            "objectives": [
+              "Find the length and width of rectangles."
+            ],
+            "subtopic": "Area of shaded parts of rectangles: finding dimensions",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Complete the evaluation exercise."
+            ],
+            "inferred": true,
+            "lesson": 3,
+            "objectives": [
+              "Calculate the area of shaded rectangles."
+            ],
+            "subtopic": "Calculating the area of shaded rectangles",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer oral questions and solve class problems."
+            ],
+            "inferred": true,
+            "lesson": 4,
+            "objectives": [
+              "Find the base of a triangle."
+            ],
+            "subtopic": "Finding unknowns by comparing areas of triangles: base",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Solve problems comparing areas of triangles."
+            ],
+            "inferred": true,
+            "lesson": 5,
+            "objectives": [
+              "Find the height of a triangle."
+            ],
+            "subtopic": "Finding unknowns by comparing areas of triangles: height",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer questions using the given trapezium."
+            ],
+            "inferred": true,
+            "lesson": 6,
+            "objectives": [
+              "Find the area of a trapezium."
+            ],
+            "subtopic": "Area of a trapezium",
+            "topic": "Length, mass and capacity"
+          }
+        ],
+        "subject": "Mathematics",
+        "term": 3,
+        "week": 2
+      },
+      "term": "Term 3"
+    },
+    "resource_filters": {},
+    "subject_id": "7cd99986-7d53-5eb0-8ed5-30d2ece6bee1",
+    "topic_ids": [
+      "8e554133-096f-58d3-86c0-b76f8ef87c0b",
+      "9cd652ab-68e0-5d48-87b9-dcf5bd106f5c",
+      "eedefd41-1323-53fb-b2b6-79641a703c0d",
+      "1431e075-a39b-5006-a486-e59162d6de6f",
+      "ce77876b-e43d-540a-a429-7cfeeda9025e",
+      "fe3ce1ee-9de3-5e51-a0da-a738b954b36d"
+    ]
+  },
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0bb555a48eb47c0452322d474c2312a5521380c02938ae0eabdcceb1a192c1b1.pdf",
+      "sha256": "0bb555a48eb47c0452322d474c2312a5521380c02938ae0eabdcceb1a192c1b1",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a2267806ddbff801e0ddc2773f7c11fa21d6deef/p.5%20mtc%20term%203.pdf",
+      "title": "p.5 mtc term 3",
+      "version_id": "08720347-3f99-4fae-aa28-1085943e858b"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1.pdf",
+      "sha256": "439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833",
+      "title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "version_id": "29ba9d08-1d2f-475b-abaa-be2808d440b7"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/96bc88ffc2458b76f8f9038c5900bbc219b67909a8a90af0fb46df922e646278.pdf",
+      "sha256": "96bc88ffc2458b76f8f9038c5900bbc219b67909a8a90af0fb46df922e646278",
+      "source_uri": "https://t.me/primaryteachersofuganda/6954",
+      "title": "THE PEARL BASIC _ APPLIED MATHEMATICAL FORMULA 2024 1.pdf",
+      "version_id": "31034186-6996-4343-a162-057c2e618f5d"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f.docx",
+      "sha256": "4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx",
+      "title": "P.5 MATH",
+      "version_id": "41261fa4-87aa-4a69-9497-3dd3a41521f0"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/c3f1f635353e54bcc68698150b0b379a171d8720afb2f47b57e481a996721c1c.pdf",
+      "sha256": "c3f1f635353e54bcc68698150b0b379a171d8720afb2f47b57e481a996721c1c",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/aef6fb04cc6e6bb40b3c63ccabfc8331da6abad0/P.5%20English%20language%20Lesson%20notes.pdf",
+      "title": "P.5 English language Lesson notes",
+      "version_id": "4cc5aaf3-388c-4631-9393-e3b005a59b18"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/3f4e9f61815b3a84e3c9a9c68edb17e8133e78e5fcaffef9e6ba629f12d6dd31.pdf",
+      "sha256": "3f4e9f61815b3a84e3c9a9c68edb17e8133e78e5fcaffef9e6ba629f12d6dd31",
+      "source_uri": "https://t.me/TeacherInUganda/67329",
+      "title": "uneb_ple_2025_all_papers_with_answers_sst_science_english_and_mathematics.pdf",
+      "version_id": "4d4461cc-1e9b-462d-9f7b-48db7573f667"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a.pdf",
+      "sha256": "0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf",
+      "title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "version_id": "5cfbda70-c2bc-4b55-bf00-fb0ec86a7a3b"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/957a085b8ab2fa3c7eb4ca6d1f55cfb4b791d52e5d2215316bde32fda255e796.pdf",
+      "sha256": "957a085b8ab2fa3c7eb4ca6d1f55cfb4b791d52e5d2215316bde32fda255e796",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/29f0c1827eaa0278a87457b910182765c82f7b96/P.5-English-lesson-notes-term-I-III-2019.pdf",
+      "title": "P.5-English-lesson-notes-term-I-III-2019",
+      "version_id": "79f10f55-75af-4b07-ac15-fe1b9f99b08a"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/b2cdf882ba1b56b68bf8b22094bcc2b8602d8ebccaf6d39a69827171d85c1e43.pdf",
+      "sha256": "b2cdf882ba1b56b68bf8b22094bcc2b8602d8ebccaf6d39a69827171d85c1e43",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/aa84ed5248f112818a91f4af5caf20e0f6a1a990/P.6%20MATH%20NOTES%202024.pdf",
+      "title": "P.6 MATH NOTES 2024",
+      "version_id": "94032f92-5080-4a21-b7b3-b6f676c2911e"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/abdb4976f83b78e2585de2d2cd1a587d5b8e390c28f092278ae33ac2d82096d2.docx",
+      "sha256": "abdb4976f83b78e2585de2d2cd1a587d5b8e390c28f092278ae33ac2d82096d2",
+      "source_uri": "https://t.me/primaryteachersofuganda/6364",
+      "title": "P.3-LITERACY-I-LESSON-NOTES-2016.docx",
+      "version_id": "9cbcd3ee-f684-4e6b-9645-41a1e465f945"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/99483c0da84d493cd172a0188e67713bc7adeb5b81516728f83c79e08b45060d.docx",
+      "sha256": "99483c0da84d493cd172a0188e67713bc7adeb5b81516728f83c79e08b45060d",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/395ade886e71affcc24f5964cf8e3a3e8a0e7bec/P.5.%20TERM%20I%2C%20II%2C%20III%20SCHEME%20SCI.docx",
+      "title": "P.5. TERM I_ II_ III SCHEME SCI",
+      "version_id": "a1c70aa4-3c00-4994-ab37-c46f288440fb"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791.pdf",
+      "sha256": "21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791",
+      "source_uri": "https://t.me/TeacherInUganda/46812",
+      "title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "version_id": "a47c146e-4cd0-4a95-8b2e-e0107d57c6c9"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/2928c99ddc898804393e61cf63c6ab5a182ecdabd101a5153d73a8d223af6e8e.pdf",
+      "sha256": "2928c99ddc898804393e61cf63c6ab5a182ecdabd101a5153d73a8d223af6e8e",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/bb7d98a15a294014ca08e478559561b3f5f30f17/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%20III.pdf",
+      "title": "P.5 MATHS SCHEME OF WORK TERM III",
+      "version_id": "c16915f1-9030-4a3f-9e94-9cbef1fcaa4c"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6.pdf",
+      "sha256": "8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf",
+      "title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "version_id": "c2f481ed-af75-429a-be86-830e782620a5"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/1dfbdaaf79ee70c1c7677a21776783c343ffecf2fa00442a4932db7f823c62d6.pdf",
+      "sha256": "1dfbdaaf79ee70c1c7677a21776783c343ffecf2fa00442a4932db7f823c62d6",
+      "source_uri": "https://t.me/TeacherInUganda/63911",
+      "title": "S1-S4 MTH LEARNER_S RESEARCH BOOK _ LBL_.pdf",
+      "version_id": "c394594b-37e3-4818-b63e-6713a226b3c9"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6.pdf",
+      "sha256": "0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6",
+      "source_uri": "https://t.me/TeacherInUganda/63018",
+      "title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "version_id": "d25acd2a-08c8-4ba7-ba07-c43a5cd04424"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/a43fe0e437aa8ad28b2befc57357f82343e3ef34fad914dde5663ee0702cac49.pdf",
+      "sha256": "a43fe0e437aa8ad28b2befc57357f82343e3ef34fad914dde5663ee0702cac49",
+      "source_uri": "https://t.me/primaryteachersofuganda/6311",
+      "title": "P5-PRIMARY-FIVE-SCIENCE-SCHEME-OF-WORK_TEACHER.pdf",
+      "version_id": "e820cc7f-aa95-4b9d-b0cb-2c6335b43e94"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/7f2d86b7a16100f57d013ffeedbf6bdc2271bea758fb005f58ccb66e832060c9.pdf",
+      "sha256": "7f2d86b7a16100f57d013ffeedbf6bdc2271bea758fb005f58ccb66e832060c9",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/191539bff131c6d1f065f0d62ba8fd770e613c15/P.5%20TERM%203%20MATHEMATICS%20WORK%20BOOK.pdf",
+      "title": "P.5 TERM 3 MATHEMATICS WORK BOOK",
+      "version_id": "eda40d46-dd6b-4c46-a947-c75cde5bb280"
+    }
+  ]
+}

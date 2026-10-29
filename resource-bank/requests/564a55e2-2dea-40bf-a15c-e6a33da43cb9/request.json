@@ -1,0 +1,197 @@
+{
+  "id": "564a55e2-2dea-40bf-a15c-e6a33da43cb9",
+  "request": {
+    "curriculum_id": "f0817f37-80f1-59be-9429-a50ad2c8b3f7",
+    "document_type": "lesson_notes",
+    "level_id": "e0e5ba0f-0c83-5dc3-83bf-9959ef5c33a5",
+    "options": {
+      "audience": "learner",
+      "depth": "comprehensive",
+      "execution_mode": "github",
+      "planning_scope": {
+        "basis": "Uploaded schemes, not official curriculum endorsement",
+        "class": "P6",
+        "lesson": null,
+        "lessons": [
+          {
+            "activities": [
+              "Attempt the given evaluation exercise."
+            ],
+            "inferred": true,
+            "lesson": 1,
+            "objectives": [
+              "Calculate a missing side and the perimeter of a trapezium."
+            ],
+            "subtopic": "Trapezium: missing side and perimeter",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Discuss the area of a parallelogram."
+            ],
+            "inferred": true,
+            "lesson": 2,
+            "objectives": [
+              "Read and draw a parallelogram."
+            ],
+            "subtopic": "Area of a parallelogram",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Solve the given rhombus problems."
+            ],
+            "inferred": true,
+            "lesson": 3,
+            "objectives": [
+              "Find the area and perimeter of a rhombus."
+            ],
+            "subtopic": "Area and perimeter of a rhombus",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer oral questions and complete the evaluation exercise."
+            ],
+            "inferred": false,
+            "lesson": 4,
+            "objectives": [
+              "Draw a kite and show its lines of symmetry.",
+              "Find its area and perimeter."
+            ],
+            "subtopic": "Area of a kite",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Answer oral questions and attempt given work."
+            ],
+            "inferred": true,
+            "lesson": 5,
+            "objectives": [
+              "Find the volume and total surface area of a cube."
+            ],
+            "subtopic": "Volume and total surface area of a cube",
+            "topic": "Length, mass and capacity"
+          },
+          {
+            "activities": [
+              "Attempt given work and share views."
+            ],
+            "inferred": true,
+            "lesson": 6,
+            "objectives": [
+              "Find a cube's side given its volume or total surface area."
+            ],
+            "subtopic": "Finding a cube's side from volume or total surface area",
+            "topic": "Length, mass and capacity"
+          }
+        ],
+        "subject": "Mathematics",
+        "term": 3,
+        "week": 3
+      },
+      "term": "Term 3"
+    },
+    "resource_filters": {},
+    "subject_id": "7cd99986-7d53-5eb0-8ed5-30d2ece6bee1",
+    "topic_ids": [
+      "227e1fc7-c1f5-5db6-82bf-4cce9fbab1d2",
+      "7ee5005a-cb06-5a53-9737-0dacb2073aa3",
+      "f172e96a-3ff5-5986-8699-596de3652b66",
+      "2f50da3d-0ea6-53f7-b3cf-7c40ff2c5083",
+      "d7bca8c3-9766-56eb-89d3-8389707df6a0",
+      "342fb054-1474-5eba-9a2e-39df80690f1e"
+    ]
+  },
+  "sources": [
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1.pdf",
+      "sha256": "439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1",
+      "source_uri": "https://t.me/P7_teachers_in_uganda/9833",
+      "title": "P.6 MATHEMATICS SCHEME TERM 3.pdf",
+      "version_id": "29ba9d08-1d2f-475b-abaa-be2808d440b7"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/96bc88ffc2458b76f8f9038c5900bbc219b67909a8a90af0fb46df922e646278.pdf",
+      "sha256": "96bc88ffc2458b76f8f9038c5900bbc219b67909a8a90af0fb46df922e646278",
+      "source_uri": "https://t.me/primaryteachersofuganda/6954",
+      "title": "THE PEARL BASIC _ APPLIED MATHEMATICAL FORMULA 2024 1.pdf",
+      "version_id": "31034186-6996-4343-a162-057c2e618f5d"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/2f8dc0ec53f5b7bc223b0ecb608476dae5220e6c24504f0f22d7cadd8ad77cdc.pdf",
+      "sha256": "2f8dc0ec53f5b7bc223b0ecb608476dae5220e6c24504f0f22d7cadd8ad77cdc",
+      "source_uri": "https://t.me/primaryteachersofuganda/7075",
+      "title": "THE CONSTITUTION OF UGANDA.pdf",
+      "version_id": "35c83009-b937-4947-abe7-721a8409c9d8"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f.docx",
+      "sha256": "4d0b7dee83aaf8ad8cd7d62a231dd04fa893e691fc1172b9ab5e8bbdfc8b638f",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/363db8307439791c7503eff7840649cdb51cfbc9/P.5%20MATH.docx",
+      "title": "P.5 MATH",
+      "version_id": "41261fa4-87aa-4a69-9497-3dd3a41521f0"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a.pdf",
+      "sha256": "0c7e90b49505e66050e4f11cc254efe5c63aabd4e8116a1331cb9adb4498950a",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/35325d6b4b134789d98d3f9a67acdec97ab8eb6e/P5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME_250116_203113.pdf",
+      "title": "P5 TERM I_ II_ III MATH SCHEME_250116_203113",
+      "version_id": "5cfbda70-c2bc-4b55-bf00-fb0ec86a7a3b"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/d3ad726c41c945411bb2d2b2505c5f8fb27351ab909f99f5d10096d6dd56d9e1.pdf",
+      "sha256": "d3ad726c41c945411bb2d2b2505c5f8fb27351ab909f99f5d10096d6dd56d9e1",
+      "source_uri": "https://t.me/primaryteachersofuganda/29971",
+      "title": "REPORT ON WORK OF CANDIDATES2024 DIDIX.pdf",
+      "version_id": "95a0810c-0108-4b64-b753-93dfb4fcfc82"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791.pdf",
+      "sha256": "21e9c17b86d48d45927564657f972f82d7779e09e0872d4f28436807b1b9d791",
+      "source_uri": "https://t.me/TeacherInUganda/46812",
+      "title": "P.6 MTC SCHEME OF WORK TERM 1- 3.pdf",
+      "version_id": "a47c146e-4cd0-4a95-8b2e-e0107d57c6c9"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/2928c99ddc898804393e61cf63c6ab5a182ecdabd101a5153d73a8d223af6e8e.pdf",
+      "sha256": "2928c99ddc898804393e61cf63c6ab5a182ecdabd101a5153d73a8d223af6e8e",
+      "source_uri": "https://github.com/Fresh-Teacher/fresh-teacher.github.io/blob/bb7d98a15a294014ca08e478559561b3f5f30f17/P.5%20MATHS%20SCHEME%20OF%20WORK%20TERM%20III.pdf",
+      "title": "P.5 MATHS SCHEME OF WORK TERM III",
+      "version_id": "c16915f1-9030-4a3f-9e94-9cbef1fcaa4c"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6.pdf",
+      "sha256": "8fbf005e8bd1871cbaeca94974bd016f0da6c986fab798f8047efc9f01e21ff6",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/a481f79f3ac868eb4e4991404ff1d33973bb3220/P5%20%20MATHEMATICS%20SCHEME%20OF%20WORK%20%20TERM%20ONE.pdf",
+      "title": "P5  MATHEMATICS SCHEME OF WORK  TERM ONE",
+      "version_id": "c2f481ed-af75-429a-be86-830e782620a5"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6.pdf",
+      "sha256": "0aa96bab0a848d3600068ed1180bd8ee9569e7f70aaa820959fa234574afbaa6",
+      "source_uri": "https://t.me/TeacherInUganda/63018",
+      "title": "P.7 MTC Scheme of work TERM 1- 3.pdf",
+      "version_id": "d25acd2a-08c8-4ba7-ba07-c43a5cd04424"
+    },
+    {
+      "license": "unknown",
+      "path": "resource-bank/sources/574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d.pdf",
+      "sha256": "574e7bcd98d6d8a1d66359c341a2326c817b61cbd84de87c397fcb5a16eccd9d",
+      "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/052b5257b26b98edd65df28ffd4b62ab8e0432e1/P.5%20TERM%20I%2C%20II%2C%20III%20MATH%20SCHEME%20CREATIVE.pdf",
+      "title": "P.5 TERM I_ II_ III MATH SCHEME CREATIVE",
+      "version_id": "ffdc8759-a5c2-4eed-893b-4999a81b7a53"
+    }
+  ]
+}
