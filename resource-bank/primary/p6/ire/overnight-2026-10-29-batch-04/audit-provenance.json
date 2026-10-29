@@ -31,7 +31,8 @@
     "visual": "all 9 compilation pages inspected as contact sheet; meaning page 1 at full resolution; remaining individual pages not individually full-resolution inspected",
     "arrow_glyph_bug": "found and replaced Unicode arrows in prose with words; original drawn arrows remain in diagrams",
     "quran_arabic": "not printed; recitation assessed with a verified Qur’an and qualified teacher",
-    "theological_teacher_review": "pending"
+    "theological_teacher_review": "pending",
+    "source_distinction": "Corrected learner prose to identify the march on Makkah as traditional historical accounts, not an explicit place-name in Qur'an 105."
   },
   "files": [
     {
@@ -40,8 +41,8 @@
       "key_pages": 1,
       "questions": 10,
       "matched_answers": 10,
-      "sha256_learner_pdf": "2a68e8dfdb6d73ffdfd7bde2ad12ff3994b4e43e2fbd013dfd724e611fec4323",
-      "sha256_key_pdf": "0eac298b94ff761ac1d8f240702785a624b99b06f4a0594e6fbf63f66fc56749",
+      "sha256_learner_pdf": "cc00dda9c9af0fa0bf0d25f05a58b3d2a06ce56c2533f320439d4d23c5449828",
+      "sha256_key_pdf": "2f7167afcba805e402b40028dbe3d099470d5a873a78523fd51b4439f0da681e",
       "git_blob_sha_learner_md": "c6dbf2ebf3b638e5a9a876278a60c24389528793",
       "git_blob_sha_key_md": "d38de283d062da378fd0bdfbf4bd41157d4fe90c"
     },
@@ -51,9 +52,9 @@
       "key_pages": 1,
       "questions": 10,
       "matched_answers": 10,
-      "sha256_learner_pdf": "b355a1f5b0b2712298a4f6b9bdc95a2c511e28b0e2f91125619e7243613ef0ce",
-      "sha256_key_pdf": "6df1833758b3262eff9eceb446529cd17ee899493ca2c325a4d84df6f644a322",
-      "git_blob_sha_learner_md": "2476b7a1cacd49de5ae5b5cae8b3fe63805523de",
+      "sha256_learner_pdf": "c3809b24283ecb5c29452b904121b4ba4bf64cc175dcb58938207dd47f8b7b75",
+      "sha256_key_pdf": "c712c1244c9d787c2f23784bea02dc3329435cb6a4713571688482edac8632c3",
+      "git_blob_sha_learner_md": "e15c667b91cecb47e438451b9ce06d27a4b2ce22",
       "git_blob_sha_key_md": "4d441e91ba70aea4fcec47ca653d6582e1553b35"
     },
     {
@@ -62,8 +63,8 @@
       "key_pages": 1,
       "questions": 10,
       "matched_answers": 10,
-      "sha256_learner_pdf": "be13ce8ea257bea5ade1560a157c6820204b602fedbfcc57446b40114bf0c77f",
-      "sha256_key_pdf": "e1c62d496b6a2f6ff8705a85efa2fcf1dabb13f084cf20635002ea4545291501",
+      "sha256_learner_pdf": "769249846b534c9e98d3a3960553b7a9e92f8b2805ebe741e5dc0058be8745fb",
+      "sha256_key_pdf": "b5cfca34ec287f0cd99d035b04ec6e25fc6eaedd184f2a67b84cf10e080445fd",
       "git_blob_sha_learner_md": "554787338435c57140f8efef4329ea95f3535ae8",
       "git_blob_sha_key_md": "32ba7c89a215f00e0c267a027754c17c2e2ead0a"
     }
