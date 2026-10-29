@@ -10,7 +10,7 @@ Name: __________________________  Date: __________________
 - Explain why pride and harmful actions should be avoided.
 
 ### The story in simple words
-Surat al-Fil tells about an army known as **the people of the elephant**. They marched against Makkah, where the Ka'bah stands. The Qur'an asks people to think about what happened to their plan. Allah sent birds against the army. The birds struck them with stones of baked clay. The army was defeated and became like eaten-up straw.
+Surat al-Fil speaks about **the people of the elephant**. Traditional accounts describe an army marching against Makkah, where the Ka'bah stands. The Qur'an asks people to think about what happened to their plan. Allah sent birds against the army. The birds struck them with stones of baked clay. The army was defeated and became like eaten-up straw.
 
 In traditional accounts of this event, the leader is called **Abraha**. His name is **not stated in the five verses**. Keep that difference clear when telling the story.
 
