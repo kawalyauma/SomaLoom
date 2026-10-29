@@ -1,0 +1,86 @@
+{
+  "batch": "P6 IRE overnight 2026-10-29 batch 04",
+  "date_local": "2026-10-29",
+  "curriculum": "https://www.ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+  "verified_NCDC_targets": "Term I Surat al-Fil Chapter 105; 3 recitation/memorisation periods, 2 meaning periods, 2 daily-relevance periods; PDF original pages 254–257",
+  "source_licence": "NCDC copyright 2010 all rights reserved; original learner prose, no copied Qur’an translation or invented Arabic/hadith quotations",
+  "school_scheme": "No IRE-specific P6 school week allocation independently verified; NCDC grouped period allocations used",
+  "prior_topic_packs": "Five Term I topic-level packs reported in issue #137 as local-only; not recovered, not counted as committed",
+  "generated": {
+    "learner_md": 3,
+    "teacher_md": 3,
+    "individual_pdf": 6,
+    "compilation_pdf": 2,
+    "original_diagram_svg": 2
+  },
+  "committed": {
+    "learner_md": 3,
+    "teacher_md": 3,
+    "svg": 2,
+    "pdf": 0
+  },
+  "qa": {
+    "individual_learner_pages": 6,
+    "individual_key_pages": 3,
+    "compilation_learner_pages": 6,
+    "compilation_key_pages": 3,
+    "practice_questions": 30,
+    "matching_teacher_answers": 30,
+    "pdf_markup_or_bounds_errors": 0,
+    "a4_and_text_extraction": "pass for all 8 PDFs",
+    "visual": "all 9 compilation pages inspected as contact sheet; meaning page 1 at full resolution; remaining individual pages not individually full-resolution inspected",
+    "arrow_glyph_bug": "found and replaced Unicode arrows in prose with words; original drawn arrows remain in diagrams",
+    "quran_arabic": "not printed; recitation assessed with a verified Qur’an and qualified teacher",
+    "theological_teacher_review": "pending"
+  },
+  "files": [
+    {
+      "slug": "recitation-and-memorisation",
+      "learner_pages": 2,
+      "key_pages": 1,
+      "questions": 10,
+      "matched_answers": 10,
+      "sha256_learner_pdf": "2a68e8dfdb6d73ffdfd7bde2ad12ff3994b4e43e2fbd013dfd724e611fec4323",
+      "sha256_key_pdf": "0eac298b94ff761ac1d8f240702785a624b99b06f4a0594e6fbf63f66fc56749",
+      "git_blob_sha_learner_md": "c6dbf2ebf3b638e5a9a876278a60c24389528793",
+      "git_blob_sha_key_md": "d38de283d062da378fd0bdfbf4bd41157d4fe90c"
+    },
+    {
+      "slug": "meaning-and-story",
+      "learner_pages": 2,
+      "key_pages": 1,
+      "questions": 10,
+      "matched_answers": 10,
+      "sha256_learner_pdf": "b355a1f5b0b2712298a4f6b9bdc95a2c511e28b0e2f91125619e7243613ef0ce",
+      "sha256_key_pdf": "6df1833758b3262eff9eceb446529cd17ee899493ca2c325a4d84df6f644a322",
+      "git_blob_sha_learner_md": "2476b7a1cacd49de5ae5b5cae8b3fe63805523de",
+      "git_blob_sha_key_md": "4d441e91ba70aea4fcec47ca653d6582e1553b35"
+    },
+    {
+      "slug": "importance-and-daily-life",
+      "learner_pages": 2,
+      "key_pages": 1,
+      "questions": 10,
+      "matched_answers": 10,
+      "sha256_learner_pdf": "be13ce8ea257bea5ade1560a157c6820204b602fedbfcc57446b40114bf0c77f",
+      "sha256_key_pdf": "e1c62d496b6a2f6ff8705a85efa2fcf1dabb13f084cf20635002ea4545291501",
+      "git_blob_sha_learner_md": "554787338435c57140f8efef4329ea95f3535ae8",
+      "git_blob_sha_key_md": "32ba7c89a215f00e0c267a027754c17c2e2ead0a"
+    }
+  ],
+  "states": {
+    "generated": true,
+    "markdown_committed": true,
+    "pdf_committed": false,
+    "validated_automated_checks": true,
+    "imported": false,
+    "teacher_reviewed": false
+  },
+  "limitations": [
+    "Full Arabic recitation accuracy requires live qualified teacher, not automated certification.",
+    "Prior local-only five topic packs inaccessible; topic-level duplication cannot be fully ruled out, but these three are distinct period-group resources.",
+    "NCDC 7 periods not converted into 7 individual lesson files; period-by-period coverage incomplete.",
+    "PDF binary upload not supported by UTF-8 GitHub file connector without transmitting base64 blobs; PDFs remain local downloads.",
+    "Other 14 IRE topic period allocations not audited."
+  ]
+}
