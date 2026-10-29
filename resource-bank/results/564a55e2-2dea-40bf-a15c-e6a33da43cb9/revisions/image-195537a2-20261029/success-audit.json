@@ -1,0 +1,93 @@
+{
+  "image_request_id": "195537a2-bc47-4183-8dc5-905201df49fc",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "source_block_id": "ac0a4787-2ef2-4225-b66a-2f22b98cfe4d",
+  "chat_url": "https://chatgpt.com/c/6ae3d28f-03b0-83ea-8b9b-9646be87d18c",
+  "authorship": "ChatGPT Python/Pillow authored isometric cube and equal-square net; exact existing artifact recovered inline after Download file failure",
+  "original_sha256": "e2839df0479e7223992d4109b1bcf9a9db5e66bc069cbeed89a07a0f07b2080a",
+  "accuracy_check": {
+    "checked_at": "2026-10-29T23:38:53.338463+00:00",
+    "source_block_id": "ac0a4787-2ef2-4225-b66a-2f22b98cfe4d",
+    "method": "Verify actual recovered ChatGPT PNG hash, projected cube edge graph, and equal-square lattice; visually inspect labels/visible faces",
+    "original_existing_file_hash_matches_chatgpt_report": true,
+    "cube_vertex_pixels_approx": {
+      "back_top": [
+        930,
+        360
+      ],
+      "left_top": [
+        505,
+        605
+      ],
+      "front_top": [
+        930,
+        850
+      ],
+      "right_top": [
+        1355,
+        605
+      ],
+      "left_bottom": [
+        505,
+        1095
+      ],
+      "front_bottom": [
+        930,
+        1340
+      ],
+      "right_bottom": [
+        1355,
+        1095
+      ]
+    },
+    "cube_edges_checked": 9,
+    "projected_edge_length_relative_spread": 0.001143828037499706,
+    "isometric_edge_tolerance": 0.01,
+    "net_cells": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "square_side_pixels": 405,
+    "net_square_count": 6,
+    "visual_checks": {
+      "cube_three_visible_faces": true,
+      "cube_edge_s_label": true,
+      "all_six_faces_labelled_area_s_squared": true,
+      "four_in_row_above_and_below_second": true,
+      "print_margins_unclipped": true,
+      "no_extra_measurements": true
+    },
+    "original_dpi": [
+      299.9994,
+      299.9994
+    ],
+    "authorship": "Existing regular ChatGPT Chat authored Pillow PNG; recovered exact existing artifact via inline embedding, no regeneration or Codex-drawn substitute",
+    "accuracy_check": "passed",
+    "educator_approval_pending": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
