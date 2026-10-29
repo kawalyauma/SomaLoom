@@ -20,6 +20,8 @@ def test_lesson_selection_never_includes_other_or_combined_lesson():
         {'id':'a','type':'paragraph','text':'Selected lesson','outcome_ids':['one']},
         {'id':'b','type':'paragraph','text':'Other lesson','outcome_ids':['two']}]}]}
     assert select_body(body,{'one'},whole_document=False)['sections'][0]['blocks']==body['sections'][0]['blocks'][:1]
+    with_revision=deepcopy(body);with_revision['sections'].append({'key':'revision','blocks':[{'id':'directions','type':'paragraph','text':'Show your calculations.','outcome_ids':['one','two']},{'id':'practice','type':'question','text':'Only this lesson question.','outcome_ids':['one']}]})
+    assert 'Only this lesson question.' in str(select_body(with_revision,{'one'},whole_document=False))
     combined=deepcopy(body);combined['sections'][0]['blocks'][1]['outcome_ids']=['one','two']
     with pytest.raises(ScopeNotReady):select_body(combined,{'one'},whole_document=False)
 

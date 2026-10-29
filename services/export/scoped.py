@@ -67,7 +67,11 @@ def select_body(body, outcome_ids, *, whole_document):
             if not linked.intersection(outcome_ids):
                 continue
             if not linked <= outcome_ids:
-                if section.get('key') not in administrative and block.get('type') not in {'heading','page_break','reference'}:
+                if block.get('type') in {'figure','diagram','map','chart','image'}:
+                    blocks.append(block)
+                    continue
+                shared_revision_note = section.get('key') == 'revision' and block.get('type') == 'paragraph'
+                if not shared_revision_note and section.get('key') not in administrative and block.get('type') not in {'heading','page_break','reference'}:
                     raise ScopeNotReady('This draft combines several lessons in one block. Split those lessons before downloading individually.')
                 continue
             blocks.append(block)
