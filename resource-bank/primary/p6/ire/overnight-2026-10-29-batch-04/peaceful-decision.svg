@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="150" viewBox="0 0 760 150" role="img">
+<rect width="760" height="150" fill="white"/>
+<rect x="8" y="28" width="160" height="85" rx="10" fill="#eef5f8" stroke="#315c80" stroke-width="2"/>
+<text x="88" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">Notice</text>
+<text x="88" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">a problem</text>
+<path d="M 172 70 h 19 m -7 -7 l 7 7 -7 7" fill="none" stroke="#315c80" stroke-width="2"/>
+<rect x="196" y="28" width="160" height="85" rx="10" fill="#eef5f8" stroke="#315c80" stroke-width="2"/>
+<text x="276" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">Choose a</text>
+<text x="276" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">peaceful step</text>
+<path d="M 360 70 h 19 m -7 -7 l 7 7 -7 7" fill="none" stroke="#315c80" stroke-width="2"/>
+<rect x="384" y="28" width="160" height="85" rx="10" fill="#eef5f8" stroke="#315c80" stroke-width="2"/>
+<text x="464" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">Ask a</text>
+<text x="464" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">trusted adult</text>
+<path d="M 548 70 h 19 m -7 -7 l 7 7 -7 7" fill="none" stroke="#315c80" stroke-width="2"/>
+<rect x="572" y="28" width="160" height="85" rx="10" fill="#eef5f8" stroke="#315c80" stroke-width="2"/>
+<text x="652" y="62" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">Protect people</text>
+<text x="652" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#18263b">and property</text>
+</svg>
