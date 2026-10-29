@@ -4,7 +4,7 @@
   "total_rows": 58,
   "generated": 8,
   "not_generated": 50,
-  "github_markdown_committed_lessons": 1,
+  "github_markdown_committed_lessons": 8,
   "all_week_1_exercises_checked_exact_rational": 64,
   "source_coverage_claim": "No completion claimed for remaining 50 rows",
   "rows": [
@@ -28,7 +28,7 @@
       "target": "like/unlike denominators; mixed",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -40,7 +40,7 @@
       "target": "LCD and combined operations",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -52,7 +52,7 @@
       "target": "order of operations",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -64,7 +64,7 @@
       "target": "whole/fraction products",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -76,7 +76,7 @@
       "target": "reciprocals",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -88,7 +88,7 @@
       "target": "whole/fraction/mixed",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -100,7 +100,7 @@
       "target": "BODMAS and simplify",
       "source_pages": "original 7-11",
       "generated": true,
-      "markdown_committed": false,
+      "markdown_committed": true,
       "files_in_chat": true,
       "teacher_reviewed": false
     },
@@ -704,5 +704,7 @@
       "files_in_chat": false,
       "teacher_reviewed": false
     }
-  ]
+  ],
+  "last_updated": "2026-10-29",
+  "last_recovery_batch": "p6-mathematics-2026-10-29-05"
 }

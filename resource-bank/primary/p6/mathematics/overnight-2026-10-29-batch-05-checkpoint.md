@@ -1,0 +1,9 @@
+# P6 Mathematics Term 2 Week 1 — overnight recovery batch 05 (29 October 2026)
+
+Selected Mathematics from rotation. Recovered the **actual 14 outstanding UTF-8 Markdown files** (seven learner and seven separate teacher keys) from previously generated ChatGPT attachments. All 14 now committed under `resource-bank/lesson-notes/p6/mathematics/term-2/week-1/` with their existing filenames. Week 1 Lesson 1 pair was already on main and was **not overwritten**. Source: committed 17-page P6 all-term scheme, Term II original page 7; eight lesson rows, all Week 1. Term 1 QA-v2 and all other subjects preserved.
+
+**QA:** 56 of 56 arithmetic practice answers independently checked with exact Fraction arithmetic, 8 of 8 contextual word answers checked, and 24 of 24 worked examples checked (88/88). The 18 existing local Week 1 PDFs (16 individuals plus learner/key compilations) comprise 48 pages, A4 and extractable, no raw <super>/<sub> or HTML escapes, no text blocks outside page bounds; 64 numbered learner practice questions found. Lesson 2 learner page 1 visually inspected. This is NOT a full educational or diagram/page-by-page review.
+
+**States:** Week 1 eight learner/key pairs generated and now Markdown-committed; PDFs exist as downloadable local attachments but are NOT committed to GitHub; app imported NO; teacher reviewed NO. **Term 2 only 8/58 source rows generated, 50 ungenerated**. Original notes are concise; expand explanation depth and teacher worked solutions before final approval. No Term 3 work. No new lesson content in this recovery batch.
+
+**Next rotation:** Science, inspect latest Science checkpoint and fix legacy PDF/Markdown question parity. Next Mathematics: enhance Week 1 keys and proceed to Week 2 Period 1 decimal addition/subtraction only after verifying no concurrent files; preserve every existing source/QA-v2 file.

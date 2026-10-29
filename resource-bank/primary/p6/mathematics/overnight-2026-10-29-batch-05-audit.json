@@ -1,0 +1,52 @@
+{
+  "batch": "p6-mathematics-2026-10-29-05",
+  "date": "2026-10-29",
+  "scope": "Recovery and mathematical QA of existing P6 Mathematics Term 2 Week 1 fraction resources only",
+  "source": "Original 17-page school scheme, Term II page 7, committed layout-preserved reference text",
+  "source_license": "unknown; scheme used as planning reference only",
+  "term": 2,
+  "week": 1,
+  "scheme_rows": 8,
+  "existing_learner_key_pairs": 8,
+  "previously_committed_pairs": 1,
+  "newly_committed_pairs": 7,
+  "total_committed_pairs": 8,
+  "markdown_files_newly_committed": 14,
+  "existing_pdf_files_local": 18,
+  "existing_pdf_pages_total": 48,
+  "learner_practice_questions": 64,
+  "independent_checks": {
+    "arithmetic_practice": 56,
+    "word_problem_practice": 8,
+    "worked_examples": 24,
+    "total": 88,
+    "passed": 88,
+    "failed": 0,
+    "method": "Python fractions.Fraction with AST evaluator and separately specified word/worked cases"
+  },
+  "pdf_checks": {
+    "all_18_a4": true,
+    "all_18_extractable": true,
+    "all_18_no_raw_super_sub_or_escaped_html": true,
+    "all_18_no_out_of_bounds_text_blocks": true,
+    "learner_question_numbers_1_through_8_each": true,
+    "visual_review": "Lesson 2 learner page 1 inspected; not every page visually reviewed"
+  },
+  "publication": {
+    "markdown_pairs_committed": 8,
+    "individual_pdfs_committed": 0,
+    "compilation_pdfs_committed": 0,
+    "downloadable_local_pdfs": true,
+    "app_imported": false,
+    "teacher_reviewed": false
+  },
+  "remaining": {
+    "term_2_rows_ungenerated": 50,
+    "lesson_content_depth_review": "pending; original drafts concise and some practice keys lack worked steps",
+    "full_visual_diagram_review": "pending",
+    "source_allocation_review": "scheme Week1 verified; other weeks still crosswalk only",
+    "term1_qa_v2": "preserved",
+    "pdf_publication": "pending; GitHub text connector can commit UTF-8 but local binary upload not performed"
+  },
+  "next": "Science rotation; next Mathematics turn enrich Week 1 teacher keys and begin Week 2 Period 1 decimal addition/subtraction after checking for concurrent progress."
+}

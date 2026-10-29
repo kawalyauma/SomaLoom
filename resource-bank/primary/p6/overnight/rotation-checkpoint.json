@@ -1,7 +1,7 @@
 {
-  "last_batch": "p6-ire-2026-10-29-04",
-  "last_subject": "ire",
-  "next_subject": "mathematics",
+  "last_batch": "p6-mathematics-2026-10-29-05",
+  "last_subject": "mathematics",
+  "next_subject": "science",
   "subjects": [
     "mathematics",
     "science",
@@ -9,10 +9,10 @@
     "cre",
     "ire"
   ],
-  "next_subject_rationale": "IRE completed three distinct NCDC Surat al-Fil grouped subtarget resources, 6 Markdown committed, 2 SVGs committed; PDFs generated/downloadable but uncommitted. Prior five topic packs local-only and not recovered. Next Mathematics: inspect latest Term 2 checkpoint before drafting; avoid duplicate fractions and preserve Term 1 QA-v2.",
+  "next_subject_rationale": "Maths Week 1 T2 recovery: all 8 existing learner/key Markdown pairs now committed, 18 existing local PDFs inspected and 88 exact arithmetic/context/worked checks passed; no new Term2 rows generated. Next Science must inspect latest Science checkpoint, particularly old 11-topic compilation parity and PDF binary publication. Do not duplicate Maths Week 1.",
   "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-01-checkpoint.md",
   "status": "incomplete",
-  "completed_batches": 4,
+  "completed_batches": 5,
   "no_parallel_workers": true,
   "updated": "2026-10-29",
   "sst_checkpoint": "resource-bank/primary/p6/sst/overnight-2026-10-29-batch-02/checkpoint.md",
