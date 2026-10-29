@@ -1,0 +1,14 @@
+{
+  "image_request_id": "f1cd99d8-1241-4dd1-8120-b6867845c39e",
+  "http_status": 200,
+  "sha256": "80c4087d9571888102c4e9d597354b66f2baeaad49624b49cad6af36d2b47b92",
+  "bytes": 38373,
+  "mime": "image/png",
+  "versioned_content_retrievable": true,
+  "checked_at": "2026-10-29T23:05:31.819Z",
+  "pixels_match_verified_chatgpt_original": true,
+  "original_dpi": [
+    299.9994,
+    299.9994
+  ]
+}

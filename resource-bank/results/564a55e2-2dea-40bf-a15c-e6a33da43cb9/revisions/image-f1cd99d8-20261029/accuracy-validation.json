@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-29T23:05:27.214066+00:00",
+  "source_block_id": "85448476-6a4f-468e-b443-6edb79915f14",
+  "method": "Read original ChatGPT Pillow PNG against final supplied coordinates; compare cropped artifact ink pixels with original without redrawing",
+  "source_final_coordinates": {
+    "A": [
+      0,
+      7
+    ],
+    "B": [
+      3,
+      2
+    ],
+    "C": [
+      0,
+      -1
+    ],
+    "D": [
+      -3,
+      2
+    ],
+    "O": [
+      0,
+      2
+    ]
+  },
+  "pixels_per_unit": 215,
+  "crop_translation": [
+    403,
+    0
+  ],
+  "verified_vertex_pixels": {
+    "A": [
+      837,
+      205
+    ],
+    "B": [
+      1482,
+      1280
+    ],
+    "C": [
+      837,
+      1925
+    ],
+    "D": [
+      192,
+      1280
+    ],
+    "O": [
+      837,
+      1280
+    ]
+  },
+  "upper_offset_pixels": 1075,
+  "lower_offset_pixels": 645,
+  "upper_lower_ratio": 1.6666666666666667,
+  "original_geometry_pixels_unchanged_after_chatgpt_crop": true,
+  "visual_checks": {
+    "ABCD_labels": true,
+    "both_diagonals_d1_d2": true,
+    "AC_only_symmetry_dashed": true,
+    "perpendicular_mark": true,
+    "two_distinct_equal_side_pair_markings": true,
+    "no_invented_measurements": true,
+    "clutter_or_label_clipping": false
+  },
+  "authorship": "Existing regular ChatGPT Chat authored precise Pillow PNG and cropped margins; Codex validated only",
+  "accuracy_check": "passed",
+  "educator_approval_pending": true
+}
