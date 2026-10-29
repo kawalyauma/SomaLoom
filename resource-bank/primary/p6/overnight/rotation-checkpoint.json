@@ -1,7 +1,7 @@
 {
-  "last_batch": "p6-cre-2026-10-29-03",
-  "last_subject": "cre",
-  "next_subject": "ire",
+  "last_batch": "p6-ire-2026-10-29-04",
+  "last_subject": "ire",
+  "next_subject": "mathematics",
   "subjects": [
     "mathematics",
     "science",
@@ -9,12 +9,13 @@
     "cre",
     "ire"
   ],
-  "next_subject_rationale": "CRE generated and committed three new Term I subtopic learner/key Markdown pairs and three original SVG diagrams. Prior five CRE local-only lessons remain unrecovered; PDF binaries local only. Next IRE, separate from CRE; inspect issue #137 prior five locally generated topics and avoid duplicates.",
+  "next_subject_rationale": "IRE completed three distinct NCDC Surat al-Fil grouped subtarget resources, 6 Markdown committed, 2 SVGs committed; PDFs generated/downloadable but uncommitted. Prior five topic packs local-only and not recovered. Next Mathematics: inspect latest Term 2 checkpoint before drafting; avoid duplicate fractions and preserve Term 1 QA-v2.",
   "science_checkpoint": "resource-bank/primary/p6/science/overnight-2026-10-29-batch-01-checkpoint.md",
   "status": "incomplete",
-  "completed_batches": 3,
+  "completed_batches": 4,
   "no_parallel_workers": true,
   "updated": "2026-10-29",
   "sst_checkpoint": "resource-bank/primary/p6/sst/overnight-2026-10-29-batch-02/checkpoint.md",
-  "cre_checkpoint": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-03/checkpoint.md"
+  "cre_checkpoint": "resource-bank/primary/p6/cre/overnight-2026-10-29-batch-03/checkpoint.md",
+  "ire_checkpoint": "resource-bank/primary/p6/ire/overnight-2026-10-29-batch-04/checkpoint.md"
 }
