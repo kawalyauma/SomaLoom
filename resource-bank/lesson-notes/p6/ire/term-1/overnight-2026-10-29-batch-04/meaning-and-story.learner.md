@@ -15,7 +15,7 @@ Surat al-Fil tells about an army known as **the people of the elephant**. They m
 In traditional accounts of this event, the leader is called **Abraha**. His name is **not stated in the five verses**. Keep that difference clear when telling the story.
 
 ### Follow the events
-**An army approaches Makkah** → **Its plan fails** → **Birds are sent against it** → **The army is defeated**.
+**An army approaches Makkah**; then **its plan fails**; then **birds are sent against it**; finally **the army is defeated**.
 
 ### Words to know
 - **Invade:** enter a place by force in order to take control.
