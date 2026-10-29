@@ -1,0 +1,1847 @@
+{
+  "schema_version": "teaching.v1",
+  "title": "SomaLoom P6 Mathematics — Term 3, Week 1: Length, Mass and Capacity — Complete Lesson Notes (Lessons 1–6)",
+  "review_status": "needs_review",
+  "revision": 1,
+  "scheme_weeks": [],
+  "lesson_stages": [],
+  "sections": [
+    {
+      "key": "introduction",
+      "title": "Introduction — Measurement: Term 3, Week 1",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Class: Primary Six (P6). Subject: Mathematics. Term: 3. Week: 1. Topic: Length, mass and capacity. This week's work covers six lessons: identifying metric units; converting metric units; converting square units; calculating perimeter and missing sides; calculating area from a given perimeter; and finding unknown rectangle dimensions. Draft — teacher review required.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Measurement helps us describe the size, weight, capacity and space occupied by objects. We measure the length of a classroom in metres, the mass of a bag of maize in kilograms, and the capacity of a water container in litres. We also calculate the distance around a garden and the amount of ground it covers.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The lesson allocation follows the supplied planning request. All six lesson placements are marked as inferred in that request. A teacher must check the original scheme and confirm the sequence before classroom use. The supplied excerpts do not establish an official curriculum endorsement, exact period durations or lesson dates.",
+          "citation_ids": [
+            "ebe51b77-97d7-5d83-819e-87057311ee91",
+            "31a61fa1-c140-5fdb-a661-f4dd7081de2a",
+            "1884f9b0-faeb-59f0-a173-50255adacb86",
+            "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc",
+            "63c3c3a3-cc22-51da-bb43-7810db96017a",
+            "82289fb6-a5a8-52c9-a586-03cdf5d2b14f"
+          ],
+          "outcome_ids": [],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "learning_outcomes",
+      "title": "Learning Outcomes — All Six Lessons",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Lesson 1 — Conversion of Metric Units: Identifying Units",
+          "citation_ids": [
+            "ebe51b77-97d7-5d83-819e-87057311ee91"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Identify different metric units.",
+          "citation_ids": [
+            "ebe51b77-97d7-5d83-819e-87057311ee91",
+            "c437ff63-ba43-5759-a090-a5b7801fb1e3"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Conversion from One Metric Unit to Another",
+          "citation_ids": [
+            "31a61fa1-c140-5fdb-a661-f4dd7081de2a"
+          ],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Convert between metric units.",
+          "citation_ids": [
+            "31a61fa1-c140-5fdb-a661-f4dd7081de2a",
+            "83328044-d0ad-5442-9e28-bbb8c475c3d5"
+          ],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Conversion of Square Units",
+          "citation_ids": [
+            "1884f9b0-faeb-59f0-a173-50255adacb86"
+          ],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Convert between square units.",
+          "citation_ids": [
+            "1884f9b0-faeb-59f0-a173-50255adacb86"
+          ],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 — Perimeter and Missing Sides",
+          "citation_ids": [
+            "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Calculate the perimeter of rectangles and squares.",
+          "citation_ids": [
+            "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc",
+            "b56795ee-4879-5ec9-a44c-636d9a985b09"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find a missing side.",
+          "citation_ids": [
+            "b56795ee-4879-5ec9-a44c-636d9a985b09"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 — Calculating Area from a Given Perimeter",
+          "citation_ids": [
+            "63c3c3a3-cc22-51da-bb43-7810db96017a"
+          ],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Calculate area when given the perimeter.",
+          "citation_ids": [
+            "63c3c3a3-cc22-51da-bb43-7810db96017a"
+          ],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Finding the Sides, Area and Perimeter",
+          "citation_ids": [
+            "82289fb6-a5a8-52c9-a586-03cdf5d2b14f"
+          ],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find unknown values and actual rectangle dimensions.",
+          "citation_ids": [
+            "82289fb6-a5a8-52c9-a586-03cdf5d2b14f",
+            "34169428-fac4-5842-8cca-a31def3c07c1"
+          ],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "prior_knowledge",
+      "title": "Prior Knowledge and Readiness",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Before Lesson 1, learners should be able to count, multiply and divide whole numbers, recognise decimal numbers and name common measuring instruments. Recall centimetres, metres, kilograms and litres.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Diagnostic questions for Lessons 1–2: What instrument measures the length of a desk? Which unit is suitable for the mass of a sack of maize? How many centimetres are in one metre? Which is larger, 500 m or 1 km?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Before Lesson 3, revise multiplication by 10, 100, 1,000 and 10,000. Recall that a square unit measures area, not length.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "Diagnostic questions for Lessons 4–6: What is a rectangle? How many sides does a square have? What is the difference between perimeter and area? Solve 2 × (8 + 4). Solve 36 ÷ 4. Find the value of x if 3x = 21.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "vocabulary",
+      "title": "Key Vocabulary and Definitions",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Lesson 1 — Common metric units",
+          "rows": [
+            [
+              "Quantity",
+              "Unit",
+              "Symbol",
+              "Example of use"
+            ],
+            [
+              "Length",
+              "millimetre",
+              "mm",
+              "Thickness of a small object"
+            ],
+            [
+              "Length",
+              "centimetre",
+              "cm",
+              "Length of a pencil"
+            ],
+            [
+              "Length",
+              "decimetre",
+              "dm",
+              "A length of ten centimetres"
+            ],
+            [
+              "Length",
+              "metre",
+              "m",
+              "Length of a classroom"
+            ],
+            [
+              "Length",
+              "kilometre",
+              "km",
+              "Distance between towns"
+            ],
+            [
+              "Mass",
+              "milligram",
+              "mg",
+              "Very small mass"
+            ],
+            [
+              "Mass",
+              "gram",
+              "g",
+              "Mass of a small food item"
+            ],
+            [
+              "Mass",
+              "kilogram",
+              "kg",
+              "Mass of a bag of produce"
+            ],
+            [
+              "Mass",
+              "tonne",
+              "t",
+              "Mass of heavy goods"
+            ],
+            [
+              "Capacity",
+              "millilitre",
+              "mL",
+              "Small quantity of liquid"
+            ],
+            [
+              "Capacity",
+              "litre",
+              "L",
+              "Capacity of a water bottle"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Metric prefixes and their meanings",
+          "rows": [
+            [
+              "Prefix",
+              "Symbol",
+              "Meaning"
+            ],
+            [
+              "kilo",
+              "k",
+              "1,000 times the base unit"
+            ],
+            [
+              "hecto",
+              "h",
+              "100 times the base unit"
+            ],
+            [
+              "deca",
+              "da",
+              "10 times the base unit"
+            ],
+            [
+              "deci",
+              "d",
+              "One tenth of the base unit"
+            ],
+            [
+              "centi",
+              "c",
+              "One hundredth of the base unit"
+            ],
+            [
+              "milli",
+              "m",
+              "One thousandth of the base unit"
+            ]
+          ],
+          "citation_ids": [
+            "3d06ba14-1654-5a46-8ebf-5109303c9323"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 2 vocabulary: Conversion — changing a measurement from one unit into an equivalent measurement in another unit. Equivalent measurements — different expressions of the same quantity. Conversion factor — a number used to change between units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 3 vocabulary: Area — the amount of surface inside a flat shape. Square unit — the area of a square whose sides each measure one unit. Square centimetre (cm²), square metre (m²), and square kilometre (km²) are units of area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 4 vocabulary: Perimeter — the total distance around a closed shape. Rectangle — a four-sided figure with four right angles and opposite sides equal. Square — a four-sided figure with four equal sides and four right angles. Missing side — a side whose length must be calculated.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lessons 5–6 vocabulary: Length — one dimension of a rectangle. Width — the other dimension of a rectangle. Dimension — a measurable side length. Unknown — a value represented by a letter such as x. Equation — a mathematical statement showing that two expressions are equal.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "explanation",
+      "title": "Detailed Lesson Explanations",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1: IDENTIFYING METRIC UNITS",
+          "citation_ids": [
+            "ebe51b77-97d7-5d83-819e-87057311ee91"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The metric system is a system of measurement. It uses units such as metres, grams and litres. Each type of measurement has suitable units. Length describes distance. Mass describes how much matter an object contains. Capacity describes how much a container can hold. Different instruments measure different quantities: a ruler or tape measure measures length, a weighing scale measures mass, and a marked measuring jug measures liquid capacity.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Choose a suitable unit for the size of the quantity. Use millimetres for very small lengths, centimetres for shorter objects, metres for rooms and fields, and kilometres for long journeys. Use grams or kilograms for everyday masses. Use millilitres or litres for the capacity of containers. A number without its unit may not communicate a complete measurement.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Metric unit identification and comparison",
+          "rows": [
+            [
+              "Quantity",
+              "Smaller units",
+              "Larger units",
+              "Common instrument"
+            ],
+            [
+              "Length",
+              "mm, cm, dm",
+              "m, km",
+              "Ruler, tape measure"
+            ],
+            [
+              "Mass",
+              "mg, g",
+              "kg, t",
+              "Weighing scale"
+            ],
+            [
+              "Capacity",
+              "mL",
+              "L",
+              "Graduated measuring container"
+            ],
+            [
+              "Area",
+              "mm², cm²",
+              "m², km²",
+              "Measured dimensions and calculation"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2: CONVERTING METRIC UNITS",
+          "citation_ids": [
+            "31a61fa1-c140-5fdb-a661-f4dd7081de2a"
+          ],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Converting metric units means expressing a measurement in another unit without changing the actual quantity. For example, 1 m and 100 cm represent the same length. When changing from a larger unit to a smaller unit, multiply by the number of smaller units in one larger unit. When changing from a smaller unit to a larger unit, divide by that number.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Metric conversion facts",
+          "rows": [
+            [
+              "Quantity",
+              "Equivalent measurements"
+            ],
+            [
+              "Length",
+              "1 km = 1,000 m"
+            ],
+            [
+              "Length",
+              "1 m = 10 dm = 100 cm = 1,000 mm"
+            ],
+            [
+              "Length",
+              "1 dm = 10 cm"
+            ],
+            [
+              "Length",
+              "1 cm = 10 mm"
+            ],
+            [
+              "Mass",
+              "1 tonne = 1,000 kg"
+            ],
+            [
+              "Mass",
+              "1 kg = 1,000 g"
+            ],
+            [
+              "Mass",
+              "1 g = 1,000 mg"
+            ],
+            [
+              "Capacity",
+              "1 L = 1,000 mL"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Steps for converting units: 1. Read the given measurement carefully. 2. Identify the unit given and the unit required. 3. Write the correct conversion fact. 4. Decide whether to multiply or divide. 5. Calculate accurately. 6. Write the answer with the required unit. 7. Check whether the numerical result is sensible.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "When solving a problem that contains different units, first convert them to the same unit. For example, to add 2 m and 35 cm, change 2 m to 200 cm. Then 200 cm + 35 cm = 235 cm. Alternatively, write the answer as 2.35 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3: CONVERTING SQUARE UNITS",
+          "citation_ids": [
+            "1884f9b0-faeb-59f0-a173-50255adacb86"
+          ],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Area measures a surface. It is written in square units such as cm² and m². One square centimetre is the area of a square measuring 1 cm by 1 cm. One square metre is the area of a square measuring 1 m by 1 m. Each side of a square metre equals 100 cm, so a square metre contains 100 rows of 100 square centimetres.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area conversion: one square metre",
+          "latex": "1\\text{ m}^{2}=100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Useful square-unit conversions",
+          "rows": [
+            [
+              "Larger square unit",
+              "Equivalent smaller square units"
+            ],
+            [
+              "1 cm²",
+              "100 mm²"
+            ],
+            [
+              "1 dm²",
+              "100 cm²"
+            ],
+            [
+              "1 m²",
+              "100 dm²"
+            ],
+            [
+              "1 m²",
+              "10,000 cm²"
+            ],
+            [
+              "1 km²",
+              "1,000,000 m²"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "For square units, the conversion factor is the square of the corresponding length conversion factor. Since 1 m = 100 cm, use 100 × 100 = 10,000 when converting m² to cm². Multiply by 10,000 to change m² to cm² and divide by 10,000 to change cm² to m². Do not use the ordinary length conversion factor for area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Visual support required to show why 1 m² equals 10,000 cm².",
+          "visual_instruction": "Create an original, accurately labelled square with each side marked 1 m = 100 cm. Show a smaller sample grid of 10 × 10 squares only as an explanatory inset, or describe the full 100 × 100 subdivision without drawing all 10,000 cells. Label that the full square contains 100 rows of 100 one-centimetre squares. State explicitly that the inset is not a complete 1 m² grid. Use vector lines or an original illustration. No external asset or source image is authorised.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4: PERIMETER OF RECTANGLES AND SQUARES",
+          "citation_ids": [
+            "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc",
+            "b56795ee-4879-5ec9-a44c-636d9a985b09"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Perimeter is the total distance around a closed figure. To find the perimeter, add the lengths of all its sides. A rectangle has two pairs of equal opposite sides. A square has four equal sides. Perimeter is measured in ordinary length units, such as centimetres and metres, not square units.",
+          "citation_ids": [
+            "f48e2440-fbb3-5a03-8a6a-b4f118bf761c"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a rectangle",
+          "latex": "P=2(l+w)",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a square",
+          "latex": "P=4s",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "In these formulae, P represents perimeter, l represents length, w represents width and s represents the side of a square. If the perimeter of a rectangle and one side are known, calculate half the perimeter first. Subtract the known side to find the missing side. If the perimeter of a square is known, divide it by four to find one side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Missing rectangle dimensions",
+          "latex": "w=\\frac{P}{2}-l\\qquad l=\\frac{P}{2}-w",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original labelled rectangle and square diagrams required for perimeter and missing-side calculations.",
+          "visual_instruction": "Draw a rectangle ABCD with AB = CD = 12 cm and BC = DA = 5 cm. Draw a separate square EFGH with each side 6 cm. Include arrows around each shape to illustrate perimeter. Use actual matching side labels and right-angle corners. The diagrams must be original and should not imply that the two shapes have equal perimeter.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5: FINDING AREA FROM A GIVEN PERIMETER",
+          "citation_ids": [
+            "63c3c3a3-cc22-51da-bb43-7810db96017a"
+          ],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Area is the amount of surface enclosed by a two-dimensional shape. The area of a rectangle is its length multiplied by its width. The area of a square is its side multiplied by itself. Area must be written in square units, such as cm² or m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area formulae",
+          "latex": "A_{\\text{rectangle}}=l\\times w\\qquad A_{\\text{square}}=s^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "To find the area of a square from its perimeter, divide the perimeter by four to get the side length, then square that side length. To find the area of a rectangle, the perimeter alone is not enough. You must also know a side length or another condition that determines the dimensions. Different rectangles can have the same perimeter but different areas.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a square from its perimeter",
+          "latex": "s=\\frac{P}{4}\\qquad A=\\left(\\frac{P}{4}\\right)^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "For a rectangle whose perimeter and length are given, calculate the width using w = P ÷ 2 − l. Then calculate A = l × w. All dimensions must first be expressed in the same unit. If a calculated side is zero or negative, the supplied dimensions do not describe a valid rectangle with positive side lengths.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Rectangles with the same perimeter but different areas",
+          "rows": [
+            [
+              "Length",
+              "Width",
+              "Perimeter",
+              "Area"
+            ],
+            [
+              "9 cm",
+              "3 cm",
+              "24 cm",
+              "27 cm²"
+            ],
+            [
+              "8 cm",
+              "4 cm",
+              "24 cm",
+              "32 cm²"
+            ],
+            [
+              "7 cm",
+              "5 cm",
+              "24 cm",
+              "35 cm²"
+            ],
+            [
+              "6 cm",
+              "6 cm",
+              "24 cm",
+              "36 cm²"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6: FINDING UNKNOWN SIDES AND ACTUAL DIMENSIONS",
+          "citation_ids": [
+            "82289fb6-a5a8-52c9-a586-03cdf5d2b14f",
+            "b56795ee-4879-5ec9-a44c-636d9a985b09"
+          ],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Sometimes the sides of a rectangle are written using letters. For example, the length may be 2x + 3 cm and the width x cm. The letter x represents an unknown number. Use the given perimeter to form an equation. Solve the equation, calculate the actual dimensions, and then find the area or perimeter requested.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Steps for solving unknown dimensions: 1. Identify the given information. 2. Write the rectangle perimeter formula. 3. Substitute the algebraic expressions for length and width. 4. Expand brackets and collect like terms. 5. Solve for the unknown. 6. Substitute its value into each side expression. 7. Calculate the actual dimensions. 8. Find the required area or perimeter. 9. Verify the answer using the original conditions.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A correct algebraic answer must describe a possible rectangle. Both calculated side lengths must be positive. The final length and width should satisfy all given relationships. Substitute them back into the perimeter formula to check the answer.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "examples",
+      "title": "Worked Examples — Lessons 1–6",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1 — WORKED EXAMPLES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: Choose suitable metric units. (a) Length of a pencil: centimetres (cm). (b) Distance from one town to another: kilometres (km). (c) Mass of a bag of rice: kilograms (kg). (d) Capacity of a drinking cup: millilitres (mL). (e) Area of a classroom floor: square metres (m²). These are suggested suitable units rather than measured values.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: State the meanings of the prefixes in kilometre, centimetre and millilitre. Kilo means 1,000 times the base unit; centi means one hundredth; milli means one thousandth. Therefore, a kilometre is 1,000 metres, a centimetre is one hundredth of a metre, and a millilitre is one thousandth of a litre.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2 — WORKED EXAMPLES",
+          "citation_ids": [
+            "83328044-d0ad-5442-9e28-bbb8c475c3d5"
+          ],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: Convert 4.5 m to millimetres. Since 1 m = 1,000 mm, multiply 4.5 by 1,000. Therefore, 4.5 m = 4,500 mm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Converting metres to millimetres",
+          "latex": "4.5\\text{ m}\\times\\frac{1\\,000\\text{ mm}}{1\\text{ m}}=4\\,500\\text{ mm}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: Convert 7,250 m to kilometres. Since 1 km = 1,000 m, divide 7,250 by 1,000. Therefore, 7,250 m = 7.25 km.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Converting metres to kilometres",
+          "latex": "7\\,250\\text{ m}\\div1\\,000=7.25\\text{ km}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: Convert 350 cm to metres. Divide 350 by 100. Answer: 3.5 m. Example 4: Convert 6.2 kg to grams. Multiply 6.2 by 1,000. Answer: 6,200 g. Example 5: Convert 1,750 mL to litres. Divide 1,750 by 1,000. Answer: 1.75 L.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 6: A rope is 3 m 45 cm long. Express its length in centimetres. First convert 3 m = 300 cm. Then 300 cm + 45 cm = 345 cm. Answer: 345 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3 — WORKED EXAMPLES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: Convert 3 m² to cm². Since 1 m² = 10,000 cm², multiply 3 by 10,000. Answer: 30,000 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Square-metre conversion",
+          "latex": "3\\text{ m}^{2}\\times10\\,000=30\\,000\\text{ cm}^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: Convert 45,000 cm² to m². Divide by 10,000. Answer: 4.5 m². Example 3: Convert 8 dm² to cm². Since 1 dm² = 100 cm², multiply 8 by 100. Answer: 800 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 4: Convert 0.25 km² to m². Since 1 km² = 1,000,000 m², calculate 0.25 × 1,000,000 = 250,000. Answer: 250,000 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4 — WORKED EXAMPLES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A rectangular school garden is 18 m long and 11 m wide. Find its perimeter. Use P = 2(l + w). P = 2(18 m + 11 m) = 2 × 29 m = 58 m. Answer: 58 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of the garden",
+          "latex": "P=2(18+11)\\text{ m}=58\\text{ m}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A square has sides measuring 9 cm each. Find its perimeter. P = 4 × 9 cm = 36 cm. Answer: 36 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A rectangle has perimeter 54 cm and length 17 cm. Find its width. Half the perimeter = 54 ÷ 2 = 27 cm. Width = 27 cm − 17 cm = 10 cm. Check: 2(17 + 10) = 54 cm. Answer: 10 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding the missing width",
+          "latex": "w=\\frac{54\\text{ cm}}{2}-17\\text{ cm}=10\\text{ cm}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 4: The perimeter of a square is 76 cm. Find one side. Side = 76 cm ÷ 4 = 19 cm. Answer: 19 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5 — WORKED EXAMPLES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: A square garden has a perimeter of 48 m. Find its area. Step 1: Side = 48 ÷ 4 = 12 m. Step 2: Area = 12 m × 12 m = 144 m². Answer: 144 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a square from a given perimeter",
+          "latex": "A=\\left(\\frac{48\\text{ m}}{4}\\right)^2=(12\\text{ m})^2=144\\text{ m}^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: A rectangular garden has a perimeter of 70 m and a length of 20 m. Find its area. Step 1: Half the perimeter = 70 ÷ 2 = 35 m. Step 2: Width = 35 − 20 = 15 m. Step 3: Area = 20 m × 15 m = 300 m². Answer: 300 m². Check: 2(20 + 15) = 70 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding area using perimeter and one known dimension",
+          "latex": "w=\\frac{70}{2}-20=15\\text{ m};\\qquad A=20\\text{ m}\\times15\\text{ m}=300\\text{ m}^{2}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A rectangle has a perimeter of 32 cm. Can its exact area be found without further information? No. A rectangle measuring 10 cm by 6 cm has perimeter 32 cm and area 60 cm². Another rectangle measuring 9 cm by 7 cm also has perimeter 32 cm but area 63 cm². Therefore, perimeter alone does not determine a rectangle's area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 4: A rectangle has a perimeter of 60 cm. Its length is twice its width. Find its area. Half the perimeter is 30 cm. If the width is w, the length is 2w. Therefore, 2w + w = 30 cm, so 3w = 30 cm and w = 10 cm. Length = 20 cm. Area = 20 cm × 10 cm = 200 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6 — WORKED EXAMPLES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 1: The length of a rectangle is (2x + 3) cm and the width is x cm. Its perimeter is 42 cm. Find x, the actual dimensions and the area. Start with P = 2(l + w). Substitute: 42 = 2(2x + 3 + x). Simplify: 42 = 6x + 6. Subtract 6: 36 = 6x. Therefore x = 6. Length = 2(6) + 3 = 15 cm. Width = 6 cm. Area = 15 × 6 = 90 cm². Check: 2(15 + 6) = 42 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Solving for the unknown x",
+          "latex": "42=2((2x+3)+x)=6x+6\\Rightarrow6x=36\\Rightarrow x=6",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 2: The length of a rectangle is (x + 5) m, its width is (x − 1) m, and its perimeter is 48 m. Find its dimensions and area. P = 2(l + w). 48 = 2[(x + 5) + (x − 1)]. Therefore 48 = 4x + 8, giving 4x = 40 and x = 10. Length = 15 m. Width = 9 m. Area = 15 × 9 = 135 m². Check: 2(15 + 9) = 48 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Solving a rectangle with two unknown expressions",
+          "latex": "48=2[(x+5)+(x-1)]=4x+8\\Rightarrow x=10",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Example 3: A rectangular field is 7 m longer than it is wide. Its perimeter is 74 m. Find its dimensions and area. Let width = w m. Then length = (w + 7) m. Half the perimeter is 37 m. Thus w + (w + 7) = 37. Therefore 2w = 30 and w = 15. Length = 22 m. Area = 22 × 15 = 330 m². Check: 2(22 + 15) = 74 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "An original labelled diagram is needed for Lesson 6 algebra examples.",
+          "visual_instruction": "Draw a rectangle ABCD using algebraic dimensions: AB and CD labelled (2x + 3) cm, BC and DA labelled x cm. Place P = 42 cm below the shape. Include a second simplified rectangle labelled 15 cm and 6 cm after x = 6 is found. Ensure both diagrams describe the same rectangle. Do not use an unlicensed external image.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "activities",
+      "title": "Learner Activities and Guided Practice",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1 — IDENTIFYING METRIC UNITS",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Draw a table with the headings Quantity, Unit, Symbol and Instrument. Complete the table for length, mass and capacity. Include at least three units of length, two of mass and two of capacity. Activity 2: Identify the suitable unit for measuring the length of a book, the mass of a watermelon, the capacity of a bucket, the distance between two towns and the area of a floor. Explain each choice.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 3: In pairs, use available rulers and measuring tapes to measure the lengths of three classroom objects. Record each result with a suitable unit. Compare the measurements and discuss which unit is most convenient. Handle measuring equipment carefully; do not measure electrical equipment or inaccessible objects.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2 — CONVERTING METRIC UNITS",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Solve these conversion problems. (a) 6 km to m. (b) 3.4 m to cm. (c) 75 mm to cm. (d) 4,500 g to kg. (e) 2.75 L to mL. (f) 6,000 mL to L. (g) 25 dm to cm. (h) 840 cm to m. Show the conversion fact and calculation for each answer.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 2: A farmer has 2 kg 500 g of beans and another 750 g. Find the total mass in grams and kilograms. Activity 3: A water container holds 5 L. It already contains 1,750 mL of water. How many more millilitres are needed to fill it? Use the stated capacities as mathematical information, not measurements of a real container.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3 — CONVERTING SQUARE UNITS",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Draw a square 10 cm long and 10 cm wide on squared paper, if available. Calculate its area in cm². Express its side length in decimetres and its area in dm². Explain why 1 dm² equals 100 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 2: Convert (a) 5 m² to cm², (b) 12,000 cm² to m², (c) 9 dm² to cm², (d) 2.5 km² to m², (e) 450 cm² to dm², and (f) 7 cm² to mm². Show the correct squared conversion factor.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4 — PERIMETER AND MISSING SIDES",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Answer orally and then show written working. (a) What is perimeter? (b) Find the perimeter of a square whose side is 12 cm. (c) A rectangle is 16 cm long and 9 cm wide. Find its perimeter. (d) A rectangle has perimeter 64 m and width 12 m. Find its length. (e) A square has perimeter 100 cm. Find the length of one side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 2: Draw a rectangle of length 8 cm and width 5 cm using a ruler. Label every side and calculate its perimeter. Exchange diagrams with a partner. Check whether opposite sides have been labelled equally.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5 — AREA FROM A GIVEN PERIMETER",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Calculate the areas of these shapes. (a) A square with perimeter 64 cm. (b) A rectangle with perimeter 46 cm and length 15 cm. (c) A rectangle with perimeter 90 m and width 18 m. (d) A square with perimeter 120 m. (e) A rectangle with perimeter 54 cm whose length is twice its width. Show all intermediate calculations.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 2: A rectangle has perimeter 40 cm. Draw or describe three different pairs of positive whole-number dimensions that give this perimeter. Calculate their areas. Explain why the areas are not necessarily equal.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6 — UNKNOWN DIMENSIONS",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 1: Solve the following problems. (a) The length of a rectangle is (x + 4) cm, the width is x cm and the perimeter is 40 cm. Find x, the actual dimensions and area. (b) The length is 3x cm, the width is x cm and the perimeter is 64 cm. Find x and the area. (c) The length is (2x + 1) m, the width is (x + 2) m and the perimeter is 42 m. Find x, both dimensions and the area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Activity 2: A rectangular garden is 6 m longer than it is wide. Its perimeter is 52 m. Form an equation, find the width and length, calculate the area and check the perimeter. Explain why the dimensions are valid.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "Week 1 independent challenge: A rectangular playground is twice as long as it is wide. Its perimeter is 180 m. (a) Find its width and length. (b) Find its area in m². (c) Express its area in cm². (d) If a learner writes 180 m² as the perimeter, explain the mistake. This is an original mathematical exercise, not a reported measurement of an actual playground.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "misconceptions",
+      "title": "Common Errors and How to Correct Them",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Lessons 1–3: Metric units and conversions",
+          "rows": [
+            [
+              "Common error",
+              "Correct understanding"
+            ],
+            [
+              "Using kg to describe the length of an object",
+              "Kilograms measure mass; use length units for length"
+            ],
+            [
+              "Writing 1 km = 100 m",
+              "1 km = 1,000 m"
+            ],
+            [
+              "Multiplying when changing cm to m",
+              "Divide centimetres by 100 to get metres"
+            ],
+            [
+              "Writing 1 m² = 100 cm²",
+              "1 m² = 10,000 cm²"
+            ],
+            [
+              "Using 10 instead of 100 to convert dm² to cm²",
+              "1 dm² = 100 cm² because 10 × 10 = 100"
+            ],
+            [
+              "Leaving the unit out of an answer",
+              "Always write the correct unit"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Lessons 4–6: Perimeter, area and unknowns",
+          "rows": [
+            [
+              "Common error",
+              "Correct understanding"
+            ],
+            [
+              "Using length × width to find perimeter",
+              "Length × width calculates rectangular area"
+            ],
+            [
+              "Writing perimeter in cm²",
+              "Perimeter uses length units such as cm"
+            ],
+            [
+              "Writing area in m",
+              "Area uses square units such as m²"
+            ],
+            [
+              "Dividing the perimeter of a rectangle by four to find any side",
+              "This works for a square; a rectangle needs more information"
+            ],
+            [
+              "Assuming perimeter alone fixes a rectangle's area",
+              "Different rectangles can share the same perimeter and have different areas"
+            ],
+            [
+              "Using a letter as the final side length without substitution",
+              "Solve the letter and calculate the actual dimension"
+            ],
+            [
+              "Accepting a negative calculated side",
+              "A valid rectangle must have positive side lengths"
+            ],
+            [
+              "Failing to check algebraic dimensions",
+              "Substitute the dimensions back into the original information"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Important reminder: Perimeter measures distance around a figure. Area measures the surface inside it. A rectangle's perimeter and area may have numerically similar answers, but their meanings and units are different. Check which quantity the question asks for before choosing a formula.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "summary",
+      "title": "Summary of Week 1 Learning",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Lesson 1 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "The metric system provides units for measuring different quantities. Metres measure length, grams and kilograms measure mass, and litres measure capacity. Choose a unit that suits the quantity being measured. Read and write unit symbols carefully.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "To convert from a larger unit to a smaller unit, multiply by the correct conversion factor. To convert from a smaller unit to a larger unit, divide by that factor. Remember: 1 km = 1,000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1,000 g; and 1 L = 1,000 mL.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Area is measured in square units. Use squared conversion factors: 1 cm² = 100 mm²; 1 dm² = 100 cm²; 1 m² = 10,000 cm²; and 1 km² = 1,000,000 m². Always distinguish length conversions from area conversions.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Perimeter is the total distance around a shape. Rectangle: P = 2(l + w). Square: P = 4s. For a rectangle, subtract a known side from half the perimeter to find the other side. For a square, divide the perimeter by four to find a side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "Area of a rectangle = length × width. Area of a square = side × side. When given the perimeter of a square, find its side first. When given the perimeter of a rectangle, additional information is normally needed to determine its area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 Summary",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "list",
+          "text": "When rectangle dimensions contain unknowns, form an equation using the given measurements. Solve the equation. Substitute to find actual side lengths. Use the dimensions to calculate area and perimeter. Check that the answer satisfies the original conditions.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "revision",
+      "title": "Revision Questions and End-of-Week Assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Section A — Identifying Metric Units",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "1. Name three metric units used to measure length. 2. State two units used for measuring mass. 3. Which metric unit is suitable for measuring the capacity of a small drinking bottle? 4. What is the difference between metres and square metres? 5. Draw a table of metric units for length, mass and capacity. Include unit symbols. 6. State the meaning of the prefixes kilo, centi and milli.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section B — Converting Metric Units",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "7. Convert 8 km to metres. 8. Convert 2.75 m to centimetres. 9. Express 6,500 mm in metres. 10. Convert 4.8 kg to grams. 11. Change 7,250 mL to litres. 12. Convert 36 dm to centimetres. 13. Express 9 m 35 cm in centimetres. 14. A 10 L container holds 6,750 mL of liquid. Find the remaining capacity in millilitres.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section C — Square Units",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "15. Express 6 m² in cm². 16. Convert 32,000 cm² to m². 17. Express 12 dm² in cm². 18. Convert 3.5 km² to m². 19. Convert 900 mm² to cm². 20. Explain why 1 m² is equal to 10,000 cm² and not 100 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ce3f0554-6fcc-5e51-8052-25460408f767"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section D — Perimeter and Missing Sides",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "21. Define perimeter. 22. Find the perimeter of a rectangle measuring 23 cm by 14 cm. 23. Find the perimeter of a square whose side is 17 m. 24. A rectangle has perimeter 84 cm and length 26 cm. Find its width. 25. The perimeter of a square is 92 cm. Find the length of one side. 26. A rectangular garden measures 45 dm by 5 dm. Find its perimeter in decimetres and metres.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section E — Calculating Area from Perimeter",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "27. A square has perimeter 56 cm. Find its area. 28. A rectangle has perimeter 68 m and length 21 m. Calculate its area. 29. A rectangle has perimeter 100 cm and width 18 cm. Find its length and area. 30. Explain why the perimeter of a rectangle alone cannot normally determine its exact area. Give two numerical examples. 31. A rectangular field has perimeter 96 m. Its length is three times its width. Find its area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section F — Unknown Values and Actual Dimensions",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "32. A rectangle has length (x + 7) cm, width x cm and perimeter 54 cm. Find x, its dimensions and area. 33. The length of a rectangle is 4x m and its width is 2x m. Its perimeter is 72 m. Find x, its length, width and area. 34. A rectangle has length (3x − 2) cm and width (x + 2) cm. Its perimeter is 64 cm. Find x and calculate the area. 35. A rectangular school garden is 8 m longer than it is wide. Its perimeter is 76 m. Find its dimensions and area. 36. Explain how to check that calculated dimensions are correct.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Section G — Mixed Application Problems",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ]
+        },
+        {
+          "kind": "question",
+          "text": "37. A rectangular floor is 8 m long and 5 m wide. Find its perimeter in centimetres and its area in square centimetres. 38. A square garden has perimeter 0.12 km. Calculate its side length in metres and its area in m². 39. The length of a rectangle is twice its width. If its perimeter is 120 cm, find the dimensions and area. 40. A square and a rectangle both have perimeter 40 cm. The rectangle measures 12 cm by 8 cm. Calculate both areas and determine which shape has the larger area. Show the difference in cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Learner instructions: Write each question number clearly. Show all calculations. Use the correct conversion factors and formulae. Include units in every measurement answer. Check calculations by working backwards where possible. These questions are original draft assessment items and require teacher review before use.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Learner reflection: Which lesson did you understand best? Which conversion or calculation was most difficult? Write one example of a mistake you corrected. State one measurement skill you would like to practise again.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "references",
+      "title": "References, Evidence Limitations and Teacher Review",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Primary planning reference: P.6 MATHEMATICS SCHEME TERM 3.pdf. Supplied source URI: https://t.me/P7_teachers_in_uganda/9833. The evidence excerpts identify metric conversion, square-unit conversion, perimeter, area and finding sides as topics or learning targets. The reference is an uploaded school scheme and is not evidence of official curriculum approval. Exact source page locations have not been supplied.",
+          "citation_ids": [
+            "ebe51b77-97d7-5d83-819e-87057311ee91",
+            "31a61fa1-c140-5fdb-a661-f4dd7081de2a",
+            "1884f9b0-faeb-59f0-a173-50255adacb86",
+            "90f7035f-066e-5fad-8bf9-77ec0d0dc5dc",
+            "63c3c3a3-cc22-51da-bb43-7810db96017a",
+            "82289fb6-a5a8-52c9-a586-03cdf5d2b14f",
+            "83328044-d0ad-5442-9e28-bbb8c475c3d5",
+            "b56795ee-4879-5ec9-a44c-636d9a985b09",
+            "c437ff63-ba43-5759-a090-a5b7801fb1e3"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Supporting planning reference: P.6 MTC SCHEME OF WORK TERM 1- 3.pdf. Supplied source URI: https://t.me/TeacherInUganda/46812. The supplied Term III excerpt mentions metric conversions, missing sides, perimeter, and the area of squares. Its lesson organisation is not identical to the six-lesson allocation in the planning request. The teacher should reconcile the lesson sequence against the original documents.",
+          "citation_ids": [
+            "17eb4381-f323-5b7f-a174-6dca89f45d63",
+            "baace550-e70b-5a0d-aaca-784420615a86",
+            "34169428-fac4-5842-8cca-a31def3c07c1"
+          ],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Additional background evidence: P5 MATHEMATICS SCHEME OF WORK TERM ONE provides examples of metric unit terminology and prefixes. P.5 MATH contains area-related explanations and examples. These materials are supporting references from a different class and must not be treated as the source of the P6 Week 1 allocation.",
+          "citation_ids": [
+            "3d06ba14-1654-5a46-8ebf-5109303c9323",
+            "34daba9f-360f-5e09-a508-9c05de161207",
+            "65ee619f-cf2f-58a0-ae27-31d0e1c9fe23"
+          ],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Additional evidence: REPORT ON WORK OF CANDIDATES2024 DIDIX.pdf includes a supplied excerpt about difficulties with perimeter calculations and finding missing sides. The complete report and its page location have not been supplied in this request. It is not used as evidence for the original worked examples.",
+          "citation_ids": [
+            "f48e2440-fbb3-5a03-8a6a-b4f118bf761c"
+          ],
+          "outcome_ids": [
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Evidence boundaries: Supplied scheme excerpts establish planning topics and learning targets, not comprehensive mathematical proofs. Conversion tables, definitions, formula explanations, numerical examples, classroom scenarios, questions and visual instructions in these notes were newly drafted. Where these are not directly established by a supplied excerpt, the corresponding blocks are marked requires_review=true and have no scheme citation presented as mathematical proof. No external illustration, asset ID, source page number, official curriculum claim or additional source has been invented.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Editorial and licensing gap: Source licences are recorded as unknown. The lesson notes use newly written explanations and examples, but source redistribution permissions have not been verified. No third-party diagrams or images have been reproduced. All requested visuals remain visual_needed blocks until an original or properly licensed visual is created and checked. No actual learner measurements or personal information have been supplied.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Teacher-review requirements: Verify the six-lesson sequence against the complete original schemes. Check every metric and square-unit conversion, area and perimeter formula, algebraic solution, unit label, worked example and revision question. Review vocabulary and the progression of difficulty for P6. Confirm that the proposed classroom activities suit the learners and available materials. Review the two requested original diagrams before inserting them. Prepare and verify a separate teacher answer key before administering the assessments. Confirm any exact scheme page locations only from the original document.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Teacher reflection — editable fields. Date taught: __________. Lessons reviewed: __________. Learning outcomes achieved: __________. Learners needing extra support: __________. Conversions or calculations needing reteaching: __________. Accuracy corrections made: __________. Activities that worked well: __________. Changes required to examples or revision questions: __________. Source and sequence verification: __________. Teacher name: __________. Review date: __________. Approval decision: __________. This document remains a draft requiring human teacher review; no approval or publication is recorded.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "cf182d37-9089-5ffd-a585-9f54648d8887",
+            "532c2555-dfbb-5880-9fd4-1d56be8ba4b1",
+            "ce3f0554-6fcc-5e51-8052-25460408f767",
+            "7a4eaacc-9863-533e-a44e-e1b2277ea6c0",
+            "d40f12f7-6628-5dd2-a403-7fc6e2a457e5",
+            "ddb482da-fa31-5584-ba47-3491063c409e"
+          ],
+          "requires_review": true
+        }
+      ]
+    }
+  ]
+}

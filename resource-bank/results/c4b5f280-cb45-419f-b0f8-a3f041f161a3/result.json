@@ -1,0 +1,1493 @@
+{
+  "schema_version": "teaching.v1",
+  "title": "P6 Mathematics — Term 3, Week 2: Area, Perimeter, Rectangles, Triangles and Trapezia — Lessons 1–6",
+  "review_status": "needs_review",
+  "revision": 1,
+  "scheme_weeks": [],
+  "lesson_stages": [],
+  "sections": [
+    {
+      "key": "introduction",
+      "title": "Introduction — Measurement and Area",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Class: Primary Six (P6). Subject: Mathematics. Term: Three. Week: Two. Topic: Length, mass and capacity. This week's six lessons focus on calculating area and perimeter, finding unknown dimensions, calculating shaded areas, comparing triangle areas, and finding the area of a trapezium. These are draft learner notes based on uploaded school schemes, not a claim of official curriculum endorsement.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Area tells us how much flat surface a shape covers. Perimeter tells us the total distance around its boundary. For example, we may calculate the area of a rectangular classroom floor to estimate the space covered, and the perimeter of a rectangular garden to estimate the length of fencing required.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 1: Finding the sides, area and perimeter of a rectangle.\nLesson 2: Finding the length and width of rectangles.\nLesson 3: Calculating the area of shaded rectangles.\nLesson 4: Finding the base of a triangle by comparing areas.\nLesson 5: Finding the height of a triangle by comparing areas.\nLesson 6: Finding the area of a trapezium.",
+          "citation_ids": [
+            "032feb65-d0bd-5168-9df6-e246ff66b268",
+            "ef9d3d4b-4d3b-5264-8bef-d597276996d1",
+            "af1d0f40-e4de-532f-8718-4bd2ea02891f",
+            "568f8efc-4a08-5151-92d7-da9e5276caaf",
+            "69d7f0b0-f4f9-59e4-be6d-c7e980455b05",
+            "aee2cc93-2d35-57c9-92fe-a3d0b4d4c23f"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "learning_outcomes",
+      "title": "Learning Outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Lesson 1 — Rectangle Area and Perimeter",
+          "citation_ids": [
+            "5bcadea7-42ab-523f-88ca-5bd846f52177"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Calculate the area and perimeter of a rectangle.",
+          "citation_ids": [
+            "5bcadea7-42ab-523f-88ca-5bd846f52177"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Finding Rectangle Dimensions",
+          "citation_ids": [
+            "ef9d3d4b-4d3b-5264-8bef-d597276996d1"
+          ],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find the length and width of rectangles.",
+          "citation_ids": [
+            "ef9d3d4b-4d3b-5264-8bef-d597276996d1"
+          ],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Shaded Rectangles",
+          "citation_ids": [
+            "af1d0f40-e4de-532f-8718-4bd2ea02891f"
+          ],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Calculate the area of shaded rectangles.",
+          "citation_ids": [
+            "af1d0f40-e4de-532f-8718-4bd2ea02891f"
+          ],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 — Finding the Base of a Triangle",
+          "citation_ids": [
+            "568f8efc-4a08-5151-92d7-da9e5276caaf"
+          ],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find the base of a triangle.",
+          "citation_ids": [
+            "568f8efc-4a08-5151-92d7-da9e5276caaf"
+          ],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 — Finding the Height of a Triangle",
+          "citation_ids": [
+            "69d7f0b0-f4f9-59e4-be6d-c7e980455b05"
+          ],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find the height of a triangle.",
+          "citation_ids": [
+            "69d7f0b0-f4f9-59e4-be6d-c7e980455b05"
+          ],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Area of a Trapezium",
+          "citation_ids": [
+            "2b0fef34-ed51-5d5b-8093-2018a593df96"
+          ],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Find the area of a trapezium.",
+          "citation_ids": [
+            "2b0fef34-ed51-5d5b-8093-2018a593df96"
+          ],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "prior_knowledge",
+      "title": "Prior Knowledge",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Before these lessons, revise multiplication, division, addition, subtraction, simple equations, length measurements and the names of common plane shapes. Remember that opposite sides of a rectangle are equal, that a right angle measures 90 degrees, and that area uses square units. These are proposed revision requirements rather than verified prerequisites from the supplied scheme.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "1. What is a rectangle?\n2. Find 8 × 6.\n3. Find 72 ÷ 9.\n4. How many centimetres make one metre?\n5. State the difference between cm and cm².\n6. What is half of 36?\n7. Which sides of a rectangle are equal?\n8. What is meant by a right angle?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "vocabulary",
+      "title": "Key Vocabulary and Definitions",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Important mathematical words used throughout the week. Definitions are original explanations requiring teacher review.",
+          "rows": [
+            [
+              "Word",
+              "Meaning"
+            ],
+            [
+              "Length",
+              "A measurement of distance from one end to another."
+            ],
+            [
+              "Width",
+              "The measurement across a rectangle, usually shown as its shorter dimension."
+            ],
+            [
+              "Area",
+              "The amount of flat surface covered by a shape."
+            ],
+            [
+              "Perimeter",
+              "The total length of the boundary around a shape."
+            ],
+            [
+              "Rectangle",
+              "A four-sided shape with four right angles."
+            ],
+            [
+              "Square unit",
+              "A unit for measuring area, such as cm² or m²."
+            ],
+            [
+              "Dimension",
+              "A measurement such as length, width, base or height."
+            ],
+            [
+              "Unknown",
+              "A value to be calculated, often represented by a letter."
+            ],
+            [
+              "Shaded region",
+              "The part of a figure that is coloured or marked."
+            ],
+            [
+              "Triangle",
+              "A closed plane shape with three straight sides."
+            ],
+            [
+              "Base",
+              "The side chosen as the reference when calculating a triangle's area."
+            ],
+            [
+              "Perpendicular height",
+              "The shortest distance at a right angle from a chosen base to its opposite vertex or parallel side."
+            ],
+            [
+              "Trapezium",
+              "A quadrilateral with one pair of parallel sides, using the convention adopted in these notes."
+            ],
+            [
+              "Parallel lines",
+              "Lines in a plane that remain the same distance apart and never meet."
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Units of length include millimetres (mm), centimetres (cm), metres (m) and kilometres (km). Units of area include square centimetres (cm²), square metres (m²) and square kilometres (km²). A result for area must be written in square units. A result for perimeter, base, height, length or width must be written in units of length.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "explanation",
+      "title": "Detailed Lesson Explanations",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "LESSON 1: Finding the Sides, Area and Perimeter of a Rectangle",
+          "citation_ids": [
+            "032feb65-d0bd-5168-9df6-e246ff66b268"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A rectangle has four sides and four right angles. Its opposite sides are equal in length and parallel. We usually call two neighbouring dimensions the length (l) and width (w). Multiplying these dimensions gives its area. Adding all four sides gives its perimeter. The length and width need not always be the longest and shortest sides respectively; the formula works with either consistent labelling.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a rectangle",
+          "latex": "A=l\\times w",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Perimeter of a rectangle",
+          "latex": "P=2(l+w)=2l+2w",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Steps for calculating area and perimeter:\n1. Identify the length and width.\n2. Check that both dimensions use the same unit.\n3. Multiply length by width to obtain area.\n4. Add length and width, then multiply by two to obtain perimeter.\n5. Write the correct units.\n6. Check whether the answer is reasonable.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original teaching diagram required for a labelled rectangle.",
+          "visual_instruction": "Draw rectangle ABCD with horizontal sides AB and DC each 12 cm, and vertical sides AD and BC each 5 cm. Mark four right angles and label the interior 'Area'. Add a separate trace around all four sides labelled 'Perimeter'. Use clean black outlines; this is a new diagram, not a reconstruction of an unseen source image.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 2: Finding the Length and Width of Rectangles",
+          "citation_ids": [
+            "ef9d3d4b-4d3b-5264-8bef-d597276996d1"
+          ],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Sometimes we know the area and one side of a rectangle, but the other side is missing. We can find the missing dimension by dividing the area by the known dimension. When the perimeter and one dimension are known, divide the perimeter by two first, then subtract the known dimension.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding length and width when area is known",
+          "latex": "l=\\frac{A}{w}\\qquad w=\\frac{A}{l}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding a missing dimension when perimeter is known",
+          "latex": "l=\\frac{P}{2}-w\\qquad w=\\frac{P}{2}-l",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A shaded figure may also contain an unshaded rectangle whose length or width is unknown. First identify all given measurements. Find missing side lengths using subtraction or the properties of rectangles. Calculate the dimensions of each region before finding its area. Only use the outer-minus-inner method when the unshaded parts have been fully accounted for.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original diagram required for determining dimensions of a rectangular strip.",
+          "visual_instruction": "Draw an outer rectangle 14 cm by 9 cm. Put a smaller unshaded rectangle 10 cm by 5 cm at the upper-left corner, sharing the outer top and left edges. Shade the remaining right and bottom strips. Show the right strip width as 14−10=4 cm and bottom strip height as 9−5=4 cm. Use clear dimension arrows, distinguish the shared corner, and do not suggest that the two shaded strips overlap.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 3: Calculating the Area of Shaded Rectangles",
+          "citation_ids": [
+            "af1d0f40-e4de-532f-8718-4bd2ea02891f"
+          ],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The shaded area is the part of a figure that has been coloured or marked. When a smaller rectangle is removed from a larger rectangle, subtract the smaller area from the larger area. Another method is to divide the shaded region into rectangles that do not overlap and add their areas.",
+          "citation_ids": [
+            "22cda1b3-ccc8-561a-b0fa-99734d5aa798"
+          ],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Shaded area when an unshaded region is inside a larger rectangle",
+          "latex": "A_{\\text{shaded}}=A_{\\text{whole}}-A_{\\text{unshaded}}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Steps for finding shaded area:\n1. Study the figure carefully.\n2. Identify the shaded part.\n3. Find missing lengths if necessary.\n4. Calculate the area of the whole figure.\n5. Calculate the area of each unshaded part.\n6. Subtract all unshaded areas from the whole area.\n7. Alternatively, divide the shading into separate non-overlapping rectangles and add their areas.\n8. Give the answer in square units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original shaded-rectangle demonstration.",
+          "visual_instruction": "Draw an outer rectangle 12 cm wide and 8 cm high. Draw a centred unshaded inner rectangle 6 cm wide and 4 cm high. Shade only the region between the two rectangles. Label all dimensions. Beside the figure show two distinct area labels: whole rectangle 96 cm², inner rectangle 24 cm². The illustration must have consistent dimensions and should not be presented as a copied source asset.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 4: Finding the Base of a Triangle",
+          "citation_ids": [
+            "568f8efc-4a08-5151-92d7-da9e5276caaf"
+          ],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A triangle has three sides. Any side may be chosen as its base. The height must be measured at a right angle to the chosen base, or to the line containing that base. The area of a triangle is half the product of its base and perpendicular height. If its area and height are known, multiply the area by two and divide by the height to find the base.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a triangle",
+          "latex": "A=\\frac{1}{2}bh",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding the base of a triangle",
+          "latex": "b=\\frac{2A}{h}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Comparing areas of triangles: If two triangles have equal areas, then half of the base multiplied by the height of the first must equal half of the base multiplied by the height of the second. This allows us to find an unknown base. Equal areas do not necessarily mean equal bases or identical shapes.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Equality of two triangle areas",
+          "latex": "\\frac{1}{2}b_1h_1=\\frac{1}{2}b_2h_2",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original triangle diagram for finding an unknown base.",
+          "visual_instruction": "Draw triangle ABC with horizontal base BC labelled b cm. Draw a dashed perpendicular from A to BC labelled 8 cm, with a right-angle symbol at its foot. Place the label 'Area = 40 cm²' inside the triangle. Ensure the perpendicular height is distinguishable from the sloping sides.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 5: Finding the Height of a Triangle",
+          "citation_ids": [
+            "69d7f0b0-f4f9-59e4-be6d-c7e980455b05"
+          ],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "When the area and base of a triangle are given, its perpendicular height can be calculated. Multiply the area by two and divide the result by the base. The height is not necessarily the length of a sloping side. For an obtuse triangle, a perpendicular height may fall outside the triangle.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Finding the perpendicular height of a triangle",
+          "latex": "h=\\frac{2A}{b}",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "When two triangles have equal areas, compare their products of base and height. If one triangle has a known base and height, calculate its area first. Use the second triangle's known base to calculate its missing perpendicular height.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original pair of equal-area triangles.",
+          "visual_instruction": "Draw two separate triangles clearly labelled Triangle A and Triangle B. Triangle A has a horizontal base of 12 cm and a perpendicular height of 5 cm. Triangle B has a horizontal base of 10 cm and an unknown perpendicular height h cm. Show right-angle markers and label both areas as equal. Do not draw either triangle to scale unless dimensions are respected.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "LESSON 6: Finding the Area of a Trapezium",
+          "citation_ids": [
+            "aee2cc93-2d35-57c9-92fe-a3d0b4d4c23f"
+          ],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A trapezium is a four-sided figure with one pair of parallel sides under the convention used in these notes. The two parallel sides may be of different lengths. The perpendicular distance between them is the height. To find its area, add the lengths of the parallel sides, multiply their sum by the perpendicular height and divide by two.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "equation",
+          "text": "Area of a trapezium with parallel sides a and b and perpendicular height h",
+          "latex": "A=\\frac{1}{2}(a+b)h",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Steps for finding the area of a trapezium:\n1. Identify its two parallel sides.\n2. Measure or identify the perpendicular height.\n3. Convert dimensions to the same length unit if necessary.\n4. Add the two parallel sides.\n5. Multiply their sum by the height.\n6. Divide by two.\n7. Write the result in square units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Why the formula works: Two congruent copies of a trapezium can be joined to form a parallelogram. The parallelogram has a base equal to the sum of the trapezium's parallel sides and the same perpendicular height. Since the two copies have equal areas, one trapezium occupies half the parallelogram's area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "visual_needed",
+          "text": "Original trapezium area diagram and formula demonstration.",
+          "visual_instruction": "Draw trapezium ABCD with horizontal parallel sides AB = 8 cm and DC = 14 cm, and a perpendicular height of 6 cm. Mark the right angle between the height and a parallel side. Show a second drawing with two congruent copies rotated and joined to make a parallelogram of base 22 cm and height 6 cm. Use distinct hatching for the two copies. Do not assume the sloping sides have length 6 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "examples",
+      "title": "Worked Examples with Step-by-Step Solutions",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Lesson 1 — Example 1: Area and Perimeter",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A rectangle is 15 cm long and 8 cm wide. Find its area and perimeter. Area = 15 cm × 8 cm = 120 cm². Perimeter = 2 × (15 cm + 8 cm) = 2 × 23 cm = 46 cm. Answer: Area = 120 cm²; perimeter = 46 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 1 — Example 2: Unknown Side",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The opposite sides of rectangle ABCD are labelled AB = (3x + 2) cm and DC = (5x − 10) cm. The width is 6 cm. Since opposite sides are equal, 3x + 2 = 5x − 10. Subtract 3x: 2 = 2x − 10. Add 10: 12 = 2x. Therefore x = 6. Length = 3 × 6 + 2 = 20 cm. Area = 20 × 6 = 120 cm². Perimeter = 2 × (20 + 6) = 52 cm. Check: 5 × 6 − 10 = 20 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Example 1: Finding Length from Area",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A rectangular floor has an area of 96 m² and a width of 8 m. Find its length. Length = area ÷ width = 96 m² ÷ 8 m = 12 m. Check: 12 m × 8 m = 96 m². Answer: 12 m.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Example 2: Finding Width from Perimeter",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The perimeter of a rectangle is 54 cm. Its length is 17 cm. Find the width. Half the perimeter = 54 ÷ 2 = 27 cm. Width = 27 − 17 = 10 cm. Check: 2 × (17 + 10) = 54 cm. Answer: 10 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Example 3: Dimensions of a Shaded Border",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "An outer rectangle measures 14 cm by 9 cm. A smaller rectangle measuring 10 cm by 5 cm occupies its upper-left corner. The remaining area forms a shaded right strip and bottom strip. The width of the right strip is 14 − 10 = 4 cm. The height of the bottom strip is 9 − 5 = 4 cm. The right strip measures 4 cm by 9 cm. The bottom strip, excluding the portion already counted in the right strip, measures 10 cm by 4 cm. These dimensions allow us to calculate the shaded area without counting any part twice.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Example 1: Shaded Border",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A rectangle is 12 cm long and 8 cm wide. A smaller unshaded rectangle inside it measures 6 cm by 4 cm. Find the shaded area. Whole area = 12 × 8 = 96 cm². Unshaded area = 6 × 4 = 24 cm². Shaded area = 96 − 24 = 72 cm². Answer: 72 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Example 2: Two Unshaded Parts",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A large rectangle measures 18 cm by 10 cm. Two separate, non-overlapping, unshaded rectangles inside it measure 4 cm by 3 cm and 5 cm by 2 cm. Find the shaded area. Whole area = 18 × 10 = 180 cm². First unshaded area = 4 × 3 = 12 cm². Second unshaded area = 5 × 2 = 10 cm². Total unshaded area = 12 + 10 = 22 cm². Shaded area = 180 − 22 = 158 cm². Answer: 158 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Example 3: Adding Shaded Rectangles",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "An L-shaped region is divided into two non-overlapping shaded rectangles. Rectangle A measures 8 cm by 3 cm. Rectangle B measures 5 cm by 4 cm. Area A = 8 × 3 = 24 cm². Area B = 5 × 4 = 20 cm². Total shaded area = 24 + 20 = 44 cm². Answer: 44 cm². This addition is valid because the rectangles have no overlapping area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 — Example 1: Finding a Triangle's Base",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A triangle has an area of 40 cm² and a perpendicular height of 8 cm. Find its base. Base = (2 × area) ÷ height = (2 × 40) ÷ 8 = 80 ÷ 8 = 10 cm. Check: ½ × 10 × 8 = 40 cm². Answer: 10 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 — Example 2: Comparing Equal Triangle Areas",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Triangle A has a base of 12 cm and a perpendicular height of 5 cm. Triangle B has the same area, but its perpendicular height is 6 cm. Find its base. Area of A = ½ × 12 × 5 = 30 cm². Therefore area of B = 30 cm². Base of B = (2 × 30) ÷ 6 = 10 cm. Check: ½ × 10 × 6 = 30 cm². Answer: 10 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 — Example 1: Finding a Triangle's Height",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A triangle has an area of 54 cm² and a base of 12 cm. Find its perpendicular height. Height = (2 × area) ÷ base = (2 × 54) ÷ 12 = 108 ÷ 12 = 9 cm. Check: ½ × 12 × 9 = 54 cm². Answer: 9 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 — Example 2: Comparing Triangle Heights",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Triangle A has a base of 15 cm and a perpendicular height of 8 cm. Triangle B has the same area and a base of 12 cm. Find its height. Area of A = ½ × 15 × 8 = 60 cm². Height of B = (2 × 60) ÷ 12 = 120 ÷ 12 = 10 cm. Check: ½ × 12 × 10 = 60 cm². Answer: 10 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Example 1: Area of a Trapezium",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A trapezium has parallel sides of 14 cm and 8 cm. Its perpendicular height is 6 cm. Find its area. Area = ½ × (14 + 8) × 6 = ½ × 22 × 6 = 11 × 6 = 66 cm². Answer: 66 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Example 2: Trapezium with Mixed Units",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A trapezium has parallel sides of 2 m and 150 cm. Its perpendicular height is 80 cm. Find its area in cm² and m². Convert 2 m to 200 cm. Area = ½ × (200 + 150) × 80 = ½ × 350 × 80 = 175 × 80 = 14,000 cm². Since 10,000 cm² = 1 m², the area is 1.4 m². Answer: 14,000 cm² or 1.4 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Example 3: Trapezium in a Word Problem",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "A trapezium-shaped piece of land has parallel boundaries of 30 m and 18 m, separated by a perpendicular distance of 20 m. Find its area. Area = ½ × (30 + 18) × 20 = ½ × 48 × 20 = 24 × 20 = 480 m². Answer: 480 m².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "activities",
+      "title": "Learner Activities and Class Exercises",
+      "blocks": [
+        {
+          "kind": "activity",
+          "text": "LESSON 1 — RECTANGLE AREA AND PERIMETER\nActivity A: Draw a rectangle 9 cm long and 4 cm wide using a ruler. Label all four sides. Calculate its area and perimeter.\nActivity B: A rectangular garden measures 24 m by 15 m. Find its area and perimeter.\nActivity C: A rectangle has a perimeter of 40 cm and a width of 8 cm. Find its length and area.\nActivity D: Opposite sides of a rectangle are labelled (2x + 7) cm and (4x − 5) cm. Find x and the common side length.\nShow each formula and write the correct units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "LESSON 2 — FINDING RECTANGLE DIMENSIONS\nActivity A: A rectangle has an area of 84 cm² and a width of 7 cm. Find its length.\nActivity B: A rectangle has an area of 150 m² and a length of 15 m. Find its width.\nActivity C: The perimeter of a rectangle is 68 cm and its length is 21 cm. Find its width.\nActivity D: Draw an outer rectangle measuring 16 cm by 10 cm. Draw an inner unshaded rectangle 12 cm by 6 cm, centred inside it. Find the width of each uniform border strip on all four sides.\nDiscuss why the result of area divided by length is a length, not a square unit.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "LESSON 3 — SHADED RECTANGLES\nActivity A: An outer rectangle is 20 cm by 12 cm. An unshaded rectangle inside it measures 8 cm by 5 cm. Find the shaded area.\nActivity B: A large rectangle is 15 cm by 10 cm. Two separate unshaded parts measure 3 cm by 4 cm and 5 cm by 2 cm. Find the remaining shaded area.\nActivity C: A shaded shape consists of two non-overlapping rectangles measuring 6 cm by 4 cm and 8 cm by 3 cm. Find the total area.\nActivity D: Explain which method is easier for each figure: subtracting an unshaded part or adding separate shaded parts.\nCheck every answer in square centimetres.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "LESSON 4 — FINDING THE BASE OF A TRIANGLE\nActivity A: Find the base of a triangle with area 36 cm² and perpendicular height 9 cm.\nActivity B: Find the base of a triangle with area 75 m² and perpendicular height 10 m.\nActivity C: Triangle A has base 16 cm and height 6 cm. Triangle B has the same area and height 8 cm. Find the base of B.\nActivity D: Draw a triangle and mark its base and perpendicular height with a right-angle symbol. Explain why a sloping side cannot automatically be used as the height.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "LESSON 5 — FINDING TRIANGLE HEIGHTS\nActivity A: A triangle has an area of 64 cm² and a base of 16 cm. Find its height.\nActivity B: A triangle has an area of 90 m² and a base of 15 m. Find its height.\nActivity C: Triangle A has base 18 cm and perpendicular height 8 cm. Triangle B has the same area and base 12 cm. Find the height of B.\nActivity D: Draw two different triangles with equal areas. Label their bases and perpendicular heights. Use the area formula to verify your measurements.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "activity",
+          "text": "LESSON 6 — AREA OF A TRAPEZIUM\nActivity A: Find the area of a trapezium with parallel sides 10 cm and 18 cm and height 7 cm.\nActivity B: Find the area of a trapezium with parallel sides 25 m and 15 m and height 12 m.\nActivity C: A trapezium has parallel sides of 80 cm and 1.2 m and a perpendicular height of 50 cm. Find its area in cm².\nActivity D: Draw a trapezium with parallel sides 8 cm and 14 cm and perpendicular height 5 cm. Calculate its area.\nActivity E: Explain how two congruent trapezia can be joined to form a parallelogram. Use this to explain the trapezium area formula.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Suggested working materials: exercise books, pencils, rulers, squared paper and teacher-drawn figures. Each pupil should attempt the questions independently after discussing one example with a partner. Measure lines carefully, show mathematical working, and compare methods respectfully. All exercises are proposed original activities and require teacher approval before use.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "misconceptions",
+      "title": "Common Errors and How to Correct Them",
+      "blocks": [
+        {
+          "kind": "table",
+          "text": "Common errors to avoid. These are proposed instructional explanations, not sourced statements from the uploaded schemes.",
+          "rows": [
+            [
+              "Common error",
+              "Correct understanding"
+            ],
+            [
+              "Adding length and width to find area",
+              "Multiply length by width to find area."
+            ],
+            [
+              "Multiplying length by width to find perimeter",
+              "Add all boundary lengths, or use 2 × (length + width)."
+            ],
+            [
+              "Writing cm instead of cm² for area",
+              "Area uses square units such as cm²."
+            ],
+            [
+              "Writing cm² instead of cm for perimeter",
+              "Perimeter measures distance and uses length units."
+            ],
+            [
+              "Forgetting to convert mixed units",
+              "Convert dimensions to the same unit before calculating."
+            ],
+            [
+              "Subtracting lengths instead of areas in shading problems",
+              "Calculate the necessary regions' areas before subtraction."
+            ],
+            [
+              "Counting an overlapping shaded region twice",
+              "Divide into non-overlapping parts or use whole minus unshaded."
+            ],
+            [
+              "Forgetting the half in triangle area",
+              "Area of a triangle is ½ × base × perpendicular height."
+            ],
+            [
+              "Treating a triangle's sloping side as its height",
+              "The height must be perpendicular to the chosen base."
+            ],
+            [
+              "Using A ÷ h for triangle base",
+              "Use 2A ÷ h."
+            ],
+            [
+              "Using A ÷ b for triangle height",
+              "Use 2A ÷ b."
+            ],
+            [
+              "Treating equal-area triangles as identical",
+              "Different base-height pairs can produce equal areas."
+            ],
+            [
+              "Using a trapezium's sloping side as its height",
+              "Use the perpendicular distance between its parallel sides."
+            ],
+            [
+              "Multiplying only one parallel side by height",
+              "Add the parallel sides and take half their sum multiplied by height."
+            ],
+            [
+              "Using all four trapezium sides in the area formula",
+              "The area formula needs the two parallel sides and perpendicular height."
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Important check: The dimensions must be positive. A calculated rectangle width cannot be less than or equal to zero. For a genuine shaded region inside a larger rectangle, the shaded area cannot be negative or greater than the whole area. A triangle's perpendicular height is always a distance, even when its altitude lies outside the triangle.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "summary",
+      "title": "Summary and Formula Review",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This week we have learnt how to find the area and perimeter of rectangles, missing dimensions, shaded areas, triangle bases and heights, and trapezium areas. The most important steps are to identify the correct measurements, choose the correct formula, calculate accurately and use the appropriate units.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "table",
+          "text": "Quick reference: formulas used in the six lessons.",
+          "rows": [
+            [
+              "Quantity",
+              "Formula in words"
+            ],
+            [
+              "Area of rectangle",
+              "Length × width"
+            ],
+            [
+              "Perimeter of rectangle",
+              "2 × (length + width)"
+            ],
+            [
+              "Length of rectangle",
+              "Area ÷ width"
+            ],
+            [
+              "Width of rectangle",
+              "Area ÷ length"
+            ],
+            [
+              "Shaded area",
+              "Whole area − total unshaded area"
+            ],
+            [
+              "Area of triangle",
+              "½ × base × perpendicular height"
+            ],
+            [
+              "Base of triangle",
+              "(2 × area) ÷ perpendicular height"
+            ],
+            [
+              "Height of triangle",
+              "(2 × area) ÷ base"
+            ],
+            [
+              "Area of trapezium",
+              "½ × (sum of parallel sides) × perpendicular height"
+            ]
+          ],
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Remember:\n1. Area is measured in square units.\n2. Perimeter is measured in length units.\n3. Opposite sides of a rectangle are equal.\n4. A missing rectangle side can be found by division when its area and the other side are known.\n5. Shaded area can be found by subtraction or addition of non-overlapping parts.\n6. A triangle's height must be perpendicular to the selected base.\n7. When comparing equal-area triangles, their base-height products are equal.\n8. A trapezium's area depends on its parallel sides and perpendicular height.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        }
+      ]
+    },
+    {
+      "key": "revision",
+      "title": "Revision Questions, Assessment and Answers",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Lesson 1 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "1. Define area and perimeter.\n2. Find the area and perimeter of a rectangle 18 cm long and 7 cm wide.\n3. A rectangular plot measures 25 m by 16 m. Calculate its area and perimeter.\n4. The opposite sides of a rectangle are (4x + 3) cm and (7x − 12) cm. Find x and the common side length.\n5. A rectangle is 12 cm long and 9 cm wide. If its length is increased by 3 cm while its width remains unchanged, find its new area and perimeter.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 2 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "6. A rectangle has an area of 144 cm² and width 9 cm. Find its length.\n7. A rectangle has an area of 240 m² and length 20 m. Find its width.\n8. The perimeter of a rectangle is 74 cm and its length is 24 cm. Find its width.\n9. An outer rectangle measures 20 cm by 14 cm. An inner rectangle measuring 14 cm by 8 cm is centred inside it. Find the uniform strip width on each side.\n10. Explain why a missing rectangle side is found by dividing area by the known side.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 3 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "11. A rectangle measures 16 cm by 12 cm. A smaller unshaded rectangle inside it measures 8 cm by 5 cm. Find the shaded area.\n12. An outer rectangle is 25 m by 18 m. The unshaded inner rectangle is 15 m by 10 m. Calculate the shaded area.\n13. A shaded figure is split into two non-overlapping rectangles measuring 7 cm by 4 cm and 9 cm by 2 cm. Find its area.\n14. Explain why two overlapping shaded rectangles cannot simply have their full areas added.\n15. A rectangle measures 12 cm by 10 cm. Two separate unshaded rectangles measure 3 cm by 4 cm and 2 cm by 5 cm. Calculate the shaded area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 4 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "16. A triangle has an area of 48 cm² and perpendicular height 8 cm. Find its base.\n17. A triangle has an area of 90 m² and perpendicular height 12 m. Calculate its base.\n18. Triangle A has base 14 cm and perpendicular height 6 cm. Triangle B has the same area and perpendicular height 7 cm. Find the base of B.\n19. State the formula for calculating the base of a triangle when its area and perpendicular height are known.\n20. Explain why a triangle's base does not always have to be its lowest side on a page.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 5 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "21. A triangle has an area of 72 cm² and a base of 12 cm. Find its height.\n22. A triangle has an area of 112 m² and a base of 16 m. Find its height.\n23. Triangle A has base 20 cm and perpendicular height 9 cm. Triangle B has equal area and base 15 cm. Find its perpendicular height.\n24. Distinguish between a sloping side and a perpendicular height.\n25. Two triangles have the same area and equal perpendicular heights. What can you say about their corresponding bases?",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Lesson 6 — Revision",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "question",
+          "text": "26. Define a trapezium using the convention in these notes.\n27. Find the area of a trapezium whose parallel sides are 12 cm and 20 cm and perpendicular height is 9 cm.\n28. A trapezium-shaped garden has parallel boundaries 45 m and 25 m and perpendicular height 16 m. Find its area.\n29. A trapezium has parallel sides 1.5 m and 90 cm and perpendicular height 50 cm. Find its area in cm².\n30. Explain why the formula for the area of a trapezium contains a factor of one-half.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Suggested Answers — Teacher Review Required",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "The following answers are included for draft checking and teacher editing. They must be excluded from any pupil-only exercise sheet or assessment copy. The teacher should verify the arithmetic and the consistency of every related diagram before distribution.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 1 ANSWERS\n1. Area is the amount of flat surface covered; perimeter is the distance around a shape.\n2. Area = 18 × 7 = 126 cm²; perimeter = 2 × (18 + 7) = 50 cm.\n3. Area = 25 × 16 = 400 m²; perimeter = 2 × (25 + 16) = 82 m.\n4. 4x + 3 = 7x − 12; 15 = 3x; x = 5. Side = 23 cm.\n5. New length = 15 cm; area = 15 × 9 = 135 cm²; perimeter = 2 × (15 + 9) = 48 cm.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 2 ANSWERS\n6. Length = 144 ÷ 9 = 16 cm.\n7. Width = 240 ÷ 20 = 12 m.\n8. Width = 74 ÷ 2 − 24 = 13 cm.\n9. Horizontal strip width = (20 − 14) ÷ 2 = 3 cm on each side; vertical strip width = (14 − 8) ÷ 2 = 3 cm on each side.\n10. Because area = length × width, dividing by either dimension gives the other dimension.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 3 ANSWERS\n11. 16 × 12 − 8 × 5 = 192 − 40 = 152 cm².\n12. 25 × 18 − 15 × 10 = 450 − 150 = 300 m².\n13. 7 × 4 + 9 × 2 = 28 + 18 = 46 cm².\n14. The overlapping region would be counted twice. Subtract the overlap once or use non-overlapping parts.\n15. 12 × 10 − (3 × 4 + 2 × 5) = 120 − 22 = 98 cm².",
+          "citation_ids": [],
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 4 ANSWERS\n16. Base = (2 × 48) ÷ 8 = 12 cm.\n17. Base = (2 × 90) ÷ 12 = 15 m.\n18. Area A = ½ × 14 × 6 = 42 cm²; base B = (2 × 42) ÷ 7 = 12 cm.\n19. Base = (2 × area) ÷ perpendicular height.\n20. Any triangle side can be selected as its base, provided the matching perpendicular height is used.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 5 ANSWERS\n21. Height = (2 × 72) ÷ 12 = 12 cm.\n22. Height = (2 × 112) ÷ 16 = 14 m.\n23. Area A = ½ × 20 × 9 = 90 cm²; height B = (2 × 90) ÷ 15 = 12 cm.\n24. A sloping side is a side of the triangle that is inclined relative to the chosen base; the perpendicular height meets the line of the chosen base at a right angle.\n25. Their corresponding bases are equal because equal areas with equal perpendicular heights require equal bases.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "LESSON 6 ANSWERS\n26. A quadrilateral with one pair of parallel sides under the convention used in these notes.\n27. Area = ½ × (12 + 20) × 9 = 144 cm².\n28. Area = ½ × (45 + 25) × 16 = 560 m².\n29. Convert 1.5 m to 150 cm. Area = ½ × (150 + 90) × 50 = 6,000 cm².\n30. Two congruent copies can form a parallelogram, so one trapezium has half the area of that parallelogram.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "heading",
+          "text": "Additional Class Activity Answer Checks",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "list",
+          "text": "Lesson 1: A = 36 cm², P = 26 cm; B = 360 m², P = 78 m; C = length 12 cm, area 96 cm²; D = x = 6, common side 19 cm.\nLesson 2: A = 12 cm; B = 10 m; C = 13 cm; D = 2 cm on each of the four sides.\nLesson 3: A = 200 cm²; B = 128 cm²; C = 48 cm²; D = use subtraction for a whole figure with holes, or addition for separated non-overlapping shaded pieces.\nLesson 4: A = 8 cm; B = 15 m; C = 12 cm; D = the perpendicular is at 90 degrees to the base.\nLesson 5: A = 8 cm; B = 12 m; C = 12 cm; D = answers vary; compare base × height products.\nLesson 6: A = 98 cm²; B = 240 m²; C = 5,000 cm²; D = 55 cm²; E = two congruent trapezia form a parallelogram with double the original trapezium area.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Teacher reflection — editable after teaching: Lesson 1: ____________________. Lesson 2: ____________________. Lesson 3: ____________________. Lesson 4: ____________________. Lesson 5: ____________________. Lesson 6: ____________________. Record which learning outcomes pupils achieved, common calculation errors, whether the diagrams were clear, and topics needing additional practice. Teacher review and approval have not yet taken place.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "references",
+      "title": "References, Source Evidence and Teacher Review",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Primary planning reference: P.6 MATHEMATICS SCHEME TERM 3.pdf. Supplied source location: https://t.me/P7_teachers_in_uganda/9833. Relevant evidence identifiers: 5bcadea7-42ab-523f-88ca-5bd846f52177, 032feb65-d0bd-5168-9df6-e246ff66b268, ef9d3d4b-4d3b-5264-8bef-d597276996d1, af1d0f40-e4de-532f-8718-4bd2ea02891f, 568f8efc-4a08-5151-92d7-da9e5276caaf, 69d7f0b0-f4f9-59e4-be6d-c7e980455b05 and aee2cc93-2d35-57c9-92fe-a3d0b4d4c23f. Source pages were not provided. The scheme supports the selected planning targets, not every worked mathematical explanation.",
+          "citation_ids": [
+            "5bcadea7-42ab-523f-88ca-5bd846f52177",
+            "032feb65-d0bd-5168-9df6-e246ff66b268",
+            "ef9d3d4b-4d3b-5264-8bef-d597276996d1",
+            "af1d0f40-e4de-532f-8718-4bd2ea02891f",
+            "568f8efc-4a08-5151-92d7-da9e5276caaf",
+            "69d7f0b0-f4f9-59e4-be6d-c7e980455b05",
+            "aee2cc93-2d35-57c9-92fe-a3d0b4d4c23f"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Supplementary evidence: P.6 MATH NOTES 2024, evidence ID 7e2a03d6-1fa0-5a2d-96c8-95a9eb220556, includes a rectangle with perimeter 24 cm and width 5 cm and calculation of its missing length and area. P.5 MATH, evidence ID 1f2c4965-0dd5-52bb-bda0-46c1c7ef5640, gives a triangle area calculation. p.5 mtc term 3, evidence ID 22cda1b3-ccc8-561a-b0fa-99734d5aa798, demonstrates subtraction in a shaded-area problem involving a rectangle and triangle. These supplementary excerpts are not used to establish the P6 week allocation.",
+          "citation_ids": [
+            "7e2a03d6-1fa0-5a2d-96c8-95a9eb220556",
+            "1f2c4965-0dd5-52bb-bda0-46c1c7ef5640",
+            "22cda1b3-ccc8-561a-b0fa-99734d5aa798"
+          ],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "paragraph",
+          "text": "Additional planning context: P.6 MTC SCHEME OF WORK TERM 1- 3.pdf, evidence IDs 8fc6b3bb-4ceb-5ea9-ad28-65ff17f50695 and 2d3dc642-8241-505d-895e-f376f55a9b59, mentions measurement, area and trapezia. Its term and week sequence differs from the selected planning allocation, so it is not treated as independent confirmation of the six lessons in Term 3 Week 2.",
+          "citation_ids": [
+            "8fc6b3bb-4ceb-5ea9-ad28-65ff17f50695",
+            "2d3dc642-8241-505d-895e-f376f55a9b59"
+          ],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Evidence limitations: All listed source licences are recorded as unknown. No source-specific page numbers or permitted illustration assets were supplied. The selected six-lesson allocation is flagged as inferred in the planning scope. The full original diagrams and some original scheme exercises are not present in the evidence excerpts. Newly proposed diagrams, example measurements, explanations, classroom activities and revision questions therefore require teacher review. No unprovided diagram, page location, official endorsement or source permission is assumed.",
+          "citation_ids": [],
+          "outcome_ids": [],
+          "requires_review": true
+        },
+        {
+          "kind": "reflection",
+          "text": "Final teacher review — pending. Check every lesson against the school's approved scheme, confirm lesson ordering and the inferred six-lesson allocation, verify formulas and worked calculations, review the adopted definition of trapezium, confirm drawing dimensions and right-angle markings, and approve the appropriateness of the questions for P6. Ensure proposed diagrams are produced as original illustrations. Separate the answer key from any pupil-facing version. Teacher name: __________. Review date: __________. Corrections required: __________. Approval decision: __________. This document remains a draft until explicitly reviewed and approved.",
+          "citation_ids": [],
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb",
+            "c1077b07-ad80-5268-bd95-d13eb9794243",
+            "a9411c35-0734-55c2-9147-2ae976cf9a96",
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9",
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b",
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ],
+          "requires_review": true
+        }
+      ]
+    }
+  ]
+}
