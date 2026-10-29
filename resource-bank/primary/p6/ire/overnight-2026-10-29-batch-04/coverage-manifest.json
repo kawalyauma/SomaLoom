@@ -1,0 +1,141 @@
+{
+  "title": "P6 IRE all-term topic coverage and Term I Surat al-Fil period-group crosswalk",
+  "source": "https://www.ncdc.go.ug/wp-content/uploads/2024/02/P6-Final-Set-One-Sept-2010_book_new-versiom.pdf",
+  "source_publisher": "NCDC Uganda",
+  "source_year": 2010,
+  "source_pdf_pages": {
+    "topic_outline": 252,
+    "term_I_topic_1": [
+      254,
+      255,
+      256,
+      257
+    ]
+  },
+  "license": "NCDC copyright; all rights reserved; original paraphrased learner content, no copied syllabus passages",
+  "strand": "IRE only, never CRE",
+  "topic_count": 15,
+  "topics": [
+    {
+      "term": "I",
+      "topic": "Surat al-Fil",
+      "topic_pack_from_prior_chat": "reported locally generated only, not recovered or committed",
+      "period_level_coverage": "partial: three Surat al-Fil allocation-group resources committed, no individual seven-period breakdown"
+    },
+    {
+      "term": "I",
+      "topic": "The Power of God",
+      "topic_pack_from_prior_chat": "reported locally generated only, not recovered or committed",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "I",
+      "topic": "Differences between Zakah and Sadaqah",
+      "topic_pack_from_prior_chat": "reported locally generated only, not recovered or committed",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "I",
+      "topic": "Road Usage and Enjoining Others to Do Good",
+      "topic_pack_from_prior_chat": "reported locally generated only, not recovered or committed",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "I",
+      "topic": "Introduction of Islam in Uganda",
+      "topic_pack_from_prior_chat": "reported locally generated only, not recovered or committed",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "II",
+      "topic": "Unity of God (Al-Baqarah 2:163-164 and 2:255-258)",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "II",
+      "topic": "Kufr and Shirk",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "II",
+      "topic": "Recipients of Zakah",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "II",
+      "topic": "Hygiene",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "II",
+      "topic": "Spread of Islam Outside Buganda",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "III",
+      "topic": "Surat al-Kafirun",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "III",
+      "topic": "Worship",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "III",
+      "topic": "Ratio of Zakah",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "III",
+      "topic": "Uprightness and Adolescence",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    },
+    {
+      "term": "III",
+      "topic": "Islam in Buganda",
+      "topic_pack_from_prior_chat": "not evidenced",
+      "period_level_coverage": "not verified"
+    }
+  ],
+  "term_I_surat_al_fil": {
+    "curriculum_topic_periods": 7,
+    "allocation_groups": [
+      {
+        "target": "Recitation and memorisation",
+        "periods": 3,
+        "learner_md": "recitation-and-memorisation.learner.md",
+        "key_md": "recitation-and-memorisation.teacher-key.md",
+        "status": "generated and committed; not independently certified for every individual period"
+      },
+      {
+        "target": "Meaning of surah",
+        "periods": 2,
+        "learner_md": "meaning-and-story.learner.md",
+        "key_md": "meaning-and-story.teacher-key.md",
+        "status": "generated and committed; teacher review pending"
+      },
+      {
+        "target": "Importance and relevance to daily life",
+        "periods": 2,
+        "learner_md": "importance-and-daily-life.learner.md",
+        "key_md": "importance-and-daily-life.teacher-key.md",
+        "status": "generated and committed; teacher review pending"
+      }
+    ],
+    "week_labels": "none assigned; no verified IRE-specific school week scheme",
+    "full_topic_period_by_period_coverage": false
+  },
+  "three_term_complete": false,
+  "app_imported": false,
+  "teacher_reviewed": false
+}
