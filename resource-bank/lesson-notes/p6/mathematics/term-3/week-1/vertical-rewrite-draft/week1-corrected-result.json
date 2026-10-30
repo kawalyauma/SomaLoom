@@ -1,0 +1,1313 @@
+{
+  "batch_id": "p6-maths-term3-week1-vertical-rewrite-1",
+  "document_id": "bb8f6f0c-ade8-4ee5-a068-5145ef7be86c",
+  "expected_version": 2,
+  "lessons": [
+    {
+      "lesson_number": 1,
+      "existing_outcome_ids": [
+        "cf182d37-9089-5ffd-a585-9f54648d8887"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Choosing Suitable Metric Units",
+          "question": "Choose suitable units for measuring the length of a pencil, the distance between two towns, the mass of a bag of rice, the capacity of a drinking cup and the area of a classroom floor.",
+          "existing_example_block_ids": [
+            "5c401066-b0a6-4afb-851f-81d4e78671aa"
+          ],
+          "explanation": "First identify what is being measured. Then choose a unit suitable for its size. Length, mass, capacity and area are different quantities.",
+          "steps": [
+            {
+              "explanation": "A pencil is a short object. Use centimetres.",
+              "latex": "\\text{Pencil length: centimetres (cm)}"
+            },
+            {
+              "explanation": "The distance between towns is usually large. Use kilometres.",
+              "latex": "\\text{Distance between towns: kilometres (km)}"
+            },
+            {
+              "explanation": "A bag of rice has mass. Kilograms are suitable.",
+              "latex": "\\text{Mass of rice: kilograms (kg)}"
+            },
+            {
+              "explanation": "A drinking cup holds a relatively small amount of liquid.",
+              "latex": "\\text{Cup capacity: millilitres (mL)}"
+            },
+            {
+              "explanation": "A classroom floor has an area, not just a length.",
+              "latex": "\\text{Floor area: square metres (m}^{2}\\text{)}"
+            }
+          ],
+          "final_answer": "Pencil: cm; distance between towns: km; bag of rice: kg; drinking cup: mL; classroom floor: m\u00b2.",
+          "check": "Each unit matches the quantity measured. These are suitable units, not actual measurements."
+        },
+        {
+          "number": 2,
+          "title": "Understanding Metric Prefixes",
+          "question": "State the meanings of kilo, centi and milli. Explain how they are used in kilometre, centimetre and millilitre.",
+          "existing_example_block_ids": [
+            "cfa4daf4-708d-48d0-b2ef-c59187716560"
+          ],
+          "explanation": "A metric prefix tells us the size of a unit compared with its base unit. Kilo means one thousand times, centi means one hundredth and milli means one thousandth.",
+          "steps": [
+            {
+              "explanation": "The prefix kilo represents one thousand times the base unit.",
+              "latex": "\\text{kilo}=1000"
+            },
+            {
+              "explanation": "A kilometre contains one thousand metres.",
+              "latex": "1\\text{ km}=1000\\text{ m}"
+            },
+            {
+              "explanation": "The prefix centi represents one hundredth.",
+              "latex": "\\text{centi}=\\frac{1}{100}"
+            },
+            {
+              "explanation": "A centimetre is one hundredth of a metre.",
+              "latex": "1\\text{ cm}=\\frac{1}{100}\\text{ m}"
+            },
+            {
+              "explanation": "The prefix milli represents one thousandth.",
+              "latex": "\\text{milli}=\\frac{1}{1000}"
+            },
+            {
+              "explanation": "A millilitre is one thousandth of a litre.",
+              "latex": "1\\text{ mL}=\\frac{1}{1000}\\text{ L}"
+            }
+          ],
+          "final_answer": "Kilo means 1,000 times; centi means one hundredth; milli means one thousandth.",
+          "check": "The prefix meanings agree with the relationships between kilometres and metres, centimetres and metres, and millilitres and litres."
+        },
+        {
+          "number": 3,
+          "title": "Identifying Metric Units for Length, Mass and Capacity",
+          "question": "Identify the quantity measured by each of these units: mm, g, L, km, kg and mL.",
+          "existing_example_block_ids": [],
+          "explanation": "Read each unit symbol carefully. Decide whether it measures length, mass or capacity.",
+          "steps": [
+            {
+              "explanation": "Millimetres measure short lengths.",
+              "latex": "\\text{mm: length}"
+            },
+            {
+              "explanation": "Grams measure mass.",
+              "latex": "\\text{g: mass}"
+            },
+            {
+              "explanation": "Litres measure capacity.",
+              "latex": "\\text{L: capacity}"
+            },
+            {
+              "explanation": "Kilometres measure distance.",
+              "latex": "\\text{km: length}"
+            },
+            {
+              "explanation": "Kilograms measure mass.",
+              "latex": "\\text{kg: mass}"
+            },
+            {
+              "explanation": "Millilitres measure capacity.",
+              "latex": "\\text{mL: capacity}"
+            }
+          ],
+          "final_answer": "Length: mm and km. Mass: g and kg. Capacity: L and mL.",
+          "check": "All six units have been classified. No mass unit has been placed under length or capacity."
+        },
+        {
+          "number": 4,
+          "title": "Choosing Suitable Measuring Instruments",
+          "question": "Choose a suitable measuring instrument for the length of a desk, the mass of a sack of maize, the capacity of a water container and the thickness of a book.",
+          "existing_example_block_ids": [],
+          "explanation": "A measuring instrument must be suitable for the quantity and the size of the object. A unit tells us how to express the measurement; an instrument helps us obtain it.",
+          "steps": [
+            {
+              "explanation": "A ruler or measuring tape is suitable for the desk.",
+              "latex": "\\text{Desk length: ruler or measuring tape}"
+            },
+            {
+              "explanation": "A weighing scale is suitable for a sack of maize.",
+              "latex": "\\text{Maize mass: weighing scale}"
+            },
+            {
+              "explanation": "A graduated measuring container can measure liquid capacity.",
+              "latex": "\\text{Water capacity: graduated container}"
+            },
+            {
+              "explanation": "A ruler with millimetre markings can measure the thickness of a book.",
+              "latex": "\\text{Book thickness: millimetre ruler}"
+            }
+          ],
+          "final_answer": "Desk: ruler or measuring tape. Maize: weighing scale. Water: graduated measuring container. Book thickness: millimetre ruler.",
+          "check": "The chosen instruments match the quantities. No measurements or instrument readings have been invented."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": []
+    },
+    {
+      "lesson_number": 2,
+      "existing_outcome_ids": [
+        "532c2555-dfbb-5880-9fd4-1d56be8ba4b1"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Converting Metres to Millimetres",
+          "question": "Convert 4.5 m to millimetres.",
+          "existing_example_block_ids": [
+            "fdcddef0-9850-48c2-9178-78f81b365833",
+            "0141d6b3-1169-43d0-8afb-43d405f17d4d"
+          ],
+          "explanation": "A metre contains 1,000 millimetres. We are converting from a larger unit to a smaller unit, so we multiply.",
+          "steps": [
+            {
+              "explanation": "Write the conversion fact.",
+              "latex": "1\\text{ m}=1000\\text{ mm}"
+            },
+            {
+              "explanation": "Write the given measurement.",
+              "latex": "4.5\\text{ m}"
+            },
+            {
+              "explanation": "Multiply by the number of millimetres in one metre.",
+              "latex": "4.5\\times1000"
+            },
+            {
+              "explanation": "Calculate the product.",
+              "latex": "=4500"
+            },
+            {
+              "explanation": "Write the required unit.",
+              "latex": "4.5\\text{ m}=4500\\text{ mm}"
+            }
+          ],
+          "final_answer": "4,500 mm.",
+          "check": "Convert back to metres.",
+          "check_latex": [
+            "4500\\div1000",
+            "=4.5",
+            "4500\\text{ mm}=4.5\\text{ m}"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Converting Metres to Kilometres",
+          "question": "Convert 7,250 m to kilometres.",
+          "existing_example_block_ids": [
+            "155b25ec-4330-48d4-b745-1c08b5d1ea7a",
+            "cdf56653-caa5-4648-8232-9cc1dba5f186"
+          ],
+          "explanation": "A kilometre contains 1,000 metres. Divide the number of metres by 1,000.",
+          "steps": [
+            {
+              "explanation": "Write the conversion fact.",
+              "latex": "1\\text{ km}=1000\\text{ m}"
+            },
+            {
+              "explanation": "Write the given measurement.",
+              "latex": "7250\\text{ m}"
+            },
+            {
+              "explanation": "Divide by 1,000.",
+              "latex": "\\frac{7250}{1000}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=7.25"
+            },
+            {
+              "explanation": "State the measurement in kilometres.",
+              "latex": "7250\\text{ m}=7.25\\text{ km}"
+            }
+          ],
+          "final_answer": "7.25 km.",
+          "check": "Multiplying 7.25 by 1,000 gives 7,250 metres."
+        },
+        {
+          "number": 3,
+          "title": "Converting Centimetres to Metres",
+          "question": "Convert 350 cm to metres.",
+          "existing_example_block_ids": [
+            "f7ba351d-8443-4d80-bb5d-19aaf590d5fe"
+          ],
+          "explanation": "A metre contains 100 centimetres. Divide the given centimetres by 100.",
+          "steps": [
+            {
+              "explanation": "Write the conversion fact.",
+              "latex": "100\\text{ cm}=1\\text{ m}"
+            },
+            {
+              "explanation": "Divide the centimetres by 100.",
+              "latex": "\\frac{350}{100}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=3.5"
+            },
+            {
+              "explanation": "Write the answer in metres.",
+              "latex": "350\\text{ cm}=3.5\\text{ m}"
+            }
+          ],
+          "final_answer": "3.5 m.",
+          "check": "Multiplying 3.5 m by 100 gives 350 cm."
+        },
+        {
+          "number": 4,
+          "title": "Converting Kilograms to Grams",
+          "question": "Convert 6.2 kg to grams.",
+          "existing_example_block_ids": [
+            "f7ba351d-8443-4d80-bb5d-19aaf590d5fe"
+          ],
+          "explanation": "One kilogram contains 1,000 grams. Multiply the given kilograms by 1,000.",
+          "steps": [
+            {
+              "explanation": "Write the conversion fact.",
+              "latex": "1\\text{ kg}=1000\\text{ g}"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "6.2\\times1000"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=6200"
+            },
+            {
+              "explanation": "Write the answer in grams.",
+              "latex": "6.2\\text{ kg}=6200\\text{ g}"
+            }
+          ],
+          "final_answer": "6,200 g.",
+          "check": "Dividing 6,200 g by 1,000 gives 6.2 kg."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": [
+        "f7ba351d-8443-4d80-bb5d-19aaf590d5fe",
+        "78eef32e-bbe0-43c3-9333-5dd291241b77"
+      ]
+    },
+    {
+      "lesson_number": 3,
+      "existing_outcome_ids": [
+        "ce3f0554-6fcc-5e51-8052-25460408f767"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Converting Square Metres to Square Centimetres",
+          "question": "Convert 3 m\u00b2 to cm\u00b2.",
+          "existing_example_block_ids": [
+            "95486a72-bebc-41b5-931e-c30bacd27510",
+            "1ee3a510-c056-4931-83c9-7315319536ea"
+          ],
+          "explanation": "Square units use the square of the length conversion factor. Since each metre contains 100 centimetres, one square metre contains 10,000 square centimetres.",
+          "steps": [
+            {
+              "explanation": "Write the length conversion fact.",
+              "latex": "1\\text{ m}=100\\text{ cm}"
+            },
+            {
+              "explanation": "Square the conversion factor.",
+              "latex": "100^{2}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=10000"
+            },
+            {
+              "explanation": "Write the square-unit relationship.",
+              "latex": "1\\text{ m}^{2}=10000\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Multiply by three.",
+              "latex": "3\\times10000"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=30000"
+            },
+            {
+              "explanation": "Write the answer.",
+              "latex": "3\\text{ m}^{2}=30000\\text{ cm}^{2}"
+            }
+          ],
+          "final_answer": "30,000 cm\u00b2.",
+          "check": "Dividing 30,000 cm\u00b2 by 10,000 gives 3 m\u00b2."
+        },
+        {
+          "number": 2,
+          "title": "Converting Square Centimetres to Square Metres",
+          "question": "Convert 45,000 cm\u00b2 to m\u00b2.",
+          "existing_example_block_ids": [
+            "a8859b32-ccb9-4ee7-8647-9c51fa93abd5"
+          ],
+          "explanation": "We are converting from a smaller square unit to a larger square unit. Divide by 10,000.",
+          "steps": [
+            {
+              "explanation": "Write the conversion fact.",
+              "latex": "10000\\text{ cm}^{2}=1\\text{ m}^{2}"
+            },
+            {
+              "explanation": "Divide.",
+              "latex": "\\frac{45000}{10000}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=4.5"
+            },
+            {
+              "explanation": "Write the answer in square metres.",
+              "latex": "45000\\text{ cm}^{2}=4.5\\text{ m}^{2}"
+            }
+          ],
+          "final_answer": "4.5 m\u00b2.",
+          "check": "Multiplying 4.5 m\u00b2 by 10,000 gives 45,000 cm\u00b2."
+        },
+        {
+          "number": 3,
+          "title": "Converting Square Decimetres to Square Centimetres",
+          "question": "Convert 8 dm\u00b2 to cm\u00b2.",
+          "existing_example_block_ids": [
+            "a8859b32-ccb9-4ee7-8647-9c51fa93abd5"
+          ],
+          "explanation": "A decimetre contains 10 centimetres. For area, square the conversion factor.",
+          "steps": [
+            {
+              "explanation": "Write the length conversion.",
+              "latex": "1\\text{ dm}=10\\text{ cm}"
+            },
+            {
+              "explanation": "Square the factor.",
+              "latex": "10^{2}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=100"
+            },
+            {
+              "explanation": "Write the area conversion.",
+              "latex": "1\\text{ dm}^{2}=100\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Multiply by eight.",
+              "latex": "8\\times100"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=800"
+            },
+            {
+              "explanation": "State the answer.",
+              "latex": "8\\text{ dm}^{2}=800\\text{ cm}^{2}"
+            }
+          ],
+          "final_answer": "800 cm\u00b2.",
+          "check": "Dividing 800 cm\u00b2 by 100 gives 8 dm\u00b2."
+        },
+        {
+          "number": 4,
+          "title": "Converting Square Kilometres to Square Metres",
+          "question": "Convert 0.25 km\u00b2 to m\u00b2.",
+          "existing_example_block_ids": [
+            "d5bde0de-3147-49f8-aa54-0d2bea061a49"
+          ],
+          "explanation": "A kilometre contains 1,000 metres. Square the length conversion factor before converting the area.",
+          "steps": [
+            {
+              "explanation": "Write the length conversion.",
+              "latex": "1\\text{ km}=1000\\text{ m}"
+            },
+            {
+              "explanation": "Square the factor.",
+              "latex": "1000^{2}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=1000000"
+            },
+            {
+              "explanation": "Write the square-unit conversion.",
+              "latex": "1\\text{ km}^{2}=1000000\\text{ m}^{2}"
+            },
+            {
+              "explanation": "Multiply by 0.25.",
+              "latex": "0.25\\times1000000"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "=250000"
+            },
+            {
+              "explanation": "Write the answer.",
+              "latex": "0.25\\text{ km}^{2}=250000\\text{ m}^{2}"
+            }
+          ],
+          "final_answer": "250,000 m\u00b2.",
+          "check": "Dividing 250,000 m\u00b2 by 1,000,000 gives 0.25 km\u00b2."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": []
+    },
+    {
+      "lesson_number": 4,
+      "existing_outcome_ids": [
+        "7a4eaacc-9863-533e-a44e-e1b2277ea6c0"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Finding the Perimeter of a Rectangular Garden",
+          "question": "A rectangular school garden is 18 m long and 11 m wide. Find its perimeter.",
+          "existing_example_block_ids": [
+            "b663750b-b00c-48fc-9898-13dbe1251551",
+            "f89ac8bb-dbfe-425a-bba5-6e1aebde65ca"
+          ],
+          "explanation": "Perimeter is the distance around the garden. Add the length and width, then multiply by two.",
+          "steps": [
+            {
+              "explanation": "Write the formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the given dimensions.",
+              "latex": "P=2(18+11)\\text{ m}"
+            },
+            {
+              "explanation": "Add inside the brackets.",
+              "latex": "P=2(29)\\text{ m}"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "P=58\\text{ m}"
+            }
+          ],
+          "final_answer": "The perimeter of the garden is 58 m.",
+          "check": "Adding all four sides separately gives the same perimeter."
+        },
+        {
+          "number": 2,
+          "title": "Finding the Perimeter of a Square",
+          "question": "A square has sides measuring 9 cm each. Find its perimeter.",
+          "existing_example_block_ids": [
+            "b30a1eb8-0148-4f1c-98db-d157a754feeb"
+          ],
+          "explanation": "A square has four equal sides. Multiply the side length by four.",
+          "steps": [
+            {
+              "explanation": "Write the formula.",
+              "latex": "P=4s"
+            },
+            {
+              "explanation": "Substitute the side length.",
+              "latex": "P=4(9\\text{ cm})"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "P=36\\text{ cm}"
+            }
+          ],
+          "final_answer": "The perimeter is 36 cm.",
+          "check": "The four sides total 36 cm."
+        },
+        {
+          "number": 3,
+          "title": "Finding a Missing Rectangle Width",
+          "question": "A rectangle has a perimeter of 54 cm and a length of 17 cm. Find its width.",
+          "existing_example_block_ids": [
+            "28ddd602-7997-41ae-9f5f-26e35e26f35b",
+            "5b08fdf9-b202-47f4-9fcb-6cd79df91735"
+          ],
+          "explanation": "Half the perimeter is the total of one length and one width. Subtract the known length.",
+          "steps": [
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Divide the perimeter by two.",
+              "latex": "l+w=\\frac{54}{2}\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate half the perimeter.",
+              "latex": "l+w=27\\text{ cm}"
+            },
+            {
+              "explanation": "Substitute the known length.",
+              "latex": "17+w=27"
+            },
+            {
+              "explanation": "Subtract 17 from both sides.",
+              "latex": "w=27-17"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "w=10\\text{ cm}"
+            },
+            {
+              "explanation": "Check using the perimeter formula.",
+              "latex": "P=2(17+10)\\text{ cm}"
+            },
+            {
+              "explanation": "Add inside the brackets.",
+              "latex": "P=2(27)\\text{ cm}"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "P=54\\text{ cm}"
+            }
+          ],
+          "final_answer": "The width is 10 cm.",
+          "check": "The calculated dimensions give the stated perimeter of 54 cm."
+        },
+        {
+          "number": 4,
+          "title": "Finding the Side of a Square from Its Perimeter",
+          "question": "The perimeter of a square is 76 cm. Find the length of one side.",
+          "existing_example_block_ids": [
+            "257268fd-2ddc-4729-8d65-a15b64a9d9e7"
+          ],
+          "explanation": "Divide the perimeter by four because a square has four equal sides.",
+          "steps": [
+            {
+              "explanation": "Write the formula.",
+              "latex": "P=4s"
+            },
+            {
+              "explanation": "Substitute the perimeter.",
+              "latex": "76=4s"
+            },
+            {
+              "explanation": "Divide both sides by four.",
+              "latex": "s=\\frac{76}{4}"
+            },
+            {
+              "explanation": "Calculate the length of one side.",
+              "latex": "s=19\\text{ cm}"
+            },
+            {
+              "explanation": "Check by multiplying by four.",
+              "latex": "P=4(19\\text{ cm})"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=76\\text{ cm}"
+            }
+          ],
+          "final_answer": "One side measures 19 cm.",
+          "check": "Four sides of 19 cm each give the stated perimeter."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": []
+    },
+    {
+      "lesson_number": 5,
+      "existing_outcome_ids": [
+        "d40f12f7-6628-5dd2-a403-7fc6e2a457e5"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Finding the Area of a Square from Its Perimeter",
+          "question": "A square garden has a perimeter of 48 m. Find its area.",
+          "existing_example_block_ids": [
+            "977f188a-0d28-4e40-ab23-af9a13b07535",
+            "f6cb09f1-56f5-4aaa-b238-6aa5ba01742b"
+          ],
+          "explanation": "Find the length of one side first. Then multiply that side by itself to obtain the area.",
+          "steps": [
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=4s"
+            },
+            {
+              "explanation": "Substitute the given perimeter.",
+              "latex": "48=4s"
+            },
+            {
+              "explanation": "Divide by four.",
+              "latex": "s=\\frac{48}{4}"
+            },
+            {
+              "explanation": "Calculate the side length.",
+              "latex": "s=12\\text{ m}"
+            },
+            {
+              "explanation": "Write the square area formula.",
+              "latex": "A=s^{2}"
+            },
+            {
+              "explanation": "Substitute the side length.",
+              "latex": "A=(12\\text{ m})^{2}"
+            },
+            {
+              "explanation": "Calculate the area.",
+              "latex": "A=144\\text{ m}^{2}"
+            }
+          ],
+          "final_answer": "The area of the square garden is 144 m\u00b2.",
+          "check": "Four sides of 12 m produce a perimeter of 48 m."
+        },
+        {
+          "number": 2,
+          "title": "Finding Rectangle Area from Perimeter and Length",
+          "question": "A rectangular garden has a perimeter of 70 m and a length of 20 m. Find its area.",
+          "existing_example_block_ids": [
+            "0083a173-bf6c-4481-8a99-90c8dfa73581",
+            "2e699992-cfeb-4d89-b9f1-0c2d2da769ca"
+          ],
+          "explanation": "Use half the perimeter to find the missing width. Then multiply the length by the width.",
+          "steps": [
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Divide the perimeter by two.",
+              "latex": "l+w=\\frac{70}{2}\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l+w=35\\text{ m}"
+            },
+            {
+              "explanation": "Substitute the known length.",
+              "latex": "20+w=35"
+            },
+            {
+              "explanation": "Subtract 20.",
+              "latex": "w=35-20"
+            },
+            {
+              "explanation": "Calculate the width.",
+              "latex": "w=15\\text{ m}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute the dimensions.",
+              "latex": "A=20\\text{ m}\\times15\\text{ m}"
+            },
+            {
+              "explanation": "Calculate the area.",
+              "latex": "A=300\\text{ m}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(20+15)\\text{ m}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(35)\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=70\\text{ m}"
+            }
+          ],
+          "final_answer": "The area is 300 m\u00b2.",
+          "check": "The length of 20 m and width of 15 m give the stated perimeter."
+        },
+        {
+          "number": 3,
+          "title": "Why Perimeter Alone Does Not Determine Rectangle Area",
+          "question": "A rectangle has a perimeter of 32 cm. Can its exact area be determined without further information?",
+          "existing_example_block_ids": [
+            "29e86344-4513-431c-8c62-9fd0ab72ed8e"
+          ],
+          "explanation": "We can draw different rectangles with the same perimeter. Compare two examples.",
+          "steps": [
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Divide the given perimeter by two.",
+              "latex": "l+w=\\frac{32}{2}\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l+w=16\\text{ cm}"
+            },
+            {
+              "explanation": "First rectangle: choose length 10 cm and width 6 cm. Calculate its area.",
+              "latex": "A_{1}=10\\text{ cm}\\times6\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A_{1}=60\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Check the first perimeter.",
+              "latex": "P_{1}=2(10+6)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P_{1}=32\\text{ cm}"
+            },
+            {
+              "explanation": "Second rectangle: choose length 9 cm and width 7 cm.",
+              "latex": "A_{2}=9\\text{ cm}\\times7\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A_{2}=63\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Check the second perimeter.",
+              "latex": "P_{2}=2(9+7)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P_{2}=32\\text{ cm}"
+            },
+            {
+              "explanation": "Compare the areas.",
+              "latex": "60\\text{ cm}^{2}\\neq63\\text{ cm}^{2}"
+            }
+          ],
+          "final_answer": "No. A perimeter of 32 cm does not give enough information to determine one exact rectangle area.",
+          "check": "Both rectangles have a perimeter of 32 cm, but their areas differ. Another side length or condition is needed."
+        },
+        {
+          "number": 4,
+          "title": "Finding Area When Length Is Twice the Width",
+          "question": "A rectangle has a perimeter of 60 cm. Its length is twice its width. Find its area.",
+          "existing_example_block_ids": [
+            "6862cd2d-2b4c-45d5-a3d1-82931a1fff65"
+          ],
+          "explanation": "Let the width be w centimetres. Since the length is twice the width, the length is 2w centimetres. Form an equation using the perimeter.",
+          "steps": [
+            {
+              "explanation": "Represent the length.",
+              "latex": "l=2w"
+            },
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the perimeter and side expressions.",
+              "latex": "60=2(2w+w)"
+            },
+            {
+              "explanation": "Collect like terms.",
+              "latex": "60=2(3w)"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "60=6w"
+            },
+            {
+              "explanation": "Divide both sides by six.",
+              "latex": "w=\\frac{60}{6}"
+            },
+            {
+              "explanation": "Find the width.",
+              "latex": "w=10\\text{ cm}"
+            },
+            {
+              "explanation": "Find the length.",
+              "latex": "l=2(10)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l=20\\text{ cm}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute.",
+              "latex": "A=20\\text{ cm}\\times10\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate the area.",
+              "latex": "A=200\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(20+10)\\text{ cm}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(30)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=60\\text{ cm}"
+            }
+          ],
+          "final_answer": "The rectangle is 20 cm long and 10 cm wide. Its area is 200 cm\u00b2.",
+          "check": "The length is twice the width, and the calculated perimeter is 60 cm."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": []
+    },
+    {
+      "lesson_number": 6,
+      "existing_outcome_ids": [
+        "ddb482da-fa31-5584-ba47-3491063c409e"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Finding an Unknown from Algebraic Rectangle Sides",
+          "question": "The length of a rectangle is (2x + 3) cm, its width is x cm and its perimeter is 42 cm. Find x, the actual dimensions and the area.",
+          "existing_example_block_ids": [
+            "a939a93c-15ae-4b8c-852e-0b3004a13e44",
+            "38c476ec-265c-46f0-ab90-738d3870ee62"
+          ],
+          "explanation": "Use the perimeter formula to form an equation. Solve for x, then calculate the actual dimensions.",
+          "steps": [
+            {
+              "explanation": "Write the given length.",
+              "latex": "l=2x+3"
+            },
+            {
+              "explanation": "Write the given width.",
+              "latex": "w=x"
+            },
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the given values.",
+              "latex": "42=2[(2x+3)+x]"
+            },
+            {
+              "explanation": "Collect like terms.",
+              "latex": "42=2(3x+3)"
+            },
+            {
+              "explanation": "Expand the brackets.",
+              "latex": "42=6x+6"
+            },
+            {
+              "explanation": "Subtract six from both sides.",
+              "latex": "42-6=6x"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "36=6x"
+            },
+            {
+              "explanation": "Divide by six.",
+              "latex": "x=\\frac{36}{6}"
+            },
+            {
+              "explanation": "Find x.",
+              "latex": "x=6"
+            },
+            {
+              "explanation": "Substitute x into the length expression.",
+              "latex": "l=2(6)+3"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "l=12+3"
+            },
+            {
+              "explanation": "Calculate the actual length.",
+              "latex": "l=15\\text{ cm}"
+            },
+            {
+              "explanation": "Find the width.",
+              "latex": "w=6\\text{ cm}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute.",
+              "latex": "A=15\\text{ cm}\\times6\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A=90\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(15+6)\\text{ cm}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(21)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=42\\text{ cm}"
+            }
+          ],
+          "final_answer": "x = 6; length = 15 cm; width = 6 cm; area = 90 cm\u00b2.",
+          "check": "Both sides are positive and the perimeter agrees with the given 42 cm."
+        },
+        {
+          "number": 2,
+          "title": "Solving Two Algebraic Side Expressions",
+          "question": "The length of a rectangle is (x + 5) m, its width is (x \u2212 1) m and its perimeter is 48 m. Find x, the actual dimensions and area.",
+          "existing_example_block_ids": [
+            "e3c1a2f6-86d6-4370-a6d8-9daea8187e99",
+            "f4c8e144-c1a9-4d2e-ba6f-dce3a85ea1f8"
+          ],
+          "explanation": "Both sides contain x. Substitute the two expressions into the perimeter formula and simplify.",
+          "steps": [
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the given expressions.",
+              "latex": "48=2[(x+5)+(x-1)]"
+            },
+            {
+              "explanation": "Collect the x terms and numbers.",
+              "latex": "48=2(2x+4)"
+            },
+            {
+              "explanation": "Expand.",
+              "latex": "48=4x+8"
+            },
+            {
+              "explanation": "Subtract eight.",
+              "latex": "48-8=4x"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "40=4x"
+            },
+            {
+              "explanation": "Divide by four.",
+              "latex": "x=\\frac{40}{4}"
+            },
+            {
+              "explanation": "Find x.",
+              "latex": "x=10"
+            },
+            {
+              "explanation": "Find the actual length.",
+              "latex": "l=10+5"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l=15\\text{ m}"
+            },
+            {
+              "explanation": "Find the actual width.",
+              "latex": "w=10-1"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "w=9\\text{ m}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute.",
+              "latex": "A=15\\text{ m}\\times9\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A=135\\text{ m}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(15+9)\\text{ m}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(24)\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=48\\text{ m}"
+            }
+          ],
+          "final_answer": "x = 10; length = 15 m; width = 9 m; area = 135 m\u00b2.",
+          "check": "Both calculated dimensions are positive and give the stated perimeter."
+        },
+        {
+          "number": 3,
+          "title": "Finding Dimensions from a Word Problem",
+          "question": "A rectangular field is 7 m longer than it is wide. Its perimeter is 74 m. Find its length, width and area.",
+          "existing_example_block_ids": [
+            "e5f15b00-039e-46ba-b5dc-86300df957f4"
+          ],
+          "explanation": "Let the width be w metres. The length is then seven metres greater than the width.",
+          "steps": [
+            {
+              "explanation": "Represent the length.",
+              "latex": "l=w+7"
+            },
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the expressions.",
+              "latex": "74=2[(w+7)+w]"
+            },
+            {
+              "explanation": "Collect like terms.",
+              "latex": "74=2(2w+7)"
+            },
+            {
+              "explanation": "Expand.",
+              "latex": "74=4w+14"
+            },
+            {
+              "explanation": "Subtract fourteen.",
+              "latex": "74-14=4w"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "60=4w"
+            },
+            {
+              "explanation": "Divide by four.",
+              "latex": "w=\\frac{60}{4}"
+            },
+            {
+              "explanation": "Find the width.",
+              "latex": "w=15\\text{ m}"
+            },
+            {
+              "explanation": "Find the length.",
+              "latex": "l=15+7"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l=22\\text{ m}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute.",
+              "latex": "A=22\\text{ m}\\times15\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A=330\\text{ m}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(22+15)\\text{ m}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(37)\\text{ m}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=74\\text{ m}"
+            }
+          ],
+          "final_answer": "Length = 22 m; width = 15 m; area = 330 m\u00b2.",
+          "check": "The length exceeds the width by 7 m, and the perimeter is 74 m."
+        },
+        {
+          "number": 4,
+          "title": "Finding Unknown Dimensions with a Given Width Relationship",
+          "question": "The length of a rectangle is three times its width. Its perimeter is 80 cm. Find the actual length, width and area.",
+          "existing_example_block_ids": [],
+          "explanation": "Represent the width by x centimetres. Express the length in terms of x, form an equation and solve it.",
+          "steps": [
+            {
+              "explanation": "Represent the width.",
+              "latex": "w=x"
+            },
+            {
+              "explanation": "Represent the length.",
+              "latex": "l=3x"
+            },
+            {
+              "explanation": "Write the perimeter formula.",
+              "latex": "P=2(l+w)"
+            },
+            {
+              "explanation": "Substitute the given values.",
+              "latex": "80=2(3x+x)"
+            },
+            {
+              "explanation": "Collect like terms.",
+              "latex": "80=2(4x)"
+            },
+            {
+              "explanation": "Multiply.",
+              "latex": "80=8x"
+            },
+            {
+              "explanation": "Divide by eight.",
+              "latex": "x=\\frac{80}{8}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "x=10"
+            },
+            {
+              "explanation": "Find the width.",
+              "latex": "w=10\\text{ cm}"
+            },
+            {
+              "explanation": "Find the length.",
+              "latex": "l=3(10)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "l=30\\text{ cm}"
+            },
+            {
+              "explanation": "Write the area formula.",
+              "latex": "A=l\\times w"
+            },
+            {
+              "explanation": "Substitute.",
+              "latex": "A=30\\text{ cm}\\times10\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "A=300\\text{ cm}^{2}"
+            },
+            {
+              "explanation": "Check the perimeter.",
+              "latex": "P=2(30+10)\\text{ cm}"
+            },
+            {
+              "explanation": "Add.",
+              "latex": "P=2(40)\\text{ cm}"
+            },
+            {
+              "explanation": "Calculate.",
+              "latex": "P=80\\text{ cm}"
+            }
+          ],
+          "final_answer": "Width = 10 cm; length = 30 cm; area = 300 cm\u00b2.",
+          "check": "The length is three times the width, both dimensions are positive, and the perimeter is 80 cm."
+        }
+      ],
+      "supplemental_original_block_ids_to_retain": []
+    }
+  ],
+  "source_scope_cautions": [
+    {
+      "lesson_number": 1,
+      "note": "The metric-unit identification examples are instructional material. No numerical measurements of actual classroom objects are claimed. The original scheme supplies the learning target, not evidence for invented object measurements."
+    },
+    {
+      "lesson_number": 2,
+      "note": "The existing grouped paragraph f7ba351d-8443-4d80-bb5d-19aaf590d5fe contains three independent original conversions: 350 cm to metres, 6.2 kg to grams and 1,750 mL to litres. The first two are rewritten as core examples 3 and 4. Retain the 1,750 mL conversion as a supplemental worked example. Also retain the existing mixed-unit rope example in block 78eef32e-bbe0-43c3-9333-5dd291241b77. Do not discard either supplemental solution."
+    },
+    {
+      "lesson_number": 3,
+      "note": "Square-unit calculations require squared conversion factors. The existing area illustration is retained. The rewritten solutions distinguish ordinary length units from square units."
+    },
+    {
+      "lesson_number": 4,
+      "note": "The existing rectangle and square illustration is retained. A rectangle and a square need not have equal perimeters. The original figure's pending spacing-polish concern remains separate from this worked-example rewrite."
+    },
+    {
+      "lesson_number": 5,
+      "note": "A rectangle's perimeter alone does not generally determine its exact area. Example 3 deliberately preserves this limitation instead of supplying an invented missing dimension."
+    },
+    {
+      "lesson_number": 6,
+      "note": "The original three worked examples are preserved and expanded vertically. A fourth original problem has been added within the existing outcome scope. Existing algebraic rectangle diagrams remain linked to the original illustrated problem. No diagram asset is reassigned to the new example."
+    },
+    {
+      "lesson_number": null,
+      "note": "The uploaded schemes establish planning targets but do not verify every newly worded instructional explanation. No new source, citation, curriculum endorsement, page number or asset has been invented. All six lessons remain subject to teacher review."
+    }
+  ],
+  "integration_notes": [
+    "This batch applies only to the existing P6 Mathematics Term 3 Week 1 document at expected version 2. It is a replacement payload for existing worked examples, not a new lesson plan, scheme, publication or Week 2 batch.",
+    "Exactly six existing lessons are included, each with four numbered core worked examples. The existing outcome identifiers are preserved without alteration.",
+    "Each mathematical working step is supplied as a separate LaTeX string. The step explanations are learner-facing. Do not concatenate multiple steps into one inline equation or a horizontal equals chain during PDF or DOCX export.",
+    "For checks expressed in prose, retain them as checks. Where additional check_latex values are supplied, render each as a separate displayed equation line.",
+    "Retain all existing lesson explanations, vocabulary, pupil activities, revision questions, teacher-only content, source references, evidence mappings, quality warnings and review metadata unless another separately validated batch changes them.",
+    "Retain the three existing visual blocks and their current asset references unchanged. This rewrite does not create, replace, approve or remove any figure.",
+    "Existing source citation IDs must remain attached to their rightful existing planning or outcome blocks. The rewritten mathematical explanations and numerical worked examples must not receive scheme citations as proof of mathematics without verified supporting evidence.",
+    "The grouped original Lesson 2 example paragraph must be split carefully during integration. Its 350 cm and 6.2 kg conversions become core examples, while its 1,750 mL conversion remains supplemental. The rope conversion also remains supplemental.",
+    "For lessons with four existing core examples, preserve their mathematical identity and teaching solutions while replacing compressed calculations with the supplied vertical steps. Do not create duplicate visible copies of the old horizontal solutions.",
+    "Pupil-facing worked-example solutions must remain visible. Do not mistake them for assessment answer keys or move them into teacher-only sections.",
+    "The original assessment questions and any teacher-only assessment answers are outside the scope of this batch. No assessment answers are introduced here.",
+    "The review status remains needs_review. Human teacher validation and mathematical/layout checking must precede any approval or publication.",
+    "Do not begin Week 2 until the owner has validated this Week 1 batch."
+  ],
+  "supplemental_examples": [
+    {
+      "source_block_ids": [
+        "f7ba351d-8443-4d80-bb5d-19aaf590d5fe"
+      ],
+      "title": "Supplemental Example \u2014 Converting Millilitres to Litres",
+      "question": "Convert 1,750 mL to litres.",
+      "steps": [
+        {
+          "explanation": "Write the conversion fact.",
+          "latex": "1000\\text{ mL}=1\\text{ L}"
+        },
+        {
+          "explanation": "To change millilitres to litres, divide by 1,000.",
+          "latex": "\\frac{1750}{1000}"
+        },
+        {
+          "explanation": "Calculate the quotient.",
+          "latex": "=1.75"
+        },
+        {
+          "explanation": "Write the answer in litres.",
+          "latex": "1750\\text{ mL}=1.75\\text{ L}"
+        }
+      ],
+      "final_answer": "1.75 L.",
+      "check": "Multiplying 1.75 litres by 1,000 gives 1,750 millilitres, the original measurement."
+    },
+    {
+      "source_block_ids": [
+        "78eef32e-bbe0-43c3-9333-5dd291241b77"
+      ],
+      "title": "Supplemental Example \u2014 Converting Metres and Centimetres to Centimetres",
+      "question": "A rope is 3 m 45 cm long. Express its length in centimetres.",
+      "steps": [
+        {
+          "explanation": "Write the conversion fact.",
+          "latex": "1\\text{ m}=100\\text{ cm}"
+        },
+        {
+          "explanation": "Convert the 3 metres to centimetres.",
+          "latex": "3\\times100"
+        },
+        {
+          "explanation": "Calculate.",
+          "latex": "=300"
+        },
+        {
+          "explanation": "State the converted length.",
+          "latex": "3\\text{ m}=300\\text{ cm}"
+        },
+        {
+          "explanation": "Add the remaining 45 centimetres.",
+          "latex": "300\\text{ cm}+45\\text{ cm}"
+        },
+        {
+          "explanation": "Calculate the total length.",
+          "latex": "=345\\text{ cm}"
+        },
+        {
+          "explanation": "Express the complete rope length in centimetres.",
+          "latex": "3\\text{ m }45\\text{ cm}=345\\text{ cm}"
+        }
+      ],
+      "final_answer": "The rope is 345 cm long.",
+      "check": "345 cm consists of 300 cm and 45 cm. Since 300 cm is 3 m, the original length of 3 m 45 cm is recovered."
+    }
+  ]
+}

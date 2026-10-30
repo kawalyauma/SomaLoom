@@ -1,0 +1,162 @@
+{
+  "at": "2026-10-30T07:44:46.678513+00:00",
+  "batch_id": "p6-maths-term3-week1-vertical-rewrite-1",
+  "core_examples_per_lesson": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "core_example_count": 24,
+  "supplemental_examples": 2,
+  "rendered_equation_strings": 218,
+  "renderer_status": "passed local OMML parse",
+  "renderer_errors": [],
+  "primary_numeric_answer_checks": [
+    {
+      "lesson": 2,
+      "example": 1,
+      "computed_value": 4500.0,
+      "answer_token": "4,500",
+      "passed": true
+    },
+    {
+      "lesson": 2,
+      "example": 2,
+      "computed_value": 7.25,
+      "answer_token": "7.25",
+      "passed": true
+    },
+    {
+      "lesson": 2,
+      "example": 3,
+      "computed_value": 3.5,
+      "answer_token": "3.5",
+      "passed": true
+    },
+    {
+      "lesson": 2,
+      "example": 4,
+      "computed_value": 6200.0,
+      "answer_token": "6,200",
+      "passed": true
+    },
+    {
+      "lesson": 3,
+      "example": 1,
+      "computed_value": 30000,
+      "answer_token": "30,000",
+      "passed": true
+    },
+    {
+      "lesson": 3,
+      "example": 2,
+      "computed_value": 4.5,
+      "answer_token": "4.5",
+      "passed": true
+    },
+    {
+      "lesson": 3,
+      "example": 3,
+      "computed_value": 800,
+      "answer_token": "800",
+      "passed": true
+    },
+    {
+      "lesson": 3,
+      "example": 4,
+      "computed_value": 250000.0,
+      "answer_token": "250,000",
+      "passed": true
+    },
+    {
+      "lesson": 4,
+      "example": 1,
+      "computed_value": 58,
+      "answer_token": "58",
+      "passed": true
+    },
+    {
+      "lesson": 4,
+      "example": 2,
+      "computed_value": 36,
+      "answer_token": "36",
+      "passed": true
+    },
+    {
+      "lesson": 4,
+      "example": 3,
+      "computed_value": 10.0,
+      "answer_token": "10",
+      "passed": true
+    },
+    {
+      "lesson": 4,
+      "example": 4,
+      "computed_value": 19.0,
+      "answer_token": "19",
+      "passed": true
+    },
+    {
+      "lesson": 5,
+      "example": 1,
+      "computed_value": 144.0,
+      "answer_token": "144",
+      "passed": true
+    },
+    {
+      "lesson": 5,
+      "example": 2,
+      "computed_value": 300.0,
+      "answer_token": "300",
+      "passed": true
+    },
+    {
+      "lesson": 5,
+      "example": 4,
+      "computed_value": 200.0,
+      "answer_token": "200",
+      "passed": true
+    },
+    {
+      "lesson": 6,
+      "example": 1,
+      "computed_value": 90.0,
+      "answer_token": "90",
+      "passed": true
+    },
+    {
+      "lesson": 6,
+      "example": 2,
+      "computed_value": 135.0,
+      "answer_token": "135",
+      "passed": true
+    },
+    {
+      "lesson": 6,
+      "example": 3,
+      "computed_value": 330.0,
+      "answer_token": "330",
+      "passed": true
+    },
+    {
+      "lesson": 6,
+      "example": 4,
+      "computed_value": 300.0,
+      "answer_token": "300",
+      "passed": true
+    }
+  ],
+  "supplemental_numeric_checks_passed": 2,
+  "perimeter_underdetermination_check": true,
+  "all_intermediate_steps_full_validation": "pending; answer arithmetic checks are not full pedagogical or source verification",
+  "source_mappings": "structure validator passed supplied IDs; source-scope review still pending",
+  "app_imported": false,
+  "live_pdf_verified": false,
+  "teacher_reviewed": false,
+  "published": false,
+  "blocker": "SomaLoom normal session expired HTTP401 in last check; no login attempted.",
+  "original_result_preserved": true
+}

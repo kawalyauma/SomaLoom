@@ -1,0 +1,85 @@
+{
+  "batch_id": "p6-maths-term3-week1-vertical-rewrite-1-correction",
+  "equation_patch": {
+    "lesson_number": 5,
+    "example_number": 3,
+    "step_index": 11,
+    "latex": "60\\text{ cm}^{2}\\neq63\\text{ cm}^{2}"
+  },
+  "supplemental_examples": [
+    {
+      "source_block_ids": [
+        "f7ba351d-8443-4d80-bb5d-19aaf590d5fe"
+      ],
+      "title": "Supplemental Example — Converting Millilitres to Litres",
+      "question": "Convert 1,750 mL to litres.",
+      "steps": [
+        {
+          "explanation": "Write the conversion fact.",
+          "latex": "1000\\text{ mL}=1\\text{ L}"
+        },
+        {
+          "explanation": "To change millilitres to litres, divide by 1,000.",
+          "latex": "\\frac{1750}{1000}"
+        },
+        {
+          "explanation": "Calculate the quotient.",
+          "latex": "=1.75"
+        },
+        {
+          "explanation": "Write the answer in litres.",
+          "latex": "1750\\text{ mL}=1.75\\text{ L}"
+        }
+      ],
+      "final_answer": "1.75 L.",
+      "check": "Multiplying 1.75 litres by 1,000 gives 1,750 millilitres, the original measurement."
+    },
+    {
+      "source_block_ids": [
+        "78eef32e-bbe0-43c3-9333-5dd291241b77"
+      ],
+      "title": "Supplemental Example — Converting Metres and Centimetres to Centimetres",
+      "question": "A rope is 3 m 45 cm long. Express its length in centimetres.",
+      "steps": [
+        {
+          "explanation": "Write the conversion fact.",
+          "latex": "1\\text{ m}=100\\text{ cm}"
+        },
+        {
+          "explanation": "Convert the 3 metres to centimetres.",
+          "latex": "3\\times100"
+        },
+        {
+          "explanation": "Calculate.",
+          "latex": "=300"
+        },
+        {
+          "explanation": "State the converted length.",
+          "latex": "3\\text{ m}=300\\text{ cm}"
+        },
+        {
+          "explanation": "Add the remaining 45 centimetres.",
+          "latex": "300\\text{ cm}+45\\text{ cm}"
+        },
+        {
+          "explanation": "Calculate the total length.",
+          "latex": "=345\\text{ cm}"
+        },
+        {
+          "explanation": "Express the complete rope length in centimetres.",
+          "latex": "3\\text{ m }45\\text{ cm}=345\\text{ cm}"
+        }
+      ],
+      "final_answer": "The rope is 345 cm long.",
+      "check": "345 cm consists of 300 cm and 45 cm. Since 300 cm is 3 m, the original length of 3 m 45 cm is recovered."
+    }
+  ],
+  "notes": [
+    "The equation patch changes only the unsupported LaTeX command to \\neq. The mathematical inequality remains unchanged.",
+    "Both supplemental examples belong to existing Lesson 2 and remain separate from its four numbered core examples.",
+    "All calculations are presented as individual vertical equation steps, with no horizontal calculation chains.",
+    "Preserve the existing source block identifiers, outcome mappings, evidence records and figure assets.",
+    "No changes to the remaining 23 core examples, exercises, assessments or teacher-only answer keys.",
+    "The document remains a draft requiring educator review and approval before publication."
+  ]
+}

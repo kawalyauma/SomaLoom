@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-30T07:42:29.571370+00:00",
+  "lessons": 6,
+  "example_counts": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "equation_steps": 204,
+  "errors": [],
+  "warnings": [],
+  "status": "structure_passed",
+  "mathematical_accuracy": "NOT YET VERIFIED",
+  "renderer": "NOT YET VERIFIED",
+  "imported": false,
+  "approved": false
+}

@@ -1,0 +1,13 @@
+{
+  "equation_steps": 204,
+  "errors": [
+    {
+      "lesson": 5,
+      "example": 3,
+      "step": 11,
+      "latex": "60\\text{ cm}^{2}\\ne63\\text{ cm}^{2}",
+      "error": "Unsupported LaTeX command: ne"
+    }
+  ],
+  "status": "failed"
+}
