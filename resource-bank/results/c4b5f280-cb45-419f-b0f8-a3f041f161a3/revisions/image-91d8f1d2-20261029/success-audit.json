@@ -1,0 +1,67 @@
+{
+  "image_request_id": "91d8f1d2-3abc-48e2-9553-db497c617c37",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "source_block_id": "4e081c00-0663-474e-bcd1-29922092ff12",
+  "chat_url": "https://chatgpt.com/c/6ae40024-71e4-83e9-bd18-96d14338325b",
+  "authorship": "Regular ChatGPT Chat Python/Pillow; disclosed in saved response. Codex downloaded/validated only.",
+  "original_sha256": "4714aa864fed956419de01ed0611375ef33792fe87bb0d66aed4e76d72d6253f",
+  "accuracy_check": {
+    "status": "passed",
+    "checked_at": "2026-10-30T03:08:47.780737+00:00",
+    "sha256": "4714aa864fed956419de01ed0611375ef33792fe87bb0d66aed4e76d72d6253f",
+    "image_size": [
+      2200,
+      1250
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "authorship": "Regular ChatGPT Chat Python/Pillow; disclosed in saved response. Codex downloaded/validated only.",
+    "geometry": {
+      "outer_boundary_extents": [
+        285,
+        285,
+        1365,
+        1005
+      ],
+      "inner_boundary_extents": [
+        555,
+        465,
+        1095,
+        825
+      ],
+      "outer_pixels": [
+        1080,
+        720
+      ],
+      "inner_pixels": [
+        540,
+        360
+      ],
+      "centres_both": [
+        825,
+        645
+      ],
+      "pixels_per_cm": 90,
+      "raster_stroke_tolerance_px": 6
+    },
+    "checks": {
+      "hash_matches_chat_existing_file": true,
+      "constant_scale": true,
+      "inner_half_outer_width_and_height": true,
+      "centred": true,
+      "white_inner_gray_frame_only": true,
+      "all_dimensions_and_96_24_cm_squared_labels_visually_verified": true,
+      "labels_readable_unclipped": true,
+      "300dpi": true,
+      "png_unchanged": true
+    },
+    "teacher_reviewed": false,
+    "published": false,
+    "approval_pending": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
