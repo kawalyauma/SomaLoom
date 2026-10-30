@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-30T03:43:15.302459+00:00",
+  "image_request_id": "50fd32f1-e15a-4ea3-be1a-a69433b6997e",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "block_id": "61d560f6-bd19-449d-b26a-3e6422623b79",
+  "chat_url": "https://chatgpt.com/c/6ae40d60-c424-83ea-b7c4-1b88135da408",
+  "rejected_original": {
+    "image_request_id": "50fd32f1-e15a-4ea3-be1a-a69433b6997e",
+    "chat_url": "https://chatgpt.com/c/6ae40d60-c424-83ea-b7c4-1b88135da408",
+    "mime": "image/png",
+    "width": 1491,
+    "height": 1055,
+    "alt": "Generated image 1",
+    "bytes": 1381159,
+    "sha256": "02358332867eb4cef1e370e44084e4b44d905276bbe4117baded41132e260b4c",
+    "transport": "Actual existing regular ChatGPT browser image artifact",
+    "tool_provenance": "Requires verification from saved response; do not conflate plotting tools with image generator",
+    "image_count": 1,
+    "downloaded_at": "2026-10-30T03:32:12.538Z",
+    "accuracy_review": "failed",
+    "rejection_reasons": [
+      "Equal-area shapes have visibly inconsistent raster areas: A approximately711x326/2 versus B553x485/2, about16% difference",
+      "Base-label ratio12:10 inconsistent with rasterbase ratio711:553; no explicit not-to-scale disclosure in image"
+    ]
+  },
+  "browser_state": "Stop0; blank persisted assistant response after safe completed-chat reload/hydration. Transient Loading response comparison cleared. No explicit generation error observed.",
+  "corrected_artifact_available": false,
+  "caption_available": false,
+  "imported": false,
+  "attached": false,
+  "document_version_unchanged": 10,
+  "waiting": {
+    "status": "waiting",
+    "chat_url": "https://chatgpt.com/c/6ae40d60-c424-83ea-b7c4-1b88135da408",
+    "error": "Saved correction has Stop0 and blank assistant response after one safe completed-chat reload and hydration check. Transient Loading response comparison cleared; no corrected PNG, caption, or explicit error returned. No import/attachment.",
+    "next_retry_at": "2026-10-30T03:58:05.651Z"
+  },
+  "coverage_sha256": "faf0c372548257f15faac00762c083d3ed67efe70141e3759f04185b1dd696d9",
+  "coverage_records_preserved": 565,
+  "teacher_reviewed": false,
+  "published": false
+}
