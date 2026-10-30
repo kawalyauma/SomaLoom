@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-30T06:48:24.255433+00:00",
+  "master_body_unchanged": null,
+  "image_request_queues": null,
+  "no_master_mutation": true,
+  "no_new_document_import": true,
+  "live_verification": "BLOCKED:HTTP401, browser shows sign-in. No login attempted."
+}

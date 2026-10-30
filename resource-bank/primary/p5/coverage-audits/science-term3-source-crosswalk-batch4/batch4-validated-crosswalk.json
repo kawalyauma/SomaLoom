@@ -1,0 +1,291 @@
+{
+  "batch_id": "p5-science-t3-alt56-crosswalk-4",
+  "entries": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-38",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "4cc5cf40-966b-5d38-82de-4bc26ed209cd",
+        "70573dac-3af0-524a-87fe-2feb9566cc12"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-18",
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-14"
+      ],
+      "alternative_support_quote": "Reasons for castration",
+      "master_support_quote": "-castration",
+      "allocation_relation": "unverified",
+      "notes": "The alternative addresses reasons for castration, continuing the preceding castration material. The master explicitly lists castration among sheep-management activities, while its pig-management source row only identifies management practices generally. The alternative does not explicitly identify an animal in this row. These are partial content candidates, not proof of pig-specific coverage. The particular reasons listed by the alternative are not stated in the master. No animal-specific identity or allocation is verified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-fc1a51bf789afdee",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ecdc7bc13e651b82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-39",
+      "relation": "no_candidate",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Digestive system of a pig.",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "The alternative explicitly identifies the digestive system of a pig. No supplied original master source row explicitly covers pig digestion or digestive-system anatomy. The master's external-parts and general management topics do not establish this internal anatomical content. No supported master topic ID is assigned. This source-coverage gap does not establish a required new lesson.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-40",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "b1b5be18-80bb-53ee-b606-f79048e81200"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-21"
+      ],
+      "alternative_support_quote": "Pig diseases\n\nAfrican swine fever\nFoot rot",
+      "master_support_quote": "Parasites and Diseases of pigs",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover diseases of pigs. The alternative lists individual diseases and addresses signs and symptoms, while the master identifies diseases, causes, signs and control measures without enumerating particular diseases. The listed disease examples and their scientific accuracy are not independently verified. Core topic identity is supported, but example-level coverage and timetable equivalence remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-163740c5aa6361e2"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-41",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "1e2dfa43-738e-5088-b917-e8b5b8f9354c"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-25"
+      ],
+      "alternative_support_quote": "Breast feeding\nDefinition\nAdvantages of breast feeding to the mother, baby and family\nDisadvantages of breast feeding",
+      "master_support_quote": "-Describes nutrition and breast feeding\n-explains advantages of breast feeding to the mother, baby and family\n-Tells the disadvantages of breast feeding.",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover breastfeeding, its definition, advantages and disadvantages. The master also includes nutrition in the same existing topic. This is a direct content match, not evidence for an additional lesson. Alternative WD=9 and PD=4 remain uninterpreted.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-c2a0f14988ca825e"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-42",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "7ead8997-4113-59bc-ac7a-8035b400c88b"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-26"
+      ],
+      "alternative_support_quote": "Bottle feeding\n\n-Definition\n-Advantages of bottle feeding",
+      "master_support_quote": "Bottle feeding\n\nConditions/factors that lead to bottle feeding.",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover bottle feeding, its definition, advantages and disadvantages. The master additionally identifies conditions or factors leading to bottle feeding. The alternative represents existing topic coverage and does not establish a new allocation.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-a40113a4603ba64a"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-43",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "5caa2889-8cfb-56c7-b70d-80814e191d70"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-27"
+      ],
+      "alternative_support_quote": "Vulnerable groups of people.\n\n-What vulnerable groups of people are.",
+      "master_support_quote": "Vulnerable groups of people  \n-elderly\n-the sick",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly address identifying vulnerable groups of people. The alternative additionally requests their meaning, whereas the master enumerates groups and specifies identification. This maps to the existing inferred identification topic, not the separate existing topic covering food for vulnerable groups and weaning. Exact definition coverage remains unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-5770ccabb92c476a"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-44",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "210f40aa-86f0-5101-bdfe-d44f92f5815c"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-27"
+      ],
+      "alternative_support_quote": "Food for vulnerable people:\n-breast feeding women,weaning children,pregnant women",
+      "master_support_quote": "- explains food for various vulnerable groups of people.",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly address food for vulnerable groups of people. The existing application subdivides master source row 27 into inferred identification and food/weaning topics. This alternative matches the food component. The alternative names particular groups, while the master source also identifies vulnerable groups and mentions weaning. No new topic count or timetable allocation is inferred.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-2188415d541decee"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-45",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "6a916658-e8d9-580e-8971-beae57994e14"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-28"
+      ],
+      "alternative_support_quote": "Traditional customs\n-What traditional customs are.\n-examples of traditional customs.",
+      "master_support_quote": "-explains what traditional customs and food taboos are.",
+      "allocation_relation": "unverified",
+      "notes": "The master explicitly mentions explaining traditional customs and food taboos in its subject competences, supporting overlap with the alternative's meaning and examples of traditional customs. However, the master's CONTENT cell lists food taboos rather than particular traditional customs. Specific traditional-custom examples are therefore unverified. This is partial coverage of an existing combined topic.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-9760b1ea8c838e9c"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-46",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "6a916658-e8d9-580e-8971-beae57994e14"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-28"
+      ],
+      "alternative_support_quote": "Advantages of traditional customs.\n-They encourage co-operation.",
+      "master_support_quote": "Traditional customs and food taboos",
+      "allocation_relation": "unverified",
+      "notes": "The original master identifies traditional customs alongside food taboos, establishing broad subject overlap. It does not explicitly cover advantages of traditional customs or the particular advantages listed in the alternative. The master's listed effects concern food taboos. No equivalence between advantages of customs and effects of food taboos is assumed.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-9760b1ea8c838e9c"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-47",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "6a916658-e8d9-580e-8971-beae57994e14"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-28"
+      ],
+      "alternative_support_quote": "Disadvantages of traditional customs",
+      "master_support_quote": "Traditional customs and food taboos",
+      "allocation_relation": "unverified",
+      "notes": "The master's combined subtopic explicitly names traditional customs, but its detailed content and stated effects concern food taboos rather than disadvantages of customs generally. The alternative's gender-related examples are not explicitly identified in the master. This is broad subject overlap, not confirmation of detailed coverage or a separate lesson.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-9760b1ea8c838e9c"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-48",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "6a916658-e8d9-580e-8971-beae57994e14"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-28"
+      ],
+      "alternative_support_quote": "Food taboos.\n-Definition\n-Examples  \n-Advantages\nEffects of food taboos.",
+      "master_support_quote": "Food taboos\n\nExamples of food taboos \n\nEffects of food taboos",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover food taboos, examples and effects. The alternative also mentions advantages and lists specific effects not individually enumerated in the master. Its SUB-TOPIC and subject-competence wording are internally awkward; the explicit CONTENT cell supports the topic match. Individual effects and asserted advantages remain unverified. Alternative rows 45\u201348 overlap the same existing master topic and are not four additional lessons.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-9760b1ea8c838e9c"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-49",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "dfad0b95-a7e3-50e6-89fd-0b397237b3d9"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-29"
+      ],
+      "alternative_support_quote": "Food consumption patterns.\n-Staple foods of different communities\nOther foods of Malnutritional diseases",
+      "master_support_quote": "Food consumption patterns in Uganda\n\nStaple foods of different regions",
+      "allocation_relation": "unverified",
+      "notes": "Food consumption patterns and staple foods directly overlap the existing master topic. However, the alternative combines this material with an explicit list of malnutritional diseases. No supplied master source row or existing topic allocation explicitly identifies malnutritional diseases as a separate subject. That component is unmatched. The alternative's merged wording is retained as an unresolved source inconsistency, and the disease classifications are not factually endorsed.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-f7de9ae1ccc4292a"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    }
+  ],
+  "gaps": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-38",
+      "type": "animal_specific_identity_unverified",
+      "notes": "The master explicitly lists castration for sheep and broadly identifies pig-management practices. It does not enumerate the alternative's reasons for castration or verify which animal the alternative row concerns."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-39",
+      "type": "explicit_content_not_found",
+      "notes": "No directly supported master topic covers the digestive system of a pig. No master topic ID or source row is assigned."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-40",
+      "type": "specific_content_unverified",
+      "notes": "The named pig diseases and their individual scientific accuracy are not verified by the master's general diseases-of-pigs source row."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-43",
+      "type": "specific_content_unverified",
+      "notes": "The alternative explicitly requests the meaning of vulnerable groups, while the master explicitly identifies the groups without giving a definition."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-45",
+      "type": "specific_content_unverified",
+      "notes": "The master names traditional customs in its competences but does not explicitly enumerate examples of customs in its content."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-46",
+      "type": "specific_content_unverified",
+      "notes": "Advantages of traditional customs are not explicitly listed in the master. General references to customs do not verify the alternative's claimed advantages."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-47",
+      "type": "specific_content_unverified",
+      "notes": "Disadvantages of traditional customs, including the alternative's gender-related examples, are not explicitly detailed in the master."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-48",
+      "type": "specific_content_unverified",
+      "notes": "The alternative's individual effects and claimed advantages of food taboos are not enumerated in the master. The alternative contains internally awkward wording that is preserved without correction."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-49",
+      "type": "mixed_content_partial_match",
+      "notes": "The food-consumption and staple-food components match the existing master topic. The alternative's malnutritional-disease component lacks explicit corresponding master source-row evidence. The source combines these subjects in one row, and the listed disease classifications are not independently verified."
+    }
+  ],
+  "notes": [
+    "Read-only source-content crosswalk for exactly 12 alternative DOCX rows, original table 1 rows 38\u201349. The preceding 36 reviewed alternative rows remain unchanged and are not repeated. The remaining 8 alternative rows are untouched.",
+    "The data packet's task field incorrectly refers to batch 3 and rows 26\u201337. The explicit current request, supplied alternative row keys and batch identifier consistently establish batch 4, rows 38\u201349. No prior batch is repeated.",
+    "Master source: Victorious Education Services, Science Scheme of Work for Primary Five, Term Three 2017. Alternative source: Mother Majeri Primary School, P.5 Science Scheme of Work Term III, 2019. These are school-specific variants, not verified official curriculum documents. No official curriculum endorsement is claimed.",
+    "Comparison is based on the supplied cached literal source cells and existing application master topic inventory. The data packet states that the live master body could not be rechecked because the session returned HTTP 401. No claim of current live-master equivalence, fresh DOCX extraction or independent hash verification is made for this batch.",
+    "The original master source contains 34 literal data rows, and the supplied existing application master inventory contains 34 Term III allocations. These are existing inventory figures. Raw source rows do not represent newly required lesson counts.",
+    "Alternative WD and PD values remain literal and uncertain. WD is not interpreted as week. Original master blank WK cells remain blank. No weeks, lessons, timetable positions or allocations have been inferred, filled, replaced or shifted.",
+    "All 12 allocation_relation fields remain unverified. Content identity alone does not establish timetable equivalence, official curriculum alignment, completeness of source details or scientific accuracy.",
+    "Alternative row 38 shares partial procedural subject matter with existing management topics. Its animal-specific meaning and detailed reasons remain unresolved. Alternative row 39 has no explicitly corresponding master topic.",
+    "Alternative rows 41 and 42 correspond directly to existing breastfeeding and bottle-feeding topics. Alternative rows 43 and 44 correspond to the two existing inferred subdivisions of master source row 27, concerning vulnerable-group identification and food/weaning respectively.",
+    "Alternative rows 45\u201348 refer to aspects of traditional customs and food taboos represented under one existing master topic and master source row 28. These four alternative source rows do not establish four new lessons.",
+    "Alternative row 49 combines food consumption patterns, which are explicitly present in the master, with malnutritional diseases, which are not explicitly represented in the supplied master inventory. The unmatched component is a source-coverage gap, not proof that an additional lesson is required.",
+    "No educational notes, examples, questions, answers, learning outcomes, new schemes or timetable allocations were generated. No import, master replacement, database mutation, publication or approval was performed."
+  ]
+}

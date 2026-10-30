@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-10-30T06:50:00.329953+00:00",
+  "grade": "P5",
+  "subject": "Integrated Science",
+  "term": 3,
+  "batch_id": "p5-science-t3-alt56-crosswalk-4",
+  "purpose": "Read-only source-variant comparison, not learner content or timetable generation",
+  "chat_url": "https://chatgpt.com/c/6ae42278-b3fc-83ea-95db-6f40f147bec0",
+  "master_source_sha256": "e15c6ae606c135a790cf5e84b3cf03e9d3e91a6f3f64865ccf40b9a02514bb2f",
+  "master_source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1532eb125052ce055bcf1304195190499c2507d6/p.5%20science%20scheme%20term%203....new.docx",
+  "alternative_source_sha256": "fd7d0f727c829cf067c2e403701eab00a3b240e09638dcc6c3cac13c63fd954b",
+  "alternative_source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/22d09e397bdf508751d5727cf98809f1d9f1e795/P.5%20SCIENCE%20SCHEME%20OF%20WORK%20TERM%203.docx",
+  "literal_alternative_rows": 56,
+  "source_rows_compared_in_batch": 12,
+  "source_table_rows_in_batch": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "cumulative_source_rows_compared": 48,
+  "source_rows_remaining_uncompared": 8,
+  "relation_counts": {
+    "partial_overlap": 5,
+    "no_candidate": 1,
+    "same_topic": 6
+  },
+  "variant_observations_in_batch": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-38",
+      "type": "animal_specific_identity_unverified",
+      "notes": "The master explicitly lists castration for sheep and broadly identifies pig-management practices. It does not enumerate the alternative's reasons for castration or verify which animal the alternative row concerns."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-39",
+      "type": "explicit_content_not_found",
+      "notes": "No directly supported master topic covers the digestive system of a pig. No master topic ID or source row is assigned."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-40",
+      "type": "specific_content_unverified",
+      "notes": "The named pig diseases and their individual scientific accuracy are not verified by the master's general diseases-of-pigs source row."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-43",
+      "type": "specific_content_unverified",
+      "notes": "The alternative explicitly requests the meaning of vulnerable groups, while the master explicitly identifies the groups without giving a definition."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-45",
+      "type": "specific_content_unverified",
+      "notes": "The master names traditional customs in its competences but does not explicitly enumerate examples of customs in its content."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-46",
+      "type": "specific_content_unverified",
+      "notes": "Advantages of traditional customs are not explicitly listed in the master. General references to customs do not verify the alternative's claimed advantages."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-47",
+      "type": "specific_content_unverified",
+      "notes": "Disadvantages of traditional customs, including the alternative's gender-related examples, are not explicitly detailed in the master."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-48",
+      "type": "specific_content_unverified",
+      "notes": "The alternative's individual effects and claimed advantages of food taboos are not enumerated in the master. The alternative contains internally awkward wording that is preserved without correction."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-49",
+      "type": "mixed_content_partial_match",
+      "notes": "The food-consumption and staple-food components match the existing master topic. The alternative's malnutritional-disease component lacks explicit corresponding master source-row evidence. The source combines these subjects in one row, and the listed disease classifications are not independently verified."
+    }
+  ],
+  "cumulative_variant_observations": 31,
+  "master_body_unchanged": null,
+  "live_verification": "BLOCKED:HTTP401, browser shows sign-in. No login attempted.",
+  "image_request_queues": null,
+  "all_allocation_relations": "unverified",
+  "source_row_count_is_not_lesson_count": true,
+  "no_new_missing_lesson_count_asserted": true,
+  "canonical_records_preserved": 565,
+  "global_gaps_preserved": 56,
+  "teacher_reviewed": false,
+  "published": false
+}
