@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-30T02:36:29.282346+00:00",
+  "image_request_id": "91d8f1d2-3abc-48e2-9553-db497c617c37",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "block_id": "4e081c00-0663-474e-bcd1-29922092ff12",
+  "chat_url": "https://chatgpt.com/c/6ae40024-71e4-83e9-bd18-96d14338325b",
+  "first_artifact": {
+    "image_request_id": "91d8f1d2-3abc-48e2-9553-db497c617c37",
+    "chat_url": "https://chatgpt.com/c/6ae40024-71e4-83e9-bd18-96d14338325b",
+    "mime": "image/png",
+    "width": 1491,
+    "height": 1055,
+    "alt": "Generated image 1",
+    "bytes": 1093799,
+    "sha256": "6a5d177441f1e4eef36746bb2cf5fbe45d854ff2cea87df5016e6cb015b723ac",
+    "transport": "Actual existing regular ChatGPT browser image artifact",
+    "tool_provenance": "Requires verification from saved response; do not conflate plotting tools with image generator",
+    "image_count": 1,
+    "downloaded_at": "2026-10-30T02:26:43.915Z",
+    "accuracy_review": "failed",
+    "rejection_reasons": [
+      "Outer raster approximately886x570 ratio1.554 rather than12/8=1.5",
+      "Inner raster approximately476x286 ratio1.664 rather than6/4=1.5; width is not half outer width at same scale"
+    ]
+  },
+  "persisted_correction_error": "Something went wrong while generating your image. Sorry about that.",
+  "corrected_png_available": false,
+  "caption_available": false,
+  "imported": false,
+  "attached": false,
+  "document_version_unchanged": 6,
+  "waiting": {
+    "status": "waiting",
+    "chat_url": "https://chatgpt.com/c/6ae40024-71e4-83e9-bd18-96d14338325b",
+    "error": "Persisted same-chat correction response: Something went wrong while generating your image. No corrected PNG or caption returned. First PNG rejected for inconsistent outer/inner scale; no import/attachment.",
+    "next_retry_at": "2026-10-30T03:06:21.180Z"
+  },
+  "teacher_reviewed": false,
+  "published": false
+}
