@@ -1,0 +1,118 @@
+{
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "base_version": 2,
+  "title": null,
+  "section_updates": [
+    {
+      "section_key": "references",
+      "audience": "teacher"
+    }
+  ],
+  "block_updates": [
+    {
+      "block_id": "1ed7527f-3054-42f8-a0bc-1803fbf4fd94",
+      "caption": "Rectangle ABCD showing its length, width, area and perimeter."
+    },
+    {
+      "block_id": "369c66b0-e6de-40f7-a01b-a9cd321b37b8",
+      "text": "Important mathematical words used throughout the week."
+    },
+    {
+      "block_id": "04e1b1ed-1613-436c-bf25-e6c2ac42c50c",
+      "text": "Working materials: exercise books, pencils, rulers, squared paper and teacher-drawn figures. Attempt the questions independently after discussing one example with a partner. Measure lines carefully, show mathematical working, and compare methods respectfully."
+    },
+    {
+      "block_id": "8b6af0ca-3546-4a07-b2d0-33e8c8872738",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "e5d5cbcd-19c2-43ee-b6aa-31d76c6c5081",
+      "audience": "teacher",
+      "outcome_ids": []
+    },
+    {
+      "block_id": "54202189-4a45-4120-a632-0f52d499f5e5",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "e1378cd6-e061-4dc8-a23d-f0309929635e",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "d8c15daf-c464-4dac-83c4-ba313bcab8d7",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "0c3c4cd4-947a-458d-8d72-6cd3be39503e",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "639679ff-c0c1-4b4c-9a3b-643b5950cb6d",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "4d9b7440-827e-4289-8f75-91c96fabfbb6",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "aa26540c-0222-42c0-98bc-1f8d6efda5d6",
+      "audience": "teacher"
+    },
+    {
+      "block_id": "5c6db49a-7ba9-4e43-95d4-a153ce82be9a",
+      "audience": "teacher",
+      "outcome_ids": []
+    }
+  ],
+  "block_splits": [
+    {
+      "block_id": "708924d0-925d-4f3a-9e0a-58120b201598",
+      "audience": "teacher",
+      "parts": [
+        {
+          "text": "Lesson 1: A = 36 cm², P = 26 cm; B = 360 m², P = 78 m; C = length 12 cm, area 96 cm²; D = x = 6, common side 19 cm.",
+          "outcome_ids": [
+            "1d21a846-6b85-553c-b1c2-8e9e0c3dc6eb"
+          ]
+        },
+        {
+          "text": "Lesson 2: A = 12 cm; B = 10 m; C = 13 cm; D = 2 cm on each of the four sides.",
+          "outcome_ids": [
+            "c1077b07-ad80-5268-bd95-d13eb9794243"
+          ]
+        },
+        {
+          "text": "Lesson 3: A = 200 cm²; B = 128 cm²; C = 48 cm²; D = use subtraction for a whole figure with holes, or addition for separated non-overlapping shaded pieces.",
+          "outcome_ids": [
+            "a9411c35-0734-55c2-9147-2ae976cf9a96"
+          ]
+        },
+        {
+          "text": "Lesson 4: A = 8 cm; B = 15 m; C = 12 cm; D = the perpendicular is at 90 degrees to the base.",
+          "outcome_ids": [
+            "5a0ad1d7-c880-5d5b-b697-5cd67253f7a9"
+          ]
+        },
+        {
+          "text": "Lesson 5: A = 8 cm; B = 12 m; C = 12 cm; D = answers vary; compare base × height products.",
+          "outcome_ids": [
+            "760db174-05d2-5e71-8f9d-e52edcb09f6b"
+          ]
+        },
+        {
+          "text": "Lesson 6: A = 98 cm²; B = 240 m²; C = 5,000 cm²; D = 55 cm²; E = two congruent trapezia form a parallelogram with double the original trapezium area.",
+          "outcome_ids": [
+            "7428b1b5-b699-5be6-801b-0ed10e266244"
+          ]
+        }
+      ]
+    }
+  ],
+  "block_moves": [
+    {
+      "block_id": "04e1b1ed-1613-436c-bf25-e6c2ac42c50c",
+      "to_section_key": "prior_knowledge"
+    }
+  ],
+  "notes": []
+}

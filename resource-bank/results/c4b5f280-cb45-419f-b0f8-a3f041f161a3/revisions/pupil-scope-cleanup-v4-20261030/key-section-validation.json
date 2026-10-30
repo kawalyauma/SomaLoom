@@ -1,0 +1,12 @@
+{
+  "base_version": 3,
+  "moved_teacher_blocks": 16,
+  "all_content_block_objects_identical": true,
+  "all_ids_and_mappings_unchanged": true,
+  "pupil_revision_questions_order_unchanged": true,
+  "teacher_blocks_relative_order_unchanged": true,
+  "all_visual_assets_and_pending_placeholders_unchanged": true,
+  "source_caption_and_worked_examples_unchanged": true,
+  "teacher_reviewed": false,
+  "published": false
+}

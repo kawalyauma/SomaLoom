@@ -1,0 +1,21 @@
+{
+  "base_version": 2,
+  "block_updates": 13,
+  "teacher_answer_parts": 6,
+  "all_original_answer_text_and_order_preserved": true,
+  "answers_teacher_only": true,
+  "answer_outcomes_match_existing_lesson_labels": true,
+  "administrative_outcome_links_cleared": [
+    "5c6db49a-7ba9-4e43-95d4-a153ce82be9a",
+    "e5d5cbcd-19c2-43ee-b6aa-31d76c6c5081"
+  ],
+  "common_preparation_moved_to_administrative_section": true,
+  "figure_asset_and_mapping_unchanged": true,
+  "caption_only_figure_change": true,
+  "five_pending_visuals_unchanged": true,
+  "all_worked_examples_unchanged": true,
+  "all_other_blocks_unchanged": true,
+  "citations_equations_tables_preserved": true,
+  "teacher_reviewed": false,
+  "published": false
+}

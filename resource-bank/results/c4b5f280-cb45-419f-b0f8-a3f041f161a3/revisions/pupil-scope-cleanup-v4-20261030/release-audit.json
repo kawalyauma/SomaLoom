@@ -1,0 +1,215 @@
+{
+  "request_id": "c4b5f280-cb45-419f-b0f8-a3f041f161a3",
+  "issue": 140,
+  "chat_url": "https://chatgpt.com/c/6ae389de-e4bc-83e9-9e5b-1a086ee66d9e",
+  "authorship": "Original regular browser ChatGPT authored pupil text, caption and structural repair. Codex mechanically validated/applied; no new educational questions/answers/notes/images.",
+  "initial_base_version": 2,
+  "initial_cleanup_receipt": {
+    "id": "724523bf-84b5-4e39-8411-94fe732d11f0",
+    "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+    "version": 3,
+    "review_state": "draft"
+  },
+  "final_receipt": {
+    "id": "0b5eb3f0-ed95-4f0d-957e-4a8e53312a7a",
+    "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+    "version": 4,
+    "review_state": "draft"
+  },
+  "content_validation": {
+    "base_version": 2,
+    "block_updates": 13,
+    "teacher_answer_parts": 6,
+    "all_original_answer_text_and_order_preserved": true,
+    "answers_teacher_only": true,
+    "answer_outcomes_match_existing_lesson_labels": true,
+    "administrative_outcome_links_cleared": [
+      "5c6db49a-7ba9-4e43-95d4-a153ce82be9a",
+      "e5d5cbcd-19c2-43ee-b6aa-31d76c6c5081"
+    ],
+    "common_preparation_moved_to_administrative_section": true,
+    "figure_asset_and_mapping_unchanged": true,
+    "caption_only_figure_change": true,
+    "five_pending_visuals_unchanged": true,
+    "all_worked_examples_unchanged": true,
+    "all_other_blocks_unchanged": true,
+    "citations_equations_tables_preserved": true,
+    "teacher_reviewed": false,
+    "published": false
+  },
+  "structural_validation": {
+    "base_version": 3,
+    "moved_teacher_blocks": 16,
+    "all_content_block_objects_identical": true,
+    "all_ids_and_mappings_unchanged": true,
+    "pupil_revision_questions_order_unchanged": true,
+    "teacher_blocks_relative_order_unchanged": true,
+    "all_visual_assets_and_pending_placeholders_unchanged": true,
+    "source_caption_and_worked_examples_unchanged": true,
+    "teacher_reviewed": false,
+    "published": false
+  },
+  "initial_v3_teacher_key_qa": "FAILED: live heading-owner grouping dropped later teacher keys; pupil PDF clean. Failure diagnosed, not claimed passed.",
+  "structural_remedy": "Moved16existingteacher-only revision blocks into separate teacher_key section via ChatGPT; all content block objects identical, no shared exporter code changed.",
+  "final_v4_http": {
+    "checked_at": "2026-10-30T00:25:18.469Z",
+    "results": [
+      {
+        "name": "week2-lesson1-student-draft-v4",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 2,
+          "lesson": 1,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 103037,
+        "sha256": "b253400a8c33473c1276ee25f9bf763477877fdf4819498fcbfc652b44f924b5",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week2-lesson1-teacher-draft-v4",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "teacher",
+          "week": 2,
+          "lesson": 1,
+          "edition": "draft"
+        },
+        "status": 200,
+        "mime": "application/pdf",
+        "edition": "draft",
+        "cache": "no-store",
+        "bytes": 104565,
+        "sha256": "07b59d54945ef91fe0e1c8b29625c441159862055570c4aee1e78685c9db707a",
+        "is_pdf": true,
+        "approval_pending": true
+      },
+      {
+        "name": "week2-lesson2-missing-image-v4",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 2,
+          "lesson": 2,
+          "edition": "draft"
+        },
+        "status": 422,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 156,
+        "sha256": "907f3cc13df3ae349804e512e328df4521c0dee19eb4bed30df93bf12db4b3ff",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_422\",\"message\":\"Missing visual asset: editorial review required\",\"details\":null},\"request_id\":\"e1944af7-5dbe-4249-853d-2a11d8239428\"}"
+      },
+      {
+        "name": "week2-weekly-missing-images-v4",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 2,
+          "edition": "draft"
+        },
+        "status": 422,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 156,
+        "sha256": "a9bfde234587c01edef5b1bed06f8d60b9c2c3c9b2c745ba6745072fb32d2630",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_422\",\"message\":\"Missing visual asset: editorial review required\",\"details\":null},\"request_id\":\"0faaf22a-e7fa-4a3b-b7bd-cdec5342aad4\"}"
+      },
+      {
+        "name": "week2-approved-denial-v4",
+        "scope": {
+          "grade": "P6",
+          "subject": "Mathematics",
+          "term": 3,
+          "audience": "student",
+          "week": 2,
+          "edition": "approved"
+        },
+        "status": 409,
+        "mime": "application/json",
+        "cache": "no-store",
+        "bytes": 177,
+        "sha256": "a49312835dc56b80bf6e7ce831d5249a74c37df2fe5ee96a5bd2828cfc3470a6",
+        "is_pdf": false,
+        "approval_pending": true,
+        "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 2 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"44d2e9fd-0f4c-421c-bbed-2dddfb894d35\"}"
+      }
+    ]
+  },
+  "final_v4_file_inspection": {
+    "files": [
+      {
+        "file": "week2-lesson1-student-draft-v4.pdf",
+        "student": true,
+        "pages": 3,
+        "images": 1,
+        "staff_or_key_markers": [],
+        "uuid_count": 0,
+        "url_count": 0,
+        "both_original_worked_example_paragraphs_exactly_present": true,
+        "off_page_text_spans": 0,
+        "pupil_text_unchanged_after_teacher_section_move": true
+      },
+      {
+        "file": "week2-lesson1-teacher-draft-v4.pdf",
+        "student": false,
+        "pages": 4,
+        "images": 1,
+        "staff_or_key_markers": [
+          "Evidence IDs",
+          "Evidence IDs",
+          "Evidence IDs",
+          "LESSON 1 ANSWERS",
+          "Lesson 1: A ="
+        ],
+        "uuid_count": 3,
+        "url_count": 0,
+        "both_original_worked_example_paragraphs_exactly_present": true,
+        "off_page_text_spans": 0,
+        "both_Lesson1_revision_and_activity_keys_exactly_retained": true
+      }
+    ],
+    "lesson1_student_key_process_scan": "PASSED",
+    "lesson1_teacher_key_retention_and_scope": "PASSED exact original revision+activity keys and no otherlesson keys",
+    "worked_examples_preserved": "PASSED exact paragraphs",
+    "source_activity_key_arithmetic_checks": 4,
+    "full_week_render_verified": false,
+    "five_missing_visuals": 5,
+    "teacher_reviewed": false,
+    "published": false
+  },
+  "pending_image_queue": {
+    "ids": [
+      "33d50eb1-ec35-479a-ad14-c0eee085e7d3",
+      "50fd32f1-e15a-4ea3-be1a-a69433b6997e",
+      "5a703eaf-9caf-48cd-acda-8875fcf59a4e",
+      "8689ed71-6426-4d1a-af6d-9a709b23ccfb",
+      "91d8f1d2-3abc-48e2-9553-db497c617c37"
+    ],
+    "pending_count": 5,
+    "ids_unchanged": true,
+    "duplicates_created": false
+  },
+  "full_week_content_render_verification": "BLOCKED by5missing visual assets; only Lesson1pupil/key checked",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
