@@ -1,0 +1,10 @@
+{
+  "image_request_id": "30de4a8f-1326-4b24-998a-094ad9326635",
+  "http_status": 200,
+  "sha256": "5fc97a4db0868fe65b9024b833f86a9fb62fbb7d5ca9065ce4b69bc95fc07aa4",
+  "bytes": 43923,
+  "mime": "image/png",
+  "versioned_content_retrievable": true,
+  "checked_at": "2026-10-30T00:05:03.815Z",
+  "pixels_match_verified_chatgpt_original": true
+}

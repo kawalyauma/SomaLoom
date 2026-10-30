@@ -1,0 +1,46 @@
+{
+  "image_request_id": "30de4a8f-1326-4b24-998a-094ad9326635",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "source_block_id": "1ed7527f-3054-42f8-a0bc-1803fbf4fd94",
+  "chat_url": "https://chatgpt.com/c/6ae3dd4f-4960-83ea-88bd-21faffcead31",
+  "authorship": "ChatGPT Python/Pillow authored corrected12x5 rectangle with attached right-angle markers, dimensions, separate perimeter trace and print polish",
+  "original_sha256": "0e9134c1806827fb705a90122da8a93b2d40f486bfa8432d8c5bb16f6eb4f7b3",
+  "accuracy_check": {
+    "checked_at": "2026-10-30T00:04:57.981935+00:00",
+    "source_block_id": "1ed7527f-3054-42f8-a0bc-1803fbf4fd94",
+    "method": "Actual ChatGPT Pillow PNG hash/geometry/marker pixel checks and visual dimension-label/trace inspection",
+    "source_side_dimensions_cm": {
+      "AB": 12,
+      "DC": 12,
+      "AD": 5,
+      "BC": 5
+    },
+    "rectangle_outer_bounds_px": [
+      252,
+      328,
+      2652,
+      1328
+    ],
+    "pixels_per_cm": 200,
+    "width_height_ratio": 2.4,
+    "corner_labels_ABCD_correct": true,
+    "four_attached_right_angle_markers": true,
+    "both_12cm_and_both_5cm_labels_present": true,
+    "interior_area_label": true,
+    "separate_four_side_perimeter_trace": true,
+    "label_arrowheads_do_not_overlap": true,
+    "modest_unclipped_margins": true,
+    "original_dpi": [
+      299.9994,
+      299.9994
+    ],
+    "authorship": "Existing regular ChatGPT Chat authored precise Pillow correction and print polish; Codex inspected only",
+    "accuracy_check": "passed",
+    "teacher_reviewed": false,
+    "published": false,
+    "approval_pending": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
