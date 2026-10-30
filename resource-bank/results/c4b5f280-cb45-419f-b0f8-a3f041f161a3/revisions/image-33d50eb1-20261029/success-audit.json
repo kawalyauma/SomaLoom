@@ -1,0 +1,123 @@
+{
+  "image_request_id": "33d50eb1-ec35-479a-ad14-c0eee085e7d3",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "source_block_id": "a68419cc-879a-4cff-871a-f8aca4df9a82",
+  "chat_url": "https://chatgpt.com/c/6ae41837-0030-83e9-a2db-e9bde7d2d192",
+  "authorship": "Regular ChatGPT Chat Python/Pillow, disclosed by saved response. Codex inspected/validated only.",
+  "original_sha256": "6666dcf985bcf825f1b0172b854e1c7e36d835d2b4918fed1258f202efbcaaef",
+  "accuracy_check": {
+    "status": "passed",
+    "checked_at": "2026-10-30T04:19:29.845783+00:00",
+    "sha256": "6666dcf985bcf825f1b0172b854e1c7e36d835d2b4918fed1258f202efbcaaef",
+    "image_size": [
+      3100,
+      1110
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "authorship": "Regular ChatGPT Chat Python/Pillow, disclosed by saved response. Codex inspected/validated only.",
+    "geometry": {
+      "source_trapezium_pixel_vertices": [
+        [
+          180,
+          708
+        ],
+        [
+          312,
+          312
+        ],
+        [
+          840,
+          312
+        ],
+        [
+          1104,
+          708
+        ]
+      ],
+      "joined_copy1": [
+        [
+          1290,
+          708
+        ],
+        [
+          1422,
+          312
+        ],
+        [
+          1950,
+          312
+        ],
+        [
+          2214,
+          708
+        ]
+      ],
+      "joined_copy2": [
+        [
+          1950,
+          312
+        ],
+        [
+          2874,
+          312
+        ],
+        [
+          2742,
+          708
+        ],
+        [
+          2214,
+          708
+        ]
+      ],
+      "outer_parallelogram": [
+        [
+          1290,
+          708
+        ],
+        [
+          1422,
+          312
+        ],
+        [
+          2874,
+          312
+        ],
+        [
+          2742,
+          708
+        ]
+      ],
+      "common_pixels_per_cm": 66,
+      "raster_stroke_tolerance_px": 4,
+      "copy_area_px2": 287496.0,
+      "union_area_px2": 574992.0,
+      "rotation180_transform_xy": [
+        "4164-x",
+        "1020-y"
+      ]
+    },
+    "checks": {
+      "actual_raster_edges_match_verified_vertices": true,
+      "8_14_6_and22cm_labels_visually_checked": true,
+      "common_scale": true,
+      "copies_congruent": true,
+      "rotation180_matches": true,
+      "shared_boundary_no_gap_or_overlap": true,
+      "union_is_parallelogram": true,
+      "distinct_hatching_visually_checked": true,
+      "height_perpendicular_right_angle_markers": true,
+      "sloping_sides_not_labelled6cm": true,
+      "original_png_unchanged": true
+    },
+    "teacher_reviewed": false,
+    "published": false,
+    "approval_pending": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}

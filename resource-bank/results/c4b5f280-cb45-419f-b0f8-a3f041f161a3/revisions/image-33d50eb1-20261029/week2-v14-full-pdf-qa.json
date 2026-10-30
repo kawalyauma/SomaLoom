@@ -1,0 +1,302 @@
+{
+  "checked_at": "2026-10-30T04:21:11.720920+00:00",
+  "document_version": 14,
+  "pdf_results": [
+    {
+      "name": "week2-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "draft"
+      },
+      "pages": 19,
+      "images": 6,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 15,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "edition": "draft"
+      },
+      "pages": 23,
+      "images": 6,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 15,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson6-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson6-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson1-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson1-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson2-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson2-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson3-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson3-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson4-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson4-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson5-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    },
+    {
+      "name": "week2-lesson5-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_excluded_marker_hits": [],
+      "worked_example_paragraphs_expected": 2,
+      "worked_example_paragraphs_missing": [],
+      "teacher_lesson_keys_missing": [],
+      "unrelated_keys": []
+    }
+  ],
+  "http_tests_completed": 15,
+  "expected_http_tests": 15,
+  "all14_pdf_downloads_200": true,
+  "approved_denial_409": true,
+  "automated_qa_failed": [],
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true,
+  "limitation": "Scope/key/provenance/layout checks do not establish full curriculum alignment or mathematical correctness of every passage.",
+  "visual_samples": [
+    "Lesson6 figure page",
+    "weekly pupil page10 fresh final render",
+    "weekly pupil page19"
+  ],
+  "visual_sample_result": "Readable, no clipped labels/text in inspected final renders; sparse final weekly page remains.",
+  "last_figure_imported_pixels_identical": true,
+  "caption_only_server_diff_passed": true,
+  "source_alignment": "NOT fully verified; teacher review remains pending"
+}

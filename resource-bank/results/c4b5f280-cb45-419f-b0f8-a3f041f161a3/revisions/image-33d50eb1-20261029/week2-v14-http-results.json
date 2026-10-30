@@ -1,0 +1,302 @@
+{
+  "checked_at": "2026-10-30T04:21:04.060Z",
+  "results": [
+    {
+      "name": "week2-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 1131224,
+      "sha256": "ce4fe40f4391586ea6f585722b22a1d4f35b85d37f4e4ce659903a467d80b46f",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 1139777,
+      "sha256": "2d5c65c58e58c122cda3d270411d2dddeb77ee2e925da31b52bb16ac22fae4c8",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson6-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 95257,
+      "sha256": "ff4001ff792e6c9f0b80735eb9ef44b5078aaa9b6eca268dcc02533c3ef18885",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson6-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 95789,
+      "sha256": "365460625676bf60de90bcf4e5051bcb50fc6b4ed62b34a73042c4eaf2823172",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson1-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 103037,
+      "sha256": "efdf2a577e283759c4bd91010aa3f860b83bcd58a10782e054946d1b12dde8ed",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson1-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 104565,
+      "sha256": "3db67481284deefdb9444e84eeec3dfa00a571b23baedeb32f984992f18b4578",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson2-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 86904,
+      "sha256": "7655fc02d75ad09d7a281f51c42ece50262ad0bdc3085900f2981f1280be1ee6",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson2-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 87389,
+      "sha256": "66fe2da9eb58b8a53a2c6e7322b2770c08802adabf4bbd810025b32761aae59f",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson3-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 102373,
+      "sha256": "3852a69def8239b3128495b08da429c007b309f49f8865aea412e3a62234ebf8",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson3-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 103631,
+      "sha256": "d68781d160a84c1a8dd0d024faf8a6480265e1b51c1159fb7ab31c1e78713e5a",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson4-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 863511,
+      "sha256": "77b5f4c4d7f56a469f94ab9eff32ccdd676eb10b572975a5110af7129715d5eb",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson4-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 863997,
+      "sha256": "7e81081a3548fe14346e9a5065353732fb139b6b33a05ebfb70d4d052d82a6c4",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson5-student-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 95425,
+      "sha256": "ac26db41e7db4513733cbb962c63bb49af39e312d6069f4dac469b714c38cc9d",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson5-teacher-draft-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 96021,
+      "sha256": "9a49065ca77372ba073a952323ab1e37d54335e5791fb64223bacbf0587bbb2c",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-approved-denial-v14",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "approved"
+      },
+      "status": 409,
+      "mime": "application/json",
+      "cache": "no-store",
+      "bytes": 177,
+      "sha256": "03dda5097bc45577e9b7b0b1e0af895f8b39a742f88b495ee13b2edb3c9d55dc",
+      "is_pdf": false,
+      "approval_pending": true,
+      "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 2 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"4816a309-3cda-4e29-9234-f9fb276b1f75\"}"
+    }
+  ]
+}
