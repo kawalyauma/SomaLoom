@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-30T05:04:58.206Z",
+  "master_id": "cd4991af-350f-567a-ba98-11f1fc98e322",
+  "master_body_unchanged": true,
+  "image_request_queues": {
+    "generating": [],
+    "waiting": [],
+    "prompt_ready": []
+  },
+  "no_master_mutation": true,
+  "no_new_document_import": true
+}

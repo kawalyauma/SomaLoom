@@ -1,0 +1,296 @@
+{
+  "batch_id": "p5-science-t3-alt56-crosswalk-3",
+  "entries": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-26",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "f0c5f050-cfae-5a60-8f77-469657094eae"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-12"
+      ],
+      "alternative_support_quote": "Products got from sheep.",
+      "master_support_quote": "Importance of keeping sheep",
+      "allocation_relation": "unverified",
+      "notes": "Sheep products have a conceptual relationship to the importance of keeping sheep. The master does not explicitly list mutton, wool, skins or hooves. Product-level coverage remains unverified. This is not evidence of a new required lesson.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8f50031d60ffe2f1"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-27",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "40fb71e2-4b3a-5556-a11b-470d285cdb1e"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-15"
+      ],
+      "alternative_support_quote": "Diseases that attack sheep.\nBrucellosis\nLamb dysentery",
+      "master_support_quote": "Diseases of Goats and Sheep",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover sheep diseases. The existing master topic addresses diseases, causes and signs. The alternative lists named diseases not individually identified in the master. The alternative is sheep-specific, while the master combines goats and sheep. Named-disease equivalence and timetable placement remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-038117b5bed05013"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-28",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "ed3d6134-2c02-5c81-aaa1-f778c27701be"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-15"
+      ],
+      "alternative_support_quote": "Prevention and control of sheep diseases.",
+      "master_support_quote": "their control measures.",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly address control of sheep diseases. The master covers goats and sheep together and its existing app allocation for control measures is an inferred subdivision. The alternative specifically addresses sheep. No new allocation or additional lesson is established.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-038117b5bed05013"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-29",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "70573dac-3af0-524a-87fe-2feb9566cc12"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-14"
+      ],
+      "alternative_support_quote": "Docking of sheep\n-What docking is.\n-reasons for docking sheep",
+      "master_support_quote": "-docking",
+      "allocation_relation": "unverified",
+      "notes": "Docking is explicitly identified among the master's sheep-management activities. The alternative expands it into meaning and reasons, which are not individually specified in the master. This is a direct match to part of an existing topic, not a separate lesson requirement.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ecdc7bc13e651b82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-30",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "83d907cb-843e-59b0-bde5-2b7d52b38e77"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-16"
+      ],
+      "alternative_support_quote": "External parts of a pig.\nleg \near\nrump",
+      "master_support_quote": "External parts of a pig",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover external parts of pigs. The alternative also mentions uses of pigs in its subject competences, corresponding broadly to the master's importance component. Individual anatomical labels are not enumerated in the master. Core topic identity is supported without verifying each label.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-cddcc4576662078f"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-31",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "8950da26-6b12-5aa6-a70a-77d39640e822"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-17"
+      ],
+      "alternative_support_quote": "Local breeds of pigs\n-What local breeds of pigs are.",
+      "master_support_quote": "Breeds of pigs\n-Local breeds",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover local breeds of pigs. The alternative supplies named examples and characteristics not individually enumerated in the master. The classification and accuracy of those examples are not independently verified by this content-identity audit. The master also covers exotic breeds and crossbreeds.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-7c880c732e195e33"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-32",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "8950da26-6b12-5aa6-a70a-77d39640e822"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-17"
+      ],
+      "alternative_support_quote": "Exotic breeds of pigs\nWhat exotic breeds of pigs ?",
+      "master_support_quote": "Breeds of pigs\n-Local breeds\n-Exotic breeds",
+      "allocation_relation": "unverified",
+      "notes": "The alternative SUB-TOPIC cell says 'Exotic breeds of goats.' while the subject competences, CONTENT and activities identify exotic pigs. The content-based match is therefore to the existing pig-breeds topic, but the internal species-label contradiction remains unresolved. Individual breed examples are not explicitly identified in the master. No source text is corrected or silently replaced.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-7c880c732e195e33"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-33",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "8950da26-6b12-5aa6-a70a-77d39640e822"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-17"
+      ],
+      "alternative_support_quote": "Characteristics of exotic pigs.",
+      "master_support_quote": "-states the x-tics and examples of each breed of pigs.",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly include characteristics of pig breeds. The alternative focuses on exotic breeds and provides specific characteristics that are not individually stated in the master. Alternative rows 31, 32 and 33 all correspond to the same existing master topic rather than three additional master lessons.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-7c880c732e195e33"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-34",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "171ab7c9-4acb-5034-b279-bc98bec04d2a"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-19"
+      ],
+      "alternative_support_quote": "Extensive system of keeping pigs\n-Definition\n-Advantages\n-Disadvantages ",
+      "master_support_quote": "-extensive systems\n-intensive systems\n\nAdvantages and disadvantages of each system.",
+      "allocation_relation": "unverified",
+      "notes": "Extensive pig-keeping systems and their advantages and disadvantages are explicitly represented in both sources. The alternative expands one component of the existing combined systems topic. No separate master lesson or timetable shift is justified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-3222bf463ca2ebbc"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-35",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "171ab7c9-4acb-5034-b279-bc98bec04d2a"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-19"
+      ],
+      "alternative_support_quote": "Intensive system of keeping pigs\n\n-Definition\n-Advantages\n-Disadvantages",
+      "master_support_quote": "-intensive systems",
+      "allocation_relation": "unverified",
+      "notes": "Intensive pig-keeping systems are explicitly identified in the master, which also covers advantages and disadvantages of each system. Alternative rows 34 and 35 correspond to the same existing master topic. They must not be counted as two newly missing lessons.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-3222bf463ca2ebbc"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-36",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "4cc5cf40-966b-5d38-82de-4bc26ed209cd"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-18"
+      ],
+      "alternative_support_quote": "Housing of pigs\n\n-Name for a \nPigs\u2019 house.",
+      "master_support_quote": "Housing of pigs\n\nManagement practices in keeping pigs",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover pig housing. The alternative additionally specifies naming the pig house and factors to consider when constructing a sty, which are not individually listed in the master. Core topic identity is established, but detailed coverage and timetable equivalence remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-fc1a51bf789afdee"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-37",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "4cc5cf40-966b-5d38-82de-4bc26ed209cd",
+        "70573dac-3af0-524a-87fe-2feb9566cc12"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-18",
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-14"
+      ],
+      "alternative_support_quote": "Castration\n-Definition\n-Methods of castration.",
+      "master_support_quote": "Management practices in keeping pigs",
+      "allocation_relation": "unverified",
+      "notes": "The alternative identifies castration methods within the surrounding pig-keeping sequence. Pig management is a possible broader master candidate, but castration is not explicitly listed in its literal source row. The master explicitly names castration under sheep-management activities, providing a procedural overlap without establishing animal-specific equivalence. Neither candidate verifies the alternative's particular methods. The alternative also does not explicitly identify the animal in its castration CONTENT cell. No definitive pig-castration topic or new lesson is inferred.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-fc1a51bf789afdee",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ecdc7bc13e651b82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    }
+  ],
+  "gaps": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-26",
+      "type": "specific_content_unverified",
+      "notes": "The alternative names mutton, wool, skins and hooves as sheep products. The master identifies the importance of keeping sheep but does not explicitly enumerate these products."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-27",
+      "type": "specific_content_unverified",
+      "notes": "Named sheep diseases in the alternative are not individually listed in the master source. General sheep-disease topic identity is established."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-29",
+      "type": "specific_content_unverified",
+      "notes": "Docking is explicitly included in master sheep-management content, but its meaning and reasons are not separately enumerated."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-30",
+      "type": "specific_content_unverified",
+      "notes": "The alternative enumerates individual pig external parts. The master explicitly covers external parts without enumerating them."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-31",
+      "type": "specific_content_unverified",
+      "notes": "Named local pig-breed examples and their classification are not individually verified by the master's literal breed categories."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-32",
+      "type": "internal_source_inconsistency",
+      "notes": "The alternative SUB-TOPIC states 'Exotic breeds of goats.' but the CONTENT and subject competences refer to exotic pig breeds. The match uses explicit pig-related content evidence, not the contradictory subtopic title. The discrepancy remains unresolved."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-33",
+      "type": "specific_content_unverified",
+      "notes": "Individual characteristics attributed to exotic pigs are not enumerated in the master source. Factual accuracy of these characteristics is outside the content-identity crosswalk."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-36",
+      "type": "specific_content_unverified",
+      "notes": "The alternative includes details about naming and constructing a pig house that the master does not individually specify."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-37",
+      "type": "animal_specific_identity_unverified",
+      "notes": "The alternative castration row does not explicitly name the animal in its CONTENT cell. The master explicitly lists castration for sheep but only broadly lists management practices for pigs. Exact animal-specific content identity and the named methods of castration remain unverified."
+    }
+  ],
+  "notes": [
+    "Read-only crosswalk of exactly 12 alternative DOCX rows, original table 1 rows 26\u201337, in their supplied order. The first 24 previously reviewed rows are not repeated or modified. The remaining 20 alternative rows are untouched.",
+    "The comparison uses the supplied literal source cells and existing master topic inventory. GitHub repository metadata was checked, but the DOCX content and hashes were not independently reverified in this batch.",
+    "Master source: Victorious Education Services, Science Scheme of Work for Primary Five, Term Three 2017. Alternative source: Mother Majeri Primary School, P.5 Science Scheme of Work Term III, 2019. Both are school-specific variants. Neither is established here as an official curriculum document, and no official curriculum endorsement is claimed.",
+    "The original master contains 34 literal source data rows, and the application already contains 34 Term III master allocations. These are pre-existing inventory counts. Raw alternative source rows are not newly required lesson counts.",
+    "All 12 allocation_relation values remain unverified. Alternative WD and PD are preserved conceptually as literal source values, not interpreted or converted into master weeks and lessons. Original master blank WK cells remain blank and uncertain. No timetable allocation is chosen, filled or shifted.",
+    "Alternative rows 27 and 28 correspond to two existing inferred disease-related master topics derived from the same original source row 15. This is an existing subdivision, not evidence of missing allocations.",
+    "Alternative rows 31, 32 and 33 correspond to the same existing pig-breeds topic and master source row 17. Their separate descriptions of local breeds, exotic breeds and characteristics do not inflate the master topic count.",
+    "Alternative rows 34 and 35 correspond to the same existing pig-keeping systems topic and source row 19. Their separation into extensive and intensive systems is a source-granularity difference, not evidence of additional lessons.",
+    "Alternative row 32 contains an unresolved internal species-label contradiction. Alternative row 37 contains uncertainty about animal-specific castration coverage. Both are retained as audit uncertainties rather than silently corrected.",
+    "The relation values distinguish direct topic identity from broader conceptual or procedural overlap. A matching broad topic does not verify every example, factual statement, teaching method or detailed subtopic in the alternative.",
+    "No educational notes, examples, questions, answers, outcomes, new schemes or timetable allocations were authored. No source import, master replacement, database mutation, content publication or approval was performed."
+  ]
+}

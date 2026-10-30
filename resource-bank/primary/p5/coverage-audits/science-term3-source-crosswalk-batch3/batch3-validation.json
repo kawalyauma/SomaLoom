@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-30T05:06:04.233448+00:00",
+  "batch_id": "p5-science-t3-alt56-crosswalk-3",
+  "entries": 12,
+  "source_rows_total": 56,
+  "remaining_rows_not_in_batch": 20,
+  "master_source_rows": 34,
+  "existing_master_allocations": 34,
+  "row_keys_and_topic_ids_valid": true,
+  "literal_quote_errors": [],
+  "all_allocations_unverified": true,
+  "live_master_unchanged": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "status": "passed",
+  "no_learner_content_generated_or_imported": true,
+  "validation_scope": "Literal quote/ID bounds and source content crosswalk only; no allocation adoption, lesson completion or official curriculum endorsement."
+}
