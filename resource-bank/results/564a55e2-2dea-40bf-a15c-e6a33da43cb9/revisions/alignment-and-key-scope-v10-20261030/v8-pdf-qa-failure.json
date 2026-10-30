@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-30T04:39:26.138362+00:00",
+  "document_version": 8,
+  "draft_pdf_downloads_http200": 4,
+  "approved_export409": true,
+  "pupil_new_drawing_assessment_present": true,
+  "pupil_numerical_worked_examples_retained": true,
+  "weekly_teacher_corrected_keys_retained": true,
+  "individual_teacher_revision_key": "FAILED: answers9/10 missing because combined administrative block outcome_ids=[]",
+  "missing_block_id": "1e54d5c2-384c-4161-8171-89ba1f31694d",
+  "repair_action": "Ask original ChatGPT to partition exact current answers7\u201312 into three teacher-only keys associated to existing rightful outcome IDs. No new answers, no changed source citations.",
+  "teacher_reviewed": false,
+  "published": false
+}

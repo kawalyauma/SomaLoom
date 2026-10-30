@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T04:41:38.438670+00:00",
+  "original_numbered_answer_wording_and_order_exact": true,
+  "only_administrative_teacher_key_parts_and_associations_changed": true,
+  "all_pupil_blocks_unchanged": true,
+  "canonical_outcome_ids_and_source_citations_unchanged": true,
+  "teacher_archive_sha256": "ec516c4a6118f193708a3981324ed3cd57e9b6399ac6e1a4ec82e563102880e5",
+  "candidate_body_sha256": "4bf53f4cd0debeeca1496bef75e4c34f2a817bf0aefab97ee4794259df0785b7",
+  "parts_created": 8
+}

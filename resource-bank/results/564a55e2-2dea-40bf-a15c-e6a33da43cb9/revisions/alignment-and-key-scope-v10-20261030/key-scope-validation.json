@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T04:39:59.100779+00:00",
+  "numbered_answer_wording_order_exact": true,
+  "all_other_blocks_and_metadata_unchanged": true,
+  "administrative_key_associations_only": [
+    "14c857b1-daf8-5e8d-b8f7-9fb3113ce72c",
+    "48c8d756-a080-562b-97cc-01817b1601e3",
+    "bcd94d03-cb11-5560-8f8c-3f31b154db82"
+  ],
+  "teacher_archive_sha256": "adee64e9166fa6531809657ecd5ee0e9275a5b5135c9fec11e2b92188f79d402",
+  "candidate_body_sha256": "1b6dc405d1d2aeace852469407dc51e23b7850f67f50b821db008223685c635f",
+  "teacher_reviewed": false,
+  "published": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ea486aae-469a-4885-81d4-944070ae6665",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "version": 9,
+  "review_state": "draft",
+  "old_version": 8,
+  "chat_url": "https://chatgpt.com/c/6ae38a89-16a0-83e8-afce-ede68dbe288b",
+  "changed_blocks": 1,
+  "administrative_key_partition": true,
+  "archive_sha256": "adee64e9166fa6531809657ecd5ee0e9275a5b5135c9fec11e2b92188f79d402",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}

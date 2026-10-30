@@ -1,0 +1,313 @@
+{
+  "checked_at": "2026-10-30T04:43:34.046521+00:00",
+  "document_version": 10,
+  "pdf_results": [
+    {
+      "name": "week3-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "edition": "draft"
+      },
+      "pages": 17,
+      "images": 5,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 18,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "edition": "draft"
+      },
+      "pages": 20,
+      "images": 5,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 18,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 11,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson6-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "pages": 2,
+      "images": 0,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson6-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 6,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 0,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 1,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson1-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson1-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 1,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 2,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson2-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson2-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 2,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson3-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson3-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 3,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 2,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson4-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson4-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "pages": 4,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 2,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson5-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 3,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 0,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    },
+    {
+      "name": "week3-lesson5-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 3,
+        "lesson": 5,
+        "edition": "draft"
+      },
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "pupil_key_process_uuid_url_hits": [],
+      "worked_example_paragraphs_expected": 3,
+      "worked_example_paragraphs_missing": [],
+      "revision_teacher_parts_expected": 2,
+      "revision_teacher_parts_missing": [],
+      "unrelated_teacher_revision_parts": []
+    }
+  ],
+  "http_tests_completed": 15,
+  "expected_http_tests": 15,
+  "all14_draft_pdf_downloads_200": true,
+  "approved_denial409": true,
+  "automated_qa_failed": [],
+  "source_alignment": "Direct assessment scope repaired; optional area enrichment mapping and inferred lesson allocation require educator review.",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true,
+  "visual_samples": [
+    "Lesson2 pupil pages1/3",
+    "Lesson2 teacher final page4"
+  ],
+  "visual_sample_result": "Readable labels/new questions/corrected keys; sparse pages remain for pagination polish.",
+  "previous_real_failure": "v8 individual Lesson2 teacher revision key missing, repaired through exact administrative key partitions in v9/v10; failure audit retained."
+}

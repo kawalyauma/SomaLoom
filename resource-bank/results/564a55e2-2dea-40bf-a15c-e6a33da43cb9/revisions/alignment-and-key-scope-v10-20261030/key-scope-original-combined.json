@@ -1,0 +1,21 @@
+{
+  "audience": "teacher",
+  "document_version": 8,
+  "block": {
+    "id": "1e54d5c2-384c-4161-8171-89ba1f31694d",
+    "kind": "paragraph",
+    "text": "Answers 7\u201312: 7. 40 cm. 8. 14 cm. 9. Correctly drawn parallelogram ABCD with AB parallel to DC and AD parallel to BC. 10. Correctly drawn parallelogram PQRS with base PQ and a perpendicular height marked at 90\u00b0 to PQ. 11. 48 cm. 12. 126 cm\u00b2.",
+    "latex": null,
+    "mathml": null,
+    "rows": null,
+    "asset_id": null,
+    "visual_instruction": null,
+    "caption": null,
+    "citation_ids": [],
+    "outcome_ids": [],
+    "requires_review": true,
+    "type": "paragraph",
+    "citations": [],
+    "audience": "teacher"
+  }
+}

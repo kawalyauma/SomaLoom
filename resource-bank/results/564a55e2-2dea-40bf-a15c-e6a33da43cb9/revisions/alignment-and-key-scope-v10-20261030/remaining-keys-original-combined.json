@@ -1,0 +1,40 @@
+{
+  "audience": "teacher",
+  "version": 9,
+  "blocks": [
+    {
+      "id": "c9718091-fe71-4e8d-beb8-bb77ab335fe3",
+      "kind": "paragraph",
+      "text": "Answers 1\u20136: 1. Total distance around a shape. 2. Correct trapezium with exactly one marked pair of parallel opposite sides. 3. Correct labelled parallelogram with two pairs of parallel opposite sides. 4. Any two: four equal sides, opposite sides parallel, diagonals perpendicular, opposite angles equal. 5. Correct non-rhombus kite with its symmetry diagonal. 6. Area measures two-dimensional surface; volume measures three-dimensional space.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [],
+      "requires_review": true,
+      "type": "paragraph",
+      "citations": [],
+      "audience": "teacher"
+    },
+    {
+      "id": "4ae50d66-a0f2-4b04-9cf8-e002ac4f85c6",
+      "kind": "paragraph",
+      "text": "Answers 13\u201320: 13. 72 cm\u00b2. 14. 42 cm. 15. 216 cm\u00b3. 16. 216 cm\u00b2. 17. 7 cm. 18. 9 cm. 19. 729 cm\u00b3. 20. Substitute the side into V=s\u00b3 or TSA=6s\u00b2 and confirm that the given value is obtained.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [],
+      "requires_review": true,
+      "type": "paragraph",
+      "citations": [],
+      "audience": "teacher"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "original_document_version": 7,
+  "original_version_id": "da17b29d-c12c-4a58-abf4-d26be61b89fa",
+  "audience": "teacher",
+  "purpose": "Superseded assessment audit archive; not current pupil questions or current marking key. Original v7 also retained in authenticated document history.",
+  "blocks": [
+    {
+      "id": "08539d4f-3f07-440d-bdac-4e5632666ba7",
+      "kind": "question",
+      "text": "Exercise 2: (1) Draw a parallelogram and label it PQRS. (2) State two properties of its opposite sides. (3) A parallelogram has a base of 11 cm and perpendicular height of 7 cm. Find the area. (4) A parallelogram covers 96 cm\u00b2 and has a base of 16 cm. Find its height. (5) A parallelogram has a sloping side of 10 cm, a base of 12 cm and a perpendicular height to that base of 8 cm. Find its area. (6) Explain why a sloping side cannot always replace perpendicular height.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [
+        "48c8d756-a080-562b-97cc-01817b1601e3"
+      ],
+      "requires_review": true,
+      "type": "question",
+      "citations": []
+    },
+    {
+      "id": "1bd7cd41-6852-4244-bdc8-57a98bcb417a",
+      "kind": "paragraph",
+      "text": "Exercise 2 answers for teacher checking: Activity: parallelogram; AB parallel to DC; AD parallel to BC; base 6 units and height 4 units. Questions: (1) valid labelled parallelogram; (2) opposite sides parallel and equal; (3) 77 cm\u00b2; (4) 6 cm; (5) 96 cm\u00b2; (6) sloping length is not necessarily perpendicular to the base.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [
+        "48c8d756-a080-562b-97cc-01817b1601e3"
+      ],
+      "requires_review": true,
+      "type": "paragraph",
+      "citations": [],
+      "audience": "teacher"
+    },
+    {
+      "id": "27b1c04b-4119-5bf0-a6dc-9af04df20b92",
+      "kind": "question",
+      "text": "9. A parallelogram has a base of 15 cm and perpendicular height of 8 cm. Find its area. 10. A parallelogram has area 132 cm\u00b2 and base 11 cm. Find its height.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [
+        "48c8d756-a080-562b-97cc-01817b1601e3"
+      ],
+      "requires_review": true,
+      "type": "question",
+      "citations": []
+    },
+    {
+      "id": "1e54d5c2-384c-4161-8171-89ba1f31694d",
+      "kind": "paragraph",
+      "text": "Answers 7\u201312: 7. 40 cm. 8. 14 cm. 9. 120 cm\u00b2. 10. 12 cm. 11. 48 cm. 12. 126 cm\u00b2.",
+      "latex": null,
+      "mathml": null,
+      "rows": null,
+      "asset_id": null,
+      "visual_instruction": null,
+      "caption": null,
+      "citation_ids": [],
+      "outcome_ids": [],
+      "requires_review": true,
+      "type": "paragraph",
+      "citations": [],
+      "audience": "teacher"
+    }
+  ]
+}

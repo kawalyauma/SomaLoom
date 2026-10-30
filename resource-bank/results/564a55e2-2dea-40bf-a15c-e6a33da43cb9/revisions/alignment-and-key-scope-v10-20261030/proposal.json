@@ -1,0 +1,70 @@
+{
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "base_version": 7,
+  "diagnosis": "The authenticated original P6 Mathematics scheme combines parallelogram and rhombus work in the Week 3 periods 2/3 row. Its objective column specifies finding the perimeter and area of a rhombus, while its content column states that learners read and draw both the parallelogram and the rhombus. The existing canonical Lesson 2 outcome, 'Read and draw a parallelogram', is supported by the content column. The original Lesson 2 area explanations, equation and numerical worked examples provide useful mathematical enrichment, but the area calculations do not directly assess the canonical read-and-draw outcome. The repair therefore retains all original numerical worked examples, complete solutions and mathematical equations in the pupil edition, identifies area work as optional enrichment, and replaces the Lesson 2 assessment questions with read-and-draw tasks. Original numerical exercises and their answers remain in teacher-only archives. This is a scope and assessment repair, not a claim that the scheme establishes a separate parallelogram-area learning outcome.",
+  "block_updates": [
+    {
+      "block_id": "ac86c39c-a0ff-4a08-9e9e-cbd378d1a086",
+      "text": "LESSON 2 — READING AND DRAWING A PARALLELOGRAM"
+    },
+    {
+      "block_id": "b327ca4c-ba4d-4bb4-9641-2eccc0f29909",
+      "text": "Optional enrichment — Area of a parallelogram. If the base and perpendicular height are measured in centimetres, the area is expressed in square centimetres (cm²)."
+    },
+    {
+      "block_id": "225e8da4-468a-4f43-b4e5-d92aed50aa9c",
+      "text": "LESSON 2: Worked Examples — Drawing and Optional Area Enrichment"
+    },
+    {
+      "block_id": "3922ce3c-0729-4c4b-b825-b95c3f11da33",
+      "text": "Example 1: Draw parallelogram ABCD. Use a base AB of 6 cm and an adjacent side AD of 4 cm making an angle of 60° with AB. Make AB parallel to DC and AD parallel to BC. Label all vertices. Explain which opposite sides are parallel."
+    },
+    {
+      "block_id": "08539d4f-3f07-440d-bdac-4e5632666ba7",
+      "text": "Exercise 2: (1) Draw a parallelogram and label it PQRS. (2) State two properties of its opposite sides. (3) Draw a parallelogram ABCD with AB horizontal and DC parallel to AB. Label all four vertices. (4) Draw a parallelogram EFGH with EF parallel to HG and EH parallel to FG. (5) In parallelogram ABCD, name the two pairs of opposite parallel sides. (6) Draw a parallelogram with a sloping side. Mark its base and draw a perpendicular height to that base."
+    },
+    {
+      "block_id": "1bd7cd41-6852-4244-bdc8-57a98bcb417a",
+      "text": "Exercise 2 answers for teacher checking: Activity: parallelogram; AB parallel to DC; AD parallel to BC; base 6 units and height 4 units. Questions: (1) valid labelled parallelogram; (2) opposite sides parallel and equal; (3) valid parallelogram ABCD with AB parallel to DC and all vertices labelled; (4) valid parallelogram EFGH with EF parallel to HG and EH parallel to FG; (5) AB and DC; AD and BC; (6) valid sloping parallelogram with the chosen base and a correctly marked perpendicular height."
+    },
+    {
+      "block_id": "27b1c04b-4119-5bf0-a6dc-9af04df20b92",
+      "text": "9. Draw and label a parallelogram ABCD. Show both pairs of parallel opposite sides. 10. Draw a parallelogram PQRS. Mark the base PQ and draw a perpendicular height to PQ."
+    },
+    {
+      "block_id": "1e54d5c2-384c-4161-8171-89ba1f31694d",
+      "text": "Answers 7–12: 7. 40 cm. 8. 14 cm. 9. Correctly drawn parallelogram ABCD with AB parallel to DC and AD parallel to BC. 10. Correctly drawn parallelogram PQRS with base PQ and a perpendicular height marked at 90° to PQ. 11. 48 cm. 12. 126 cm²."
+    }
+  ],
+  "archive_original_ids": [
+    "08539d4f-3f07-440d-bdac-4e5632666ba7",
+    "1bd7cd41-6852-4244-bdc8-57a98bcb417a",
+    "27b1c04b-4119-5bf0-a6dc-9af04df20b92",
+    "1e54d5c2-384c-4161-8171-89ba1f31694d"
+  ],
+  "teacher_extension_block_ids": [],
+  "notes": [
+    "OWNER REQUIREMENT: All original numerical worked examples, their complete worked solutions and their answers remain unchanged and pupil-accessible. No worked example is moved to a teacher-only extension.",
+    "The original area explanation block 9f35984c-1600-49c5-8f27-66707a6d59f3 remains unchanged and pupil-accessible.",
+    "The original area equation block d1efe087-c57a-46b1-a674-5b210c04358d remains unchanged, including its mathematical LaTeX, citation IDs and outcome mapping.",
+    "The original numerical worked example blocks c2af198e-5564-4225-a984-ff94ac156eee and 6d746699-7aee-4243-81dd-0eff49b1e63c remain completely unchanged and pupil-accessible, including every numerical value, calculation, solution, answer, citation and outcome mapping.",
+    "The revised Lesson 2 heading prioritises reading and drawing a parallelogram. The existing final area paragraph is rewritten as a concise optional-enrichment label and explanation, without introducing a new outcome or claiming additional official curriculum coverage.",
+    "The existing Lesson 2 worked-examples heading now distinguishes drawing practice from optional area enrichment. The numerical examples themselves are not rewritten, shortened, hidden or relocated.",
+    "The original drawing worked example 3922ce3c-0729-4c4b-b825-b95c3f11da33 retains its complete mathematical construction, dimensions and instructions. Only the final editorial process sentence is removed.",
+    "The existing Lesson 2 area calculation exercises are replaced in the pupil assessment with questions about drawing, identifying and labelling parallelograms and their perpendicular heights. The exact original numerical exercises remain preserved as teacher-only archived material through archive_original_ids.",
+    "The original Lesson 2 exercise answer key is preserved in the teacher-only archive. Its pupil-assessment counterpart is updated to match the revised questions. The replacement answer block retains its existing teacher-only audience.",
+    "Revision Questions 9 and 10 are replaced with read-and-draw questions while keeping their original numbering. Their original area calculation questions and original answers are preserved through the teacher-only archive mechanism.",
+    "Revision answers 7, 8, 11 and 12 remain exactly unchanged. Revision Questions 7, 8, 11 and 12 and all their existing mappings remain untouched.",
+    "All other lessons, existing educational explanations, activities, assessment questions, answer keys, source references and teacher review records remain unchanged.",
+    "All five original verified figure blocks, including parallelogram figure 391c98e9-42ea-4691-9c56-25aa61944745, remain unchanged. No figure ID, asset reference, caption, citation or outcome mapping is modified.",
+    "The canonical Lesson 2 outcome remains 'Read and draw a parallelogram', ID 48c8d756-a080-562b-97cc-01817b1601e3. No learning-outcome text, ID or allocation is changed.",
+    "The authenticated original scheme's rhombus perimeter and area objectives must not be represented as verified parallelogram-area objectives. The original scheme combines these shapes within one row, and the application marked the individual lesson allocation as inferred.",
+    "SOURCE-ALIGNMENT REVIEW GAP: Although the revised Lesson 2 assessments directly address reading and drawing, the retained pupil-facing parallelogram-area explanation, equation, summary references and worked numerical examples extend beyond the narrow canonical read-and-draw outcome. Their presence is intentional optional enrichment, not proof of a separately verified curriculum outcome.",
+    "SOURCE-ALIGNMENT REVIEW GAP: The original area explanation and equation retain their existing outcome and citation mappings under the immutable-metadata constraint. A teacher must confirm whether these mappings are appropriate for optional enrichment before final approval. This proposal does not assert that they establish the area's inclusion in the official assessed outcome.",
+    "SOURCE-ALIGNMENT REVIEW GAP: The original Lesson 2 activity asks learners to count base and height units, and the shared misconception and formula-summary tables still contain parallelogram-area material. These are retained because they support existing teaching and the requested minimal-edit preservation. They do not independently establish a separate assessment outcome.",
+    "No new sources, citation IDs, outcome IDs, timetable allocations, numerical worked examples, mathematical formulas, figures or assets are introduced.",
+    "All source-column distinctions, inferred-allocation caveats and remaining scope limitations are recorded here for teacher and audit review rather than inserted into pupil prose.",
+    "This proposal supersedes the preceding Week3v7 repair proposal in full. The previous proposal's teacher-only relocation of the area explanation, equation and numerical examples is withdrawn.",
+    "Document version remains 7 for this proposed repair. Educator approval and publication remain pending."
+  ]
+}

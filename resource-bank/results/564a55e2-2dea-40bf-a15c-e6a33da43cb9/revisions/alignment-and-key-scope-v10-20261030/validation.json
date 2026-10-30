@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-30T04:36:10.779015+00:00",
+  "status": "passed",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "base_version": 7,
+  "changed_block_ids": [
+    "08539d4f-3f07-440d-bdac-4e5632666ba7",
+    "1bd7cd41-6852-4244-bdc8-57a98bcb417a",
+    "1e54d5c2-384c-4161-8171-89ba1f31694d",
+    "225e8da4-468a-4f43-b4e5-d92aed50aa9c",
+    "27b1c04b-4119-5bf0-a6dc-9af04df20b92",
+    "3922ce3c-0729-4c4b-b825-b95c3f11da33",
+    "ac86c39c-a0ff-4a08-9e9e-cbd378d1a086",
+    "b327ca4c-ba4d-4bb4-9641-2eccc0f29909"
+  ],
+  "only_text_changed": true,
+  "all_metadata_and_other_blocks_unchanged": true,
+  "all5_figures_unchanged": true,
+  "all_equations_unchanged": true,
+  "numerical_worked_examples_unchanged_pupil_accessible": true,
+  "drawing_example_only_process_sentence_removed": true,
+  "other_lesson_answers7_8_11_12_unchanged": true,
+  "original_assessment_blocks_archived_exactly": 4,
+  "teacher_archive_sha256": "912ce3947b14c4f20cf496ec61efb2583e033091d33116a1173229cab991d1cc",
+  "candidate_body_sha256": "88e8b7298c4b569400674c6f5911a946436209ee3fcf97b248f44f48e6d59908",
+  "review_gap": "Optional area enrichment retains original citations/outcome mappings; full source alignment and inferred schedule remain for educator review.",
+  "teacher_reviewed": false,
+  "published": false
+}
