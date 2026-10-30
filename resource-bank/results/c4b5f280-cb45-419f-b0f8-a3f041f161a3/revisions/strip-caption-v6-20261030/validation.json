@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-30T02:22:04.144063+00:00",
+  "document_version": 6,
+  "chat_url": "https://chatgpt.com/c/6ae3f009-8470-83e9-a796-e041a71f083f",
+  "caption_only_server_diff_passed": true,
+  "asset_and_all_other_blocks_mappings_unchanged": true,
+  "student_teacher_pdf": {
+    "student": {
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "caption_present": true,
+      "old_caption_absent": true
+    },
+    "teacher": {
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": [],
+      "caption_present": true,
+      "old_caption_absent": true
+    }
+  },
+  "lesson2_caption_key_process_qa": "passed for tested lesson2 scope",
+  "teacher_keys_retained": true,
+  "worked_example_solutions_retained": true,
+  "whole_week_blocked_by_four_missing_visuals": true,
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false
+}
