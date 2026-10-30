@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-30T04:55:55.604954+00:00",
+  "grade": "P5",
+  "subject": "Integrated Science",
+  "term": 3,
+  "purpose": "Read-only source-variant comparison, not learner content generation or schedule selection",
+  "chat_url": "https://chatgpt.com/c/6ae42278-b3fc-83ea-95db-6f40f147bec0",
+  "master_source": {
+    "resource_id": "72510042-2c6f-4e51-a4c1-e316e15e3704",
+    "sha256": "e15c6ae606c135a790cf5e84b3cf03e9d3e91a6f3f64865ccf40b9a02514bb2f",
+    "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/1532eb125052ce055bcf1304195190499c2507d6/p.5%20science%20scheme%20term%203....new.docx",
+    "header_paragraphs": [
+      "VICTORIOUS EDUCATION SERVICES",
+      "SCIENCE SCHEME OF WORK FOR PRIMARY FIVE",
+      "TERM THREE 2017",
+      "",
+      ""
+    ],
+    "literal_data_rows": 34,
+    "download_http200": true,
+    "original_catalog_hash_match": true
+  },
+  "alternative_source": {
+    "sha256": "fd7d0f727c829cf067c2e403701eab00a3b240e09638dcc6c3cac13c63fd954b",
+    "source_uri": "https://github.com/Fresh-Teacher/p5-past-papers/blob/22d09e397bdf508751d5727cf98809f1d9f1e795/P.5%20SCIENCE%20SCHEME%20OF%20WORK%20TERM%203.docx",
+    "header_paragraphs": [
+      "MOTHER MAJERI PRIMARY SCHOOL",
+      "P.5 SCIENCE SCHEME OF WORK TERM III, 2019",
+      ""
+    ],
+    "literal_data_rows": 56,
+    "source_rows_in_this_batch": 12,
+    "remaining_source_rows_uncompared": 44
+  },
+  "relation_counts": {
+    "administrative_row": 1,
+    "same_topic": 6,
+    "no_candidate": 1,
+    "multiple_candidates": 2,
+    "partial_overlap": 2
+  },
+  "variant_content_review_observations": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-6",
+      "type": "explicit_content_not_found",
+      "notes": "Atmospheric, man-made and natural changes lack explicit counterparts in the supplied master source rows. No master topic ID assigned. This does not establish a missing lesson or authorize a new allocation."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-8",
+      "type": "specific_content_unverified",
+      "notes": "The alternative enumerates individual environmental effects absent from the master's literal consequences row. Broad conceptual overlap is established; example-level identity is not."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-10",
+      "type": "specific_content_unverified",
+      "notes": "The alternative names individual local and exotic goat breeds, whereas the master source specifies breed categories only. The two existing app master topic IDs are inferred subdivisions of one source row."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-11",
+      "type": "specific_content_unverified",
+      "notes": "The alternative describes qualities of a good goat house that are not individually listed in the master source."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-12",
+      "type": "specific_content_unverified",
+      "notes": "Named vegetation types in the alternative are not individually listed in the master source."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-13",
+      "type": "specific_content_unverified",
+      "notes": "Specific goat products are not individually enumerated in the master's uses-of-goats row. The overlap does not establish a separate lesson requirement."
+    }
+  ],
+  "all_allocation_relations": "unverified",
+  "raw_WD_PD_and_blank_WK_not_inferred": true,
+  "master_not_replaced": true,
+  "no_new_missing_lesson_count_asserted": true,
+  "official_curriculum_coverage_complete": false,
+  "live_master_unchanged": true,
+  "teacher_reviewed": false,
+  "published": false
+}

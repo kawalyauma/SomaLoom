@@ -1,0 +1,274 @@
+{
+  "batch_id": "p5-science-t3-alt56-crosswalk-1",
+  "entries": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-2",
+      "relation": "administrative_row",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Holiday package Revision and corrections",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "Holiday revision and corrections are administrative, not a new learner lesson. The master contains topical tests and end-of-year revision, but no explicitly corresponding holiday-package row. No topic association or timetable equivalence established.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-3",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "c522651f-eda2-50dc-87c8-2b949b569148"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-3"
+      ],
+      "alternative_support_quote": "Biological changes.\n-definition.\n-examples of biological changes in the environment.",
+      "master_support_quote": "Biological changes\n-These are changes that take place in the life of living things..\n-Examples of biological changes",
+      "allocation_relation": "unverified",
+      "notes": "Direct topic identity supported by definition and examples. The master additionally specifies characteristics and importance. Alternative WD=2 and PD=1 are literal source values, not verified master allocations.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-27e7e89e447ec8ad"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-4",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "5fb9dfa4-7558-58ac-9c77-0f0e62ce1ae6"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-4"
+      ],
+      "alternative_support_quote": "Chemical changes.\n-what chemical they are.\n-examples of chemical changes.",
+      "master_support_quote": "Chemical Changes\nThese are changes where new substances are formed from the old ones.\n-Examples of chemical changes",
+      "allocation_relation": "unverified",
+      "notes": "Direct topic identity supported by explanations and examples of chemical changes. Master coverage additionally includes characteristics and importance. Alternative WD=2 and PD=2 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-3cb6a59858e2f590"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-5",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "d0ec73ff-b6cf-5ad2-85f0-420782f2bcf8"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-5"
+      ],
+      "alternative_support_quote": "Physical changes.\n-What physical changes are.\n-Examples of physical changes.",
+      "master_support_quote": "Physical changes\nThese are changes that take place and no new substance is formed from the old one.\n-Examples of physical changes",
+      "allocation_relation": "unverified",
+      "notes": "Direct topic identity supported by meaning and examples of physical changes. Master coverage additionally includes characteristics and importance. Alternative WD=2 and PD=3 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ddbd1869a416137f"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-6",
+      "relation": "no_candidate",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Other changes in the environment.\n-Atmospheric changes.\n-Man made changes.\n-Natural changes.",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "The alternative explicitly identifies atmospheric, man-made and natural changes. No supplied master row explicitly covers these categories. The broader master theme of environmental changes is insufficient evidence of content identity. This is a source-coverage gap, not proof that an additional lesson is required.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-7",
+      "relation": "multiple_candidates",
+      "master_topic_ids": [
+        "c522651f-eda2-50dc-87c8-2b949b569148",
+        "5fb9dfa4-7558-58ac-9c77-0f0e62ce1ae6",
+        "d0ec73ff-b6cf-5ad2-85f0-420782f2bcf8"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-3",
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-4",
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-5"
+      ],
+      "alternative_support_quote": "Characteristics of different changes  \n-biological changes.\n-chemical changes.\n-physical changes.",
+      "master_support_quote": "-Characteristics of biological changes",
+      "allocation_relation": "unverified",
+      "notes": "All three master rows explicitly contain corresponding characteristics: biological, chemical and physical. The single alternative row consolidates content distributed across three existing master topics. This is overlapping coverage, not three additional lessons. Alternative WD=2 and PD=5 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-27e7e89e447ec8ad",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-3cb6a59858e2f590",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ddbd1869a416137f"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-8",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "9c9465f2-9cf0-5a75-86ab-24ac0202e46d"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-6"
+      ],
+      "alternative_support_quote": "Effects of changes in the environment.\nCause increase in size\nCause increase in temperature.",
+      "master_support_quote": "Consequences of biological changes\n\nConsequences of  chemical changes\n\nConsequences of physical changes.",
+      "allocation_relation": "unverified",
+      "notes": "Effects and consequences of changes provide a substantive conceptual overlap. However, the master does not explicitly enumerate the alternative's effects, including increases in size or temperature, mountain formation, rain formation and change of state. Specific example-level equivalence remains unverified. Alternative WD=3 and PD=1 are not mapped to master scheduling.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-90a4810f7beeb7d3"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-9",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "9fbfd2d1-80cd-5301-8861-ee0d4ea6d3ac"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-8"
+      ],
+      "alternative_support_quote": "Keeping goats\nExternal parts of a goat.\nUses of goats to people.",
+      "master_support_quote": "-Terms used in goat keeping\n\n-External parts of a goat\n\n-Uses of goats to  people.",
+      "allocation_relation": "unverified",
+      "notes": "Direct identity established through external parts and uses of goats. The master additionally specifies terminology. Alternative WD=3 and PD=2 remain literal and unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-bae66d5760e8078b"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-10",
+      "relation": "multiple_candidates",
+      "master_topic_ids": [
+        "efc7aca1-126e-51b3-b232-09a118612905",
+        "d4be6172-f2a6-5109-889f-f63816229f1e"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-9"
+      ],
+      "alternative_support_quote": "Breeds of goats reared in Uganda.\nLocal breeds\n-Mubende goat.\n-Boar goats.",
+      "master_support_quote": "Breeds of goats\n-Local breeds\n-Exotic breeds\n-Cross breeds",
+      "allocation_relation": "unverified",
+      "notes": "The alternative combines local and exotic goat breeds in one raw row. The existing app master has two inferred topic allocations, both derived from the same original master source row. Named breed examples in the alternative are not individually verified by the master's literal content. Crossbreeds appear in the master but are not explicitly covered in this alternative row. No new topic or lesson count follows from this many-to-two crosswalk.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-a7ac220e1bc99bf2",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-a7ac220e1bc99bf2"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-11",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "9cb4c842-7cca-52dd-a612-3169f955d675"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-10"
+      ],
+      "alternative_support_quote": "Qualities of a good goat house.\nIt should protect goats from rain and wild animals.",
+      "master_support_quote": "Housing of goats",
+      "allocation_relation": "unverified",
+      "notes": "Housing of goats is an explicit content match. The alternative provides specific housing qualities not itemized in the master source row, so detailed equivalence is unverified. The master app's housing allocation is an inferred subdivision of a combined housing-and-feeding source row. Alternative WD=3 and PD=4 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ff0225310f740e82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-12",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "043e7f51-9b76-52c6-9148-5742ee4ba7a8"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-10"
+      ],
+      "alternative_support_quote": "Feeding of goats.\n-Types of vegetation used to feed goats.\nGrass\nShrubs",
+      "master_support_quote": "Feedings of goats",
+      "allocation_relation": "unverified",
+      "notes": "Direct topic identity exists for goat feeding. The alternative names vegetation types not enumerated in the master literal source. The app master feeding topic is an inferred subdivision of the same source row as goat housing. Alternative WD=3 and PD=5 do not establish timetable equivalence.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ff0225310f740e82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-13",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "9fbfd2d1-80cd-5301-8861-ee0d4ea6d3ac"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-8"
+      ],
+      "alternative_support_quote": "Products got from goats.\nMeat\nSkins\nMilk\nMohair",
+      "master_support_quote": "-Uses of goats to  people.",
+      "allocation_relation": "unverified",
+      "notes": "Goat products substantively overlap with the existing master's uses-of-goats component. The master does not enumerate individual products, so exact coverage of meat, skins, milk, mohair, hooves and horns cannot be confirmed. This alternative row may correspond to an already represented topic rather than a newly missing lesson. Alternative WD=4 and PD=1 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-bae66d5760e8078b"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    }
+  ],
+  "gaps": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-6",
+      "type": "explicit_content_not_found",
+      "notes": "Atmospheric, man-made and natural changes lack explicit counterparts in the supplied master source rows. No master topic ID assigned. This does not establish a missing lesson or authorize a new allocation."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-8",
+      "type": "specific_content_unverified",
+      "notes": "The alternative enumerates individual environmental effects absent from the master's literal consequences row. Broad conceptual overlap is established; example-level identity is not."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-10",
+      "type": "specific_content_unverified",
+      "notes": "The alternative names individual local and exotic goat breeds, whereas the master source specifies breed categories only. The two existing app master topic IDs are inferred subdivisions of one source row."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-11",
+      "type": "specific_content_unverified",
+      "notes": "The alternative describes qualities of a good goat house that are not individually listed in the master source."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-12",
+      "type": "specific_content_unverified",
+      "notes": "Named vegetation types in the alternative are not individually listed in the master source."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-13",
+      "type": "specific_content_unverified",
+      "notes": "Specific goat products are not individually enumerated in the master's uses-of-goats row. The overlap does not establish a separate lesson requirement."
+    }
+  ],
+  "notes": [
+    "Read-only content-identity audit of exactly 12 supplied alternative DOCX data rows, table 1 rows 2\u201313, in original order. The remaining 44 of 56 alternative source rows are untouched.",
+    "Comparison is restricted to the supplied literal data packet. No independent external DOCX retrieval or re-verification was performed.",
+    "The original master contains 34 literal data rows, and the existing app master contains 34 allocations. These counts describe different representations and must not be treated as newly discovered lesson requirements.",
+    "Alternative source: Mother Majeri Primary School, P.5 Science Scheme of Work Term III, 2019. Master source: Victorious Education Services, Primary Five Science Scheme of Work Term Three, 2017. Both are school-specific source variants, not independently verified official curriculum documents. No official curriculum endorsement is claimed.",
+    "All allocation_relation values remain unverified. Alternative WD and PD entries are retained only as literal source data; WD is not inferred to mean week. Original master blank WK cells remain blank and uncertain. No weeks, periods or lessons are shifted, filled or selected.",
+    "Relation classifications express content identity or overlap only. They do not approve source accuracy, current curriculum suitability, teaching content, scheduling or publication.",
+    "The alternative characteristics row spans three existing master topics. The alternative goat-breeds row corresponds to two inferred app master topics sharing one original source row. Neither relationship creates additional lesson counts.",
+    "The goat housing and feeding alternative rows correspond to separate existing app master topics derived from the same original source row. Repeated source-row keys are intentional and are not evidence of duplicate missing lessons.",
+    "The goat-products alternative row partially overlaps an existing goat-keeping master topic. Reusing that topic ID in more than one crosswalk entry does not increase the number of existing topics.",
+    "Holiday revision and other administrative or assessment rows are not automatically learner lessons. The alternative holiday-package row has no explicitly equivalent master row.",
+    "No master replacement, timetable selection, source import, content generation, mutation, publication or approval was performed."
+  ]
+}

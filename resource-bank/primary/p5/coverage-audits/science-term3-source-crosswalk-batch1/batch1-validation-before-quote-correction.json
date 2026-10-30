@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-30T04:53:47.701206+00:00",
+  "batch_id": "p5-science-t3-alt56-crosswalk-1",
+  "entries": 12,
+  "source_rows_total": 56,
+  "remaining_rows_not_in_batch": 44,
+  "master_source_rows": 34,
+  "existing_master_allocations": 34,
+  "row_keys_and_topic_ids_valid": true,
+  "literal_quote_errors": [
+    {
+      "row": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-7",
+      "field": "master_support_quote",
+      "quote": "-Characteristics of biological changes."
+    }
+  ],
+  "all_allocations_unverified": true,
+  "live_master_unchanged": true,
+  "no_content_generated_or_imported": true,
+  "teacher_reviewed": false,
+  "published": false,
+  "status": "failed"
+}
