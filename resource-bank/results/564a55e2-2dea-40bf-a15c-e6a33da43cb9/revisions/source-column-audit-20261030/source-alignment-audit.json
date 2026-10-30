@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-30T04:26:43.008282+00:00",
+  "target_key": "P6/mathematics/term-3/source-439b92a58ed40dee-p4-row-a48cd582ab2c9478",
+  "grade": "P6",
+  "subject": "Mathematics",
+  "term": 3,
+  "source_uri": "https://t.me/P7_teachers_in_uganda/9833",
+  "resource_id": "f4869d5f-1ba1-4c25-b4af-e22ead28041d",
+  "resource_version_id": "29ba9d08-1d2f-475b-abaa-be2808d440b7",
+  "original_sha256": "439b92a58ed40dee11a3c6e03ca129dfc1471bbb02066c6e3b0847a507e98df1",
+  "catalog_hash_matches_actual_original": true,
+  "pages": [
+    4,
+    5
+  ],
+  "source_row_literal": {
+    "subtopic": "Area of a parallelogram and a rhombus",
+    "objectives": [
+      "Finds the perimeter of the rhombus.",
+      "Calculates the area of the rhombus."
+    ],
+    "content": "The learner reads and draws the parallelogram and the rhombus.",
+    "period_cell_extracted": "2 $ 3"
+  },
+  "finding": "Existing canonical parallelogram read/draw outcome derives from content cell, not the rhombus objective cell. Parallelogram area assessments exceed that requested outcome. Do not invent a parallelogram-area objective or citation mapping.",
+  "master_allocation_was_inferred": true,
+  "individual_lesson_allocation_verified": false,
+  "source_row_crosswalk_verified": "partial: original combined row and column semantics verified, individual lesson split not verified",
+  "document_id": "2fcf835f-61ec-4f7a-89b4-6e9fcce49389",
+  "document_version": 7,
+  "repair_chat_url": "https://chatgpt.com/c/6ae38a89-16a0-83e8-afce-ede68dbe288b",
+  "repair_proposal_submitted": true,
+  "repair_imported": false,
+  "teacher_reviewed": false,
+  "published": false
+}

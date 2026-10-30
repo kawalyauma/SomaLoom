@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-30T04:24:07.366Z",
+  "queues": {
+    "generating": {
+      "count": 0,
+      "ids": []
+    },
+    "waiting": {
+      "count": 0,
+      "ids": []
+    },
+    "prompt_ready": {
+      "count": 0,
+      "ids": []
+    }
+  }
+}
