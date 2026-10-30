@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-30T02:17:22.812372+00:00",
+  "document_version": 5,
+  "lesson": 2,
+  "http_results": [
+    {
+      "name": "week2-lesson2-student-draft-v5",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 86879,
+      "sha256": "24d85e935da05e295203e1cc757fffe86aa51e62fc74b576f9dc3a8fd56fedbb",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson2-teacher-draft-v5",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 2,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 87364,
+      "sha256": "216d6594766a3f92cd086788503b12f8c94e0a562ff98a183cb870d026c65cac",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-weekly-missing-images-v5",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "draft"
+      },
+      "status": 422,
+      "mime": "application/json",
+      "cache": "no-store",
+      "bytes": 156,
+      "sha256": "b2b1170d8e8649a94b63b0776a82fb010068885a401540d04a33772703dd8b78",
+      "is_pdf": false,
+      "approval_pending": true,
+      "error": "{\"error\":{\"code\":\"http_422\",\"message\":\"Missing visual asset: editorial review required\",\"details\":null},\"request_id\":\"710c476c-ffc5-470f-967e-779cbff1d564\"}"
+    },
+    {
+      "name": "week2-approved-denial-v5",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "approved"
+      },
+      "status": 409,
+      "mime": "application/json",
+      "cache": "no-store",
+      "bytes": 177,
+      "sha256": "1c8dc7f4ea05a3f07cf66435ee6a1bb510f807404d939b37b89af44e545a4a91",
+      "is_pdf": false,
+      "approval_pending": true,
+      "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 2 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"73beefdd-cc22-4a76-938f-5bf41ddb31ca\"}"
+    }
+  ],
+  "student": {
+    "pages": 3,
+    "images": 1,
+    "off_page_spans": [],
+    "uuid_count": 0,
+    "url_count": 0
+  },
+  "teacher": {
+    "pages": 3,
+    "images": 1,
+    "off_page_spans": [],
+    "uuid_count": 3,
+    "url_count": 0
+  },
+  "key_confidentiality": "passed",
+  "teacher_lesson2_revision_and_activity_keys_retained": true,
+  "unrelated_lesson_keys_absent": true,
+  "sample_pages_1_2_visually_readable": true,
+  "worked_example_solutions_present": true,
+  "pupil_content_qa": "FAILED",
+  "pupil_content_failure": "Attached figure caption retains editorial placeholder wording: Original diagram required for determining dimensions of a rectangular strip. Request learner-facing caption from existing regular ChatGPT, preserving diagram/mappings.",
+  "whole_week": "BLOCKED: four remaining visual assets, HTTP422",
+  "approved_export": "correctly denied HTTP409 educator approval required",
+  "approval_pending": true,
+  "teacher_reviewed": false,
+  "published": false
+}

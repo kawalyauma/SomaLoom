@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T02:16:08.161198+00:00",
+  "sha256": "e1f3c5aa64dcc58411ae9ae215c4374f40974a2958b087e0cafcff0bb5bb04b3",
+  "image_size": [
+    1810,
+    1195
+  ],
+  "dpi": [
+    299.9994,
+    299.9994
+  ],
+  "authorship": "Regular ChatGPT Chat Python/Pillow, disclosed in saved response; Codex only downloaded and verified",
+  "source_geometry": {
+    "outer_cm": [
+      14,
+      9
+    ],
+    "inner_cm": [
+      10,
+      5
+    ],
+    "scale_pixels_per_cm": 90,
+    "outer_boundary_pixel_extents": [
+      260,
+      215,
+      1520,
+      1025
+    ],
+    "inner_partition_strokes": {
+      "vertical_x_range": [
+        1159,
+        1162
+      ],
+      "horizontal_y_range": [
+        664,
+        667
+      ]
+    },
+    "expected_extents_px": {
+      "outer": [
+        1260,
+        810
+      ],
+      "inner": [
+        900,
+        450
+      ],
+      "strip_widths": [
+        360,
+        360
+      ]
+    },
+    "raster_stroke_tolerance_px": 4
+  },
+  "checks": {
+    "download_hash_matches_chat_existing_file": true,
+    "outer_and_inner_strokes_consistent_with_one_scale_within_finite_stroke_width": true,
+    "shared_top_left_corner": true,
+    "white_inner_and_uniform_gray_disjoint_right_bottom_partition": true,
+    "visual_labels_14_9_10_5_and_both_difference_expressions": true,
+    "visual_dimension_arrows_clear_and_labels_unclipped": true,
+    "no_double_shaded_overlap": true,
+    "original_png_unchanged": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
