@@ -1,0 +1,268 @@
+{
+  "batch_id": "p5-science-t3-alt56-crosswalk-2",
+  "entries": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-14",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "a7c08bf4-eac1-56e7-84af-f56c30209e39"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-11"
+      ],
+      "alternative_support_quote": "Grazing of goats\n-definition\n-types/methods of grazing",
+      "master_support_quote": "Systems of grazing goats\n-tethering\n-paddock\n-herding\n-zero grazing",
+      "allocation_relation": "unverified",
+      "notes": "The alternative discusses grazing definitions and methods, while the master identifies specific goat-grazing systems. Methods overlap, but the master does not explicitly state a definition of grazing. This row represents broader coverage of an existing topic, not an additional lesson. WD=4 and PD=2 remain literal and unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8fcccf7832028877"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-15",
+      "relation": "partial_overlap",
+      "master_topic_ids": [
+        "a7c08bf4-eac1-56e7-84af-f56c30209e39"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-11"
+      ],
+      "alternative_support_quote": "Free grazing.\n-Definition\n-Advantages \n-Disadvantages",
+      "master_support_quote": "Systems of grazing goats",
+      "allocation_relation": "unverified",
+      "notes": "The alternative addresses free grazing and its advantages and disadvantages. The master covers grazing systems and their advantages and disadvantages, but does not explicitly name free grazing. Specific method equivalence is unverified. No separate master topic ID or timetable allocation is inferred.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8fcccf7832028877"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-16",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "a7c08bf4-eac1-56e7-84af-f56c30209e39"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-11"
+      ],
+      "alternative_support_quote": "Tethering method\n\n-Definition\n-Advantages\n-Disadvantages",
+      "master_support_quote": "-tethering",
+      "allocation_relation": "unverified",
+      "notes": "Tethering is explicitly identified in the master goat-grazing systems row. The master also specifies advantages and disadvantages of each system. This is a direct content match to part of an existing topic, not a separate master lesson. Alternative WD=4 and PD=4 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8fcccf7832028877"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-17",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "a7c08bf4-eac1-56e7-84af-f56c30209e39"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-11"
+      ],
+      "alternative_support_quote": "Paddock grazing\n\n-definition\n-Advantages\n-Disadvantages",
+      "master_support_quote": "-paddock",
+      "allocation_relation": "unverified",
+      "notes": "Paddock grazing is explicitly included among the master's goat-grazing systems. The master also covers advantages and disadvantages of each system. Reusing the existing master topic ID does not imply an additional lesson or a changed allocation.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8fcccf7832028877"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-18",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "a7c08bf4-eac1-56e7-84af-f56c30209e39"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-11"
+      ],
+      "alternative_support_quote": "Zero grazing\n\n-Definition\n-Advantages\n-Disadvantages",
+      "master_support_quote": "-zero grazing",
+      "allocation_relation": "unverified",
+      "notes": "Zero grazing is explicitly identified in the master's goat-grazing systems, alongside advantages and disadvantages of each system. Alternative rows 14\u201318 overlap one existing master topic rather than establishing five new lessons. Alternative WD=5 and PD=1 remain unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8fcccf7832028877"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-19",
+      "relation": "multiple_candidates",
+      "master_topic_ids": [
+        "40fb71e2-4b3a-5556-a11b-470d285cdb1e",
+        "ed3d6134-2c02-5c81-aaa1-f778c27701be"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-15"
+      ],
+      "alternative_support_quote": "Diseases that attack goats.\n-Causes\n-Signs and symptoms\n-Prevention and control",
+      "master_support_quote": "-describes the diseases of goats and sheep; stating the cause, signs and systems and their control measures.",
+      "allocation_relation": "unverified",
+      "notes": "The alternative covers goat diseases, causes, signs, symptoms, prevention and control. The master combines goat and sheep diseases in one original source row. The existing app divides that source into two inferred master topics: causes and signs, and control measures. Both are content candidates. The alternative is narrower in animal coverage. Neither the source-row difference nor the two candidate IDs establishes a new lesson or scheduling equivalence.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-038117b5bed05013",
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-038117b5bed05013"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-20",
+      "relation": "no_candidate",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Parasites of goats.\n-Endo parasites\nTape worms\nLiver fluke\n-Ecto /exo parasites\nTicks\nLice\nFleas\nmites",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "The alternative explicitly identifies internal and external parasites of goats and names examples. The master contains diseases of goats and sheep but does not explicitly identify goat parasites or their categories. The separate master row about parasites and diseases of pigs cannot establish goat-parasite content identity. No directly supported master topic ID is assigned. This is an explicit source-coverage gap, not proof that a new lesson is required.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-21",
+      "relation": "no_candidate",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Steaming up\n-What it is.\n-Advantages",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "The alternative explicitly covers steaming up in goats and its advantages. No supplied master source row identifies steaming up. General goat feeding and management headings do not establish this specific content identity. No master topic or lesson allocation is inferred.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-22",
+      "relation": "no_candidate",
+      "master_topic_ids": [],
+      "master_source_row_keys": [],
+      "alternative_support_quote": "Breeding of goats\n-What breeding in goats mean.\n- What heat period is.\n-Signs of heat period in nanny goats.",
+      "master_support_quote": "",
+      "allocation_relation": "unverified",
+      "notes": "The alternative explicitly covers goat breeding, heat periods and signs of heat. No supplied master literal source row explicitly covers these concepts. Goat breeds and breeding are distinct subject matter, and a breeds-of-goats title alone does not support mapping. This is a content-coverage gap only, not a newly established lesson requirement.",
+      "canonical_target_keys": [],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-23",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "f0c5f050-cfae-5a60-8f77-469657094eae"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-12"
+      ],
+      "alternative_support_quote": "External parts of a sheep.\nFace\nEar\nBack\nRump",
+      "master_support_quote": "Terms used in the keeping of sheep\n\nExternal parts of a sheep\n\nImportance of keeping sheep",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover external parts of sheep and their importance or uses. The alternative enumerates anatomical labels that the master does not individually list. Core content identity is established, but example-level equivalence remains unverified. Alternative WD=6 and PD=1 are not interpreted as master timetable values.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-8f50031d60ffe2f1"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-24",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "e59cb5f9-79a5-5d81-b3b5-4e885e1f39e5"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-13"
+      ],
+      "alternative_support_quote": "Breeds of sheep\n-Local breeds\nBlack head Persian\nMasai sheep\nSomali sheep\nExotic breeds:",
+      "master_support_quote": "Breeds of sheep\n-Local breeds\n-Exotic breeds\n-Cross breeds",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly distinguish local and exotic sheep breeds. The master also lists crossbreeds, which are not explicitly identified in this alternative row. Named breeds and wool, mutton or dual-purpose classifications in the alternative are not individually verified by the master literal content. This remains an existing topic match rather than an additional lesson.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-3b0b1ad7dac717c4"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-25",
+      "relation": "same_topic",
+      "master_topic_ids": [
+        "70573dac-3af0-524a-87fe-2feb9566cc12"
+      ],
+      "master_source_row_keys": [
+        "P5/integrated-science/term-3/source-e15c6ae606c135a7-table-1-row-14"
+      ],
+      "alternative_support_quote": "Housing for sheep.\n-The sheep house should be kept;\nClean\nDry\nWell ventilated",
+      "master_support_quote": "Housing for sheep\n\nGrazing sheep",
+      "allocation_relation": "unverified",
+      "notes": "Both sources explicitly cover sheep housing. The alternative specifies house conditions, whereas the master combines housing with grazing and other sheep-management activities without listing those housing conditions. This is a direct topic match with unverified detailed coverage. Alternative WD=6 and PD=3 remain literal and unverified.",
+      "canonical_target_keys": [
+        "P5/science/term-3/source-e15c6ae606c135a7-p1-row-ecdc7bc13e651b82"
+      ],
+      "schedule_selected": false,
+      "app_master_changed": false
+    }
+  ],
+  "gaps": [
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-15",
+      "type": "specific_method_unverified",
+      "notes": "Free grazing is not explicitly named among the master goat-grazing systems. Broad grazing-system overlap exists, but precise method equivalence is unsupported."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-20",
+      "type": "explicit_content_not_found",
+      "notes": "Goat parasites, internal and external parasite categories, and the named parasite examples have no explicitly corresponding goat-parasite master source row. No topic ID assigned."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-21",
+      "type": "explicit_content_not_found",
+      "notes": "Steaming up in goats and its advantages are not explicitly identified in the original master source. General goat management or feeding is insufficient to verify inclusion."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-22",
+      "type": "explicit_content_not_found",
+      "notes": "Goat breeding, heat periods and signs of heat are not explicitly represented in the original master source. Goat breeds cannot be treated as equivalent to breeding."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-23",
+      "type": "specific_content_unverified",
+      "notes": "Individual external sheep-part labels are supplied by the alternative but not enumerated in the master. Core topic overlap is confirmed without verifying each label."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-24",
+      "type": "specific_content_unverified",
+      "notes": "Named sheep breeds and production-purpose classifications are not individually present in the master's literal source row. The master additionally mentions crossbreeds."
+    },
+    {
+      "alternative_row_key": "P5/science/term-3/source-fd7d0f727c829cf0-table-1-row-25",
+      "type": "specific_content_unverified",
+      "notes": "Clean, dry and well-ventilated sheep-house conditions are explicitly stated only in the alternative source packet. The master confirms sheep housing as a topic without enumerating those conditions."
+    }
+  ],
+  "notes": [
+    "Read-only source-content crosswalk for exactly 12 alternative DOCX rows, original table 1 rows 14\u201325. The first 12 alternative rows were reviewed separately and are not repeated. The remaining 32 alternative source rows are untouched.",
+    "Comparison uses the supplied data packet and existing master topic inventory. GitHub repository metadata was checked, but the binary DOCX contents were not independently re-extracted or rehashed in this batch.",
+    "Master source: Victorious Education Services, Science Scheme of Work for Primary Five, Term Three 2017. Alternative source: Mother Majeri Primary School, P.5 Science Scheme of Work Term III, 2019. These are school-specific variants, not independently verified official curriculum documents. No official curriculum endorsement is claimed.",
+    "The original master has 34 literal data rows and the existing application master has 34 Term III allocations. These are existing inventory figures, not newly generated lesson counts.",
+    "Alternative raw source rows are not new lessons. Differences in row granularity, subject coverage or school-specific presentation must not inflate missing-lesson counts.",
+    "Alternative WD and PD values remain literal and uncertain. WD has not been inferred to mean week. Original master blank WK cells remain blank. No timetable values were inferred, repaired, shifted or chosen.",
+    "Alternative rows 14\u201318 all crosswalk to the same existing goat-grazing systems master topic and original master source row 11. Multiple alternative rows representing distinct aspects of one existing topic do not create multiple new master lessons.",
+    "Alternative row 19 crosswalks to two existing inferred app master topics derived from original master source row 15. The original row combines goat and sheep diseases, while the alternative is goat-specific. This is a source-granularity difference, not evidence for additional timetable allocations.",
+    "Alternative rows 20, 21 and 22 have no explicitly supported master topic candidates. Their source-coverage gaps do not independently establish additional required lessons, official curriculum obligations or permission to generate new content.",
+    "Alternative rows 23\u201325 correspond to existing master sheep-keeping, sheep-breeds and sheep-housing topics. More detailed alternative wording does not establish a new topic count.",
+    "All 12 allocation_relation fields remain unverified. Content identity does not establish timetable equivalence, source factual correctness or official curriculum alignment.",
+    "No educational notes, examples, questions, answers, outcomes, schemes, timetable allocations or other learning content were generated. No master replacement, import, mutation, publication or approval was performed."
+  ]
+}
