@@ -1,0 +1,40 @@
+{
+  "image_request_id": "5a703eaf-9caf-48cd-acda-8875fcf59a4e",
+  "document_id": "9c2c8dc1-fe47-4a8a-951c-a6365e24919c",
+  "source_block_id": "c8360d8d-3996-4afb-b4cb-305a83992566",
+  "chat_url": "https://chatgpt.com/c/6ae40aef-d62c-83ea-9da6-030f6529cf1d",
+  "authorship": "Actual regular ChatGPT browser image generation; no Codex-drawn substitute",
+  "original_sha256": "2e73975547128478e948962be360e43ea1c4543cb2533583c2c13ba87c550dbb",
+  "accuracy_check": {
+    "status": "passed",
+    "checked_at": "2026-10-30T03:13:40.778157+00:00",
+    "sha256": "2e73975547128478e948962be360e43ea1c4543cb2533583c2c13ba87c550dbb",
+    "image_size": [
+      1055,
+      1491
+    ],
+    "authorship": "Actual regular ChatGPT browser image generation; no Codex-drawn substitute",
+    "checks": {
+      "horizontal_BC_base_pixel_row": 993,
+      "vertical_dashed_altitude_pixel_x": 449,
+      "dash_transitions_observed": 33,
+      "right_angle_marker_present": true,
+      "A_B_C_labels_and_b_cm_8_cm_area40_cm_squared_visually_verified": true,
+      "height_distinct_from_sloping_sides": true,
+      "area_label_inside_triangle": true,
+      "no_unknown_base_answer_disclosed": true,
+      "labels_unclipped": true,
+      "png_unchanged": true
+    },
+    "limitations": [
+      "Conceptual raster diagram; source does not specify vertex coordinates or a scale drawing. No exact coordinate accuracy claim.",
+      "Portrait canvas has substantial white margin; assess actual PDF pagination."
+    ],
+    "teacher_reviewed": false,
+    "published": false,
+    "approval_pending": true
+  },
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}

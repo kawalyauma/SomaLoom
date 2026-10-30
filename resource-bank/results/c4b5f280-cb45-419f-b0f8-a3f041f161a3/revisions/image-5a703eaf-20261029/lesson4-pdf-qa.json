@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-10-30T03:14:50.393806+00:00",
+  "document_version": 10,
+  "lesson": 4,
+  "student_teacher_pdf": {
+    "student": {
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": []
+    },
+    "teacher": {
+      "pages": 3,
+      "images": 1,
+      "offpage_spans": []
+    }
+  },
+  "http_results": [
+    {
+      "name": "week2-lesson4-student-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 863511,
+      "sha256": "281162258f2eaff5dd3201e1f4a3286e4ca98c880b0c626f19af189e6e2116c5",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-lesson4-teacher-draft-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "teacher",
+        "week": 2,
+        "lesson": 4,
+        "edition": "draft"
+      },
+      "status": 200,
+      "mime": "application/pdf",
+      "edition": "draft",
+      "cache": "no-store",
+      "bytes": 863997,
+      "sha256": "23b59615410aaf0cc28c50541b31f5fc6aa099fe49f7a61bdd4bb4fb3283d081",
+      "is_pdf": true,
+      "approval_pending": true
+    },
+    {
+      "name": "week2-weekly-missing-images-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "draft"
+      },
+      "status": 422,
+      "mime": "application/json",
+      "cache": "no-store",
+      "bytes": 156,
+      "sha256": "4ace3efa47da780a3cb3d9737e35c51fde20713628d5412d88d4f799725a497a",
+      "is_pdf": false,
+      "approval_pending": true,
+      "error": "{\"error\":{\"code\":\"http_422\",\"message\":\"Missing visual asset: editorial review required\",\"details\":null},\"request_id\":\"5fa1a555-a08e-425e-a12f-72c10d6f46e0\"}"
+    },
+    {
+      "name": "week2-approved-denial-v10",
+      "scope": {
+        "grade": "P6",
+        "subject": "Mathematics",
+        "term": 3,
+        "audience": "student",
+        "week": 2,
+        "edition": "approved"
+      },
+      "status": 409,
+      "mime": "application/json",
+      "cache": "no-store",
+      "bytes": 177,
+      "sha256": "0d17db173e8d8150ea0b3f6a92106ad7f78e9dc91a1b5400357aa2b8ed9452ac",
+      "is_pdf": false,
+      "approval_pending": true,
+      "error": "{\"error\":{\"code\":\"http_409\",\"message\":\"Week 2 needs educator approval before a final PDF can be downloaded.\",\"details\":null},\"request_id\":\"91d792b5-138a-43e5-8fa6-6e225710d943\"}"
+    }
+  ],
+  "caption_only_server_diff_passed": true,
+  "pupil_caption_key_process_uuid_url_scan_passed": true,
+  "teacher_both_lesson4_keys_retained_other_keys_absent": true,
+  "both_worked_example_solutions_retained": true,
+  "imported_image_pixels_identical": true,
+  "sample_figure_page_visually_readable": true,
+  "whole_week": "BLOCKED two missing visuals HTTP422",
+  "final_approval_guard": "correct409",
+  "teacher_reviewed": false,
+  "published": false,
+  "approval_pending": true
+}
